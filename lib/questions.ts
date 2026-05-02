@@ -23,8 +23,8 @@ export const LIKERT_LABELS = [
 export const STORY_QUESTIONS: StoryQuestion[] = [
   {
     id: "s1",
-    text: "間違っていても、ブレない奴の方が好きだ",
-    weights: { honor: 0.7, organization: 0.6, justice: 0.3 },
+    text: "矛盾が嫌い。筋を通せない者は信用できない",
+    weights: { honor: 0.8, organization: 0.7, justice: 0.3 },
   },
   {
     id: "s2",
@@ -33,8 +33,8 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s3",
-    text: "自分が悪役になれば済む話なら、迷わずなる",
-    weights: { protection: 0.8, love: 0.6, family: 0.6 },
+    text: "大切な人を守るためなら、自分の正義も曲げられる",
+    weights: { protection: 0.7, love: 0.7, family: 0.7 },
   },
   {
     id: "s4",
@@ -53,7 +53,7 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s7",
-    text: "自分が頂点に立てば、世界の方が動く",
+    text: "自分が誰よりも強くなれば、すべて解決する",
     weights: { ambition: 0.8, solo: 0.6 },
   },
   {
@@ -63,7 +63,7 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s9",
-    text: "迷った時、頭に浮かぶ顔が一つある",
+    text: "師の教えが、今も自分の支柱だ",
     weights: { mentor: 0.9 },
   },
   {
@@ -76,8 +76,8 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
 export const GAME_QUESTIONS: GameQuestion[] = [
   {
     id: "g1",
-    text: "最初から強くありたい",
-    weights: { scaling: -0.7, damage: 0.3, durability: 0.2 },
+    text: "ゆっくり積み上げ、最後に独力で薙ぎ払いたい",
+    weights: { durability: 0.5, damage: 0.6, range: -0.3 },
   },
   {
     id: "g2",
@@ -106,8 +106,8 @@ export const GAME_QUESTIONS: GameQuestion[] = [
   },
   {
     id: "g7",
-    text: "開戦の狼煙を上げるのは自分だ",
-    weights: { durability: 0.7, cc: 0.7, damage: -0.3, range: -0.4, scaling: -0.2 },
+    text: "誰よりも先に飛び込み、起点になりたい",
+    weights: { durability: 0.7, cc: 0.7, damage: -0.3, range: -0.4 },
   },
   {
     id: "g8",
@@ -121,7 +121,7 @@ export const GAME_QUESTIONS: GameQuestion[] = [
   },
   {
     id: "g10",
-    text: "一発の起点で戦況をひっくり返したい",
+    text: "一発の起点で集団戦をひっくり返したい",
     weights: { cc: 0.8, damageStyle: 0.4, durability: 0.3, range: 0.3 },
   },
 ];
