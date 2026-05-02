@@ -166,6 +166,17 @@ const GAME_BIPOLAR: Record<GameDim, GameTraitFromBipolar> = {
     },
     threshold: 0.55,
   },
+  scaling: {
+    pos: {
+      label: "終盤型",
+      sentence: "じっくりスケールして終盤に爆発、長期戦こそが勝負どころ。",
+    },
+    neg: {
+      label: "序盤型",
+      sentence: "最初から強く、早期の主導権で押し切るタイプ。",
+    },
+    threshold: 0.5,
+  },
 };
 
 export function describeGame(vec: Record<GameDim, number>): Persona {

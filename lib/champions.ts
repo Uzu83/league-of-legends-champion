@@ -30,7 +30,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.5
 }),
     blurb: "ヴォイドからシュリーマを守り抜いた誇り高き存在であったエイトロックスとその同胞は、いつしかルーンテラにとってヴォイドを上回る脅威となり、狡猾な定命の者の魔法の前に敗れ去った。",
   },
@@ -58,7 +59,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.5,
   mobility: 0.85,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "魅了の魔力を操る九尾の狐。自分の正体を探し旅をする。",
   },
@@ -86,7 +88,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.1,
   mobility: 0.85,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.55
 }),
     blurb: "均衡から離れた一匹狼の暗殺者。自身の正義のために動く。",
   },
@@ -109,7 +112,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.05,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.05
+  difficulty: 0.05,
+  scaling: 0.55
 }),
     blurb: "危機を前にしても片眉を少し上げるだけ。",
   },
@@ -132,7 +136,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.5
 }),
     blurb: "屈強な戦士として恐れられるアリスターは自分の部族を滅ぼしたノクサス帝国に復讐を誓っている。",
   },
@@ -155,7 +160,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.45
 }),
     blurb: "メダルダの名を知る者なら誰もが、その家長であるアンベッサに敬意と恐れを抱いている。",
   },
@@ -178,7 +184,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.5
 }),
     blurb: "孤独で悲しい魂を抱いて古代シュリーマで生まれたアムムは、友達を探して世界中を彷徨っている。",
   },
@@ -201,7 +208,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.6
 }),
     blurb: "アニビアは翼を持った慈悲の守護者であり、無限に繰り返される生と死、そして再誕の繰り返しに耐えてフレヨルドを守っている。",
   },
@@ -224,7 +232,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.6
 }),
     blurb: "危険極まりなく、それでいて無邪気でおませなアニーは、強力な発火能力を持つ小さな魔女だ。",
   },
@@ -247,7 +256,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.42,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.7
 }),
     blurb: "月明かりの陰から武器を構えて立ち現れるアフェリオスは、不気味なまでに音も無くルナリの敵の息の根を止める──その存在を示すのは、正確な狙いから放たれる銃声のみ。",
   },
@@ -276,7 +286,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.85,
   mobility: 0.2,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "氷弓で部族を率いる女王。フレヨルド統一を夢見る。",
   },
@@ -299,7 +310,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "かつて何もない巨大な虚空であった宇宙に己が生み出した煌めく驚異を散りばめ、その恩寵を授けたオレリオン・ソル。",
   },
@@ -322,7 +334,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "生まれたときから、オーロラは精霊界と物質世界の間を行き来する独自の能力で人生を歩んでいた。",
   },
@@ -350,7 +363,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.7,
   mobility: 0.6,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.7
 }),
     blurb: "砂に眠る帝国を蘇らせるシュリーマの皇帝。",
   },
@@ -373,7 +387,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.6
 }),
     blurb: "星の向こうからやってきた旅人であるバードは幸運の使者であり、生命が混沌の無関心に耐えられる平衡を保つために戦っている。",
   },
@@ -396,7 +411,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.5
 }),
     blurb: "ヴォイドが呑み込んだ街一つ分の物質から生み出された悪夢のような女帝ベル＝ヴェスは、ルーンテラの終焉そのもの…そして彼女が造り出す醜悪な現実の始まりだ。",
   },
@@ -419,7 +435,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.5
 }),
     blurb: "ブリッツクランクはゾウンからやってきた、ほぼ破壊不能な巨大ロボットだ。",
   },
@@ -442,7 +459,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "ブランドとして知られる生命体は、かつてキーガン・ローデという名の凍てつくフレヨルドの部族の一員だったが、今では偉大な力への誘惑に溺れることへの教訓としてその存在",
   },
@@ -465,7 +483,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.42,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.5
 }),
     blurb: "巨大な筋肉が盛り上がる腕と、その筋肉よりも大きな優しい心を持つブラウムは、フレヨルドの誰もが愛する英雄だ。",
   },
@@ -488,7 +507,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.45
 }),
     blurb: "黒薔薇団の実験の失敗により、制御不能な血の渇きとともに生まれ落ちたブライアーは、特殊な拘束具がなければ狂乱の精神を抑えられない。",
   },
@@ -516,7 +536,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.4,
   mobility: 0.4,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.45
 }),
     blurb: "ピルトーヴァーの保安官。緻密な狙撃で犯罪者を追う。",
   },
@@ -539,7 +560,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.45
 }),
     blurb: "フェロス一族のエレガントな主席スパイであるカミールは、法の及ばぬ領域で活動するために機械の体になった。",
   },
@@ -562,7 +584,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.6
 }),
     blurb: "カシオペアは相手を意のままに操って死に陥れる、恐ろしい妖女だ。",
   },
@@ -585,7 +608,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "チョ＝ガスはルーンテラの眩しい太陽の下に初めて現れた時から、純粋な飢えの衝動に突き動かされていた。",
   },
@@ -608,7 +632,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.84,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "ヨードルのパイロットであるコーキが大好きなものは二つある──飛ぶこと、そして自分の立派な口ひげだ…ただし、この二つの順番は問わない。",
   },
@@ -637,7 +662,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.4,
   mobility: 0.2,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.4
 }),
     blurb: "弱者を許さぬノクサスの軍人。実力こそが正義と信じる。",
   },
@@ -665,7 +691,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.75,
   cc: 0.5,
   mobility: 0.7,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.5
 }),
     blurb: "月の戦士。太陽信仰の社会から追放された孤高の存在。",
   },
@@ -688,7 +715,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6000000000000001,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.7
 }),
     blurb: "ノクサスでは清算人として知られる戦士たちは闘技場で血を流して戦って力を競い合うが、その中でドレイヴンほどの人気を得た者はいない。",
   },
@@ -711,7 +739,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.55
 }),
     blurb: "完全に正気を失った、おぞましい紫色の悲しき殺人鬼。",
   },
@@ -739,7 +768,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.75,
   cc: 0.6,
   mobility: 0.85,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.5
 }),
     blurb: "時を巻き戻す装置を作った天才少年。仲間を守るために走る。",
   },
@@ -762,7 +792,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.6
 }),
     blurb: "冷酷無比な捕食者エリスは、ノクサスの古都の地下にある、光も差さない閉ざされた邸宅に棲む。",
   },
@@ -785,7 +816,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.6
 }),
     blurb: "ルーンテラ中の暗がりで悪魔イブリンは次の犠牲者を物色する。",
   },
@@ -808,7 +840,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.7
 }),
     blurb: "自由奔放な冒険家で、本人は知らないながらも魔法の才能を持つエズリアルは、長らく失われていた地下墓地を暴き、古代の呪いとの格闘を乗り越え、絶体絶命と思われる状況を",
   },
@@ -831,7 +864,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.6
 }),
     blurb: "ルーンテラの中で何かが目覚めた──古代の恐ろしい何かが。",
   },
@@ -854,7 +888,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.45
 }),
     blurb: "ヴァロランでもっとも恐れられる決闘士フィオラは、冷ややかで狡猾、そして目にも止まらぬ速さで強靭な両刃の剣レイピアを振るう。",
   },
@@ -877,7 +912,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.45
 }),
     blurb: "フィズはビルジウォーターを囲む岩礁の間に住む水陸両性のヨードルだ。",
   },
@@ -900,7 +936,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.42,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "輝ける都市デマーシアの外側で、石の巨像ガリオはずっと見張りを続けている。",
   },
@@ -928,7 +965,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.8,
   cc: 0.4,
   mobility: 0.4,
-  difficulty: 0.85
+  difficulty: 0.85,
+  scaling: 0.65
 }),
     blurb: "ビルジウォーターの元支配者。全てを失っても海を諦めない。",
   },
@@ -957,7 +995,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.4,
   mobility: 0.4,
-  difficulty: 0.1
+  difficulty: 0.1,
+  scaling: 0.45
 }),
     blurb: "規律と名誉に生きるデマーシアの剣。仲間のために旋風を放つ。",
   },
@@ -980,7 +1019,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.55
 }),
     blurb: "ナーは原始時代のヨードルで、おどけて悪ふざけをしていたかと思えば、あっという間にそれが幼児の怒りとなって爆発し、巨大な破壊の野獣に変身する。",
   },
@@ -1003,7 +1043,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.55,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "陽気で立派な巨体を持つ、荒くれた風貌のグラガスは、常に人々の気持ちを明るくさせる新たな方法を探している醸造家だ。",
   },
@@ -1026,7 +1067,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "マルコム・グレイブスは傭兵、ギャンブラー、泥棒としてその名を知られた存在で、訪れたあらゆる街や帝国で指名手配されている。",
   },
@@ -1049,7 +1091,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "魔法によって人間となり、命を与えられた元人形のグウェンは、かつて自分を生み出したまさにその道具を携えている。",
   },
@@ -1072,7 +1115,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.55
 }),
     blurb: "生者の魂を永遠に狩るという呪いを受けたヘカリムは人間と獣が融合した亡霊だ。",
   },
@@ -1095,7 +1139,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "変わり者のセシル・B・ハイマーディンガー教授は、史上稀にみる革新的な発明家の一人として称賛される存在だ。",
   },
@@ -1118,7 +1163,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.8999999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.6
 }),
     blurb: "フェイは陰鬱な芸術家で、見事な作品を生み出すことでアイオニアの悪人を罰し、罪なき者を慰める。",
   },
@@ -1141,7 +1187,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "イラオイは頑強な巨体の持ち主だが、その不屈の信仰心はそれ以上に大きい。",
   },
@@ -1164,7 +1211,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.45
 }),
     blurb: "ノクサスのアイオニア占領は数多くの英雄を生み出すことになったが、ナヴォリ出身の若きイレリアほど傑出した才能は存在しない。",
   },
@@ -1187,7 +1235,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "「豊緑の神秘」の名で広く知られるアイバーン・ブランブルフットは、ルーンテラの森を渡り歩きながら行く先々で生命の種を蒔く、奇妙な半人半樹である。",
   },
@@ -1210,7 +1259,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "ルーンテラの嵐を操るジャンナは、謎めいた風の精霊として寄る辺ないゾウンの人々を守っている。",
   },
@@ -1239,7 +1289,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.8,
   mobility: 0.6,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.4
 }),
     blurb: "デマーシア王子。先頭に立ち、王国の理念のために槍を振るう。",
   },
@@ -1262,7 +1313,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.84,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "ジャックスはイカシアで現存する最後の武器使いだ。",
   },
@@ -1285,7 +1337,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.7
 }),
     blurb: "ジェイス・タリスは天才的な発明家であり、友人のビクターと共にヘクステックの秘密を初めて大きく解き明かした人物でもある。",
   },
@@ -1308,7 +1361,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.95,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "ジンは殺人を芸術であると信じてやまないサイコパスである。",
   },
@@ -1337,7 +1391,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.4,
   mobility: 0.2,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.7
 }),
     blurb: "ゾウン出身の混沌そのもの。退屈ほど嫌いなものはない。",
   },
@@ -1360,7 +1415,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "幼少期にヴォイドに囚われたカイ＝サは、不屈の精神と意志の力で生き延びた。",
   },
@@ -1383,7 +1439,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.7
 }),
     blurb: "報復を誓い、復讐を司る亡霊カリスタは、偽り人や裏切りし者を狩るためシャドウアイルから召喚される。",
   },
@@ -1406,7 +1463,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "カルマは他の誰にも増して、アイオニアの精神性を重んじる伝統を体現する存在だ。",
   },
@@ -1429,7 +1487,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "忘却の使徒、不死の亡霊カーサスは、呪いの歌を口にしながらその不吉な姿を露わにする。",
   },
@@ -1452,7 +1511,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "世界の最も昏き闇を炎で切り裂くカサディンは、自身にあまり時間が残されていないことを理解している。",
   },
@@ -1480,7 +1540,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0,
   mobility: 0.95,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.45
 }),
     blurb: "ノクサス貴族の暗殺者。父の遺志を継ぎ刃を振るう。",
   },
@@ -1503,7 +1564,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.7
 }),
     blurb: "ルーン戦争の真っただ中にターゴンの神髄の子として生を受けたケイルは、母の意志を引き継いで、聖なる炎の翼を纏い正義のために戦っている。",
   },
@@ -1526,7 +1588,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.45
 }),
     blurb: "恐るべき影の魔術の卓越した使い手であるシエダ・ケイン。",
   },
@@ -1549,7 +1612,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "ケネンは電光石化の素早さでアイオニアの均衡を保つだけでなく、「均衡の守人」の中で唯一のヨードルでもある。",
   },
@@ -1577,7 +1641,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.3,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "適応し進化し続けるヴォイドの捕食者。最強の獲物を求める。",
   },
@@ -1600,7 +1665,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "別々の存在なれど、決して離れることはない──キンドレッドは死の本質を対で指し示す。",
   },
@@ -1623,7 +1689,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.4,
   mobility: 0.55,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.5
 }),
     blurb: "恐れ知らずで粗暴な武人であるヨードルのクレッドは、ノクサスの持つ激情的な無鉄砲さを体現しており、上官には信用されず、貴族には毛嫌いされているが、帝国の兵士たちに",
   },
@@ -1646,7 +1713,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "イカシアの荒れ地の奥深くにあるヴォイドの浸食から生まれたコグ＝マウは腐食性の大きな口を持つ好奇心旺盛な腐敗した生物だ。",
   },
@@ -1669,7 +1737,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.8999999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.55
 }),
     blurb: "シュリーマの砂漠に位置する貴重なオアシス、ナズーマ。",
   },
@@ -1697,7 +1766,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.4,
   mobility: 0.85,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.5
 }),
     blurb: "黒薔薇会の指導者。幻影を操り権力の影を支配する。",
   },
@@ -1720,7 +1790,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.45
 }),
     blurb: "アイオニアの古代の格闘技をマスターしたリー・シンは、龍の精霊のエッセンスを操ってあらゆる困難を克服する厳しい訓練を積んだ格闘家だ。",
   },
@@ -1749,7 +1820,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.4,
   cc: 0.95,
   mobility: 0.4,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.4
 }),
     blurb: "太陽の戦士。仲間を守る盾として光を放つ。",
   },
@@ -1772,7 +1844,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.55,
   mobility: 0.55,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "極度の恥ずかしがり屋であるリリアは子鹿の妖精で、不安を胸に秘めつつもアイオニアの森の中を歩き回っている。",
   },
@@ -1795,7 +1868,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.6
 }),
     blurb: "リサンドラの魔力は清らかな氷さえも闇で汚し、暗く恐ろしいモノへとねじ曲げる。",
   },
@@ -1818,7 +1892,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "光の番人であるルシアンは、二挺の古の拳銃を携え、亡者の魂を追い詰めて浄化するハンターだ。",
   },
@@ -1841,7 +1916,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "ルルは魔法で夢のような幻想や空想の生き物を作り出すことで知られるヨードルのメイジで、ピックスという妖精の相棒と一緒にルーンテラを放浪している。",
   },
@@ -1870,7 +1946,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.7,
   mobility: 0.2,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "魔法を秘めた貴族の少女。光の力で仲間を導く。",
   },
@@ -1893,7 +1970,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.6
 }),
     blurb: "マルファイトは混沌とした世界に祝福の秩序をもたらそうと苦闘する、生きた岩石の巨大な生物だ。",
   },
@@ -1916,7 +1994,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.6
 }),
     blurb: "あらゆる生命の合一にすべてを捧げる熱狂的な予言者マルザハールは、新たに現れたヴォイドこそルーンテラを救済へと導く道なのだと固く信じている。",
   },
@@ -1939,7 +2018,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.5
 }),
     blurb: "荒々しい巨大な樹人、マオカイは、シャドウアイルで自然界にあってはならない怨念に立ち向かう。",
   },
@@ -1967,7 +2047,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0,
   mobility: 0.6,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.7
 }),
     blurb: "無拘流剣術の最後の継承者。弟子に流派を伝える。",
   },
@@ -1990,7 +2071,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "メル・メダルダは、かつてはノクサスで最大の権勢を誇ったメダルダ家の後継者と目される人物。",
   },
@@ -2013,7 +2095,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "イシュタル出身の心あたたかい少年。",
   },
@@ -2041,7 +2124,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.3,
   mobility: 0.3,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.4
 }),
     blurb: "母を殺した海賊王に復讐を果たした賞金稼ぎ。",
   },
@@ -2064,7 +2148,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "ヴァスタヤのトリックスターであるウーコンは、自身の強さと俊敏さ、さらに賢さを駆使して敵を翻弄し、優位に立って戦うことを得意とする。",
   },
@@ -2087,7 +2172,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.55,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "二度殺され、三度生まれたモルデカイザーは死霊術によって人の魂を拘束し、彼らを永遠の奴隷に変えてしまう、古の時代の残忍な武闘王である。",
   },
@@ -2110,7 +2196,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.1
+  difficulty: 0.1,
+  scaling: 0.6
 }),
     blurb: "天界の存在であると同時に定命でもあるという二つの性質の間で葛藤を抱えるモルガナは、人間性をつなぎとめるために自身の翼を縛り付け、己の苦痛と悔恨を味わわせるために",
   },
@@ -2133,7 +2220,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.45
 }),
     blurb: "シュリーマの砂漠に、遠吠えが重なり響き渡る。",
   },
@@ -2156,7 +2244,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "向こう見ずな性格の海の若きヴァスタヤであるナミは、ターゴン人たちとの間で太古から続いていた協約が破られた時、マライの民として初めて海を離れて陸地に上がることになった。",
   },
@@ -2184,7 +2273,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.8,
   cc: 0.5,
   mobility: 0.2,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.85
 }),
     blurb: "シュリーマの神格にして歴史の守人。弟との因縁を背負う。",
   },
@@ -2207,7 +2297,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.5
 }),
     blurb: "ビルジウォーターに最初の桟橋ができたころからすでに伝説となっていた孤独な男──「ノーチラス」の名で知られる防具に包まれた大男は、ブルーフレイム・アイルの沖の暗い海域をさまよっている。",
   },
@@ -2230,7 +2321,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6000000000000001,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "遥か昔に途絶えたヴァスタヤ部族の末裔であるニーコは、他者の風貌を拝借してどんな集団にでも溶け込むことができる。",
   },
@@ -2253,7 +2345,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "ジャングルの奥深くで育ったニダリーは凶暴なクーガーに自由に姿を変えることができる追跡の天才だ。",
   },
@@ -2276,7 +2369,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.45
 }),
     blurb: "ニーラは遠く離れた土地で苦行を続けていた戦士で、世界で最も恐ろしく、最も巨大な敵を見つけ、それに挑戦して倒すことを求めている。",
   },
@@ -2299,7 +2393,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.45
 }),
     blurb: "知覚を持つあらゆる生物が見る悪夢が融合してできたノクターンとして知られるこの恐ろしい存在は、純悪の根源的な力である。",
   },
@@ -2322,7 +2417,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "昔々あるところに、恐ろしい怪物を倒して英雄になりたいと願う少年がいた。",
   },
@@ -2345,7 +2441,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "制止不能な破壊の力、斧を振りかざすオラフが求めているのは栄光にあふれる戦いの中での自らの死だ。",
   },
@@ -2368,7 +2465,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "オリアナはかつては好奇心旺盛な普通の少女だったが、今では技術の粋を駆使した機械仕掛けの体になってしまった。",
   },
@@ -2391,7 +2489,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.48,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "オーンは鍛冶と技巧を司る、フレヨルドの半神半人だ。",
   },
@@ -2419,7 +2518,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.75,
   cc: 0.5,
   mobility: 0.5,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.3
 }),
     blurb: "戦争の神格を宿した不屈の戦士。何度倒れても立ち上がる。",
   },
@@ -2442,7 +2542,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.48,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.55
 }),
     blurb: "ルーンテラの地に勇敢なチャンピオンは数多いものの、ポッピーほど粘り強い者はそうはいない。",
   },
@@ -2469,7 +2570,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.75,
   cc: 0.7,
   mobility: 0.85,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.45
 }),
     blurb: "海の底から戻ってきた裏切られた銛打ち。裏切り者リストを消していく。",
   },
@@ -2492,7 +2594,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.24,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.45
 }),
     blurb: "ジャングルに囲まれた都市イシャオカンで、キヤナは玉座ユン・タルを目指して無情な策略を企てている。",
   },
@@ -2515,7 +2618,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.7
 }),
     blurb: "クインは敵陣の奥深くに侵入して危険な任務を遂行するデマーシアの精鋭レンジャー騎士だ。",
   },
@@ -2538,7 +2642,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.5,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "気まぐれで魅力的なラカンは、ヴァスタヤの悪名高きトラブルメーカーであり、ロトラン部族史上最高のバトルダンサーだ。",
   },
@@ -2561,7 +2666,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "ラムス──謎に包まれたこの生き物を、聖なる存在と崇拝してやまない者は多い。",
   },
@@ -2584,7 +2690,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "頂点捕食者であるレク＝サイは地中を移動し、獲物を奇襲して貪り食う無情なヴォイドの生物だ。",
   },
@@ -2607,7 +2714,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.05,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.05
+  difficulty: 0.05,
+  scaling: 0.5
 }),
     blurb: "黒薔薇団による残酷な実験の産物であるレルは、ノクサスの打倒を胸に誓った、反逆の生きた兵器である。",
   },
@@ -2630,7 +2738,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "レナータ・グラスクは幼少期を過ごした家の焼け跡から、その名前と、両親が遺した錬金術の研究資料だけを手に再び立ち上がった。",
   },
@@ -2653,7 +2762,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "威圧的な巨体に怒りをみなぎらせた超越者レネクトンは、灼熱のシュリーマに生まれ出でた。",
   },
@@ -2676,7 +2786,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.45
 }),
     blurb: "獰猛にして卓越…ヴァスタヤのハンターであるレンガーは、危険な生物を追跡して殺す、そのスリルを味わうために生きている。",
   },
@@ -2699,7 +2810,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.45
 }),
     blurb: "リヴェンはかつてノクサス軍の剣術家だったが、今では自らが過去に征服しようとした土地で追放者として暮らしている。",
   },
@@ -2722,7 +2834,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.55,
-  difficulty: 0.95
+  difficulty: 0.95,
+  scaling: 0.6
 }),
     blurb: "ランブルは若くて気性の荒い発明家だ。",
   },
@@ -2745,7 +2858,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "ライズは類まれな能力を持つルーンテラ屈指の魔術師として知られ、古くから揺るぎない信念を持って活動している。",
   },
@@ -2768,7 +2882,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "サミーラはゆるぎない自信を浮かべた目で死を見つめ、行く先々でスリルを探し求める。",
   },
@@ -2791,7 +2906,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.5
 }),
     blurb: "残酷で情け容赦のないセジュアニは、フレヨルドでもっとも恐れられる部族のひとつであるウィンタークロウ族のアイスボーンの戦母だ。",
   },
@@ -2814,7 +2930,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.7,
   mobility: 0.45,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.7
 }),
     blurb: "幼い頃に呪いを受け、超自然現象である「黒き霧」に追われてきたセナは、「光の番人」として知られる聖なる騎士団に加わり、霧と激しく戦った──しかし、彼女は冷酷な亡霊",
   },
@@ -2837,7 +2954,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.05,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.05
+  difficulty: 0.05,
+  scaling: 0.6
 }),
     blurb: "ピルトーヴァーでゾウン人の両親のもとに生まれたセラフィーンは、他者の魂の声を聴くことができる──世界が彼女に歌いかけ、彼女も歌い返す。",
   },
@@ -2860,7 +2978,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.55
 }),
     blurb: "ノクサスとの戦争の機運が高まる中、セトはアイオニアで勢力を増しつつある裏社会の親玉として名を上げた。",
   },
@@ -2883,7 +3002,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.84,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.45
 }),
     blurb: "殺人と暴力に悦びを見出すシャコは、かつては寂しい王子の遊び道具として作られた魔法の操り人形だった。",
   },
@@ -2906,7 +3026,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.36,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.5
 }),
     blurb: "シェンは「均衡の守人」として知られるアイオニアの秘密の戦士たちの長「黄昏の瞳」であり、全ての感情、偏見、自尊心などの迷いから逃れるため、霊的領域と物質世界の間に",
   },
@@ -2929,7 +3050,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "シヴァーナは恐るべき半龍の戦士だ。",
   },
@@ -2952,7 +3074,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "シンジドは優れた錬金術師だが、倫理観が欠如した存在でもあり、その実験は極めて残忍な犯罪者ですら吐き気をもよおすほどだ。",
   },
@@ -2975,7 +3098,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.48,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.55
 }),
     blurb: "サイオンはデマーシア王を素手で絞殺したことでノクサス中で崇敬されていた過去の英雄だったが、死してなお帝国に奉仕させるために、死の淵から甦らされた。",
   },
@@ -2998,7 +3122,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6000000000000001,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "シヴィアは、金のためならどのような仕事でも引き受ける。",
   },
@@ -3021,7 +3146,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.55
 }),
     blurb: "古代の巨大生物種ブラカーンであるスカーナーは、イシュタルの支配層“ユン・タル”初代メンバーのひとりとして崇拝されている。",
   },
@@ -3044,7 +3170,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "ノクサスの辺境にある岩だらけの崖に身を隠し、幼きドラゴンは母親に見守られながら、カマヴォールのインペリアルドラゴンの継承者とは何たるかを学んでいる。",
   },
@@ -3067,7 +3194,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "ソナはデマーシアで随一の弦楽器エトワールの演奏家であり、その優雅な和音と活気あふれる旋律によってのみ自らの意思を伝えることができる。",
   },
@@ -3090,7 +3218,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.6
 }),
     blurb: "霊峰ターゴンの彼方にある宇宙の次元をさまよっていたソラカは、定命の種族を彼らの暴力的な本能から守るために、自らの永遠の命を手放してやってきた。",
   },
@@ -3118,7 +3247,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.7,
   mobility: 0.2,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "ノクサス大将軍にして黒薔薇会の謀略家。秘密と引き換えに力を得る。",
   },
@@ -3141,7 +3271,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "デマーシアの貧しい地域に育ったドレグボーンのサイラスは、この大都の闇を象徴する存在となった。",
   },
@@ -3164,7 +3295,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "シンドラは驚異的な力を操るアイオニアの恐るべきメイジである。",
   },
@@ -3187,7 +3319,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.5
 }),
     blurb: "タム・ケンチは過去に様々な名前で呼ばれてきた悪魔であり、ルーンテラの水路を移ろいながら、尽きることのない食欲を満たすために他者を餌食にしている。",
   },
@@ -3210,7 +3343,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "タリヤは少女の好奇心と大人の責任感の間で揺れ動く、シュリーマ出身の流浪のメイジだ。",
   },
@@ -3233,7 +3367,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6000000000000001,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.45
 }),
     blurb: "タロンは闇を駆ける刃であり、誰にも悟られることなく攻撃し、気付かれる前に脱出することができる非情な殺し屋だ。",
   },
@@ -3256,7 +3391,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.5
 }),
     blurb: "タリックは守護の神髄であり、ルーンテラの生命、愛、美の守護者として驚異的な力を発揮する。",
   },
@@ -3284,7 +3420,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.3,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.4
 }),
     blurb: "バンドル偵察軍の小さな英雄。猛毒のダーツで森を守る。",
   },
@@ -3311,7 +3448,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.4,
   cc: 0.95,
   mobility: 0.5,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.5
 }),
     blurb: "霊魂を集める残忍な獄吏。被害者の苦悶を糧とする。",
   },
@@ -3334,7 +3472,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.8400000000000001,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "他のヨードルたちは自らのエネルギーを発見や発明、またはただのいたずらに注いでいるが、トリスターナはいつだって偉大な戦士の冒険に憧れていた。",
   },
@@ -3357,7 +3496,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.55
 }),
     blurb: "トランドルは巨大な図体をした底意地の悪いトロールであり、どんな相手でも力で抑えつけて従わせる──それはフレヨルド自体も例外ではない。",
   },
@@ -3385,7 +3525,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.3,
   mobility: 0.5,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.65
 }),
     blurb: "怒りで自らを蘇らせる蛮族の王。アッシュの伴侶。",
   },
@@ -3408,7 +3549,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.9
+  difficulty: 0.9,
+  scaling: 0.7
 }),
     blurb: "ツイステッド・フェイトは、世界中を渡り歩いては賭けとイカサマで成り上がってきた、悪名高きカード使いだ。",
   },
@@ -3431,7 +3573,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "トゥイッチは汚物を漁ることに情熱を持つ、生まれながらの疫病ネズミで、そのためなら前足を汚すことも恐れはしない。",
   },
@@ -3454,7 +3597,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.55
 }),
     blurb: "現存するスピリットウォーカーの中でも最大の力を持つウディアは、フレヨルドのあらゆる精霊と心を通わせることができる。",
   },
@@ -3477,7 +3621,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.55
 }),
     blurb: "かつてノクサスの処刑人として数多くの死体を積み上げたアーゴットは、自らが仕えた帝国に裏切られた。",
   },
@@ -3500,7 +3645,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.55,
   mobility: 0.45,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.55
 }),
     blurb: "古代のダーキン種族のひとつに属するヴァルスは、敵を苦しめ狂気に追い込んでから矢でとどめを刺す恐ろしい殺戮者だった。",
   },
@@ -3523,7 +3669,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.2,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.7
 }),
     blurb: "シャウナ・ヴェインはデマーシアの無慈悲な怪物ハンターであり、自分の家族を殺した悪魔を見つけ出して殺すことに生涯をささげている。",
   },
@@ -3546,7 +3693,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "定命の者が恐れて近づこうとしなかった力を受け入れたベイガーは情熱的な闇の魔術の使い手だ。",
   },
@@ -3569,7 +3717,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "ルーンテラに現れた最初のヴォイドの生物がヴェル＝コズであるかどうかは定かではないが、彼の残酷さと計算された知性にかなうヴォイドの生物は他に存在しない。",
   },
@@ -3592,7 +3741,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.05,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.05
+  difficulty: 0.05,
+  scaling: 0.6
 }),
     blurb: "闇深きシャドウアイルの中心には、不気味な濃霧の中を一人満足げに歩くヨードルがいる。",
   },
@@ -3620,7 +3770,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.85,
   mobility: 0.7,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.45
 }),
     blurb: "ヘックステック・ガントレットの拳で街を守る元無法者。",
   },
@@ -3643,7 +3794,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.48,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.45
 }),
     blurb: "遠い昔に滅びた王国の支配者であったヴィエゴは、千年以上前に亡き妻を甦らせようと試みたことで「破滅」と呼ばれる魔力の大災厄を引き起こし、自らも命を落とした。",
   },
@@ -3670,7 +3822,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.7,
   cc: 0.5,
   mobility: 0.2,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.65
 }),
     blurb: "機械化こそ進化と信じる科学者。栄光の進化を成し遂げる。",
   },
@@ -3693,7 +3846,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.55,
   mobility: 0.55,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "ブラッドミアは定命の者の血に飢えた悪魔であり、帝国の建国時代からずっとノクサスの政治に影響を与えてきている。",
   },
@@ -3716,7 +3870,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "彼を崇敬する者にとって、ボリベアは嵐を体現した存在だ。",
   },
@@ -3739,7 +3894,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.3
+  difficulty: 0.3,
+  scaling: 0.55
 }),
     blurb: "ワーウィックはゾウンの灰色の路地を徘徊する怪物だ。",
   },
@@ -3762,7 +3918,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.7
 }),
     blurb: "危険で正確。",
   },
@@ -3785,7 +3942,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.6
 }),
     blurb: "古代シュリーマの超越魔人ゼラスは、魔法の石棺の破片に封じられ、悶え苦しむ神秘のエネルギー体である。",
   },
@@ -3808,7 +3966,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.55
 }),
     blurb: "シン・ジャオは、現王朝のライトシールド王家に忠誠を誓う毅然とした戦士だ。",
   },
@@ -3837,7 +3996,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.75,
   cc: 0.3,
   mobility: 0.95,
-  difficulty: 0.85
+  difficulty: 0.85,
+  scaling: 0.65
 }),
     blurb: "風を纏う流浪の剣士。汚名を晴らす旅を続ける。",
   },
@@ -3860,7 +4020,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.45
 }),
     blurb: "生前、ヨネはヤスオの腹違いの兄であり、村の剣術道場で名を知られた生徒だった。",
   },
@@ -3883,7 +4044,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.55
 }),
     blurb: "ヨリックは忘れ去られて久しいある教団の修道士として唯一生き残った。",
   },
@@ -3906,7 +4068,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.55
 }),
     blurb: "アイオニアへの揺るぎない忠誠心を胸にユナラは精霊界に身を隠し、均衡の守人に代々受け継がれる遺物「アイオン・エルナ」で修行を重ねた。",
   },
@@ -3929,7 +4092,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.78,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.6
 }),
     blurb: "バンドルシティからやってきた魔法ネコのユーミは、かつてはノラという名のヨードル魔女の使い魔だった。",
   },
@@ -3952,7 +4116,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.4,
   mobility: 0.8,
-  difficulty: 0.2
+  difficulty: 0.2,
+  scaling: 0.45
 }),
     blurb: "光と闇、相反する力の両方を操る堕ちし者、ザーヘンは、己を蝕もうとする穢れに抗い続けながら、同胞であるダーキンたちを狩る。",
   },
@@ -3975,7 +4140,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.55,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.55
 }),
     blurb: "ケミテック層を流れ、ゾウンの汚水地区の奥深く、ぽつんと隔離された大空洞に溜まった有毒液の池。",
   },
@@ -4004,7 +4170,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.85,
   cc: 0.1,
   mobility: 0.85,
-  difficulty: 0.8
+  difficulty: 0.8,
+  scaling: 0.5
 }),
     blurb: "影の魔術を極めた暗殺結社の長。禁忌の力を躊躇なく使う。",
   },
@@ -4027,7 +4194,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6599999999999999,
   cc: 0.4,
   mobility: 0.45,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.7
 }),
     blurb: "ゾウンの労働階級に生まれたゼリは、頑固で活発な若者だ。",
   },
@@ -4050,7 +4218,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.66,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.4
+  difficulty: 0.4,
+  scaling: 0.6
 }),
     blurb: "爆弾を愛する気の短いヨードルのジグスは爆発的な性質の持ち主だ。",
   },
@@ -4073,7 +4242,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.6,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.6
+  difficulty: 0.6,
+  scaling: 0.6
 }),
     blurb: "ジリアンはかつてはイカシアの強力なメイジだったが、故郷がヴォイドに破壊されるのを目撃して、時の流れに執着するようになった。",
   },
@@ -4096,7 +4266,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.54,
   cc: 0.55,
   mobility: 0.35,
-  difficulty: 0.5
+  difficulty: 0.5,
+  scaling: 0.6
 }),
     blurb: "いたずら、想像、変化を具現化する存在であるゾーイは、時空を駆け抜けて霊峰ターゴンのメッセージ──世界の再編を招く出来事の到来──を告げる。",
   },
@@ -4119,7 +4290,8 @@ export const CHAMPIONS: Champion[] = [
   damage: 0.72,
   cc: 0.7,
   mobility: 0.35,
-  difficulty: 0.7
+  difficulty: 0.7,
+  scaling: 0.6
 }),
     blurb: "古代の魔法の大惨事の中で生まれたザイラは自然の怒りが具現化した存在であり、人間と植物が融合した妖艶な姿で、一歩進むたびに新たな生命を生み出していく。",
   },

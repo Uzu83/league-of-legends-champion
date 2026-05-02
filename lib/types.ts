@@ -76,6 +76,7 @@ export const GAME_DIMS = [
   "cc",
   "mobility",
   "difficulty",
+  "scaling",
 ] as const;
 export type GameDim = (typeof GAME_DIMS)[number];
 
@@ -88,6 +89,7 @@ export const GAME_DIM_AXIS_JA: Record<GameDim, { low: string; high: string }> = 
   cc: { low: "CC弱", high: "CC強" },
   mobility: { low: "鈍重", high: "機敏" },
   difficulty: { low: "やさしい", high: "難しい" },
+  scaling: { low: "序盤型", high: "終盤型" },
 };
 
 export const ROLES = ["Top", "Jungle", "Mid", "ADC", "Support"] as const;
