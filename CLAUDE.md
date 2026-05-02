@@ -1,0 +1,101 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project
+
+LOL キャラタイプ診断 (League of Legends Character Type Diagnosis) — a stateless, mobile-first Next.js web service that maps a user's personality / play-style answers to the closest LoL champion via vector distance.
+
+The headline differentiator is the **two-entry design**: users pick either ストーリー入り口 (worldview / values / relations) or ゲーム性能入り口 (role / archetype / skill traits). Each entry asks 10 Likert questions and ranks all champions by Euclidean distance to the user's answer vector. The result page cross-promotes the *other* entry.
+
+This is the LOL counterpart to the **サイリウムカラー診断 (penlightcolor)** project — the spec mandates inheriting that project's stack and stateless-content-addressed-URL DNA.
+
+Source spec: Notion page `LOLキャラタイプ診断` (id `3541ef84-88d5-8181-9de6-ede4a562d202`).
+
+## Toolchain
+
+mise + pnpm. Versions are pinned in `.mise.toml`.
+
+```bash
+mise install                # install Node 24 + pnpm 10
+pnpm install
+pnpm dev                    # next dev (Turbopack)
+pnpm build && pnpm start    # production
+pnpm test                   # vitest run
+pnpm test -- tests/scoring.test.ts  # single file
+pnpm typecheck              # tsc --noEmit
+pnpm check                  # biome lint + format
+pnpm fmt                    # biome format --write .
+```
+
+## Architecture
+
+### Data flow
+
+1. User picks an entry on `/` → `/q/[type]` (`type ∈ {story, game}`).
+2. `app/q/[type]/quiz-client.tsx` renders 10 questions from `lib/questions.ts`. Answers go into a Zustand store persisted to `sessionStorage` (`lib/store.ts`).
+3. On submit, answers are encoded into a hash (e.g. `s5443215543`) by `lib/encoding.ts` and the user is routed to `/result/[hash]`.
+4. `/result/[hash]` decodes the hash → calls `topMatches()` from `lib/scoring.ts` → renders best match + 3 close alternatives + cross-entry CTA.
+5. `/api/og?hash=…` (Edge runtime) generates the Twitter Card / OGP image via `next/og`.
+
+The hash *is* the data. There is no backend, no DB, no user state across sessions. Same hash → same result, always.
+
+### Scoring math
+
+`lib/scoring.ts`:
+
+- Each question has a sparse weight map over named dims (e.g. `{ honor: 0.8, organization: 0.9 }`).
+- A Likert answer `a ∈ {1..5}` is normalized to `(a-3)/2 ∈ [-1,1]` and added (weighted) to the user vector.
+- Each champion has a vector in `[0,1]^D` per entry; for distance we map it to bipolar `[-1,1]` via `2v − 1`, then take Euclidean distance.
+- `D = 15` for story (10 values + 5 relations), `D = 19` for game (5 roles + 8 archetypes + 6 skills). Dim names live in `lib/types.ts`.
+
+If you add or rename a dim, update **all four**: `STORY_DIMS`/`GAME_DIMS` constants, the JA label maps, every champion's `storyVec`/`gameVec`, and the question weight maps.
+
+### Champion data
+
+`lib/champions.ts` currently seeds ~30 representative champions. The spec calls for full coverage of all 170+ champions (Phase 2 — generated in bulk via Claude Max). The data shape is `Champion` from `lib/types.ts`; the `s({...})` / `g({...})` helpers fill missing dims with 0 so each entry stays readable.
+
+`ddragonId` matches the DDragon API casing (e.g. `JarvanIV`, `MissFortune`, `Khazix`). Portraits resolve via `championPortrait(ddragonId)` against `DDRAGON_VERSION` — bump the version string when Riot ships a new patch with new champions.
+
+### Routes
+
+- `/` — two-entry home (static)
+- `/q/story`, `/q/game` — quiz client (SSG via `generateStaticParams`)
+- `/result/[hash]` — dynamic, decodes hash; bad hash → 404
+- `/champions/[id]` — SSG one page per champion in `CHAMPIONS`
+- `/api/og` — Edge runtime, `next/og` `ImageResponse`
+
+### `next/og` gotcha
+
+Every `<div>` with more than one child *must* have an explicit `display: flex | contents | none` in its inline style. `flexDirection` alone is not enough. If you see "failed to pipe response" with that exact message, you forgot a `display`.
+
+## Conventions
+
+- **Tailwind v4** via `@tailwindcss/postcss` (PostCSS plugin), not the legacy CLI. Theme tokens are defined in `app/globals.css` under `@theme {}` and consumed via arbitrary-value syntax like `text-(--color-accent)`.
+- **TypeScript strict** with `noUncheckedIndexedAccess` — array/record access yields `T | undefined`. Use `array[0]!` or `array[i] ?? fallback`.
+- **All user-facing strings are Japanese.** i18n is out of scope for now.
+- **Zustand store is `"use client"`** and uses sessionStorage (not localStorage) — diagnoses don't persist across browser restarts on purpose.
+- **No backend.** If a feature needs persistence, it should be encoded in the URL or dropped.
+
+## Hard Constraints (excerpt — full version in spec)
+
+- Generic LoL lore can include "対立 / 復讐 / 死 / 戦争" because those are core to LoL fiction; do **not** prescribe them onto the *user* ("あなたは復讐に生きるべき" is out).
+- 政治 / 宗教 / 差別 の現実世界マッピングは禁止。摂食障害・自傷の言及も禁止。
+- Vocabulary: avoid `Go`/`Golang`/`REST API` — use `endpoint` or `API route`.
+- 曜日表示は日曜始まり。
+
+## Approval Gates
+
+Confirm with the user before:
+
+- Adding a new dependency to `package.json`
+- Bumping Node / Next.js / Tailwind major versions
+- Changing env vars or deploy config
+- Deleting files or doing a large refactor
+
+## Roadmap (from the spec)
+
+1. Phase 2 (data) — populate the remaining ~140 champions, refine vector weights, finalize Hard Constraints for LoL lore.
+2. Phase 3 (MVP) — story entry done first; verify OGP on Vercel.
+3. Phase 4 — game entry + cross-entry funnel.
+4. Phase 5 — public launch, Lighthouse mobile ≥ 90, AdSense after DAU threshold.

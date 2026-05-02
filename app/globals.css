@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0e1a;
+  --color-bg-soft: #131a2c;
+  --color-card: #1b2540;
+  --color-accent: #c89b3c;
+  --color-accent-soft: #f0e6d2;
+  --color-rune: #5cd0ff;
+  --color-text: #f0e6d2;
+  --color-text-muted: #a09b8c;
+  --font-display: ui-serif, "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: ui-sans-serif, system-ui, "Hiragino Sans", "Yu Gothic", sans-serif;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+      ellipse at 20% 10%,
+      rgba(92, 208, 255, 0.08),
+      transparent 60%
+    ),
+    radial-gradient(ellipse at 80% 80%, rgba(200, 155, 60, 0.08), transparent 60%);
+  z-index: -1;
+}
