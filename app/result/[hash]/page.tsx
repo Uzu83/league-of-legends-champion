@@ -279,13 +279,22 @@ export default async function ResultPage({ params }: PageParams) {
       </section>
 
       <section className="rounded-xl border border-(--color-rune)/30 bg-(--color-rune)/5 p-5 text-center">
-        <p className="text-sm text-(--color-text-muted)">もう一方の入り口でも診断できます</p>
+        <p className="text-xs text-(--color-text-muted)">しっかり診断 (20問) の続き</p>
+        <p className="mt-1 text-sm">
+          もう一方の入り口を診断すると、性格 × プレイ志向の比較ができます
+        </p>
         <Link
           href={`/q/${otherType}`}
           className="mt-3 inline-block rounded-full bg-(--color-rune) px-5 py-2 text-sm font-semibold text-black"
         >
           {otherTypeLabel}から探す →
         </Link>
+        <p className="mt-3 text-[11px] text-(--color-text-muted)">
+          両方終わったら{" "}
+          <Link href="/compare" className="text-(--color-rune) hover:underline">
+            比較ビュー
+          </Link>
+        </p>
       </section>
     </div>
   );

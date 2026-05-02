@@ -121,7 +121,7 @@ export const GAME_QUESTIONS: GameQuestion[] = [
   },
   {
     id: "g10",
-    text: "決定的な一手で、戦況を一気にひっくり返したい",
+    text: "自分の決定的な一手で、戦況を一気にひっくり返したい",
     weights: { cc: 0.8, damageStyle: 0.4, durability: 0.3, range: 0.3, scaling: 0.2 },
   },
 ];
