@@ -1,5 +1,9 @@
 # LOL キャラタイプ診断
 
+> ⚠️ **本サイトはRiot Games非公式のファンメイドプロジェクトです。**
+> Riot Games, Inc. が公式承認・スポンサーするものではありません。
+> League of Legends および Riot Games は Riot Games, Inc. の登録商標です。
+
 > あなたとLOLキャラを繋ぐ、世界観の入り口診断。
 
 性格・プレイ志向の質問10問×2エントリーで、172体のLeague of Legendsチャンピオンから最もマッチする1体 + 上位5体を提示するWeb診断サービス。
@@ -156,8 +160,34 @@ pnpm test tests/scoring.test.ts                # 特定ファイル
 
 ## ライセンス・帰属
 
-- League of Legends は Riot Games の登録商標。本サイトは非公式ファンメイド。
-- チャンピオン名・肖像は [Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon) より取得。
+- League of Legends および Riot Games は Riot Games, Inc. の登録商標。**本サイトは非公式ファンメイド。**
+- チャンピオン画像は [Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon) より取得。
+- 本サイトは [Legal Jibber Jabber (Riot Fan Content Policy)](https://www.riotgames.com/ja/legal) に従って制作。
+
+### 必須 disclaimer (フッターおよび結果ページに常設)
+
+> LOLキャラタイプ診断はライアットゲームズが公式承認するものではなく、ライアットゲームズまたはリーグ・オブ・レジェンドの製作・管理に正式に関与した者の見解に基づくものではありません。リーグ・オブ・レジェンド及びライアットゲームズはRiot Games, Inc.の商標です。
+
+## 商用化・運用ルール
+
+Riot公式 [Legal Jibber Jabber](https://www.riotgames.com/ja/legal) に基づく、本プロジェクトでの遵守事項。
+
+| 項目 | 可否 | メモ |
+| ---- | ---- | ---- |
+| AdSense等のパッシブ広告 | ✅ 条件付OK | 「不適切な広告」(ギャンブル・成人向け等) はRiot単独判断でNG。導入は様子を見ながら |
+| ペイウォール / Patreon限定機能 | ❌ NG | サイト機能は全員無料アクセスが必須 |
+| クラウドファンディング | ❌ NG | |
+| スポンサーシップ契約 | ❌ NG | 個別企業ロゴ提示は書面ライセンス無しでは不可 |
+| 法人化したビジネスエンティティ運営 | ❌ NG | 個人プレイヤーによるプロジェクトとしてのみ許可 |
+| Riot/LoL ロゴ・商標画像の使用 | ❌ NG | 書面ライセンス無しでは不可。サイトロゴは自作テキストのみ |
+| ドメイン/SNS名にRiot商標を含める | ❌ NG | 例: `leagueoflegends-shindan.com` はNG、固有造語ならOK |
+| チャンピオン名・スプラッシュアート使用 | ✅ OK | Data Dragon CDN 経由で配信 |
+| Data Dragon hot-link | ⚠️ 不明確 | 公式ドキュメントに明文化なし。実務上は許容されている運用 |
+| disclaimer 表記 | ✅ 必須 | 上記必須文言を「目立つ場所」に常設 (フッター・About等) |
+
+不安が残る論点 (DDragon hot-link、AdSense運用形態、商用判定の境界) は **jpinfo@riotgames.com** へ事前相談推奨。回答が記録に残ると最強の保険になる。
+
+詳細な調査結果は [Notion §14](https://app.notion.com/p/3541ef8488d581819de6ede4a562d202) に記録。
 
 ## ロードマップ
 

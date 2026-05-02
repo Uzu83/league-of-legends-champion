@@ -42,9 +42,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
             <Link
               href="/"
-              className="font-[var(--font-display)] text-lg font-semibold tracking-wide text-(--color-accent)"
+              className="flex items-center gap-2 font-[var(--font-display)] text-lg font-semibold tracking-wide text-(--color-accent)"
             >
               LOL キャラタイプ診断
+              <span className="rounded-sm border border-white/20 px-1.5 py-0.5 text-[10px] font-normal text-(--color-text-muted)">
+                非公式
+              </span>
             </Link>
             <nav className="text-xs text-(--color-text-muted)">
               <span>v0.1 MVP</span>
@@ -52,8 +55,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         <main className="mx-auto max-w-3xl px-4 pb-24 pt-8">{children}</main>
-        <footer className="border-t border-white/10 py-6 text-center text-xs text-(--color-text-muted)">
-          League of Legendsはライアットゲームズの登録商標です。本サイトは非公式ファンメイドです。
+        <footer className="border-t border-white/10 py-6 text-xs text-(--color-text-muted)">
+          <div className="mx-auto max-w-3xl space-y-2 px-4 text-center leading-relaxed">
+            <p>
+              <strong className="text-(--color-text)">LOLキャラタイプ診断</strong>
+              はライアットゲームズが公式承認するものではなく、ライアットゲームズまたはリーグ・オブ・レジェンドの製作・管理に正式に関与した者の見解に基づくものではありません。
+            </p>
+            <p>
+              リーグ・オブ・レジェンド及びライアットゲームズはRiot Games, Inc.の商標です。
+            </p>
+            <p className="text-[10px] opacity-60">
+              チャンピオン画像は{" "}
+              <a
+                href="https://developer.riotgames.com/docs/lol#data-dragon"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:underline"
+              >
+                Data Dragon
+              </a>
+              {" "}より配信。本サイトは
+              <a
+                href="https://www.riotgames.com/ja/legal"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="hover:underline"
+              >
+                Legal Jibber Jabber
+              </a>
+              に基づき制作されたファンプロジェクトです。
+            </p>
+          </div>
         </footer>
       </body>
     </html>
