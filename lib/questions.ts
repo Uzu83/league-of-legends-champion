@@ -23,8 +23,8 @@ export const LIKERT_LABELS = [
 export const STORY_QUESTIONS: StoryQuestion[] = [
   {
     id: "s1",
-    text: "矛盾が嫌い。筋を通せない者は信用できない",
-    weights: { honor: 0.8, organization: 0.7, justice: 0.3 },
+    text: "間違っていても、ブレない奴の方が好きだ",
+    weights: { honor: 0.7, organization: 0.6, justice: 0.3 },
   },
   {
     id: "s2",
@@ -33,8 +33,8 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s3",
-    text: "大切な人を守るためなら、自分の正義も曲げられる",
-    weights: { protection: 0.7, love: 0.7, family: 0.7 },
+    text: "大切な人を守るためなら、嫌われ役になる覚悟がある",
+    weights: { protection: 0.8, love: 0.6, family: 0.6 },
   },
   {
     id: "s4",
@@ -53,7 +53,7 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s7",
-    text: "自分が誰よりも強くなれば、すべて解決する",
+    text: "自分が頂点に立てば、世界の方が動く",
     weights: { ambition: 0.8, solo: 0.6 },
   },
   {
@@ -63,12 +63,12 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
   },
   {
     id: "s9",
-    text: "師の教えが、今も自分の支柱だ",
+    text: "迷った時、頭に浮かぶ顔が一つある",
     weights: { mentor: 0.9 },
   },
   {
     id: "s10",
-    text: "好敵手がいると、刃が鋭くなる",
+    text: "ライバルがいると、自分も伸びる気がする",
     weights: { rival: 0.8, ambition: 0.3 },
   },
 ];
@@ -76,38 +76,38 @@ export const STORY_QUESTIONS: StoryQuestion[] = [
 export const GAME_QUESTIONS: GameQuestion[] = [
   {
     id: "g1",
-    text: "ゆっくり積み上げ、最後に独力で薙ぎ払いたい",
-    weights: { durability: 0.5, damage: 0.6, range: -0.3 },
+    text: "じわじわ強くなるより、最初から派手に活躍したい",
+    weights: { scaling: -0.7, damage: 0.3, damageStyle: 0.3 },
   },
   {
     id: "g2",
-    text: "正面より奇襲。横からゲームを引っかき回す",
+    text: "正面突破より、予想外の動きで相手を出し抜きたい",
     weights: { mobility: 0.7, difficulty: 0.3, damageStyle: 0.3 },
   },
   {
     id: "g3",
-    text: "戦略こそ全て",
-    weights: { skillBased: 0.6, cc: 0.4, difficulty: 0.4, damage: 0.2 },
+    text: "最後にすべてをひっくり返す方が好きだ",
+    weights: { scaling: 0.8, damage: 0.3, durability: 0.2 },
   },
   {
     id: "g4",
-    text: "射程ギリギリで間合いを取り、一方的に削り続けたい",
+    text: "遠くから少しずつダメージを与えて、相手を追い詰めたい",
     weights: { range: 0.9, damageStyle: -0.6, damage: 0.4 },
   },
   {
     id: "g5",
-    text: "強い味方を育て、勝利はみんなで掴みたい",
+    text: "自分は表に出ず、味方を支えて勝ちたい",
     weights: { cc: 0.5, damage: -0.4, range: 0.4, skillBased: 0.5 },
   },
   {
     id: "g6",
-    text: "重要人物を一瞬で葬り去ることこそ至高",
+    text: "敵のエース格を一瞬で倒す爽快感が欲しい",
     weights: { damageStyle: 0.9, damage: 0.7, mobility: 0.5 },
   },
   {
     id: "g7",
-    text: "誰よりも先に飛び込み、起点になりたい",
-    weights: { durability: 0.7, cc: 0.7, damage: -0.3, range: -0.4 },
+    text: "真っ先に飛び込んで、戦いを始めるのは自分だ",
+    weights: { durability: 0.7, cc: 0.7, damage: -0.3, range: -0.4, scaling: -0.2 },
   },
   {
     id: "g8",
@@ -116,12 +116,12 @@ export const GAME_QUESTIONS: GameQuestion[] = [
   },
   {
     id: "g9",
-    text: "踏み込んでは引く、その駆け引きが楽しい",
+    text: "攻めて引いてを繰り返すヒット&アウェイが好き",
     weights: { mobility: 0.8, range: 0.3, damageStyle: 0.2 },
   },
   {
     id: "g10",
-    text: "一発の起点で集団戦をひっくり返したい",
-    weights: { cc: 0.8, damageStyle: 0.4, durability: 0.3, range: 0.3 },
+    text: "決定的な一手で、戦況を一気にひっくり返したい",
+    weights: { cc: 0.8, damageStyle: 0.4, durability: 0.3, range: 0.3, scaling: 0.2 },
   },
 ];
