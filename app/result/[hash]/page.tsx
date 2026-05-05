@@ -272,7 +272,7 @@ export default async function ResultPage({ params }: PageParams) {
               {opposite.champion.titleJa} / {REGION_LABEL_JA[opposite.champion.region]}
             </p>
             <p className="mt-1 text-xs text-red-300/80">
-              絶対に分かり合えないかもしれない (距離 {opposite.distance.toFixed(2)})
+              分かり合えないかもしれない (距離 {opposite.distance.toFixed(2)})
             </p>
           </div>
         </Link>
