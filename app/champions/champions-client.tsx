@@ -4,15 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { championPortrait } from "@/lib/champions";
+import { archetypeLabel, championName, dict, type Locale, regionLabel } from "@/lib/i18n";
 import {
-  ARCHETYPE_LABEL_JA,
   type Archetype,
   type Champion,
-  REGION_LABEL_JA,
   REGIONS,
   type Region,
-  type Role,
   ROLES,
+  type Role,
 } from "@/lib/types";
 
 const ALL_ARCHETYPES: Archetype[] = [
@@ -26,7 +25,14 @@ const ALL_ARCHETYPES: Archetype[] = [
   "Specialist",
 ];
 
-export default function ChampionsIndexClient({ champions }: { champions: Champion[] }) {
+export default function ChampionsIndexClient({
+  champions,
+  locale,
+}: {
+  champions: Champion[];
+  locale: Locale;
+}) {
+  const t = dict(locale).champions;
   const [query, setQuery] = useState("");
   const [role, setRole] = useState<Role | null>(null);
   const [region, setRegion] = useState<Region | null>(null);
@@ -35,8 +41,10 @@ export default function ChampionsIndexClient({ champions }: { champions: Champio
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return champions.filter((c) => {
-      if (q && !c.nameJa.includes(query) && !c.name.toLowerCase().includes(q) && !c.id.includes(q))
-        return false;
+      if (q) {
+        const haystack = `${c.name} ${c.nameJa} ${c.id}`.toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
       if (role && !c.roles.includes(role)) return false;
       if (region && c.region !== region) return false;
       if (archetype && !c.archetypes.includes(archetype)) return false;
@@ -47,42 +55,48 @@ export default function ChampionsIndexClient({ champions }: { champions: Champio
   return (
     <div className="space-y-6">
       <header className="space-y-2">
-        <h1 className="text-2xl font-bold md:text-3xl">全チャンピオン一覧</h1>
+        <h1 className="text-2xl font-bold md:text-3xl">{t.heading}</h1>
         <p className="text-xs text-(--color-text-muted)">
-          {filtered.length} / {champions.length} 体
+          {t.counter(filtered.length, champions.length)}
         </p>
       </header>
 
       <section className="space-y-3 rounded-xl bg-white/5 p-4">
         <input
           type="text"
-          placeholder="名前で検索 (例: ガレン, Yasuo)"
+          placeholder={t.searchPlaceholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="w-full rounded-lg border border-white/10 bg-black/20 px-3 py-2 text-sm focus:border-(--color-accent) focus:outline-none"
         />
 
-        <FilterRow label="ロール" current={role} options={ROLES} onSelect={setRole} />
         <FilterRow
-          label="リージョン"
+          label={t.filterRole}
+          allLabel={t.all}
+          current={role}
+          options={ROLES}
+          onSelect={setRole}
+        />
+        <FilterRow
+          label={t.filterRegion}
+          allLabel={t.all}
           current={region}
           options={REGIONS}
-          formatter={(v) => REGION_LABEL_JA[v]}
+          formatter={(v) => regionLabel(locale, v)}
           onSelect={setRegion}
         />
         <FilterRow
-          label="アーキタイプ"
+          label={t.filterArchetype}
+          allLabel={t.all}
           current={archetype}
           options={ALL_ARCHETYPES}
-          formatter={(v) => ARCHETYPE_LABEL_JA[v]}
+          formatter={(v) => archetypeLabel(locale, v)}
           onSelect={setArchetype}
         />
       </section>
 
       {filtered.length === 0 ? (
-        <p className="py-8 text-center text-sm text-(--color-text-muted)">
-          該当するチャンピオンはいません
-        </p>
+        <p className="py-8 text-center text-sm text-(--color-text-muted)">{t.empty}</p>
       ) : (
         <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((c) => (
@@ -94,7 +108,7 @@ export default function ChampionsIndexClient({ champions }: { champions: Champio
                 <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-1 ring-white/20">
                   <Image
                     src={championPortrait(c.ddragonId)}
-                    alt={c.nameJa}
+                    alt={championName(locale, c)}
                     fill
                     sizes="48px"
                     className="object-cover"
@@ -102,9 +116,9 @@ export default function ChampionsIndexClient({ champions }: { champions: Champio
                   />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-semibold">{c.nameJa}</p>
+                  <p className="truncate text-sm font-semibold">{championName(locale, c)}</p>
                   <p className="truncate text-xs text-(--color-text-muted)">
-                    {REGION_LABEL_JA[c.region]} / {c.roles.join(", ")}
+                    {regionLabel(locale, c.region)} / {c.roles.join(", ")}
                   </p>
                 </div>
               </Link>
@@ -118,12 +132,14 @@ export default function ChampionsIndexClient({ champions }: { champions: Champio
 
 function FilterRow<T extends string>({
   label,
+  allLabel,
   current,
   options,
   formatter,
   onSelect,
 }: {
   label: string;
+  allLabel: string;
   current: T | null;
   options: readonly T[];
   formatter?: (v: T) => string;
@@ -140,7 +156,7 @@ function FilterRow<T extends string>({
             current === null ? "border-(--color-accent) text-(--color-accent)" : "border-white/15"
           }`}
         >
-          すべて
+          {allLabel}
         </button>
         {options.map((o) => (
           <button

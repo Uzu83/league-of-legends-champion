@@ -1,11 +1,23 @@
-import ChampionsIndexClient from "./champions-client";
+import type { Metadata } from "next";
 import { CHAMPIONS } from "@/lib/champions";
+import { dict } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n-server";
+import ChampionsIndexClient from "./champions-client";
 
-export const metadata = {
-  title: "全チャンピオン一覧",
-  description: "172体のLOLチャンピオン一覧。ロール / リージョン / アーキタイプで絞り込み。",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = dict(locale).champions;
+  return {
+    title: t.heading,
+    description: t.heading,
+    alternates: {
+      canonical: "/champions",
+      languages: { ja: "/champions", en: "/champions", "x-default": "/champions" },
+    },
+  };
+}
 
-export default function ChampionsPage() {
-  return <ChampionsIndexClient champions={CHAMPIONS} />;
+export default async function ChampionsIndex() {
+  const locale = await getLocale();
+  return <ChampionsIndexClient champions={CHAMPIONS} locale={locale} />;
 }

@@ -1,4 +1,4 @@
-import type { Archetype, GameDim, Region, Role, StoryDim } from "./types";
+import type { Archetype, Champion, GameDim, Region, Role, StoryDim } from "./types";
 
 export const LOCALES = ["ja", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
@@ -388,3 +388,24 @@ export const archetypeLabel = (locale: Locale, a: Archetype) => ARCHETYPE_LABEL[
 export const roleLabel = (locale: Locale, r: Role) => ROLE_LABEL[locale][r];
 export const storyDimLabel = (locale: Locale, d: StoryDim) => STORY_DIM_LABEL[locale][d];
 export const gameDimAxis = (locale: Locale, d: GameDim) => GAME_DIM_AXIS[locale][d];
+
+export const championName = (locale: Locale, c: Champion) =>
+  locale === "ja" ? c.nameJa : c.name;
+export const championTitle = (locale: Locale, c: Champion) =>
+  locale === "ja" ? c.titleJa : c.title;
+
+/**
+ * Localized champion blurb. JA uses the hand-curated DDragon text; EN
+ * synthesizes a short tagline from title + region + archetypes because we
+ * deliberately don't ship 172 hand-translated EN blurbs.
+ */
+export function championBlurb(locale: Locale, c: Champion): string {
+  if (locale === "ja") return c.blurb;
+  const archetypeBit = c.archetypes.map((a) => ARCHETYPE_LABEL.en[a]).join(" / ");
+  const region = REGION_LABEL.en[c.region];
+  const roles = c.roles.map((r) => ROLE_LABEL.en[r]).join(" / ");
+  // c.title is the actual DDragon EN epithet, e.g. "the Darkin Blade".
+  return `${c.name}, ${c.title}. From ${region}, plays as ${archetypeBit || "—"}${
+    roles ? ` (${roles})` : ""
+  }.`;
+}

@@ -1,26 +1,41 @@
 import { ImageResponse } from "next/og";
 import { championPortrait } from "@/lib/champions";
 import { decodeAnswers } from "@/lib/encoding";
+import { championName, championTitle, dict, isLocale, regionLabel } from "@/lib/i18n";
 import { describeGame, describeStory } from "@/lib/persona";
 import { topMatches, userGameVector, userStoryVector } from "@/lib/scoring";
-import { REGION_LABEL_JA } from "@/lib/types";
 
 export const runtime = "edge";
 
 export async function GET(request: Request): Promise<Response> {
   const { searchParams } = new URL(request.url);
   const hash = searchParams.get("hash") ?? "";
+  const langParam = searchParams.get("lang");
+  const locale = isLocale(langParam) ? langParam : "ja";
   const decoded = decodeAnswers(hash);
   if (!decoded) {
     return new Response("invalid hash", { status: 400 });
   }
   const top = topMatches(decoded.type, decoded.answers, 1)[0];
   if (!top) return new Response("no match", { status: 404 });
-  const typeLabel = decoded.type === "story" ? "ストーリー入り口" : "ゲーム性能入り口";
+  const t = dict(locale);
+  const typeLabel =
+    decoded.type === "story"
+      ? locale === "ja"
+        ? "ストーリー入り口"
+        : "Story entry"
+      : locale === "ja"
+        ? "ゲーム性能入り口"
+        : "Gameplay entry";
   const persona =
     decoded.type === "story"
-      ? describeStory(userStoryVector(decoded.answers))
-      : describeGame(userGameVector(decoded.answers));
+      ? describeStory(userStoryVector(decoded.answers), locale)
+      : describeGame(userGameVector(decoded.answers), locale);
+
+  const youAreCaption = locale === "ja" ? "あなたは" : "You are";
+  const matchCaption = locale === "ja" ? "最もマッチするのは" : "Closest champion";
+  const personaTitle =
+    locale === "ja" ? `「${persona.label}」型` : `"${persona.label}"`;
 
   return new ImageResponse(
     <div
@@ -43,10 +58,10 @@ export async function GET(request: Request): Promise<Response> {
         }}
       >
         <div style={{ display: "flex", fontSize: 24, color: "#a09b8c", marginBottom: 8 }}>
-          LOL キャラタイプ診断 / {typeLabel}
+          {t.metadata.title} / {typeLabel}
         </div>
         <div style={{ display: "flex", fontSize: 28, color: "#f0e6d2", marginBottom: 4 }}>
-          あなたは
+          {youAreCaption}
         </div>
         <div
           style={{
@@ -58,7 +73,7 @@ export async function GET(request: Request): Promise<Response> {
             marginBottom: 4,
           }}
         >
-          「{persona.label}」型
+          {personaTitle}
         </div>
         <div
           style={{
@@ -69,7 +84,7 @@ export async function GET(request: Request): Promise<Response> {
             marginBottom: 4,
           }}
         >
-          最もマッチするのは
+          {matchCaption}
         </div>
         <div
           style={{
@@ -80,10 +95,10 @@ export async function GET(request: Request): Promise<Response> {
             lineHeight: 1.1,
           }}
         >
-          {top.champion.nameJa}
+          {championName(locale, top.champion)}
         </div>
         <div style={{ display: "flex", fontSize: 24, color: "#5cd0ff", marginTop: 8 }}>
-          {top.champion.titleJa} / {REGION_LABEL_JA[top.champion.region]}
+          {championTitle(locale, top.champion)} / {regionLabel(locale, top.champion.region)}
         </div>
       </div>
       <div
@@ -99,7 +114,7 @@ export async function GET(request: Request): Promise<Response> {
       >
         <img
           src={championPortrait(top.champion.ddragonId)}
-          alt={top.champion.nameJa}
+          alt={championName(locale, top.champion)}
           width={360}
           height={360}
           style={{ objectFit: "cover" }}

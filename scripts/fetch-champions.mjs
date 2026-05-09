@@ -704,17 +704,21 @@ function shortBlurb(blurb) {
 
 // ---------------- Main ----------------
 const VERSION = "16.9.1";
-const URL = `https://ddragon.leagueoflegends.com/cdn/${VERSION}/data/ja_JP/champion.json`;
+const URL_JA = `https://ddragon.leagueoflegends.com/cdn/${VERSION}/data/ja_JP/champion.json`;
+const URL_EN = `https://ddragon.leagueoflegends.com/cdn/${VERSION}/data/en_US/champion.json`;
 
-console.error(`Fetching ${URL}...`);
-const res = await fetch(URL);
-if (!res.ok) throw new Error(`fetch failed: ${res.status}`);
-const data = await res.json();
-const entries = Object.entries(data.data);
+console.error(`Fetching ${URL_JA} and ${URL_EN}...`);
+const [resJa, resEn] = await Promise.all([fetch(URL_JA), fetch(URL_EN)]);
+if (!resJa.ok) throw new Error(`fetch ja failed: ${resJa.status}`);
+if (!resEn.ok) throw new Error(`fetch en failed: ${resEn.status}`);
+const dataJa = await resJa.json();
+const dataEn = await resEn.json();
+const entries = Object.entries(dataJa.data);
+const enById = dataEn.data;
 console.error(`Got ${entries.length} champions`);
 
 const champions = entries
-  .map(([key, c]) => {
+  .map(([_key, c]) => {
     const ddragonId = c.id;
     const id = slugify(ddragonId);
     const region = REGION_MAP[ddragonId] ?? "Demacia"; // fallback
@@ -725,11 +729,12 @@ const champions = entries
     const gameVec = hand?.gameVec ?? auto;
     const storyVec = hand?.storyVec ?? {};
     const blurb = hand?.blurb ?? shortBlurb(c.blurb);
+    const enEntry = enById[ddragonId];
     return {
       id,
-      name: c.id, // English-ish key (DDragon doesn't expose en name in ja file; ok)
+      name: enEntry?.name ?? c.id,
       nameJa: c.name,
-      title: c.id, // placeholder — DDragon ja file has only ja titles
+      title: enEntry?.title ?? c.id,
       titleJa: c.title,
       region,
       ddragonId,

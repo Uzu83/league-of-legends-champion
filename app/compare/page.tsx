@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
+import { dict } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n-server";
 import CompareClient from "./compare-client";
 
-export const metadata = {
-  title: "ストーリー × ゲーム性能 比較 - LOLキャラタイプ診断",
-  description: "両方のエントリーで診断した結果を並べて、一致するチャンピオンを確認します。",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = dict(locale);
+  return {
+    title: t.compare.heading,
+    description: t.compare.caption,
+    alternates: {
+      canonical: "/compare",
+      languages: { ja: "/compare", en: "/compare", "x-default": "/compare" },
+    },
+  };
+}
 
-export default function ComparePage() {
-  return <CompareClient />;
+export default async function ComparePage() {
+  const locale = await getLocale();
+  return <CompareClient locale={locale} />;
 }
