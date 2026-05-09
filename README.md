@@ -137,6 +137,10 @@ GitHub → Vercel 自動連携。`main` への push でビルド・デプロイ�
 
 未設定時は `https://league-of-legends-champion.vercel.app` フォールバック (本番ドメインを直書き)。カスタムドメイン取得時は env var で明示上書きする。
 
+### Google Search Console
+
+`app/layout.tsx` の `generateMetadata` で `verification.google` を出力済 (`<meta name="google-site-verification">`)。新しい所有権を追加する時は同じキーに値を差し替え。
+
 ## i18n
 
 ja / en 両対応。
