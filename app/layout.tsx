@@ -1,72 +1,89 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata, Viewport } from "next";
+import Link from "next/link";
+import { dict } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n-server";
+import LocaleSwitcher from "./locale-switcher";
 import "./globals.css";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: "LOLキャラタイプ診断",
-    template: "%s | LOLキャラタイプ診断",
-  },
-  description:
-    "あなたの性格・プレイ志向に最も近いLeague of Legendsチャンピオンを診断します。世界観 / ゲーム性能の2つの入り口から選べます。",
-  keywords: [
-    "LOL",
-    "League of Legends",
-    "診断",
-    "キャラタイプ",
-    "性格診断",
-    "MBTI",
-    "チャンピオン",
-  ],
-  openGraph: {
-    title: "LOLキャラタイプ診断",
-    description:
-      "あなたとLOLキャラを繋ぐ、世界観の入り口診断。10問×2エントリーで、性格とプレイ志向にぴったりのチャンピオンを提示。",
-    type: "website",
-    locale: "ja_JP",
-    siteName: "LOLキャラタイプ診断",
-  },
-  twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = dict(locale);
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: t.metadata.title, template: `%s | ${t.metadata.title}` },
+    description: t.metadata.description,
+    keywords: [
+      "LOL",
+      "League of Legends",
+      "diagnosis",
+      "personality test",
+      "champion",
+      "MBTI",
+      "診断",
+      "キャラタイプ",
+      "性格診断",
+      "チャンピオン",
+    ],
+    alternates: {
+      canonical: "/",
+      languages: { ja: "/", en: "/", "x-default": "/" },
+    },
+    openGraph: {
+      title: t.metadata.title,
+      description: t.metadata.ogDescription,
+      type: "website",
+      locale: locale === "ja" ? "ja_JP" : "en_US",
+      siteName: t.metadata.title,
+    },
+    twitter: { card: "summary_large_image" },
+    robots: { index: true, follow: true },
+  };
+}
+
+export const viewport: Viewport = {
+  themeColor: "#0a0e1a",
+  width: "device-width",
+  initialScale: 1,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await getLocale();
+  const t = dict(locale);
   return (
-    <html lang="ja">
+    <html lang={locale}>
       <body>
         <header className="border-b border-white/10 bg-black/20 backdrop-blur">
-          <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
+          <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
             <Link
               href="/"
-              className="flex items-center gap-2 font-[var(--font-display)] text-lg font-semibold tracking-wide text-(--color-accent)"
+              className="flex items-center gap-2 font-[var(--font-display)] text-base font-semibold tracking-wide text-(--color-accent) md:text-lg"
             >
-              LOL キャラタイプ診断
+              <span className="truncate">{t.siteName}</span>
               <span className="rounded-sm border border-white/20 px-1.5 py-0.5 text-[10px] font-normal text-(--color-text-muted)">
-                非公式
+                {t.unofficial}
               </span>
             </Link>
-            <nav className="text-xs text-(--color-text-muted)">
-              <span>v0.1 MVP</span>
-            </nav>
+            <div className="flex items-center gap-2">
+              <LocaleSwitcher current={locale} />
+              <span className="hidden text-xs text-(--color-text-muted) md:inline">{t.version}</span>
+            </div>
           </div>
         </header>
         <main className="mx-auto max-w-3xl px-4 pb-24 pt-8">{children}</main>
         <footer className="border-t border-white/10 py-6 text-xs text-(--color-text-muted)">
           <div className="mx-auto max-w-3xl space-y-2 px-4 text-center leading-relaxed">
             <p>
-              <strong className="text-(--color-text)">LOLキャラタイプ診断</strong>
-              はライアットゲームズが公式承認するものではなく、ライアットゲームズまたはリーグ・オブ・レジェンドの製作・管理に正式に関与した者の見解に基づくものではありません。
+              <strong className="text-(--color-text)">{t.siteName}</strong>
+              {t.legal.disclaimerSuffix}
             </p>
-            <p>
-              リーグ・オブ・レジェンド及びライアットゲームズはRiot Games, Inc.の商標です。
-            </p>
+            <p>{t.legal.trademark}</p>
             <p className="text-[10px] opacity-60">
-              チャンピオン画像は{" "}
+              {t.legal.ddragonPrefix}
               <a
                 href="https://developer.riotgames.com/docs/lol#data-dragon"
                 target="_blank"
@@ -75,20 +92,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               >
                 Data Dragon
               </a>
-              {" "}より配信。本サイトは
+              {t.legal.ddragonMid}
               <a
-                href="https://www.riotgames.com/ja/legal"
+                href={
+                  locale === "ja"
+                    ? "https://www.riotgames.com/ja/legal"
+                    : "https://www.riotgames.com/en/legal"
+                }
                 target="_blank"
                 rel="noreferrer noopener"
                 className="hover:underline"
               >
                 Legal Jibber Jabber
               </a>
-              に基づき制作されたファンプロジェクトです。
+              {t.legal.ddragonSuffix}
             </p>
           </div>
         </footer>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
