@@ -1,12 +1,13 @@
-# LOL キャラタイプ診断
+# LOL キャラタイプ診断 / LoL Character Type Quiz
 
 > ⚠️ **本サイトはRiot Games非公式のファンメイドプロジェクトです。**
 > Riot Games, Inc. が公式承認・スポンサーするものではありません。
 > League of Legends および Riot Games は Riot Games, Inc. の登録商標です。
 
 > あなたとLOLキャラを繋ぐ、世界観の入り口診断。
+> Find the League of Legends champion that matches your personality and playstyle.
 
-性格・プレイ志向の質問10問×2エントリーで、172体のLeague of Legendsチャンピオンから最もマッチする1体 + 上位5体を提示するWeb診断サービス。
+性格・プレイ志向の質問10問×2エントリーで、172体のLeague of Legendsチャンピオンから最もマッチする1体 + 上位5体を提示するWeb診断サービス。**ja / en の2言語対応**。
 
 **2エントリー設計**:
 - 🌍 **ストーリー入り口** — 性格・価値観・関係性志向 (15軸ベクトル)
@@ -29,7 +30,9 @@
 | Lint/Fmt | Biome 2 |
 | Pkg | pnpm 10 (mise pinned) |
 | Deploy | Vercel (GitHub 連携) |
-| Champion data | DDragon `16.9.1 / ja_JP` |
+| Analytics | `@vercel/analytics` + `@vercel/speed-insights` |
+| Champion data | DDragon `16.9.1` (ja_JP + en_US) |
+| i18n | 自前辞書 (`lib/i18n.ts`) — cookie優先 + Accept-Language fallback |
 
 サイリウムカラー診断 (penlightcolor) v2 のスタックを完全継承。
 
@@ -118,7 +121,9 @@ pnpm dev                # http://localhost:3000
 | `/champions/[id]` | SSG | チャンピオン詳細 (8軸双極バー) |
 | `/compare` | Static (Client) | クロスエントリー比較ビュー |
 | `/api/og` | Edge | 動的OGP画像 |
-| `/sitemap.xml` `/robots.txt` | Static | SEO |
+| `/sitemap.xml` `/robots.txt` | Static | SEO (hreflang ja/en alternates 付き) |
+| `/manifest.webmanifest` | Static | PWA manifest |
+| `/icon` `/apple-icon` | Static | 動的生成 favicon / Apple touch |
 
 ## デプロイ
 
@@ -132,9 +137,19 @@ GitHub → Vercel 自動連携。`main` への push でビルド・デプロイ�
 
 未設定時は `https://lol-character-type.example.com` フォールバック。
 
+## i18n
+
+ja / en 両対応。
+
+- 翻訳辞書は `lib/i18n.ts` に集約。型ベース (`Record<Locale, ...>`) なので追加言語はキーごとに値を埋めるだけ。
+- ロケール解決は `lib/i18n-server.ts` の `getLocale()` (cookie `NEXT_LOCALE` > Accept-Language > `ja` フォールバック)。
+- ヘッダー右上の `LocaleSwitcher` で切替 (cookie に保存して `location.reload()`)。
+- 質問・persona 説明文・OGP・metadata すべてロケール対応。`/api/og?hash=...&lang=en` で言語別OGP画像生成。
+- チャンピオン名 / 称号: `name` `title` (en) / `nameJa` `titleJa` (ja) を保持。EN blurbは `name + title + region + archetypes` から合成 (172体ハンドトランスレートしない方針)。
+
 ## 規約
 
-- **全UIテキストは日本語**。i18n は将来 (Tier 3)
+- ja / en に対応 (2026-05-09より)。新文字列を追加する際は `lib/i18n.ts` の両ロケールに加えること。
 - **曜日表示は日曜始まり**
 - 語彙制約: `Go` / `Golang` / `REST API` 禁止 → `endpoint` または `API route`
 - LOLキャラ既存設定の暗いテーマ (復讐・対立・死) は許容、ただしユーザーへ押し付けない (例「あなたは復讐に生きるべき」はNG)
@@ -152,11 +167,11 @@ GitHub → Vercel 自動連携。`main` への push でビルド・デプロイ�
 ## テスト
 
 ```bash
-pnpm test                                      # 全12テスト
+pnpm test                                      # 全20テスト (scoring 12 + i18n 8)
 pnpm test tests/scoring.test.ts                # 特定ファイル
 ```
 
-スコアリング・エンコーディング・persona生成・ランキングのユニットテスト。チャンピオン名で固定アサーションせず、ベクトルプロパティ (`damageStyle >= 0.5` 等) で検証 — チャンピオンデータが変わっても壊れにくい設計。
+スコアリング・エンコーディング・persona生成・ランキング・ロケール解決・ローカライズ済 persona のユニットテスト。チャンピオン名で固定アサーションせず、ベクトルプロパティ (`damageStyle >= 0.5` 等) で検証 — チャンピオンデータが変わっても壊れにくい設計。
 
 ## ライセンス・帰属
 
@@ -196,7 +211,7 @@ Riot公式 [Legal Jibber Jabber](https://www.riotgames.com/ja/legal) に基づ�
 近い順:
 
 1. 142体の自動推定値の手作業レビュー
-2. `NEXT_PUBLIC_SITE_URL` 連動の `shareUrl` 移行
-3. Vercel Analytics 連携 (診断開始/完了/離脱)
-4. アクセシビリティ (キーボード操作・ARIA)
-5. チャンピオン詳細ページからの逆引きシェア
+2. アクセシビリティ (キーボード操作・ARIA)
+3. チャンピオン詳細ページからの逆引きシェア
+4. EN チャンピオン blurb のリッチ化 (現状は title+region+archetype 合成)
+5. Playwright e2e
