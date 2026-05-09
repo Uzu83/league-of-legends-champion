@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { CHAMPIONS } from "@/lib/champions";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 const withAlternates = (path: string) => ({
   url: `${BASE_URL}${path}`,

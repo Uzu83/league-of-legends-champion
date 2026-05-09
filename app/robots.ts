@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {

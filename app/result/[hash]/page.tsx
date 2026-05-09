@@ -26,7 +26,7 @@ import { GAME_DIMS, type GameDim } from "@/lib/types";
 export const dynamicParams = true;
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 interface PageParams {
   params: Promise<{ hash: string }>;

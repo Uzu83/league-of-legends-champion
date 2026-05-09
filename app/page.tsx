@@ -3,7 +3,7 @@ import { dict } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 export default async function Home() {
   const locale = await getLocale();

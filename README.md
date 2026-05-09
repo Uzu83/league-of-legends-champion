@@ -133,9 +133,9 @@ GitHub → Vercel 自動連携。`main` への push でビルド・デプロイ�
 
 | Var | Required | Purpose |
 | ---- | ---- | ---- |
-| `NEXT_PUBLIC_SITE_URL` | Yes (本番) | sitemap / robots / metadataBase が参照。例: `https://lol-character-type.vercel.app` |
+| `NEXT_PUBLIC_SITE_URL` | 推奨 (本番) | sitemap / robots / metadataBase が参照。本番ドメイン: `https://league-of-legends-champion.vercel.app` |
 
-未設定時は `https://lol-character-type.example.com` フォールバック。
+未設定時は `https://league-of-legends-champion.vercel.app` フォールバック (本番ドメインを直書き)。カスタムドメイン取得時は env var で明示上書きする。
 
 ## i18n
 

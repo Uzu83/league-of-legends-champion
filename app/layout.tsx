@@ -8,7 +8,7 @@ import LocaleSwitcher from "./locale-switcher";
 import "./globals.css";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://lol-character-type.example.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
