@@ -3,6 +3,7 @@ import { CHAMPIONS } from "@/lib/champions";
 import {
   championBlurb,
   championName,
+  championSearchHaystack,
   championTitle,
   DEFAULT_LOCALE,
   isLocale,
@@ -52,10 +53,30 @@ describe("champion accessors", () => {
     expect(championTitle("en", c)).toBe(c.title);
   });
 
-  it("EN blurb is non-empty and synthesized from structured fields", () => {
+  it("EN blurb is the real DDragon en_US text", () => {
     const blurb = championBlurb("en", c);
     expect(blurb.length).toBeGreaterThan(0);
-    expect(blurb).toContain(c.name);
+    expect(blurb).toBe((c.blurbEn ?? c.loc?.en?.blurb)?.trim());
+  });
+
+  it("non-ja blurb falls back to en when no localized blurb exists", () => {
+    // Pick a champion with no Spanish blurb in `loc` (rare/none) — exercise
+    // the fallback path explicitly with a synthetic clone instead.
+    const clone = { ...c, loc: { ...c.loc, es: undefined } };
+    const enBlurb = (clone.blurbEn ?? clone.loc?.en?.blurb)?.trim();
+    if (enBlurb) expect(championBlurb("es", clone)).toBe(enBlurb);
+  });
+
+  it("Korean blurb is non-empty and Korean name differs from Japanese", () => {
+    const withKoName = CHAMPIONS.find((ch) => ch.loc?.ko?.name);
+    expect(withKoName).toBeDefined();
+    if (!withKoName) return;
+    expect(championBlurb("ko", withKoName).length).toBeGreaterThan(0);
+    expect(championName("ko", withKoName)).not.toBe(championName("ja", withKoName));
+  });
+
+  it("championSearchHaystack includes the champion id", () => {
+    expect(championSearchHaystack(c)).toContain(c.id);
   });
 });
 

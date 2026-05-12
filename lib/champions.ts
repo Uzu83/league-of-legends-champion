@@ -23,17 +23,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.55,
-  durability: 0.4,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.4,
-  scaling: 0.5
-}),
-    blurb: "ヴォイドからシュリーマを守り抜いた誇り高き存在であったエイトロックスとその同胞は、いつしかルーンテラにとってヴォイドを上回る脅威となり、狡猾な定命の者の魔法の前に敗れ去った。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.55,
+      durability: 0.4,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.4,
+      scaling: 0.5,
+    }),
+    blurb:
+      "ヴォイドからシュリーマを守り抜いた誇り高き存在であったエイトロックスとその同胞は、いつしかルーンテラにとってヴォイドを上回る脅威となり、狡猾な定命の者の魔法の前に敗れ去った。",
+    blurbEn:
+      "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
+    loc: {
+      ko: {
+        name: "아트록스",
+        title: "다르킨의 검",
+        blurb:
+          "한때는 공허에 맞서 싸웠던 슈리마의 명예로운 수호자 아트록스와 그의 종족은 결국 공허보다 위험한 존재가 되어 룬테라의 존속을 위협했지만, 교활한 필멸자의 마법에 속아넘어가 패배하게 되었다. 수백 년에 걸친 봉인 끝에, 아트록스는 자신의 정기가 깃든 마법 무기를 휘두르는 어리석은 자들을 타락시키고 육신을 바꾸는 것으로 다시 한번 자유의 길을 찾아내었다. 이제 이전의 잔혹한 모습을 닮은 육체를 차지한 아트록스는 세상의 종말과 오랫동안 기다려온 복수를...",
+      },
+      zh: {
+        name: "亚托克斯",
+        title: "暗裔剑魔",
+        blurb:
+          "亚托克斯和他的同胞曾是为恕瑞玛对抗虚空的守护者一族。曾经满载荣誉的他们，却成了符文之地上更大的威胁，最后被人类设下的圈套所击败。在被囚禁数个世纪后，亚托克斯率先找到了重获自由的方法：他的精魂被封印在了那把神奇武器之中，而那些妄图挥舞它的愚昧之徒都会被他腐蚀、侵占。如今，他凭借偷来的身躯，以一种近似他曾经形态的凶残外表行走于符文之地，寻求着一次毁天灭地、迟来许久的复仇。",
+      },
+      es: {
+        title: "la Espada de los Oscuros",
+        blurb:
+          "Aatrox y sus hermanos, otrora respetados defensores de Shurima contra el Vacío, acabarían convirtiéndose en una amenaza aún mayor para Runaterra y solo conocieron la derrota ante el uso astuto de hechizos mortales. No obstante, tras siglos de reclusión...",
+      },
+      fr: {
+        title: "Épée des Darkin",
+        blurb:
+          "Autrefois, Aatrox et ses frères étaient honorés pour avoir défendu Shurima contre le Néant. Mais ils finirent par devenir une menace plus grande encore pour Runeterra : la ruse et la sorcellerie furent employées pour les battre. Cependant, après des...",
+      },
+      de: {
+        title: "Die Klinge der Düsteren",
+        blurb:
+          "Einst waren Aatrox und seine Brüder ehrenhafte Verteidiger Shurimas gegen die Leere, die zu einer noch größeren Bedrohung für Runeterra wurden und schließlich nur durch hinterlistige, sterbliche Zauberei besiegt werden konnten. Aber nach Jahrhunderten...",
+      },
+      pt: {
+        title: "a Espada Darkin",
+        blurb:
+          "Antes defensores honrados de Shurima contra o temido Vazio, Aatrox e seus irmãos acabaram se tornando uma ameaça ainda maior para Runeterra, e a única coisa capaz de derrotá-los foi um tipo de feitiçaria mortal e traiçoeira. Mas após séculos de...",
+      },
+      ru: {
+        name: "Атрокс",
+        title: "Клинок даркинов",
+        blurb:
+          "Когда-то Атрокс и его собратья доблестно защищали Шуриму от Бездны, но в конце концов сами стали страшной угрозой для Рунтерры. Только с помощью хитрых магических уловок смертные сумели победить их. Спустя столетия заточения Атрокс первым обрел свободу...",
+      },
+    },
   },
   {
     id: "ahri",
@@ -44,25 +87,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Ahri",
     roles: ["Mid"],
-    archetypes: ["Mage","Assassin"],
+    archetypes: ["Mage", "Assassin"],
     storyVec: s({
-  knowledge: 0.6,
-  love: 0.7,
-  freedom: 0.7,
-  solo: 0.7
-}),
+      knowledge: 0.6,
+      love: 0.7,
+      freedom: 0.7,
+      solo: 0.7,
+    }),
     gameVec: g({
-  range: 0.7,
-  skillBased: 0.9,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.7,
-  cc: 0.5,
-  mobility: 0.85,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
+      range: 0.7,
+      skillBased: 0.9,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.7,
+      cc: 0.5,
+      mobility: 0.85,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
     blurb: "魅了の魔力を操る九尾の狐。自分の正体を探し旅をする。",
+    blurbEn:
+      "Innately connected to the magic of the spirit realm, Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence—receiving flashes of their memory and insight from each soul she consumes. Once a powerful yet wayward...",
+    loc: {
+      ko: {
+        name: "아리",
+        title: "구미호",
+        blurb:
+          "영혼 세계의 마법과 선천적으로 연결된 아리는 먹잇감의 감정을 조종하고 정수를 집어삼킬 수 있는 여우 모습의 바스타야로, 영혼을 먹어 치울 때마다 그 안에 담긴 지혜와 기억의 편린을 받아들인다. 강력하면서도 불안정한 포식자였던 아리는 이제 조상들의 흔적을 찾아 세상을 여행하며 지금껏 훔친 기억을 버리고 스스로 자신만의 추억을 쌓으려 한다.",
+      },
+      zh: {
+        name: "阿狸",
+        title: "九尾妖狐",
+        blurb:
+          "天生就与精神领域的魔法相通的阿狸，顾名思义，是一名狐狸模样的瓦斯塔亚。她可以操纵猎物的情感，吞噬他们的精魄——他们生前的记忆与领悟化作碎片在她心中浮现。她曾是一名强大又任性的掠食者，但现在却一心在世间寻觅着先祖留下的残迹，同时努力地创造一份真正属于自己，而非取自他人的记忆。",
+      },
+      es: {
+        title: "La Mujer Zorro de nueve Colas",
+        blurb:
+          "Ahri es una raposa vastaya conectada de forma innata a la magia del reino de los espíritus. Es capaz de manipular las emociones de su presa antes de consumir su esencia, proceso que le transmite los recuerdos de cada alma que consume. Otrora una...",
+      },
+      fr: {
+        title: "Renarde à neuf queues",
+        blurb:
+          "Connectée à la magie du royaume spirituel, Ahri est une mystérieuse Vastaya aux traits de renard qui peut manipuler les émotions de sa proie et consumer son essence, afin de recevoir des fragments de sa mémoire. Ahri fut un temps un terrifiant prédateur...",
+      },
+      de: {
+        title: "die neunschwänzige Füchsin",
+        blurb:
+          "Ahri ist eine von Natur aus mit der Magie des Geisterreichs verbundene, fuchsähnliche Vastaya, die die Emotionen ihrer Beute manipulieren und deren Essenz verzehren kann. Eine verschlungene Seele lässt Erinnerungen des Opfers in ihrem Geiste aufflackern...",
+      },
+      pt: {
+        title: "a Raposa de Nove Caudas",
+        blurb:
+          "A ligação de Ahri com a magia do mundo espiritual é inata. Ela é uma vastaya com traços de raposa, capaz de manipular as emoções de sua presa e consumir sua essência, devorando também as memórias e as percepções de cada alma absorvida. Outrora uma...",
+      },
+      ru: {
+        name: "Ари",
+        title: "Девятихвостая лиса",
+        blurb:
+          "Ари – загадочная вастайи-лиса, которая с рождения ощущает связь с магией мира духов. Она манипулирует эмоциями жертвы, прежде чем выпить ее душу и поглотить обрывки знаний и воспоминаний. Когда-то Ари была опасной и непредсказуемой хищницей, но теперь...",
+      },
+    },
   },
   {
     id: "akali",
@@ -72,26 +157,68 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "主なき暗殺者",
     region: "Ionia",
     ddragonId: "Akali",
-    roles: ["Mid","Top"],
+    roles: ["Mid", "Top"],
     archetypes: ["Assassin"],
     storyVec: s({
-  justice: 0.7,
-  protection: 0.6,
-  solo: 0.7,
-  mentor: 0.5
-}),
+      justice: 0.7,
+      protection: 0.6,
+      solo: 0.7,
+      mentor: 0.5,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.85,
-  damageStyle: 0.85,
-  durability: 0.3,
-  damage: 0.85,
-  cc: 0.1,
-  mobility: 0.85,
-  difficulty: 0.7,
-  scaling: 0.55
-}),
+      range: 0,
+      skillBased: 0.85,
+      damageStyle: 0.85,
+      durability: 0.3,
+      damage: 0.85,
+      cc: 0.1,
+      mobility: 0.85,
+      difficulty: 0.7,
+      scaling: 0.55,
+    }),
     blurb: "均衡から離れた一匹狼の暗殺者。自身の正義のために動く。",
+    blurbEn:
+      "Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one...",
+    loc: {
+      ko: {
+        name: "아칼리",
+        title: "섬기는 이 없는 암살자",
+        blurb:
+          "킨코우 결사단과 그림자의 권이라는 지위를 버린 아칼리는 아이오니아인들에게 필요한 강력한 무기가 되어 홀로 싸우고 있다. 스승 쉔의 가르침을 잊지 않은 채 아이오니아의 적을 하나씩 암살하기로 맹세했다. 아칼리의 살행은 은밀할지 모르나 그녀의 메시지는 대륙 전체를 뒤흔든다. ''경외하라. 나는 섬기는 이 없는 암살자다.''",
+      },
+      zh: {
+        name: "阿卡丽",
+        title: "离群之刺",
+        blurb:
+          "无论是均衡教派的出身，还是暗影之拳的称号，都已被阿卡丽抛弃。如今的阿卡丽独来独往，随时可以成为一柄为同胞所需的夺命利器。她牢牢铭记着从宗师“慎”身上学来的一切，效忠并保护着艾欧尼亚，每次出手都必定会换来敌人的一条性命。她的出击或许悄然无声，但传达的信息却响亮无比：不听命于任何人的刺客，才最为可怕。",
+      },
+      es: {
+        title: "la Asesina Sigilosa",
+        blurb:
+          "Tras abandonar la Orden Kinkou y su título de Puño de la Sombra, Akali actúa ahora en solitario y está lista para convertirse en el arma mortal que necesita su gente. Aunque no renuncia a las enseñanzas de Shen, su maestro, ha jurado defender Jonia de...",
+      },
+      fr: {
+        title: "Assassine rebelle",
+        blurb:
+          "Ayant abandonné l'Ordre Kinkou et le titre de Poing de l'ombre, Akali combat aujourd'hui seule, prête à devenir l'arme mortelle dont son peuple a besoin. Bien qu'elle n'oublie rien de tout ce que son maître Shen lui a enseigné, elle a juré de défendre...",
+      },
+      de: {
+        title: "die rebellische Assassine",
+        blurb:
+          "Akali hat dem Kinkou-Orden und dem Titel der Faust der Schatten entsagt. Nun schlägt sie alleine zu und ist bereit, die tödliche Waffe zu sein, die ihr Volk braucht. Obwohl sie an allem festhält, was ihr Meister Shen ihr beigebracht hat, hat sie...",
+      },
+      pt: {
+        title: "a Assassina Renegada",
+        blurb:
+          "Abandonando a Ordem Kinkou e seu título de Punho das Sombras, Akali agora ataca sozinha, pronta para ser a arma mortal que seu povo precisa. Embora ela mantenha tudo o que aprendeu com seu mestre Shen, ela se comprometeu a defender Ionia de seus...",
+      },
+      ru: {
+        name: "Акали",
+        title: "Вольная убийца",
+        blurb:
+          "Акали не отвергла учение Шена, но отреклась от Кинку и титула Кулака тени. Теперь она действует в одиночку; она стала оружием, защищающим народы Ионии. Акали наносит смертельный удар неслышно, ведь без слов понятно: ''Убийца без хозяина опасен вдвойне''.",
+      },
+    },
   },
   {
     id: "akshan",
@@ -101,21 +228,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "流浪の番人",
     region: "Shurima",
     ddragonId: "Akshan",
-    roles: ["Mid","ADC"],
-    archetypes: ["Marksman","Assassin"],
+    roles: ["Mid", "ADC"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.05,
-  damage: 0.05,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.05,
-  scaling: 0.55
-}),
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.05,
+      damage: 0.05,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.05,
+      scaling: 0.55,
+    }),
     blurb: "危機を前にしても片眉を少し上げるだけ。",
+    blurbEn:
+      "Raising an eyebrow in the face of danger, Akshan fights evil with dashing charisma, righteous vengeance, and a conspicuous lack of shirts. He is highly skilled in the art of stealth combat, able to evade the eyes of his enemies and reappear when they...",
+    loc: {
+      ko: {
+        name: "아크샨",
+        title: "떠도는 감시자",
+        blurb:
+          "상반신을 드러낸 아크샨은 위험에 직면하면 눈썹을 치켜올리며 당당한 카리스마, 정의로운 복수심으로 악과 맞서 싸운다. 전투에서 뛰어난 은신술을 발휘하며 적의 눈을 피한 후 제일 예기치 못한 순간 다시 모습을 드러낸다. 불타는 정의감과 죽음을 되돌리는 전설적인 무기로 룬테라의 수많은 악한들이 저지른 잘못을 바로잡으며 '멍청이가 되지 말자'라는 자신만의 도덕적 기준에 따라 살아간다.",
+      },
+      zh: {
+        name: "阿克尚",
+        title: "影哨",
+        blurb:
+          "面对天大的危险，阿克尚也只会轻轻挑起一边眉毛。他身手矫健，嫉恶如仇——而且显而易见，他对服饰兴趣不大。阿克尚非常善于潜行，能够避开敌人的耳目，出现在最令人出其不意的时机。他怀着强烈的正义感，带着一把可以逆转生死的传奇武器，在符文之地上主持公道，惩治邪祟。他以自己的生命践行着自己的信条：“不做混蛋。”",
+      },
+      es: {
+        title: "el Centinela Rebelde",
+        blurb:
+          "Impávido ante el peligro, Akshan combate el mal con gran carisma, ganas de impartir justa venganza y una evidente falta de camisetas. Domina el arte del combate sigiloso, por lo que es capaz de desaparecer a los ojos de sus enemigos y volver a aparecer...",
+      },
+      fr: {
+        title: "Sentinelle rebelle",
+        blurb:
+          "Se jouant du danger, Akshan combat le mal sans jamais se départir de son charisme (il ne faut jamais sous-estimer l'importance de la cape) et de sa droiture. Il est passé maître dans l'art du combat furtif, ce qui lui permet d'échapper au regard de ses...",
+      },
+      de: {
+        title: "der rebellische Wächter",
+        blurb:
+          "Akshan lässt sich selten von Gefahren aus der Ruhe bringen und bekämpft das Böse mit umwerfendem Charisma, gerechter Vergeltung und einem auffälligen Mangel an Hemden. Sein besonderes Talent ist es, im Verborgenen zu agieren und unentdeckt von seinen...",
+      },
+      pt: {
+        title: "o Sentinela Rebelde",
+        blurb:
+          "Akshan ri da cara do perigo, lutando contra o mal com carisma, determinação e desejo de vingança, mas, estranhamente, sem vestir uma camisa sequer. É extremamente habilidoso na arte do combate furtivo, capaz de sumir da vista dos inimigos e reaparecer...",
+      },
+      ru: {
+        name: "Акшан",
+        title: "Своевольный Страж",
+        blurb:
+          "Акшан с усмешкой смотрит в лицо опасности. В борьбе со злом ему помогает бронебойная харизма, праведный гнев и упорное пренебрежение рубашками. Он – опытный воин и мастер скрытности, умеющий оставаться незамеченным и заставать противников врасплох...",
+      },
+    },
   },
   {
     id: "alistar",
@@ -126,20 +295,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Alistar",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.5
-}),
-    blurb: "屈強な戦士として恐れられるアリスターは自分の部族を滅ぼしたノクサス帝国に復讐を誓っている。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.5,
+    }),
+    blurb:
+      "屈強な戦士として恐れられるアリスターは自分の部族を滅ぼしたノクサス帝国に復讐を誓っている。",
+    blurbEn:
+      "Always a mighty warrior with a fearsome reputation, Alistar seeks revenge for the death of his clan at the hands of the Noxian empire. Though he was enslaved and forced into the life of a gladiator, his unbreakable will was what kept him from truly...",
+    loc: {
+      ko: {
+        name: "알리스타",
+        title: "미노타우로스",
+        blurb:
+          "비할 데 없이 강력한 전사라는 평판이 자자한 알리스타는 녹서스 제국에게 부족 전체가 몰살당한 이래 그 복수를 꿈꾸고 있다. 노예로 잡힌 후 참혹한 전투를 거듭해야 하는 검투사 신세가 되었으나, 그 누구도 꺾을 수 없는 의지가 있어 마음 깊은 곳까지 야수로 변하지는 않았다. 알리스타는 노예라는 구속에서 벗어나 자유의 몸이 된 후에도 탄압당하고 기댈 곳 없는 자들을 위해 싸우고 있다. 알리스타의 분노는 그의 뿔이나 발굽, 주먹 못지 않게 적들이...",
+      },
+      zh: {
+        name: "阿利斯塔",
+        title: "牛头酋长",
+        blurb:
+          "阿利斯塔是一名威名远扬的巨力勇士，誓要为自己被屠杀的氏族向诺克萨斯帝国复仇。虽然他曾被奴役，被迫成为斗兽场中的角斗士，但他坚不可摧的意志使他免于沦为真正的野兽。现在，挣脱了奴役枷锁的他继续以受苦之人和弱者的名义战斗。他的愤怒，还有犄角、蹄子和拳头，都是他的武器。",
+      },
+      es: {
+        title: "El Minotauro",
+        blurb:
+          "Alistar, un poderoso guerrero con una reputación temible, busca venganza por la muerte de su clan a manos del imperio noxiano. Aunque fue esclavizado y forzado a vivir como gladiador, fue su voluntad inquebrantable lo que le impidió convertirse en una...",
+      },
+      fr: {
+        title: "Minotaure",
+        blurb:
+          "Alistar est un guerrier redoutable cherchant à se venger de l'empire noxien qui a détruit son clan. Bien qu'il ait été réduit en esclavage et forcé de vivre une vie de gladiateur, sa volonté de fer lui a permis de ne pas succomber à la folie bestiale...",
+      },
+      de: {
+        title: "der Minotaurus",
+        blurb:
+          "Alistar war seit jeher ein mächtiger Krieger mit furchterregendem Ruf, doch nun will er am noxianischen Reich Rache für den Tod seines Klans üben. Obwohl er versklavt und zu einem Leben als Gladiator gezwungen wurde, bewahrte ihn sein unbeugsamer Wille...",
+      },
+      pt: {
+        title: "o Minotauro",
+        blurb:
+          "Um poderoso guerreiro com uma temível reputação, Alistar busca vingança por seu clã, morto pelas mãos do império de Noxus. Apesar de ter sido escravizado e forçado a uma vida de gladiador, sua vontade indestrutível o impediu de se tornar uma fera de...",
+      },
+      ru: {
+        name: "Алистар",
+        title: "Минотавр",
+        blurb:
+          "Алистар – могучий воин с устрашающей репутацией, который жаждет отплатить империи Ноксуса за истребление своего клана. Когда его взяли в плен и насильно сделали гладиатором, лишь несокрушимая воля позволила ему окончательно не озвереть. Освободившись от...",
+      },
+    },
   },
   {
     id: "ambessa",
@@ -150,20 +362,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Ambessa",
     roles: ["Top"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.2,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.95,
-  scaling: 0.45
-}),
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.2,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.95,
+      scaling: 0.45,
+    }),
     blurb: "メダルダの名を知る者なら誰もが、その家長であるアンベッサに敬意と恐れを抱いている。",
+    blurbEn:
+      "All who know the name Medarda respect and fear the family's leader, Ambessa. As a Noxian general, she embodies a deadly combination of ruthless strength and fearless resolve in battle. Her role as matriarch is no different, requiring great cunning to...",
+    loc: {
+      ko: {
+        name: "암베사",
+        title: "전장의 우두머리",
+        blurb:
+          "메다르다라는 이름을 들어본 이는 모두 그 가문의 수장 암베사를 경외합니다. 녹서스 장군으로서의 암베사는 압도적인 힘과 단호한 결단력으로 전투에 나서는 치명적인 존재입니다. 가주로서의 암베사 역시 별반 다르지 않습니다. 메다르다 가문의 권력을 뒷받침하는 건 실패나 동정의 여지를 두지 않는 교활한 책략이기 때문입니다. 늑대의 무자비함을 받아들인 암베사는 가문의 유산을 지키기 위해서라면 무엇이든 할 각오가 되어 있습니다. 그게 자식과의 단절을 뜻하더라도...",
+      },
+      zh: {
+        name: "安蓓萨",
+        title: "铁血狼母",
+        blurb:
+          "但凡听闻过米达尔达家族威名的人，都晓得要敬畏它的族母——安蓓萨。作为诺克萨斯的将军，安蓓萨是无情伟力与钢铁意志的化身；作为米达尔达的族母，她亦尚武凌弱，精于权谋，不留余力培植家族势力。安蓓萨奉行恶狼之道，誓要守护家族的传承——无论任何代价，哪怕是子女的爱。",
+      },
+      es: {
+        title: "La Matriarca de la Guerra",
+        blurb:
+          "Todo el que conoce el apellido Medarda respeta y teme a partes iguales a la matriarca de la familia, Ambessa. Esta general noxiana encarna una mortífera combinación de fuerza implacable e inquebrantable determinación en la batalla. En cuanto a su rol...",
+      },
+      fr: {
+        title: "Matriarche de guerre",
+        blurb:
+          "Tous ceux qui connaissent le nom de Medarda savent qu'il faut craindre et respecter sa matriarche, Ambessa. En tant que générale noxienne, elle incarne la force impitoyable et la détermination sans peur. Son rôle de matriarche n'est pas bien différent...",
+      },
+      de: {
+        title: "Matriarchin des Krieges",
+        blurb:
+          "Alle, die den Namen Medarda kennen, respektieren und fürchten Ambessa, die Anführerin der Familie. Als noxianische Generalin verkörpert sie eine tödliche Kombination aus rücksichtsloser Stärke und furchtloser Entschlossenheit im Kampf. Ihre Rolle als...",
+      },
+      pt: {
+        title: "Matriarca da Guerra",
+        blurb:
+          "Todos que conhecem o nome Medarda respeitam e temem a líder da família, Ambessa. Como general noxiana, ela incorpora uma combinação mortal de força implacável e determinação destemida em batalha. Seu papel como matriarca não é diferente, exigindo grande...",
+      },
+      ru: {
+        name: "Амбесса",
+        title: "Матриарх войны",
+        blurb:
+          "Все, кто слышал про клан Медард, уважают и боятся главу этой семьи – Амбессу. Будучи ноксианским генералом, она сражается с яростным бесстрашием и не знает пощады. В роли матриарха она следует тем же принципам, используя хитрость и коварство, чтобы...",
+      },
+    },
   },
   {
     id: "amumu",
@@ -173,21 +427,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "めそめそミイラ",
     region: "Shurima",
     ddragonId: "Amumu",
-    roles: ["Jungle","Support"],
-    archetypes: ["Tank","Support"],
+    roles: ["Jungle", "Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.3,
-  scaling: 0.5
-}),
-    blurb: "孤独で悲しい魂を抱いて古代シュリーマで生まれたアムムは、友達を探して世界中を彷徨っている。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.3,
+      scaling: 0.5,
+    }),
+    blurb:
+      "孤独で悲しい魂を抱いて古代シュリーマで生まれたアムムは、友達を探して世界中を彷徨っている。",
+    blurbEn:
+      "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe...",
+    loc: {
+      ko: {
+        name: "아무무",
+        title: "슬픈 미라",
+        blurb:
+          "뼛속까지 사무치는 외로움과 쓸쓸함 속에 살아가는 아무무. 평생을 오로지 마음을 나눌 수 있는 단 한 명의 친구를 찾아 헤매는, 고대 슈리마 제국의 가엾은 영혼이다. 끔찍한 저주를 받은 아무무는 영원히 혼자인 채로 남겨졌다. 그 저주란 지독하리만큼 잔인한 것이었다. 상대가 누구든 아무무와의 신체적 접촉은 죽음을 의미했고 정서적 교류는 파멸을 불러왔다. 그의 운명을 아는 한 누구도 그를 가까이하려 들지 않았다. 간혹 아무무를 봤다는 이들은 그를 두고...",
+      },
+      zh: {
+        name: "阿木木",
+        title: "殇之木乃伊",
+        blurb:
+          "在远古的恕瑞玛，有一个孤独而又忧郁的灵魂，阿木木。他在世间游荡，只为找到一个朋友。他遭受了一种远古的巫术诅咒，注定忍受永世的孤单——因为他的喜爱便是毁灭，被他触碰就意味着死亡。所有自称见过阿木木的人都说他是一具活生生的死尸，身材矮小，通体捆绑着青灰色的绷带。世人围绕阿木木编造了许多神话故事、民间传说和史诗传奇。这些故事世代传颂，以至于再也没人能分得清哪些是真相，哪些是幻想。",
+      },
+      es: {
+        title: "La Momia Triste",
+        blurb:
+          "Cuenta la leyenda que Amumu es un alma solitaria y melancólica de la vieja Shurima que vaga por el mundo en busca de un amigo. Condenado por una maldición ancestral, su destino es permanecer solo para siempre, pues su tacto es muerte y su cariño, la...",
+      },
+      fr: {
+        title: "Momie mélancolique",
+        blurb:
+          "La légende veut qu'Amumu soit une âme solitaire et mélancolique de la Shurima antique et qu'il parcoure le monde à la recherche d'un ami. Condamné par une malédiction à rester seul à jamais, il provoque la mort et la ruine à chaque geste d'affection...",
+      },
+      de: {
+        title: "die traurige Mumie",
+        blurb:
+          "Den Legenden zufolge ist Amumu eine melancholische Seele aus dem uralten Shurima und streift auf der Suche nach einem Freund durch die Welt. Ein alter Fluch hat ihn zu ewiger Einsamkeit verdammt, da seine Berührung den Tod und seine Zuneigung Verfall...",
+      },
+      pt: {
+        title: "a Múmia Triste",
+        blurb:
+          "Reza a lenda que Amumu é uma alma solitária e melancólica da antiga Shurima que vaga sem rumo pelo mundo em busca de um amigo. Amaldiçoado por um feitiço ancestral para permanecer só pela eternidade, seu toque traz a morte e sua afeição, a ruína...",
+      },
+      ru: {
+        name: "Амуму",
+        title: "Печальная мумия",
+        blurb:
+          "Легенды гласят, что Амуму – это одинокий и печальный человечек из древней Шуримы, бродящий по свету в поисках друга. Древнее проклятие обрекло Амуму на вечное одиночество, ибо его привязанность гибельна, а прикосновение – смертельно. Те, кому доводилось...",
+      },
+    },
   },
   {
     id: "anivia",
@@ -201,17 +498,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.95,
-  scaling: 0.6
-}),
-    blurb: "アニビアは翼を持った慈悲の守護者であり、無限に繰り返される生と死、そして再誕の繰り返しに耐えてフレヨルドを守っている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.95,
+      scaling: 0.6,
+    }),
+    blurb:
+      "アニビアは翼を持った慈悲の守護者であり、無限に繰り返される生と死、そして再誕の繰り返しに耐えてフレヨルドを守っている。",
+    blurbEn:
+      "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland...",
+    loc: {
+      ko: {
+        name: "애니비아",
+        title: "얼음불사조",
+        blurb:
+          "애니비아는 삶과 죽음, 부활을 끊임없이 반복하며 프렐요드를 지키는 날개 달린 반신이다. 매섭기 짝이 없는 얼음과 칼바람에서 태어났으며, 이런 자연의 힘을 자유자재로 이용하여 자신의 고향땅을 어지럽히려 드는 무모한 자들을 응징한다. 혹한의 북쪽에 터를 잡은 부족들에게 애니비아는 그들을 이끌고 보호하는 자애로운 존재로, 희망의 상징이자 크나큰 변화를 가져오는 징조로 숭배를 받는다. 애니비아는 전장에서 죽음을 두려워하지 않고 전력을 다해 싸운다. 자신을...",
+      },
+      zh: {
+        name: "艾尼维亚",
+        title: "冰晶凤凰",
+        blurb:
+          "艾尼维亚是一个充满仁慈的飞禽形态灵体，曾经历过无数次诞生、死亡与重生的轮回，始终眷顾着弗雷尔卓德。她是生于凛冽冰风中的半神，可以操控冰雪的元素之力，阻挡那些胆敢侵犯她家园的人。艾尼维亚指引并保护着北方贫瘠土地上的人类部落，而这些人类也将她奉为希望的象征和重大变革的预兆。她的每一次奋战都不遗余力，因为她知道，自己的记忆将会超越牺牲，长久地留存，而她也将在崭新的明天中重生。",
+      },
+      es: {
+        title: "La Criofénix",
+        blurb:
+          "Anivia es un espíritu alado benevolente que soporta ciclos interminables de vida, muerte y nacimiento para proteger Freljord. Semidiosa nacida del hielo implacable y los vientos crueles, canaliza estos poderes elementales para anular a cualquiera que se...",
+      },
+      fr: {
+        title: "Cryophénix",
+        blurb:
+          "Anivia est un esprit ailé bienveillant qui subit des cycles sans fin de vie, de mort et de renaissance pour protéger Freljord. Demi-déesse née de la glace la plus froide et des vents les plus coupants, elle utilise ses pouvoirs élémentaires contre...",
+      },
+      de: {
+        title: "der Kryophönix",
+        blurb:
+          "Anivia ist ein gütiger geflügelter Geist. Um Freljord zu schützen, muss sie einen endlosen Kreislauf aus Leben, Tod und Wiedergeburt durchstehen. Als Halbgöttin, die aus unerbittlichem Eis und schneidenden Winden geboren wurde, kann sie die Macht dieser...",
+      },
+      pt: {
+        title: "a Criofênix",
+        blurb:
+          "Anivia é um espírito alado e benevolente que suporta infinitos ciclos de vida, morte e renascimento para proteger Freljord. Uma semideusa nascida de ventos impiedosos e frios brutais, ela carrega esses poderes elementais para perseguir qualquer um que...",
+      },
+      ru: {
+        name: "Анивия",
+        title: "Криофеникс",
+        blurb:
+          "Анивия – доброжелательный крылатый дух; она проходит бесконечные циклы жизни, смерти и перерождения, защищая Фрельйорд. Полубогиня, рожденная безжалостными льдами и неумолимыми ветрами, готова обрушить силы этих стихий на любого, кто посмеет покуситься...",
+      },
+    },
   },
   {
     id: "annie",
@@ -221,21 +561,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "闇の申し子",
     region: "Noxus",
     ddragonId: "Annie",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.6,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.6,
+      scaling: 0.6,
+    }),
     blurb: "危険極まりなく、それでいて無邪気でおませなアニーは、強力な発火能力を持つ小さな魔女だ。",
+    blurbEn:
+      "Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable...",
+    loc: {
+      ko: {
+        name: "애니",
+        title: "어둠의 아이",
+        blurb:
+          "순수함 속에 아이답지 않은 위험한 모습을 간직한 애니는 불을 다루는 강력한 마법사다. 녹서스 북부의 산속에서 그림자처럼 숨어 지내면서도 그녀의 마법은 두각을 드러냈다. 아기였을 때부터 예측할 수 없는 감정의 분출과 함께 타고난 화염 친화성을 보인 애니는 곧 이런 '재주'를 제어할 수 있게 되었다. 그 중 사랑하는 곰 인형 '티버'를 열렬한 수호자로 소환하는 것을 가장 좋아한다. 끝 모를 동심을 품은 애니는 언제나 어두운 숲을 거닐며 같이 놀 누군가를...",
+      },
+      zh: {
+        name: "安妮",
+        title: "黑暗之女",
+        blurb:
+          "拥有危险夺命的能力，却长着一幅小大人儿的可爱模样，这就是掌握深不可测占火魔法的女孩——安妮。安妮生活在诺克萨斯北边的山脚下，但即便是在这种地方，她也依然是魔法师中的异类。她与火焰的紧密关系与生俱来——最初那些火焰是伴随着喜怒无常的冲动情绪出现的，后来她学会了如何掌握这些“好玩的小把戏”。其中，安妮最喜欢的就是她召唤亲爱的泰迪熊提伯斯——那头狂野的守护火兽。如今安妮已经迷失在了永恒的天真里，她在黑暗森林中游荡，寻觅着能陪自己玩耍的人。",
+      },
+      es: {
+        title: "La Hija de la Oscuridad",
+        blurb:
+          "Peligrosa pero encantadoramente precoz, Annie es una pequeña maga con un inmenso poder piromántico. Incluso en los parajes montañosos al norte de Noxus es una hechicera sin precedentes. Su afinidad natural con el fuego se manifestó a temprana edad en...",
+      },
+      fr: {
+        title: "Enfant des ténèbres",
+        blurb:
+          "Dangereuse, incroyablement précoce, Annie est une enfant mage dotée d'extraordinaires pouvoirs de pyrokinésie. Même à l'ombre des montagnes du nord de Noxus, sa magie est un cas unique. Son affinité naturelle avec le feu se manifesta dès sa prime...",
+      },
+      de: {
+        title: "das Kind der Finsternis",
+        blurb:
+          "Annie ist zwar noch ein Kind, doch beherrscht sie bereits immens mächtige Feuermagie. Selbst in den Schatten der Berge des nördlichen Noxus gilt sie als magischer Sonderfall. Ihre natürliche Verbundenheit zum Feuer kam durch unvorhersehbare...",
+      },
+      pt: {
+        title: "a Criança Sombria",
+        blurb:
+          "Perigosa, mas adoravelmente precoce, Annie é uma pequena maga com imenso poder piromaníaco. Mesmo isolada nas sombras das montanhas ao norte de Noxus, ela causa estranhamento com sua magia. Sua afinidade natural com o fogo já era evidente desde a...",
+      },
+      ru: {
+        name: "Энни",
+        title: "Дитя тьмы",
+        blurb:
+          "Опасная, но обезоруживающе невинная Энни – юная волшебница с невероятными способностями к пиромантии. Даже в тени гор к северу от Ноксуса магия такой силы встречается редко. Ее огненный дар начал проявляться с самых ранних лет в виде непредсказуемых...",
+      },
+    },
   },
   {
     id: "aphelios",
@@ -249,17 +631,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.2,
-  damage: 0.42,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.95,
-  scaling: 0.7
-}),
-    blurb: "月明かりの陰から武器を構えて立ち現れるアフェリオスは、不気味なまでに音も無くルナリの敵の息の根を止める──その存在を示すのは、正確な狙いから放たれる銃声のみ。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.2,
+      damage: 0.42,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.95,
+      scaling: 0.7,
+    }),
+    blurb:
+      "月明かりの陰から武器を構えて立ち現れるアフェリオスは、不気味なまでに音も無くルナリの敵の息の根を止める──その存在を示すのは、正確な狙いから放たれる銃声のみ。",
+    blurbEn:
+      "Emerging from moonlight's shadow with weapons drawn, Aphelios kills the enemies of his faith in brooding silence—speaking only through the certainty of his aim, and the firing of each gun. Though fueled by a poison that renders him mute, he is guided by...",
+    loc: {
+      ko: {
+        name: "아펠리오스",
+        title: "신념의 무기",
+        blurb:
+          "달그림자에서 나타나는 아펠리오스는 음울한 적막 속에서 적을 쓰러뜨린다. 정확한 조준과 총성만이 그의 목소리를 대신한다. 독에 중독되어 말을 할 수 없게 되었지만 머나먼 사원에 있는 쌍둥이 여동생 알룬이 그를 인도하며 월석의 힘을 그의 손에 쥐여 준다. 하늘에서 달이 빛나는 한 아펠리오스는 결코 혼자가 아니다.",
+      },
+      zh: {
+        name: "厄斐琉斯",
+        title: "残月之肃",
+        blurb:
+          "如月影般神出鬼没、时刻剑拔弩张的厄斐琉斯沉默地弑杀一切自身信仰的敌人。他的语言只有精确的瞄准和枪火。虽然他饮下了让他失声的毒药，但他也因此得到了妹妹拉露恩的引导，从遥远的神庙中将月石打造的各种武器送到他手里。只要头顶的明月依然皎洁，厄斐琉斯就永不孤单。",
+      },
+      es: {
+        title: "el Arma de los Fieles",
+        blurb:
+          "Aphelios emerge de entre las sombras de la noche con armas en mano y asesina a los enemigos de su fe en un silencio inquietante, hablando a tiro limpio únicamente a través de la certitud de su puntería. Un veneno que le impide hablar se encarga de...",
+      },
+      fr: {
+        title: "Arme des Lunaris",
+        blurb:
+          "Émergeant des ombres au clair de lune, Aphelios abat ceux qui voudraient anéantir sa foi sans un mot ; ses armes et sa précision mortelle parlent pour lui. Un poison qui le rend muet coule dans ses veines, mais il est constamment guidé par sa sœur...",
+      },
+      de: {
+        title: "die Waffe der Lunari",
+        blurb:
+          "Aphelios tritt kampfbereit aus dem Schatten des Mondlichts und tötet die Feinde seines Glaubens in düsterem Schweigen – er spricht nur durch seine Zielsicherheit und die Schüsse jeder einzelnen Waffe. Aufgrund des Gifts, das ihm seine Kräfte verleiht...",
+      },
+      pt: {
+        title: "a Arma dos Devotos",
+        blurb:
+          "Emergindo da sombra do luar com suas armas em mãos, Aphelios abate os inimigos de sua fé em absoluto silêncio, comunicando-se apenas pela destreza de sua mira e pelo disparo de cada arma. Embora viva sob o efeito de um veneno que o emudeceu, ele é...",
+      },
+      ru: {
+        name: "Афелий",
+        title: "Оружие веры",
+        blurb:
+          "Афелий выходит из тени, которую отбрасывает лунный свет, и убивает врагов своей веры в зловещем молчании. Уверенность в своей правоте и пистолеты из лунного камня красноречивее любых слов. Афелий потерял способность говорить из-за принимаемого яда, но...",
+      },
+    },
   },
   {
     id: "ashe",
@@ -270,26 +695,68 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Ashe",
     roles: ["ADC"],
-    archetypes: ["Marksman","Support"],
+    archetypes: ["Marksman", "Support"],
     storyVec: s({
-  love: 0.6,
-  protection: 0.7,
-  family: 0.7,
-  organization: 0.7,
-  honor: 0.6
-}),
+      love: 0.6,
+      protection: 0.7,
+      family: 0.7,
+      organization: 0.7,
+      honor: 0.6,
+    }),
     gameVec: g({
-  range: 0.85,
-  skillBased: 0.5,
-  damageStyle: 0.6,
-  durability: 0.2,
-  damage: 0.7,
-  cc: 0.85,
-  mobility: 0.2,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
+      range: 0.85,
+      skillBased: 0.5,
+      damageStyle: 0.6,
+      durability: 0.2,
+      damage: 0.7,
+      cc: 0.85,
+      mobility: 0.2,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
     blurb: "氷弓で部族を率いる女王。フレヨルド統一を夢見る。",
+    blurbEn:
+      "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice...",
+    loc: {
+      ko: {
+        name: "애쉬",
+        title: "서리 궁수",
+        blurb:
+          "아바로사 부족의 냉기의 화신이자 전쟁의 어머니인 애쉬는 북방에서 가장 규모가 큰 군단을 이끌고 있다. 절제력이 뛰어나고 총명한데다 이상주의적인 면을 갖추고 있지만 지도자라는 역할을 부담스러워하기도 한다. 고대 마법의 힘이 흐르는 혈통을 이어받았기에 얼음 정수의 활을 무기로 사용할 수 있다. 아바로사 부족민들은 애쉬가 전설 속 영웅 아바로사 여왕의 화신이라고 굳게 믿으며, 애쉬는 이들과 함께 먼 옛날 자신의 부족이 살았던 영토를 되찾아 다시 한 번...",
+      },
+      zh: {
+        name: "艾希",
+        title: "寒冰射手",
+        blurb:
+          "作为阿瓦罗萨部族的战母，拥有寒冰血脉的艾希率领着这个北方人数最多的部落。她克己、智慧、忠于理想，但并不太适应自己作为领袖的角色。艾希与自己血脉中蕴藏的先祖魔法相通，挽起了臻冰打造的长弓，她的族人相信她就是神话中的女英雄阿瓦罗萨的转世。在人们的追随下，艾希渴望夺回那些属于部族的古代领土，让伟大的弗雷尔卓德再次实现统一。",
+      },
+      es: {
+        title: "La Arquera de Hielo",
+        blurb:
+          "Ashe, comandante hija del hielo de la tribu de Avarosa, lidera las hordas más numerosas del norte. Impasible, inteligente e idealista, aunque incómoda en su papel de líder, utiliza los poderes mágicos ancestrales de su linaje para empuñar un arco de...",
+      },
+      fr: {
+        title: "Archère de givre",
+        blurb:
+          "Chef de guerre sublimé de la tribu des Avarosans, Ashe est à la tête de la plus vaste horde des terres du nord. Stoïque, intelligente et idéaliste, mais mal à l'aise dans son rôle de leader, elle puise dans la magie ancestrale de sa lignée pour manier...",
+      },
+      de: {
+        title: "die Frostbogenschützin",
+        blurb:
+          "Als eisgeborene Kriegsmutter der Avarosa befehligt Ashe die zahlreichste Schar des Nordens. Sie ist gleichmütig, intelligent und idealistisch, folgt der Zauberkunst ihrer Vorfahren und schwingt einen Bogen aus wahrem Eis, obwohl sie sich in der Rolle...",
+      },
+      pt: {
+        title: "a Arqueira do Gelo",
+        blurb:
+          "A mãe de guerra Glacinata da tribo de Avarosa, Ashe comanda a horda mais populosa do norte. Estoica, inteligente e idealista, mesmo que desconfortável com seu papel de liderança, ela canaliza as magias ancestrais de sua linhagem para empunhar um arco de...",
+      },
+      ru: {
+        name: "Эш",
+        title: "Ледяная лучница",
+        blurb:
+          "Хладорожденная ратная мать из племени аваросан, Эш командует наиболее многочисленным войском на севере, хотя до сих пор так и не свыклась с ролью лидера. Она отличается выносливостью, умом и приверженностью высоким идеалам. Чтобы завладеть луком из...",
+      },
+    },
   },
   {
     id: "aurelionsol",
@@ -303,17 +770,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.6,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "かつて何もない巨大な虚空であった宇宙に己が生み出した煌めく驚異を散りばめ、その恩寵を授けたオレリオン・ソル。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.6,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "かつて何もない巨大な虚空であった宇宙に己が生み出した煌めく驚異を散りばめ、その恩寵を授けたオレリオン・ソル。",
+    blurbEn:
+      "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his...",
+    loc: {
+      ko: {
+        name: "아우렐리온 솔",
+        title: "별의 창조자",
+        blurb:
+          "아우렐리온 솔은 천상의 경이로운 별들을 손수 빚어 한때 텅 비어있던 광활한 우주를 수놓았다. 그러나 이제 그는 속임수로 자신을 복종시킨 우주 제국의 명령에 따라 자신의 막강한 힘을 발휘해야 하는 처지가 되었다. 별을 만들던 때로 돌아가려는 열망에 불타는 아우렐리온 솔은 자신의 자유를 되찾기 위해서라면 자신의 창조물인 별들을 하늘에서 없앨 각오마저 되어 있다.",
+      },
+      zh: {
+        name: "奥瑞利安·索尔",
+        title: "铸星龙王",
+        blurb:
+          "奥瑞利安·索尔曾创造了奇迹般的群星，在无垠的荒芜太空布下宏伟的恩典。如今祂却遭人设计，被迫服从于某个潜藏在深空中的帝国。为了重返铸星大道，奥瑞利安•索尔誓要夺回自由，哪怕召星降怒，倾覆众生。",
+      },
+      es: {
+        title: "El Forjador de Estrellas",
+        blurb:
+          "Aurelion Sol solía agraciar al vasto vacío del cosmos con las maravillas celestiales que él mismo ideaba. Ahora, se ve forzado a hacer uso de su increíble poder para satisfacer los deseos de un imperio espacial que lo ha engañado para convertirlo en su...",
+      },
+      fr: {
+        title: "Forgeur d'étoiles",
+        blurb:
+          "Autrefois, Aurelion Sol façonnait des merveilles célestes dont il parsemait le vide infini du cosmos. À présent, il est forcé d'utiliser ses pouvoirs extraordinaires pour le compte d'un empire de l'espace qui s'est joué de lui et l'a réduit en esclavage...",
+      },
+      de: {
+        title: "der Sternenschmied",
+        blurb:
+          "Einst schmückte Aurelion Sol die weite Leere des Kosmos mit himmlischen Wundern, die er selbst erschuf. Jetzt muss er seine ehrfurchtgebietende Macht dem Willen eines Weltraumreiches unterwerfen, das ihn in die Knechtschaft gelockt hat. Aurelion Sol...",
+      },
+      pt: {
+        title: "o Forjador de Estrelas",
+        blurb:
+          "Aurelion Sol costumava agraciar a vasta imensidão vazia dos cosmos com maravilhas celestiais concebidas por ele mesmo. Agora, ele é forçado a usar seu incrível poder a mando de um império espacial remoto que o enganou e o mantém sob servidão. Desejando...",
+      },
+      ru: {
+        name: "Аурелион Сол",
+        title: "Создатель звезд",
+        blurb:
+          "Когда-то Аурелион Сол украсил космическую пустоту несметными чудесами. Теперь его силой распоряжается империя космопроходцев, хитростью поставившая Создателя звезд себе на службу. Чтобы вновь обрести свободу и вернуться к своему ремеслу, Аурелион готов...",
+      },
+    },
   },
   {
     id: "aurora",
@@ -323,21 +833,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "世界の狭間の魔女",
     region: "Freljord",
     ddragonId: "Aurora",
-    roles: ["Mid","Top"],
-    archetypes: ["Mage","Assassin"],
+    roles: ["Mid", "Top"],
+    archetypes: ["Mage", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "生まれたときから、オーロラは精霊界と物質世界の間を行き来する独自の能力で人生を歩んでいた。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "生まれたときから、オーロラは精霊界と物質世界の間を行き来する独自の能力で人生を歩んでいた。",
+    blurbEn:
+      "From the moment she was born, Aurora navigated life with a unique ability to move between the spirit and material realms. Determined to learn more about the spirit realm's inhabitants, she left her home to further her research and happened upon a...",
+    loc: {
+      ko: {
+        name: "오로라",
+        title: "세계의 경계에 선 마녀",
+        blurb:
+          "태어난 순간부터 오로라는 영혼 세계와 물질 세계를 넘나드는 특별한 능력으로 삶의 길을 찾았다. 영혼 세계의 주민들에 대해 더 알고 싶었던 오로라는 자신의 고향을 떠났고, 시간 속에 뒤틀리고 길을 잃어 방황하는 반신을 만났다. 그의 절박함을 목격한 오로라는 자신의 거친 친구가 잊어버린 자아를 되찾도록 도와줄 방법을 찾기로 결심했고 프렐요드의 가장 먼 곳으로 여정을 떠났다.",
+      },
+      zh: {
+        name: "阿萝拉",
+        title: "双界灵兔",
+        blurb:
+          "从诞生那一刻起，阿萝拉就能够在精神和物质领域之间游走；长大后，她决定细细探索精神领域的生物，于是远走他乡，寻觅未知。机缘巧合间，她遇见了一位迷失的半神，他在漫漫岁月中被遗忘，变得痛苦扭曲。此等绝望，阿萝拉无法坐视不管，她要帮这位狂野不羁的朋友找回他原本的身份，于是踏上了一段遍迹弗雷尔卓德的探寻之旅。",
+      },
+      es: {
+        title: "la Bruja entre Mundos",
+        blurb:
+          "Desde que nació, Aurora ha tenido una visión única de la vida gracias a su capacidad para moverse entre los reinos material y espiritual. Decidida a conocer mejor a los habitantes del reino espiritual, abandonó su hogar para ampliar sus conocimientos...",
+      },
+      fr: {
+        title: "Sorcière d'entre les mondes",
+        blurb:
+          "Depuis sa naissance, Aurora a toujours été capable de passer du royaume spirituel au royaume matériel. Déterminée à étudier les habitants du royaume spirituel, elle a quitté son foyer pour se consacrer à ses recherches. En chemin, elle est tombée sur un...",
+      },
+      de: {
+        title: "die Hexe zwischen den Welten",
+        blurb:
+          "Seit ihrer Geburt verfügt Aurora über die einzigartige Fähigkeit, zwischen der Welt der Geister und der Sterblichen hin und her zu reisen. Sie verließ ihr Zuhause, um mehr über die Bewohner des Geisterreichs zu lernen und ihre Forschungen voranzubringen...",
+      },
+      pt: {
+        title: "a Bruxa Entre Mundos",
+        blurb:
+          "Desde que nasceu, Aurora vive com uma habilidade inigualável de viajar entre os reinos dos mortais e dos espíritos. Determinada a aprender mais sobre os habitantes do reino espiritual, ela deixou seu lar para trás com o objetivo de conduzir mais...",
+      },
+      ru: {
+        name: "Аврора",
+        title: "Ведьма двух миров",
+        blurb:
+          "С самого рождения Аврору отличала уникальная способность свободно перемещаться между материальным миром и царством духов. Желая больше узнать о его обитателях, она покинула родной дом в поисках знаний и повстречала заблудшего полубога, чье имя давно...",
+      },
+    },
   },
   {
     id: "azir",
@@ -348,25 +901,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Shurima",
     ddragonId: "Azir",
     roles: ["Mid"],
-    archetypes: ["Mage","Marksman"],
+    archetypes: ["Mage", "Marksman"],
     storyVec: s({
-  honor: 0.7,
-  ambition: 0.8,
-  organization: 0.8,
-  family: 0.4
-}),
+      honor: 0.7,
+      ambition: 0.8,
+      organization: 0.8,
+      family: 0.4,
+    }),
     gameVec: g({
-  range: 0.7,
-  skillBased: 0.9,
-  damageStyle: 0.5,
-  durability: 0.3,
-  damage: 0.7,
-  cc: 0.7,
-  mobility: 0.6,
-  difficulty: 0.95,
-  scaling: 0.7
-}),
+      range: 0.7,
+      skillBased: 0.9,
+      damageStyle: 0.5,
+      durability: 0.3,
+      damage: 0.7,
+      cc: 0.7,
+      mobility: 0.6,
+      difficulty: 0.95,
+      scaling: 0.7,
+    }),
     blurb: "砂に眠る帝国を蘇らせるシュリーマの皇帝。",
+    blurbEn:
+      "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended...",
+    loc: {
+      ko: {
+        name: "아지르",
+        title: "사막의 황제",
+        blurb:
+          "불멸을 꿈꾸던 고대 슈리마의 거만한 황제, 아지르. 그의 오만은 생애 최전성기에 그를 배반과 죽음으로 몰아 넣었다. 그 후 수천 년이 흘렀고, 아지르는 가공할 힘을 지닌 초월체로 다시 태어났다. 사막 아래 묻혀 있던 그의 도시가 지표면 위로 솟아 오르는 장관을 목도하며 아지르는 슈리마 제국의 옛 영광을 되살리겠다고 다짐한다.",
+      },
+      zh: {
+        name: "阿兹尔",
+        title: "沙漠皇帝",
+        blurb:
+          "阿兹尔是上古时期恕瑞玛的一位凡人皇帝，一位站在不朽神话巅峰的自豪之人。但他的狂妄引来了旁人的背叛，在最伟大胜利降临的那一刻将他杀害。而现在，数千年后，他重获新生并成为了力量无边的飞升者。阿兹尔的城市已经从黄沙之下崛起，他要让恕瑞玛恢复曾经的荣光。",
+      },
+      es: {
+        title: "El Emperador de las Arenas",
+        blurb:
+          "Azir, emperador de Shurima en un pasado remoto, fue un hombre orgulloso que estuvo a punto de alcanzar la inmortalidad. Dominado por la arrogancia, fue traicionado y asesinado en la hora de su mayor triunfo, pero ahora, milenios después, ha renacido...",
+      },
+      fr: {
+        title: "Empereur des sables",
+        blurb:
+          "Azir fut l'empereur mortel de Shurima en des temps très lointains, un homme fier dressé au bord de l'immortalité. Son orgueil lui valut d'être trahi et assassiné à l'heure de son triomphe ; mais des millénaires se sont écoulés et il revient sous la...",
+      },
+      de: {
+        title: "der Imperator des Sandes",
+        blurb:
+          "Azir war in einem lange vergangenen Zeitalter ein sterblicher Imperator von Shurima, ein stolzer Mann, die Unsterblichkeit zum Greifen nahe. Seine Überheblichkeit wurde ihm schließlich zum Verhängnis: Im Augenblick seines größten Triumphes wurde er...",
+      },
+      pt: {
+        title: "o Imperador das Areias",
+        blurb:
+          "Azir foi um imperador mortal de Shurima em uma era muito antiga e um homem orgulhoso que esteve a um passo da imortalidade. Sua insolência fez com que fosse traído e assassinado no momento de seu maior triunfo, mas agora, milênios depois, ele renasceu...",
+      },
+      ru: {
+        name: "Азир",
+        title: "Император пустыни",
+        blurb:
+          "Очень давно Азир был смертным императором Шуримы, гордецом, стоявшим на пороге бессмертия. Спесь обрекла его на предательство и убийство в момент величайшего триумфа. Однако тысячелетия спустя он переродился, став вознесшимся – существом невиданной силы...",
+      },
+    },
   },
   {
     id: "bard",
@@ -377,20 +972,65 @@ export const CHAMPIONS: Champion[] = [
     region: "Targon",
     ddragonId: "Bard",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.9,
-  scaling: 0.6
-}),
-    blurb: "星の向こうからやってきた旅人であるバードは幸運の使者であり、生命が混沌の無関心に耐えられる平衡を保つために戦っている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.9,
+      scaling: 0.6,
+    }),
+    blurb:
+      "星の向こうからやってきた旅人であるバードは幸運の使者であり、生命が混沌の無関心に耐えられる平衡を保つために戦っている。",
+    blurbEn:
+      "A traveler from beyond the stars, Bard is an agent of serendipity who fights to maintain a balance where life can endure the indifference of chaos. Many Runeterrans sing songs that ponder his extraordinary nature, yet they all agree that the cosmic...",
+    loc: {
+      ko: {
+        name: "바드",
+        title: "영겁의 수호자",
+        blurb:
+          "별 너머에서 온 여행자 바드는 뜻밖의 발견과 예기치 않은 행운을 수호하며, 삶이 무심한 혼돈을 견딜 수 있도록 우주의 균형을 유지하기 위해 싸운다. 룬테라 인들은 바드가 신비하고 초월자적인 존재라는 내용의 노래를 곧잘 흥얼거리지만, 이 우주의 방랑자가 강력한 마법의 힘이 깃든 유물에 집착한다는 사실은 모든 룬테라 인이 동의하는 바다. 하지만 유익한 정령들이 내는 환희 어린 합창에 둘러싸인 바드가 악의를 지니고 있는 것은 아닐 터이다. 바드는 필멸의...",
+      },
+      zh: {
+        name: "巴德",
+        title: "星界游神",
+        blurb:
+          "巴德是星界彼端的旅者，是奇缘巧遇的使者。他艰难地维护着宇宙的平衡，从而让生命能够抵御无情的混乱。符文之地有许多人传唱关于他的歌谣，内容里流露出对他超凡本质的猜想，而所有这些歌谣都会提及同一件事：这位星界游荡者总是会被强大的魔法圣物所吸引。一群木灵欢唱乐团始终围绕在巴德身边充当小帮手，他的行为绝不会被误会带有任何恶意，因为他永远都是在为更大的良善尽职尽责，只不过他的方式不为常人理解。",
+      },
+      es: {
+        name: "Bardo",
+        title: "El Guardián Errante",
+        blurb:
+          "Bardo, un viajero de más allá de las estrellas, es un agente de la serendipia que lucha para mantener un equilibrio en el que la vida pueda soportar la indiferencia del caos. Muchos habitantes de Runaterra cantan canciones que hablan de su naturaleza...",
+      },
+      fr: {
+        title: "Gardien errant",
+        blurb:
+          "Voyageur d'au-delà des étoiles, Bard est un messager des bons augures qui combat pour maintenir l'équilibre dont la vie a besoin pour prospérer dans l'indifférence du chaos. Dans tout Runeterra, sa mystérieuse nature inspire des chants qui ne sont...",
+      },
+      de: {
+        title: "der wandelnde Beschützer",
+        blurb:
+          "Bard ist ein Reisender aus fernen Galaxien. Er lässt sich vom Zufall treiben und ist darauf bedacht, ein Gleichgewicht zu erhalten, in dem das Leben der Gleichgültigkeit des Chaos standhalten kann. Viele Bewohner Runeterras kennen Lieder, die von seinem...",
+      },
+      pt: {
+        name: "Bardo",
+        title: "o Protetor Andarilho",
+        blurb:
+          "Viajante de galáxias distantes, Bardo é um agente do acaso que luta para manter um equilíbrio em que a vida possa suportar a indiferença do caos. Muitos habitantes de Runeterra entoam canções que louvam sua extraordinária índole, mas todos concordam que...",
+      },
+      ru: {
+        name: "Бард",
+        title: "Странствующий хранитель",
+        blurb:
+          "Путешественник из-за пределов звезд, Бард – это сама любознательность; он борется за поддержание баланса там, где жизнь способна дать отпор проявлениям неумолимого хаоса. Многие жители Рунтерры слагают о нем песни, и все они сходятся в том, что...",
+      },
+    },
   },
   {
     id: "belveth",
@@ -404,17 +1044,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.55,
-  durability: 0.2,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.95,
-  scaling: 0.5
-}),
-    blurb: "ヴォイドが呑み込んだ街一つ分の物質から生み出された悪夢のような女帝ベル＝ヴェスは、ルーンテラの終焉そのもの…そして彼女が造り出す醜悪な現実の始まりだ。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.55,
+      durability: 0.2,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.95,
+      scaling: 0.5,
+    }),
+    blurb:
+      "ヴォイドが呑み込んだ街一つ分の物質から生み出された悪夢のような女帝ベル＝ヴェスは、ルーンテラの終焉そのもの…そして彼女が造り出す醜悪な現実の始まりだ。",
+    blurbEn:
+      "A nightmarish empress created from the raw material of an entire devoured city, Bel'Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from...",
+    loc: {
+      ko: {
+        name: "벨베스",
+        title: "공허의 여제",
+        blurb:
+          "잡아먹힌 도시를 재료로 만들어진 사악한 여제 벨베스는 룬테라의 종말이자, 자신이 만든 끔찍한 현실의 시작이기도 하다. 그녀는 지상 세계의 바뀐 역사와 지식, 기억의 시대에 힘입어 새로운 경험과 감정에 대한 갈망을 채우고, 마주치는 모든 것을 집어삼킨다. 하지만 하나의 세계만으로 굶주림을 채우지 못한 벨베스는 공허의 옛 주인들에게 눈을 돌린다...",
+      },
+      zh: {
+        name: "卑尔维斯",
+        title: "虚空女皇",
+        blurb:
+          "一座被吞噬的城市，哺育了一位噩梦般的女皇。卑尔维斯就是符文之地的终结……也是她亲手规划的可怖现实的开端。地上世界无数世代的历史、知识和记忆驱使着她不知餍足地吞食所过之处的一切体验和情感。然而，区区一个世界完全不能满足她的胃口。卑尔维斯将眼光投向了虚空曾经的主人……",
+      },
+      es: {
+        title: "la Emperatriz del Vacío",
+        blurb:
+          "Una emperatriz horripilante creada a partir de los materiales de la ciudad que devoró. Bel'Veth representa el mismísimo fin de Runaterra tal y como la conocemos... y marca el comienzo de una monstruosa realidad creada a su imagen y semejanza. Impulsada...",
+      },
+      fr: {
+        title: "Impératrice du Néant",
+        blurb:
+          "Bel'Veth, impératrice cauchemardesque née d'une cité dévorée, représente la fin de Runeterra... et le début d'une monstrueuse réalité de sa propre conception. Mue par des siècles d'histoire, de connaissances et de souvenirs absorbés dans le monde du...",
+      },
+      de: {
+        title: "die Kaiserin der Leere",
+        blurb:
+          "Bel'Veth ist eine albtraumhafte Kaiserin, die aus dem Rohmaterial einer komplett verschlungenen Stadt erschaffen wurde. Sie ist das Ende von Runeterra … und der Anfang einer ungeheuerlichen Realität nach ihren Vorstellungen. Angetrieben durch Zeitalter...",
+      },
+      pt: {
+        title: "a Imperatriz do Vazio",
+        blurb:
+          "Bel'Veth, uma imperatriz tenebrosa nascida da essência de uma cidade devorada, é o fim da própria Runeterra... E o início de uma realidade monstruosa criada à sua imagem. Guiada por eras de história, conhecimento e lembranças adaptadas do mundo superior...",
+      },
+      ru: {
+        name: "Бел'Вет",
+        title: "Императрица Бездны",
+        blurb:
+          "Бел'Вет – чудовищная императрица, чьей плотью стал поглощенный ею город. Она пришла, чтобы уничтожить Рунтерру и создать на ее месте новый мир – такой, каким она хочет его видеть. Голод Бел'Вет невозможно утолить. Она пожирает все на своем пути в...",
+      },
+    },
   },
   {
     id: "blitzcrank",
@@ -425,20 +1108,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Blitzcrank",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.8,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.5
-}),
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.8,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.5,
+    }),
     blurb: "ブリッツクランクはゾウンからやってきた、ほぼ破壊不能な巨大ロボットだ。",
+    blurbEn:
+      "Blitzcrank is an enormous, near-indestructible automaton from Zaun, originally built to dispose of hazardous waste. However, he found this primary purpose too restricting, and modified his own form to better serve the fragile people of the Sump...",
+    loc: {
+      ko: {
+        name: "블리츠크랭크",
+        title: "거대 증기 골렘",
+        blurb:
+          "블리츠크랭크는 지하도시 자운의 기술이 만들어낸 거대한 기계로 사실상 파괴불가능에 가깝다. 원래는 자운을 뒤덮은 유독 폐기물을 처리하기 위해 만들어진 골렘이었으나, 연약하기 짝이 없는 자운 시민들을 지키기 위해서는 폐기물을 치우는 것만으로는 모자란다고 판단하여 스스로 형체를 변형시키기에 이르렀다. 블리츠크랭크는 골렘다운 힘과 내구성을 사심 없이 활용하여 사람들을 보호하고, 말썽꾼이 눈에 띄면 강철 주먹을 내지르거나 에너지를 분출하여 진압한다.",
+      },
+      zh: {
+        name: "布里茨",
+        title: "蒸汽机器人",
+        blurb:
+          "布里茨是来自祖安的一个巨大的、几乎坚不可摧的机械体，最初被制造出来的目的是为了处理有毒废料。然而他觉得自己存在的意义太过狭隘，于是就改装了自己的形态，以便更好地效力于地沟区的孱弱人群。布里茨无私地使用自己的力量和钢铁之躯保护其他人，伸出长长的机械援手，或者发出能量脉冲，制服任何带来麻烦的人。",
+      },
+      es: {
+        title: "El Gran Gólem de Vapor",
+        blurb:
+          "Blitzcrank es un autómata enorme, casi indestructible, creado originalmente para el tratamiento de residuos tóxicos. Sin embargo, este propósito original le parecía demasiado restrictivo, así que se automodificó para servir mejor a los débiles del...",
+      },
+      fr: {
+        title: "Golem de vapeur",
+        blurb:
+          "Blitzcrank est un énorme automate de Zaun. Presque indestructible, il fut d'abord construit pour traiter des déchets toxiques, mais il trouva rapidement sa programmation initiale trop restrictive et il modifia sa propre forme pour mieux servir la...",
+      },
+      de: {
+        title: "der große Dampfgolem",
+        blurb:
+          "Blitzcrank ist eine massive, beinahe unzerstörbare Maschine aus Zhaun, deren ursprünglicher Zweck die Entsorgung von Giftmüll war. Er fand jedoch, dass ihn seine Hauptaufgabe zu sehr einschränkte, und modifizierte sich selbst, um der zerbrechlichen...",
+      },
+      pt: {
+        title: "o Grande Golem a Vapor",
+        blurb:
+          "Blitzcrank é um autômato enorme e praticamente indestrutível de Zaun, construído originalmente para lidar com lixo tóxico. No entanto, ele achou seu propósito principal muito restritivo e modificou sua própria forma para ajudar as pessoas menos...",
+      },
+      ru: {
+        name: "Блицкранк",
+        title: "Великий паровой голем",
+        blurb:
+          "Блицкранк – огромный, почти нерушимый робот из Зауна, изначально созданный для утилизации ядовитых отходов. Однако он счел свою основную задачу слишком незначительной и модифицировался, чтобы лучше служить хрупким жителям Сточных ям. Блицкранк направил...",
+      },
+    },
   },
   {
     id: "brand",
@@ -448,21 +1173,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "復讐の炎",
     region: "Demacia",
     ddragonId: "Brand",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.66,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
-    blurb: "ブランドとして知られる生命体は、かつてキーガン・ローデという名の凍てつくフレヨルドの部族の一員だったが、今では偉大な力への誘惑に溺れることへの教訓としてその存在",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.66,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ブランドとして知られる生命体は、かつてキーガン・ローデという名の凍てつくフレヨルドの部族の一員だったが、今では偉大な力への誘惑に溺れることへの教訓としてその存在",
+    blurbEn:
+      "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself—and, in an instant, the...",
+    loc: {
+      ko: {
+        name: "브랜드",
+        title: "타오르는 복수",
+        blurb:
+          "케간 로디는 얼음이 뒤덮인 프렐요드의 어느 부족민이었으나 거대한 힘의 유혹에 넘어가 브랜드가 되었다. 전설처럼 전해지는 세계 룬 중 하나를 찾아나선 그는 막판에 동료들을 배신하고 세계 룬을 혼자 차지했다. 그리고 다음 순간, 케간 로디는 더 이상 존재하지 않았다. 영혼은 불에 타 사라지고, 육신은 살아 있는 화염에 휩싸여 브랜드가 되어버린 것이다. 브랜드는 이제 또 다른 세계 룬을 찾아 발로란을 헤매며, 필멸자는 십여 번을 다시 태어나 산다 해도...",
+      },
+      zh: {
+        name: "布兰德",
+        title: "复仇焰魂",
+        blurb:
+          "基根·诺和曾经是一名普通弗雷尔卓德部族居民，现在则变成了另一种生物，布兰德。他的身世警醒着后人，被更强大的力量所诱惑会带来什么后果。基根为了追寻传说中的世界符文，背叛了自己的同伴并将符文据为己有，就在那一瞬间，这个人彻底消失了。他的灵魂被彻底燃尽，他的身躯成为了活体烈焰的容器，如今，布兰德游荡在瓦洛兰，寻觅着其他的符文。他曾遭受的苦难，凡人活上十几辈子也未必能够经历，而他发誓此仇必报。",
+      },
+      es: {
+        title: "La Venganza Ardiente",
+        blurb:
+          "Brand, antiguo miembro de la tribu Kegan Rodhe del helado Freljord, es una lección sobre la tentación de un poder mayor. En busca de una de las legendarias Runas Geogénicas, Kegan traicionó a sus compañeros y se quedó con la runa. El hombre desapareció...",
+      },
+      fr: {
+        title: "Vengeur flamboyant",
+        blurb:
+          "Autrefois membre d'une tribu de Freljord, Kegan Rodhe est devenu l'être que l'on connaît sous le nom de Brand à force de convoiter des pouvoirs toujours plus grands. Alors qu'il recherchait l'une des légendaires Runes telluriques, Kegan trahit ses...",
+      },
+      de: {
+        title: "die brennende Vergeltung",
+        blurb:
+          "Die als „Brand“ bekannte Kreatur war einst ein Stammesangehöriger des eisigen Freljords namens Kegan Rodhe und ist ein mahnendes Beispiel für die Verlockung größerer Macht. Auf der Suche nach einer der legendären Weltrunen betrog Kegan seine Kameraden...",
+      },
+      pt: {
+        title: "a Vingança Flamejante",
+        blurb:
+          "A criatura conhecida como Brand já se chamou Kegan Rodhe, um membro da gélida Freljord, e é hoje uma lição do que a tentação por poderes maiores pode fazer. Enquanto buscava uma das lendárias Runas Globais, Kegan traiu seus companheiros e a pegou para...",
+      },
+      ru: {
+        name: "Брэнд",
+        title: "Пылающее возмездие",
+        blurb:
+          "Превратившись в существо по имени Брэнд, представитель одного из племен морозного Фрельйорда Кеган Родх стал наглядным примером того, что бывает с теми, кто жаждет великой силы. Найдя одну из легендарных Мировых рун, Кеган предал своих спутников и...",
+      },
+    },
   },
   {
     id: "braum",
@@ -473,20 +1241,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Braum",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.42,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.3,
-  scaling: 0.5
-}),
-    blurb: "巨大な筋肉が盛り上がる腕と、その筋肉よりも大きな優しい心を持つブラウムは、フレヨルドの誰もが愛する英雄だ。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.42,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.3,
+      scaling: 0.5,
+    }),
+    blurb:
+      "巨大な筋肉が盛り上がる腕と、その筋肉よりも大きな優しい心を持つブラウムは、フレヨルドの誰もが愛する英雄だ。",
+    blurbEn:
+      "Blessed with massive biceps and an even bigger heart, Braum is a beloved hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength, said to have felled a forest of oaks in a single night, and punched an entire mountain into...",
+    loc: {
+      ko: {
+        name: "브라움",
+        title: "프렐요드의 심장",
+        blurb:
+          "축복받은 거대 이두박근과 그보다도 더 크고 호방한 마음을 지닌 브라움은 프렐요드 주민들이 사랑해 마지않는 영웅이다. 프로스텔드 북방에서 연회가 열리면 빠지지 않는 순서가 바로 브라움의 팔힘에 건배를 하는 것이다. 전설에 따르면 브라움은 단 하룻밤에 오크나무 숲 전체를 베어버렸고, 산 하나를 주먹으로 부수어 돌무더기로 만들어 버렸다고 한다. 마법이 깃든 동굴 문짝을 방패 삼아 들고, 근육만큼이나 커다란 콧수염 아래 사람 좋은 미소를 활짝 띤 브라움은...",
+      },
+      zh: {
+        name: "布隆",
+        title: "弗雷尔卓德之心",
+        blurb:
+          "拥有大肌肉和大心脏的布隆，是一位受人爱戴的弗雷尔卓德英雄，在弗雷尔卓德北部的任何一家蜜酒坊里，都有人在这位传奇般的强壮英雄致敬。据说他曾在一夜之间扫平一整片橡树森林，还曾用拳头把一整座山打成碎石子。那抹小胡子勾勒出的笑容和布隆的肌肉一样夺目，他手持一扇附有魔法的秘库大门当盾牌，常年在北方的冻土上漫游，真诚友善地帮助着所有陷入危难之中的人。",
+      },
+      es: {
+        title: "El Corazón de Freljord",
+        blurb:
+          "Bendecido con bíceps enormes y un corazón aún más grande, Braum es un héroe muy apreciado en Freljord. Todas las tabernas al norte del Fuerte Helado brindan por su fuerza legendaria. Se dice que taló un bosque de robles en una sola noche y convirtió una...",
+      },
+      fr: {
+        title: "Cœur de Freljord",
+        blurb:
+          "Doté de biceps énormes, et d'un cœur plus grand encore, Braum est un héros admiré par tout Freljord. Lors de tous les banquets au nord de Frostheld, on rend hommage à sa force légendaire. On raconte qu'il a abattu une forêt entière de chênes en une...",
+      },
+      de: {
+        title: "das Herz Freljords",
+        blurb:
+          "Braum, der geliebte Held Freljords ist mit massivem Bizeps und einem noch größeren Herzen gesegnet. In allen Methallen nördlich des Frostklamms wird auf seine legendäre Stärke getrunken. Legenden über ihn besagen, dass er einen ganzen Eichenwald in...",
+      },
+      pt: {
+        title: "o Coração de Freljord",
+        blurb:
+          "Abençoado com bíceps gigantescos e um coração maior ainda, Braum é um amado herói de Freljord. Cada salão de hidromel ao norte de Guardageada brinda sua força lendária que teria derrubado uma floresta de carvalhos em uma única noite e demolido uma...",
+      },
+      ru: {
+        name: "Браум",
+        title: "Сердце Фрельйорда",
+        blurb:
+          "Наделенный огромными мускулами и еще большим сердцем, Браум – любимый герой Фрельйорда. В каждой таверне к северу от Фростхелда пьют за его легендарную силу, утверждая, что он вырубил целый дубовый лес всего за ночь и голыми руками снес гору. С...",
+      },
+    },
   },
   {
     id: "briar",
@@ -497,20 +1308,63 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Briar",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.3,
-  scaling: 0.45
-}),
-    blurb: "黒薔薇団の実験の失敗により、制御不能な血の渇きとともに生まれ落ちたブライアーは、特殊な拘束具がなければ狂乱の精神を抑えられない。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.3,
+      scaling: 0.45,
+    }),
+    blurb:
+      "黒薔薇団の実験の失敗により、制御不能な血の渇きとともに生まれ落ちたブライアーは、特殊な拘束具がなければ狂乱の精神を抑えられない。",
+    blurbEn:
+      "A failed experiment by the Black Rose, Briar's uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she's...",
+    loc: {
+      ko: {
+        name: "브라이어",
+        title: "억눌린 허기",
+        blurb:
+          "검은 장미단의 실패한 실험으로 탄생한 브라이어는 피를 향한 갈망을 통제할 수 없어서 특수 족쇄로 광기를 다스려야 했다. 몇 년이나 갇혀있던 끝에, 살아있는 무기인 브라이어는 구속에서 벗어나 바깥세상에 풀려났다. 브라이어는 이제 누구의 통제도 받지 않는다. 지식과 피에 목마른 브라이어는 마음껏 날뛸 기회를 마다하지 않는다. 물론 그 뒤에 광증을 억누르는 것이 쉽진 않지만.",
+      },
+      zh: {
+        name: "贝蕾亚",
+        title: "狂厄蔷薇",
+        blurb:
+          "身为黑色玫瑰实验失败的产物，贝蕾亚不受控制的嗜血欲必须使用一种特殊的囚枷进行压制，进而让她保持清醒的头脑。经过多年的监禁，这具活体武器突破了拘束，闯到了外面的世界。如今的她不受任何人的掌控，只遵循自己对知识与鲜血的渴望。如果遇到合适的机会，她将细细品味放纵的感觉，只不过嗜血的狂意一旦释放就很难压制。",
+      },
+      es: {
+        title: "la Gula Confinada",
+        blurb:
+          "La incontrolable sed de sangre que siente Briar, un experimento fallido de la Rosa Negra, la obliga a cargar con una picota especial que calma su enajenada mente. Tras años de confinamiento, esta arma viviente se ha librado de sus cadenas y se ha...",
+      },
+      fr: {
+        title: "Faim insatiable",
+        blurb:
+          "Née d'une expérience ratée menée par la Rose noire, Briar a besoin d'un pilori spécial pour contrôler son irrépressible soif de sang. Après des années d'enfermement, cette arme vivante s'est aujourd'hui défaite de ses entraves et parcourt le monde...",
+      },
+      de: {
+        title: "der gebändigte Hunger",
+        blurb:
+          "Als gescheitertes Experiment der Schwarzen Rose erforderte Briars unkontrollierbarer Blutrausch spezielle Fesseln, um ihre rasenden Gedanken zu zügeln. Nach jahrelanger Gefangenschaft befreite sich diese lebende Waffe aus ihrem Gefängnis, um die Welt zu...",
+      },
+      pt: {
+        title: "a Fome Contida",
+        blurb:
+          "A incontrolável sede de sangue de Briar, um experimento fracassado da Rosa Negra, exigia uma estrutura especial para controlar sua mente frenética. Após anos de confinamento, essa arma viva se libertou de todas as restrições e ficou livre no mundo...",
+      },
+      ru: {
+        name: "Брайер",
+        title: "Обузданный голод",
+        blurb:
+          "Брайер – созданное Черной Розой живое оружие, которое оказалось не вполне удачным. Ей приходится носить специальные колодки, чтобы сдерживать неутолимую жажду крови и направлять ход разбегающихся мыслей. Просидев много лет в темнице, Брайер наконец...",
+      },
+    },
   },
   {
     id: "caitlyn",
@@ -523,23 +1377,65 @@ export const CHAMPIONS: Champion[] = [
     roles: ["ADC"],
     archetypes: ["Marksman"],
     storyVec: s({
-  justice: 0.9,
-  protection: 0.7,
-  organization: 0.8,
-  family: 0.4
-}),
+      justice: 0.9,
+      protection: 0.7,
+      organization: 0.8,
+      family: 0.4,
+    }),
     gameVec: g({
-  range: 0.95,
-  skillBased: 0.4,
-  damageStyle: 0.5,
-  durability: 0.2,
-  damage: 0.7,
-  cc: 0.4,
-  mobility: 0.4,
-  difficulty: 0.3,
-  scaling: 0.45
-}),
+      range: 0.95,
+      skillBased: 0.4,
+      damageStyle: 0.5,
+      durability: 0.2,
+      damage: 0.7,
+      cc: 0.4,
+      mobility: 0.4,
+      difficulty: 0.3,
+      scaling: 0.45,
+    }),
     blurb: "ピルトーヴァーの保安官。緻密な狙撃で犯罪者を追う。",
+    blurbEn:
+      "Renowned as its finest peacekeeper, Caitlyn Kiramman is also Piltover's best shot at ridding the city of its elusive criminal elements. She is often paired with Vi, acting as a cool counterpoint to her partner's more impetuous nature. Even though she...",
+    loc: {
+      ko: {
+        name: "케이틀린",
+        title: "필트오버의 보안관",
+        blurb:
+          "필트오버 제일가는 평화 수호자로 명성이 자자한 케이틀린 키라먼은 이 도시에서 가장 뛰어난 명사수이기도 하다. 그 잡기 어렵다는 필트오버의 범죄 조직들도 그녀의 손에 소탕되었다. 케이틀린은 주로 바이와 짝을 이루어, 바이의 불같은 성미를 자신의 냉철함으로 보완하며 멋진 콤비로 활약한다. 케이틀린의 마법공학 소총이 독보적으로 우수한 성능인 것은 사실이지만, 정작 케이틀린의 가장 강력한 무기는 따로 있다. 필트오버에서 활개 칠 생각을 할 정도로 무모한...",
+      },
+      zh: {
+        name: "凯特琳",
+        title: "皮城女警",
+        blurb:
+          "凯特琳被誉为皮尔特沃夫最顶尖的和平卫士，同时也是让这座城市真正摆脱地下隐秘犯罪的最有希望的人选。她经常和蔚联手执行任务，以冷静和沉着弥补自己搭档的鲁莽天性。虽然她的海克斯科技步枪独一无二，但凯特琳最强大的武器其实是她过人的智谋，总是能设下天罗地网，迎接任何傻到敢在进步之城作案的不法之徒。",
+      },
+      es: {
+        title: "La Sheriff de Piltover",
+        blurb:
+          "Reconocida como su mejor agente, Caitlyn Kiramman es también la mejor arma de Piltover para librar a la ciudad de sus esquivos criminales. A menudo trabaja con Vi, y actúa como el contrapunto lógico a la naturaleza más impetuosa de su compañera. Su...",
+      },
+      fr: {
+        title: "Shérif de Piltover",
+        blurb:
+          "Caitlyn Kiramman est la plus célèbre gardienne de la paix à Piltover, mais elle est aussi la plus apte à débarrasser la ville de ses criminels les plus insaisissables. Elle fait souvent équipe avec Vi, son calme faisant contrepoids à la fougue de sa...",
+      },
+      de: {
+        title: "der Sheriff von Piltover",
+        blurb:
+          "Caitlyn Kiramman hat den Ruf, die beste Friedenswächterin Piltovers zu sein, und ist die erste Wahl, wenn es darum geht, die Stadt von schwer zu fassenden Kriminellen zu befreien. Sie wird oft zusammen mit Vi eingesetzt, da ihre kühle Art ein Gegenpol...",
+      },
+      pt: {
+        title: "a Xerife de Piltover",
+        blurb:
+          "Conhecida como sua melhor pacificadora, Caitlyn Kiramman também é a melhor escolha de Piltover para livrar a cidade de seus elementos criminosos elusivos. É comum que ela faça dupla com Vi, agindo como um contraponto de calmaria para a natureza...",
+      },
+      ru: {
+        name: "Кейтлин",
+        title: "Шериф Пилтовера",
+        blurb:
+          "Кейтлин Кирамман – талантливый миротворец и главная надежда Пилтовера на избавление от неуловимых преступников. Как правило, она работает в паре с Вай, уравновешивая своим хладнокровием вспыльчивый нрав напарницы. Кейтлин владеет единственной в своем...",
+      },
+    },
   },
   {
     id: "camille",
@@ -550,20 +1446,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Piltover",
     ddragonId: "Camille",
     roles: ["Top"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.4,
-  scaling: 0.45
-}),
-    blurb: "フェロス一族のエレガントな主席スパイであるカミールは、法の及ばぬ領域で活動するために機械の体になった。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.4,
+      scaling: 0.45,
+    }),
+    blurb:
+      "フェロス一族のエレガントな主席スパイであるカミールは、法の及ばぬ領域で活動するために機械の体になった。",
+    blurbEn:
+      "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros—an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy...",
+    loc: {
+      ko: {
+        name: "카밀",
+        title: "강철의 그림자",
+        blurb:
+          "카밀은 법이라는 테두리 밖에서 활동할 수 있도록 아예 자신의 몸을 무기화해 버렸다. 우아한 엘리트 첩보원이자 페로스 가문이 배출한 최고 정보 요원인 그녀의 임무는 고도화된 필트오버와 그 하층부의 자운이 원활하게 돌아가도록 기여하는 것이다. 적응력이 뛰어나고, 정확성을 중시하므로 엉성한 기술은 반드시 정리해 버려야 할 수치로 여긴다. 마법공학 증강을 통해 최고가 되려는 노력, 그리고 자신이 품고 있는 칼만큼이나 예리한 지성을 지닌 카밀의 모습을 보면...",
+      },
+      zh: {
+        name: "卡蜜尔",
+        title: "青钢影",
+        blurb:
+          "卡蜜尔是菲罗斯家族的首席密探，游走于法律失效的边缘地带，小心地维护着皮尔特沃夫与其治下的祖安，确保一切都能顺畅运转。在灵活而精准的卡密尔看来，任何浮皮潦草的技术都是必须被禁绝的丑陋行径。她的心智也如其身下的刀刃一般锐利，为了追求极致，她对自己进行了大幅度的海克斯人体增强手术。这也让很多人不禁怀疑，她根本就是一台纯粹的机器，而不是一个女人。",
+      },
+      es: {
+        title: "la Sombra de Acero",
+        blurb:
+          "Convertida en un arma viviente diseñada para operar fuera de la ley, Camille es la jefa de espías del clan Ferros, una elegante agente de élite que se asegura de que nada amenace el funcionamiento de Piltover ni de Zaun. Su adaptabilidad y minuciosidad...",
+      },
+      fr: {
+        title: "Ombre d'acier",
+        blurb:
+          "Transformée en arme pour agir en dehors des limites de la loi, Camille est le principal défenseur du clan Ferros, un agent élégant et supérieur qui contribue à faire fonctionner correctement la machine de Piltover et son ombre zaunienne. Son...",
+      },
+      de: {
+        title: "der stählerne Schatten",
+        blurb:
+          "Camille ist bis an die Zähne bewaffnet und kann so außerhalb des Gesetzes agieren, wenn sie als Leiterin des Geheimdienstes des Ferros-Klans für den reibungslosen Ablauf der Maschinerie von Piltover sowie für eine friedliche Koexistenz mit ihrem...",
+      },
+      pt: {
+        title: "a Sombra de Aço",
+        blurb:
+          "Munida para agir além dos limites da lei, Camille é a chefe de inteligência do Clã Ferros e uma elegante agente de elite, responsável pelo bom funcionamento da máquina de Piltover e de Zaun, seu submundo. Adaptável e precisa, ela vê técnicas medíocres...",
+      },
+      ru: {
+        name: "Камилла",
+        title: "Стальная тень",
+        blurb:
+          "Главный агент дома Феррос, Камилла вооружена до зубов и не привыкла ограничивать себя рамками закона. Это утонченная шпионка, благодаря которой машина Пилтовера и ее потайной механизм, Заун, работают стабильно. Камилла превосходно умеет...",
+      },
+    },
   },
   {
     id: "cassiopeia",
@@ -577,17 +1516,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.66,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.95,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.66,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.95,
+      scaling: 0.6,
+    }),
     blurb: "カシオペアは相手を意のままに操って死に陥れる、恐ろしい妖女だ。",
+    blurbEn:
+      "Cassiopeia is a deadly creature bent on manipulating others to her sinister will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was...",
+    loc: {
+      ko: {
+        name: "카시오페아",
+        title: "독사의 포옹",
+        blurb:
+          "카시오페아는 자신의 사악한 의지대로 상대를 조종하는 치명적인 피조물이다. 녹서스의 명망 높은 뒤 쿠토 가에서 가장 아름다운 미모를 자랑하던 막내딸, 카시오페아는 고대의 힘을 찾아 슈리마 아래에 있는 지하묘실 깊은 곳으로 모험을 떠났다. 그곳에서 그녀는 소름끼치는 묘실의 수호령에게 물렸고, 몸에 독이 퍼져 독사와도 같은 포식자로 변했다. 카시오페아는 이제 밤의 장막에 숨어 교활하고 날렵하게 움직이며 사악한 시선으로 적들을 석화시킨다.",
+      },
+      zh: {
+        name: "卡西奥佩娅",
+        title: "魔蛇之拥",
+        blurb:
+          "卡西奥佩娅是个夺命的生物，决心要操纵其他人屈服于自己的阴险意志之下。身为诺克萨斯贵族杜·克卡奥家族的最年轻、最漂亮的女儿，她冒险深入恕瑞玛古代墓穴找寻远古的力量。在墓穴中，她被恐怖的墓穴守卫咬中，在毒液的作用下变成了毒蛇外形的掠食者。狡猾而敏捷的卡西奥佩娅如今在夜幕的掩护下蜿蜒滑行，用阴森的凝视让敌人石化。",
+      },
+      es: {
+        title: "El Abrazo de la Serpiente",
+        blurb:
+          "Cassiopeia es una criatura mortal empeñada en manipular a otros según su siniestra voluntad. La hija más joven y hermosa de la noble familia Du Couteau de Noxus, se aventuró en lo más profundo de las criptas debajo de Shurima en busca de poder ancestral...",
+      },
+      fr: {
+        title: "Étreinte du serpent",
+        blurb:
+          "Cassiopeia est une créature meurtrière qui excelle dans l'art de la manipulation. Elle était la plus jeune et la plus belle des filles de la famille noxienne Du Couteau, mais le jour où elle s'aventura dans les cryptes de Shurima en quête d'un pouvoir...",
+      },
+      de: {
+        title: "die Umarmung der Schlange",
+        blurb:
+          "Cassiopeia ist ein tödliches Geschöpf, das Vergnügen daran findet, andere mit ihren düsteren Absichten zu manipulieren. Die jüngste und schönste Tochter der adligen Familie Du Couteau von Noxus wagte sich auf der Suche nach uralten Kräften tief in die...",
+      },
+      pt: {
+        title: "o Abraço da Serpente",
+        blurb:
+          "Cassiopeia é uma criatura mortal dedicada a manipular os outros para fazer suas vontades sinistras. A mais bela e mais nova filha da nobre família Du Couteau de Noxus aventurou-se pelas criptas profundas sob Shurima em busca de poderes ancestrais. Lá...",
+      },
+      ru: {
+        name: "Кассиопея",
+        title: "Змеиная хватка",
+        blurb:
+          "Кассиопея – смертельно опасное существо, подчиняющее других своей зловещей воле. Самая молодая и прекрасная дочь благородной семьи дю Кото из Ноксуса, Кассиопея отважилась отправиться вглубь склепов Шуримы в поисках древней силы. Там ее укусила ужасная...",
+      },
+    },
   },
   {
     id: "chogath",
@@ -598,20 +1579,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Void",
     ddragonId: "Chogath",
     roles: ["Top"],
-    archetypes: ["Tank","Mage"],
+    archetypes: ["Tank", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.7,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "チョ＝ガスはルーンテラの眩しい太陽の下に初めて現れた時から、純粋な飢えの衝動に突き動かされていた。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.7,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "チョ＝ガスはルーンテラの眩しい太陽の下に初めて現れた時から、純粋な飢えの衝動に突き動かされていた。",
+    blurbEn:
+      "From the moment Cho'Gath first emerged into the harsh light of Runeterra's sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void's desire to consume all life, Cho'Gath's complex biology quickly converts...",
+    loc: {
+      ko: {
+        name: "초가스",
+        title: "공허의 공포",
+        blurb:
+          "공허에서 나온 생명체 초가스는 룬테라의 따가운 햇빛 아래 처음 모습을 드러낸 순간부터, 그 무엇으로도 만족시킬 수 없는 가장 순수한 굶주림에 이끌려 움직였다. 그 존재 자체가 모든 생명체를 집어삼키려는 공허의 욕망을 온전하게 드러내는 것이다. 초가스는 복잡한 생체 활동을 통해 주변 물질에서 새로운 몸을 만들어냈고, 근육과 밀도를 키웠으며, 유기체 다이아몬드처럼 딱딱한 겉껍질로 몸을 덮었다. 하지만 몸집이 커져도 허기를 채울 수 없자, 초가스는 여분의...",
+      },
+      zh: {
+        name: "科加斯",
+        title: "虚空恐惧",
+        blurb:
+          "自从科加斯出现在符文之地烈日照射之下的那一刻起，它就被永不餍足的饥饿所驱使。虚空吞噬一切生命的欲望完美地体现在科加斯的身上，它复杂的生物构造能够迅速将物质转化为身体的成长，不仅会增加肌肉的质量和密度，还能让外壳变得有如钻石般坚硬。当单纯的体型增长已经不能满足它时，这只虚空生物就会将多余的物质形成锋利的骨刺吐出体外，刺穿猎物，为稍后的盛宴进行准备。",
+      },
+      es: {
+        title: "El Terror del Vacío",
+        blurb:
+          "Desde el momento en que Cho'Gath emergió por primera vez a la dura luz solar de Runaterra, a la bestia solo le impulsaba el hambre más pura e insaciable. La perfecta expresión del deseo del Vacío de acabar con la vida, la compleja biología de Cho'Gath...",
+      },
+      fr: {
+        title: "Terreur noire",
+        blurb:
+          "Lorsque Cho'Gath débarqua sous la lumière éclatante du soleil de Runeterra, il fut immédiatement pris d'une faim insatiable. Incarnation parfaite de la volonté du Néant de dévorer toute forme de vie, le corps complexe de Cho'Gath convertit rapidement la...",
+      },
+      de: {
+        title: "der Schrecken der Leere",
+        blurb:
+          "Ab dem Moment, als Cho'Gath erstmals das erbarmungslose Sonnenlicht von Runeterra erblickte, wurde die Bestie von einem wahren und unersättlichen Hunger getrieben. Cho'Gath verkörpert das Verlangen der Leere, alles Leben zu konsumieren, und sein...",
+      },
+      pt: {
+        title: "o Terror do Vazio",
+        blurb:
+          "A partir do momento em que Cho'Gath emergiu da terra para a luz do sol ofuscante de Runeterra, a besta foi motivada por pura fome insaciável. A mais perfeita expressão do desejo do Vazio de consumir toda a vida, a biologia complexa de Cho'Gath...",
+      },
+      ru: {
+        name: "Чо'Гат",
+        title: "Ужас Бездны",
+        blurb:
+          "С тех пор как Чо'Гат впервые попал под палящее солнце Рунтерры, этого зверя терзает исконный и неутолимый голод. Совершенное воплощение желания Бездны поглощать все живое, Чо'Гат обладает сложным строением, благодаря которому все съеденное им быстро...",
+      },
+    },
   },
   {
     id: "corki",
@@ -621,21 +1645,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "豪気の爆撃手",
     region: "BandleCity",
     ddragonId: "Corki",
-    roles: ["Mid","ADC"],
-    archetypes: ["Marksman","Mage"],
+    roles: ["Mid", "ADC"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.84,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
-    blurb: "ヨードルのパイロットであるコーキが大好きなものは二つある──飛ぶこと、そして自分の立派な口ひげだ…ただし、この二つの順番は問わない。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.84,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ヨードルのパイロットであるコーキが大好きなものは二つある──飛ぶこと、そして自分の立派な口ひげだ…ただし、この二つの順番は問わない。",
+    blurbEn:
+      "The yordle pilot Corki loves two things above all others: flying, and his glamorous mustache... though not necessarily in that order. After leaving Bandle City, he settled in Piltover and fell in love with the wondrous machines he found there. He...",
+    loc: {
+      ko: {
+        name: "코르키",
+        title: "대담한 폭격수",
+        blurb:
+          "요들 비행기 조종사 코르키는 다른 어떤 것보다 좋아하는 두 가지가 있다. 바로 비행과 멋들어진 콧수염이다. 좋아하는 순서대로 나열한 것은 아니지만. 코르키는 밴들 시티를 떠난 후 필트오버에 정착하며 찾아낸 경이로운 비행기와 사랑에 빠졌다. 코르키는 비행장치를 개발하기 위해 혼신의 노력을 쏟았고, 시끄러운 뱀 편대라 불리는 베테랑 공군 정예 부대를 이끌게 되었다. 포화 속에서도 평정심을 잃지 않으며 제2의 고향의 창공을 누비는 코르키에게 마음껏 미사일...",
+      },
+      zh: {
+        name: "库奇",
+        title: "英勇投弹手",
+        blurb:
+          "约德尔飞行员库奇的最爱有二：一是飞行，二是自己英俊的小胡子，排名不分先后。离开班德尔城以后，他在皮尔特沃夫安家，自此爱上了这里奇异壮观的各式机器。他决定投身于飞行装置的开发事业，带领着一群老练飞行员组成了一支空中防御力量——“尖啸之蛇”。如今库奇临危不乱地在第二故乡的空域戒备巡逻，他还从没见过有什么问题，是一轮导弹齐射不能解决的。",
+      },
+      es: {
+        title: "El Bombardero Osado",
+        blurb:
+          "El piloto yordle Corki adora dos cosas por encima de todas las demás: volar y su glamuroso bigote. Aunque no necesariamente en ese orden. Tras abandonar la Ciudad de Bandle, se estableció en Piltover y se enamoró de las máquinas maravillosas que allí...",
+      },
+      fr: {
+        title: "Artilleur téméraire",
+        blurb:
+          "Il y a deux choses que Corki, le pilote yordle, aime plus que tout au monde : les sensations de vol et sa fantastique moustache... mais pas nécessairement dans cet ordre. Après avoir quitté Bandle, il s'installa à Piltover, où il tomba amoureux des...",
+      },
+      de: {
+        title: "der kühne Bombenschütze",
+        blurb:
+          "Der Yordle-Pilot Corki liebt zwei Dinge am meisten: Fliegen und seinen prächtigen Schnauzbart … wobei seine Prioritäten nicht ganz klar sind. Nachdem er Bandle verlassen hatte, ließ er sich in Piltover nieder und verliebte sich in dessen wundersame...",
+      },
+      pt: {
+        title: "o Bombardeiro Ousado",
+        blurb:
+          "Corki, o piloto yordle, ama duas coisas acima de qualquer outra: voar e seu glamoroso bigode... não necessariamente nessa ordem. Depois de deixar Bandópolis, ele se estabeleceu em Piltover e se apaixonou pelas máquinas maravilhosas que encontrou por lá...",
+      },
+      ru: {
+        name: "Корки",
+        title: "Отважный бомбардир",
+        blurb:
+          "Больше всего на свете йордлский пилот Корки любит две вещи: полеты и свои очаровательные усы... и не обязательно в таком порядке. Покинув Бандл Сити, он поселился в Пилтовере, влюбившись в чудесные машины, которыми славился город. Он посвятил себя...",
+      },
+    },
   },
   {
     id: "darius",
@@ -646,26 +1713,68 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Darius",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({
-  honor: 0.7,
-  ambition: 0.6,
-  family: 0.5,
-  solo: 0.4,
-  organization: 0.6
-}),
+      honor: 0.7,
+      ambition: 0.6,
+      family: 0.5,
+      solo: 0.4,
+      organization: 0.6,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.5,
-  damageStyle: 0.4,
-  durability: 0.7,
-  damage: 0.85,
-  cc: 0.4,
-  mobility: 0.2,
-  difficulty: 0.3,
-  scaling: 0.4
-}),
+      range: 0,
+      skillBased: 0.5,
+      damageStyle: 0.4,
+      durability: 0.7,
+      damage: 0.85,
+      cc: 0.4,
+      mobility: 0.2,
+      difficulty: 0.3,
+      scaling: 0.4,
+    }),
     blurb: "弱者を許さぬノクサスの軍人。実力こそが正義と信じる。",
+    blurbEn:
+      "There is no greater symbol of Noxian might than Darius, the nation's most feared and battle-hardened commander. Rising from humble origins to become the Hand of Noxus, he cleaves through the empire's enemies—many of them Noxians themselves. Knowing that...",
+    loc: {
+      ko: {
+        name: "다리우스",
+        title: "녹서스의 실력자",
+        blurb:
+          "녹서스 그 자체를 상징하는 인물로 다리우스만큼 어울리는 사람도 없을 것이다. 실전에서 단련된 사령관이자 녹서스 내에서조차도 두려움의 대상이니까. 다리우스는 미천한 집안에서 태어났으나 녹서스 제국의 적들을 파죽지세로 베어넘기면서 트리파르 군단 사령관이라는 지금의 자리와 권력을 획득했다. 문제는 그 적들 다수가 녹서스 인이었다는 사실이다. 다리우스는 자신의 명분이 정당하다는 것을 한 번도 의심한 적이 없으며, 도끼를 치켜들 때에도 망설임이 없다. 그러니...",
+      },
+      zh: {
+        name: "德莱厄斯",
+        title: "诺克萨斯之手",
+        blurb:
+          "若要论谁才是诺克萨斯武力的象征，帝国上下没有人能比德莱厄斯这名久经沙场的指挥官更加适合。他劈开无数敌人的身躯——其中也不乏诺克萨斯人，终从一名无名小卒逐渐成长为如今的诺克萨斯之手。他从不怀疑自己执行的公义，也从不在举起战斧后迟疑。作为崔法利军团的领导者，德莱厄斯绝不会对任何敌人手下留情。",
+      },
+      es: {
+        title: "La Mano de Noxus",
+        blurb:
+          "No hay mayor símbolo del poder de Noxus que Darius, el comandante más temido y más curtido en batallas de toda la nación. Pasando de orígenes humildes a convertirse en la Mano de Noxus, se abre paso a tajos entre los enemigos del imperio, muchos de...",
+      },
+      fr: {
+        title: "Main de Noxus",
+        blurb:
+          "Il n'est pas de plus grand symbole de la puissance de Noxus que Darius, le commandant le plus craint et le plus endurci de la nation. D'origine modeste, celui qui s'est élevé jusqu'à devenir la Main de Noxus pourfend aujourd'hui les ennemis de l'empire...",
+      },
+      de: {
+        title: "die Hand von Noxus",
+        blurb:
+          "Es gibt kein großartigeres Symbol für noxianische Macht als Darius, den gefürchtetsten und kampferprobtesten Kommandanten der Nation. Aus bescheidenen Verhältnissen stieg er zur Hand von Noxus auf und schlägt sich durch die Gegnerscharen des Reichs, von...",
+      },
+      pt: {
+        title: "a Mão de Noxus",
+        blurb:
+          "Não há símbolo maior do poder de Noxus do que Darius, o mais temido e experiente comandante da nação. Vindo de origens humildes para se tornar a Mão de Noxus, ele corta seu caminho através dos inimigos do império; muitos dos quais são, inclusive...",
+      },
+      ru: {
+        name: "Дариус",
+        title: "Рука Ноксуса",
+        blurb:
+          "Нет большего символа ноксианской мощи, чем Дариус – устрашающий командир своего народа, закаленный в бесчисленных сражениях. Несмотря на свое скромное происхождение, он заслужил титул Рука Ноксуса – порубив на куски множество врагов империи, среди...",
+      },
+    },
   },
   {
     id: "diana",
@@ -675,26 +1784,68 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "嘲りの月",
     region: "Targon",
     ddragonId: "Diana",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Assassin"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  knowledge: 0.7,
-  solitude: 0.7,
-  solo: 0.6,
-  revenge: 0.4
-}),
+      knowledge: 0.7,
+      solitude: 0.7,
+      solo: 0.6,
+      revenge: 0.4,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.85,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.75,
-  cc: 0.5,
-  mobility: 0.7,
-  difficulty: 0.4,
-  scaling: 0.5
-}),
+      range: 0,
+      skillBased: 0.85,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.75,
+      cc: 0.5,
+      mobility: 0.7,
+      difficulty: 0.4,
+      scaling: 0.5,
+    }),
     blurb: "月の戦士。太陽信仰の社会から追放された孤高の存在。",
+    blurbEn:
+      "Bearing her crescent moonblade, Diana fights as a warrior of the Lunari—a faith all but quashed in the lands around Mount Targon. Clad in shimmering armor the color of winter snow at night, she is a living embodiment of the silver moon's power. Imbued...",
+    loc: {
+      ko: {
+        name: "다이애나",
+        title: "차가운 달의 분노",
+        blurb:
+          "다이애나는 오늘날 거의 사멸된 고대 종교 '루나리'의 전사이자, 은빛 달의 화신 그 자체다. 그녀는 드높은 타곤 산 꼭대기에 떠오른 천체들의 기운을 온몸으로 받아들였고, 겨울 밤 설원처럼 은은하게 빛나는 갑옷과 초승달 검으로 무장했다. 그러나 인간을 초월한 그녀의 힘이 무엇을 위한 것인지는 아직까지 분명하지 않다. 다이애나는 이 세상에서 자신에게 부여된 사명이 무엇인지 알아내려 애쓰고 있다.",
+      },
+      zh: {
+        name: "黛安娜",
+        title: "皎月女神",
+        blurb:
+          "永远都佩着她的月刃的黛安娜 ，是皎月教派的武士，但这个教派在巨神峰附近几乎已经销声匿迹。身着闪烁冬夜寒雪之光铠甲的黛安娜，在巨神峰之巅与星灵精魄相融，如今的她已不再是一个单纯的凡人，而是皎月神力的凡间化身。她努力抗争命运，寻找着神的启示，以及自己的力量与存在对于这个世界的意义。",
+      },
+      es: {
+        title: "El Desdén de la Luna",
+        blurb:
+          "Portadora de una espada en forma de media luna, Diana es una guerrera de los Lunari, una fe rechazada en casi todas las tierras a los pies del Monte Targon. Ataviada con una armadura reluciente del color de la nieve en una noche de invierno, es la...",
+      },
+      fr: {
+        title: "Mépris de la lune",
+        blurb:
+          "Armée de son croissant de lune, Diana combat dans les rangs des Lunaris, une foi qui a presque disparu des terres qui entourent le Mont Targon. Portant une armure étincelante évoquant les reflets de la nuit sur un paysage de neige, elle incarne la...",
+      },
+      de: {
+        title: "der Hohn des Mondes",
+        blurb:
+          "Mit ihrer Mondsichel-Klinge kämpft Diana als Kriegerin der Lunari – einer Glaubensgemeinschaft, die in den Landen um den Targon beinahe verschwunden war. Sie trägt eine schimmernde Rüstung in der Farbe des nächtlichen Winterschnees und ist die lebende...",
+      },
+      pt: {
+        title: "o Escárnio da Lua",
+        blurb:
+          "Empunhando sua espada lunar crescente, Diana luta como uma guerreira dos Lunari, um credo quase extinto nas terras ao redor do Monte Targon. Vestida com uma armadura brilhante da cor da neve de inverno noturna, ela é a personificação do poder da lua...",
+      },
+      ru: {
+        name: "Диана",
+        title: "Превосходство Луны",
+        blurb:
+          "Вооружившись подобным серпу луны клинком, Диана бьется на стороне народа лунари, обитающего в окрестностях горы Таргон и гордящегося своей несломленной верой. Облаченная в переливчатый доспех цвета зимней ночи, она наяву воплощает мощь лунного сияния...",
+      },
+    },
   },
   {
     id: "draven",
@@ -708,17 +1859,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.3,
-  damage: 0.6000000000000001,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.8,
-  scaling: 0.7
-}),
-    blurb: "ノクサスでは清算人として知られる戦士たちは闘技場で血を流して戦って力を競い合うが、その中でドレイヴンほどの人気を得た者はいない。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.3,
+      damage: 0.6000000000000001,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.8,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ノクサスでは清算人として知られる戦士たちは闘技場で血を流して戦って力を競い合うが、その中でドレイヴンほどの人気を得た者はいない。",
+    blurbEn:
+      "In Noxus, warriors known as Reckoners face one another in arenas where blood is spilled and strength tested—but none has ever been as celebrated as Draven. A former soldier, he found that the crowds uniquely appreciated his flair for the dramatic, and...",
+    loc: {
+      ko: {
+        name: "드레이븐",
+        title: "화려한 처형자",
+        blurb:
+          "녹서스에서는 경기장에서 피를 흘리며 싸우고 힘을 겨루는 전사들이 있다. 검투사로 알려진 이들 중 드레이븐만큼 많은 환호를 받은 전사는 없었다. 전직 군인인 드레이븐은 극적으로 회전 도끼를 던지는 화려하고 독보적인 기술에 관중들이 환호한다는 것을 알아차렸다. 드레이븐은 요란하고도 완벽한 구경거리를 만들어내는 자신의 기술에 도취되어, 드레이븐이라는 이름을 녹서스 제국에 길이 남기기 위해 누구든 쓰러뜨리겠다고 다짐했다.",
+      },
+      zh: {
+        name: "德莱文",
+        title: "荣耀行刑官",
+        blurb:
+          "在诺克萨斯，有一种战士被称为“清算人”。他们在竞技场里互相厮杀，以鲜血作为赌注进行力量的考验，不过没有任何人能像德莱文那样受人追捧。曾经参过军的他，发现竞技场的观众们尤为喜爱他的耀武扬威和刻意表演，还有他挥舞飞斧时的无匹技艺。这种出神入化的斧技所带来的赞叹令他上瘾，德莱文发誓要不惜代价打败一切对手，以此确保自己的名字在帝国之中永世传唱。",
+      },
+      es: {
+        title: "El Ejecutor Glorioso",
+        blurb:
+          "En Noxus, los guerreros conocidos como 'justicieros' se enfrentan en recintos donde corre la sangre y se pone a prueba la fortaleza. Pero ninguno ha alcanzado la fama de Draven, un antiguo soldado cuyo sentido del espectáculo y habilidad sin igual con...",
+      },
+      fr: {
+        title: "Glorieux exécuteur",
+        blurb:
+          "À Noxus, de puissants guerriers, les « arénaires », s'affrontent dans des jeux mortels pour divertir le public. Le sang y coule à foison et leurs forces y sont éprouvées, mais aucun d'entre eux n'a jamais été aussi célèbre que Draven. Cet ancien soldat...",
+      },
+      de: {
+        title: "der ruhmreiche Scharfrichter",
+        blurb:
+          "In Noxus stellen sich Krieger, auch bekannt als Vergelter, einander in Arenen, wo sie ihr Blut vergießen und ihre Stärken testen, entgegen – doch nie wurde jemand so bejubelt wie Draven. Als ehemaliger Soldat konnte er die Mengen mit seinem Hang zur...",
+      },
+      pt: {
+        title: "o Carrasco de Noxus",
+        blurb:
+          "Em Noxus, guerreiros conhecidos como Desafiadores lutam um contra o outro em uma arena onde sangue é derramado e a força é testada, mas nenhum foi tão celebrado como Draven. Antes um soldado, ele descobriu que as multidões apreciavam seu instinto pelo...",
+      },
+      ru: {
+        name: "Дрейвен",
+        title: "Блистательный палач",
+        blurb:
+          "В Ноксусе воины, известные как уравнители, сражаются друг с другом на аренах, чтобы пролить кровь и испытать свою мощь – но нет среди них более прославленного, чем Дрейвен. Бывший солдат быстро обнаружил, что толпа восхищается его драматическим талантом...",
+      },
+    },
   },
   {
     id: "drmundo",
@@ -729,20 +1923,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "DrMundo",
     roles: ["Top"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.55,
+    }),
     blurb: "完全に正気を失った、おぞましい紫色の悲しき殺人鬼。",
+    blurbEn:
+      "Utterly mad, tragically homicidal, and horrifyingly purple, Dr. Mundo is what keeps many of Zaun's citizens indoors on particularly dark nights. Now a self-proclaimed physician, he was once a patient of Zaun's most infamous asylum. After \"curing\" the...",
+    loc: {
+      ko: {
+        name: "문도 박사",
+        title: "자운의 광인",
+        blurb:
+          "완전히 미쳐버린 비참한 살인마이자 오싹한 보라색 괴물로 변한 문도 박사는 많은 자운 시민이 특히나 어두운 밤에 외출을 피하는 이유이다. 현재 의사를 자처하는 그는 한때 자운에서 가장 악명 높은 정신 병원에 수용된 환자였다. 모든 의료진을 '치료'하고 나서, 문도 박사는 자신이 치료받았던 빈 병원에서 의사가 된 뒤 본인이 수없이 당한 몹시 부도덕한 치료법을 따라 하기 시작했다. 의약품은 많지만 의학 지식은 전혀 없는 문도 박사는 약물을 주사할 때마다...",
+      },
+      zh: {
+        name: "蒙多医生",
+        title: "祖安狂人",
+        blurb:
+          "精神与认知彻底崩坏、杀人的欲望永不满足、浑身皮肤紫得发黑，这就是蒙多医生，这就是祖安人在漆黑的夜里不敢出门的原因。如今的他自封为一名医生，但在以前，他是祖安最臭名昭著的疯人院里的病人。在“治愈”疯人院里的全体工作人员后，蒙多医生在过去收治他的空病房里搭起了手术台，有模有样地还原起他当年亲历的各种非人实验。蒙多医生的药柜里装满了瓶瓶罐罐，脑子里却丝毫没有半点医学知识。随着他把药剂一针针注入体内，他的外貌也变得愈发丑陋骇人，把误入他办公室周围的“病人”吓得魂飞胆散。",
+      },
+      es: {
+        title: "El Loco de Zaun",
+        blurb:
+          "Loco de remate, trágicamente homicida, terriblemente morado: el Dr. Mundo es lo que mantiene en sus casas a muchos habitantes de Zaun en las noches especialmente oscuras. Este autoproclamado doctor fue paciente del psiquiátrico más infame de Zaun. Tras...",
+      },
+      fr: {
+        title: "Dément de Zaun",
+        blurb:
+          "Totalement fou, complètement porté sur l'homicide, horriblement violet, Dr. Mundo est la principale raison pour laquelle les citoyens de Zaun restent calfeutrés chez eux les nuits les plus sombres. Désormais médecin autoproclamé, il fut autrefois un...",
+      },
+      de: {
+        title: "der Irre von Zhaun",
+        blurb:
+          "Der komplett wahnsinnige, mörderisch veranlagte und erschreckend violette Dr. Mundo sorgt bei vielen Bewohnern Zhauns für Albträume. Der ehemalige Patient des berüchtigtsten Irrenhauses von Zhaun ist heute ein selbsternannter Arzt. Nachdem Dr. Mundo...",
+      },
+      pt: {
+        title: "o Louco de Zaun",
+        blurb:
+          "Completamente maluco, tragicamente perigoso e terrivelmente roxo, Dr. Mundo é o que mantém muitos zaunitas dentro de casa nas noites mais escuras. Hoje se diz médico, mas ele já foi um paciente do manicômio mais infame de Zaun. Após ''curar'' toda a...",
+      },
+      ru: {
+        name: "Доктор Мундо",
+        title: "Сумасшедший из Зауна",
+        blurb:
+          "Он совершенно безумен, бесповоротно смертоносен и ужасающе лилов. Именно из-за Доктора Мундо многие жители Зауна боятся ночью выходить на улицу. В прошлом этот самопровозглашенный специалист был пациентом самой печально известной психиатрической...",
+      },
+    },
   },
   {
     id: "ekko",
@@ -752,26 +1988,68 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "砕けた時を渡る少年",
     region: "Zaun",
     ddragonId: "Ekko",
-    roles: ["Mid","Jungle"],
-    archetypes: ["Assassin","Mage"],
+    roles: ["Mid", "Jungle"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({
-  knowledge: 0.7,
-  protection: 0.7,
-  family: 0.7,
-  freedom: 0.5
-}),
+      knowledge: 0.7,
+      protection: 0.7,
+      family: 0.7,
+      freedom: 0.5,
+    }),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.85,
-  damageStyle: 0.75,
-  durability: 0.45,
-  damage: 0.75,
-  cc: 0.6,
-  mobility: 0.85,
-  difficulty: 0.7,
-  scaling: 0.5
-}),
+      range: 0.4,
+      skillBased: 0.85,
+      damageStyle: 0.75,
+      durability: 0.45,
+      damage: 0.75,
+      cc: 0.6,
+      mobility: 0.85,
+      difficulty: 0.7,
+      scaling: 0.5,
+    }),
     blurb: "時を巻き戻す装置を作った天才少年。仲間を守るために走る。",
+    blurbEn:
+      "A prodigy from the rough streets of Zaun, Ekko is able to manipulate time to twist any situation to his advantage. He uses his own invention, the Z-Drive, to explore the branching possibilities of reality, crafting the perfect moment to seemingly...",
+    loc: {
+      ko: {
+        name: "에코",
+        title: "시간을 달리는 소년",
+        blurb:
+          "자운 뒷골목 출신의 천재 소년 에코는 언제든 자신에게 유리하게 시간을 조작할 수 있다. 직접 발명한 Z 드라이브를 이용해 다양한 시공간에서 가능성의 갈래를 탐험하며 완벽한 순간을 포착하는 에코는 한 번의 시행착오도 없이 매번 불가능한 일을 해내는 것처럼 보인다. 누구보다도 자유로운 영혼을 가졌지만 소중한 사람들을 구하기 위해서라면 점화단과 함께 어떤 위험도 무릅쓴다.",
+      },
+      zh: {
+        name: "艾克",
+        title: "时间刺客",
+        blurb:
+          "艾克是一名来自祖安街头的奇才。他可以操纵时间，将任何处境扭转为对自己有利的局面。通过使用自己的发明——Z型驱动——他可以探索现实的其它平行分支，创造最完美的条件，将旁观者眼里的不可能之举变为可能，一击即中，屡试不爽。尽管艾克酷爱这种自由，但只要他在意的人身陷危险，他和野火帮一定会不顾一切地去保护他们。",
+      },
+      es: {
+        title: "El Chico que Quebró el Tiempo",
+        blurb:
+          "Ekko, un prodigio surgido de las implacables calles de Zaun, puede manipular el tiempo para sacar ventaja de todas las situaciones. Con una máquina de su invención llamada Dispositivo Z, explora las distintas posibilidades de la realidad hasta dar con...",
+      },
+      fr: {
+        title: "Fractureur du temps",
+        blurb:
+          "Jeune prodige des rues mal famées de Zaun, Ekko est capable de manipuler le temps pour renverser toute situation dangereuse à son avantage. Il utilise sa propre invention, la clepsydre-zéro, pour explorer les différents possibles de la réalité...",
+      },
+      de: {
+        title: "der Zeitbrecher",
+        blurb:
+          "Ekko, ein Wunderkind von den rauen Straßen Zhauns, kann die Zeit manipulieren, um jede Situation zu seinem Vorteil zu wenden. Mittels seiner Erfindung, dem Z-Antrieb, erkundet er die sich immer weiter verzweigenden Pfade der Wirklichkeit, um den...",
+      },
+      pt: {
+        title: "o Rapaz que Estilhaçou o Tempo",
+        blurb:
+          "Prodígio das ruas violentas de Zaun, Ekko é capaz de manipular o tempo e reverter qualquer situação a seu favor. Ele usa sua própria invenção, o Revo-Z, para explorar as possíveis ramificações da realidade, criando o momento perfeito para realizar o que...",
+      },
+      ru: {
+        name: "Экко",
+        title: "Покоритель времени",
+        blurb:
+          "Экко – юный гений, выросший на суровых улицах Зауна, который манипулирует временем, чтобы обернуть любую ситуацию в свою пользу. С помощью изобретенного им Z-привода он исследует множественные ответвления реальности, чтобы выбрать идеальный момент – и в...",
+      },
+    },
   },
   {
     id: "elise",
@@ -782,20 +2060,63 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Elise",
     roles: ["Jungle"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.9,
-  scaling: 0.6
-}),
-    blurb: "冷酷無比な捕食者エリスは、ノクサスの古都の地下にある、光も差さない閉ざされた邸宅に棲む。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.9,
+      scaling: 0.6,
+    }),
+    blurb:
+      "冷酷無比な捕食者エリスは、ノクサスの古都の地下にある、光も差さない閉ざされた邸宅に棲む。",
+    blurbEn:
+      "Elise is a deadly predator who dwells in a shuttered, lightless palace, deep within the oldest city of Noxus. Once mortal, she was the mistress of a powerful house, but the bite of a vile demigod transformed her into something beautiful, yet utterly...",
+    loc: {
+      ko: {
+        name: "엘리스",
+        title: "거미 여왕",
+        blurb:
+          "엘리스는 녹서스 불멸의 요새 깊숙한 곳에 있는 저택에서 빛을 차단하고 은둔해 사는 치명적인 포식자다. 필멸자 시절 그녀는 명문가의 안주인이였지만 끔찍한 반신에 물린 후 매혹적이면서도 무자비한 거미와 같은 존재가 되어 먹잇감을 거미줄로 끌어들였다. 영원한 젊음을 유지하기 위해 엘리스는 거부하기 힘든 유혹을 펼치며 무고한 이들을 사냥한다.",
+      },
+      zh: {
+        name: "伊莉丝",
+        title: "蜘蛛女皇",
+        blurb:
+          "诺克萨斯帝国最古老城市的地下深处，有一处不见天日的禁地，这是夺命的掠食者伊莉丝的宫殿。当她还是一个凡人的时候，她是曾经显赫一时的家族女主人，但是自从被一个卑鄙的半神咬伤之后，她就化身成了美丽的不死异类，一个形似蜘蛛的生物，用蛛网诱捕毫无防备的猎物。为了永葆青春，伊莉丝现在喜欢捕食那些无戒心、无信仰的人，而这世上也鲜少有人能够抗拒她的诱惑。",
+      },
+      es: {
+        title: "La Reina de las Arañas",
+        blurb:
+          "Elise es una letal depredadora que mora en un palacio cerrado y sin luz situado en el corazón de la ciudad más antigua de Noxus. En su día fue una mujer mortal, señora de una casa poderosa, pero la picadura de un malvado semidiós la transformó en una...",
+      },
+      fr: {
+        title: "Reine araignée",
+        blurb:
+          "Elise est un prédateur mortel qui vit dans un palais reclus et obscur, au plus profond de la plus vieille ville de Noxus. C'était autrefois une simple femme, maîtresse d'une Maison toute-puissante, mais la morsure d'un maléfique demi-dieu la transforma...",
+      },
+      de: {
+        title: "die Spinnenkönigin",
+        blurb:
+          "Elise ist eine tödliche Jägerin, die in einem verlassenen und düsteren Palast tief in der ältesten Stadt von Noxus haust. Einst war sie sterblich und die Gebieterin über ein mächtiges Haus, bis der Biss eines niederträchtigen Halbgottes sie in etwas...",
+      },
+      pt: {
+        title: "a Aranha Rainha",
+        blurb:
+          "Elise é uma predadora mortal que vive em um palácio escuro e reservado nas profundezas da cidade mais antiga de Noxus. Ela já foi mortal um dia, dama de uma família antes poderosa, mas a mordida de uma aranha peçonhenta a transformou em algo belo...",
+      },
+      ru: {
+        name: "Элиза",
+        title: "Королева пауков",
+        blurb:
+          "Элиза – смертоносная хищница, обитающая в темном дворце с зашторенными окнами в самом сердце старейшего города Ноксуса. Некогда она была смертной женщиной, заправлявшей делами могущественного семейства, но укус ужасного полубога превратил ее в...",
+      },
+    },
   },
   {
     id: "evelynn",
@@ -806,20 +2127,62 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Evelynn",
     roles: ["Jungle"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.2,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.95,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.2,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.95,
+      scaling: 0.6,
+    }),
     blurb: "ルーンテラ中の暗がりで悪魔イブリンは次の犠牲者を物色する。",
+    blurbEn:
+      "Within the dark seams of Runeterra, the demon Evelynn searches for her next victim. She lures in prey with the voluptuous façade of a human female, but once a person succumbs to her charms, Evelynn's true form is unleashed. She then subjects her victim...",
+    loc: {
+      ko: {
+        name: "이블린",
+        title: "고통스런 포옹",
+        blurb:
+          "룬테라의 어두운 경계선 안에서, 악마 이블린은 다음 먹잇감을 찾고 있다. 먼저 관능적인 인간 여성의 얼굴로 사냥감을 유혹한다. 희생자가 그 매력에 넘어오면, 이블린은 악마의 참모습을 드러낸다. 이블린은 희생자에게 말로 형언할 수 없는 고통을 안기고, 자신은 그 고통에 희열을 느낀다. 이블린이라는 악마에게는 이것이 한바탕 즐기는 유희일 뿐이지만, 룬테라 주민에게는 엇나간 욕망을 발산했다가는 그 대가로 끔찍한 종말을 맞게 되리라는 교훈을 되새겨주는...",
+      },
+      zh: {
+        name: "伊芙琳",
+        title: "痛苦之拥",
+        blurb:
+          "在符文之地的黑暗裂缝中，恶魔伊芙琳一直在搜寻着下一个目标。她披着人类女性的撩人外表，勾引她的猎物。只要有人被她魅惑，伊芙琳就会显露出真正的形态，对其施加难以言喻的折磨，再从他们的痛苦中获得满足。对于这个恶魔来说，这样的欢愉只是单纯的纵情享受；但是对于符文之地上的其他人，则是一个个血肉模糊的传说，提醒着人们肉欲的危险和纵欲的代价。",
+      },
+      es: {
+        title: "El Abrazo Agónico",
+        blurb:
+          "En los oscuros adentros de Runaterra, el súcubo Evelynn deambula en busca de su siguiente víctima. Acecha a sus presas con una voluptuosa fachada femenina, pero cuando alguien sucumbe a sus encantos, Evelynn libera su auténtica forma. Después somete a...",
+      },
+      fr: {
+        title: "Démon sadique",
+        blurb:
+          "Dans les sombres failles de Runeterra, le démon nommé Evelynn cherche sa prochaine victime. Elle attire sa proie en se faisant passer pour une femme voluptueuse, et dès que sa cible succombe à ses charmes, Evelynn révèle sa véritable nature. Elle...",
+      },
+      de: {
+        title: "Umarmung der Qual",
+        blurb:
+          "In den dunklen Nischen von Runeterra lauert die Dämonin Evelynn ihrem nächsten Opfer auf. Sie lockt ihre Beute mit der sinnlichen Form einer Frau an, doch sobald sie ihrem Charme erliegt, zeigt Evelynn ihre wahre Gestalt. Dann setzt sie ihr Opfer...",
+      },
+      pt: {
+        title: "o Abraço da Agonia",
+        blurb:
+          "Nas ruelas sombrias de Runeterra, a criatura demoníaca Evelynn busca sua próxima vítima. Ela atrai presas com sua voluptuosa aparência de fêmea humana, mas assim que a vítima sucumbe ao seu charme, a verdadeira forma de Evelynn é revelada. A criatura...",
+      },
+      ru: {
+        name: "Эвелинн",
+        title: "Объятия агонии",
+        blurb:
+          "В самых темных уголках Рунтерры демонесса Эвелинн выслеживает новую жертву. Приняв облик соблазнительной красотки, она приманивает неосторожных людишек, но стоит несчастному поддаться ее чарам, как она раскрывает свою истинную сущность. Демонесса...",
+      },
+    },
   },
   {
     id: "ezreal",
@@ -830,20 +2193,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Piltover",
     ddragonId: "Ezreal",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.7,
-  scaling: 0.7
-}),
-    blurb: "自由奔放な冒険家で、本人は知らないながらも魔法の才能を持つエズリアルは、長らく失われていた地下墓地を暴き、古代の呪いとの格闘を乗り越え、絶体絶命と思われる状況を",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.7,
+      scaling: 0.7,
+    }),
+    blurb:
+      "自由奔放な冒険家で、本人は知らないながらも魔法の才能を持つエズリアルは、長らく失われていた地下墓地を暴き、古代の呪いとの格闘を乗り越え、絶体絶命と思われる状況を",
+    blurbEn:
+      "A dashing adventurer, unknowingly gifted in the magical arts, Ezreal raids long-lost catacombs, tangles with ancient curses, and overcomes seemingly impossible odds with ease. His courage and bravado knowing no bounds, he prefers to improvise his way...",
+    loc: {
+      ko: {
+        name: "이즈리얼",
+        title: "무모한 탐험가",
+        blurb:
+          "마법에 타고난 재능을 가진 멋진 모험가 이즈리얼은 오래전에 사라진 지하 묘지를 탐험하고 고대 저주에 맞서 싸우며 힘든 역경을 손쉽게 극복한다. 끝없는 용기와 무모함을 지닌 그는 어떠한 상황에서도 즉흥적으로 헤쳐나가는 것을 선호한다. 기지를 발휘할 때도 있지만, 대부분은 파괴적이고 불가사의한 폭발을 일으키는 슈리마의 신비한 장갑에 의지한다. 한 가지 분명한 사실은 이즈리얼이 가는 곳에 말썽이 있다는 것이다. 혹은 눈앞에 있거나. 아마 사방에 있을지도...",
+      },
+      zh: {
+        name: "伊泽瑞尔",
+        title: "探险家",
+        blurb:
+          "永远神采奕奕的冒险家伊泽瑞尔，拥有一种自己也不清楚因何而来的魔法天赋。他搜刮失落已久的古墓，触碰古老的诅咒，还总是举重若轻地挑战常人不可能完成的极限。他的勇气和壮举难以计数，总能随机应对一路上的各种状况——虽然一定程度上是因为他的小聪明，但更主要的是依赖于神秘的恕瑞玛护手——这件装备能在他的操控下射出破坏性的奥术爆弹。有一件事可以肯定——只要伊泽瑞尔出现，那么麻烦一定会接踵而至，虽迟不远，随时随地。",
+      },
+      es: {
+        title: "El Explorador Pródigo",
+        blurb:
+          "Ezreal, un aventurero aficionado a deslizarse y dotado de artes mágicas sin saberlo, saquea catacumbas perdidas, lidia con maldiciones ancestrales y supera con facilidad adversidades imposibles. De valor y chulería sin límites, prefiere improvisar para...",
+      },
+      fr: {
+        title: "Explorateur prodigue",
+        blurb:
+          "Aventurier audacieux, doué sans le savoir pour les arts magiques, Ezreal poursuit ses expéditions dans les catacombes oubliées, se bat avec d'antiques malédictions et contourne avec aisance les obstacles les plus impossibles. Son courage et son panache...",
+      },
+      de: {
+        title: "der verwegene Forscher",
+        blurb:
+          "Ezreal ist ein schneidiger Abenteurer, der sich seiner Begabung für die magischen Künste nicht bewusst ist. Er plündert längst vergessene Katakomben, wird in uralte Flüche verwickelt und bewältigt mit Leichtigkeit scheinbar ausweglose Situationen. Seine...",
+      },
+      pt: {
+        title: "o Explorador Pródigo",
+        blurb:
+          "Um aventureiro arrojado, com um talento nato nas artes mágicas, Ezreal desbrava catacumbas soterradas, envolve-se com antigas maldições e supera com facilidade as situações mais improváveis. Sua coragem e ousadia não têm limites e ele prefere resolver...",
+      },
+      ru: {
+        name: "Эзреаль",
+        title: "Вольный исследователь",
+        blurb:
+          "Эзреаль – храбрый искатель приключений, внезапно обнаруживший у себя магический дар. Он находит сокровища в давно забытых подземельях, снимает древние проклятья и с легкостью выпутывается из совершенно невозможных передряг. Смелости и бравады ему не...",
+      },
+    },
   },
   {
     id: "fiddlesticks",
@@ -854,20 +2260,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Fiddlesticks",
     roles: ["Jungle"],
-    archetypes: ["Mage","Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.66,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.9,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.66,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.9,
+      scaling: 0.6,
+    }),
     blurb: "ルーンテラの中で何かが目覚めた──古代の恐ろしい何かが。",
+    blurbEn:
+      "Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe...",
+    loc: {
+      ko: {
+        name: "피들스틱",
+        title: "오래된 공포",
+        blurb:
+          "룬테라에 무시무시한 고대의 무언가가 깨어났다. 시간을 초월한 공포의 존재 피들스틱은 불안에 동요하는 인간 사회의 끝자락에 나타나 겁먹은 희생자들을 양분으로 삼는다. 앙상하고 투박한 모습의 이 생물은 삐죽삐죽한 낫을 휘두르며 공포를 거둬들이고, 살아남은 불행한 자들의 정신을 산산이 조각낸다. 까마귀 울음소리와 인간을 닮은 형상의 속삭임을 조심하라... 피들스틱이 돌아온 것이다.",
+      },
+      zh: {
+        name: "费德提克",
+        title: "费德提克",
+        blurb:
+          "某物已在符文之地苏醒，远古且可怖。它潜伏于人类世界的边缘，被浓烈的妄想所吸引，以受害者的惊骇为食，人们将这永恒的恐怖之物称为费德提克。这个狂乱的拼凑之物挥舞着镰刀收割恐惧，摧毁不幸与之相逢的人的神志。当心乌鸦的声响，或是那<i>近乎</i>人形的怪物所发出的呓语吧……费德提克已经归来。",
+      },
+      es: {
+        title: "el Terror Ancestral",
+        blurb:
+          "Algo ha despertado en Runaterra. Algo ancestral. Algo terrible. El horror conocido como Fiddlesticks acecha en las lindes de la sociedad, en las zonas en las que impera la paranoia, donde se alimenta de aquellos a los que aterroriza. Armada con una...",
+      },
+      fr: {
+        title: "Effroi nocturne",
+        blurb:
+          "Quelque chose s'est éveillé à Runeterra. Quelque chose d'ancien. Quelque chose de terrible. L'horreur intemporelle connue sous le nom de Fiddlesticks arpente les frontières des civilisations mortelles, attirée dans les régions en proie à la paranoïa, où...",
+      },
+      de: {
+        title: "das uralte Unheil",
+        blurb:
+          "In Runeterra ist etwas erwacht. Etwas Uraltes. Etwas Schreckliches. Das zeitlose Grauen namens Fiddlesticks lauert an den Grenzen der sterblichen Gesellschaft und fühlt sich von Orten angezogen, in denen Paranoia allgegenwärtig ist. Dort nährt es sich...",
+      },
+      pt: {
+        title: "o Terror Ancestral",
+        blurb:
+          "Algo despertou em Runeterra. Algo ancestral. Algo terrível. O eterno terror conhecido como Fiddlesticks vaga pelos confins do mundo mortal, atraído por áreas dominadas por uma paranoia palpável, onde se alimenta de vítimas apavoradas. Com sua foice...",
+      },
+      ru: {
+        name: "Фиддлстикс",
+        title: "Древний ужас",
+        blurb:
+          "В Рунтерре что-то пробудилось. Нечто древнее. Нечто ужасное. Неподвластный времени ужас, который называют Фиддлстиксом, охотится вдали от больших городов. Он идет туда, где господствуют страхи, и кормится перепуганными жертвами. Зазубренной косой он...",
+      },
+    },
   },
   {
     id: "fiora",
@@ -878,20 +2326,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Fiora",
     roles: ["Top"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.3,
-  scaling: 0.45
-}),
-    blurb: "ヴァロランでもっとも恐れられる決闘士フィオラは、冷ややかで狡猾、そして目にも止まらぬ速さで強靭な両刃の剣レイピアを振るう。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.3,
+      scaling: 0.45,
+    }),
+    blurb:
+      "ヴァロランでもっとも恐れられる決闘士フィオラは、冷ややかで狡猾、そして目にも止まらぬ速さで強靭な両刃の剣レイピアを振るう。",
+    blurbEn:
+      "The most feared duelist in all Valoran, Fiora is as renowned for her brusque manner and cunning mind as she is for the speed of her bluesteel rapier. Born to House Laurent in the kingdom of Demacia, Fiora took control of the family from her father in...",
+    loc: {
+      ko: {
+        name: "피오라",
+        title: "결투의 대가",
+        blurb:
+          "발로란을 통틀어 가장 무시무시한 데마시아 왕국의 결투가, 피오라. 푸른 강철 레이피어를 다루는 솜씨만큼이나 가차없는 태도와 재빠른 머리 회전으로 유명한 그녀는 아버지가 일으킨 스캔들로 집안의 명성이 땅에 떨어진 후 가문의 지배권을 넘겨받았다. 로렌트 가문의 명성은 더럽혀진 지 오래지만, 피오라는 가문의 명예를 되찾고 데마시아의 위대한 가문으로 일궈온 자리를 되찾기 위해 온 힘을 다하고 있다.",
+      },
+      zh: {
+        name: "菲奥娜",
+        title: "无双剑姬",
+        blurb:
+          "菲奥娜是全瓦洛兰最可怕的决斗家。与她雷厉风行、狡黠聪慧的性格一起闻名于世的，还有她舞弄蓝钢佩剑时的矫健身姿。菲奥娜出生在德玛西亚王国的劳伦特家族，她从父亲的手中接管了家业，并在一场丑闻风波中拯救了岌岌可危的家族。如今，虽然劳伦特家族的威望已不复从前，但菲奥娜仍在一直不懈地努力着，希望重振家族荣光，让劳伦特这个名字重回德玛西亚名望贵族之列。",
+      },
+      es: {
+        title: "La Estocada Excelsa",
+        blurb:
+          "Fiora, la duelista más temida de Valoran, ha alcanzado renombre por su estilo brusco y su mente astuta, así como por la velocidad de su estoque. Fiora nació en el seno de la Casa Laurent, en el reino de Demacia, y asumió el control de la familia a raíz...",
+      },
+      fr: {
+        title: "Sublime bretteuse",
+        blurb:
+          "Fiora est la duelliste la plus redoutée de Valoran : elle est connue pour ses manières brusques et sa vivacité d'esprit autant que pour la rapidité de sa rapière d'acier bleu. Née au sein de la Maison Laurent du royaume de Demacia, Fiora a pris le...",
+      },
+      de: {
+        title: "die große Duellantin",
+        blurb:
+          "Fiora, die gefürchtetste Duellantin Valorans, ist gleichermaßen für ihre schroffe Art und ihre Gerissenheit wie für die Geschwindigkeit ihres Degens aus blauem Stahl bekannt. Als Spross des Hauses Laurent im Königreich Demacia übernahm Fiora nach einem...",
+      },
+      pt: {
+        title: "a Grande Duelista",
+        blurb:
+          "A duelista mais temida de toda Valoran, Fiora é renomada tanto por suas maneiras bruscas e perspicácia quanto pela velocidade de sua rapieira de aço. Nascida na Casa Laurent no reino de Demacia, Fiora tomou o controle da família de seu pai no rastro de...",
+      },
+      ru: {
+        name: "Фиора",
+        title: "Бесподобный дуэлянт",
+        blurb:
+          "Одна из самых опасных дуэлянтов во всем Валоране, Фиора известна благодаря резким манерам и острому уму, а также - скорости, с которой способен двигаться ее клинок из голубой стали. Она родилась в демасийском аристократическом семействе Лоранов и...",
+      },
+    },
   },
   {
     id: "fizz",
@@ -902,20 +2393,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "Fizz",
     roles: ["Mid"],
-    archetypes: ["Assassin","Fighter"],
+    archetypes: ["Assassin", "Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.78,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.6,
-  scaling: 0.45
-}),
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.78,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.6,
+      scaling: 0.45,
+    }),
     blurb: "フィズはビルジウォーターを囲む岩礁の間に住む水陸両性のヨードルだ。",
+    blurbEn:
+      "Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him—for many are the tales...",
+    loc: {
+      ko: {
+        name: "피즈",
+        title: "대양의 말썽꾸러기",
+        blurb:
+          "바다와 육지에서 살 수 있는 요들족 피즈는 빌지워터를 둘러싼 산호초에서 살고 있다. 종종 미신을 믿는 선장들이 바다에 바치는 돈을 주워 돌려주기도 하지만, 아무리 신경질적인 뱃사람들이라도 피즈를 화나게 할 만큼 어리석지는 않다. 이 미끈거리는 생명체를 얕잡아본 사람들이 어떻게 되었는지에 대해 수많은 이야기가 전해지고 있기 때문이리라. 이따금 변덕스러운 바다 정령으로 오해받기도 하는 피즈는 바닷속 깊은 곳에 사는 괴물을 부릴 수 있으며, 적과 아군을...",
+      },
+      zh: {
+        name: "菲兹",
+        title: "潮汐海灵",
+        blurb:
+          "菲兹是一名水陆两栖的约德尔人，生活在比尔吉沃特周围的群礁之间。他经常把那些迷信的船长们献给大海的什一税捞上来物归原主。不过即使是最粗鲁的水手也知道不要招惹他，因为这里流传着的各种教训，都是因为低估了这个小鬼。经常有人误会他的行为只是海洋精灵的任性举动，而事实上他可以号令来自深渊的巨型猛兽，而且不管是盟友还是敌人他都喜欢捉弄。",
+      },
+      es: {
+        title: "El Gamberro de las Mareas",
+        blurb:
+          "Fizz es un yordle anfibio que habita entre los arrecifes de alrededor de Aguas Estancadas. Suele recuperar y devolver los diezmos arrojados al mar por capitanes supersticiosos, pero incluso los marineros más agudos saben que no hay que plantarle cara...",
+      },
+      fr: {
+        title: "Filou des mers",
+        blurb:
+          "Fizz est un yordle amphibie qui vit dans les récifs qui entourent Bilgewater. Il essaie souvent de récupérer et de rendre les tributs que lancent dans l'océan les capitaines superstitieux, mais même le plus dessalé des marins n'est pas assez arrogant...",
+      },
+      de: {
+        title: "der Gezeitentäuscher",
+        blurb:
+          "Fizz ist ein amphibischer Yordle, der sich gern in den Riffen um Bilgewasser aufhält. Er holt sich oft die Zehntabgaben aus dem Meer, die von abergläubischen Kapitänen über Bord geworfen wurden, und händigt sie ihren Besitzern wieder aus. Doch trotz...",
+      },
+      pt: {
+        title: "o Trapaceiro das Marés",
+        blurb:
+          "Fizz é um yordle anfíbio que vive entre os recifes que rodeiam Águas de Sentina. É comum que ele busque e devolva os dízimos jogados no mar por capitães supersticiosos, mas mesmo o mais velho dos marinheiros sabe que não é uma boa ideia irritá-lo. São...",
+      },
+      ru: {
+        name: "Физз",
+        title: "Морской ловкач",
+        blurb:
+          "Физз – йордл-амфибия, обитающий среди рифов, что окружают Билджвотер. Он часто вылавливает и возвращает подношения, брошенные в море суеверными капитанами. Однако даже бывалые моряки знают, что гневить его не стоит – существует множество рассказов о тех...",
+      },
+    },
   },
   {
     id: "galio",
@@ -925,21 +2458,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "伝説の巨像",
     region: "Demacia",
     ddragonId: "Galio",
-    roles: ["Mid","Support"],
-    archetypes: ["Tank","Mage"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Tank", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.95,
-  damage: 0.42,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.95,
+      damage: 0.42,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
     blurb: "輝ける都市デマーシアの外側で、石の巨像ガリオはずっと見張りを続けている。",
+    blurbEn:
+      "Outside the gleaming city of Demacia, the stone colossus Galio keeps vigilant watch. Built as a bulwark against enemy mages, he often stands motionless for decades until the presence of powerful magic stirs him to life. Once activated, Galio makes the...",
+    loc: {
+      ko: {
+        name: "갈리오",
+        title: "위대한 석상",
+        blurb:
+          "아스라한 빛의 도시 데마시아의 성문 밖, 거대한 석상 갈리오가 경계의 눈을 늦추지 않고 서 있다. 마법사의 공격으로부터 데마시아를 수호하기 위해 만들어진 갈리오는 강력한 마법의 힘이 그를 깨울 때까지 수십 년, 때로는 수백 년 동안 한자리에 미동도 없이 서있다. 일단 깨어나면 전투의 아찔한 스릴과 데마시아인들을 구한다는 자부심을 음미하며 1분 1초도 허투루 쓰는 법이 없다. 그러나 그가 쟁취한 승리의 향기는 결코 달콤하지만은 않다. 아이러니하게도...",
+      },
+      zh: {
+        name: "加里奥",
+        title: "正义巨像",
+        blurb:
+          "光彩熠熠的德玛西亚城外，石巨像加里奥始终如一地守望着。他被创造出来是为了抵挡来犯的法师，却往往伫立不动数十年，直至受到强烈魔法干扰的时候才会苏醒。只要加里奥醒来，他便会利用这段时间仔细品味战斗的刺激与守护人民的荣耀。可惜胜利对他而言永远都是一件喜忧参半的事情。因为他必须摧毁的魔法力量，同时也是激活他的泉源，而每一次战斗的胜利，都会让他再次陷入不知世事的深眠之中。",
+      },
+      es: {
+        title: "el Coloso",
+        blurb:
+          "Fuera de la reluciente ciudad de Demacia, el coloso de piedra Galio se mantiene vigilante. Construido como un baluarte contra los magos enemigos, suele permanecer inmóvil durante décadas hasta que la presencia de magia poderosa lo vuelve a traer a la...",
+      },
+      fr: {
+        title: "Colosse",
+        blurb:
+          "Près de la cité étincelante de Demacia, le colosse de pierre Galio monte une garde attentive. Érigé comme un rempart contre les mages ennemis, il reste souvent immobile pendant des décennies, jusqu'à ce que l'apparition de puissants flux magiques le...",
+      },
+      de: {
+        title: "der Koloss",
+        blurb:
+          "Außerhalb der glänzenden Stadt Demacia hält der steinerne Koloss Galio aufmerksam Wache. Er wurde erbaut, um feindlichen Magiern standhalten zu können, und steht oft Dekaden lang regungslos an einem Ort, bis mächtige Magie ihn erneut erweckt. Sobald er...",
+      },
+      pt: {
+        title: "o Colosso",
+        blurb:
+          "Do lado de fora da reluzente cidade de Demacia, Galio, o colosso de pedra, vigia com zelo. Construído como bastião contra magos inimigos, ele geralmente permanece imóvel por décadas até que a presença de uma magia poderosa o desperte. Uma vez ativado...",
+      },
+      ru: {
+        name: "Галио",
+        title: "Колосс",
+        blurb:
+          "За городскими стенами блистательной Демасии несет свой неусыпный дозор каменный колосс Галио. Созданный как преграда вражеским магам, обычно он стоит неподвижно целыми десятилетиями – пока присутствие мощного волшебства не пробуждает его к жизни. И...",
+      },
+    },
   },
   {
     id: "gangplank",
@@ -952,23 +2527,65 @@ export const CHAMPIONS: Champion[] = [
     roles: ["Top"],
     archetypes: ["Fighter"],
     storyVec: s({
-  ambition: 0.7,
-  chaos: 0.6,
-  solo: 0.6,
-  rival: 0.5
-}),
+      ambition: 0.7,
+      chaos: 0.6,
+      solo: 0.6,
+      rival: 0.5,
+    }),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.7,
-  damageStyle: 0.5,
-  durability: 0.4,
-  damage: 0.8,
-  cc: 0.4,
-  mobility: 0.4,
-  difficulty: 0.85,
-  scaling: 0.65
-}),
+      range: 0.4,
+      skillBased: 0.7,
+      damageStyle: 0.5,
+      durability: 0.4,
+      damage: 0.8,
+      cc: 0.4,
+      mobility: 0.4,
+      difficulty: 0.85,
+      scaling: 0.65,
+    }),
     blurb: "ビルジウォーターの元支配者。全てを失っても海を諦めない。",
+    blurbEn:
+      "As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see...",
+    loc: {
+      ko: {
+        name: "갱플랭크",
+        title: "바다의 무법자",
+        blurb:
+          "몰락한 해적왕 갱플랭크는 잔인한 성격에다 종잡을 수 없으며 사악함은 타의 추종을 불허한다. 과거 항구도시 빌지워터를 힘으로 장악했으나 지금은 영향력을 잃었다. 하지만 사람들은 그렇기 때문에 오히려 갱플랭크가 더 미쳐 날뛰리라고 생각한다. 갱플랭크는 빌지워터를 다른 사람에게 넘기느니 다시 한 번 피바다로 만들어 버릴 인물이니까. 그리고 이제, 권총, 해적검, 화약통으로 무장한 갱플랭크가 잃었던 패권을 되찾기 위한 준비를 끝냈다.",
+      },
+      zh: {
+        name: "普朗克",
+        title: "海洋之灾",
+        blurb:
+          "诡计多端、心狠手辣的普朗克是被废黜的强盗之王，他令人恐惧的名号广达远至。他一度是港口城市比尔吉沃特的统治者。虽然现在他的威权已经不再，但人们相信这只会让他变得更加可怖。普朗克若是知道有人要从他手中抢走比尔吉沃特，必然会大肆血洗这座城市。而如今有了火枪、弯刀，还有一桶桶的火药，他决心要夺回自己失去的东西。",
+      },
+      es: {
+        title: "El Azote de los Mares",
+        blurb:
+          "Tan impredecible como brutal, el destronado rey de los piratas conocido como Gangplank es temido a lo largo y ancho del mundo. Antes gobernaba la ciudad portuaria de Aguas Estancadas, y aunque su reinado haya terminado, hay quienes creen que esto solo...",
+      },
+      fr: {
+        title: "Fléau des mers",
+        blurb:
+          "Aussi imprévisible que brutal, le roi des pillards déchu connu sous le nom de Gangplank est partout redouté. Il régnait autrefois sur la ville portuaire de Bilgewater et, bien que ce temps soit révolu, certains pensent que cela l'a rendu plus dangereux...",
+      },
+      de: {
+        title: "die Salzwassergeißel",
+        blurb:
+          "Der als unberechenbar und brutal geltende, entthronte Räuberkönig Gangplank wird überall auf der Welt gefürchtet. Einst herrschte er über die Hafenstadt Bilgewasser und obwohl seine Herrschaftszeit vorüber ist, glauben viele, dass er dadurch noch...",
+      },
+      pt: {
+        title: "o Terror dos Doze Mares",
+        blurb:
+          "Tão inesperado quanto brutal, o autointitulado Rei dos Ladrões conhecido como Gangplank é temido por todos os mares. Ele já reinou na cidade portuária de Águas de Sentina e, apesar de seu reinado ter terminado, existem aqueles que acreditam que isso só...",
+      },
+      ru: {
+        name: "Гангпланк",
+        title: "Гроза морей",
+        blurb:
+          "Жестокий и непредсказуемый свергнутый король разбойников Гангпланк известен далеко за пределами Билджвотера – портового города, которым он когда-то правил. И несмотря на то, что тем временам пришел конец, многие считают, что сейчас он стал еще опаснее...",
+      },
+    },
   },
   {
     id: "garen",
@@ -979,26 +2596,68 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Garen",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({
-  honor: 0.9,
-  protection: 0.8,
-  justice: 0.8,
-  organization: 0.9,
-  family: 0.6
-}),
+      honor: 0.9,
+      protection: 0.8,
+      justice: 0.8,
+      organization: 0.9,
+      family: 0.6,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.4,
-  damageStyle: 0.4,
-  durability: 0.7,
-  damage: 0.7,
-  cc: 0.4,
-  mobility: 0.4,
-  difficulty: 0.1,
-  scaling: 0.45
-}),
+      range: 0,
+      skillBased: 0.4,
+      damageStyle: 0.4,
+      durability: 0.7,
+      damage: 0.7,
+      cc: 0.4,
+      mobility: 0.4,
+      difficulty: 0.1,
+      scaling: 0.45,
+    }),
     blurb: "規律と名誉に生きるデマーシアの剣。仲間のために旋風を放つ。",
+    blurbEn:
+      "A proud and noble warrior, Garen fights as one of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies—not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its...",
+    loc: {
+      ko: {
+        name: "가렌",
+        title: "데마시아의 힘",
+        blurb:
+          "가렌은 불굴의 선봉대를 이끄는 고결하고 자긍심 강한 전사다. 선봉대 내에서 인망이 두터울 뿐 아니라 심지어 적에게도 존경을 받지만, 그가 대대로 데마시아와 데마시아의 이상을 수호하는 임무를 맡은 크라운가드 가문의 자손이기 때문은 아니다. 가렌은 마법 저항력을 갖춘 방어구와 거대한 대검으로 무장하고, 언제라도 마법사에 맞서 정당한 검으로 진정한 칼바람을 일으킬 준비가 되어 있다.",
+      },
+      zh: {
+        name: "盖伦",
+        title: "德玛西亚之力",
+        blurb:
+          "作为一名自豪而高贵的勇士，盖伦将自己当做无畏先锋中的普通一员参与战斗。他既受到同袍手足的爱戴，也受到敌人对手的尊敬——尤其作为尊贵的冕卫家族的子嗣，他被委以重任，守卫德玛西亚的疆土和理想。他身披抵御魔法的重甲，手持阔剑，时刻准备着用正义的钢铁风暴在战场上正面迎战一切操纵魔法的狂人。",
+      },
+      es: {
+        title: "El Poder de Demacia",
+        blurb:
+          "Garen, un orgulloso y noble guerrero, lucha en las filas de la Vanguardia Impertérrita. Es querido entre sus compañeros y respetado por sus enemigos, y no solo por ser vástago de la prestigiosa familia Crownguard, responsable de la defensa de Demacia y...",
+      },
+      fr: {
+        title: "Force de Demacia",
+        blurb:
+          "Garen est un guerrier fier et noble qui fait partie du Détachement hardi. Héritier des Crownguard, la famille chargée de défendre Demacia et ses idéaux, il est apprécié par ses compatriotes et respecté par ses ennemis. Équipé d'une armure résistante à...",
+      },
+      de: {
+        title: "die Macht von Demacia",
+        blurb:
+          "Als stolzer und edler Krieger kämpft Garen in der Furchtlosen Vorhut. Bei seinen Kameraden beliebt und von seinen Gegnern respektiert ist er nicht zuletzt auch ein Nachfahre der namhaften Kronwacht-Familie, die Demacia und ihre Ideale verteidigt. Mit...",
+      },
+      pt: {
+        title: "o Poder de Demacia",
+        blurb:
+          "Um guerreiro nobre e orgulhoso, Garen faz parte da Vanguarda Destemida. Popular entre seus companheiros e respeitado o suficiente por seus inimigos, sua reputação é nada mais do que o esperado de um herdeiro da prestigiosa família Stemmaguarda...",
+      },
+      ru: {
+        name: "Гарен",
+        title: "Мощь Демасии",
+        blurb:
+          "Гордый и благородный воин Гарен сражается в рядах Бесстрашного авангарда. Его уважают не только товарищи, но и враги, не в последнюю очередь благодаря происхождению. Гарен – отпрыск влиятельной семьи Краунгардов, которая на протяжении поколений защищает...",
+      },
+    },
   },
   {
     id: "gnar",
@@ -1009,20 +2668,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Gnar",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.8,
-  scaling: 0.55
-}),
-    blurb: "ナーは原始時代のヨードルで、おどけて悪ふざけをしていたかと思えば、あっという間にそれが幼児の怒りとなって爆発し、巨大な破壊の野獣に変身する。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.8,
+      scaling: 0.55,
+    }),
+    blurb:
+      "ナーは原始時代のヨードルで、おどけて悪ふざけをしていたかと思えば、あっという間にそれが幼児の怒りとなって爆発し、巨大な破壊の野獣に変身する。",
+    blurbEn:
+      "Gnar is a primeval yordle whose playful antics can erupt into a toddler's outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed...",
+    loc: {
+      ko: {
+        name: "나르",
+        title: "잃어버린 고리",
+        blurb:
+          "고대 요들인 나르는 익살스러운 장난을 치다가도 어린아이 같은 변덕을 부려 벌컥 화를 내며, 그럴 때면 순식간에 거대한 몸집의 야수로 변하여 주변을 마구 때려부순다. 수천 년 동안이나 얼음 정수에 갇혀 있다가 풀려난 터라, 지금의 세계는 나르에게 진기하고 경이로운 세상이다. 호기심 많은 나르는 위험이 닥치면 오히려 즐거워하며, 뼈이빨 부메랑이든 옆에 서 있는 건물이든 닥치는 대로 집어들어 적에게 던진다.",
+      },
+      zh: {
+        name: "纳尔",
+        title: "迷失之牙",
+        blurb:
+          "纳尔是一个原始约德尔人，讨人喜爱的小个子突然发起脾气来，就会变成一头巨大的野兽，脑海中只剩下破坏的念头。纳尔被臻冰冻结了数千年，如今他重获自由。这个面目全非的世界，在他充满好奇的眼里处处都是新鲜奇妙。因为纳尔在危险中会特别兴奋，所以他会随便抓起任何东西丢向自己的敌人，无论是他的骨齿回力标，还是手边的大房子。",
+      },
+      es: {
+        title: "El Eslabón Perdido",
+        blurb:
+          "Gnar es un yordle primitivo cuyas payasadas lúdicas pueden estallar en la ira de un niño pequeño en un instante, transformándolo en una bestia enorme empeñada en la destrucción. Congelado en Hielo Puro durante milenios, la curiosa criatura se liberó y...",
+      },
+      fr: {
+        title: "Chaînon manquant",
+        blurb:
+          "Gnar est un yordle primitif dont les manières joyeuses peuvent soudain faire place à une colère irrationnelle. Il se transforme alors en une bête colossale portée à la destruction. Gelé dans de la glace pure pendant des millénaires, la curieuse créature...",
+      },
+      de: {
+        title: "das fehlende Bindeglied",
+        blurb:
+          "Gnar ist ein urzeitlicher Yordle, dessen spielerische Mätzchen schnell ausarten und ihn in eine gewaltige Bestie der Zerstörung verwandeln können. Er war Jahrtausende lang in wahrem Eis gefangen, konnte sich jedoch befreien und springt nun in einer...",
+      },
+      pt: {
+        title: "o Yordle Pré-Histórico",
+        blurb:
+          "Gnar é um yordle primitivo cujas artimanhas brincalhonas podem irromper em uma raiva infantil em um instante, transformando-o em uma besta gigantesca determinada a destruir. Congelada em Gelo Verdadeiro por milênios, essa criatura curiosa se libertou e...",
+      },
+      ru: {
+        name: "Гнар",
+        title: "Недостающее звено",
+        blurb:
+          "Гнар – первобытный йордл, чье веселое выражение мордочки может в мгновение ока смениться гримасой негодования, превратив его в огромного монстра с тягой к разрушениям. Это любопытное создание тысячи лет было сковано Истинным льдом и теперь...",
+      },
+    },
   },
   {
     id: "gragas",
@@ -1032,21 +2734,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "騒乱の飲んだくれ",
     region: "Freljord",
     ddragonId: "Gragas",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Mage"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.7,
-  damage: 0.6,
-  cc: 0.55,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "陽気で立派な巨体を持つ、荒くれた風貌のグラガスは、常に人々の気持ちを明るくさせる新たな方法を探している醸造家だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.7,
+      damage: 0.6,
+      cc: 0.55,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "陽気で立派な巨体を持つ、荒くれた風貌のグラガスは、常に人々の気持ちを明るくさせる新たな方法を探している醸造家だ。",
+    blurbEn:
+      "Equal parts jolly and imposing, Gragas is a massive, rowdy brewmaster who's always on the lookout for new ways to raise everyone's spirits. Hailing from parts unknown, he searches for ingredients among the unblemished wastes of the Freljord to help him...",
+    loc: {
+      ko: {
+        name: "그라가스",
+        title: "술취한 난동꾼",
+        blurb:
+          "그라가스는 몸집이 크고 소란스러워서 한 번 보면 잊기 힘든 쾌활한 주조가로, 언제나 모두의 기운을 북돋울 새로운 방법을 찾고 있습니다. 그라가스가 어디서 왔는지는 아무도 모르지만, 프렐요드의 때 묻지 않은 불모지를 뒤지며 희귀한 재료를 찾아 완벽한 최신 혼합물을 만듭니다. 그라가스는 완고하고, 충동적이며, 소동을 일으키는 것으로 유명한데, 그 소동은 밤샘 파티와 엄청난 기물 파손으로 이어지곤 합니다. 그라가스를 보게 된다면 곧 즐거움, 그리고 파괴가...",
+      },
+      zh: {
+        name: "古拉加斯",
+        title: "酒桶",
+        blurb:
+          "古拉加斯，豪爽和豪横各占一半。他是位壮硕、粗鲁的酿造师，永远都在想方设法让每个人饮到酣畅淋漓。没人知道他从什么地方来，只知道他会在弗雷尔卓德纯净无暇的荒原上寻找神秘配料，完善他最新的调制配方。古拉加斯性子急、脾气倔，也是出了名的爱闹事，有他参与的斗殴事件大多以彻夜豪饮和桌椅散架收场。只要古拉加斯出现，随之而来的一定是狂欢和破坏——而且是严格按照这个顺序。",
+      },
+      es: {
+        title: "El Camorrista",
+        blurb:
+          "Alegre e imponente por partes iguales, Gragas es un enorme y provocador cervecero que vive para encontrar nuevas formas de animar a todos los que le rodean. Proveniente de un lugar desconocido, va en busca de ingredientes raros entre los páramos de...",
+      },
+      fr: {
+        title: "Agitateur",
+        blurb:
+          "Aussi imposant que jovial, Gragas est un brasseur à l'impressionnante carrure qui cherche toujours de nouveaux moyens de répandre la bonne humeur. Venu d'on ne sait où, il continue de chercher des ingrédients dans les terres vierges de Freljord pour...",
+      },
+      de: {
+        title: "der Unruhestifter",
+        blurb:
+          "Gragas ist zu gleichen Teilen heiter und imposant, und ein gewaltiger, rauflustiger Braumeister, der immer nach neuen Möglichkeiten sucht, alle bei Laune zu halten. Er stammt aus unbekannten Landen und ist im unberührten Freljord auf der Suche nach...",
+      },
+      pt: {
+        title: "o Badernista",
+        blurb:
+          "Alegre e imponente em igual medida, Gragas é um mestre cervejeiro colossal e barulhento que está sempre em busca de novos modos de animar todo mundo. Oriundo de regiões desconhecidas, ele procura, nas terras imaculadas do Freljord, ingredientes que o...",
+      },
+      ru: {
+        name: "Грагас",
+        title: "Бедокур",
+        blurb:
+          "Грозный, но веселый Грагас – известный дебошир-пивовар, который всегда пытается порадовать других. Его происхождение неизвестно, но сейчас он ищет редкие ингредиенты в девственной тундре Фрельйорда, пытаясь довести до ума свой новый рецепт. Импульсивный...",
+      },
+    },
   },
   {
     id: "graves",
@@ -1060,17 +2805,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
-    blurb: "マルコム・グレイブスは傭兵、ギャンブラー、泥棒としてその名を知られた存在で、訪れたあらゆる街や帝国で指名手配されている。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
+    blurb:
+      "マルコム・グレイブスは傭兵、ギャンブラー、泥棒としてその名を知られた存在で、訪れたあらゆる街や帝国で指名手配されている。",
+    blurbEn:
+      "Malcolm Graves is a renowned mercenary, gambler, and thief—a wanted man in every city and empire he has visited. Even though he has an explosive temper, he possesses a strict sense of criminal honor, often enforced at the business end of his...",
+    loc: {
+      ko: {
+        name: "그레이브즈",
+        title: "무법자",
+        blurb:
+          "말콤 그레이브즈는 명성이 자자한 용병, 도박사, 도적으로, 그가 한 번이라도 발을 들였던 모든 도시와 제국에서 수배령이 떨어져 있을 정도다. 그레이브즈는 성미가 불 같지만, 범죄의 명예에 엄격한 면이 있어 자신의 이중 총열 산탄총 '운명'으로 마무리를 하는 경우가 잦다. 최근에는 트위스티드 페이트와 함께 바람 잘 날 없던 파트너 관계를 다시 맺고, 범죄의 냄새가 나는 빌지워터의 그늘진 곳에서 벌어지는 소동을 다시 한 번 주름잡고 있다.",
+      },
+      zh: {
+        name: "格雷福斯",
+        title: "法外狂徒",
+        blurb:
+          "格雷福斯是一位鼎鼎有名的佣兵、赌徒和窃贼，但凡他所及的城邦或帝国，都在通缉悬赏他的人头。虽然他脾气暴躁，却很讲究黑道义气，他的双管散弹枪“命运”就常用于纠正背信弃义之事。几年前他和老搭档崔斯特冰释前嫌，如今二人一同在比尔吉沃特的地下黑道纷争中再次合作，如鱼得水。",
+      },
+      es: {
+        title: "El Forajido",
+        blurb:
+          "Malcolm Graves es un famoso mercenario, jugador y ladrón. Un hombre buscado en todas las ciudades e imperios que ha visitado. A pesar de su temperamento explosivo, posee un firme sentido del honor criminal, que a menudo ejecuta con su escopeta de doble...",
+      },
+      fr: {
+        title: "Hors-la-loi",
+        blurb:
+          "Malcolm Graves est un mercenaire, un parieur et un voleur recherché dans toutes les cités et tous les empires par lesquels il est passé. Malgré son tempérament explosif, il a un sens de l'honneur indéniable qu'il applique souvent avec son fusil à double...",
+      },
+      de: {
+        title: "der Gesetzlose",
+        blurb:
+          "Malcolm Graves ist ein berüchtigter Söldner, Spieler und Dieb. Er steht überall auf der Fahndungsliste – in jedem Dorf, jeder Stadt und jedem Reich, das er je besucht hat. Trotz seines explosiven Gemüts besitzt er einen strikten Sinn für kriminelle Ehre...",
+      },
+      pt: {
+        title: "o Foragido",
+        blurb:
+          "Malcolm Graves, mercenário, apostador e bandido de renome, é um homem procurado em cada uma das cidades e impérios que visitou. Apesar do seu temperamento explosivo, ele é dono de uma noção rigorosa de honra entre criminosos, normalmente aplicada com o...",
+      },
+      ru: {
+        name: "Грейвз",
+        title: "Беззаконник",
+        blurb:
+          "Малкольм Грейвз – известный наемник, игрок и вор, объявленный в розыск во всех городах и империях, где он успел побывать. Несмотря на свой взрывной характер, Грейвз живет по строгим законам преступной чести, а несогласных угощает пулями из двуствольного...",
+      },
+    },
   },
   {
     id: "gwen",
@@ -1084,17 +2872,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.55,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
-    blurb: "魔法によって人間となり、命を与えられた元人形のグウェンは、かつて自分を生み出したまさにその道具を携えている。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.55,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
+    blurb:
+      "魔法によって人間となり、命を与えられた元人形のグウェンは、かつて自分を生み出したまさにその道具を携えている。",
+    blurbEn:
+      "A former doll transformed and brought to life by magic, Gwen wields the very tools that once created her. She carries the weight of her maker's love with every step, taking nothing for granted. At her command is the Hallowed Mist, an ancient and...",
+    loc: {
+      ko: {
+        name: "그웬",
+        title: "신성한 재봉사",
+        blurb:
+          "마법의 힘으로 살아나 인간이 된 인형 그웬은 한때 자신을 만들었던 도구를 휘두른다. 발걸음을 내디딜 때마다 자신을 만든 창조자의 사랑을 느끼며 모든 것을 감사히 여긴다. 그웬이 부리는 신성한 안개는 그웬의 가위와 바늘, 실에 축복을 내린 고대의 보호 마법이다. 모든 게 새로운 것으로 가득하지만, 그웬은 망가진 세상에서 살아남은 선한 이들을 위해 기꺼이 싸우러 나선다.",
+      },
+      zh: {
+        name: "格温",
+        title: "灵罗娃娃",
+        blurb:
+          "格温是一个被魔法赋予了生命的玩偶，而她所挥使的正是当初创造了她自己的工具。格温无比珍惜这份机缘，踏出的每一步都承载着曾经主人的爱意。格温拥有控制“圣霭”的能力。这是一种来自远古的庇护性法术，她的剪刀、衣针和缝线都因圣霭而得到了庇佑。即便有这么多新奇的事物等待着格温，她既感到兴奋，但又带着强烈的使命感，决心拯救在这个破碎世界里艰难挣扎的人们。",
+      },
+      es: {
+        title: "La Costurera Consagrada",
+        blurb:
+          "Gwen, una muñeca a la que la magia confirió vida, va armada con los mismos utensilios que en su día la confeccionaron. Lleva consigo la fuerza del amor de su creadora en cada paso que da y es consciente de la maravilla de vivir. La Niebla consagrada...",
+      },
+      fr: {
+        title: "Couturière sacrée",
+        blurb:
+          "Ancienne poupée à qui la magie a conféré la vie, Gwen est armée des outils qui l'ont créée. Elle emporte à chaque pas l'amour de sa créatrice et ne tient jamais rien pour acquis. Elle commande à la Brume sacrée, une ancienne magie de protection qui a...",
+      },
+      de: {
+        title: "Die begnadete Näherin",
+        blurb:
+          "Gwen war einst eine Puppe und wurde durch Magie zum Leben erweckt. Ihre Waffen sind die Werkzeuge, mit denen sie geschaffen wurde. Jeder ihrer Schritte zeugt von der Liebe ihrer Schöpferin. Gwen hält nichts für selbstverständlich. Sie kontrolliert den...",
+      },
+      pt: {
+        title: "A Costureira Encantada",
+        blurb:
+          "Uma boneca que ganhou vida por magia, Gwen empunha as mesmas ferramentas que um dia a criaram. Valorizando todo instante, ela carrega a força do amor de sua criadora a cada passo e comanda a Névoa Sagrada, uma magia protetora ancestral que abençoou a...",
+      },
+      ru: {
+        name: "Гвен",
+        title: "Благая швея",
+        blurb:
+          "Гвен – кукла, ожившая благодаря магии. Оружием ей служат швейные инструменты, с помощью которых когда-то смастерили ее саму. Она помнит, что всем обязана своей заботливой создательнице, и старается ценить каждую минуту жизни. Гвен управляет священным...",
+      },
+    },
   },
   {
     id: "hecarim",
@@ -1105,20 +2936,62 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Hecarim",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.6,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.6,
+      scaling: 0.55,
+    }),
     blurb: "生者の魂を永遠に狩るという呪いを受けたヘカリムは人間と獣が融合した亡霊だ。",
+    blurbEn:
+      "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was obliterated by the destructive energies of the Ruination, along with all his...",
+    loc: {
+      ko: {
+        name: "헤카림",
+        title: "전쟁의 전조",
+        blurb:
+          "헤카림은 말과 인간이 한 몸인 반인반수 유령으로, 산 자들의 영혼을 끝없이 추적하는 저주를 받았다. 원래는 자존심 강한 기사로 자신의 기사단을 이끌었으나, 축복의 빛 군도에 그림자가 드리울 때 대몰락의 파괴 에너지에 휩쓸려 최후를 맞았다. 그 이후 헤카림과 기사단은 타고 있던 말과 한 몸이 되어, 검은 안개가 룬테라에 깔릴 때면 무자비한 돌격을 일삼는다. 이제 그에게 남은 쾌락이란 적을 학살하고 철갑을 두른 말발굽 아래 그 시체를 깔아뭉개는 것뿐이다.",
+      },
+      zh: {
+        name: "赫卡里姆",
+        title: "战争之影",
+        blurb:
+          "赫卡里姆是人与兽的幽灵混合体，身上的诅咒让他只能永世不停地践踏生者的灵魂。在福光岛被暗影吞噬之际，这位高傲的骑士被破败之咒的毁灭能量彻底湮没——连同他的骑兵团和他们胯下的坐骑。现在，符文之地上只要是有黑雾出现的地方，就会有赫卡里姆率军冲锋的鬼影，他们肆虐雀跃，用铁蹄践踏着脚下的幽魂。",
+      },
+      es: {
+        title: "La Sombra de la Guerra",
+        blurb:
+          "Hecarim es una fusión espectral de hombre y bestia, condenado a arrollar las almas de los vivos por toda la eternidad. Cuando las Islas Bendecidas cayeron en la sombra, este orgulloso caballero fue aniquilado por las energías destructivas de la Ruina...",
+      },
+      fr: {
+        title: "Ombre de la guerre",
+        blurb:
+          "Fusion spectrale de l'homme et de la bête, Hecarim est condamné à pourchasser les âmes des vivants pour l'éternité. Lorsque les ombres ont envahi les Îles bénies, ce fier chevalier et sa horde de cavaliers ont été anéantis par les énergies destructrices...",
+      },
+      de: {
+        title: "der Schatten des Krieges",
+        blurb:
+          "Hecarim ist eine spektrale Verbindung aus Mann und Tier, und dazu verdammt, die Seelen der Lebenden bis in alle Ewigkeit zu jagen. Als der Schatten über die Gesegneten Inseln kam, wurde dieser stolze Ritter gemeinsam mit seiner Kavallerie und ihren...",
+      },
+      pt: {
+        title: "a Sombra da Guerra",
+        blurb:
+          "Hecarim é a fusão espectral de homem e animal, amaldiçoado a cavalgar entre as almas dos vivos por toda a eternidade. Quando as Ilhas das Bênçãos caíram nas sombras, esse cavaleiro orgulhoso foi obliterado pelas energias destrutivas da Ruína, junto com...",
+      },
+      ru: {
+        name: "Гекарим",
+        title: "Призрак войны",
+        blurb:
+          "Гекарим – призрачный гибрид человека и зверя, обреченный вечно охотиться на души живых. Когда на Благословенные острова опустилась тьма, этот гордый рыцарь был уничтожен разрушительными силами Погибели – вместе со своими всадниками и их лошадьми. И...",
+      },
+    },
   },
   {
     id: "heimerdinger",
@@ -1128,21 +3001,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "誉れ高き発明王",
     region: "Piltover",
     ddragonId: "Heimerdinger",
-    roles: ["Top","Mid"],
-    archetypes: ["Mage","Support"],
+    roles: ["Top", "Mid"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "変わり者のセシル・B・ハイマーディンガー教授は、史上稀にみる革新的な発明家の一人として称賛される存在だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "変わり者のセシル・B・ハイマーディンガー教授は、史上稀にみる革新的な発明家の一人として称賛される存在だ。",
+    blurbEn:
+      "The eccentric Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors the world has ever known. As the longest serving member of the Council of Piltover, he saw the best and the worst of the city's unending desire for...",
+    loc: {
+      ko: {
+        name: "하이머딩거",
+        title: "위대한 발명가",
+        blurb:
+          "괴짜 성향이 다분한 세실 B. 하이머딩거 교수는 세계에서 가장 혁신적인 인재로 손꼽히며 모든 이의 존경을 받는 발명가다. 필트오버 의회에서 최장기간 재임한 의원인 그는 진보를 향한 도시의 끝없는 욕망이 불러온 최고의 결과와 최악의 결과를 모두 목격했다. 그럼에도 뛰어난 과학자이자 교육자인 하이머딩거 교수는 자신이 만든 특이한 장치로 타인의 삶을 개선하는 일을 게을리하지 않는다.",
+      },
+      zh: {
+        name: "黑默丁格",
+        title: "大发明家",
+        blurb:
+          "古怪的塞西尔·B·黑默丁格教授是这个世界有史以来最具创新精神、最受人尊崇的发明家之一。他是皮城议会中资历最深的成员，这座城市无穷无尽地追求进步，既带来了善果，也种下了恶因，而教授早已将这一切尽收眼底。无论如何，这位才华横溢的科学家和教师始终都会不遗余力地利用先端发明来改善人们的生活。",
+      },
+      es: {
+        title: "El Inventor Venerado",
+        blurb:
+          "El excéntrico profesor Cecil B. Heimerdinger es considerado una de las mentes más innovadoras y uno de los inventores más admirados de la historia. Como miembro distinguido más antiguo del Consejo de Piltover, ha sido testigo de lo mejor y lo peor de la...",
+      },
+      fr: {
+        title: "Inventeur réputé",
+        blurb:
+          "L'excentrique professeur Cecil B. Heimerdinger est considéré comme l'un des inventeurs les plus innovants qu'ait connus le monde. En tant que plus ancien membre actif du Conseil de Piltover, il a été témoin du meilleur comme du pire que le désir de...",
+      },
+      de: {
+        title: "der verehrte Erfinder",
+        blurb:
+          "Der exzentrische Professor Cecil B. Heimerdinger ist einer der innovativsten und angesehensten Erfinder, die die Welt je gekannt hat. Als dienstältestes Mitglied des Rats von Piltover hat er sowohl die besten als auch die schlechtesten Seiten des...",
+      },
+      pt: {
+        title: "o Inventor Idolatrado",
+        blurb:
+          "O excêntrico Professor Cecil B. Heimerdinger é um dos inventores mais inovadores e estimados que o mundo já viu. Como o membro mais antigo do Conselho de Piltover, ele já viu o melhor e o pior do desejo insaciável da cidade pelo progresso. Entretanto...",
+      },
+      ru: {
+        name: "Хеймердингер",
+        title: "Одержимый ученый",
+        blurb:
+          "Эксцентричный профессор Сесил Б. Хеймердингер – один из самых умных и находчивых изобретателей на всей Рунтерре. Будучи старейшим членом совета Пилтовера, он хорошо знает, что вечное стремление к прогрессу имеет как положительные, так и отрицательные...",
+      },
+    },
   },
   {
     id: "hwei",
@@ -1152,21 +3068,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "夢想家",
     region: "Ionia",
     ddragonId: "Hwei",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.1,
-  damage: 0.8999999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.9,
-  scaling: 0.6
-}),
-    blurb: "フェイは陰鬱な芸術家で、見事な作品を生み出すことでアイオニアの悪人を罰し、罪なき者を慰める。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.1,
+      damage: 0.8999999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.9,
+      scaling: 0.6,
+    }),
+    blurb:
+      "フェイは陰鬱な芸術家で、見事な作品を生み出すことでアイオニアの悪人を罰し、罪なき者を慰める。",
+    blurbEn:
+      "Hwei is a brooding painter who creates brilliant art in order to confront Ionia's criminals and comfort their victims. Beneath his melancholy roils a torn, emotional mind—haunted by both the vibrant visions of his imagination and the gruesome memories...",
+    loc: {
+      ko: {
+        name: "흐웨이",
+        title: "몽상가",
+        blurb:
+          "음울한 화가 흐웨이는 찬란한 그림을 그려 아이오니아의 범죄자에게 맞서고, 희생자들에게는 위안을 선사한다. 우울한 겉모습 아래에는 갈가리 찢어진 감성이 자리를 잡고 있다. 그리고 자신의 상상력에서 비롯된 생생한 환상과 끔찍한 사원 학살극의 기억은 흐웨이를 쫓아다니며 괴롭힌다. 흐웨이의 목표는 이 명암을 이해하고, 종국에는 자신을 찢어발긴 예술가에게 닿는 것이다. 붓과 팔레트에서 피어나는 가능성이 흐웨이의 앞길을 인도한다. 그 끝이 절망의 극복일지...",
+      },
+      zh: {
+        name: "彗",
+        title: "异画师",
+        blurb:
+          "彗是一个郁郁寡欢的画家，在艾欧尼亚四处创作惊世佳作，只为惩戒恶人，宽慰弱者。在他的忧郁之下，藏着一颗斑驳、敏感的心，想象中的绚烂色彩与回忆中的凄惨尸骸始终萦绕在他脑海。彗寻求对自身光与暗的彻悟，而这份追寻也将不可避免地把他推向他的启蒙艺术家。以画笔和色盘，彗画出无尽的可能性，同时也在不断接近最终的答案，或是冰冷的绝望。",
+      },
+      es: {
+        title: "el Visionario",
+        blurb:
+          "Hwei, un taciturno pintor que crea obras fascinantes para enfrentarse a los criminales de Jonia y reconfortar a sus víctimas. Bajo su melancolía yace una mente retorcida y emocional, atormentada por las dinámicas visiones de su imaginación y los...",
+      },
+      fr: {
+        title: "Visionnaire",
+        blurb:
+          "Hwei est un peintre dont les œuvres sont aussi flamboyantes que son humeur est morose. Il utilise son art pour faire face aux criminels d'Ionia et apporter du réconfort à leurs victimes. Sous sa mélancolie se débat un esprit déchiré et émotif, hanté à...",
+      },
+      de: {
+        title: "der Visionär",
+        blurb:
+          "Hwei ist ein nachdenklicher Künstler, der brillante Werke erschafft, um die Verbrecher Ionias zu stellen und ihre Opfer zu trösten. Hinter seinem melancholischen Äußeren fühlt er sich emotional hin- und hergerissen zwischen den lebhaften Visionen seiner...",
+      },
+      pt: {
+        title: "o Visionário",
+        blurb:
+          "Hwei é um pintor melancólico que cria obras de arte geniais para combater os criminosos de Ionia e trazer conforto às vítimas deles. Por trás de sua melancolia, esconde-se uma mente emocionalmente dilacerada, assombrada pelas visões vibrantes de sua...",
+      },
+      ru: {
+        name: "Хвэй",
+        title: "Творец",
+        blurb:
+          "Хвэй – задумчивый художник из Ионии, который создает шедевры, сражаясь с преступниками и помогая их жертвам пережить беду. За его меланхолической внешностью скрывается чувствительный, терзаемый противоречиями разум. Хвэя одолевают яркие видения...",
+      },
+    },
   },
   {
     id: "illaoi",
@@ -1177,20 +3136,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "Illaoi",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
     blurb: "イラオイは頑強な巨体の持ち主だが、その不屈の信仰心はそれ以上に大きい。",
+    blurbEn:
+      "Illaoi's powerful physique is dwarfed only by her indomitable faith. As the prophet of the Great Kraken, she uses a huge, golden idol to rip her foes' spirits from their bodies and shatter their perception of reality. All who challenge the “Truth Bearer...",
+    loc: {
+      ko: {
+        name: "일라오이",
+        title: "크라켄의 여사제",
+        blurb:
+          "대 크라켄 신의 여사제, 나가카보로스 신을 섬기는 '진리의 사도' 일라오이는 건장한 체격만큼이나 굳건한 신앙심을 지녔다. 거대한 황금빛 성상을 솜인형처럼 가볍게 다루며 상대의 몸과 영혼을 분리하는 모습은 보는 이를 압도하고 적들의 얼을 빼놓기에 충분하다. 그래도 전장에서 일라오이에게 덤벼보겠다면, 바다뱀 군도의 신이 그녀와 함께 한다는 사실을 명심해야 한다.",
+      },
+      zh: {
+        name: "俄洛伊",
+        title: "海兽祭司",
+        blurb:
+          "俄洛伊的体格强横无比，却唯独会在她的坚定信仰面前屈身。作为大海兽的先知，她挥舞着一个巨大的金色神像，将敌人的灵魂抽离体外，完全击毁他们对现实的感知。所有对“娜伽卡波洛丝的真者”发起挑战的人，很快就会发现，俄洛伊从来不单打独斗——蟒行群岛的神明会与她并肩作战。",
+      },
+      es: {
+        title: "La Sacerdotisa del Kraken",
+        blurb:
+          "El poderoso físico de Illaoi solo se ve empequeñecido por su indómita fe. Como profeta del Gran Kraken, hace uso de un gran ídolo de oro para arrancar el espíritu del cuerpo de sus enemigos y fracturar su percepción de la realidad. Todo el que desafía a...",
+      },
+      fr: {
+        title: "Prêtresse du kraken",
+        blurb:
+          "La stature colossale d'Illaoi n'a d'égale que sa foi implacable. Prophétesse du Grand Kraken, elle se sert d'une énorme idole dorée pour arracher les esprits de ses ennemis et faire voler en éclats leur perception de la réalité. Ceux qui défient...",
+      },
+      de: {
+        title: "die Krakenpriesterin",
+        blurb:
+          "Illaois kräftige Erscheinung wird nur von ihrem unerschütterlichen Glauben in den Schatten gestellt. Als Prophetin des Großen Kraken setzt sie ein riesiges, goldenes Götzenbild ein, um die Seelen ihrer Widersacher von ihren Leibern zu trennen und ihre...",
+      },
+      pt: {
+        title: "a Sacerdotisa Cráquem",
+        blurb:
+          "O poderoso porte físico de Illaoi só perde para sua fé indomável. Como profetisa do Grande Cráquem, ela usa um gigantesco totem dourado para arrancar o espírito de seus inimigos de seus corpos e estilhaçar a sua percepção da realidade. Todos os que...",
+      },
+      ru: {
+        name: "Иллаой",
+        title: "Жрица Матери Глубин",
+        blurb:
+          "Физическая сила Иллаой уступает только силе ее веры. Будучи пророчицей Матери Глубин, она использует огромного золотого идола, чтобы вытягивать души врагов из их тел и разбивать их представления о реальности. Тот, кто бросит вызов Вестнице Нагакейборос...",
+      },
+    },
   },
   {
     id: "irelia",
@@ -1200,21 +3201,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "飛刃の舞い手",
     region: "Ionia",
     ddragonId: "Irelia",
-    roles: ["Top","Mid"],
-    archetypes: ["Fighter","Assassin"],
+    roles: ["Top", "Mid"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.45
-}),
-    blurb: "ノクサスのアイオニア占領は数多くの英雄を生み出すことになったが、ナヴォリ出身の若きイレリアほど傑出した才能は存在しない。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.45,
+    }),
+    blurb:
+      "ノクサスのアイオニア占領は数多くの英雄を生み出すことになったが、ナヴォリ出身の若きイレリアほど傑出した才能は存在しない。",
+    blurbEn:
+      "The Noxian occupation of Ionia produced many heroes, none more unlikely than young Irelia of Navori. Trained in the ancient dances of her province, she adapted her art for war, using the graceful and carefully practised movements to levitate a host of...",
+    loc: {
+      ko: {
+        name: "이렐리아",
+        title: "칼날 무희",
+        blurb:
+          "녹서스에게 침략당한 후 아이오니아에서는 수많은 영웅이 등장했지만, 나보리 출신의 젊은 이렐리아만큼 독특한 영웅은 없다. 이렐리아는 고향 나보리에 전해 내려오는 고대의 춤을 익혔고, 아이오니아가 침략당하자 그 능력을 전쟁터에서의 기술로 삼았다. 치명적인 위력의 칼날들을 공중에 띄우고 자유자재로 조종하며 싸우는 그녀의 모습은 우아하고 신중하며 군더더기라고는 없었다. 훌륭한 투사임을 입증한 이렐리아는 원하는 바는 아니었으나 아이오니아 저항 세력을 선두에서...",
+      },
+      zh: {
+        name: "艾瑞莉娅",
+        title: "刀锋舞者",
+        blurb:
+          "诺克萨斯对艾欧尼亚的占领催生了许多英雄，但没有谁像来自纳沃利的艾瑞莉娅一般令人意外。她将家乡的古老舞艺化为战技，以精心修习的优雅身姿操控着致命的刀阵。在向众人证明了自己的战斗实力后，这位刀锋舞者被推举为反抗军的领袖和首脑，为守卫家园奋斗至今。",
+      },
+      es: {
+        title: "la Danza de las Cuchillas",
+        blurb:
+          "La ocupación noxiana de Jonia produjo mucho héroes, pero ninguno más improbable que la joven Irelia de Navori. Se entrenó en las antiguas danzas de su gente y adaptó su arte para la guerra, usando los movimientos elegantes y diligentemente practicados...",
+      },
+      fr: {
+        title: "Danseuse des lames",
+        blurb:
+          "Des nombreux héros qui naquirent de l'occupation noxienne, aucun n'est plus étonnant que la jeune Irelia de Navori. Formée aux danses ancestrales de sa province, elle adapta son art pour la guerre, se servant de ses mouvements gracieux et précis pour...",
+      },
+      de: {
+        title: "die Klingentänzerin",
+        blurb:
+          "Die Besetzung Ionias durch die Noxianer brachte viele Helden hervor, doch am wenigsten hätte man es von der jungen Irelia aus Navori erwartet. Von Kindesbeinen an war sie in den uralten Tänzen ihrer Provinz unterrichtet worden, die sie zu einer völlig...",
+      },
+      pt: {
+        title: "a Dançarina das Lâminas",
+        blurb:
+          "A ocupação noxiana de Ionia produziu muitos heróis, mas nenhum era mais improvável do que a jovem Irelia de Navori. Treinada nas antigas danças de Ionia, ela adaptou sua arte à guerra, usando movimentos graciosos e cuidadosamente executados para levitar...",
+      },
+      ru: {
+        name: "Ирелия",
+        title: "Танцующая с клинками",
+        blurb:
+          "Борьба против ноксианской оккупации Ионии породила множество героев, но никто не ожидал, что одним из них станет молодая Ирелия из Навори. Изучив древнее искусство танца родной провинции, она приспособила его для войны. Изящными и точными движениями...",
+      },
+    },
   },
   {
     id: "ivern",
@@ -1225,20 +3269,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Ivern",
     roles: ["Jungle"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "「豊緑の神秘」の名で広く知られるアイバーン・ブランブルフットは、ルーンテラの森を渡り歩きながら行く先々で生命の種を蒔く、奇妙な半人半樹である。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "「豊緑の神秘」の名で広く知られるアイバーン・ブランブルフットは、ルーンテラの森を渡り歩きながら行く先々で生命の種を蒔く、奇妙な半人半樹である。",
+    blurbEn:
+      "Ivern Bramblefoot, known to many as the Green Father, is a peculiar half man, half tree who roams Runeterra's forests, cultivating life everywhere he goes. He knows the secrets of the natural world, and holds deep friendships with all things that grow...",
+    loc: {
+      ko: {
+        name: "아이번",
+        title: "자연의 아버지",
+        blurb:
+          "자연의 아버지로 잘 알려진 아이번 브램블풋은 룬테라 전역의 숲을 돌아다니며 생명을 가꾼다. 반은 인간, 반은 나무의 형상을 한 그는 자연의 비밀을 속속들이 알고 있을 뿐 아니라 땅에서 자라고, 하늘을 날고, 초원을 달리는 모든 것과 깊은 친분을 맺고 있다. 아이번은 자연 속에서 만나는 모든 이에게 자신만의 지혜를 나누어 주고, 숲을 풍성하게 가꾸며, 때로는 입이 가벼운 나비들에게 비밀을 맡기기도 한다.",
+      },
+      zh: {
+        name: "艾翁",
+        title: "翠神",
+        blurb:
+          "半人半树的艾翁•荆足常在符文之地的丛林中游荡，所经之处无不生机盎然。他知晓自然界的种种秘密，无论是飞禽走兽还是游鱼虫孑，都与他交谊深厚。在逍遥四野的途中，艾翁会向路遇的人传授奇特的智慧，或是培植丰茂的丛林。时不时地，他也会向口风不严的蝴蝶托付自己所知的秘密。",
+      },
+      es: {
+        title: "El Padre Arborescente",
+        blurb:
+          "Ivern Bósquez, conocido por muchos como el Padre Arborescente, es un ser peculiar, mitad humano y mitad árbol, que deambula por los bosques de Runaterra y cultiva la vida allá donde va. Conoce los secretos del mundo natural y es buen amigo de todo lo...",
+      },
+      fr: {
+        title: "Aîné de la forêt",
+        blurb:
+          "Ivern Roncepied, que beaucoup connaissent sous le nom d'Aîné de la forêt, est un être étrange mi-homme mi-arbre, qui arpente les forêts de Runeterra en cultivant la vie partout où il va. Il connaît les secrets du monde naturel et entretient une profonde...",
+      },
+      de: {
+        title: "der Hüter der Haine",
+        blurb:
+          "Ivern Brombeerbart, bekannt als der Hüter der Haine, ist ein seltsames Wesen, halb Mensch, halb Baum. Er durchstreift Runeterras Wälder und pflegt das Leben, wo immer er hingeht. Er kennt die Geheimnisse der Natur und ist ein Freund von allem, was...",
+      },
+      pt: {
+        title: "o Pai do Verde",
+        blurb:
+          "Ivern Bramblefoot, conhecido por muitos como o Protetor Verde, é um peculiar meio-homem, meio-árvore que vagueia pelas florestas de Runeterra, cultivando vida por onde ele passa. Ele conhece os segredos do mundo natural, e cultiva amizades profundas com...",
+      },
+      ru: {
+        name: "Иверн",
+        title: "Зеленый отец",
+        blurb:
+          "Иверн Плодостоп, также известный многим как Зеленый отец, – это диковинное создание, получеловек-полудерево, бродящее по лесам Рунтерры и дарящее жизненную силу любым существам. Изведав много тайн природы, он водит дружбу со всем, что растет из земли...",
+      },
+    },
   },
   {
     id: "janna",
@@ -1249,20 +3336,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Janna",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "ルーンテラの嵐を操るジャンナは、謎めいた風の精霊として寄る辺ないゾウンの人々を守っている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ルーンテラの嵐を操るジャンナは、謎めいた風の精霊として寄る辺ないゾウンの人々を守っている。",
+    blurbEn:
+      "Armed with the power of Runeterra's gales, Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun. Some believe she was brought into existence by the pleas of Runeterra's sailors who prayed for fair winds as they navigated...",
+    loc: {
+      ko: {
+        name: "잔나",
+        title: "폭풍의 분노",
+        blurb:
+          "룬테라의 돌풍이라는 강력한 무기를 지닌, 그러나 모든 것이 베일에 싸인 잔나. 그녀는 이제 폐허가 되어버린 자운을 지키는 바람의 정령이다. 그런 그녀를 두고 떠도는 이야기는 많다. 그중에서 가장 그럴듯한 설은 바로 수호신으로서의 잔나. 악천후 속에서 폭풍우를 뚫고 나아가며 부디 순항할 수 있기를 기원하는 룬테라 선원들의 간구 속에서 등장했다고 여기는 것이다. 사람들은 잔나가 남다른 애정으로 자운의 선원들을 보호한다고 믿었다. 잔나와 자운, 이 둘의...",
+      },
+      zh: {
+        name: "迦娜",
+        title: "风暴之怒",
+        blurb:
+          "风暴是她的武器，符文之地是她的家园。神秘的迦娜是风元素的精灵，保护着祖安城内无依无靠的人们。有人相信她的诞生是源于符文之地水手们的祈愿，他们会祈祷友善的风伴他们渡过险恶的海域，战胜无情的风暴。后来她的眷顾和庇护被召唤到了祖安深处，在那里，迦娜成为了无助之人的希望灯塔。没人知道她会在何时何地出现，但大多数时候，她的到来都意味着援手。",
+      },
+      es: {
+        title: "La Furia de la Tormenta",
+        blurb:
+          "Janna, armada con el poder de los vendavales de Runaterra, es un misterioso espíritu elemental que aprovecha el viento para proteger a los más desfavorecidos de Zaun. Hay quien cree que surgió de los ruegos de los marineros de Runaterra, que rezaban por...",
+      },
+      fr: {
+        title: "Avatar de l'air",
+        blurb:
+          "Armée de la puissance des grands vents de Runeterra, Janna est un mystérieux esprit élémentaire qui protège les parias de Zaun. Certains croient que la vie lui a été donnée par les suppliques des marins de Runeterra cherchant les bons vents des mers...",
+      },
+      de: {
+        title: "die Wut des Sturms",
+        blurb:
+          "Janna hat die mächtigen Winde Runeterras auf ihrer Seite, ist ein mysteriöser Windgeist und die Beschützerin der Armen von Zhaun. Manche glauben, dass sie von den Seemännern Runeterras ins Leben gerufen wurde, die um günstigen Wind baten, als sie durch...",
+      },
+      pt: {
+        title: "a Fúria da Tormenta",
+        blurb:
+          "Armada com o poder das ventanias de Runeterra, Janna é um misterioso e elemental espírito de vento que protege os desfavorecidos de Zaun. Alguns acreditam que Janna surgiu a partir dos clamores dos marinheiros de Runeterra, que rezavam por ventos mais...",
+      },
+      ru: {
+        name: "Жанна",
+        title: "Ярость шторма",
+        blurb:
+          "Жанна – это таинственный дух воздушной стихии, который защищает всех обездоленных Зауна, вооружившись силой бурь Рунтерры. Некоторые считают, что Жанна явилась миру благодаря просьбам моряков Рунтерры, молившихся о благоприятном ветре, который помог бы...",
+      },
+    },
   },
   {
     id: "jarvaniv",
@@ -1273,26 +3403,69 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "JarvanIV",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({
-  honor: 0.9,
-  justice: 0.7,
-  organization: 0.9,
-  family: 0.8,
-  protection: 0.6
-}),
+      honor: 0.9,
+      justice: 0.7,
+      organization: 0.9,
+      family: 0.8,
+      protection: 0.6,
+    }),
     gameVec: g({
-  range: 0.1,
-  skillBased: 0.7,
-  damageStyle: 0.6,
-  durability: 0.6,
-  damage: 0.7,
-  cc: 0.8,
-  mobility: 0.6,
-  difficulty: 0.5,
-  scaling: 0.4
-}),
+      range: 0.1,
+      skillBased: 0.7,
+      damageStyle: 0.6,
+      durability: 0.6,
+      damage: 0.7,
+      cc: 0.8,
+      mobility: 0.6,
+      difficulty: 0.5,
+      scaling: 0.4,
+    }),
     blurb: "デマーシア王子。先頭に立ち、王国の理念のために槍を振るう。",
+    blurbEn:
+      "Prince Jarvan, scion of the Lightshield dynasty, is heir apparent to the throne of Demacia. Raised to be a paragon of his nation's greatest virtues, he is forced to balance the heavy expectations placed upon him with his own desire to fight on the front...",
+    loc: {
+      ko: {
+        name: "자르반 4세",
+        title: "데마시아의 귀감",
+        blurb:
+          "라이트실드 왕조의 자손인 자르반 왕자는 데마시아의 왕좌를 물려받을 후계자이다. 데마시아의 덕목을 대표하는 귀감으로 자라난 자르반 왕자는 자신의 어깨에 짊어진 큰 기대와 전선에서 싸우고 싶다는 개인적 욕망 사이에서 갈등해야 했다. 자르반 왕자는 가공할 만한 용기와 자신을 돌보지 않는 투지로 병사들을 고무시키며, 데마시아의 기치를 높이 들고 자신의 백성을 이끄는 미래의 지도자로서 진정한 힘을 뿜어낸다.",
+      },
+      zh: {
+        name: "嘉文四世",
+        title: "德玛西亚皇子",
+        blurb:
+          "皇子嘉文四世身负王家血脉，极有可能便是德玛西亚的下一任国王。他自小被寄予厚望，有朝一日能够成为德玛西亚的楷模，可如此沉重的负担却令他的心中充满了挣扎。在战场上，他英勇无畏的气势和一往无前的决心鼓舞着全军上下，显现出身为人主的真实才干。",
+      },
+      es: {
+        title: "El Ejemplo de Demacia",
+        blurb:
+          "El príncipe Jarvan, descendiente de la dinastía Escudo de Luz, es heredero al trono de Demacia. Criado para ser ejemplo de las mayores virtudes de su nación, se ve obligado a equilibrar las grandes expectativas que se le imponen con su propio deseo de...",
+      },
+      fr: {
+        title: "Exemple demacien",
+        blurb:
+          "Le prince Jarvan, héritier de la dynastie des Lightshield, doit un jour monter sur le trône de Demacia. Élevé de manière à incarner les plus hautes vertus de sa nation, il est contraint de trouver un équilibre entre les attentes placées en lui et son...",
+      },
+      de: {
+        name: "Jarvan IV.",
+        title: "das Vorbild von Demacia",
+        blurb:
+          "Prinz Jarvan, Nachkomme der Lichtschild-Dynastie, ist der rechtmäßige Thronerbe von Demacia. Da er als Vorbild für die größten Tugenden seiner Nation aufgezogen wurde, muss er die damit verbundenen Erwartungen an ihn mit seinem persönlichen Verlangen...",
+      },
+      pt: {
+        title: "o Exemplo de Demacia",
+        blurb:
+          "O Príncipe Jarvan, descendente da Dinastia Lumescudo, é o atual herdeiro do trono de Demacia. Criado para ser um exemplo das grandes virtudes de sua nação, ele é forçado a equilibrar as grandes expectativas colocadas sobre ele com seu próprio desejo de...",
+      },
+      ru: {
+        name: "Джарван IV",
+        title: "Воплощение Демасии",
+        blurb:
+          "Принц Джарван, отпрыск династии Лайтшилдов, – бесспорный наследник демасийского престола. Его воспитывали как воплощение всех величайших достоинств нации, и теперь он вынужден балансировать между соответствием грузу возложенных на него надежд и желанием...",
+      },
+    },
   },
   {
     id: "jax",
@@ -1302,21 +3475,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "最強の武器使い",
     region: "Ionia",
     ddragonId: "Jax",
-    roles: ["Top","Jungle"],
+    roles: ["Top", "Jungle"],
     archetypes: ["Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.55,
-  durability: 0.5,
-  damage: 0.84,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.55,
+      durability: 0.5,
+      damage: 0.84,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
     blurb: "ジャックスはイカシアで現存する最後の武器使いだ。",
+    blurbEn:
+      "Unmatched in both his skill with unique armaments and his biting sarcasm, Jax is the last known weapons master of Icathia. After his homeland was laid low by its own hubris in unleashing the Void, Jax and his kind vowed to protect what little remained...",
+    loc: {
+      ko: {
+        name: "잭스",
+        title: "무기의 달인",
+        blurb:
+          "독특한 무기와 날카로운 독설 모두 따라올 자가 없는 잭스는 이케시아에서 마지막으로 알려진 무기의 달인이다. 풀려난 공허의 잔해로 조국이 기울자, 잭스와 그 무리는 조국의 남은 부분이나마 수호하기로 맹세했다. 마법이 강해지고 잠재하는 위협이 다시금 태동하자, 잭스는 발로란을 떠돌며 만나는 모든 전사에게 이케시아의 마지막 불빛을 휘두른다. 그와 견줄 수 있을 정도로 강한지 시험하기 위해.",
+      },
+      zh: {
+        name: "贾克斯",
+        title: "武器大师",
+        blurb:
+          "无论是各种兵器的攻防技法，还是挖苦嘲讽的刻薄口才，贾克斯都无人能及。他是目前已知的最后一名艾卡西亚武器大师。曾经，故土的人们因狂妄自大而引来了虚空，导致家园被夷为平地，在那之后，贾克斯和幸存的同胞们发誓要保护仅存的一切。如今，魔法再次涌起，沉睡的威胁也再次被触动，于是贾克斯开始在瓦洛兰大陆上四处漫游。他手握艾卡西亚最后的光明，考验他遇到的每一名战士，为的是寻找与自己不相伯仲的强者，并肩作战。",
+      },
+      es: {
+        title: "El Maestro de Armas",
+        blurb:
+          "Incomparable en su habilidad con armas especiales y su mordaz sarcasmo, Jax es el último maestro de armas conocido de Icathia. Después de que su tierra natal fuera devastada por su propia arrogancia al desatar el Vacío, Jax y los suyos juraron proteger...",
+      },
+      fr: {
+        title: "Maître d'armes",
+        blurb:
+          "Jax, dont nul ne peut égaler l'art du sarcasme et des armements inhabituels, est connu comme le dernier maître d'armes d'Icathia. Après la chute de sa terre natale, ravagée par le Néant qu'elle avait eu l'orgueil de déchaîner, Jax et ses compagnons...",
+      },
+      de: {
+        title: "der Großmeister der Waffen",
+        blurb:
+          "Jax ist in seinem Umgang mit einzigartigen Waffen sowie bissigem Sarkasmus unerreicht und außerdem der letzte bekannte Waffenmeister von Icathia. Nachdem die Bewohner seiner Heimat in einem Anflug von Selbstüberschätzung die Leere entfesselt und ihr...",
+      },
+      pt: {
+        title: "o Grão-Mestre das Armas",
+        blurb:
+          "Incomparável tanto por suas habilidades com armamentos incomuns quanto pelo seu sarcasmo mordaz, Jax é o último mestre de armas de Icathia conhecido. Depois de sua terra natal ter sido derrotada por sua própria arrogância ao libertar o Vazio, Jax e seu...",
+      },
+      ru: {
+        name: "Джакс",
+        title: "Великий мастер оружия",
+        blurb:
+          "Непревзойденный как в искусстве сражения уникальным оружием, так и в едком сарказме, Джакс – последний известный мастер оружия из Икатии. После того как его родина пала из-за собственной гордыни и желания подчинить Бездну, Джакс и его род поклялись...",
+      },
+    },
   },
   {
     id: "jayce",
@@ -1326,21 +3541,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "未来への希望",
     region: "Piltover",
     ddragonId: "Jayce",
-    roles: ["Top","Mid"],
-    archetypes: ["Fighter","Marksman"],
+    roles: ["Top", "Mid"],
+    archetypes: ["Fighter", "Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.4,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.7,
-  scaling: 0.7
-}),
-    blurb: "ジェイス・タリスは天才的な発明家であり、友人のビクターと共にヘクステックの秘密を初めて大きく解き明かした人物でもある。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.4,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.7,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ジェイス・タリスは天才的な発明家であり、友人のビクターと共にヘクステックの秘密を初めて大きく解き明かした人物でもある。",
+    blurbEn:
+      'Jayce Talis is a brilliant inventor who, along with his friend Viktor, made the first great discoveries in the field of hextech. Celebrated across Piltover, he tries to live up to his reputation as "the Man of Progress," but often struggles with the...',
+    loc: {
+      ko: {
+        name: "제이스",
+        title: "미래의 수호자",
+        blurb:
+          "제이스 탈리스는 친구 빅토르와 함께 마법공학 분야 최초의 위대한 발견을 이뤄 낸 뛰어난 발명가다. 필트오버 전역에서 찬사를 받는 그는 '진보의 주인공'이라는 명성에 걸맞게 살고자 하지만 자신을 향한 기대감에 종종 버거워하곤 한다. 이로 인해 제이스는 자신의 발명품이 필트오버와 자운 사이의 분열을 키웠다는 사실을 깨닫기 시작했다. 마법공학 해머로 무장한 그는 내일을 지킬 만반의 준비를 끝냈다.",
+      },
+      zh: {
+        name: "杰斯",
+        title: "未来守护者",
+        blurb:
+          "杰斯·塔利斯是一位杰出的发明家，他与好友维克托一起，在海克斯科技领域取得了开创性的重大发现。整个皮尔特沃夫都对他赞誉有加，他也一直努力让自己配得上“进化者”的称号，但迎合他人的期望却也经常让他身心俱疲。正因如此，杰斯开始意识到，他的发明进一步加深了皮城和祖安之间的裂痕。他高举起海克斯科技变形锤，决意守护城市的未来。",
+      },
+      es: {
+        title: "El Defensor del Mañana",
+        blurb:
+          'Jayce Talis es un brillante inventor que, junto a su amigo Viktor, realizó grandes hallazgos en el campo de la tecnología hextech. Con el reconocimiento de todo Piltover, intenta estar a la altura de su reputación como "el hombre del progreso"; sin...',
+      },
+      fr: {
+        title: "Protecteur du futur",
+        blurb:
+          "Jayce Talis est un inventeur de génie qui, aux côtés de son ami Viktor, a fait les premières grandes découvertes dans le domaine de l'Hextech. Reconnu dans tout Piltover, il s'efforce d'être à la hauteur de sa réputation d'« Homme du progrès », mais les...",
+      },
+      de: {
+        title: "der Verteidiger von Morgen",
+        blurb:
+          "Jayce Talis ist ein brillanter Erfinder, der zusammen mit seinem Freund Viktor die ersten großen Entdeckungen auf dem Gebiet der Hextech-Technologie gemacht hat. Er wird in ganz Piltover verehrt und versucht, seinem Ruf als „Mann des Fortschritts“...",
+      },
+      pt: {
+        title: "o Defensor do Amanhã",
+        blurb:
+          "Jayce Talis é um inventor brilhante que, ao lado do amigo Viktor, fez as primeiras grandes descobertas no campo da tecnologia hextec. Glorificado em Piltover, ele tenta fazer jus à reputação de ''Homem do Progresso'', mas costuma sofrer com as...",
+      },
+      ru: {
+        name: "Джейс",
+        title: "Защитник завтрашнего дня",
+        blurb:
+          "Джейс Талис – одаренный изобретатель, совершивший первые важнейшие открытия в области хекстека вместе со своим другом Виктором. Став пилтоверской знаменитостью, он старался оправдать свою репутацию человека прогресса, но зачастую чувствовал давление...",
+      },
+    },
   },
   {
     id: "jhin",
@@ -1351,20 +3609,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Jhin",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.95,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.95,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
     blurb: "ジンは殺人を芸術であると信じてやまないサイコパスである。",
+    blurbEn:
+      "Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's assassin. Using his gun as his paintbrush, Jhin...",
+    loc: {
+      ko: {
+        name: "진",
+        title: "잔혹극의 거장",
+        blurb:
+          "진은 살인이 예술이라고 믿는 주도면밀한 사이코패스 살인범이다. 원래는 아이오니아의 감옥에 수감되어 있었는데, 아이오니아 평의회 내에서 암약하는 어두운 세력의 힘으로 풀려난 이후 그 파벌의 자객으로 일하고 있다. 진은 총을 붓 삼아 잔혹한 그림을 그리는 화가이자, 소름끼치는 작품을 무대에 올리며 쾌락을 느끼는 극작가다. 그 솜씨를 접하는 피해자와 목격자들은 모두 얼어붙을 수밖에 없다. 누군가에게 '공포'라는 강렬한 메시지를 전하고 싶다면, 진이야말로...",
+      },
+      zh: {
+        name: "烬",
+        title: "戏命师",
+        blurb:
+          "作为一名心思缜密的癫狂杀手，烬坚信如何让人直面死亡是一门精巧的艺术。他曾在艾欧尼亚的监狱中服刑，却因执政议会里涌动的暗流得到释放，最终成为权术斗争所利用的刺客。烬将手中的枪当成画笔，尽情地挥洒他所追求的残忍艺术，让受害者肝胆俱裂，令旁观者震悚难平。他在自己制作的阴森剧目里肆意取乐，让“恐怖”二字有了最合适不过的定义。",
+      },
+      es: {
+        title: "El Virtuoso",
+        blurb:
+          "Jhin es un meticuloso criminal psicópata que ve el asesinato como arte. Otrora prisionero jonio, fue liberado gracias a los sombríos tejemanejes del consejo de Jonia. Ahora, el asesino en serie trabaja como sicario de la secta. Con su pistola como...",
+      },
+      fr: {
+        title: "Virtuose",
+        blurb:
+          "Jhin est un psychopathe méticuleux pour qui le meurtre est une forme d'art. Autrefois prisonnier de Ionia, mais libéré par des conspirateurs opérant au sein du conseil dirigeant du pays, ce tueur en série a désormais mis ses talents d'assassin au...",
+      },
+      de: {
+        title: "der Virtuose",
+        blurb:
+          "Jhin ist ein akribischer und krimineller Psychopath, der Mord für Kunst hält. Einst war er ein ionischer Gefangener, doch zwielichtige Gestalten in Ionias Herrscherrat befreiten den Serienmörder. Jetzt dient er in ihren Ränkespielen als Assassine. Jhin...",
+      },
+      pt: {
+        title: "o Virtuoso",
+        blurb:
+          "Jhin é um meticuloso psicopata criminoso que acredita que o assassinato é uma arte. Outrora um prisioneiro ioniano, mas libertado por membros obscuros do conselho regimental de Ionia, o assassino serial agora trabalha como assassino de seu conluio...",
+      },
+      ru: {
+        name: "Джин",
+        title: "Виртуоз",
+        blurb:
+          "Джин – щепетильный преступник-психопат, который считает убийство искусством. Бывший когда-то ионийским заключенным, он был освобожден при содействии группы заговорщиков внутри правящего совета Ионии и теперь работает на них в качестве наемного убийцы...",
+      },
+    },
   },
   {
     id: "jinx",
@@ -1377,24 +3677,66 @@ export const CHAMPIONS: Champion[] = [
     roles: ["ADC"],
     archetypes: ["Marksman"],
     storyVec: s({
-  chaos: 0.9,
-  freedom: 0.7,
-  family: 0.4,
-  solo: 0.6,
-  rival: 0.5
-}),
+      chaos: 0.9,
+      freedom: 0.7,
+      family: 0.4,
+      solo: 0.6,
+      rival: 0.5,
+    }),
     gameVec: g({
-  range: 0.85,
-  skillBased: 0.5,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.85,
-  cc: 0.4,
-  mobility: 0.2,
-  difficulty: 0.4,
-  scaling: 0.7
-}),
+      range: 0.85,
+      skillBased: 0.5,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.85,
+      cc: 0.4,
+      mobility: 0.2,
+      difficulty: 0.4,
+      scaling: 0.7,
+    }),
     blurb: "ゾウン出身の混沌そのもの。退屈ほど嫌いなものはない。",
+    blurbEn:
+      "An unhinged and impulsive criminal from the undercity, Jinx is haunted by the consequences of her past—but that doesn't stop her from bringing her own chaotic brand of pandemonium to Piltover and Zaun. She uses her arsenal of DIY weapons to devastating...",
+    loc: {
+      ko: {
+        name: "징크스",
+        title: "난폭한 말괄량이",
+        blurb:
+          "지하도시 출신의 충동적이고 불안정한 범죄자 징크스는 자신의 과거가 빚어낸 결과에 시달리면서도 필트오버와 자운에 특유의 대혼란을 일으키는 것을 멈추지 않는다. 손수 만든 무기를 파괴적으로 사용해 화려한 폭발과 총격을 쏟아내며 가는 곳마다 쑥대밭을 만들어 소외된 자들을 반란과 저항으로 이끈다.",
+      },
+      zh: {
+        name: "金克丝",
+        title: "暴走萝莉",
+        blurb:
+          "金克丝是一名来自底城的罪犯，性情狂躁、冲动易怒。她虽被自己的过往所困扰，但这丝毫不妨碍她掀起混乱的风暴，从皮尔特沃夫一路席卷至祖安，到处留下她的专属印记。她利用自制的武器库大肆破坏，所经之处必留下五彩缤纷的爆炸与火光，她带来的种种骚乱，也唤醒了底层人民的抗争精神，激励他们奋起反抗。",
+      },
+      es: {
+        title: "La Bala Perdida",
+        blurb:
+          "Jinx, una criminal inestable e impulsiva de la Ciudad Subterránea, se ve atormentada por las consecuencias de su pasado, pero eso no le impide desatar su propio caos en Piltover y Zaun. Hace uso de todo un arsenal de armas caseras con las que desata...",
+      },
+      fr: {
+        title: "Gâchette folle",
+        blurb:
+          "Criminelle dérangée et impulsive de la basse-ville, Jinx est hantée par les conséquences de son passé. Mais cela ne l'empêche jamais d'apporter sa touche de chaos à Piltover comme à Zaun. Elle utilise son arsenal d'armes bricolées de façon dévastatrice...",
+      },
+      de: {
+        title: "die Schießwütige",
+        blurb:
+          "Jinx ist eine unberechenbare und impulsive Kriminelle aus der Unterstadt, verfolgt von den Konsequenzen ihrer früheren Handlungen. Dies hält sie jedoch nicht davon ab, für ihre eigene Art von Chaos auf den Straßen von Piltover und Zhaun zu sorgen. Dabei...",
+      },
+      pt: {
+        title: "o Gatilho Desenfreado",
+        blurb:
+          "Jinx, uma criminosa desequilibrada e impulsiva da Subferia, é atormentada pelas consequências de seu passado, mas isso não a impede de deixar sua marca caótica de pandemônio em Piltover e Zaun. Ela usa um arsenal de armas autorais para provocar efeitos...",
+      },
+      ru: {
+        name: "Джинкс",
+        title: "Безбашенная хулиганка",
+        blurb:
+          "Джинкс – полоумная и безрассудная преступница из нижнего города, которая страдает от вечного чувства вины за свои прошлые поступки. Впрочем, это не мешает ей сеять хаос и устраивать кромешный ад в Пилтовере и Зауне. Вооружившись целым арсеналом...",
+      },
+    },
   },
   {
     id: "kaisa",
@@ -1405,20 +3747,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Void",
     ddragonId: "Kaisa",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
     blurb: "幼少期にヴォイドに囚われたカイ＝サは、不屈の精神と意志の力で生き延びた。",
+    blurbEn:
+      "Claimed by the Void when she was only a child, Kai'Sa managed to survive through sheer tenacity and strength of will. Her experiences have made her a deadly hunter and, to some, the harbinger of a future they would rather not live to see. Having entered...",
+    loc: {
+      ko: {
+        name: "카이사",
+        title: "공허의 딸",
+        blurb:
+          "카이사는 어린아이에 불과했을 때 공허에 끌려들어 갔지만 불굴의 의지와 집요한 노력 끝에 간신히 살아남을 수 있었다. 이때의 경험으로 카이사는 치명적인 위력의 사냥꾼이 되었다. 어떤 이들에게는 차라리 죽어서 보지 않는 게 나을 정도로 끔찍한 미래를 암시하는 징조로 여겨지기도 한다. 카이사는 이제 그녀의 두 번째 피부가 된 공허충의 껍질을 덮어쓰고 불유쾌한 공생 관계를 유지해야 하는 것은 물론, 머지않은 미래에 결단을 내려야만 한다. 자신을 괴물이라고...",
+      },
+      zh: {
+        name: "卡莎",
+        title: "虚空之女",
+        blurb:
+          "在孩童时期就被虚空掠夺走的卡莎，凭着顽强的意志力活了下来。那些经历，让她成为了一位夺命猎手——或许有人会称她为“黑暗未来的使者”。如今，卡莎与一副活着的虚空生物甲壳形成了一种微妙的共生状态，但很快她就将面临一个重大的抉择：究竟是原谅那些称她为怪物的凡人，与之共同抵御虚空压境的黑暗……还是干脆忘记，放任虚空吞噬这个已将她抛弃的世界。",
+      },
+      es: {
+        title: "La Hija del Vacío",
+        blurb:
+          "Reclamada por el Vacío cuando era solo una niña, Kai'Sa logró sobrevivir por pura tenacidad y fuerza de voluntad. Sus experiencias la han convertido en una cazadora letal y, para algunos, el presagio de un futuro que preferirían no vivir para ver. Ahora...",
+      },
+      fr: {
+        title: "Fille du Néant",
+        blurb:
+          "Capturée par le Néant alors qu'elle n'était qu'une enfant, Kai'Sa parvint à survivre par la simple force de sa détermination et de sa ténacité. Si ses expériences ont fait d'elle une chasseuse meurtrière, certains voient en elle l'avant-goût d'un avenir...",
+      },
+      de: {
+        title: "Tochter der Leere",
+        blurb:
+          "Kai'Sa musste schon als Kind mit der Leere zurechtkommen und es gelang ihr nur durch reine Zähigkeit und Willensstärke, zu überleben. Ihre Erfahrungen haben sie zu einer tödlichen Jägerin gemacht, und für manche ist sie die Vorbotin einer Zukunft, die...",
+      },
+      pt: {
+        title: "a Filha do Vazio",
+        blurb:
+          "Capturada pelo Vazio quando era apenas uma criança, Kai'Sa conseguiu sobreviver por pura persistência e força de vontade. Suas experiências fizeram dela uma caçadora mortal e, para alguns, o prenúncio de um futuro que seria melhor não viver para ver...",
+      },
+      ru: {
+        name: "Кай'Са",
+        title: "Дочь Бездны",
+        blurb:
+          "Кай'Су еще в детстве затянуло в Бездну, и выжить она сумела благодаря исключительной стойкости и силе воли. Годы испытаний превратили ее в смертоносного охотника, однако некоторые видят в ней предвестника ужасного будущего. Чтобы остаться в живых...",
+      },
+    },
   },
   {
     id: "kalista",
@@ -1432,17 +3816,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.7,
-  scaling: 0.7
-}),
-    blurb: "報復を誓い、復讐を司る亡霊カリスタは、偽り人や裏切りし者を狩るためシャドウアイルから召喚される。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.7,
+      scaling: 0.7,
+    }),
+    blurb:
+      "報復を誓い、復讐を司る亡霊カリスタは、偽り人や裏切りし者を狩るためシャドウアイルから召喚される。",
+    blurbEn:
+      "A specter of wrath and retribution, Kalista is the undying spirit of vengeance, an armored nightmare summoned from the Shadow Isles to hunt deceivers and traitors. The betrayed may cry out in blood to be avenged, but Kalista only answers those willing...",
+    loc: {
+      ko: {
+        name: "칼리스타",
+        title: "복수의 화신",
+        blurb:
+          "칼리스타, 영원불멸하는 복수의 화신이자 분노에 찬 응징의 혼. 그림자 군도에서 소환되는 칼리스타는 배신자와 반역자들에겐 악몽이 그 자체로 갑옷을 두르고 현실화한 듯한 존재이다. 배신당한 이들이 피맺힌 외침으로 복수를 갈망할 때, 영혼도 기꺼이 내놓겠다는 자들에겐 칼리스타의 응답이 들린다. 그 분노의 표적이 된 자는 결코 무사할 수 없다. 칼리스타는 무자비한 추격자이며, 복수의 계약을 끝낼 수 있는 것은 영혼을 꿰뚫는 창날의 차가운 불꽃뿐이기 때문이다.",
+      },
+      zh: {
+        name: "卡莉丝塔",
+        title: "复仇之矛",
+        blurb:
+          "卡莉丝塔是充满复仇怨念的幽灵，是不灭的复仇之魂，是召唤自暗影岛的噩梦，专门猎杀背信弃义之人。因遭人背叛而受害的人会以血泪盼望着复仇，但只有甘愿献上自己灵魂的人，才能获得卡莉丝塔的回应。所有被卡莉丝塔盯上的人都将不可避免地遭遇不幸，因为这位死亡猎手完成誓约的方式只有一种，那就是她灵魂标枪上的冷酷灵火。",
+      },
+      es: {
+        title: "El Espíritu de la Venganza",
+        blurb:
+          "Kalista, un espectro de cólera y castigo, es el inmortal espíritu de la venganza, una pesadilla acorazada que llega desde las Islas de la Sombra para dar caza a los embusteros y los traidores. Puede que todos los que han sido traicionados pidan venganza...",
+      },
+      fr: {
+        title: "Lance de la vengeance",
+        blurb:
+          "Spectre courroucé des Îles obscures, Kalista est l'esprit immortel de la vengeance, un cauchemar en armure que l'on invoque pour pourchasser les traîtres et les menteurs. Les victimes trahies peuvent réclamer vengeance, mais Kalista ne répond qu'à ceux...",
+      },
+      de: {
+        title: "der Speer der Rache",
+        blurb:
+          "Kalista ist ein Schemen des Zorns und der Vergeltung. Sie ist der untote Geist der Rache und ein gepanzerter Albtraum, der von den Schatteninseln beschworen wurde, um Betrüger und Verräter zu jagen. Die Betrogenen mögen blutend darum flehen, gerächt zu...",
+      },
+      pt: {
+        title: "a Lança da Vingança",
+        blurb:
+          "Um espectro de ira e retaliação, Kalista é o espírito imortal da vingança, um pesadelo blindado invocado da Ilhas das Sombras para caçar desertores e traidores. Os traídos podem clamar em sangue para serem vingados, mas Kalista apenas responde àqueles...",
+      },
+      ru: {
+        name: "Калиста",
+        title: "Копье возмездия",
+        blurb:
+          "Калиста – это призрак гнева и воздаяния, бессмертный дух возмездия, облеченный в доспехи кошмар, вызванный с Сумрачных островов, чтобы преследовать изменников и предателей. Жертвы предательства могут взывать об отмщении бесконечно, но Калиста отвечает...",
+      },
+    },
   },
   {
     id: "karma",
@@ -1453,20 +3880,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Karma",
     roles: ["Support"],
-    archetypes: ["Mage","Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.7,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.7,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
     blurb: "カルマは他の誰にも増して、アイオニアの精神性を重んじる伝統を体現する存在だ。",
+    blurbEn:
+      "No mortal exemplifies the spiritual traditions of Ionia more than Karma. She is the living embodiment of an ancient soul reincarnated countless times, carrying all her accumulated memories into each new life, and blessed with power that few can...",
+    loc: {
+      ko: {
+        name: "카르마",
+        title: "깨우친 자",
+        blurb:
+          "아이오니아의 영적인 전통을 카르마보다 잘 나타내는 필멸자가 있을까. 카르마는 지난 시간 동안 축적된 기억을 새로운 생명으로 온존하며 수없이 부활한 고대 영혼의 살아있는 현신으로, 극소수만이 깨우칠 수 있는 힘을 손에 넣었다. 최근 위기가 닥쳤을 때 최선을 다해 자신을 따르는 이들을 이끈 카르마는 자신과 자신이 그토록 아끼는 조국 모두가 상당한 대가를 치러야만 평화와 조화가 찾아오리라는 것을 알고 있다.",
+      },
+      zh: {
+        name: "卡尔玛",
+        title: "天启者",
+        blurb:
+          "要说哪位英雄能代表艾欧尼亚的精神传统，没有谁比卡尔玛更合适。作为一个经历过无数次转世的古老灵魂，她的每次新生都会继承以前的全部记忆，同时也会获得常人无法理解的力量。在最近这一世遭遇危难之时，卡尔玛倾尽全力地引领她的人民，她知道，要想获得和平与和谐，就必须付出重大代价——对她自己是如此，对她深爱的土地亦是如此。",
+      },
+      es: {
+        title: "La Iluminada",
+        blurb:
+          "No hay mortal que ejemplifique las tradiciones espirituales de Jonia mejor que Karma. Es la personificación de un alma antigua reencarnada un sinfín de veces, que acumula en cada vida sucesiva los recuerdos de las vidas pasadas y que ha sido bendecida...",
+      },
+      fr: {
+        title: "Sagesse incarnée",
+        blurb:
+          "Aucun mortel n'incarne mieux que Karma les traditions spirituelles d'Ionia. Elle est l'hôte vivant d'une âme ancienne réincarnée à de multiples reprises. Elle contient tous les souvenirs accumulés au fil de ces vies et elle possède une puissance que peu...",
+      },
+      de: {
+        title: "die Erleuchtete",
+        blurb:
+          "Keine Sterbliche personifiziert die spirituellen Traditionen von Ionia besser als Karma. Sie ist die lebende Verkörperung einer uralten, unzählige Male reinkarnierten Seele, die ihre gesammelten Erinnerungen in all ihre neuen Leben übernimmt. Die Macht...",
+      },
+      pt: {
+        title: "a Iluminada",
+        blurb:
+          "Nenhum mortal representa melhor as tradições espirituais de Ionia do que Karma. Ela é a incorporação de uma alma reencarnada inúmeras vezes, que leva todas as memórias acumuladas para cada nova vida e que foi agraciada com um poder que poucos...",
+      },
+      ru: {
+        name: "Карма",
+        title: "Просвещенная",
+        blurb:
+          "Ни один смертный не представляет духовные традиции Ионии лучше, чем Карма. Она являет собой древнюю душу, множество раз претерпевшую перевоплощение и сохранившую воспоминания о каждой своей жизни. Мало кто способен постичь природу ее силы – но важно то...",
+      },
+    },
   },
   {
     id: "karthus",
@@ -1476,21 +3945,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "死を歌う者",
     region: "ShadowIsles",
     ddragonId: "Karthus",
-    roles: ["Jungle","Mid"],
+    roles: ["Jungle", "Mid"],
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
     blurb: "忘却の使徒、不死の亡霊カーサスは、呪いの歌を口にしながらその不吉な姿を露わにする。",
+    blurbEn:
+      "The harbinger of oblivion, Karthus is an undying spirit whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath, but Karthus sees only beauty and purity in its embrace, a perfect union of...",
+    loc: {
+      ko: {
+        name: "카서스",
+        title: "죽음을 노래하는 자",
+        blurb:
+          "망각을 부르는 자 카서스는 섬뜩한 노랫소리를 전주곡 삼아 악몽처럼 등장하는 언데드이다. 산 자는 영원히 죽지 않는 언데드를 두려워하나, 그는 언데드를 삶과 죽음의 완벽한 결합으로 오직 아름답고 순수하다 여긴다. 카서스는 언데드로서 존재하는 기쁨을 온 세계에 전하기 위해 그림자 군도로부터 출몰한다.",
+      },
+      zh: {
+        name: "卡尔萨斯",
+        title: "死亡颂唱者",
+        blurb:
+          "卡尔萨斯是湮灭的使者，是不死的亡灵。从来都是未见其恐怖身影，先闻其鬼魅挽歌。活着的人惧怕那些永世不得超生的亡灵，但卡尔萨斯却在亡灵的存在中只看到了美丽和纯洁，这是生与死的完美融合。当卡尔萨斯从暗影岛获得新生的时候，他决心要担任不死亡灵的使徒，把死亡的欣喜带给所有凡人。",
+      },
+      es: {
+        title: "La Voz de la Muerte",
+        blurb:
+          "Karthus, heraldo del olvido, es un espíritu inmortal cuyos pavorosos cantos preceden al horror de su dantesca aparición. Los vivos temen la eternidad de la no muerte, pero Karthus solo percibe hermosura y pureza en su abrazo, una comunión perfecta entre...",
+      },
+      fr: {
+        title: "Liche",
+        blurb:
+          "Héraut de l'oubli, Karthus est un esprit immortel dont les chants ensorcelants préludent à l'horreur de son apparition. Les vivants craignent l'existence éternelle des morts-vivants, mais Karthus n'y voit que beauté et pureté, une union parfaite de la...",
+      },
+      de: {
+        title: "der Todessänger",
+        blurb:
+          "Karthus ist ein Bote des Vergessens, ein unsterbliches Geisterwesen, dessen quälende Lieder sein schauerliches Erscheinen ankündigen. Die Lebenden fürchten sich davor, auf ewig untot zu sein, doch Karthus sieht in diesem Geschenk nichts als Schönheit...",
+      },
+      pt: {
+        title: "a Voz Mortal",
+        blurb:
+          "Sendo o presságio do fim, Karthus é um espírito imortal cujas canções assombradoras são um prelúdio para o terror de sua aparição horripilante. Os vivos temem a eternidade dos mortos-vivos, mas Karthus vê apenas beleza e pureza em seu abraço, uma união...",
+      },
+      ru: {
+        name: "Картус",
+        title: "Певец смерти",
+        blurb:
+          "Картус – предвестник забвения, о кошмарном появлении которого возвещают его печальные песни. Живые трепещут перед загробной жизнью, Картус же видит только красоту и чистоту ее объятий, только безупречное единство жизни и смерти. Картус, этот апостол...",
+      },
+    },
   },
   {
     id: "kassadin",
@@ -1501,20 +4012,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Void",
     ddragonId: "Kassadin",
     roles: ["Mid"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "世界の最も昏き闇を炎で切り裂くカサディンは、自身にあまり時間が残されていないことを理解している。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "世界の最も昏き闇を炎で切り裂くカサディンは、自身にあまり時間が残されていないことを理解している。",
+    blurbEn:
+      "Cutting a burning swath through the darkest places of the world, Kassadin knows his days are numbered. A widely traveled Shuriman guide and adventurer, he had chosen to raise a family among the peaceful southern tribes—until the day his village was...",
+    loc: {
+      ko: {
+        name: "카사딘",
+        title: "공허의 방랑자",
+        blurb:
+          "이 세계에서도 가장 어두운 곳을 불타는 검을 휘둘러 헤쳐나가는 카사딘은 자신에게 주어진 시간이 많지 않음을 잘 알고 있다. 원래 슈리마 구석구석 가보지 않은 곳이 없는 여행 안내자이자 모험가였던 그는 슈리마 남쪽의 평화로운 부족 마을에서 가정을 꾸리고 살았다. 하지만 어느 날, 그가 살던 곳을 공허가 덮쳐 집어삼켰다. 카사딘은 복수를 맹세했고, 신비로운 유물과 금지된 기술을 닥치는 대로 조합하여 앞으로의 투쟁에 쓸 무기를 만들었다. 황무지 이케시아를...",
+      },
+      zh: {
+        name: "卡萨丁",
+        title: "虚空行者",
+        blurb:
+          "在世界上最黑暗的地方，卡萨丁切出了一道燃烧的裂口，他知道自己已经时日无多。他曾是恕瑞玛地区的向导和冒险家，后来选择在恕瑞玛南方平静的部落中安家落户——直到那一天，他的村庄被虚空吞噬。卡萨丁发誓要报仇雪恨，于是整合了许多秘法器物和禁忌之术，以便应对前方的险阻。最后，卡萨丁动身前往艾卡西亚的废土，准备面对任何虚空的造物，寻找那位自封的先知，玛尔扎哈。",
+      },
+      es: {
+        title: "El Caminante del Vacío",
+        blurb:
+          "Dejando tras sí una huella ardiente por los lugares más oscuros del mundo, Kassadin sabe que sus días están contados. Guía y aventurero de Shurima que ha viajado por medio mundo, había elegido formar a una familia entre las pacíficas tribus del sur...",
+      },
+      fr: {
+        title: "Chasseur du Néant",
+        blurb:
+          "Kassadin se fraye un chemin brûlant dans les lieux les plus sombres du monde ; il sait que ses jours sont comptés. Guide et aventurier shurimien accompli, il avait choisi de fonder une famille parmi les tribus pacifiques du sud, jusqu'au jour où son...",
+      },
+      de: {
+        title: "der Leerengänger",
+        blurb:
+          "Kassadin schlägt eine brennende Schneise durch die dunkelsten Orte dieser Welt, denn er weiß, dass seine Tage gezählt sind. Als Abenteurer und weit gereister Wüstenführer von Shurima wollte er einst unter den friedlichen Nomadenstämmen von Shurima eine...",
+      },
+      pt: {
+        title: "o Andarilho do Vazio",
+        blurb:
+          "Cortando uma trilha de fogo pelos lugares mais sombrios do mundo, Kassadin sabe que seus dias estão contados. Outrora um aventureiro e guia shurimane, ele escolheu criar uma família perto das tribos pacíficas do sul, até o dia em que sua vila foi...",
+      },
+      ru: {
+        name: "Кассадин",
+        title: "Скиталец Бездны",
+        blurb:
+          "Кассадин пробирается по самым темным уголкам этого мира, оставляя за собой разрушение. Он знает, что его дни сочтены. Когда-то он был известным проводником и авантюристом, но затем отказался от приключений и стал мирно жить с семьей среди южных кочевых...",
+      },
+    },
   },
   {
     id: "katarina",
@@ -1525,25 +4079,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Katarina",
     roles: ["Mid"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({
-  revenge: 0.7,
-  ambition: 0.7,
-  family: 0.6,
-  solo: 0.5
-}),
+      revenge: 0.7,
+      ambition: 0.7,
+      family: 0.6,
+      solo: 0.5,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.2,
-  damage: 0.85,
-  cc: 0,
-  mobility: 0.95,
-  difficulty: 0.7,
-  scaling: 0.45
-}),
+      range: 0,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.2,
+      damage: 0.85,
+      cc: 0,
+      mobility: 0.95,
+      difficulty: 0.7,
+      scaling: 0.45,
+    }),
     blurb: "ノクサス貴族の暗殺者。父の遺志を継ぎ刃を振るう。",
+    blurbEn:
+      "Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest caliber. Eldest daughter to the legendary General Du Couteau, she made her talents known with swift kills against unsuspecting enemies. Her fiery ambition has driven...",
+    loc: {
+      ko: {
+        name: "카타리나",
+        title: "사악한 칼날",
+        blurb:
+          "카타리나는 단호한 판단력과 치명적인 전투 능력을 지닌 녹서스의 특급 암살자이다. 전설적인 명성을 자랑하는 뒤 쿠토 장군의 장녀로 태어난 카타리나는 방심한 적을 신속하게 암살하는 데에 뛰어난 재능을 보였다. 그녀는 자신의 불타는 야망 때문에 아군을 위험에 빠뜨리면서까지 방비를 강화한 적을 노리기도 했다. 하지만 임무가 아니더라도 카타리나는 주저없이 톱날 단검의 돌풍을 일으켜 마땅히 쓰러뜨려야 할 적을 처치할 것이다.",
+      },
+      zh: {
+        name: "卡特琳娜",
+        title: "不祥之刃",
+        blurb:
+          "果断坚决、心狠手辣，卡特琳娜是诺克萨斯的顶尖刺客。作为传奇将军杜·克卡奥的长女，她凭借出其不意的迅猛刺杀很快声名鹊起。强烈的野心曾经驱使她挑战重兵把守的暗杀目标，甚至不惜冒险让友军暴露在危险中。不过无论是怎样的任务，卡特琳娜都会毫不迟疑地在锯刃匕首的风暴中履行自己的使命。",
+      },
+      es: {
+        title: "La Cuchilla Siniestra",
+        blurb:
+          "Con un juicio decisivo y letal en el combate, Katarina es una de las mejores asesinas noxianas. Al ser la primogénita del legendario general Du Couteau, ha dado a conocer sus habilidades con asesinatos rápidos contra enemigos inconscientes. Una ambición...",
+      },
+      fr: {
+        title: "Lame sinistre",
+        blurb:
+          "Aussi prompte dans ses décisions qu'elle est meurtrière en combat, Katarina figure parmi les assassins les plus prestigieux de Noxus. Fille aînée du légendaire général Du Couteau, elle révéla bien vite ses talents en éliminant ses ennemis avec la plus...",
+      },
+      de: {
+        title: "die unheimliche Klinge",
+        blurb:
+          "Katarina ist eine noxianische Assassinin des höchsten Formats, denn ihr Urteilsvermögen ist ungetrübt und im Kampf ist sie tödlich. Sie ist die älteste Tochter des legendären Generals Du Couteau und machte sich schnell einen Namen, indem sie...",
+      },
+      pt: {
+        title: "a Lâmina Sinistra",
+        blurb:
+          "Decisiva em seus julgamentos e letal em combate, Katarina é a assassina de maior calibre de Noxus. Filha mais velha do lendário General Du Couteau, Katarina é reconhecida por seus assassinatos eficientes contra inimigos desavisados. Sua ambição ardente...",
+      },
+      ru: {
+        name: "Катарина",
+        title: "Гибельный клинок",
+        blurb:
+          "Решительная в суждениях и смертоносная в бою, Катарина – ноксианская убийца высочайшего класса. Старшая дочь легендарного генерала дю Кото славится своим умением быстро убивать ничего не подозревающих врагов. Высокие амбиции побуждают ее охотиться на...",
+      },
+    },
   },
   {
     id: "kayle",
@@ -1553,21 +4149,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "天空の正義",
     region: "Demacia",
     ddragonId: "Kayle",
-    roles: ["Top","Mid"],
-    archetypes: ["Mage","Marksman"],
+    roles: ["Top", "Mid"],
+    archetypes: ["Mage", "Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.7,
-  scaling: 0.7
-}),
-    blurb: "ルーン戦争の真っただ中にターゴンの神髄の子として生を受けたケイルは、母の意志を引き継いで、聖なる炎の翼を纏い正義のために戦っている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.7,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ルーン戦争の真っただ中にターゴンの神髄の子として生を受けたケイルは、母の意志を引き継いで、聖なる炎の翼を纏い正義のために戦っている。",
+    blurbEn:
+      "Born to a Targonian Aspect at the height of the Rune Wars, Kayle honored her mother's legacy by fighting for justice on wings of divine flame. She and her twin sister Morgana were the protectors of Demacia for many years—until Kayle became disillusioned...",
+    loc: {
+      ko: {
+        name: "케일",
+        title: "정의로운 자",
+        blurb:
+          "룬 전쟁이 한창일 때 태어난 케일은 정의의 성위인 어머니의 뜻을 이어받아 신성한 불꽃의 날개를 펴고 정의를 실현하기 위해 싸웠다. 그리고 쌍둥이 동생 모르가나와 함께 데마시아의 수호자로 수년간 추앙받았다. 그러나 인간들의 반복된 실수에 환멸을 느낀 케일은 결국 데마시아를 영원히 떠나고 말았다. 불타는 검을 휘두르며 악을 심판하는 케일의 이야기는 데마시아의 전설이 되었고, 여전히 많은 이들은 케일의 재림을 간절히 바라고 있다.",
+      },
+      zh: {
+        name: "凯尔",
+        title: "正义天使",
+        blurb:
+          "在符文战争最激烈的时刻，一位巨神星灵诞下了凯尔，她传承了母亲的荣耀，在圣火飞翼的承载下为了正义而战。她和孪生妹妹莫甘娜曾是德玛西亚的保护神——但凡人反反复复的失败最终让凯尔的幻想破灭，彻底抛弃了这个国度。但关于她用火焰长剑惩罚不义之徒的传说依然在流传，关于她终将回归的希望也依然在持续……",
+      },
+      es: {
+        title: "la Justa",
+        blurb:
+          "Kayle, nacida de un Aspecto de Targon en el punto álgido de las Guerras Rúnicas, honró el legado de su madre al continuar la lucha por la justicia con sus alas de llamas divinas. Durante muchos años, ella y su hermana gemela Morgana fueron las...",
+      },
+      fr: {
+        title: "Vertueuse",
+        blurb:
+          "Née d'une Manifestation targonienne au plus fort des Guerres runiques, Kayle honore l'héritage de sa mère en combattant pour la justice, portée par des ailes de feu divin. Elle et sa sœur jumelle Morgana ont longtemps été les protectrices de Demacia...",
+      },
+      de: {
+        title: "die Rechtschaffene",
+        blurb:
+          "Kayle wurde von einem targonischen Aspekt zur Welt gebracht, während die Runenkriege tobten, und ehrte das Vermächtnis ihrer Mutter, indem sie auf den Schwingen der göttlichen Flammen für Gerechtigkeit kämpfte. Sie und ihre Zwillingsschwester Morgana...",
+      },
+      pt: {
+        title: "a Justa",
+        blurb:
+          "Nascida de um Aspecto targonense no auge das Guerras Rúnicas, Kayle honrava o legado de sua mãe lutando por justiça com asas de chamas divinas. Ela e sua irmã gêmea, Morgana, foram as protetoras de Demacia por muitos anos, até Kayle se desiludir com as...",
+      },
+      ru: {
+        name: "Кейл",
+        title: "Праведница",
+        blurb:
+          "Кейл – дочь таргонской Сущности, родившаяся в разгар Рунических войн. Эта воительница пошла по стопам матери, сражаясь во имя правосудия на крыльях божественного огня. Она и ее сестра-двойняшка Моргана долгие годы были защитницами Демасии, пока Кейл не...",
+      },
+    },
   },
   {
     id: "kayn",
@@ -1578,20 +4217,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Kayn",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.45
-}),
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.45,
+    }),
     blurb: "恐るべき影の魔術の卓越した使い手であるシエダ・ケイン。",
+    blurbEn:
+      "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of Shadow into a new era of Ionian supremacy. He wields the sentient darkin weapon Rhaast, undeterred by its creeping corruption of...",
+    loc: {
+      ko: {
+        name: "케인",
+        title: "그림자 사신",
+        blurb:
+          "치명적인 그림자 마법을 그 누구보다도 자유자재로 구사하는 자, 시이다 케인이 싸우는 이유는 자신에게 주어진 진정한 운명을 실현하기 위해서다. 장차 그림자단을 이끌고 아이오니아가 패권을 장악하는 새로운 시대를 열 것이라는 운명. 케인은 자의식이 있는 다르킨 무기 라아스트를 들고 전장에 나선다. 다르킨 무기는 그것을 휘두르는 자의 몸과 정신을 서서히 타락시킨다는 사실은 아랑곳하지 않는 것이다. 다르킨 무기에 손을 댄 이상 예상할 수 있는 결과는 단 두...",
+      },
+      zh: {
+        name: "凯隐",
+        title: "影流之镰",
+        blurb:
+          "悉达·凯隐是修行暗影魔法的天纵之才，他战斗的意义，是为了实现自己真正的命运——为了有朝一日能够率领影流教派，开创艾欧尼亚霸业的新世代。他挥舞着活体暗裔武器拉亚斯特，毫不在意它对自己身体与思想的腐化侵蚀。这样做只会有两种结局：要么，凯隐让这把武器屈服于自己的意志；要么，这把恶毒的刀刃将他彻底吞噬，为符文之地的毁灭奏响序曲。",
+      },
+      es: {
+        title: "la Guadaña de las Sombras",
+        blurb:
+          "Shieda Kayn, un practicante sin par de la mortífera magia sombría, lucha por alcanzar su verdadero destino: llegar a guiar algún día a la Orden de la Sombra hacia una nueva era de supremacía jonia. Empuña la oscura arma viviente Rhaast, impasible ante...",
+      },
+      fr: {
+        title: "Faucheur de l'ombre",
+        blurb:
+          "Expert inégalé dans la pratique de la magie des ombres, Shieda Kayn combat pour accomplir sa véritable destinée : mener un jour l'Ordre de l'ombre vers une ère nouvelle où Ionia régnera en maître. Il manie Rhaast, une arme darkin douée de raison, sans...",
+      },
+      de: {
+        title: "der Schatten des Todes",
+        blurb:
+          "Shieda Kayns Leistungen im Bereich der Schattenmagie suchen ihresgleichen und so kämpft er beständig, um seine wahre Bestimmung zu erfüllen – eines Tages den Orden der Schatten in eine neue Ära unter ionischer Herrschaft zu führen. Obwohl er weiß, dass...",
+      },
+      pt: {
+        title: "o Ceifador das Sombras",
+        blurb:
+          "Inigualável praticante da letal magia sombria, Shieda Kayn luta para alcançar seu verdadeiro destino: um dia comandar a Ordem das Sombras rumo a uma nova era de supremacia ioniana. Indiferente à maquiavélica degradação que ela causa em seu corpo e mente...",
+      },
+      ru: {
+        name: "Каин",
+        title: "Сумеречный жнец",
+        blurb:
+          "Искусный адепт смертоносной магии тени, Шида Каин стремится наконец выполнить свое предназначение и возглавить Орден тени, положив начало эпохе ионийского превосходства. Каин сражается c живым оружием, даркином Раастом, ни на секунду не прекращая борьбу...",
+      },
+    },
   },
   {
     id: "kennen",
@@ -1605,17 +4286,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
-    blurb: "ケネンは電光石化の素早さでアイオニアの均衡を保つだけでなく、「均衡の守人」の中で唯一のヨードルでもある。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ケネンは電光石化の素早さでアイオニアの均衡を保つだけでなく、「均衡の守人」の中で唯一のヨードルでもある。",
+    blurbEn:
+      "More than just the lightning-quick enforcer of Ionian balance, Kennen is the only yordle member of the Kinkou. Despite his small, furry stature, he is eager to take on any threat with a whirling storm of shuriken and boundless enthusiasm. Alongside his...",
+    loc: {
+      ko: {
+        name: "케넨",
+        title: "폭풍의 심장",
+        blurb:
+          "케넨은 아이오니아의 균형을 수호하는 번개같이 빠른 집행자이기도 하지만, 킨코우 결사단에서 유일한 요들이기도 하다. 작고 복실복실한 외모와는 달리 케넨은 수리검으로 일으키는 소용돌이 폭풍과 끝없는 열정으로 그 어떤 위협도 극복할 준비가 되어있다. 케넨은 사부인 쉔과 함께 영적인 영역을 순찰하며 엄청난 번개의 힘으로 적을 쓰러뜨린다.",
+      },
+      zh: {
+        name: "凯南",
+        title: "狂暴之心",
+        blurb:
+          "凯南不仅是一位迅猛如雷电的艾欧尼亚执法者，还是均衡教派中唯一的约德尔人。虽然他身体小巧，浑身绒毛，但他能用风暴一般的手里剑和无限热情去迎击任何敌人的威胁。他和师父慎一起在精神领域巡逻，使用雷电的能量痛击敌人。",
+      },
+      es: {
+        title: "El Corazón de la Tempestad",
+        blurb:
+          "Más allá de ser el rápido encargado de mantener el equilibrio en Jonia, Kennen es también el único yordle de los kinkou. A pesar de su pequeño y peludo tamaño, siempre está impaciente por enfrentarse a cualquier amenaza dando rienda suelta a una...",
+      },
+      fr: {
+        title: "Cœur de la tempête",
+        blurb:
+          "Vif comme l'éclair, Kennen est plus que le simple protecteur de l'équilibre ionien, c'est aussi le seul yordle membre du Kinkou. En dépit de son allure de boule de poils, il est prêt à affronter n'importe quelle menace dans un tourbillon de shurikens et...",
+      },
+      de: {
+        title: "das Herz des Sturms",
+        blurb:
+          "Kennen, das einzige Yordle-Mitglied der Kinkou, ist mehr als ein blitzschneller Wächter des ionischen Gleichgewichts. Trotz seiner kleinen, pelzigen Gestalt stellt er sich in einem Sturm aus Wurfsternen und unbändigem Enthusiasmus jeglicher Gefahr. An...",
+      },
+      pt: {
+        title: "o Coração da Tempestade",
+        blurb:
+          "Mais do que um protetor rápido como um raio do equilíbrio ioniano, Kennen é o único yordle membro da Kinkou. Apesar da sua estatura pequena e peluda, ele anseia por ir contra qualquer ameaça com uma tempestade desenfreada de shurikens e entusiasmo sem...",
+      },
+      ru: {
+        name: "Кеннен",
+        title: "Сердце бури",
+        blurb:
+          "Кеннен – это не только хранитель баланса Ионии; он еще и единственный йордл – член ордена Кинку. Он низкоросл и покрыт шерстью, однако это не мешает ему, заряженному бесконечным энтузиазмом, сражаться с любой угрозой в кружащем вихре сюрикенов. Вместе...",
+      },
+    },
   },
   {
     id: "khazix",
@@ -1628,23 +4352,65 @@ export const CHAMPIONS: Champion[] = [
     roles: ["Jungle"],
     archetypes: ["Assassin"],
     storyVec: s({
-  solitude: 0.8,
-  chaos: 0.6,
-  solo: 0.9,
-  rival: 0.7
-}),
+      solitude: 0.8,
+      chaos: 0.6,
+      solo: 0.9,
+      rival: 0.7,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.85,
-  cc: 0.3,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
+      range: 0,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.85,
+      cc: 0.3,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
     blurb: "適応し進化し続けるヴォイドの捕食者。最強の獲物を求める。",
+    blurbEn:
+      "The Void grows, and the Void adapts—in none of its myriad spawn are these truths more apparent than Kha'Zix. Evolution drives the core of this mutating horror, born to survive and to slay the strong. Where it struggles to do so, it grows new, more...",
+    loc: {
+      ko: {
+        name: "카직스",
+        title: "공허의 약탈자",
+        blurb:
+          "'공허는 성장하고, 공허는 적응한다.' 공허태생 생명체는 많지만, 이 진리를 카직스보다 더 명백히 입증하는 존재는 없다. 카직스가 공포스러운 것은 진화를 거듭하기 때문이다. 생존을 위해 사냥을 하고, 사냥감을 집어삼킬 때마다 강해지고, 더 강한 상대를 찾아 또다시 사냥에 나선다. 게다가 진화를 할수록 먹이를 낚아채는 사냥 기술은 더 새로워지고 효율도 높아진다. 공허에서 갓 넘어왔을 때에는 아무 생각 없는 야수에 불과했으나, 이제는 그 형체만큼이나...",
+      },
+      zh: {
+        name: "卡兹克",
+        title: "虚空掠夺者",
+        blurb:
+          "虚空在成长，虚空在进化——在众多虚空生物中，没有谁能比卡兹克更完美体现这一特性。进化让这种恐怖的能力不断变异，求生的本能让它不断弑杀强者，只要遇到障碍，它就会进化出新的、更有效的方法反杀猎物。最初卡兹克只是一头愚钝的野兽，但随着智力与形态的不断进化，现在它已学会了提前计划狩猎行动，甚至懂得在猎物心中制造最真实的恐惧。",
+      },
+      es: {
+        title: "El Saqueador del Vacío",
+        blurb:
+          "El Vacío crece y el Vacío se adapta; verdades que son más evidentes en Kha'Zix que en ningún otro de sus innumerables engendros. La evolución impulsa el núcleo de este horror mutante, nacido para sobrevivir y matar a los fuertes. Cuando se esfuerza por...",
+      },
+      fr: {
+        title: "Faucheur du Néant",
+        blurb:
+          "Le Néant grandit et le Néant s'adapte : parmi ses nombreuses engeances, nul n'incarne mieux cette vérité que Kha'Zix. Ce monstre est né pour survivre et pour tuer les plus forts. Quand il ne parvient pas à ses fins, il évolue et se crée de nouveaux...",
+      },
+      de: {
+        title: "Räuber der Leere",
+        blurb:
+          "Die Leere wächst und passt sich an – diese Tatsache lässt sich an Kha'Zix besonders gut sehen. Die Evolution arbeitet im Kern dieses mutierenden Schreckens, der geboren wurde, um zu überleben und die Starken zu töten. Trifft er auf Probleme, so bildet...",
+      },
+      pt: {
+        title: "o Ceifador do Vazio",
+        blurb:
+          "O Vazio cresce e o Vazio se adapta, e nenhuma de suas outras criaturas incorpora isso tão bem quanto Kha'Zix. A evolução é o que impulsiona a essência desse horror mutável, nascido para sobreviver e destruir os mais fortes. Qualquer momento de...",
+      },
+      ru: {
+        name: "Ка'Зикс",
+        title: "Хищник из Бездны",
+        blurb:
+          "Бездна растет и приспосабливается, и ни одно из ее бесчисленных порождений не подтверждает это лучше, чем Ка'Зикс. Этот ужасный мутант – результат эволюции, он рожден, чтобы выживать и истреблять сильнейших. Если ему это не удается, он развивает свои...",
+      },
+    },
   },
   {
     id: "kindred",
@@ -1658,17 +4424,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.2,
-  damage: 0.6,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.2,
+      damage: 0.6,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
     blurb: "別々の存在なれど、決して離れることはない──キンドレッドは死の本質を対で指し示す。",
+    blurbEn:
+      "Separate, but never parted, Kindred represents the twin essences of death. Lamb's bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his...",
+    loc: {
+      ko: {
+        name: "킨드레드",
+        title: "영겁의 사냥꾼",
+        blurb:
+          "킨드레드는 따로지만 언제나 함께인 죽음의 양면을 지닌 존재다. 운명을 받아들인 자에게는 양의 화살로 빠른 죽음을 선사하고, 운명을 거부하고 도망치는 자에게는 늑대가 달려드는 잔혹한 최후를 안겨준다. 룬테라에서는 지역마다 킨드레드의 본성에 다른 의미를 부여했지만, 필멸의 존재라면 결국 진정한 죽음을 선택해야만 한다는 점은 같았다.",
+      },
+      zh: {
+        name: "千珏",
+        title: "永猎双子",
+        blurb:
+          "千珏，作为象征死亡的一对精魂，他们互相独立，却从未分离。对于坦然接受命运的人来说，羊灵的长弓可以痛快地送他们离开生者的乐园，而妄图逃脱宿命的人则由狼灵追捕，痛苦地倒在他有力的撕咬下。虽然在符文之地上到处是关于千珏的不同传言，但每个人在临终时都会看到死亡的真正面孔。至于是哪一面，完全出自个人的抉择。",
+      },
+      es: {
+        title: "Los Cazadores Eternos",
+        blurb:
+          "Divididos, pero nunca separados, Kindred representan las dos esencias de la muerte. El arco de Cordera ofrece una rápida liberación de los pesares del reino mortal a aquellos que aceptan su destino. Lobo da caza a quienes intentan escapar de él y les...",
+      },
+      fr: {
+        title: "Chasseurs éternels",
+        blurb:
+          "Kindred représente les essences jumelles de la mort, distinctes mais indissociables. La flèche d'Agneau offre une fin rapide à ceux qui acceptent leur destin. Loup pourchasse ceux qui fuient leur dernier soupir et leur arrache brutalement la vie à coups...",
+      },
+      de: {
+        title: "die ewigen Jäger",
+        blurb:
+          "Eigenständig, doch nie allein, repräsentiert Kindred den Zwillingsgeist des Todes. Die Pfeile des Lamms versprechen all jenen ein schnelles Dahinscheiden, die ihr Schicksal akzeptieren. Der Wolf jagt diejenigen, die vor ihrem Ende davonlaufen, und setzt...",
+      },
+      pt: {
+        title: "os Caçadores Eternos",
+        blurb:
+          "Distintos, mas nunca separados, os Kindred representam as essências gêmeas da morte. O arco da Ovelha propicia uma rápida transição do mundo mortal para aqueles que aceitam seu destino. O Lobo caça aqueles que fogem de seu fim, entregando-lhes a...",
+      },
+      ru: {
+        name: "Киндред",
+        title: "Вечные охотники",
+        blurb:
+          "Киндред – это воплощение смерти, разделенное надвое; два духа-близнеца, которые никогда не расстаются. Стрелы Овечки быстро избавляют от тревог тех, кто смирился с судьбой. Волк же охотится на непокорных, которые пытаются убежать от неизбежного. Он...",
+      },
+    },
   },
   {
     id: "kled",
@@ -1682,17 +4490,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.55,
-  durability: 0.2,
-  damage: 0.6,
-  cc: 0.4,
-  mobility: 0.55,
-  difficulty: 0.7,
-  scaling: 0.5
-}),
-    blurb: "恐れ知らずで粗暴な武人であるヨードルのクレッドは、ノクサスの持つ激情的な無鉄砲さを体現しており、上官には信用されず、貴族には毛嫌いされているが、帝国の兵士たちに",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.55,
+      durability: 0.2,
+      damage: 0.6,
+      cc: 0.4,
+      mobility: 0.55,
+      difficulty: 0.7,
+      scaling: 0.5,
+    }),
+    blurb:
+      "恐れ知らずで粗暴な武人であるヨードルのクレッドは、ノクサスの持つ激情的な無鉄砲さを体現しており、上官には信用されず、貴族には毛嫌いされているが、帝国の兵士たちに",
+    blurbEn:
+      "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. He is an icon beloved by the empire's soldiers, distrusted by its officers, and loathed by the nobility. Many claim Kled has fought in every campaign the...",
+    loc: {
+      ko: {
+        name: "클레드",
+        title: "망나니 기사",
+        blurb:
+          "용감무쌍하고도 성깔 고약한 전사인 클레드는 녹서스 특유의 객기와 다혈질을 상징하는 존재와도 같다. 그래서 병사들 사이에서는 인기를 휩쓸지만, 장성들 사이에서는 불신의 대상이고, 귀족들에게는 혐오를 한몸에 사고 있다. 소문에 따르면 클레드는 녹서스 제국이 처음 세워진 시절부터 지금까지 모든 군사 작전에서 활약해왔으며, 단 한 번도 후퇴한 적이 없고, 군인으로서 받을 수 있는 칭호란 칭호는 모조리 '따냈다'고 전해진다. 하지만 병사들의 이야기가 과연...",
+      },
+      zh: {
+        name: "克烈",
+        title: "暴怒骑士",
+        blurb:
+          "无畏而且无赖的约德尔人克烈是诺克萨斯的意志化身、帝国士兵的仰慕偶像、长官眼里的定时炸弹、贵族鄙夷的送死小卒。很多军士都说，克烈参与了有史以来军团所挑起的每一场征战，“获得”了军中的每一份头衔，而且从来没有却步于任何一次战斗。虽然传闻总是不可全信，但至少有一件事毋庸置疑：只要克烈骑着胆小的斯嘎尔冲进战场，他的战斗便是为了保住所拥有的一切……或是抢走他想要的一切。",
+      },
+      es: {
+        title: "El Jinete Cascarrabias",
+        blurb:
+          "Kled es un guerrero yordle tan intrépido como malhumorado y es la encarnación de la furiosa bravuconería noxiana. Los soldados del imperio lo adoran, sus oficiales desconfían de él y la clase noble lo detesta. Muchos afirman que ha luchado en todas y...",
+      },
+      fr: {
+        title: "Cavalier colérique",
+        blurb:
+          "Guerrier aussi intrépide que grincheux, Kled est la plus pure incarnation de la fureur de Noxus. C'est un symbole que les soldats de l'empire adorent, dont les officiers se méfient et que la noblesse déteste. Beaucoup affirment que Kled a participé à...",
+      },
+      de: {
+        title: "der übellaunige Streiter",
+        blurb:
+          "Kled ist ein beliebter noxianischer Yordle und ein Krieger, der so stur wie furchtlos ist. Er gilt als Vorbild, das bei den Soldaten des Reiches beliebt sowie beim Adel verhasst ist, und von seinen Offizieren argwöhnisch beäugt wird. Viele behaupten...",
+      },
+      pt: {
+        title: "o Cavaleiro Intratável",
+        blurb:
+          "Um guerreiro tão destemido quanto irascível, o yordle Kled representa a bravata furiosa de Noxus. Ele é um ícone amado pelos soldados do império, rejeitado por seus oficiais e abominado pela nobreza. Muitos dizem que Kled lutou em cada batalha que as...",
+      },
+      ru: {
+        name: "Клед",
+        title: "Сварливый кавалерист",
+        blurb:
+          "Бесстрашный и вспыльчивый воин-йордл Клед – это воплощение безудержной бравады Ноксуса. Он заслужил любовь имперских солдат, недоверие офицеров и отвращение знати. Многие утверждают, что Клед участвовал во всех кампаниях легионов Ноксуса, ''заслужил''...",
+      },
+    },
   },
   {
     id: "kogmaw",
@@ -1703,20 +4554,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Void",
     ddragonId: "KogMaw",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
-    blurb: "イカシアの荒れ地の奥深くにあるヴォイドの浸食から生まれたコグ＝マウは腐食性の大きな口を持つ好奇心旺盛な腐敗した生物だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
+    blurb:
+      "イカシアの荒れ地の奥深くにあるヴォイドの浸食から生まれたコグ＝マウは腐食性の大きな口を持つ好奇心旺盛な腐敗した生物だ。",
+    blurbEn:
+      "Belched forth from a rotting Void incursion deep in the wastelands of Icathia, Kog'Maw is an inquisitive yet putrid creature with a caustic, gaping mouth. This particular Void-spawn needs to gnaw and drool on anything within reach to truly understand it...",
+    loc: {
+      ko: {
+        name: "코그모",
+        title: "심연의 아귀",
+        blurb:
+          "이케시아의 황무지 어딘가, 인간의 눈길이 닿지 않는 깊은 곳에 공허의 틈이 나타났고, 썩은 내를 풍기는 이곳에서 코그모가 느닷없이 튀어나왔다. 온몸에서는 악취가 스며나오고, 호기심 때문에 항상 떡 벌리고 있는 입에서는 부식성 분비물이 뚝뚝 떨어진다. 주변에 있는 건 닥치는 대로 마구 물어뜯고 침을 질질 흘린 후에야 그것이 무엇인지 알아차린다. 공허태생이지만 천성이 악하지는 않고 천진난만한 언행에 묘한 매력도 있지만, 방심은 금물이다. 식탐과 호기심이...",
+      },
+      zh: {
+        name: "克格莫",
+        title: "深渊巨口",
+        blurb:
+          "从艾卡西亚废墟深处的腐败裂口中，克格莫喷着进食后的胀气走入了符文之地，它是一只好奇的生物，然而身上散发着腐烂的恶臭，血盆大口里淌着腐蚀性的粘液。这只特别的虚空生物需要用牙齿和口水去理解周围的事物。虽然克格莫并非本性邪恶，但它的天真无知同样很危险，因为它的无知往往预示着一场疯狂的暴食——并不是为了填饱肚子，而是为了满足它无尽的好奇。",
+      },
+      es: {
+        title: "La Boca del Abismo",
+        blurb:
+          "Escupido de una incursión deteriorada del Vacío en los yermos de Icathia, Kog'Maw es una criatura curiosa y pútrida con una boca enorme y cáustica. Esta particular criatura necesita morder y babear todo lo que esté a su alcance para comprenderlo. Aunque...",
+      },
+      fr: {
+        title: "Gueule des abysses",
+        blurb:
+          "Émanant d'une brèche ouverte vers le Néant, c'est dans les ruines hantées d'Icathia que Kog'Maw, la putride créature à la gueule béante, et son insatiable curiosité firent leur apparition. Cette étrange bête du Néant doit mâchouiller tout ce qui se...",
+      },
+      de: {
+        title: "der Schlund des Abgrunds",
+        blurb:
+          "Kog'Maw ist eine neugierige, wenngleich auch übelriechende Kreatur mit ätzendem, klaffendem Maul, die aus einem fauligen Einfall der Leere tief in den Ebenen von Icathia hervorgegangen ist. Dieses Geschöpf aus der Leere muss auf allem, was ihm vor die...",
+      },
+      pt: {
+        title: "a Boca do Abismo",
+        blurb:
+          "Vomitado para fora de uma aparição podre do Vazio nas profundezas das terras desertas de Icathia, Kog'Maw é uma criatura inquisitiva e pútrida com uma boca cáustica gigantesca. Essa criatura do Vazio em particular precisa morder e babar em qualquer...",
+      },
+      ru: {
+        name: "Ког'Мао",
+        title: "Пасть Бездны",
+        blurb:
+          "Изрыгнутый из гнилого прохода в Бездну в пустоши Икатии, Ког'Мао – любознательное, но мерзкое существо с огромной едкой пастью. Это порождение Бездны грызет и слюнявит все вещи, которые находятся в пределах его досягаемости, чтобы по-настоящему понять...",
+      },
+    },
   },
   {
     id: "ksante",
@@ -1727,20 +4621,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Shurima",
     ddragonId: "KSante",
     roles: ["Top"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.8,
-  damage: 0.8999999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.9,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.8,
+      damage: 0.8999999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.9,
+      scaling: 0.55,
+    }),
     blurb: "シュリーマの砂漠に位置する貴重なオアシス、ナズーマ。",
+    blurbEn:
+      "Defiant and courageous, K'Sante battles colossal beasts and ruthless Ascended to protect his home of Nazumah, a coveted oasis amid the sands of Shurima. But after a falling-out with his former partner, K'Sante realizes that in order to become a warrior...",
+    loc: {
+      ko: {
+        name: "크산테",
+        title: "나주마의 긍지",
+        blurb:
+          "용감하고 도전적인 크산테는 누구나 탐내는 슈리마 사막 속의 오아시스, 고향 나주마를 지키기 위해 거대한 짐승과 무자비한 초월체에 맞서 싸운다. 하지만 크산테는 예전 파트너와 사이가 틀어진 후 나주마를 이끌 만한 전사가 되려면 성공만을 향해 달려가는 아집을 버려야 한다는 것을 깨달았다. 그래야만 긍지라는 덫에 빠지지 않고 나주마 사람들을 위협하는 포악한 괴물들을 물리치는 데 필요한 지혜를 찾을 수 있을 것이다.",
+      },
+      zh: {
+        name: "奎桑提",
+        title: "纳祖芒荣耀",
+        blurb:
+          "威武不屈的奎桑提，与山峦般的巨兽和残忍的飞升者不懈地战斗，只为保护自己的家园纳祖芒——恕瑞玛沙漠中一处明珠般的绿洲。但自从与曾经的伙伴分别，奎桑提意识到他要是渴望成为一名足够领导纳祖芒的英雄，就必须克服自己一心求胜的固执。只有这样，他才不会被自己的傲慢所吞噬，最终收获他所需的智慧，击溃那些足以威胁族人的恐怖对手。",
+      },
+      es: {
+        title: "el Orgullo de Nazumah",
+        blurb:
+          "K'Sante, un guerrero desafiante y valiente, lucha contra gigantescas bestias y despiadados Ascendidos para proteger su hogar, Nazumah, un codiciado oasis ubicado entre las dunas shurimanas. Tras cortar lazos con su pareja, K'Sante se percata de que...",
+      },
+      fr: {
+        name: "K'Santé",
+        title: "Fierté de Nazumah",
+        blurb:
+          "Rebelle et courageux, K'Santé combat les bêtes colossales et les Transfigurés impitoyables qui menacent son foyer convoité de Nazumah, une oasis lovée au cœur des sables de Shurima. Après s'être séparé de son ancien partenaire, K'Santé comprend que pour...",
+      },
+      de: {
+        title: "der Stolz von Nazumah",
+        blurb:
+          "Aufsässig und kühn kämpft K'Sante gegen kolossale Kreaturen und skrupellose Aufgestiegene, um seine Heimat Nazumah, eine wichtige Oase inmitten der Sandlandschaften von Shurima, zu beschützen. Doch nach einer heftigen Auseinandersetzung mit seinem...",
+      },
+      pt: {
+        title: "o Orgulho de Nazumah.",
+        blurb:
+          "Corajoso e desafiador, K'Sante enfrenta feras colossais e Ascendentes cruéis para proteger seu lar, Nazumah — um cobiçado oásis no meio das areias de Shurima. Entretanto, após uma desavença com seu antigo parceiro, K'Sante entendeu que, para se tornar...",
+      },
+      ru: {
+        name: "К'Санте",
+        title: "Гордость Назумы",
+        blurb:
+          "Отважный и дерзкий К'Санте сражается с огромными чудовищами и безжалостными вознесшимися, защищая родную Назуму – зеленый оазис среди песков Шуримы. Когда-то у К'Санте был верный друг и соратник. Их пути разошлись, но К'Санте вынес из этой дружбы важный...",
+      },
+    },
   },
   {
     id: "leblanc",
@@ -1751,25 +4688,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Leblanc",
     roles: ["Mid"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({
-  knowledge: 0.7,
-  ambition: 0.9,
-  chaos: 0.6,
-  solo: 0.7
-}),
+      knowledge: 0.7,
+      ambition: 0.9,
+      chaos: 0.6,
+      solo: 0.7,
+    }),
     gameVec: g({
-  range: 0.6,
-  skillBased: 0.95,
-  damageStyle: 0.9,
-  durability: 0.2,
-  damage: 0.85,
-  cc: 0.4,
-  mobility: 0.85,
-  difficulty: 0.8,
-  scaling: 0.5
-}),
+      range: 0.6,
+      skillBased: 0.95,
+      damageStyle: 0.9,
+      durability: 0.2,
+      damage: 0.85,
+      cc: 0.4,
+      mobility: 0.85,
+      difficulty: 0.8,
+      scaling: 0.5,
+    }),
     blurb: "黒薔薇会の指導者。幻影を操り権力の影を支配する。",
+    blurbEn:
+      "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone...",
+    loc: {
+      ko: {
+        name: "르블랑",
+        title: "환술사",
+        blurb:
+          "르블랑은 검은 장미단의 다른 구성원들조차도 본모습을 알지 못하는 신비로운 존재다. 사실 르블랑이라는 이름은 녹서스 건국 초기부터 사람들과 사건을 마음대로 홀리고 조작하던, 안색이 창백한 어느 여인이 갖고 있던 수많은 이름 중 하나에 불과하다. 르블랑은 마법으로 자신의 형체를 복제할 수 있으므로 누구에게든, 어디에든 모습을 드러낼 수 있으며 심지어 여러 장소에 동시에 존재할 수도 있다. 좀체로 남의 눈에 띄지 않고 진짜 정체를 아는 사람도 없기에...",
+      },
+      zh: {
+        name: "乐芙兰",
+        title: "诡术妖姬",
+        blurb:
+          "即使是在秘密团体黑色玫瑰的成员内部，乐芙兰也同样保持神秘，而乐芙兰这个名字也只是众多化名之一。这个皮肤惨白的女人自从诺克萨斯建国初期就开始操纵大小人物，推动事态发展。这位女法师能用魔法制造自己的镜像，她可以出现在任何地点、任何人面前,甚至同时现身于许多地方。乐芙兰永远都在暗处密谋策划，而她真正的动机和她变换不定的身份一样令人难以捉摸。",
+      },
+      es: {
+        title: "La Embaucadora",
+        blurb:
+          "Misteriosa incluso para el resto de miembros de la camarilla de la Rosa Negra, LeBlanc es uno de los muchos nombres que usa una mujer pálida que ha manipulado a la gente y a los sucesos desde los primeros días de Noxus. Con el uso de la magia para...",
+      },
+      fr: {
+        title: "Manipulatrice",
+        blurb:
+          "Mystérieuse, même aux yeux des autres membres de la Rose noire, LeBlanc n'est que l'un des nombreux noms de la femme pâle qui manipule le destin de Noxus depuis ses premiers jours. Utilisant sa magie pour se cloner, elle peut être partout, devant tout...",
+      },
+      de: {
+        title: "die Täuscherin",
+        blurb:
+          "LeBlanc ist selbst für andere Mitglieder der Schwarzen Rose mysteriös. Ihr Name ist nur einer unter vielen für eine blasse Frau, die Leute und Ereignisse gezielt manipuliert – und das bereits seit Noxus' Kindertagen. Sie benutzt ihre Magie, um...",
+      },
+      pt: {
+        title: "a Farsante",
+        blurb:
+          "Misteriosa mesmo para os outros membros da Rosa Negra, LeBlanc é somente um dos muitos nomes de uma mulher pálida que tem manipulado pessoas e eventos desde os primeiros dias de Noxus. Usando sua magia para espelhar a si mesma, a feiticeira pode...",
+      },
+      ru: {
+        name: "Ле Блан",
+        title: "Обманщица",
+        blurb:
+          "Ле Блан – лишь одно из многих имен бледной женщины, которая манипулирует людьми и событиями с самого зарождения Ноксуса. Эта чародейка – загадка даже для других членов Черной Розы. С помощью магии сотворения копий Ле Блан может явиться кому угодно и где...",
+      },
+    },
   },
   {
     id: "leesin",
@@ -1780,20 +4759,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "LeeSin",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.6,
-  scaling: 0.45
-}),
-    blurb: "アイオニアの古代の格闘技をマスターしたリー・シンは、龍の精霊のエッセンスを操ってあらゆる困難を克服する厳しい訓練を積んだ格闘家だ。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.6,
+      scaling: 0.45,
+    }),
+    blurb:
+      "アイオニアの古代の格闘技をマスターしたリー・シンは、龍の精霊のエッセンスを操ってあらゆる困難を克服する厳しい訓練を積んだ格闘家だ。",
+    blurbEn:
+      "A master of Ionia's ancient martial arts, Lee Sin is a principled fighter who channels the essence of the dragon spirit to face any challenge. Though he lost his sight many years ago, the warrior-monk has devoted his life to protecting his homeland...",
+    loc: {
+      ko: {
+        name: "리 신",
+        title: "눈먼 수도승",
+        blurb:
+          "리 신은 아이오니아에 전해 내려오는 고대 무술에 통달했다. 지조 높고 고결한 전사로, 싸워야 할 때에는 용의 혼의 정수를 끌어낸다. 오래 전에 시각을 잃었으나, 고향 땅의 신성한 균형을 해치려 드는 자를 막아내는 데 일생을 바치겠다는 신념은 흔들림이 없다. 명상에 잠긴 듯 고요한 태도를 얕보고 함부로 덤벼드는 적은 리 신의 불꽃 같은 주먹과 초인적 위력의 돌려차기에 속수무책으로 당한다.",
+      },
+      zh: {
+        name: "李青",
+        title: "盲僧",
+        blurb:
+          "李青是艾欧尼亚古老武术的大师，讲原则、重信义的他能将神龙之灵的精粹运用自如，助他面对任何挑战。虽然这位武僧多年前便已双目失明，但他依然献出自己的全部力量，用生命捍卫家园，抵御任何试图打破艾欧尼亚神圣均衡之人。所有因他安静冥想的举止而掉以轻心的敌人，都将尝到他燃烧的拳头和炽烈的回旋踢。",
+      },
+      es: {
+        title: "El Monje Ciego",
+        blurb:
+          "Lee Sin, maestro de las artes marciales ancestrales de Jonia, es un luchador con principios que canaliza la esencia del espíritu del dragón para enfrentarse a cualquier desafío. Aunque perdió la vista hace muchos años, el monje guerrero ha dedicado su...",
+      },
+      fr: {
+        title: "Moine aveugle",
+        blurb:
+          "Maître des antiques arts martiaux d'Ionia, Lee Sin est un combattant dévoué à de nobles principes qui canalise l'esprit du dragon pour affronter tous les défis. Bien qu'il ait perdu la vue il y a bien des années, le moine-guerrier a dédié sa vie à la...",
+      },
+      de: {
+        title: "der blinde Mönch",
+        blurb:
+          "Lee Sin, ein Meister der Kampfkünste Ionias, folgt als Kämpfer strengen Prinzipien und kanalisiert die Essenz des Drachengeists, um jeder Herausforderung Herr zu werden. Obwohl der Kampfmönch sein Augenlicht bereits vor vielen Jahren verloren hat, hat...",
+      },
+      pt: {
+        title: "o Monge Cego",
+        blurb:
+          "Um mestre das artes marciais ancestrais de Ionia, Lee Sin é um lutador de princípios fortes que canaliza a essência do espírito do dragão para enfrentar qualquer desafio. Apesar de ter perdido a visão há muitos anos, o monge guerreiro dedicou sua vida a...",
+      },
+      ru: {
+        name: "Ли Син",
+        title: "Слепой монах",
+        blurb:
+          "Мастер древних ионийских боевых искусств Ли Син – принципиальный боец, готовый справиться с любой проблемой с помощью сущности драконьего духа. Несмотря на то, что этот воин-монах лишился зрения много лет назад, он посвятил жизнь защите своей родины ото...",
+      },
+    },
   },
   {
     id: "leona",
@@ -1804,26 +4826,68 @@ export const CHAMPIONS: Champion[] = [
     region: "Targon",
     ddragonId: "Leona",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({
-  honor: 0.8,
-  protection: 0.9,
-  justice: 0.7,
-  organization: 0.7,
-  rival: 0.5
-}),
+      honor: 0.8,
+      protection: 0.9,
+      justice: 0.7,
+      organization: 0.7,
+      rival: 0.5,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.85,
-  damageStyle: 0.4,
-  durability: 0.85,
-  damage: 0.4,
-  cc: 0.95,
-  mobility: 0.4,
-  difficulty: 0.2,
-  scaling: 0.4
-}),
+      range: 0,
+      skillBased: 0.85,
+      damageStyle: 0.4,
+      durability: 0.85,
+      damage: 0.4,
+      cc: 0.95,
+      mobility: 0.4,
+      difficulty: 0.2,
+      scaling: 0.4,
+    }),
     blurb: "太陽の戦士。仲間を守る盾として光を放つ。",
+    blurbEn:
+      "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her...",
+    loc: {
+      ko: {
+        name: "레오나",
+        title: "여명의 빛",
+        blurb:
+          "솔라리 성전사 레오나는 천공의 검과 여명의 방패로 타곤 산을 수호한다. 레오나의 몸은 태양의 불길로 가득하며, 피부는 별의 광채로 빛나고, 눈동자는 천체들의 기운으로 불타오른다. 황금 갑주와 어마어마한 고대의 지식으로 무장한 레오나는 어떤 이들에게는 깨우침을, 어떤 이들에게는 죽음을 선사한다.",
+      },
+      zh: {
+        name: "蕾欧娜",
+        title: "曙光女神",
+        blurb:
+          "蕾欧娜是一名被灌注了烈阳之火的烈阳教派圣殿武士，用天顶之刃和破晓之盾守护着巨神峰。她的皮肤闪烁着星火，她体内天界星灵的力量透过她的双眼炯炯燃烧。蕾欧娜身披金色铠甲，背负着沉重的上古知识，为一些人带来启示，也为另一些人带去死亡。",
+      },
+      es: {
+        title: "El Amanecer Radiante",
+        blurb:
+          "Imbuida del fuego del sol, Leona es una guerrera sagrada de los Solari que defiende el Monte Targon con su Hoja del cénit y su Escudo del amanecer. Su piel brilla como las estrellas y sus ojos resplandecen con el poder del aspecto celestial de su...",
+      },
+      fr: {
+        title: "Aube radieuse",
+        blurb:
+          "Imprégnée de l'énergie du soleil, Leona est une guerrière sainte des Solaris qui défend le Mont Targon ; elle combat avec sa Lame du zénith et son Bouclier de l'aube. Sa peau brûle d'éclats ardents et ses yeux crépitent au rythme de la Manifestation...",
+      },
+      de: {
+        title: "der strahlende Sonnenaufgang",
+        blurb:
+          "Leona, vom Feuer der Sonne erfüllt, ist eine heilige Kriegerin der Solari, die den Targon mit ihrer Zenitklinge und ihrem Schild des Tagesanbruchs beschützt. Auf ihrer Haut schimmert Sternenfeuer, während in ihren Augen die Macht des himmlischen...",
+      },
+      pt: {
+        title: "a Alvorada Radiante",
+        blurb:
+          "Impregnada pelas chamas do sol, Leona é uma guerreira sagrada de Solari que defende o Monte Targon com sua Lâmina Zênite e a Proteção da Aurora. Sua pele brilha com fogo solar enquanto seus olhos queimam com o poder do Aspecto celestial que nela existe...",
+      },
+      ru: {
+        name: "Леона",
+        title: "Ослепительный рассвет",
+        blurb:
+          "Леона, пронизанная пламенем солнца, в рядах священных воинов Солари стоит на защите горы Таргон со своим Клинком Зенита и Щитом Рассвета. Ее кожа мерцает звездными огнями, а в глазах пылает мощь небесной Сущности, живущей в ней. Облачившись в золотые...",
+      },
+    },
   },
   {
     id: "lillia",
@@ -1834,20 +4898,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Lillia",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Mage"],
+    archetypes: ["Fighter", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.6,
-  cc: 0.55,
-  mobility: 0.55,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "極度の恥ずかしがり屋であるリリアは子鹿の妖精で、不安を胸に秘めつつもアイオニアの森の中を歩き回っている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.6,
+      cc: 0.55,
+      mobility: 0.55,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "極度の恥ずかしがり屋であるリリアは子鹿の妖精で、不安を胸に秘めつつもアイオニアの森の中を歩き回っている。",
+    blurbEn:
+      "Intensely shy, the fae fawn Lillia skittishly wanders Ionia's forests. Hiding just out of sight of mortals—whose mysterious natures have long captivated, but intimidated, her—Lillia hopes to discover why their dreams no longer reach the ancient Dreaming...",
+    loc: {
+      ko: {
+        name: "릴리아",
+        title: "수줍은 꽃",
+        blurb:
+          "부끄럼을 많이 타는 사슴, 릴리아는 조심스럽게 아이오니아의 숲을 배회한다. 필멸자들의 모습에 매료되면서도, 동시에 공포를 느끼는 그녀는 꿈꾸는 나무에 인간들의 꿈이 흘러들지 않는 이유를 궁금해한다. 이제 릴리아는 마법이 깃든 나뭇가지를 손에 쥐고 아이오니아를 여행한다. 이뤄지지 못한 인간들의 꿈을 찾고, 그들의 빛을 가리고 있는 공포를 없애야만 릴리아 역시 활짝 피어날 수 있기 때문이다.",
+      },
+      zh: {
+        name: "莉莉娅",
+        title: "含羞蓓蕾",
+        blurb:
+          "羞怯难当的仙灵小鹿莉莉娅在艾欧尼亚的森林中蹦跳着游荡。她躲藏在凡人视线的边缘，因为凡人的神秘一直都让她着迷，同时也让她害怕。莉莉娅要查清楚为什么他们的梦境再也无法抵达幻梦树。如今她带着一根魔法树枝游历艾欧尼亚，寻找人们未实现的梦境。只有通过梦境，莉莉娅才能绽放，并帮助其他人解开恐惧的郁结，找寻内心的闪光。呦——！",
+      },
+      es: {
+        title: "el Tímido Florecer",
+        blurb:
+          "Lillia es una tímida cervatilla feérica que merodea a su antojo por los bosques jonios. Se oculta de los mortales, cuya misteriosa naturaleza la cautiva y la intimida a partes iguales, con la esperanza de descubrir por qué los sueños humanos han dejado...",
+      },
+      fr: {
+        title: "Fleur timide",
+        blurb:
+          "Profondément timide, Lillia, le faon féérique, parcourt nerveusement les forêts d'Ionia. Échappant toujours au regard des mortels dont la nature a longtemps captivé et intimidé la jeune créature, Lillia espère découvrir la raison pour laquelle les rêves...",
+      },
+      de: {
+        title: "die scheue Blüte",
+        blurb:
+          "Das schüchterne Traumkitz Lillia streift vorsichtig durch die Wälder von Ionia. Lillia hält sich verborgen vor den Sterblichen – deren geheimnisvolle Natur sie schon lange fasziniert, aber auch einschüchtert – und möchte herausfinden, warum deren Träume...",
+      },
+      pt: {
+        title: "o Florir Receoso",
+        blurb:
+          "Extremamente tímida, Lillia, a faunesa feérica, percorre saltitante as florestas de Ionia. Sempre escondida a pouca distância dos humanos — cuja misteriosa natureza lhe causa fascínio e, ao mesmo tempo, receio — Lillia espera descobrir por que os sonhos...",
+      },
+      ru: {
+        name: "Лиллия",
+        title: "Робкий цветок",
+        blurb:
+          "Сказочная лань Лиллия – это робкое дитя волшебных лесов Ионии. Она прячется от взора смертных, которые одновременно пугают и завораживают ее, и пытается понять, почему их сновидения больше не могут найти дорогу к Древу Грез. Вооружившись волшебным...",
+      },
+    },
   },
   {
     id: "lissandra",
@@ -1861,17 +4968,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.6,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.6,
+      scaling: 0.6,
+    }),
     blurb: "リサンドラの魔力は清らかな氷さえも闇で汚し、暗く恐ろしいモノへとねじ曲げる。",
+    blurbEn:
+      "Lissandra's magic twists the pure power of ice into something dark and terrible. With the force of her black ice, she does more than freeze—she impales and crushes those who oppose her. To the terrified denizens of the north, she is known only as ''The...",
+    loc: {
+      ko: {
+        name: "리산드라",
+        title: "얼음 마녀",
+        blurb:
+          "혹한의 북쪽 땅 주민들은 아주 먼 옛날부터 '그녀'를 두려워했다. 그녀는 순수한 냉기를 왜곡시켜 어둠의 힘으로 부리는 마법을 구사했으며, 날카로운 얼음으로 자신에 대적하는 적들을 모조리 꿰뚫어 버리거나 으스러뜨렸다. 얼마나 무시무시하고 막강한 힘이었는지! 사람들은 그녀의 본명을 언급하는 것마저 꺼려 '얼음 마녀'라는 별명으로 그녀를 칭하곤 했다. 그러나 진정 두려운 것은 그녀의 힘이 아니라 위험한 계획이었다. 이 사악한 마녀의 이름은 리산드라...",
+      },
+      zh: {
+        name: "丽桑卓",
+        title: "冰霜女巫",
+        blurb:
+          "丽桑卓的魔法将纯净的冰霜之力扭曲为某种黑暗而可怕的东西。她的黯冰之力不仅能冻结一切，还能将任何反抗之人刺穿并粉碎。在北部终日惊惶的居民中，人们只知道她是“冰霜女巫”。但事实却更为邪恶：丽桑卓是自然世界的腐化者，她的阴谋是要让全世界都进入到彻骨寒冷的冰河世纪。",
+      },
+      es: {
+        title: "La Bruja de Hielo",
+        blurb:
+          "La magia de Lissandra convierte el poder del hielo en algo oscuro y terrible. Con la fuerza de su hielo negro, además de congelar a aquellos que se le oponen, los empala y los destruye sin mostrar piedad. Se la conoce como ''la Bruja de Hielo'' entre...",
+      },
+      fr: {
+        title: "Sorcière de glace",
+        blurb:
+          "La magie de Lissandra est capable de manipuler la pure puissance de la glace en quelque chose d'à la fois obscur et terrible. Avec la force de sa glace noire, elle fait bien plus que glacer... elle empale et écrase ceux qui osent s'opposer à elle. Les...",
+      },
+      de: {
+        title: "die Eishexe",
+        blurb:
+          "Lissandras Magie verwandelt die pure Macht des Eises in etwas Dunkles und Schreckliches. Mit der Kraft ihres schwarzen Eises kann sie mehr, als ihre Gegner nur zu Eis erstarren lassen ... sie spießt all jene auf, die sich ihr entgegenstellen und...",
+      },
+      pt: {
+        title: "a Bruxa Gélida",
+        blurb:
+          "A magia de Lissandra transforma o poder bruto do gelo em algo sombrio e terrível. Com a força do seu gelo sombrio, ela faz mais do que congelar — ela perfura e destrói todos que se opões a ela. Entre os aterrorizados habitantes do norte, ela é conhecida...",
+      },
+      ru: {
+        name: "Лиссандра",
+        title: "Ледяная ведьма",
+        blurb:
+          "Лиссандра использует чистую силу льда для мрачных и жутких целей. Ее заклинания не только замораживают, но пронзают и сокрушают жертву. Живущие в постоянном страхе обитатели севера зовут колдунью Ледяной ведьмой, но это прозвище отражает лишь часть...",
+      },
+    },
   },
   {
     id: "lucian",
@@ -1881,21 +5030,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "不浄殲滅者",
     region: "Demacia",
     ddragonId: "Lucian",
-    roles: ["ADC","Mid"],
-    archetypes: ["Marksman","Assassin"],
+    roles: ["ADC", "Mid"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
-    blurb: "光の番人であるルシアンは、二挺の古の拳銃を携え、亡者の魂を追い詰めて浄化するハンターだ。",
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
+    blurb:
+      "光の番人であるルシアンは、二挺の古の拳銃を携え、亡者の魂を追い詰めて浄化するハンターだ。",
+    blurbEn:
+      "Lucian, a Sentinel of Light, is a grim hunter of wraiths and specters, pursuing them relentlessly and annihilating them with his twin relic pistols. After the specter Thresh slew his wife, Lucian embarked on the path of vengeance—but even with her...",
+    loc: {
+      ko: {
+        name: "루시안",
+        title: "정화의 사도",
+        blurb:
+          "빛의 감시자 루시안은 악령과 망령을 사냥하는 음울한 사냥꾼으로, 언데드들을 끈질기게 추적하여 유물 쌍권총으로 말살시켜 버린다. 악령 쓰레쉬의 손에 아내를 잃고 복수만을 노렸지만, 아내가 살아 돌아온 후에도 루시안의 분노는 수그러들지 않았다. 외골수에다 자비를 모르는 루시안은 검은 안개가 끝없이 내뿜는 공포의 악령들에게서 살아 있는 존재들을 지키기 위해서라면 어떤 일도 서슴지 않을 것이다.",
+      },
+      zh: {
+        name: "卢锡安",
+        title: "圣枪游侠",
+        blurb:
+          "卢锡安是一名光明哨兵，他使用一对圣物手枪，冷酷无情地追猎世上的亡魂怨灵，誓将它们铲除殆尽。当亡灵锤石夺走他妻子的生命后，卢锡安便踏上了复仇之路。即便如今他的妻子已重获新生，卢锡安的怒火也依然没有平息。铁血又固执的卢锡安将不惜一切代价，对抗黑雾中那些亡故已久的怨灵，保护生者不受侵害。",
+      },
+      es: {
+        title: "El Destello Purificador",
+        blurb:
+          "Lucian, miembro de los Centinelas de la Luz, es un adusto cazador de espíritus, a los que persigue y aniquila con sus pistolas reliquia gemelas. Cuando el espectro Thresh le arrebató a su esposa, Lucian se dedicó en cuerpo y alma a consumar su venganza...",
+      },
+      fr: {
+        title: "Purificateur",
+        blurb:
+          "Lucian, Sentinelle de la lumière, est un funeste chasseur de spectres. Les pourchassant sans relâche, il les abat de ses pistolets jumeaux. Lorsque sa femme fut tuée par le spectre Thresh, Lucian fit tout pour se venger. Aujourd'hui, Senna est revenue à...",
+      },
+      de: {
+        title: "der Läuterer",
+        blurb:
+          "Lucian, ein Wächter des Lichts, ist ein unerbittlicher Jäger von unsterblichen Geisterwesen. Er verfolgt diese unablässig und vernichtet sie mit seinen beiden Reliktpistolen. Als der Geist Thresh seine Frau tötete, beschritt Lucian den Weg der Rache –...",
+      },
+      pt: {
+        title: "o Purificador",
+        blurb:
+          "Lucian, um Sentinela da Luz, é um caçador de aparições e espectros que usa suas pistolas relicárias para persegui-los implacavelmente e, por fim, aniquilá-los. Após a captura de sua esposa pelas mãos do espectro Thresh, Lucian embarcou em uma jornada de...",
+      },
+      ru: {
+        name: "Люциан",
+        title: "Истребитель скверны",
+        blurb:
+          "Люциан – Страж света, суровый охотник на неупокоенных призраков. Он преследует их без устали и уничтожает при помощи двух старинных пистолетов. Когда призрак Треш убил его жену, Люциан пошел тропой отмщения – и пыл его не угас даже после того, как Сенна...",
+      },
+    },
   },
   {
     id: "lulu",
@@ -1906,20 +5098,63 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Lulu",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "ルルは魔法で夢のような幻想や空想の生き物を作り出すことで知られるヨードルのメイジで、ピックスという妖精の相棒と一緒にルーンテラを放浪している。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ルルは魔法で夢のような幻想や空想の生き物を作り出すことで知られるヨードルのメイジで、ピックスという妖精の相棒と一緒にルーンテラを放浪している。",
+    blurbEn:
+      "The yordle mage Lulu is known for conjuring dreamlike illusions and fanciful creatures as she roams Runeterra with her fairy companion Pix. Lulu shapes reality on a whim, warping the fabric of the world, and what she views as the constraints of this...",
+    loc: {
+      ko: {
+        name: "룰루",
+        title: "요정 마법사",
+        blurb:
+          "요들 마법사 룰루는 친구인 요정 픽스와 함께 룬테라를 돌아다니며, 꿈결같은 환상과 상상 속에서나 존재할 법한 생명체를 만들어내는 것으로 유명하다. 룰루는 내키는 대로 현실을 빚어내고, 세상의 법칙을 비틀어 버린다. 룰루가 보기에 이 세상의 물리 법칙에 따르는 제약은 시시하고 따분하다. 룰루의 마법은 좋게 본다 해도 비정상적이고 나쁘게 보면 위험하다고까지 할 수도 있겠지만, 룰루의 신념은 확고하다. 사람들에게 마법 한 번씩 맛보여 주는 게 뭐 그리...",
+      },
+      zh: {
+        name: "璐璐",
+        title: "仙灵女巫",
+        blurb:
+          "璐璐是一位约德尔女巫，最著名的能力是操纵梦境般的幻觉和召唤各种奇异的小动物。在小仙灵皮克斯的陪伴下，璐璐在符文之地上四处云游。她会突发奇想地重塑现实，改变世界的本质结构，改造这个平凡的物质领域中任何让她感觉是限制的东西。虽然其他人对她的魔法颇有微词，往好听了说是一种异象，往难听了说是一种危害。但是璐璐始终认为，一点魔力的启发对任何人都没有坏处。",
+      },
+      es: {
+        title: "El Hada Hechicera",
+        blurb:
+          "Lulu, la yordle maga, es conocida por invocar ilusiones oníricas y criaturas imaginarias en sus viajes por Runaterra con su hada compañera, Pix. Lulu le da forma a la realidad a su antojo, transforma el tejido del mundo y de lo que ve como los límites...",
+      },
+      fr: {
+        title: "Sorcière féérique",
+        blurb:
+          "Magicienne yordle, Lulu aime conjurer des illusions oniriques et de drôles de créatures en explorant Runeterra avec Pix, sa fée de compagnie. Lulu forge la réalité selon ses désirs, modifiant à sa guise la structure du monde et ce qu'elle considère...",
+      },
+      de: {
+        title: "die Zauberin der Fae",
+        blurb:
+          "Die Yordle-Magierin Lulu ist dafür bekannt, auf ihrem Streifzug durch Runeterra traumartige Illusionen und fantasievolle Kreaturen zu beschwören, und ist stets in Begleitung ihrer Fee Pix unterwegs. Lulu verformt die Realität aus Lust und Laune heraus...",
+      },
+      pt: {
+        title: "a Fada Feiticeira",
+        blurb:
+          "A maga yordle Lulu é conhecida por conjurar ilusões de sonhos e criaturas fantasiosas enquanto vaga por Runeterra com seu silfo companheiro, Pix. Lulu transforma a realidade por capricho, distorcendo o que ela vê como restrições desse banal reino físico...",
+      },
+      ru: {
+        name: "Лулу",
+        title: "Волшебница фей",
+        blurb:
+          "Волшебница-йордл Лулу известна созданием сказочных иллюзий и причудливых существ. Она путешествует по Рунтерре вместе со своим волшебным спутником Пиксом. Лулу выступает против ограничений этого приземленного осязаемого мира – она способна изменить...",
+      },
+    },
   },
   {
     id: "lux",
@@ -1929,27 +5164,69 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "光の才女",
     region: "Demacia",
     ddragonId: "Lux",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({
-  knowledge: 0.8,
-  justice: 0.6,
-  family: 0.7,
-  organization: 0.6,
-  freedom: 0.5
-}),
+      knowledge: 0.8,
+      justice: 0.6,
+      family: 0.7,
+      organization: 0.6,
+      freedom: 0.5,
+    }),
     gameVec: g({
-  range: 0.9,
-  skillBased: 0.95,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.7,
-  cc: 0.7,
-  mobility: 0.2,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
+      range: 0.9,
+      skillBased: 0.95,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.7,
+      cc: 0.7,
+      mobility: 0.2,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
     blurb: "魔法を秘めた貴族の少女。光の力で仲間を導く。",
+    blurbEn:
+      "Luxanna Crownguard hails from Demacia, an insular realm where magical abilities are viewed with fear and suspicion. Able to bend light to her will, she grew up dreading discovery and exile, and was forced to keep her power secret, in order to preserve...",
+    loc: {
+      ko: {
+        name: "럭스",
+        title: "광명의 소녀",
+        blurb:
+          "럭산나 크라운가드는 데마시아 인으로, 마법 능력을 가진 자를 공포와 의심을 담은 편협한 시선으로 보는 환경에서 태어났다. 고귀한 가문의 딸이지만 빛을 자유자재로 다루는 마법력을 타고났기에 이 능력이 발각되면 추방당할 것이라는 두려움을 안고 어린 시절을 보냈다. 자신의 능력을 감추는 것만이 가문의 명예를 지키는 방법이라고 여겼지만, 낙천적이고 유연한 성격 덕분에 차츰 자신만의 재능을 인정하고 받아들였고, 이제는 조국을 위해 마법을 은밀하게 사용하고 있다.",
+      },
+      zh: {
+        name: "拉克丝",
+        title: "光辉女郎",
+        blurb:
+          "拉克丝全名拉克珊娜·冕卫，出身自德玛西亚颇有声望的冕卫家族。德玛西亚是一个将魔法视为禁忌的封闭国度，只要提及魔法，人们总是带着恐惧和怀疑。因此，拥有折光之力的拉克丝，在整个童年的成长过程中都担心被人发现而遭放逐，她一直强迫自己隐瞒力量，以保住家族的贵族地位。即便如此，拉克丝的乐观和顽强还是让她学会了拥抱自己独特的天赋。现在，她在暗地中使用这份能力为王国效力。",
+      },
+      es: {
+        title: "La Dama Luminosa",
+        blurb:
+          "Luxanna Crownguard procede de Demacia, un reino insular en el que las habilidades mágicas se observan con temor y suspicacia. Capaz de manipular la luz a su voluntad, creció temiendo que la descubriesen y la exiliaran, por lo que se vio obligada a...",
+      },
+      fr: {
+        title: "Dame de lumière",
+        blurb:
+          "Luxanna Crownguard est originaire de Demacia, un royaume isolationniste où la magie inspire la peur et la méfiance. Capable de plier la lumière à sa volonté, elle a grandi dans la crainte d'être un jour exilée et a été contrainte de dissimuler son...",
+      },
+      de: {
+        title: "die Lady des Lichts",
+        blurb:
+          "Luxanna Kronwacht stammt aus Demacia, einem isolierten Reich, in dem man Magie mit Angst und Misstrauen begegnet. Da sie das Licht nach ihrem Willen beugen konnte, musste sie in jungen Jahren ihre Fähigkeiten geheim halten, um nicht ins Exil geschickt...",
+      },
+      pt: {
+        title: "a Dama da Luz",
+        blurb:
+          "Luxanna Stemmaguarda nasceu em Demacia, um reino insular onde habilidades mágicas são vistas com medo e desconfiança. Capaz de dobrar a luz à sua vontade, ela cresceu temendo ser descoberta e exilada, e foi forçada a manter seus poderes em segredo a fim...",
+      },
+      ru: {
+        name: "Люкс",
+        title: "Леди сияния",
+        blurb:
+          "Люксанна Краунгард родом из Демасии – обособленного королевства, где к магическим способностям относятся со страхом и подозрением. Имея врожденную способность управлять светом, она росла в страхе перед изгнанием, и была вынуждена скрывать эти силы...",
+      },
+    },
   },
   {
     id: "malphite",
@@ -1960,20 +5237,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Malphite",
     roles: ["Top"],
-    archetypes: ["Tank","Mage"],
+    archetypes: ["Tank", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.9,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.2,
-  scaling: 0.6
-}),
-    blurb: "マルファイトは混沌とした世界に祝福の秩序をもたらそうと苦闘する、生きた岩石の巨大な生物だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.9,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.2,
+      scaling: 0.6,
+    }),
+    blurb:
+      "マルファイトは混沌とした世界に祝福の秩序をもたらそうと苦闘する、生きた岩石の巨大な生物だ。",
+    blurbEn:
+      "A massive creature of living stone, Malphite struggles to impose blessed order on a chaotic world. Birthed as a servitor-shard to an otherworldly obelisk known as the Monolith, he used his tremendous elemental strength to maintain and protect his...",
+    loc: {
+      ko: {
+        name: "말파이트",
+        title: "거석의 파편",
+        blurb:
+          "암석으로 이루어진 거대한 자연물 말파이트는 혼란스러운 세상에 평화로운 질서를 가져오기 위해 노력하고 있다. 말파이트는 원래 다른 세계에서 '거석'이라 불리는 돌기둥의 일부이자 거석을 지키는 파수꾼으로 태어났으며, 막강한 자연의 힘으로 거석을 보호하려 했으나 실패하고 말았다. 거석이 파괴된 후, 유일하게 살아남은 말파이트는 이제 룬테라의 물렁물렁한 생명체와 그들의 변덕스러운 성미를 참아내며 마지막 생존자에게 어울리는 새로운 임무를 찾고 있다.",
+      },
+      zh: {
+        name: "墨菲特",
+        title: "熔岩巨兽",
+        blurb:
+          "墨菲特是一个庞大的岩石生物，为了给混乱的世界赐予秩序而不懈奋斗。他诞生之初的身份只是一个石仆，侍奉着一块超乎凡人理解、名为“独石”的石碑。他用万钧元素之力维护独石，最终却还是失败了。在那场大毁灭中，墨菲特成了唯一的幸存者。如今他忍受着符文之地的脆弱凡人以及他们流水一般多变的性情，想尽办法在世间寻找一个新的立足之地，让自己不愧这世上最后一个岩石生物之名。",
+      },
+      es: {
+        title: "El Fragmento del Monolito",
+        blurb:
+          "Como una criatura enorme de piedra viviente, a Malphite le cuesta imponer el orden en un mundo caótico. Creado como sirviente de fragmentos de un obelisco sobrenatural conocido como el Monolito, usó su increíble fuerza elemental para mantener y proteger...",
+      },
+      fr: {
+        title: "Éclat du monolithe",
+        blurb:
+          "Massive créature de pierre vivante, Malphite lutte pour imposer un ordre sacré dans un monde chaotique. Né pour servir l'obélisque mystique que l'on nomme le Monolithe, il utilisa son incroyable force élémentaire pour protéger son créateur, mais n'y...",
+      },
+      de: {
+        title: "der Splitter des Monolithen",
+        blurb:
+          "Malphite ist eine gewaltige Kreatur aus lebendigem Stein und kämpft darum, eine gesegnete Ordnung in einer chaotischen Welt herzustellen. Ursprünglich diente er als Splitter einem überirdischen Obelisken, der als der Monolith bekannt war, und setzte...",
+      },
+      pt: {
+        title: "o Fragmento do Monolito",
+        blurb:
+          "Uma criatura gigantesca de pedra viva, Malphite pena para impor ordem abençoada em um mundo caótico. Nascido como um fragmento servil de um obelisco de outro mundo conhecido como Monolito, ele usou sua tremenda força elemental para manter e proteger seu...",
+      },
+      ru: {
+        name: "Мальфит",
+        title: "Осколок Монолита",
+        blurb:
+          "Огромное существо из живого камня, Мальфит изо всех сил пытается привнести в этот хаотичный мир благословенный порядок. Рожденный слугой-осколком для потустороннего обелиска, известного как Монолит, он использовал свою огромную стихийную силу, чтобы...",
+      },
+    },
   },
   {
     id: "malzahar",
@@ -1987,17 +5307,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.66,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.6,
-  scaling: 0.6
-}),
-    blurb: "あらゆる生命の合一にすべてを捧げる熱狂的な予言者マルザハールは、新たに現れたヴォイドこそルーンテラを救済へと導く道なのだと固く信じている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.66,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.6,
+      scaling: 0.6,
+    }),
+    blurb:
+      "あらゆる生命の合一にすべてを捧げる熱狂的な予言者マルザハールは、新たに現れたヴォイドこそルーンテラを救済へと導く道なのだと固く信じている。",
+    blurbEn:
+      "A zealous seer dedicated to the unification of all life, Malzahar truly believes the newly emergent Void to be the path to Runeterra's salvation. In the desert wastes of Shurima, he followed the voices that whispered in his mind, all the way to ancient...",
+    loc: {
+      ko: {
+        name: "말자하",
+        title: "공허의 예언자",
+        blurb:
+          "말자하는 모든 생명체를 하나로 결합시키겠다는 사명에 전심전력을 바치는 예언자다. 그는 근래 룬테라를 덮치기 시작한 공허야말로 룬테라를 구원하는 길이라고 진심으로 믿고 있다. 모래 가득한 슈리마의 황무지에서, 말자하는 머릿속에서 울리는 속삭임이 이끄는 대로 따라간 끝에 이케시아에 다다랐다. 이제는 폐허가 되어버린 이케시아 한가운데에서 그는 공허의 어두운 심장부를 들여다보았고, 새로운 힘과 목적을 부여받았다. 이제 말자하는 자신을 목자로 칭한다. 그에게...",
+      },
+      zh: {
+        name: "玛尔扎哈",
+        title: "虚空先知",
+        blurb:
+          "玛尔扎哈是一名狂热的先知，将自己的全部奉献给一切生命的大一统。他坚信，近来新出现的虚空就是符文之地的救赎。在恕瑞玛的沙漠荒原上，他曾一度追随着脑海中的窃窃私语，一路来到古艾卡西亚。在这片废墟中，他窥见了虚空深处的黑暗核心，被赋予了新的力量和目标。玛尔扎哈现在视自己为迷途羔羊的牧人，将其他人带进畜栏，或是放出藏身地下的虚灵生物。",
+      },
+      es: {
+        title: "El Profeta del Vacío",
+        blurb:
+          "Malzahar, un fanático mago vidente dedicado a la unión de toda vida, está convencido de que el nuevo y emergente Vacío es el camino hacia la salvación de Runaterra. En pleno desierto de Shurima siguió las voces que susurraban en su mente hasta llegar a...",
+      },
+      fr: {
+        title: "Prophète du Néant",
+        blurb:
+          "Voyant fanatique ayant dédié son existence à l'unification de toute forme de vie, Malzahar croit fermement que le Néant est la voie du salut de Runeterra. Dans les étendues désertiques de Shurima, il suivit les voix qui murmuraient dans son esprit...",
+      },
+      de: {
+        title: "der Prophet der Leere",
+        blurb:
+          "Malzahar ist ein fanatischer Seher, der sich der Vereinigung allen Lebens verschrieben hat. Er glaubt, die wiedererstarkte Leere sei der Pfad zu Runeterras Erlösung. In den Wüstenebenen von Shurima folgte er den Stimmen, die in seinem Verstand...",
+      },
+      pt: {
+        title: "o Profeta do Vazio",
+        blurb:
+          "Um vidente fanático dedicado à unificação de toda a vida, Malzahar realmente acredita que o Vazio que recém surgiu é o caminho para a salvação de Runeterra. Na desolação do deserto de Shurima, ele seguiu as vozes que sussurravam em sua mente por todo o...",
+      },
+      ru: {
+        name: "Мальзахар",
+        title: "Пророк Бездны",
+        blurb:
+          "Религиозный фанатик, одержимый идеей унификации всего живого, Мальзахар искренне верит в то, что явившаяся Бездна станет ключом к спасению Рунтерры. В пустошах Шуримы он открыл свой разум Вселенной, в ответ услышав шепот, который привел его в Икатию...",
+      },
+    },
   },
   {
     id: "maokai",
@@ -2007,21 +5370,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "歪みし樹人",
     region: "ShadowIsles",
     ddragonId: "Maokai",
-    roles: ["Support","Top"],
-    archetypes: ["Tank","Support"],
+    roles: ["Support", "Top"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.8,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.3,
-  scaling: 0.5
-}),
-    blurb: "荒々しい巨大な樹人、マオカイは、シャドウアイルで自然界にあってはならない怨念に立ち向かう。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.8,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.3,
+      scaling: 0.5,
+    }),
+    blurb:
+      "荒々しい巨大な樹人、マオカイは、シャドウアイルで自然界にあってはならない怨念に立ち向かう。",
+    blurbEn:
+      "Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical cataclysm destroyed his home, surviving undeath only through the Waters of Life infused within his...",
+    loc: {
+      ko: {
+        name: "마오카이",
+        title: "뒤틀린 나무 정령",
+        blurb:
+          "거대한 나무 정령 마오카이는 분노에 휩싸여 그림자 군도의 초자연적인 언데드와 싸운다. 마법에 의한 대격변으로 고향이 파괴되었을 때 그는 자신의 나무 심장에 스며 있는 생명의 정수로 언데드의 상태는 모면했지만 형체가 뒤틀린 복수의 화신이 되었다. 한 때는 평화를 사랑하는 자연의 정령이었으나 이제 그는 그림자 군도를 뒤덮은 언데드를 몰아내고 아름답던 고향의 옛 모습을 되찾기 위해 맹렬하게 싸운다.",
+      },
+      zh: {
+        name: "茂凯",
+        title: "扭曲树精",
+        blurb:
+          "茂凯是一只内心暴怒外形魁梧的树精，不知疲倦地对抗暗影岛的骇人异象。一场魔法灾变摧毁了他的家园，同时也将他变成一股复仇的力量，使他免遭不死诅咒的，全靠他芯中灌注融合的生命之水。曾经的茂凯是一只平和的自然之灵，而现在的他则一直在暴怒地战斗，只为了将不死的灾祸逐出暗影岛，让他的家园重归往日的秀美。",
+      },
+      es: {
+        title: "El Treant Retorcido",
+        blurb:
+          "Maokai es un imponente y feroz treant que lucha contra los horrores antinaturales de las Islas de la Sombra. Las ansias de venganza le inundaron después de que un cataclismo mágico destruyera su hogar, y sobrevive a la podredumbre únicamente por las...",
+      },
+      fr: {
+        title: "Tréant torturé",
+        blurb:
+          "Maokai est un immense tréant possédé par la colère, qui combat les horreurs impies des Îles obscures. Il est devenu l'incarnation de la vengeance après la destruction de ses terres par un cataclysme magique, n'échappant lui-même à l'état de mort-vivant...",
+      },
+      de: {
+        title: "der verdorbene Baumriese",
+        blurb:
+          "Maokai ist ein wutentbrannter und gewaltiger Baumriese, der es sich zum Ziel gemacht hat, gegen die unnatürlichen Schrecken der Schatteninseln zu kämpfen. Nachdem eine magische Katastrophe seine Heimat zerstört hatte und er nur durch das Wasser des...",
+      },
+      pt: {
+        title: "o Ente Sinistro",
+        blurb:
+          "Maokai é um grande ente enfurecido que luta contra os terrores sobrenaturais da Ilhas das Sombras. Ele se transformou em uma força vingativa depois que um cataclisma mágico destruiu seu lar, sobrevivendo apenas através das Águas da Vida que estão...",
+      },
+      ru: {
+        name: "Маокай",
+        title: "Испорченный энт",
+        blurb:
+          "Свирепый энт-исполин Маокай борется с ужасами Сумрачных островов. Злое колдовство разрушило его дом, и с тех пор Маокай превратился в орудие возмездия. Он сумел не стать нежитью лишь благодаря живительной воде, пропитавшей его древесину. Некогда мирный...",
+      },
+    },
   },
   {
     id: "masteryi",
@@ -2032,25 +5438,69 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "MasterYi",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  knowledge: 0.7,
-  honor: 0.6,
-  mentor: 0.9,
-  solo: 0.5
-}),
+      knowledge: 0.7,
+      honor: 0.6,
+      mentor: 0.9,
+      solo: 0.5,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.2,
-  damageStyle: 0.5,
-  durability: 0.4,
-  damage: 0.85,
-  cc: 0,
-  mobility: 0.6,
-  difficulty: 0.2,
-  scaling: 0.7
-}),
+      range: 0,
+      skillBased: 0.2,
+      damageStyle: 0.5,
+      durability: 0.4,
+      damage: 0.85,
+      cc: 0,
+      mobility: 0.6,
+      difficulty: 0.2,
+      scaling: 0.7,
+    }),
     blurb: "無拘流剣術の最後の継承者。弟子に流派を伝える。",
+    blurbEn:
+      "Master Yi has tempered his body and sharpened his mind, so that thought and action have become almost as one. Though he chooses to enter into violence only as a last resort, the grace and speed of his blade ensures resolution is always swift. As one of...",
+    loc: {
+      ko: {
+        name: "마스터 이",
+        title: "우주 검사",
+        blurb:
+          "마스터 이는 수련을 통해 심신을 갈고 닦아, 마침내 생각과 행동이 일치하는 경지에 이르렀다. 최후의 수단으로 무력을 사용할 것을 결심하기는 했지만, 마스터 이는 품위 있고 빠른 검 놀림으로 자신의 결단을 언제나 빠르게 수행했다. 아이오니아의 우주류 검술의 살아있는 마지막 전승자인 마스터 이는 자신의 '통찰의 칠안경'과 함께 제자가 되려는 후보자 중 가장 적합한 자를 꼼꼼히 조사하는 등 고향의 유산을 이어가는 데에 일생을 바친다.",
+      },
+      zh: {
+        name: "易",
+        title: "无极剑圣",
+        blurb:
+          "易师锤炼身体、磨砺心智，直至身心合一。尽管他将暴力作为不得已的选择，但他优雅迅猛的剑法总是让这一手段显得尤为快捷。作为无极之道最后的门徒，易大师致力于这个门派的传承，用七度洞悉目镜搜寻着最有资格的人，寻找潜在的新弟子。",
+      },
+      es: {
+        name: "Maestro Yi",
+        title: "El Espadachín Wuju",
+        blurb:
+          "Maestro Yi ha atemperado su cuerpo y agudizado su mente, de modo que el pensamiento y la acción se han convertido casi en uno. Aunque elige emplear la violencia solo como último recurso, la gracia y la velocidad de su espada aseguran que el final...",
+      },
+      fr: {
+        name: "Maître Yi",
+        title: "Fine lame Wuju",
+        blurb:
+          "Maître Yi a renforcé son corps et affûté son esprit jusqu'à ce que réflexion et action ne fassent plus qu'un. Bien qu'il ne fasse appel à la violence qu'en dernier recours, la grâce et la vitesse avec lesquelles il manie son épée assurent une résolution...",
+      },
+      de: {
+        title: "der Wuju-Schwertkämpfer",
+        blurb:
+          "Master Yi stählte seinen Körper und seinen Verstand, bis Gedanken und Bewegungen beinahe eins wurden. Auch wenn er Gewalt nur als letzten Ausweg wählt, stellen die Anmut und die Geschwindigkeit seiner Klinge sicher, dass die Lösung stets zügig erfolgt...",
+      },
+      pt: {
+        title: "o Espadachim Wuju",
+        blurb:
+          "Master Yi treinou seu corpo e afiou sua mente para que pensamento e ação se tornassem quase um só. Embora ele prefira recorrer à violência como último recurso, a leveza e a velocidade de sua espada garantem uma resolução sempre veloz. Como um dos...",
+      },
+      ru: {
+        name: "Мастер Йи",
+        title: "Мечник вуджу",
+        blurb:
+          "Мастер Йи так закалил свое тело и натренировал разум, что его мысли и действия слились воедино. Он прибегает к насилию лишь в крайних случаях, но когда это все-таки случается, его стремительный клинок гарантирует быстрое решение проблем. Один из...",
+      },
+    },
   },
   {
     id: "mel",
@@ -2061,20 +5511,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Mel",
     roles: ["Mid"],
-    archetypes: ["Mage","Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.66,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "メル・メダルダは、かつてはノクサスで最大の権勢を誇ったメダルダ家の後継者と目される人物。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.66,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "メル・メダルダは、かつてはノクサスで最大の権勢を誇ったメダルダ家の後継者と目される人物。",
+    blurbEn:
+      "Mel Medarda is the presumed heir of the Medarda family, once one of the most powerful in Noxus. In appearance she is a graceful aristocrat, but beneath the surface lies a skilled politician who makes it her business to know everything about everyone she...",
+    loc: {
+      ko: {
+        name: "멜",
+        title: "영혼의 반향",
+        blurb:
+          "멜 메다르다는 한때 녹서스에서 손꼽히는 세도가 중 하나였던 메다르다 가문의 후계자로 추정된다. 겉보기에는 우아한 귀족이지만 그 이면에는 자신이 만나는 모든 사람의 모든 것을 파악하는 노련한 정치가가 있다. 수수께끼에 싸인 검은 장미단과 조우한 후, 멜은 어머니의 기만이 얼마나 깊은지 알아냈고 처음으로 자신의 통제력을 벗어난 상황에 직면했다. 각성하여 마법의 힘을 손에 넣은 멜은 답을 찾아 고향으로 향했다. 멜 내면의 빛을 길들이고자 하는 이는 여전히...",
+      },
+      zh: {
+        name: "梅尔",
+        title: "流光镜影",
+        blurb:
+          "梅尔·米达尔达是诺克萨斯旧贵族——米达尔达家族目前的第一顺位继承人。台前，她是优雅的贵族小姐；幕后，她是完美的政治家，对她遇到的每个人、每件事了然于胸，加以利用。在与神秘的黑色玫瑰接触之后，梅尔发现了母亲编织的层层谎言。也许是此生第一次，时局的发展超出了她的掌控。带着刚刚觉醒的魔法能力，梅尔乘船返回故乡探寻答案。许多人都想制服她体内的光，但梅尔的灵魂永远都昂扬倔强。",
+      },
+      es: {
+        title: "el Reflejo del Alma",
+        blurb:
+          "Mel Medarda, la supuesta heredera de la familia Medarda, es una de las personas más poderosas de todo Noxus. Su aspecto es el de una grácil aristócrata, pero bajo la superficie se esconde una diestra política capaz de averiguar los secretos más ocultos...",
+      },
+      fr: {
+        title: "Reflet de l'âme",
+        blurb:
+          "Mel Medarda est l'héritière présumée de la famille Medarda, autrefois l'une des plus puissantes familles de Noxus. Aristocrate gracieuse en apparence, elle est en réalité une politicienne chevronnée, soucieuse de connaître les moindres détails de tous...",
+      },
+      de: {
+        title: "das Spiegelbild der Seele",
+        blurb:
+          "Mel Medarda ist die mutmaßliche Erbin der Medarda-Familie, die einst zu den mächtigsten Häusern von Noxus gehörte. Nach außen wirkt sie wie eine anmutige Aristokratin, doch dahinter verbirgt sich eine geschickte Politikerin, die es sich zur Aufgabe...",
+      },
+      pt: {
+        title: "o Reflexo da Alma",
+        blurb:
+          "Mel Medarda é a suposta herdeira da família Medarda, que já foi uma das mais poderosas em Noxus. Sob a aparência de uma aristocrata elegante, ela esconde uma política talentosa que faz questão de saber cada detalhe a respeito de todas as pessoas que...",
+      },
+      ru: {
+        name: "Мэл",
+        title: "Отражение души",
+        blurb:
+          "Мэл – предполагаемая наследница влиятельного ноксианского клана Медарда. За маской утонченной аристократки скрывается опытный политик, и Мэл стремится узнать как можно больше об окружающих, чтобы использовать эту информацию в своих интересах. После...",
+      },
+    },
   },
   {
     id: "milio",
@@ -2085,20 +5578,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Milio",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
     blurb: "イシュタル出身の心あたたかい少年。",
+    blurbEn:
+      "Milio is a warmhearted boy from Ixtal who has, despite his young age, mastered the fire axiom and discovered something new: soothing fire. With this newfound power, Milio plans to help his family escape their exile by joining the Yun Tal—just like his...",
+    loc: {
+      ko: {
+        name: "밀리오",
+        title: "온화한 불꽃",
+        blurb:
+          "밀리오는 이쉬탈 출신의 마음 따뜻한 소년으로, 어린 나이에 불의 액시옴을 숙달하고 '치유의 불꽃'이라는 새로운 능력을 발견했다. 그리고 자신의 할머니가 그랬듯, 이 새로운 능력을 활용해 윤 탈에 들어가서 가족의 옛 영광을 되찾으려고 한다. 이쉬탈 전역의 정글을 여행하며 결국 수도 이샤오칸에 도착한 밀리오는 윤 탈에 들어가기 위해 비달리온을 준비한다. 어떤 고난과 위험이 자신을 기다리는지 모르는 채로.",
+      },
+      zh: {
+        name: "米利欧",
+        title: "明烛",
+        blurb:
+          "米利欧是一个热心肠的以绪塔尔男孩，年纪轻轻就掌握了火焰的元素公理，还发现了一种全新的东西：安心火。有了全新的能力，米利欧打算帮全家结束流放的生活，进入育恩塔尔——就像祖母曾经那样。横穿以绪塔尔的密林，来到以绪奥肯以后，如今的米利欧准备直面维达利安并加入育恩塔尔，但他并不清楚在前方等待他的是什么样的试炼——和什么样的危险。",
+      },
+      es: {
+        title: "la Llama Serena",
+        blurb:
+          "Milio es un jovencito amable de Ixtal que, a pesar de su corta edad, ha conseguido dominar el axioma ígneo y ha descubierto las llamas de la calma. Con este nuevo poder, Milio pretende ayudar a su familia y poner fin a su exilio uniéndose a los Yun Tal...",
+      },
+      fr: {
+        title: "Douce flamme",
+        blurb:
+          "Milio est un garçon d'Ixtal chaleureux qui, malgré son jeune âge, maîtrise l'Axiome du feu et a découvert le feu guérisseur. Grâce à cette puissance nouvelle, il espère intégrer les Yun Tal, comme sa grand-mère avant lui, et annuler le jugement qui...",
+      },
+      de: {
+        title: "Die schützende Flamme",
+        blurb:
+          "Milio ist ein warmherziger Junge aus Ixtal, der trotz seines jungen Alters das Feueraxiom gemeistert und etwas Neues entdeckt hat: beruhigendes Feuer. Mit seiner neuen Kraft will Milio seiner Familie dabei helfen, aus der Verbannung zurückzukehren...",
+      },
+      pt: {
+        title: "A Chama Gentil",
+        blurb:
+          "Milio é um menino de Ixtal com um coração enorme e caloroso. Apesar da pouca idade, dominou o axioma do fogo e descobriu algo novo: o fogo tranquilizante. Com esse novo poder, Milio quer ajudar sua família a escapar do exílio unindo-se aos Yun Tal, a...",
+      },
+      ru: {
+        name: "Милио",
+        title: "Ласковое пламя",
+        blurb:
+          "Милио – добрый мальчуган из Ишталя, который, несмотря на юный возраст, овладел Аксиомой огня и открыл в ней неожиданное свойство: ласковое целебное пламя. С помощью этого таланта Милио надеется вступить в Юнталь, как когда-то сделала его бабушка, и...",
+      },
+    },
   },
   {
     id: "missfortune",
@@ -2109,25 +5644,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "MissFortune",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({
-  revenge: 0.8,
-  freedom: 0.6,
-  solo: 0.6,
-  ambition: 0.5
-}),
+      revenge: 0.8,
+      freedom: 0.6,
+      solo: 0.6,
+      ambition: 0.5,
+    }),
     gameVec: g({
-  range: 0.7,
-  skillBased: 0.55,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.85,
-  cc: 0.3,
-  mobility: 0.3,
-  difficulty: 0.2,
-  scaling: 0.4
-}),
+      range: 0.7,
+      skillBased: 0.55,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.85,
+      cc: 0.3,
+      mobility: 0.3,
+      difficulty: 0.2,
+      scaling: 0.4,
+    }),
     blurb: "母を殺した海賊王に復讐を果たした賞金稼ぎ。",
+    blurbEn:
+      "A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family—an act she brutally...",
+    loc: {
+      ko: {
+        name: "미스 포츈",
+        title: "현상금 사냥꾼",
+        blurb:
+          "빌지워터의 선장 사라 포츈은 미모로도 유명하지만 무자비한 일처리 때문에 공포의 대상이기도 하다. 틀로 찍어낸 듯 똑같은 빌지워터의 범죄자들 사이에서 그녀는 단연 돋보이는 존재다. 어릴 적 자신의 가족이 해적왕 갱플랭크에게 살해당하는 것을 목격했고, 세월이 흐른 후 갱플랭크가 타고 있던 기함을 불태우는 것으로 잔혹한 복수극을 완성했다. 사라 포츈을 과소평가했다가는 그 매력에 가려진 예측불허의 실력에 기겁을 하거나... 배에 총알 구멍이 날 수도 있다.",
+      },
+      zh: {
+        name: "厄运小姐",
+        title: "赏金猎人",
+        blurb:
+          "以美貌闻名，但却以无情立命的莎拉是一位比尔吉沃特的船长，她在这座彪悍港城的犯罪集团中塑造了不容轻视的形象。在她还是个孩子的时候，曾亲眼目睹海盗之王普朗克谋杀了自己的家人。多年以后，她残忍地报仇雪恨，将普朗克连人带舰一同炸飞。所有低估她的人都会发现，自己面对的是一个极具欺骗性的狡黠对手，一不留神就得处理几颗射进肚子里的子弹。",
+      },
+      es: {
+        title: "La Cazarrecompensas",
+        blurb:
+          "Sarah Fortune se cuenta sin duda entre los capitanes más conocidos de Aguas Estancadas y es tan  célebre por su apariencia como temida por su ferocidad. Por eso despunta entre los criminales más peligrosos de esta ciudad portuaria. De niña, presenció...",
+      },
+      fr: {
+        title: "Chasseuse de primes",
+        blurb:
+          "Capitaine de Bilgewater réputée pour sa beauté et crainte pour sa cruauté, Sarah Fortune est une personnalité qui détonne au milieu des criminels endurcis qui arpentent la cité portuaire. Enfant, elle assista au massacre de sa famille par Gangplank, le...",
+      },
+      de: {
+        title: "die Kopfgeldjägerin",
+        blurb:
+          "Sarah Fortune ist eine Kapitänin aus Bilgewasser, die wegen ihres Aussehens berühmt und wegen ihrer Schonungslosigkeit gefürchtet ist, und stellt einen starken Kontrast zu den abgehärteten Kriminellen der Hafenstadt dar. Als Kind wurde sie Zeugin, wie...",
+      },
+      pt: {
+        title: "a Caçadora de Recompensas",
+        blurb:
+          "Uma capitã de Águas de Sentina famosa por sua aparência e impiedade, Sarah Fortune chama atenção entre os criminosos calejados da cidade portuária. Ainda criança, ela viu o Rei dos Ladrões, Gangplank, assassinar sua família, um crime do qual ela se...",
+      },
+      ru: {
+        name: "Мисс Фортуна",
+        title: "Охотница за головами",
+        blurb:
+          "Капитан из Билджвотера, известная своей красотой и безжалостностью, Сара Фортуна – это значительная фигура среди закоренелых преступников портового города. Еще ребенком она стала свидетелем того, как король разбойников Гангпланк убил ее семью, а спустя...",
+      },
+    },
   },
   {
     id: "monkeyking",
@@ -2137,21 +5714,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "美猴王",
     region: "Ionia",
     ddragonId: "MonkeyKing",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
-    blurb: "ヴァスタヤのトリックスターであるウーコンは、自身の強さと俊敏さ、さらに賢さを駆使して敵を翻弄し、優位に立って戦うことを得意とする。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
+    blurb:
+      "ヴァスタヤのトリックスターであるウーコンは、自身の強さと俊敏さ、さらに賢さを駆使して敵を翻弄し、優位に立って戦うことを得意とする。",
+    blurbEn:
+      "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial...",
+    loc: {
+      ko: {
+        name: "오공",
+        title: "원숭이 왕",
+        blurb:
+          "오공은 바스타야로, 자신의 뛰어난 힘, 민첩성과 지혜로 상대방을 혼란에 빠뜨려 유리한 고지를 차지하는 악동이다. 마스터 이로 알려진 평생지기를 찾은 뒤, 오공은 우주류로 알려진 고대 무술의 마지막 제자가 되었다. 마법봉으로 무장한 오공은 아이오니아의 파멸을 막고자 한다.",
+      },
+      zh: {
+        name: "孙悟空",
+        title: "齐天大圣",
+        blurb:
+          "悟空是一个瓦斯塔亚族的机灵鬼，用自己的力量、灵敏和机智迷惑对手并抢得先机。机缘巧合让他结识了一位剑客并与之成为一生的挚友，这位剑客被人称作易大师。后来，悟空就成为了古老武术门派“无极”的最后一位弟子。如今，附魔长棍傍身的悟空，目标是让艾欧尼亚免遭崩溃的命运。",
+      },
+      es: {
+        title: "El Rey Mono",
+        blurb:
+          "Wukong es un embaucador vastaya que se vale de su fuerza, agilidad e inteligencia para confundir a sus oponentes y conseguir ventaja. Tras forjar una amistad para toda la vida con el guerrero conocido como el Maestro Yi, Wukong se convirtió en el último...",
+      },
+      fr: {
+        title: "Roi des singes",
+        blurb:
+          "Wukong est un Vastaya qui utilise sa force, son agilité et son intelligence pour semer la confusion parmi ses adversaires et prendre sur eux l'avantage. Après s'être fait un ami en la personne d'un guerrier nommé Maître Yi, Wukong est devenu le dernier...",
+      },
+      de: {
+        title: "der Affenkönig",
+        blurb:
+          "Wukong ist ein vastayanisches Schlitzohr, das sich auf seine Stärke, Beweglichkeit und Intelligenz verlässt, um seine Gegner zu verwirren und die Oberhand zu gewinnen. Nachdem Wukong mit Master Yi einen Freund fürs Leben gefunden hatte, wurde er der...",
+      },
+      pt: {
+        title: "o Macaco Rei",
+        blurb:
+          "Wukong é um trapaceiro vastaya que usa sua força, agilidade e inteligência para confundir os oponentes e deixar a situação a seu favor. Depois de encontrar uma eterna amizade no guerreiro conhecido como Master Yi, Wukong se tornou o último aprendiz da...",
+      },
+      ru: {
+        name: "Вуконг",
+        title: "Царь обезьян",
+        blurb:
+          "Вуконг – воин-плут из народа вастайи, который умело сбивает противников с толку и этим добивается превосходства в бою. Вводить врагов в замешательство ему помогает идеальный баланс силы, ловкости и ума. Вуконг обрел истинного друга и наставника в...",
+      },
+    },
   },
   {
     id: "mordekaiser",
@@ -2162,20 +5782,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Mordekaiser",
     roles: ["Top"],
-    archetypes: ["Fighter","Mage"],
+    archetypes: ["Fighter", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.55,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
-    blurb: "二度殺され、三度生まれたモルデカイザーは死霊術によって人の魂を拘束し、彼らを永遠の奴隷に変えてしまう、古の時代の残忍な武闘王である。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.55,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
+    blurb:
+      "二度殺され、三度生まれたモルデカイザーは死霊術によって人の魂を拘束し、彼らを永遠の奴隷に変えてしまう、古の時代の残忍な武闘王である。",
+    blurbEn:
+      "Twice slain and thrice born, Mordekaiser is a brutal warlord from a foregone epoch who uses his necromantic sorcery to bind souls into an eternity of servitude. Few now remain who remember his earlier conquests, or know the true extent of his powers—but...",
+    loc: {
+      ko: {
+        name: "모데카이저",
+        title: "강철의 망령",
+        blurb:
+          "이미 두 번이나 죽었지만 세 번째로 되살아난 모데카이저는 옛 시대의 잔혹한 군주로서 강령술을 사용해 영혼들을 영원한 노예로 만듭니다. 지금은 그의 정복 활동을 기억하거나, 그의 진정한 힘을 아는 이는 거의 없습니다. 하지만 모데카이저에 대해 잘 아는 일부 고대인들은 그가 다시 돌아와 산 자와 죽은 자 모두를 지배할 날이 도래할까 봐 두려워합니다.",
+      },
+      zh: {
+        name: "莫德凯撒",
+        title: "铁铠冥魂",
+        blurb:
+          "两度被杀，三度重生。莫德凯撒是一位来自远古纪元的残酷军阀，他使用死灵巫术将无数灵魂禁锢在永恒的奴役中。现在几乎无人记得他早期的那些征服战争，也无人知道他有多强大的力量，但也有一些古老的灵魂认得他，而他们一直都在担心有一天他会回来，同时统治生者和死者。",
+      },
+      es: {
+        title: "La Pesadilla de Hierro",
+        blurb:
+          "Mordekaiser es un sanguinario señor de la guerra proveniente de tiempos olvidados al que los siglos han visto nacer en tres ocasiones y morir en otras dos. Utiliza sus poderes necrománticos para atar almas perdidas a una vida eterna a su servicio. Ya no...",
+      },
+      fr: {
+        title: "Revenant de fer",
+        blurb:
+          "Deux fois abattu et trois fois né, Mordekaiser est un chef de guerre brutal venu d'un lointain passé. Il utilise ses pouvoirs nécromantiques pour lier les âmes à une éternité de servitude. Il n'y a plus guère de gens pour se souvenir de ses anciennes...",
+      },
+      de: {
+        title: "der eiserne Albtraum",
+        blurb:
+          "Mordekaiser ist ein brutaler Kriegsfürst aus einer längst vergangenen Epoche, der zweimal ums Leben gebracht sowie dreimal neu geboren wurde und mit seinen nekromantischen Zauberkräften Seelen in ewige Knechtschaft zwingt. Diejenigen, die sich an seine...",
+      },
+      pt: {
+        title: "o Revenã de Ferro",
+        blurb:
+          "Morto e renascido duas vezes, Mordekaiser é um cruel comandante de uma época perdida. Ele usa a arte da necromancia para aprisionar almas e torná-las submissas pela eternidade. Hoje em dia, poucos se lembram das primeiras conquistas ou conhecem a real...",
+      },
+      ru: {
+        name: "Мордекайзер",
+        title: "Железный призрак",
+        blurb:
+          "Дважды сраженный и трижды рожденный, Мордекайзер – жестокий военачальник минувшей эпохи, который с помощью некромантии обрекает души на вечное служение. Сейчас уже мало кто помнит его ранние завоевания или знает истинные пределы его могущества – но те...",
+      },
+    },
   },
   {
     id: "morgana",
@@ -2185,21 +5848,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "堕天の高潔",
     region: "Demacia",
     ddragonId: "Morgana",
-    roles: ["Support","Mid"],
-    archetypes: ["Support","Mage"],
+    roles: ["Support", "Mid"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.1,
-  scaling: 0.6
-}),
-    blurb: "天界の存在であると同時に定命でもあるという二つの性質の間で葛藤を抱えるモルガナは、人間性をつなぎとめるために自身の翼を縛り付け、己の苦痛と悔恨を味わわせるために",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.1,
+      scaling: 0.6,
+    }),
+    blurb:
+      "天界の存在であると同時に定命でもあるという二つの性質の間で葛藤を抱えるモルガナは、人間性をつなぎとめるために自身の翼を縛り付け、己の苦痛と悔恨を味わわせるために",
+    blurbEn:
+      "Conflicted between her celestial and mortal natures, Morgana bound her wings to embrace humanity, and inflicts her pain and bitterness upon the dishonest and the corrupt. She rejects laws and traditions she believes are unjust, and fights for truth from...",
+    loc: {
+      ko: {
+        name: "모르가나",
+        title: "타락한 자",
+        blurb:
+          "천상의 힘과 필멸의 육신 사이에서 고뇌하던 모르가나는 자신의 날개를 묶고 다시 인간의 삶을 살면서 부정하고 타락한 자들을 벌한다. 그녀는 데마시아의 부당한 법과 전통을 거부하며, 왕국의 그림자 속에서 암흑 불꽃으로 만든 방패와 사슬로 진실을 억압하려는 자들에 맞서 싸운다. 추방당하고 버림받은 자라고 해도 언젠가 다시 돌아올 수 있다고 믿기 때문이다.",
+      },
+      zh: {
+        name: "莫甘娜",
+        title: "堕落天使",
+        blurb:
+          "在天界与凡间双重本性的夹缝中左右为难的莫甘娜，束缚了自己的双翼并拥抱了人性，还将自己的痛苦和怨恨施加给那些失信和堕落之人。她抗拒一切在她眼中不公正的法律和传统，并从德玛西亚的黑影中投出保护的盾牌和暗焰的锁链，在别人想要打压的暗处为真理而战。最重要的是，莫甘娜坚信，即使是被放逐、被遗弃的人，也可能有朝一日东山再起。",
+      },
+      es: {
+        title: "la Caída",
+        blurb:
+          "En vistas del conflicto entre su naturaleza celestial y su naturaleza mortal, Morgana decidió atarse las alas para aceptar la humanidad y deja caer el peso de su dolor y rencor sobre los deshonestos y los corruptos. Se opone a las leyes y tradiciones...",
+      },
+      fr: {
+        title: "Déchue",
+        blurb:
+          "Déchirée entre ses origines célestes et mortelles, Morgana a enchaîné ses ailes pour appartenir pleinement à l'humanité et abattre sa peine et sa rancœur sur les corrompus et les malhonnêtes. Elle rejette les lois et les traditions qu'elle juge injustes...",
+      },
+      de: {
+        title: "die Gefallene",
+        blurb:
+          "Morgana ist zwischen ihrer himmlischen und sterblichen Natur hin- und hergerissen und so legte sie ihre Flügel in Ketten, um sich ihrer menschlichen Seite zuzuwenden. Es sind die Unehrlichen und die Korrupten, die ihren Schmerz und ihre Verbitterung zu...",
+      },
+      pt: {
+        title: "a Caída",
+        blurb:
+          "Dividida entre sua natureza mortal e celestial, Morgana prendeu as asas para preservar sua humanidade e inflige sua dor e amargura nos desonestos e corruptos. Ela rejeita as leis e tradições que considera injustas e luta pela verdade nas sombras de...",
+      },
+      ru: {
+        name: "Моргана",
+        title: "Падшая",
+        blurb:
+          "В Моргане борются божественная и смертная сущность, и она связала свои крылья цепями, чтобы жить как человек. Свою боль и горечь она вымещает на бесчестных и подлых. Она презирает законы и традиции Демасии, которые кажутся ей несправедливыми, и борется...",
+      },
+    },
   },
   {
     id: "naafiri",
@@ -2209,21 +5915,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "百刃の猟犬",
     region: "Shurima",
     ddragonId: "Naafiri",
-    roles: ["Mid","Jungle"],
-    archetypes: ["Assassin","Fighter"],
+    roles: ["Mid", "Jungle"],
+    archetypes: ["Assassin", "Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.2,
-  scaling: 0.45
-}),
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.2,
+      scaling: 0.45,
+    }),
     blurb: "シュリーマの砂漠に、遠吠えが重なり響き渡る。",
+    blurbEn:
+      "Across the sands of Shurima, a chorus of howls rings out. It is the call of the dune hounds, voracious predators who form packs and compete for the right to hunt in these barren lands. Among them, one pack stands above all, for they are driven not only...",
+    loc: {
+      ko: {
+        name: "나피리",
+        title: "백 번 무는 사냥개",
+        blurb:
+          "오늘도 슈리마 사막에는 우렁찬 포효가 합창곡처럼 울려 퍼진다. 게걸스러운 포식자인 모래 언덕의 사냥개들이 이 황량한 땅에서 무리지어 사냥할 권리를 두고 싸우며 울부짖는 소리다. 그중 정점에 오른 무리가 있다. 사냥개의 본능이 아니라, 고대 다르킨의 힘을 품고 움직이는 무리 말이다.",
+      },
+      zh: {
+        name: "纳亚菲利",
+        title: "百裂冥犬",
+        blurb:
+          "一望无际的恕瑞玛大漠上，回荡着嗥吠啸鸣的合唱，那是沙丘猎狗的呼号。这些凶狠的食肉动物会成群结队，在这片贫瘠的土地上争夺狩猎的资格。在众多狗群之中，有一群地位最高，因为它们不仅拥有犬科动物的血性，更有来自暗裔的远古力量。",
+      },
+      es: {
+        title: "Sabuesa de las Mil Dentelladas",
+        blurb:
+          "A lo largo y ancho de las arenas de Shurima, resuena una amalgama de aullidos. Es la llamada de los sabuesos de las dunas, voraces depredadores que se mueven en manada y luchan por el derecho a cazar en estas yermas tierras. Entre estas manadas, destaca...",
+      },
+      fr: {
+        title: "la meute de fer",
+        blurb:
+          "À travers le désert de Shurima, un concert de hurlements retentit. C'est l'appel des chiens des sables, ces prédateurs voraces qui se déplacent en meutes et luttent pour la moindre source de nourriture de ces terres stériles. Parmi ces meutes, une se...",
+      },
+      de: {
+        title: "der Hund der hundert Bisse",
+        blurb:
+          "Über die Sanddünen von Shurima schallt ein heulender Chor. Es ist der Ruf der Dünenhunde, gefräßiger Raubtiere, die sich zu Rudeln zusammenschließen und um das Recht kämpfen, in diesem kargen Land zu jagen. Ein Rudel jedoch steht über allen anderen...",
+      },
+      pt: {
+        title: "Fera das Cem Mordidas",
+        blurb:
+          "Pelas areias de Shurima, um coro de uivos ressoa. É o chamado dos cães das dunas, predadores vorazes que formam matilhas e disputam o direito de caçar nessas terras áridas. Entre eles, uma matilha se destaca, pois é movida não apenas por instintos...",
+      },
+      ru: {
+        name: "Наафири",
+        title: "Гончая с тысячью клыков",
+        blurb:
+          "Среди барханов Шуримы разносится многоголосый вой. Это песчаные гончие – алчные хищники, которые сбиваются в стаи и соревнуются за право охотиться на этой выжженной солнцем земле. Среди них выделяется одна стая, которая повинуется не собачьим инстинктам...",
+      },
+    },
   },
   {
     id: "nami",
@@ -2234,20 +5982,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Nami",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "向こう見ずな性格の海の若きヴァスタヤであるナミは、ターゴン人たちとの間で太古から続いていた協約が破られた時、マライの民として初めて海を離れて陸地に上がることになった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "向こう見ずな性格の海の若きヴァスタヤであるナミは、ターゴン人たちとの間で太古から続いていた協約が破られた時、マライの民として初めて海を離れて陸地に上がることになった。",
+    blurbEn:
+      "A headstrong young vastaya of the seas, Nami was the first of the Marai tribe to leave the waves and venture onto dry land, when their ancient accord with the Targonians was broken. With no other option, she took it upon herself to complete the sacred...",
+    loc: {
+      ko: {
+        name: "나미",
+        title: "파도 소환사",
+        blurb:
+          "나미는 바다에 사는 바스타야 종족으로, 어리지만 완고할 정도로 고집이 세다. 먼 옛날 타곤 인과 맺었던 약속이 깨지자, 마라이 종족으로는 처음으로 파도 치는 바다에서 나와 마른 육지로 모험을 떠났다. 달리 해결책이 없었기에, 자신의 종족을 안전하게 지켜주는 성스러운 의식을 완수한다는 임무를 자청한 것이었다. 새로운 시대는 혼란 그 자체지만, 나미는 용기와 결단력으로 불확실한 미래를 마주한다. 그녀의 무기는 바다의 힘을 소환하는 파도 소환사의 지팡이다.",
+      },
+      zh: {
+        name: "娜美",
+        title: "唤潮鲛姬",
+        blurb:
+          "娜美是一名强大年轻的瓦斯塔亚海族。当鲛人族与巨神族自古订立的契约被打破，她是第一个离开海洋、踏上陆地的人。她别无选择，只能挺身而出担此重任，完成神圣的仪式以确保族人的安全。在这崭新时代的混乱浪潮中，娜美以无比的决心和无畏的斗志面对未知的明天，用手中的唤潮者之杖召唤来自海洋的力量。",
+      },
+      es: {
+        title: "La Invocadora de Mareas",
+        blurb:
+          "Nami, una joven y testaruda vastaya marina, fue la primera de la tribu marai en abandonar las olas y aventurarse en tierra firme cuando se rompió el ancestral acuerdo de su tribu con los targonianos. A falta de otra opción, Nami se encargó de completar...",
+      },
+      fr: {
+        title: "Aquamancienne",
+        blurb:
+          "Jeune Vastaya des mers, Nami fut la première de la tribu des Marai à quitter les océans et à s'aventurer sur la terre ferme lorsque leur accord ancestral avec les Targoniens fut rompu. Convaincue qu'il n'y avait pas d'autre solution, elle a décidé de...",
+      },
+      de: {
+        title: "die Gezeitenruferin",
+        blurb:
+          "Nami ist eine eigenwillige, junge Vastaya der Meere und die erste des Marai-Stammes, die aus den Wellen auf das Festland ging, als das uralte Abkommen mit den Targoniern gebrochen wurde. Da es keinen anderen Ausweg gab, nahm sie sich der Aufgabe an, das...",
+      },
+      pt: {
+        title: "a Conjuradora das Marés",
+        blurb:
+          "Uma jovem e obstinada vastaya dos mares, Nami é uma das primeiras integrantes da tribo Marai a sair das ondas e se aventurar na terra seca, onde seus antigos acordos com os targonianos foram quebrados. Com nenhuma outra opção, ela decidiu que seria ela...",
+      },
+      ru: {
+        name: "Нами",
+        title: "Повелительница морей",
+        blurb:
+          "Нами – юная и упрямая морская вастайи. Когда было нарушено древнее соглашение с таргонцами, она стала первой из племени мараи, кто покинул волны и вышел на сушу. У нее не было другого выбора, кроме как завершить священный ритуал, который должен был...",
+      },
+    },
   },
   {
     id: "nasus",
@@ -2258,25 +6049,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Shurima",
     ddragonId: "Nasus",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({
-  knowledge: 0.9,
-  justice: 0.7,
-  family: 0.7,
-  protection: 0.6
-}),
+      knowledge: 0.9,
+      justice: 0.7,
+      family: 0.7,
+      protection: 0.6,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.5,
-  damageStyle: 0.4,
-  durability: 0.75,
-  damage: 0.8,
-  cc: 0.5,
-  mobility: 0.2,
-  difficulty: 0.3,
-  scaling: 0.85
-}),
+      range: 0,
+      skillBased: 0.5,
+      damageStyle: 0.4,
+      durability: 0.75,
+      damage: 0.8,
+      cc: 0.5,
+      mobility: 0.2,
+      difficulty: 0.3,
+      scaling: 0.85,
+    }),
     blurb: "シュリーマの神格にして歴史の守人。弟との因縁を背負う。",
+    blurbEn:
+      "Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and peerless strategist whose wisdom guided the ancient...",
+    loc: {
+      ko: {
+        name: "나서스",
+        title: "사막의 관리자",
+        blurb:
+          "자칼의 머리를 한 위풍당당한 반인반수 형상의 초월체 나서스는 고대 슈리마의 영웅적인 인물이었다. 날카로운 지력을 소유한 그는 지식의 수호자이자 최고의 전략가로서 수세기 동안 슈리마 제국을 번영으로 인도했다. 제국의 몰락 이후엔 칩거에 들어가 전설 속의 존재가 되었다. 하지만 슈리마의 고대 도시가 되살아나면서, 제국의 몰락이 다시는 일어나지 않도록 하겠다는 다짐과 함께 세상 밖으로 나왔다.",
+      },
+      zh: {
+        name: "内瑟斯",
+        title: "沙漠死神",
+        blurb:
+          "内瑟斯是一位庄严威武的犬首人身飞升者，在古代恕瑞玛帝国时期，是被沙漠子民敬仰为半神的英雄人物。作为知识的守护者和无双的战术家，他用高绝的智慧引导着古代恕瑞玛帝国在数百年间走向了繁荣伟大。帝国陨落以后，他开始了自我放逐，成为了人们口中缥缈的传说。现在，恕瑞玛古城已经再一次崛起，他也随之回归，并决心绝不让它再度陨落。",
+      },
+      es: {
+        title: "El Guardián de las Arenas",
+        blurb:
+          "Nasus es un imponente ser Ascendido con cabeza de chacal procedente de la antigua Shurima; una figura heroica a la que las gentes del desierto han encumbrado al nivel de semidiós. Poseedor de una increíble inteligencia, fue un guardián del saber y...",
+      },
+      fr: {
+        title: "Gardien des sables",
+        blurb:
+          "Nasus est un imposant Transfiguré à tête de chacal, une figure héroïque que les peuples du désert considéraient comme un demi-dieu aux temps anciens de Shurima. Il était très intelligent ; son savoir encyclopédique et son extraordinaire sens stratégique...",
+      },
+      de: {
+        title: "der Bewahrer des Sandes",
+        blurb:
+          "Nasus ist ein beeindruckender, schakalköpfiger Aufgestiegener aus dem alten Shurima, eine Heldengestalt, die von den Wüstenvölkern als Halbgott verehrt wird. Er ist hochintelligent, war ein Wächter des Wissens und ein Stratege, der seinesgleichen sucht...",
+      },
+      pt: {
+        title: "o Curador das Areias",
+        blurb:
+          "Nasus é um majestoso Ascendente com cabeça de chacal da antiga Shurima; uma figura heroica considerada semideus pelo povo do deserto. Ferozmente inteligente, ele foi um guardião do conhecimento e estrategista sem igual cuja sabedoria guiou o antigo...",
+      },
+      ru: {
+        name: "Насус",
+        title: "Хранитель песков",
+        blurb:
+          "Насус – существо с головой шакала родом из древней Шуримы. Жителями пустыни он почитался как полубог. Насус был одним из вознесшихся, он обладал острейшим умом, был хранителем знаний и несравненным стратегом, мудрость которого на протяжении многих веков...",
+      },
+    },
   },
   {
     id: "nautilus",
@@ -2287,20 +6120,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "Nautilus",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.6,
-  scaling: 0.5
-}),
-    blurb: "ビルジウォーターに最初の桟橋ができたころからすでに伝説となっていた孤独な男──「ノーチラス」の名で知られる防具に包まれた大男は、ブルーフレイム・アイルの沖の暗い海域をさまよっている。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.6,
+      scaling: 0.5,
+    }),
+    blurb:
+      "ビルジウォーターに最初の桟橋ができたころからすでに伝説となっていた孤独な男──「ノーチラス」の名で知られる防具に包まれた大男は、ブルーフレイム・アイルの沖の暗い海域をさまよっている。",
+    blurbEn:
+      "A lonely legend as old as the first piers sunk in Bilgewater, the armored goliath known as Nautilus roams the dark waters off the coast of the Blue Flame Isles. Driven by a forgotten betrayal, he strikes without warning, swinging his enormous anchor to...",
+    loc: {
+      ko: {
+        name: "노틸러스",
+        title: "심해의 타이탄",
+        blurb:
+          "빌지워터에는 처음으로 물에 잠긴 부두만큼이나 오래되었다는 쓸쓸한 전설이 하나 있다. 육중한 갑옷을 걸친 노틸러스라는 이름의 거인이 푸른 불꽃 제도 해안가의 검푸른 물을 배회한다는 이야기이다. 이제는 기억나지도 않을 복수심에 사로잡힌 그는 예고도 없이 거대한 닻을 휘둘러 가여운 자들을 구하고 탐욕스러운 자들을 죽음으로 인도한다. '빌지워터의 공물'이라는 절대 어겨선 안 될 약속을 잊은 자들을 바닷속으로 끌고 들어가며, 끌려들어 간 자는 누구도 그곳에서...",
+      },
+      zh: {
+        name: "诺提勒斯",
+        title: "深海泰坦",
+        blurb:
+          "早在比尔吉沃特立起第一座码头的时候，就有一个孤独的传说。身着铁甲的巨人诺提勒斯在蓝焰岛附近的黑暗水域中徘徊。他心里记恨着一桩不可原谅的背叛，毫无预警地出手。他甩动巨大的船锚，拯救落难的可怜虫，或是将贪婪的人拖进末日。据说，没有缴“比尔吉沃特什一税”的人就是他的目标。他会带着他们和自己一起沉入波涛——相当于一个铁板钉钉的提醒，没人能逃脱深海的制裁。",
+      },
+      es: {
+        title: "El Titán Abisal",
+        blurb:
+          "El gigante acorazado Nautilus, una leyenda solitaria tan antigua como los pecios de Aguas Estancadas, recorre las turbias aguas que rodean las costas de las Islas de la Llama Azul. Impulsado por una traición olvidada, ataca con su enorme ancla sin...",
+      },
+      fr: {
+        title: "Titan des profondeurs",
+        blurb:
+          "Nautilus, une légende plus ancienne encore que la première jetée de Bilgewater, est un titan en armure qui sillonne les eaux sombres au large des Îles de la Flamme Bleue. Trahi il y a bien longtemps de cela, il frappe désormais sans prévenir, se servant...",
+      },
+      de: {
+        title: "der Titan der Tiefen",
+        blurb:
+          "Nautilus ist eine einsame Legende, so alt wie die ersten untergegangenen Landungsstege in Bilgewasser. Der gepanzerte Goliath durchstreift die tiefen Gewässer vor der Küste der Inseln der Blauen Flamme. Er ist auf Rache für einen vergessenen...",
+      },
+      pt: {
+        title: "o Titã das Profundezas",
+        blurb:
+          "O golias armadurado conhecido como Nautilus, uma lenda solitária, tão velha quantos as primeiras docas que afundaram em Águas de Sentina, vaga pelas águas escuras da costa das Ilhas da Chama Azul. Levado por uma traição esquecida, ele ataca sem aviso...",
+      },
+      ru: {
+        name: "Наутилус",
+        title: "Титан глубин",
+        blurb:
+          "Ровесник первых древних пристаней Билджвотера, закованный в броню гигант Наутилус скитается по морскому дну близ островов Синего Пламени. Не сумев отомстить тому, кто его предал, Наутилус теперь орудует громадным якорем, спасая несчастных и без...",
+      },
+    },
   },
   {
     id: "neeko",
@@ -2310,21 +6186,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "不思議のカメレオン",
     region: "Ixtal",
     ddragonId: "Neeko",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.1,
-  damage: 0.6000000000000001,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "遥か昔に途絶えたヴァスタヤ部族の末裔であるニーコは、他者の風貌を拝借してどんな集団にでも溶け込むことができる。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.1,
+      damage: 0.6000000000000001,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "遥か昔に途絶えたヴァスタヤ部族の末裔であるニーコは、他者の風貌を拝借してどんな集団にでも溶け込むことができる。",
+    blurbEn:
+      "Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be...",
+    loc: {
+      ko: {
+        name: "니코",
+        title: "알쏭달쏭 카멜레온",
+        blurb:
+          "오랜 세월 잊힌 바스타야의 한 부족 출신인 니코는 다른 이의 모습을 빌려 어느 무리에든 뒤섞일 수 있으며, 심지어 상대의 감정을 흡수하여 적과 아군을 한눈에 구분할 수 있다. 그 누구도 니코가 어디 있는지, 정체가 무엇인지 확신할 수 없지만, 악의를 가지고 접근하는 자는 원초적 영혼 마법의 무시무시한 힘과 함께 그녀의 진정한 모습을 보게 될 것이다.",
+      },
+      zh: {
+        name: "妮蔻",
+        title: "万花通灵",
+        blurb:
+          "妮蔻来自一个早已迷失的瓦斯塔亚部落。她可以借用别人的外表来伪装自己，融入人群，甚至通过影响别人的情绪状态，一瞬间就能化敌为友。没人知道妮蔻到底在哪儿——或者到底是谁，但是想要为难她的人会立刻见识到她的本色，感受原始的精神魔法倾泻在自己身上的痛苦。",
+      },
+      es: {
+        title: "la Camaleona Curiosa",
+        blurb:
+          "Procedente de una tribu vastaya perdida hace mucho tiempo, Neeko puede fundirse entre la multitud adoptando el aspecto de los demás, incluso es capaz de absorber parte de su estado emocional y así distinguir inmediatamente a amigos y enemigos. Nadie...",
+      },
+      fr: {
+        title: "Caméléon curieux",
+        blurb:
+          "Originaire d'une tribu disparue de Vastayas, Neeko est capable de se fondre dans n'importe quelle foule en empruntant l'apparence des autres, allant même jusqu'à absorber un soupçon de leur état émotionnel pour différencier un instant les amis des...",
+      },
+      de: {
+        title: "das wissbegierige Chamäleon",
+        blurb:
+          "Neeko stammt aus einem längst verlorenen Stamm der Vastaya und kann in jedem Getümmel untertauchen, indem sie das Aussehen anderer annimmt. Sie erfasst dabei ebenfalls einen Teil des Gefühlszustands, um so blitzschnell Freund von Feind zu unterscheiden...",
+      },
+      pt: {
+        title: "a Camaleoa Curiosa",
+        blurb:
+          "Nativa de uma tribo vastaya há muito esquecida, Neeko consegue se misturar em qualquer multidão, assumindo a aparência dos outros e até mesmo absorvendo parte de seu estado emocional para identificar de imediato quem é amigo ou inimigo. Nunca se sabe...",
+      },
+      ru: {
+        name: "Нико",
+        title: "Любопытный хамелеон",
+        blurb:
+          "Нико родом из забытого племени вастайи. Она мастерски маскируется и может слиться с любой толпой, приняв чужой облик, а по эмоциям незнакомца мгновенно понять, друг перед ней или враг. Никогда не знаешь, где – или кто – сейчас Нико, но тем, кто вздумает...",
+      },
+    },
   },
   {
     id: "nidalee",
@@ -2335,20 +6254,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Nidalee",
     roles: ["Jungle"],
-    archetypes: ["Assassin","Mage"],
+    archetypes: ["Assassin", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "ジャングルの奥深くで育ったニダリーは凶暴なクーガーに自由に姿を変えることができる追跡の天才だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ジャングルの奥深くで育ったニダリーは凶暴なクーガーに自由に姿を変えることができる追跡の天才だ。",
+    blurbEn:
+      "Raised in the deepest jungle, Nidalee is a master tracker who can shapeshift into a ferocious cougar at will. Neither wholly woman nor beast, she viciously defends her territory from any and all trespassers, with carefully placed traps and deft spear...",
+    loc: {
+      ko: {
+        name: "니달리",
+        title: "야성의 사냥꾼",
+        blurb:
+          "깊은 정글에서 자라난 니달리는 자신의 형태를 흉포한 쿠거로 자유자재로 변화시킬 수 있는 추적의 달인이다. 완전한 여인도, 완전한 야수도 아닌 니달리는 신중하게 배치한 덫과 재빠른 창 투척으로 모든 침입자들로부터 자신의 영역을 맹렬하게 지켜낸다. 니달리는 사냥감을 움직이지 못하게 공격한 후 쿠거 형태로 변해 덮친다. 니달리에게서 운 좋게 살아남은 몇 사람은 야생에 사는 여자가 있다는 이야기를 퍼뜨렸다. 본능이 극도로 예리하고, 발톱은 그보다도 더...",
+      },
+      zh: {
+        name: "奈德丽",
+        title: "狂野女猎手",
+        blurb:
+          "在密林深处长大的奈德丽是一位追猎大师，她可以变换形态，成为一只凶猛的美洲狮。她既不是真正的人类，也不是真正的野兽，但她会用精心布置的陷阱和灵活自如的标枪，凶狠地捍卫自己的领地不被任何人侵犯。她会先打击猎物的行动能力，然后再以大猫的形态上前扑杀。只有很少数人曾侥幸逃脱并活下来讲述一个狂野女猎手的故事，讲述她锐利的猎手本能，以及更加锐利的爪子。",
+      },
+      es: {
+        title: "La Cazadora Bestial",
+        blurb:
+          "Criada en lo más profundo de la jungla, Nidalee es una rastreadora maestra que puede convertirse en un felino feroz a voluntad. No es completamente mujer ni bestia, pero defiende con fiereza su territorio de todos los invasores, con trampas colocadas...",
+      },
+      fr: {
+        title: "Chasseresse bestiale",
+        blurb:
+          "Élevée au plus profond de la jungle, Nidalee est une pisteuse d'exception qui peut se transformer à volonté en couguar. Ni totalement femme, ni totalement bête, elle défend férocement son territoire contre tous ceux qui veulent y pénétrer avec ses...",
+      },
+      de: {
+        title: "die bestialische Jägerin",
+        blurb:
+          "Nidalee ist im tiefsten Dschungel aufgewachsen und eine meisterhafte Spurenleserin, die sich nach Belieben in einen Puma verwandeln kann. Weder gänzlich Frau noch Tier verteidigt sie ihr Territorium auf brutalste Weise und hält Eindringlinge mit sorgsam...",
+      },
+      pt: {
+        title: "a Caçadora Bestial",
+        blurb:
+          "Criada na mais profunda das selvas, Nidalee é uma rastreadora especialista que pode se transformar em um puma à sua vontade. Nem animal nem mulher, ela defende com ferocidade seu território de todo e qualquer invasor, com armadilhas cuidadosamente...",
+      },
+      ru: {
+        name: "Нидали",
+        title: "Дикая охотница",
+        blurb:
+          "Выросшая в диких джунглях, Нидали – умелая охотница, которая способна по желанию превращаться в свирепую пуму. Отчасти женщина, отчасти зверь, она яростно защищает свою территорию от любых незваных гостей с помощью грамотно расставленных ловушек и...",
+      },
+    },
   },
   {
     id: "nilah",
@@ -2359,20 +6321,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "Nilah",
     roles: ["ADC"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.95,
-  scaling: 0.45
-}),
-    blurb: "ニーラは遠く離れた土地で苦行を続けていた戦士で、世界で最も恐ろしく、最も巨大な敵を見つけ、それに挑戦して倒すことを求めている。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.95,
+      scaling: 0.45,
+    }),
+    blurb:
+      "ニーラは遠く離れた土地で苦行を続けていた戦士で、世界で最も恐ろしく、最も巨大な敵を見つけ、それに挑戦して倒すことを求めている。",
+    blurbEn:
+      "Nilah is an ascetic warrior from a distant land, seeking the world's deadliest, most titanic opponents so that she might challenge and destroy them. Having won her power through an encounter with the long-imprisoned demon of joy, she has no emotions...",
+    loc: {
+      ko: {
+        name: "닐라",
+        title: "해방된 기쁨",
+        blurb:
+          "멀리 떨어진 땅에서 온 고행의 전사, 닐라는 세계에서 가장 위협적이고 거대한 상대를 찾아 도전하고 파괴한다. 오랫동안 갇혀 있던 기쁨의 악마를 만나 힘을 얻은 그녀에게 멈추지 않는 기쁨 외에 다른 감정은 없다. 자신의 막강한 힘을 위한 사소한 대가인 셈이다. 악마의 물을 막강한 힘을 지닌 칼날로 바꾼 닐라는 오래전에 잊힌 고대의 위협에 맞서 싸운다.",
+      },
+      zh: {
+        name: "尼菈",
+        title: "不羁之悦",
+        blurb:
+          "尼菈是一名来自遥远异国的苦行战士。她不懈地寻找着世间最凶残、最雄伟的对手，渴望将它们彻底抹杀。她从遭囚许久的欢乐之主身上夺得了力量，却也因此丢失了所有情感——唯独剩下喜悦。相比她所获得的强大能力，这也许只是一点微小的代价。来自恶魔的流水化成了她手中无可匹敌的鞭剑，让尼菈足以挑战早已被世人遗忘的可怕危险。",
+      },
+      es: {
+        title: "la Alegría Desatada",
+        blurb:
+          "Nilah es una guerrera ascética proveniente de tierras lejanas que busca a los adversarios más mortíferos y gigantescos para poder desafiarlos y destruirlos. Tras obtener sus poderes en un encuentro con el demonio de la alegría, confinado desde hace una...",
+      },
+      fr: {
+        title: "Joie incarnée",
+        blurb:
+          "Nilah est une guerrière disciplinée originaire d'une contrée lointaine. Elle traque les monstres les plus gigantesques et les plus dangereux pour les affronter et les détruire. Elle a obtenu son pouvoir du démon de la joie, emprisonné il y a bien...",
+      },
+      de: {
+        title: "die ungezügelte Freude",
+        blurb:
+          "Nilah ist eine asketische Kriegerin aus einem weit entfernten Land, die nach den tödlichsten, riesigsten Kontrahenten sucht, um sie herauszufordern und niederzustrecken. Da sie ihre Macht einer Begegnung mit dem seit langer Zeit gefangen gehaltenen...",
+      },
+      pt: {
+        title: "a Alegria Irrestrita",
+        blurb:
+          "Nilah, uma guerreira asceta de uma terra distante, busca os oponentes mais gigantescos e mortais do mundo para poder desafiá-los e destruí-los. Tendo conquistado seu poder após enfrentar o demônio da alegria, que estava aprisionado há muito tempo, ela...",
+      },
+      ru: {
+        name: "Нила",
+        title: "Воплощение радости",
+        blurb:
+          "Нила – воин-аскет из далеких земель. Она ищет по всему миру самых огромных и грозных противников, чтобы бросить им вызов и сразить. Силу она получила от пребывающего в вековом заточении демона радости, но при этом утратила все собственные чувства –...",
+      },
+    },
   },
   {
     id: "nocturne",
@@ -2383,20 +6388,63 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Nocturne",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.66,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.4,
-  scaling: 0.45
-}),
-    blurb: "知覚を持つあらゆる生物が見る悪夢が融合してできたノクターンとして知られるこの恐ろしい存在は、純悪の根源的な力である。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.66,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.4,
+      scaling: 0.45,
+    }),
+    blurb:
+      "知覚を持つあらゆる生物が見る悪夢が融合してできたノクターンとして知られるこの恐ろしい存在は、純悪の根源的な力である。",
+    blurbEn:
+      "A demonic amalgamation drawn from the nightmares that haunt every sentient mind, the thing known as Nocturne has become a primordial force of pure evil. It is liquidly chaotic in aspect, a faceless shadow with cold eyes and armed with wicked-looking...",
+    loc: {
+      ko: {
+        name: "녹턴",
+        title: "영원한 악몽",
+        blurb:
+          "언제부터인가 자의식이 있는 존재라면 반드시 꾸는 악몽이 있었다. 그리고 그 악몽들이 모여 사악한 기운을 끌어들였고, 그 속에서 태곳적 힘을 지닌 순수한 악 그 자체인 녹턴이 생겨났다. 녹턴은 혼돈을 암흑의 액체로 표현한 듯한 형상으로, 얼굴은 없으나 차디찬 눈을 지녔으며 흉흉해 보이는 칼날로 무장했다. 영혼계에서 탈출하여 생명이 깨어 있는 세계로 내려온 녹턴은 진정한 암흑에서나 피어날 법한 공포를 먹이로 삼는다.",
+      },
+      zh: {
+        name: "魔腾",
+        title: "永恒梦魇",
+        blurb:
+          "将一切有知觉的脑海中萦绕的噩梦提取出来，进而融合成一个恶魔般的实体，这就是被人称为魔腾的存在，它已成为一种纯粹邪恶的原始力量。它的外形捉摸不定，一团无面的黑影中睁着一双冰冷的眼睛，身体两侧是一对形状恐怖的刀刃。魔腾摆脱了精神领域的束缚，进入了梦醒后的凡尘世界，寻觅那些在真正的黑暗中疯长的恐惧，作为自己的食粮。",
+      },
+      es: {
+        title: "La Pesadilla Eterna",
+        blurb:
+          "El ser conocido como Nocturne es una fusión demoníaca extraída de las pesadillas que acechan a todas las mentes conscientes y se ha convertido en una fuerza primordial de pura maldad. Tiene un aspecto líquido y caótico, una sombra sin rostro con ojos...",
+      },
+      fr: {
+        title: "Éternel cauchemar",
+        blurb:
+          "Expression démoniaque des cauchemars qui hantent tous les êtres doués d'intelligence, la chose que l'on nomme Nocturne est devenue une force primordiale du mal. D'aspect liquide, c'est une ombre sans visage, au regard glacial, armée de lames effrayantes...",
+      },
+      de: {
+        title: "der ewige Albtraum",
+        blurb:
+          "Das als Nocturne bekannte Geschöpf ist eine dämonische Ausgeburt der Albträume jedes vernunftbegabten Lebewesens und eine Naturgewalt des puren Bösen. Seine chaotisch verschwommene Gestalt ist wie ein gesichtsloser Schatten, der mit tödlichen Klingen...",
+      },
+      pt: {
+        title: "o Eterno Pesadelo",
+        blurb:
+          "Uma fusão demoníaca provinda dos pesadelos que assombram todas as mentes sencientes, a coisa conhecida como Nocturne se tornou uma força primordial de puro terror. De aspecto caótico e líquido, ele é uma sombra sem rosto com olhos frios e armada com...",
+      },
+      ru: {
+        name: "Ноктюрн",
+        title: "Извечный кошмар",
+        blurb:
+          "Первобытная мощь чистого зла, известная как Ноктюрн, – демоническое воплощение ночных кошмаров, которые являются всем разумным живым существам. Это струящаяся, хаотичная в самой своей сущности, безликая тень с холодными глазами, вооруженная устрашающими...",
+      },
+    },
   },
   {
     id: "nunu",
@@ -2407,20 +6455,65 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Nunu",
     roles: ["Jungle"],
-    archetypes: ["Tank","Mage"],
+    archetypes: ["Tank", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
     blurb: "昔々あるところに、恐ろしい怪物を倒して英雄になりたいと願う少年がいた。",
+    blurbEn:
+      "Once upon a time, there was a boy who wanted to prove he was a hero by slaying a fearsome monster—only to discover that the beast, a lonely and magical yeti, merely needed a friend. Bound together by ancient power and a shared love of snowballs, Nunu...",
+    loc: {
+      ko: {
+        name: "누누와 윌럼프",
+        title: "소년과 설인",
+        blurb:
+          "아주 오랜 옛날, 무시무시한 괴물을 물리쳐 영웅이 되고 싶은 소년이 있었다. 하지만 소년이 발견한 것은 마법을 부리는, 단지 친구가 필요했던 외로운 설인이었다. 고대의 힘과 눈싸움으로 하나가 된 소년 누누와 설인 윌럼프는 프렐요드 곳곳을 누비며 상상 속의 모험을 떠난다. 실종된 누누의 어머니를 찾아 나선 누누와 윌럼프. 이들이 누누의 어머니를 구한다면 영웅이 될 수 있을지도...",
+      },
+      zh: {
+        name: "努努和威朗普",
+        title: "雪原双子",
+        blurb:
+          "很久以前，曾有个小男孩，他要证明自己是个英雄，于是决定去杀掉一头凶猛的怪兽——但他却发现这个怪兽其实是个孤独的魔法雪人，而且他需要的只是一个朋友。雪人和男孩被古老的力量所连结，也因对雪球的共同爱好而玩到一起。努努和威朗普如今在弗雷尔卓德的土地上肆意撒欢打滚，为想象中的冒险注入鲜活的生命力。他们希望能够在前面的某个地方找到努努的母亲。如果他们能拯救她，或许他们就真的是英雄了。",
+      },
+      es: {
+        name: "Nunu y Willump",
+        title: "Un Niño y su Yeti",
+        blurb:
+          "Había una vez un niño que quería acabar con un temible monstruo para demostrar que era un héroe; pero que terminó descubriendo que la bestia, un yeti solitario y mágico, solo necesitaba un amigo. Ahora, Nunu y Willump, unidos por un poder ancestral y...",
+      },
+      fr: {
+        name: "Nunu et Willump",
+        title: "Le Garçon et son yéti",
+        blurb:
+          "Il était une fois un jeune garçon qui voulait prouver qu'il était un héros en tuant un monstre effrayant, mais il découvrit que la créature, un yéti solitaire, avait seulement besoin d'un ami. Rapprochés par une puissance ancienne et un amour partagé...",
+      },
+      de: {
+        title: "der Junge und sein Yeti",
+        blurb:
+          "Vor langer Zeit gab es einen Jungen, der seinen Heldenmut beweisen wollte, indem er ein fürchterliches Monster erschlug. Als er es jedoch fand, erkannte er, dass es nur ein einsamer magischer Yeti war, der sich nach einem Freund sehnte. Nunu und Willump...",
+      },
+      pt: {
+        name: "Nunu e Willump",
+        title: "o Garoto e seu Yeti",
+        blurb:
+          "Era uma vez um garoto que queria provar a todos que poderia ser um herói indo matar um terrível monstro... mas que no fim descobriu que esse monstro era um solitário yeti mágico que só queria um amigo. Unidos por um antigo poder e compartilhando um amor...",
+      },
+      ru: {
+        name: "Нуну и Виллумп",
+        title: "Мальчик и его йети",
+        blurb:
+          "Жил-был мальчик, который мечтал победить ужасное чудовище, чтобы стать героем. Но когда он наконец встретил монстра, оказалось, что этот волшебный йети просто одинок и хочет найти друга. Нуну и Виллумп обожали играть в снежки и быстро нашли общий язык...",
+      },
+    },
   },
   {
     id: "olaf",
@@ -2430,21 +6523,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "狂戦士",
     region: "Freljord",
     ddragonId: "Olaf",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
-    blurb: "制止不能な破壊の力、斧を振りかざすオラフが求めているのは栄光にあふれる戦いの中での自らの死だ。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
+    blurb:
+      "制止不能な破壊の力、斧を振りかざすオラフが求めているのは栄光にあふれる戦いの中での自らの死だ。",
+    blurbEn:
+      "An unstoppable force of destruction, the axe-wielding Olaf wants nothing but to die in glorious combat. Hailing from the brutal Freljordian peninsula of Lokfar, he once received a prophecy foretelling his peaceful passing—a coward's fate, and a great...",
+    loc: {
+      ko: {
+        name: "올라프",
+        title: "광전사",
+        blurb:
+          "그 누구도 막지 못할 파괴력으로 도끼를 휘두르는 올라프가 바라는 것은 딱 한 가지, 전장에서 영광스럽게 전사하는 것이다. 프렐요드에서도 가혹한 환경으로 유명한 록파르 반도 출신인 올라프는 어느 날 자신이 무병장수하다가 평온하게 숨을 거둘 것이라는 예언을 들었다. 록파르에서는 침상에서 편안하게 죽는 것은 겁쟁이뿐이므로, 이는 더할 나위 없이 모욕적인 운명이었다. 분노가 치민 올라프는 오로지 싸우다 죽기만을 바라며 프렐요드를 종횡무진했다. 하지만 위대한...",
+      },
+      zh: {
+        name: "奥拉夫",
+        title: "狂战士",
+        blurb:
+          "来自弗雷尔卓德海岸洛克法半岛的奥拉夫，是一股无坚不摧的毁灭之力，手持战斧的他一心渴望光荣地战死。奥拉夫曾在一次占卜中听到了自己将安详辞世的预言——这是懦夫的命运，也是对他们族人的莫大侮辱。为了追寻另外一种结局，在狂怒的驱动下，他在这片土地上暴跳横行，屠杀了数十名伟大的战士和传说中的野兽，只希望能够找到能够阻止自己的对手。如今的奥拉夫，是凛冬之爪部族的残酷执法者，他期待在即将到来的大战中终结自己的性命。",
+      },
+      es: {
+        title: "El Berserker",
+        blurb:
+          "Olaf porta sus hachas de forma que es una fuerza imparable de destrucción que no quiere nada, salvo morir en un combate glorioso. Natural de Lokfar, una brutal península de Freljord, una vez escuchó una profecía que lo avisaba de una muerte tranquila...",
+      },
+      fr: {
+        title: "Berzerker",
+        blurb:
+          "Olaf, avec sa hache et son extraordinaire force de destruction, ne souhaite que mourir au combat. Venu de l'âpre péninsule freljordienne de Lokfar, il a été choqué par une prophétie qui lui prédisait une mort paisible : dans l'esprit de son peuple, une...",
+      },
+      de: {
+        title: "der Berserker",
+        blurb:
+          "Olaf ist mit seiner Axt eine unaufhaltsame Kraft der Zerstörung und möchte nichts lieber, als in einem glorreichen Kampf zu sterben. Ihm, der von der rauen freljorder Halbinsel Lokfar stammt, wurde einst ein friedvoller Tod prophezeit, was seiner...",
+      },
+      pt: {
+        title: "o Berserker",
+        blurb:
+          "Uma força desenfreada de destruição, Olaf e seus machados não querem nada além de morrer em um combate glorioso. Vindo da brutal península de Freljord, Lokfar, ele recebeu uma profecia que dizia que ele teria uma morte pacífica: o destino de um covarde...",
+      },
+      ru: {
+        name: "Олаф",
+        title: "Берсерк",
+        blurb:
+          "Неудержимый разрушитель, вооруженный топорами Олаф хочет лишь одного – умереть в славном бою. Однажды он получил пророчество, которое сулило ему мирную смерть. Среди жителей Локфара – сурового фрельйордского полуострова, откуда он был родом, – такая...",
+      },
+    },
   },
   {
     id: "orianna",
@@ -2455,20 +6591,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Piltover",
     ddragonId: "Orianna",
     roles: ["Mid"],
-    archetypes: ["Mage","Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.78,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "オリアナはかつては好奇心旺盛な普通の少女だったが、今では技術の粋を駆使した機械仕掛けの体になってしまった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.78,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "オリアナはかつては好奇心旺盛な普通の少女だったが、今では技術の粋を駆使した機械仕掛けの体になってしまった。",
+    blurbEn:
+      "Once a curious girl of flesh and blood, Orianna is now a technological marvel comprised entirely of clockwork. She became gravely ill after an accident in the lower districts of Zaun, and her failing body had to be replaced with exquisite artifice...",
+    loc: {
+      ko: {
+        name: "오리아나",
+        title: "시계태엽 소녀",
+        blurb:
+          "오리아나는 한 때 살아있는 육신을 가진 호기심 많은 소녀였지만, 이제는 전체가 시계태엽 장치로 만들어진 놀라운 기술의 산물이다. 오리아나는 자운 남부지방에서 사고를 당한 후 매우 위태로운 상황에 처했고, 다쳐서 움직일 수 없는 신체의 부분 부분이 정교한 인공 신체로 교체되었다. 오리아나는 자신을 보호하는 친구 역할을 해 주는 강력한 황동 구체와 함께, 이제 필트오버를 비롯해 온 세상에 있는 불가사의를 자유롭게 탐험한다.",
+      },
+      zh: {
+        name: "奥莉安娜",
+        title: "发条魔灵",
+        blurb:
+          "对一切充满好奇的奥莉安娜也曾拥有过血肉之躯，现在却成了一具全身上下都由发条和齿轮构成的科技奇观。祖安下层地区的一次事故，间接导致奥莉安娜身染重病。她日渐衰竭的身体必须被一个接着一个地替换为精密的人造器官，直至全身上下再也没有一丝人类肉体的痕迹。她给自己制作了一枚奇妙的铜球，它既是伙伴，也是保镖。值得庆幸的是，这个女孩如今可以自由地探索壮观的皮尔特沃夫，以及更遥远的地方了。",
+      },
+      es: {
+        title: "La Dama Mecánica",
+        blurb:
+          "Orianna, antaño una chica curiosa de carne y hueso, es ahora una maravilla tecnológica compuesta exclusivamente de engranajes. Cayó gravemente enferma tras un accidente en los distritos inferiores de Zaun y su cuerpo moribundo tuvo que ser reemplazado...",
+      },
+      fr: {
+        title: "Demoiselle mécanique",
+        blurb:
+          "Autrefois une jeune fille curieuse, de chair et d'os, Orianna est aujourd'hui une merveille de technologie entièrement mécanisée. Elle est tombée gravement malade à la suite d'un accident dans les quartiers inférieurs de Zaun, et son corps défaillant a...",
+      },
+      de: {
+        title: "die Aufziehpuppe",
+        blurb:
+          "Einst war Orianna ein neugieriges Mädchen aus Fleisch und Blut, heute ist sie ein technisches Meisterwerk, das vollständig aus mechanischen Bauteilen zusammengesetzt ist. Nach einem Unfall in den unteren Sektoren von Zhaun wurde sie schwer krank und ihr...",
+      },
+      pt: {
+        title: "a Donzela Mecânica",
+        blurb:
+          "Orianna já foi uma menina curiosa de carne e osso, mas agora é uma maravilha tecnológica composta inteiramente de engrenagens. Ela ficou terrivelmente doente depois de um acidente em um dos distritos inferiores de Zaun e seu corpo enfraquecido teve que...",
+      },
+      ru: {
+        name: "Орианна",
+        title: "Заводная леди",
+        blurb:
+          "Когда-то Орианна была любопытной девушкой из плоти и крови, теперь же она – технологическое чудо, оживший часовой механизм. После несчастного случая в нижних районах Зауна Орианна оказалась на пороге смерти, и части ее тела пришлось заменить...",
+      },
+    },
   },
   {
     id: "ornn",
@@ -2482,17 +6661,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Tank"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.48,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
+      range: 0.4,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.48,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
     blurb: "オーンは鍛冶と技巧を司る、フレヨルドの半神半人だ。",
+    blurbEn:
+      "Ornn is the Freljordian spirit of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion...",
+    loc: {
+      ko: {
+        name: "오른",
+        title: "거산의 화염",
+        blurb:
+          "오른은 대장장이의 일과 그 솜씨를 관장하는 프렐요드의 반신으로, 화산 아래에 있는 용암 동굴 속에 거대한 불꽃 대장간을 짓고 홀로 작업에 몰두한다. 오른이 광석을 녹이고 제련하여 제작하는 물건들은 비할 데 없이 우수한 품질을 자랑한다. 혼자서 밤낮없이 일하는 것을 좋아하지만 다른 신들, 특히 볼리베어가 대지를 걸어다니며 필멸자들을 좌지우지하려 들 때면 대장간에서 나온다. 그러고는 믿음직스러운 망치를 휘두르거나 아예 화산의 힘을 불러내어 그들이...",
+      },
+      zh: {
+        name: "奥恩",
+        title: "山隐之焰",
+        blurb:
+          "奥恩是弗雷尔卓德的一位半神，主掌着锻造和工艺。他在名为炉乡的火山下的溶洞中凿出了一座雄伟的工坊，独自一人在里头干活。他摆弄着熔岩沸腾的坩埚，提炼矿石，打造出无与伦比的精良物件。当其他神灵——尤其是沃利贝尔，在大地上行走并且介入了凡间的事务时，奥恩就会出面，将这些鲁莽的家伙劝回各自的位置上。要么是用手里可靠的锤子，要么就是群山的烈火。",
+      },
+      es: {
+        title: "Las Llamas de la Forja",
+        blurb:
+          "Ornn es el espíritu de Freljord de la forja y la artesanía. Trabaja en la soledad de una enorme forja esculpida en las cavernas de lava bajo el volcán de Dulcehogar. En ella modela objetos de calidad sin igual y depura menas en burbujeantes calderos de...",
+      },
+      fr: {
+        title: "Dieu de la forge volcanique",
+        blurb:
+          "Ornn est le demi-dieu de la forge et de l'artisanat à Freljord. Avec comme seule compagne la solitude, il travaille dans sa forge enfouie au plus profond des cavernes de lave de l'Âtre-foyer. C'est là qu'il fond et purifie les métaux nécessaires à la...",
+      },
+      de: {
+        title: "der Gott der Vulkanschmiede",
+        blurb:
+          "Ornn stammt aus Freljord und ist der Geist der Schmiede- und Handwerkskunst. Er werkelt zurückgezogen in einer gewaltigen Schmiede, die er in die Lavahöhlen unter einem Vulkan geschlagen hat, der als die „Wiege des Feuers“ bekannt ist. Dort rührt er in...",
+      },
+      pt: {
+        title: "O Fogo sob a Montanha",
+        blurb:
+          "Ornn é o espírito Freljordano da forja e da artesania. Ele trabalha na solidão de uma enorme fornalha, construída a marteladas por entre as cavernas de lava do vulcão Pedra-Lar. Lá, ele aquece caldeirões de pedra fundida para purificar metais e forjar...",
+      },
+      ru: {
+        name: "Орн",
+        title: "Пламя Горных Глубин",
+        blurb:
+          "Орн – фрельйордский дух кузнечного дела и ремесла. В полном одиночестве он работает в огромной кузнице, выдолбленной в застывшей лаве прямо под вулканом Дом-очаг. Там он и наполняет плавильные котлы магмой, чтобы очищать руду и создавать предметы...",
+      },
+    },
   },
   {
     id: "pantheon",
@@ -2502,26 +6723,68 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "砕けぬ槍",
     region: "Targon",
     ddragonId: "Pantheon",
-    roles: ["Top","Support"],
-    archetypes: ["Fighter","Assassin"],
+    roles: ["Top", "Support"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  honor: 0.9,
-  justice: 0.7,
-  protection: 0.6,
-  solo: 0.5
-}),
+      honor: 0.9,
+      justice: 0.7,
+      protection: 0.6,
+      solo: 0.5,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.7,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.75,
-  cc: 0.5,
-  mobility: 0.5,
-  difficulty: 0.4,
-  scaling: 0.3
-}),
+      range: 0,
+      skillBased: 0.7,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.75,
+      cc: 0.5,
+      mobility: 0.5,
+      difficulty: 0.4,
+      scaling: 0.3,
+    }),
     blurb: "戦争の神格を宿した不屈の戦士。何度倒れても立ち上がる。",
+    blurbEn:
+      "Once an unwilling host to the Aspect of War, Atreus survived when the celestial power within him was slain, refusing to succumb to a blow that tore stars from the heavens. In time, he learned to embrace the power of his own mortality, and the stubborn...",
+    loc: {
+      ko: {
+        name: "판테온",
+        title: "불굴의 창",
+        blurb:
+          "본의 아니게 전쟁의 성위에 잠식된 아트레우스는 자신에게 깃든 천상의 힘을 파괴하고 하늘의 별을 사라지게 할 정도로 강력한 일격에도 굴복하지 않고 살아남았다. 그리고 결국 필멸의 운명을 인정하고, 그에 따르는 힘과 불굴의 정신을 받아들였다. 이제 아트레우스는 신성에 저항하는 판테온으로 다시 태어나, 꺾이지 않는 의지와 성위의 무기로 무장한 채 전장을 누빈다.",
+      },
+      zh: {
+        name: "潘森",
+        title: "不屈之枪",
+        blurb:
+          "曾被战争星灵附体的阿特瑞斯，在体内的天界力量被抹杀之时，便以凡人的身份活了下来。即便是那裂空摘星的一击，也无法让他屈服。在那不久以后，他学会了拥抱自身的凡性，以及凡性之中那股顽强的韧劲。如今的阿特瑞斯以潘森之名重生，与神性抗争，他坚不可摧的意志在战场上化为火焰，注入那些曾经属于星灵的武具中。",
+      },
+      es: {
+        title: "la Lanza Inquebrantable",
+        blurb:
+          "Tiempo atrás, Atreus había albergado al Aspecto de la Guerra en su interior contra su voluntad, pero sobrevivió al golpe que acabó con el poder divino y arrancó estrellas del firmamento. Con el paso de los años, aprendió a aceptar el poder de su propia...",
+      },
+      fr: {
+        title: "Lance éternelle",
+        blurb:
+          "Autrefois l'hôte réticent de la Manifestation de la Guerre, Atreus a survécu à la mort de la puissance céleste qui l'habitait, refusant de succomber au coup qui arracha les étoiles mêmes des cieux. Avec le temps, il apprit à accepter le pouvoir de sa...",
+      },
+      de: {
+        title: "der unbeugsame Speer",
+        blurb:
+          "Atreus' Körper diente einst gegen seinen Willen dem Aspekt des Krieges und überlebte, als die göttliche Macht in seinem Inneren niedergestreckt wurde. Er weigerte sich schlichtweg, einem Hieb nachzugeben, der Sterne vom Himmel fegte. Mit der Zeit lernte...",
+      },
+      pt: {
+        title: "a Lança Indestrutível",
+        blurb:
+          "Antes um relutante portador do Aspecto da Guerra, Atreus conseguiu sobreviver quando o poder celestial dentro dele foi morto, recusando-se a sucumbir a um golpe que arrancou estrelas do céu. Com o tempo, ele aprendeu a usar o poder de sua própria...",
+      },
+      ru: {
+        name: "Пантеон",
+        title: "Несокрушимое Копье",
+        blurb:
+          "Когда-то Атрей был невольным вместилищем Сущности Войны. Он пережил гибель этой божественной силы, выстояв после удара, сбросившего звезды с небес. Со временем он осознал и принял силу собственной смертности и упрямую стойкость, которая ей сопутствует...",
+      },
+    },
   },
   {
     id: "poppy",
@@ -2531,21 +6794,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "大鎚の守護者",
     region: "Demacia",
     ddragonId: "Poppy",
-    roles: ["Top","Support"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    roles: ["Top", "Support"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.48,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.6,
-  scaling: 0.55
-}),
-    blurb: "ルーンテラの地に勇敢なチャンピオンは数多いものの、ポッピーほど粘り強い者はそうはいない。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.48,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.6,
+      scaling: 0.55,
+    }),
+    blurb:
+      "ルーンテラの地に勇敢なチャンピオンは数多いものの、ポッピーほど粘り強い者はそうはいない。",
+    blurbEn:
+      "Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing the legendary hammer of Orlon, a weapon twice her size, this determined yordle has spent untold years searching in secret for the fabled “Hero of Demacia,” said...",
+    loc: {
+      ko: {
+        name: "뽀삐",
+        title: "망치의 수호자",
+        blurb:
+          "룬테라에는 용맹한 챔피언이 넘쳐나지만 뽀삐만큼 끈기 넘치는 이는 찾아보기 힘들다. 제 키의 두 배는 되는 망치 오를론을 들고 다니는 뽀삐는 오랫동안 망치의 정당한 주인이자 전설의 주인공인 데마시아의 영웅을 찾아 비밀스럽게 헤매고 있다. 그 때까지 뽀삐는 충실히 전투로 돌격해 망치를 크게 휘둘러 왕국의 적을 모두 날려 버린다.",
+      },
+      zh: {
+        name: "波比",
+        title: "圣锤之毅",
+        blurb:
+          "符文之地从来都不缺勇敢的英雄，但很少有谁能像波比一样坚毅。她一直带着奥伦的传奇圣锤，哪怕锤柄立起来有两个她那么高。这位意志坚决的约德尔人在无数个岁月中一直都在秘密地寻找“德玛西亚的英雄”，也就是传说中这把战锤的最合适的主人。在找到他之前，波比肩负起战斗的使命，用旋风般的攻击打退王国的敌人。",
+      },
+      es: {
+        title: "La Guardiana del Martillo",
+        blurb:
+          "En Runaterra hay un gran número de campeones valerosos, pero muy pocos son tan tenaces como Poppy. Esta yordle tan obstinada porta el legendario martillo de Orlon, que la dobla en tamaño, y se ha pasado infinidad de años buscando en secreto al famoso...",
+      },
+      fr: {
+        title: "Gardienne du marteau",
+        blurb:
+          "Runeterra ne manque pas de braves champions, mais peu peuvent se targuer d'être aussi tenaces que Poppy. Armée du légendaire marteau d'Orlon, faisant deux fois sa taille, cette yordle déterminée cherche depuis d'innombrables années le « héros de...",
+      },
+      de: {
+        title: "die Hüterin des Hammers",
+        blurb:
+          "Runeterra leidet sicher nicht unter einem Mangel an tapferen Champions, doch gibt es wenige, die so hartnäckig sind wie Poppy. Mit dem legendären Hammer von Orlon, einer Waffe doppelt so groß wie sie selbst, hat der entschlossene Yordle unzählige Jahre...",
+      },
+      pt: {
+        title: "a Guardiã do Martelo",
+        blurb:
+          "Runeterra não está em falta de campeões valentes, mas poucos são tão tenazes quanto Poppy. Carregando o lendário martelo de Orlon, uma arma que tem o dobro de seu tamanho, essa yordle determinada tem passado muitos anos procurando em segredo pelo...",
+      },
+      ru: {
+        name: "Поппи",
+        title: "Хранительница молота",
+        blurb:
+          "В мире Рунтерры множество отважных чемпионов, но мало кто отличается таким же упорством, как Поппи. Вот уже многие годы непреклонный йордл странствует с легендарным молотом Орлона, который вдвое больше ее роста. Она полна решимости найти легендарного...",
+      },
+    },
   },
   {
     id: "pyke",
@@ -2556,24 +6862,66 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "Pyke",
     roles: ["Support"],
-    archetypes: ["Support","Assassin"],
+    archetypes: ["Support", "Assassin"],
     storyVec: s({
-  revenge: 0.9,
-  chaos: 0.5,
-  solo: 0.8
-}),
+      revenge: 0.9,
+      chaos: 0.5,
+      solo: 0.8,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.85,
-  damageStyle: 0.85,
-  durability: 0.3,
-  damage: 0.75,
-  cc: 0.7,
-  mobility: 0.85,
-  difficulty: 0.6,
-  scaling: 0.45
-}),
+      range: 0,
+      skillBased: 0.85,
+      damageStyle: 0.85,
+      durability: 0.3,
+      damage: 0.75,
+      cc: 0.7,
+      mobility: 0.85,
+      difficulty: 0.6,
+      scaling: 0.45,
+    }),
     blurb: "海の底から戻ってきた裏切られた銛打ち。裏切り者リストを消していく。",
+    blurbEn:
+      "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish… and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural...",
+    loc: {
+      ko: {
+        name: "파이크",
+        title: "핏빛 항구의 학살자",
+        blurb:
+          "빌지워터 학살의 부두에서 유명한 작살잡이였던 파이크는 거대한 자울치의 뱃속에서 죽음을 맞이할 운명이었지만... 살아 돌아왔다. 이제, 그는 옛 고향의 음습한 골목과 뒷길을 소리 없이 누비며, 타인을 이용하여 부를 쌓은 자들에게 그가 얻은 초자연적인 힘으로 빠르고 잔혹한 최후를 선사한다. 괴물을 사냥한다고 자부했던 도시는 이제 괴물에게 사냥당하고 있다.",
+      },
+      zh: {
+        name: "派克",
+        title: "血港鬼影",
+        blurb:
+          "在比尔吉沃特屠宰码头颇有名气的鱼叉手派克，据说早已葬身于一条巨大的琢珥鱼腹内……现在，他却回来了。派克在阴街陋巷中徘徊，用常人无法理解的手段解决那些鱼肉他人的恶棍——这座因捕猎怪物而闻名的码头，如今反而成了他的猎场。",
+      },
+      es: {
+        title: "el Destripador de los Puertos",
+        blurb:
+          "A Pyke, un conocido arponero de los Muelles del Matadero de Aguas Estancadas, le esperaba la muerte en el estómago de una gigantesca criatura marina... y sin embargo, regresó. Desde entonces acecha en los fríos y húmedos callejones y caminos de la que...",
+      },
+      fr: {
+        title: "Éventreur des abysses",
+        blurb:
+          "Harponneur renommé des quais-abattoirs de Bilgewater, Pyke aurait dû trouver la mort dans le ventre d'une énorme créature marine… et pourtant, il est revenu. À présent, il écume les ruelles sombres de son ancien port d'attache, utilisant ses dons...",
+      },
+      de: {
+        title: "der Schlitzer vom Bluthafen",
+        blurb:
+          "Pyke, ein berühmter Harpunier vom Schlachterhafen in Bilgewasser, hätte seinen Tod im Bauch eines gigantischen Jaullfisches finden sollen … doch er kehrte zurück. Jetzt treibt er in den feuchten Straßen und Gassen seiner ehemaligen Heimatstadt sein...",
+      },
+      pt: {
+        title: "o Estripador das Águas Sangrentas",
+        blurb:
+          "Um arpoador renomado vindo das Docas da Matança nas Águas de Sentina, Pyke deveria ter encontrado sua morte na barriga de um gigante Peixe-Jaula... mas, ainda assim, ele retornou. Agora, vagando pelos becos úmidos de sua cidade natal, ele usa seus novos...",
+      },
+      ru: {
+        name: "Пайк",
+        title: "Потрошитель из Кровавой гавани",
+        blurb:
+          "Знаменитый гарпунер из Кровавых доков Билджвотера, Пайк должен был встретить свою смерть в брюхе огромного челюстозуба... но на этом его история не закончилась. Теперь он бродит по промозглым переулкам бывшего родного города, используя свои...",
+      },
+    },
   },
   {
     id: "qiyana",
@@ -2587,17 +6935,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.2,
-  damage: 0.24,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.45
-}),
-    blurb: "ジャングルに囲まれた都市イシャオカンで、キヤナは玉座ユン・タルを目指して無情な策略を企てている。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.2,
+      damage: 0.24,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.45,
+    }),
+    blurb:
+      "ジャングルに囲まれた都市イシャオカンで、キヤナは玉座ユン・タルを目指して無情な策略を企てている。",
+    blurbEn:
+      "In the jungle city of Ixaocan, Qiyana plots her own ruthless path to the high seat of the Yun Tal. Last in line to succeed her parents, she faces those who stand in her way with brash confidence and unprecedented mastery over elemental magic. With the...",
+    loc: {
+      ko: {
+        name: "키아나",
+        title: "원소의 여왕",
+        blurb:
+          "키아나는 정글 도시 이샤오칸에서 윤 탈의 왕좌에 오르기 위해 무자비한 계획을 세우고 있다. 부모님의 왕위 계승 서열 중 가장 아래인 키아나는 당당한 자신감과 전례 없는 원소 마법 능력을 갖춘 인재로, 앞을 가로막는 자는 누구든 용서하지 않는다. 키아나는 대지 자체를 자유자재로 조종할 수 있으며, 자신을 이샤오칸 역사상 가장 뛰어난 원소술사로 여긴다. 그렇기에 자신에게 일개 도시가 아닌 제국을 지배할 자격이 있다고 믿는다.",
+      },
+      zh: {
+        name: "奇亚娜",
+        title: "元素女皇",
+        blurb:
+          "在丛林都市以绪奥肯中，奇亚娜谋划着自己荣登育恩塔尔塔座的无情之路。作为父母的末位继承人，她以前无古人的元素魔法技艺，傲视所有挡在面前的人。这片大地服从着奇亚娜的每一道指令，她认为自己是以绪奥肯历史上最伟大的元素使——就凭这点，她理应执掌的不仅是一座城邦，而是一个帝国。",
+      },
+      es: {
+        title: "La Emperatriz de los Elementos",
+        blurb:
+          "En la ciudad selvática de Ixaocan, Qiyana se dedica a planear sin clemencia alguna su ascenso al trono de los Yun Tal. Es la última en la línea de sucesión pero planta cara a todo aquel que se interpone en su camino con una confianza arrolladora y un...",
+      },
+      fr: {
+        title: "Impératrice des éléments",
+        blurb:
+          "Dans la ville d'Ixaocan, perdue dans la jungle, Qiyana complote pour obtenir au prix du sang le siège révéré des Yun Tal. Dernière dans l'ordre de la succession, elle affronte ceux qui sont sur son chemin avec une absolue confiance en elle et une...",
+      },
+      de: {
+        title: "Gebieterin der Elemente",
+        blurb:
+          "Im Dschungel von Ixaocan schmiedet Qiyana einen skrupellosen Plan, um den Thron der Yun Tal zu besteigen. Die Letzte in der Thronfolge tritt jedem, der sich ihr in den Weg stellt, mit dreistem Selbstbewusstsein und beispielloser Beherrschung der...",
+      },
+      pt: {
+        title: "a Imperatriz dos Elementos",
+        blurb:
+          "Na cidade-selva de Ixaocan, Qiyana planeja seu próprio e implacável caminho até o trono de Yun Tal. Última na fila para suceder seus pais, ela enfrenta qualquer um no seu caminho com uma confiança impetuosa e domínio sem precedentes sobre a magia...",
+      },
+      ru: {
+        name: "Киана",
+        title: "Повелительница стихий",
+        blurb:
+          "В самом сердце джунглей скрыт город Ишаокан. Принцесса Киана – последняя в очереди наследования, но она пробивается к престолу Юнталь, не щадя никого на своем пути. Она уверенно избавляется от соперников благодаря своей невероятной способности управлять...",
+      },
+    },
   },
   {
     id: "quinn",
@@ -2608,20 +6999,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Quinn",
     roles: ["Top"],
-    archetypes: ["Marksman","Assassin"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.66,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.66,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.7,
+    }),
     blurb: "クインは敵陣の奥深くに侵入して危険な任務を遂行するデマーシアの精鋭レンジャー騎士だ。",
+    blurbEn:
+      "Quinn is an elite ranger-knight of Demacia, who undertakes dangerous missions deep in enemy territory. She and her legendary eagle, Valor, share an unbreakable bond, and their foes are often slain before they realize they are fighting not one, but two...",
+    loc: {
+      ko: {
+        name: "퀸",
+        title: "데마시아의 날개",
+        blurb:
+          "데마시아의 정예 기동대 기사인 퀸은 전설적인 독수리 발러와 함께 적의 영토 한복판에 잠입해 갖가지 위험한 임무를 수행한다. 퀸과 발러의 강력한 결속력은 전투에서 무시무시한 힘을 발휘한다. 적들은 그들의 상대가 데마시아 제일가는 영웅, 그것도 하나가 아니라 둘이라는 사실을 알지도 못한 채 순식간에 목숨을 잃고 만다. 상황에 따라 곡예 수준의 동작을 보여주는 퀸이 민첩한 몸놀림으로 석궁을 꺼내들면, 발러는 공중에서 유영하며 숨어 있는 적을 찾아낸다...",
+      },
+      zh: {
+        name: "奎因",
+        title: "德玛西亚之翼",
+        blurb:
+          "奎因是德玛西亚的游骑兵精锐，经常深入敌国腹地执行危险的任务，她和她的传奇巨鹰华洛之间存在着一种牢不可破的纽带。很多时候，他们的对手死到临头也没意识到，自己面对着的这位德玛西亚英雄，并不是在孤军奋战。战斗中的奎因灵巧敏捷，十字弓例无虚发，而华洛则会从空中标记隐蔽的敌人。两者之间默契的配合造就了战场上一对致命凶狠的搭档。",
+      },
+      es: {
+        title: "Las Alas de Demacia",
+        blurb:
+          "Quinn es una amazona montaraz de élite de Demacia que emprende peligrosas misiones en territorio enemigo. Ella y su águila legendaria Valor comparten un vínculo inquebrantable, y sus enemigos suelen ser asesinados antes de que puedan darse cuenta de que...",
+      },
+      fr: {
+        title: "Ailes de Demacia",
+        blurb:
+          "Quinn est un chevalier-éclaireur d'élite de Demacia qui se spécialise dans les missions d'infiltration en territoire ennemi. Avec son aigle de légende, Valor, elle forme un duo inséparable dont les proies rendent souvent l'âme avant même de comprendre...",
+      },
+      de: {
+        title: "Demacias Schwingen",
+        blurb:
+          "Quinn ist eine Elite-Waldläuferin der Ritter Demacias. Ihre Missionen führen sie stets tief in feindliches Territorium. Sie und ihr legendärer Adler Valor sind unzertrennlich und ihre tiefe Freundschaft wird Widersachern schnell zum Verhängnis. Ihre...",
+      },
+      pt: {
+        title: "as Asas de Demacia",
+        blurb:
+          "Quinn é uma cavaleira patrulheira de elite de Demacia que cumpre missões perigosas no coração do território inimigo. Ela e sua águia lendária, Valor, possuem um vínculo inquebrável e seus inimigos muitas vezes são mortos antes de notarem que não estão...",
+      },
+      ru: {
+        name: "Квинн",
+        title: "Крылья Демасии",
+        blurb:
+          "Квинн – элитный рыцарь-рейнджер из Демасии. Специализируется на опасных операциях глубоко в тылу врага. Она связана нерушимыми узами со своим легендарным орлом Вэлором, и зачастую противник погибает, даже не успев сообразить, что сражался не с одним, а...",
+      },
+    },
   },
   {
     id: "rakan",
@@ -2635,17 +7068,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.4,
-  durability: 0.4,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.5,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
-    blurb: "気まぐれで魅力的なラカンは、ヴァスタヤの悪名高きトラブルメーカーであり、ロトラン部族史上最高のバトルダンサーだ。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.4,
+      durability: 0.4,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.5,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
+    blurb:
+      "気まぐれで魅力的なラカンは、ヴァスタヤの悪名高きトラブルメーカーであり、ロトラン部族史上最高のバトルダンサーだ。",
+    blurbEn:
+      "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name has long been synonymous with wild festivals, uncontrollable parties...",
+    loc: {
+      ko: {
+        name: "라칸",
+        title: "매혹하는 자",
+        blurb:
+          "활달하고 변덕스러우면서도 거부하기 힘든 매혹을 발산하는 라칸은 악명 높은 바스타야 말썽꾼이자 로틀란 부족 역사상 가장 훌륭한 전장의 춤꾼이다. 아이오니아 고원 지대에 사는 사람들에게 라칸이라는 이름은 꽤 오래 전부터 시끌벅적한 축제, 흥이 넘치는 파티, 기존의 규칙을 거부하는 음악과 동일시되고 있다. 하지만 타고난 춤꾼이자 활력 넘치는 방랑자인 라칸이 저항 운동을 하는 자야와 동반자 관계가 되었으며, 자야의 대의에 헌신하고 있다는 사실을 아는 사람은...",
+      },
+      zh: {
+        name: "洛",
+        title: "幻翎",
+        blurb:
+          "对洛特兰部落而言，瓦斯塔亚的洛是臭名远播的捣蛋鬼，同时也是有史以来最为出色的战舞舞者。他风流潇洒，魅力无穷，同时却令人难以捉摸。在艾欧尼亚高地的居民眼中，“洛”这个名字一旦出现，就一定会带来热闹非凡的节日庆典、热火朝天的狂欢派对和杂乱无章的音乐。很少人知道，这个精力充沛的浪荡子和叛逆的霞是一对儿，而他的一举一动就是为了全力配合她的行动。",
+      },
+      es: {
+        title: "El Encantador",
+        blurb:
+          "Con un carácter tan impulsivo como encantador, Rakan es un infame alborotador vastaya y el mejor bailarín de batalla de la historia tribal de Lhotlan. Para los humanos de las montañas de Jonia, su nombre siempre ha sido sinónimo de festivales...",
+      },
+      fr: {
+        title: "Charmeur",
+        blurb:
+          "Aussi lunatique qu'il est charmeur, Rakan est un trublion vastaya tristement célèbre, et le plus grand danseur guerrier de l'histoire de la tribu Lhotla. Pour les humains qui vivent dans les hautes terres d'Ionia, son nom est depuis longtemps synonyme...",
+      },
+      de: {
+        title: "der Publikumsliebling",
+        blurb:
+          "Rakan, ein gleichermaßen wankelmütiger wie charmanter Geselle, ist ein berüchtigter vastayanischer Unruhestifter und der begnadetste Kriegstänzer in der Stammesgeschichte der Lhotlan. Für die Menschen des ionischen Hochlandes ist sein Name seit langer...",
+      },
+      pt: {
+        title: "O Charmoso",
+        blurb:
+          "Inconsistente e charmoso, Rakan é um conhecido encrenqueiro vastaya e o melhor dançarino de batalha da história da tribo Lhotlan. Para os humanos das montanhas de Ionia, seu nome sempre foi sinônimo de festivais mirabolantes, festas agitadas e música...",
+      },
+      ru: {
+        name: "Рэйкан",
+        title: "Обольститель",
+        blurb:
+          "Этот вастайи – обаятельный, самовлюбленный, вечно создающий проблемы, величайший боевой танцор племени Лотлэн. Словом, Рэйкан. Безумные праздники, дикие попойки и еще более дикая музыка – ионийские горцы его хорошо знают. Вот что они знают плохо, так...",
+      },
+    },
   },
   {
     id: "rammus",
@@ -2659,17 +7135,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Tank"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.95,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
+      range: 0.4,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.95,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
     blurb: "ラムス──謎に包まれたこの生き物を、聖なる存在と崇拝してやまない者は多い。",
+    blurbEn:
+      "Idolized by many, dismissed by some, mystifying to all, the curious being Rammus is an enigma. Protected by a spiked shell, he inspires increasingly disparate theories on his origin wherever he goes—from demigod, to sacred oracle, to a mere beast...",
+    loc: {
+      ko: {
+        name: "람머스",
+        title: "중무장 아르마딜로",
+        blurb:
+          "알 수 없는 신비의 존재 람머스. 누군가에게는 숭배의 대상이고, 또 누군가에게는 경외의 대상인 우상과도 같은 인물. 더러는 우리와 똑같은 인간으로 여겨지는 경우도 있다. 하지만 한 가지 분명한 것은 그 누구도 람머스의 정체를 제대로 알지 못한다는 것. 베일에 가려진 수수께끼의 존재라는 사실이다. 뾰족한 못이 박힌 갑옷을 입고 다니는 그를 두고 사람들은 여러가지 추측을 내놓는다. 반신반인의 존재라느니, 신성한 사제라느니, 마술에 걸린 야수일 뿐이라는...",
+      },
+      zh: {
+        name: "拉莫斯",
+        title: "披甲龙龟",
+        blurb:
+          "许多人对其崇拜敬仰，少数人对其嗤之以鼻，但所有人都对其一无所知。奇怪而有趣的生物拉莫斯就是一个谜团。他全身覆盖尖刺硬壳，人们对他的出身来历的猜测层出不穷——有人说他是半神，有人说他是神谕者，有人说他只是普通的野兽，遭遇了魔法的影响而发生彻底变异。无论真相如何，拉莫斯始终都默不作声，而且不会为任何人停留，永远都在沙漠中奔走游荡。",
+      },
+      es: {
+        title: "El Armadurillo",
+        blurb:
+          "Idealizado por muchos, ignorado por otros, inexplicable para todos, Rammus, el extraño ser, es todo un enigma. Protegido por un armazón de pinchos, inspira teorías cada vez más absurdas sobre sus orígenes allá donde va. Estas pasan por considerarlo un...",
+      },
+      fr: {
+        title: "Tatou blindé",
+        blurb:
+          "Beaucoup l'idolâtrent, certains le méprisent, mais tous restent perplexes devant l'énigmatique Rammus. Protégé par une carapace cloutée, il inspire des théories de plus en plus variées sur ses origines : demi-dieu, oracle, simple bête transformée par la...",
+      },
+      de: {
+        title: "das Panzergürteltier",
+        blurb:
+          "Rammus wird von vielen idealisiert, von einigen kaum ernst genommen und ist generell ein kurioses Wesen, das voller Rätsel steckt. Er steckt in einem stacheligen Panzer, der ihn schützt, und ist Gegenstand immer verrückterer Theorien bezüglich seines...",
+      },
+      pt: {
+        title: "o Tatu Blindado",
+        blurb:
+          "Idolatrado por muitos, dispensado por alguns e misterioso para todos, Rammus é um ser curioso e enigmático. Protegido por um casco espetado, ele inspira teorias cada vez mais divergentes sobre sua origem por onde quer que passe — de semideus, a oráculo...",
+      },
+      ru: {
+        name: "Раммус",
+        title: "Броненосец",
+        blurb:
+          "Многие его боготворят, некоторые – не воспринимают всерьез, но для всех он остается тайной. Раммус – удивительное и загадочное существо с шипастым панцирем. Многие гадают о его происхождении: то ли он полубог, то ли священный оракул, то ли просто...",
+      },
+    },
   },
   {
     id: "reksai",
@@ -2680,20 +7198,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Void",
     ddragonId: "RekSai",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
-    blurb: "頂点捕食者であるレク＝サイは地中を移動し、獲物を奇襲して貪り食う無情なヴォイドの生物だ。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
+    blurb:
+      "頂点捕食者であるレク＝サイは地中を移動し、獲物を奇襲して貪り食う無情なヴォイドの生物だ。",
+    blurbEn:
+      "An apex predator, Rek'Sai is a merciless Void-spawn that tunnels beneath the ground to ambush and devour unsuspecting prey. Her insatiable hunger has laid waste to entire regions of the once-great empire of Shurima—merchants, traders, even armed...",
+    loc: {
+      ko: {
+        name: "렉사이",
+        title: "공허의 복병",
+        blurb:
+          "최상위 포식자 렉사이는 무자비한 공허 태생 생명체로, 땅굴을 파고 들어가 있다가 방심한 먹잇감을 덮쳐 게걸스럽게 집어삼킨다. 렉사이의 그칠 줄 모르는 식탐 때문에 위대한 슈리마 제국 전체가 초토화되었을 정도다. 사막을 오가는 상인이나 여행자들은 아무리 철저하게 무장을 했더라도 렉사이의 영토를 피하려고 일부러 멀고 먼 길을 돌아가곤 한다. 렉사이가 지평선에 보이면, 지하에서 기다리고 있는 것은 죽음 뿐이라는 것을 모르는 사람은 없다.",
+      },
+      zh: {
+        name: "雷克塞",
+        title: "虚空遁地兽",
+        blurb:
+          "作为食物链顶端的掠食者，残忍无情的虚空生物，雷克赛能够在地下挖掘隧道，偷袭并吞食毫无防备的猎物。她那永不满足的饥渴让曾经鼎盛一时的恕瑞玛帝国所在的地区满目疮痍。商人、贸易者和武装商队都会绕行百里，来躲开这些广袤的地区。一旦有人在遥远的地平线看到雷克赛，就等于看到自己葬身沙砾之下的命运。",
+      },
+      es: {
+        title: "La Amenaza Subterránea",
+        blurb:
+          "Rek'Sai, en la cima de la pirámide de los depredadores, es un ente del Vacío despiadado que excava túneles por debajo del terreno para emboscar y devorar a presas ignorantes. Su insaciable hambre ha sembrado la destrucción en regiones enteras del...",
+      },
+      fr: {
+        title: "Traqueuse du Néant",
+        blurb:
+          "Rek'Sai est une créature prédatrice – la plus imposante et la plus féroce de son espèce – qui se déplace sous terre pour surprendre ses proies. Sa faim insatiable a ravagé des régions entières de Shurima à l'époque où cet empire était encore florissant...",
+      },
+      de: {
+        title: "die Leerenwühlerin",
+        blurb:
+          "Rek'Sai ist ein fähiger Räuber und erbarmungsloses Geschöpf der Leere, gräbt sich durch Tunnel im Boden und lauert darauf, ihre nichtsahnende Beute aus dem Hinterhalt zu verschlingen. Ihr unersättlicher Hunger hat ganze Regionen des einst so großartigen...",
+      },
+      pt: {
+        title: "a Escavadora do Vazio",
+        blurb:
+          "A predadora perfeita, Rek'Sai é uma criatura do Vazio sem piedade que anda por túneis no subsolo para emboscar e devorar vítimas desavisadas. Sua fome insaciável já destruiu regiões inteiras do outrora gigantesco império de Shurima. Mercadores...",
+      },
+      ru: {
+        name: "Рек'Сай",
+        title: "Хозяйка недр Бездны",
+        blurb:
+          "Непревзойденная хищница Рек'Сай – безжалостное порождение Бездны, которое роет подземные туннели, подстерегая ничего не подозревающую добычу, а затем набрасываясь на нее. Ее ненасытный голод опустошал целые регионы некогда великой империи Шуримы –...",
+      },
+    },
   },
   {
     id: "rell",
@@ -2704,20 +7265,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Rell",
     roles: ["Support"],
-    archetypes: ["Tank","Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.05,
-  damage: 0.05,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.05,
-  scaling: 0.5
-}),
-    blurb: "黒薔薇団による残酷な実験の産物であるレルは、ノクサスの打倒を胸に誓った、反逆の生きた兵器である。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.05,
+      damage: 0.05,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.05,
+      scaling: 0.5,
+    }),
+    blurb:
+      "黒薔薇団による残酷な実験の産物であるレルは、ノクサスの打倒を胸に誓った、反逆の生きた兵器である。",
+    blurbEn:
+      "The product of brutal experimentation at the hands of the Black Rose, Rell is a defiant, living weapon determined to topple Noxus. Her childhood was one of misery and horror, enduring unspeakable procedures to perfect and weaponize her magical control...",
+    loc: {
+      ko: {
+        name: "렐",
+        title: "철의 여인",
+        blurb:
+          "검은 장미단의 악랄한 실험으로 탄생한 렐은 녹서스의 전복만을 위해 달리는 생체 무기이다. 금속을 조종하는 능력 때문에 그녀는 고통과 공포로 점철된 어린 시절을 보내며 끔찍한 전투 훈련을 받아야 했다. 견디다 못한 나머지 자신을 구속한 자들을 죽이고 도망쳤고, 결국 범죄자로 낙인찍혔다. 자유의 몸이 된 렐은 이제 자신과 같은 고통을 겪던 아이들을 구출하며 녹서스 병사들을 보이는 대로 처치한다. 그리고 과거의 스승들에게는 무자비한 죽음을 안겨 주고...",
+      },
+      zh: {
+        name: "芮尔",
+        title: "镕铁少女",
+        blurb:
+          "芮尔是黑色玫瑰用凶残的试验一手制造出来的产物，她是狂妄的活体武器，决心要颠覆诺克萨斯。她的童年悲惨且惊悚，那些不可言说的处理过程将她的魔法塑造成完美的武器，让她可以任意控制金属。直到最后她展开了一场暴力的逃离，从数量众多的看管者中杀出一条血路。如今，被认定为逃犯的芮尔对诺克萨斯士兵进行无差别攻击，同时寻找着曾经“学院”里的幸存者，保护柔弱者，对曾经的那些教员送去无情的死亡。",
+      },
+      es: {
+        title: "la Dama de Hierro",
+        blurb:
+          "Rell, producto de crueles experimentos a manos de la Rosa Negra, es ahora una intrépida arma viviente decidida a hacer caer Noxus. Su infancia estuvo marcada por la desdicha y el horror, pues se vio sometida a espeluznantes tratamientos para...",
+      },
+      fr: {
+        title: "Vierge de fer",
+        blurb:
+          "Changée en arme vivante par les expériences brutales de l'académie de la Rose noire, Rell est aujourd'hui déterminée à détruire Noxus. Son enfance a été particulièrement horrible ; on lui a fait subir des choses atroces afin de perfectionner ses...",
+      },
+      de: {
+        title: "die eiserne Jungfrau",
+        blurb:
+          "Rell ist das Ergebnis grausamer Experimente der Schwarzen Rose, die sie in eine lebende Waffe verwandelt haben. Seitdem setzt sie alles daran, Noxus zu vernichten. Ihre Kindheit war von Elend und Schrecken geprägt, als sie unaussprechliche Eingriffe...",
+      },
+      pt: {
+        title: "a Dama de Ferro",
+        blurb:
+          "Produto de um experimento brutal nas mãos da Rosa Negra, Rell é uma arma humana rebelde que está determinada a destruir Noxus. Sua infância foi repleta de sofrimento e horror; a jovem teve que suportar procedimentos indescritíveis para aperfeiçoar e...",
+      },
+      ru: {
+        name: "Релл",
+        title: "Железная дева",
+        blurb:
+          "Релл – результат бесчеловечных экспериментов Черной Розы, живое оружие, стремящееся уничтожить Ноксус. Ее несчастливое детство было полно ужасов, ей пришлось пройти чудовищные испытания, чтобы довести до совершенства умение управлять металлом, но в...",
+      },
+    },
   },
   {
     id: "renata",
@@ -2728,20 +7332,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Renata",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.66,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "レナータ・グラスクは幼少期を過ごした家の焼け跡から、その名前と、両親が遺した錬金術の研究資料だけを手に再び立ち上がった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.66,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "レナータ・グラスクは幼少期を過ごした家の焼け跡から、その名前と、両親が遺した錬金術の研究資料だけを手に再び立ち上がった。",
+    blurbEn:
+      "Renata Glasc rose from the ashes of her childhood home with nothing but her name and her parents' alchemical research. In the decades since, she has become Zaun's wealthiest chem-baron, a business magnate who built her power by tying everyone's...",
+    loc: {
+      ko: {
+        name: "레나타 글라스크",
+        title: "화공 남작",
+        blurb:
+          "레나타 글라스크는 어린 시절 집의 잿더미를 딛고 일어섰다. 그때 레나타가 가진 것은 이름과 부모님의 연금술 연구 자료뿐이었다. 수십 년이 지나, 레나타는 자운에서 가장 부유한 화공 남작 겸 거물 사업가가 되었다. 그녀는 모든 사람의 이해관계를 자신과 묶어서 막대한 힘을 쌓았다. 레나타와 함께하는 자는 상상 이상의 보상을 받는다. 레나타를 거스르는 자는 그 선택을 후회하며 살아간다. 하지만 결국에는 모두가 그녀의 편에 설 것이다.",
+      },
+      zh: {
+        name: "烈娜塔 · 戈拉斯克",
+        title: "炼金男爵",
+        blurb:
+          "烈娜塔•格拉斯克从童年家宅的灰烬中走出，仅凭自己的名字和父母的炼金术研究成果白手起家。在后来的几十年里，她成为了祖安炼金男爵中的首富，通过利益捆绑积累人脉。与她合作，就将获得难以计量的奖赏。与她作对，就将捶胸顿足悔不当初。但到最后，所有人都会成为她的附庸。",
+      },
+      es: {
+        title: "la Baronesa Química",
+        blurb:
+          "Renata Glasc resurgió de las cenizas del hogar de su infancia con poco más que su apellido y la investigación alquímica de sus padres. En las siguientes décadas, se convirtió en la baronesa química más rica de Zaun, una gran empresaria que ha cimentado...",
+      },
+      fr: {
+        title: "Baronne de la chimie",
+        blurb:
+          "Renata Glasc s'extirpa des cendres de sa maison natale avec son nom et les recherches alchimiques de ses parents pour seules possessions. Au cours des décennies suivantes, elle devint la Baronne de la chimie la plus riche de Zaun et un génie des...",
+      },
+      de: {
+        title: "die Chem-Baronin",
+        blurb:
+          "Renata Glasc erhob sich wie ein Phönix aus der Asche des Hauses, in dem sie aufgewachsen war, und hatte nichts als ihren Namen und die alchemistischen Forschungen ihrer Eltern. In den folgenden Jahrzehnten wurde sie zu Zhauns wohlhabendster Chem-Baronin...",
+      },
+      pt: {
+        title: "a Baronesa da Química",
+        blurb:
+          "Renata Glasc emergiu das cinzas de seu antigo lar com nada além da pesquisa alquímica de seus pais e seu próprio nome. Décadas se passaram, e ela se tornou a Baronesa da Química mais rica de Zaun, uma magnata que consolidou seu poder ligando os...",
+      },
+      ru: {
+        name: "Рената Гласк",
+        title: "Химбаронесса",
+        blurb:
+          "Рената Гласк потеряла в пожаре дом и родителей. Остались лишь их медицинские исследования и доброе имя. За несколько десятков лет Рената сумела стать богатейшей химбаронессой Зауна, настоящим магнатом, чье богатство строится на умении превращать...",
+      },
+    },
   },
   {
     id: "renekton",
@@ -2752,20 +7399,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Shurima",
     ddragonId: "Renekton",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
     blurb: "威圧的な巨体に怒りをみなぎらせた超越者レネクトンは、灼熱のシュリーマに生まれ出でた。",
+    blurbEn:
+      "Renekton is a terrifying, rage-fueled Ascended being from the scorched deserts of Shurima. Once, he was his empire's most esteemed warrior, leading the nation's armies to countless victories. However, after the empire's fall, Renekton was entombed...",
+    loc: {
+      ko: {
+        name: "레넥톤",
+        title: "사막의 도살자",
+        blurb:
+          "불길에 그을린 슈리마 사막에서 다시 일어선 무시무시한 분노의 초월체, 레넥톤. 한 때 그는 슈리마 최고의 전사로서 무수한 전쟁을 승리로 이끌었다. 하지만 슈리마의 몰락과 함께 사막 아래 무덤 속에 갇혔고, 강산이 변하는 억겁의 세월을 어둠 속에서 보내면서 서서히 광기에 굴복해 갔다. 다시 자유의 몸이 된 레넥톤이 원하는 것은 단 하나, 자신을 가둔 형에 대한 복수뿐이다.",
+      },
+      zh: {
+        name: "雷克顿",
+        title: "荒漠屠夫",
+        blurb:
+          "雷克顿是一位来自恕瑞玛炙热沙漠中的面目可怖、野蛮狂怒的飞升者。他曾经是帝国最受尊敬的战士，带领恕瑞玛的军队取得过无数次胜利。然而，在帝国陨落以后，雷克顿被困在了沙漠之下，慢慢地，在世界变迁的同时，雷克顿丧失了理智。现在他重获自由，但却被一个执念吞噬：找到并杀死他的哥哥内瑟斯，因为疯狂之中的他坚信内瑟斯是害他经受数百年黑暗束缚的罪魁祸首。",
+      },
+      es: {
+        title: "El Carnicero de las Arenas",
+        blurb:
+          "Renekton es una terrorífica criatura Ascendida movida por la ira y procedente de los desiertos abrasadores de Shurima. En su día fue el guerrero más admirado del imperio, un líder que condujo a los ejércitos de la nación a incontables victorias. Sin...",
+      },
+      fr: {
+        title: "Dévoreur des sables",
+        blurb:
+          "Originaire du désert brûlant de Shurima, Renekton est un Transfiguré terrifiant animé par la rage. Il était autrefois le guerrier le plus respecté de l'empire de Shurima, dont il avait mené les armées vers la victoire à maintes reprises. Cependant...",
+      },
+      de: {
+        title: "der Schlächter des Sandes",
+        blurb:
+          "Renekton ist ein schrecklicher, zornentbrannter Aufgestiegener aus den sengenden Wüsten von Shurima. Einst war er der angesehenste Krieger seines Reiches, der dessen Armeen zu zahlreichen Siegen führte. Allerdings wurde Renekton nach dem Fall des...",
+      },
+      pt: {
+        title: "o Carniceiro das Areias",
+        blurb:
+          "Renekton é um aterrorizante e furioso ser Ascendente dos desertos escaldantes de Shurima. Ele já foi o guerreiro mais estimado de todo o seu império, levando os exércitos da nação a inúmeras vitórias. No entanto, após a queda do império, Renekton foi...",
+      },
+      ru: {
+        name: "Ренектон",
+        title: "Мясник из песков",
+        blurb:
+          "Ренектон – ужасное вознесшееся существо из опаленной пустыни Шурима, движимое яростью. Некогда он был самым почитаемым воином империи и вел ее армии к многочисленным победам. Но когда империя пала, Ренектона погребли пески; и пока мир наверху менялся...",
+      },
+    },
   },
   {
     id: "rengar",
@@ -2775,21 +7464,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "孤高のハンター",
     region: "Ixtal",
     ddragonId: "Rengar",
-    roles: ["Jungle","Top"],
-    archetypes: ["Assassin","Fighter"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Assassin", "Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.45
-}),
-    blurb: "獰猛にして卓越…ヴァスタヤのハンターであるレンガーは、危険な生物を追跡して殺す、そのスリルを味わうために生きている。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.45,
+    }),
+    blurb:
+      "獰猛にして卓越…ヴァスタヤのハンターであるレンガーは、危険な生物を追跡して殺す、そのスリルを味わうために生きている。",
+    blurbEn:
+      "Rengar is a ferocious vastayan trophy hunter who lives for the thrill of tracking down and killing dangerous creatures. He scours the world for the most fearsome beasts he can find, especially seeking any trace of Kha'Zix, the void creature who...",
+    loc: {
+      ko: {
+        name: "렝가",
+        title: "추적하는 사자",
+        blurb:
+          "포악한 기질의 렝가는 바스타야 종족으로, 난폭하고 사나운 생명체를 추적하고 처치하는 순간의 짜릿한 전율을 삶의 낙으로 여기는 전리품 수집가다. 그는 강하고 무시무시한 괴물을 사냥하기 위해 온 세상을 샅샅이 뒤진다. 그중에서도 그가 가장 찾고자 하는 사냥감은 그의 한쪽 눈을 앗아간 공허의 약탈자 카직스다. 렝가가 사냥을 하는 이유는 굶주린 배를 채우기 위함도, 영광을 누리기 위함도 아니다. 그는 사냥 그 자체의 즐거움을 만끽하기 위해 오늘도 먹잇감을...",
+      },
+      zh: {
+        name: "雷恩加尔",
+        title: "傲之追猎者",
+        blurb:
+          "瓦斯塔亚人雷恩加尔是一名声名远扬、凶悍无比的猎手，一生都在追寻猎杀危险生物时的快感。他走遍整个世界，只为寻找那些最可怕的野兽——尤其是卡兹克。那头来自虚空的怪物曾弄瞎了他的一只眼睛。雷恩加尔追寻猎物，不为捕食也不为荣耀，只是为了纯粹的猎杀所带来的暴力之美。",
+      },
+      es: {
+        title: "El Acechador Orgulloso",
+        blurb:
+          "Rengar es un feroz cazador de trofeos vastaya que vive por el placer de perseguir y asesinar criaturas peligrosas. Explora el mundo en busca de las bestias más aterradoras, pero, ante todo, quiere encontrar alguna pista que lo lleve hasta Kha'Zix, la...",
+      },
+      fr: {
+        title: "Fier traqueur",
+        blurb:
+          "Rengar est un féroce Vastaya chasseur de trophées qui ne vit que pour le frisson de la traque et de l'élimination des proies les plus dangereuses. Il parcourt le monde à la recherche des bêtes les plus féroces, et surtout de Kha'Zix, la créature du...",
+      },
+      de: {
+        title: "der stolze Jäger",
+        blurb:
+          "Rengar ist ein blutdurstiger vastayanischer Trophäenjäger, der für den Nervenkitzel lebt, gefährliche Kreaturen aufzuspüren und zu töten. Er durchstreift die Welt auf der Suche nach den furchterregendsten Bestien, die er finden kann. Dabei hält er vor...",
+      },
+      pt: {
+        title: "o Acossador da Alcateia",
+        blurb:
+          "Rengar é um feroz caçador de troféus vastaya que gosta da emoção proporcionada pela caça e pelo abate de criaturas perigosas. Ele vasculha o mundo em busca das feras mais perigosas que pode encontrar, procurando principalmente por Kha'Zix, a criatura do...",
+      },
+      ru: {
+        name: "Ренгар",
+        title: "Охотник за трофеями",
+        blurb:
+          "Ренгар – самый свирепый из всех вастайи. Охотник за головами, он живет ради трепета погони и ярости битвы. Львиноголовый рыскает по миру в поисках самых жутких чудовищ, не забывая о главной цели – Ка'Зиксе, монстре из Бездны, который лишил его глаза...",
+      },
+    },
   },
   {
     id: "riven",
@@ -2800,20 +7532,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Riven",
     roles: ["Top"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.45
-}),
-    blurb: "リヴェンはかつてノクサス軍の剣術家だったが、今では自らが過去に征服しようとした土地で追放者として暮らしている。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.45,
+    }),
+    blurb:
+      "リヴェンはかつてノクサス軍の剣術家だったが、今では自らが過去に征服しようとした土地で追放者として暮らしている。",
+    blurbEn:
+      "Once a swordmaster in the warhosts of Noxus, Riven is an expatriate in a land she previously tried to conquer. She rose through the ranks on the strength of her conviction and brutal efficiency, and was rewarded with a legendary runic blade and a...",
+    loc: {
+      ko: {
+        name: "리븐",
+        title: "추방자",
+        blurb:
+          "한때 녹서스 군의 소드마스터였던 리븐은 그녀가 정복하려던 땅에서 추방자로 살아가고 있다. 그녀는 확고한 믿음과 잔혹함에 가까운 능력에 힘입어 상급 군인으로 진급하고 전설의 룬 검과 군대를 포상으로 받았다. 그러나 녹서스에 대한 리븐의 믿음은 아이오니아 전선에서 시험대에 올랐고 결국 산산히 깨지고 말았다. 제국과의 모든 연결고리를 끊어버린 그녀는 산산이 조각난 세상 속 몸을 맡길 곳을 찾아 방랑하고 있다. 녹서스 제국이 재건되었다는 무성한 소문에도...",
+      },
+      zh: {
+        name: "锐雯",
+        title: "放逐之刃",
+        blurb:
+          "曾担任诺克萨斯军队剑士长的锐雯，正在那片她一度想要征服的土地上流浪。她在军中以无匹的信念和蛮悍的行事风格不断获得晋升，并得到一把传奇的符文之刃和属于自己的战团作为奖赏——然而在征战艾欧尼亚的前线上，锐雯对祖国的信仰遭到了考验。最终，信仰粉碎的锐雯，切断了与帝国的一切关联，在分崩离析的世界中找寻自己的归宿。即便谣言纷传，说诺克萨斯已经重铸……",
+      },
+      es: {
+        title: "La Exiliada",
+        blurb:
+          "Antaño maestra de la espada de las huestes de Noxus, Riven es una expatriada en la tierra que previamente había tratado de conquistar. Fue ascendiendo de rango gracias a la fuerza de su convicción y a su brutal eficiencia, y fue recompensada con una...",
+      },
+      fr: {
+        title: "Exilée brisée",
+        blurb:
+          "Autrefois soldat d'un régiment de Noxus, Riven est désormais expatriée dans un pays qu'elle avait elle-même tenté d'envahir. Elle s'est naguère élevée dans la hiérarchie grâce à sa force de conviction et à son efficacité brutale : sa récompense fut de...",
+      },
+      de: {
+        title: "die Verbannte",
+        blurb:
+          "Riven war einst Schwertmeisterin in der noxianischen Kriegswehr und fristet ihr Leben heute als Exilantin in dem Land, das sie einst zu erobern versuchte. Sie stieg allein durch die Kraft ihrer Überzeugung und dank brutaler Effizienz in den Rängen der...",
+      },
+      pt: {
+        title: "a Exilada",
+        blurb:
+          "Outrora mestra das espadas nos esquadrões de Noxus, agora Riven é uma expatriada em uma terra que um dia já tentou conquistar. Depois de alcançar os altos escalões do exército usando a força de sua convicção e sua brutal eficiência, ela foi recompensada...",
+      },
+      ru: {
+        name: "Ривен",
+        title: "Изгнанница",
+        blurb:
+          "Когда-то Ривен была мастером меча в Ноксусе, но теперь она – изгнанница, вынужденная скрываться на земле, которую прежде пыталась завоевать. Она быстро поднялась по карьерной лестнице благодаря своим убеждениям и сноровке, в конце концов получив в...",
+      },
+    },
   },
   {
     id: "rumble",
@@ -2824,20 +7599,62 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Rumble",
     roles: ["Top"],
-    archetypes: ["Fighter","Mage"],
+    archetypes: ["Fighter", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.55,
-  difficulty: 0.95,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.55,
+      difficulty: 0.95,
+      scaling: 0.6,
+    }),
     blurb: "ランブルは若くて気性の荒い発明家だ。",
+    blurbEn:
+      "Rumble is a young inventor with a temper. Using nothing more than his own two hands and a heap of scrap, the feisty yordle constructed a colossal mech suit outfitted with an arsenal of electrified harpoons and incendiary rockets. Though others may scoff...",
+    loc: {
+      ko: {
+        name: "럼블",
+        title: "기계 악동",
+        blurb:
+          "럼블은 한 성깔 하는 젊은 요들로, 탁월한 발명가이기도 하다. 두 손과 고철 더미만으로 전기 작살과 소이 로켓을 장착한 거대 기계 로봇을 뚝딱 만들어냈다. 고철부품으로 만든 럼블의 작품을 비웃고 조롱하는 자가 있더라도 럼블은 눈 하나 깜박하지 않는다. 어차피 전장을 휩쓸 화염방사기는 자신의 손에 있으니까.",
+      },
+      zh: {
+        name: "兰博",
+        title: "机械公敌",
+        blurb:
+          "兰博是一个有脾气的约德尔青年发明家。他仅用自己的双手和一堆废铁，就造出了一架巨大的机甲，上面还搭载了电击鱼叉和燃烧火箭弹等超常规武器。虽然其他人可能对他的垃圾场发明嗤之以鼻，但兰博根本不在乎——毕竟，喷出铄金之火的枪口，在他自己手里。",
+      },
+      es: {
+        title: "La Amenaza Mecánica",
+        blurb:
+          "Rumble es un joven inventor con temperamento. Utilizando nada más que sus propias manos y un montón de chatarra, el yordle peleón construyó un traje mecha colosal equipado con un arsenal de arpones electrificados y cohetes incendiarios. Aunque los demás...",
+      },
+      fr: {
+        title: "Menace mécanisée",
+        blurb:
+          "Rumble est un jeune inventeur soupe au lait. Ne disposant que de ses deux mains et d'une pile de ferraille, le yordle au tempérament de feu se fabriqua une colossale armure mécanique, dotée d'un arsenal de harpons électrifiés et de roquettes...",
+      },
+      de: {
+        title: "die mechanisierte Bedrohung",
+        blurb:
+          "Rumble ist ein junger Erfinder mit hitzigem Gemüt. Mit nichts weiter als seinen beiden Händen und einem Schrotthaufen konstruierte dieser quirlige Yordle einen gewaltigen Mech-Anzug, der mit einem Arsenal an elektrifizierten Harpunen und Brandraketen...",
+      },
+      pt: {
+        title: "a Ameaça Mecânica",
+        blurb:
+          "Rumble é um jovem inventor irritadiço. Usando nada além de suas próprias mãos e uma pilha de sucata, o yordle briguento construiu um mecha colossal montado com um arsenal de arpões eletrificados e foguetes incendiários. Apesar de outros rirem de suas...",
+      },
+      ru: {
+        name: "Рамбл",
+        title: "Механизированная угроза",
+        blurb:
+          "Рамбл – юный изобретатель со взрывным характером. Из обычной груды металлолома упорный йордл собственноручно соорудил огромный механический костюм с целым арсеналом электрических гарпунов и зажигательных ракет. И пусть другие сколько угодно насмехаются...",
+      },
+    },
   },
   {
     id: "ryze",
@@ -2847,21 +7664,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ルーンの魔導師",
     region: "Ionia",
     ddragonId: "Ryze",
-    roles: ["Mid","Top"],
+    roles: ["Mid", "Top"],
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "ライズは類まれな能力を持つルーンテラ屈指の魔術師として知られ、古くから揺るぎない信念を持って活動している。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ライズは類まれな能力を持つルーンテラ屈指の魔術師として知られ、古くから揺るぎない信念を持って活動している。",
+    blurbEn:
+      "Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes—fragments...",
+    loc: {
+      ko: {
+        name: "라이즈",
+        title: "룬 마법사",
+        blurb:
+          "룬테라의 최고 마법사로 널리 알려진 라이즈는 산전수전을 겪으며 중차대한 임무를 수행하는 고대의 대마법사다. 가공할 마력과 무한한 체력을 보유한 그는, 태초에 무에서 세계를 창조한 원초적 마법의 파편인 룬을 찾기 위해 쉴 틈 없이 이곳저곳을 떠돌고 있다. 룬이 룬테라에 어떤 참사를 일으킬 수 있는지 알고 있기에 라이즈는 룬이 잘못된 손에 들어가지 않도록 빠짐없이 찾아야만 한다.",
+      },
+      zh: {
+        name: "瑞兹",
+        title: "符文法师",
+        blurb:
+          "瑞兹是符文之地广为人知的最老练的法师之一。他生于远古，饱经风霜，肩负着不可承受之重任。这位大法师的武器，是他无可摧折的决心和丰富的秘法学识，他一生都在寻找着世界符文 ——它们是令这世界从无到有、万物成形的原生魔法所留下的碎片。他一定要找到所有这些神秘的字符，以免落入恶人之手，因为瑞兹知道它们可能给符文之地带来怎样的浩劫。",
+      },
+      es: {
+        title: "El Hechicero Rúnico",
+        blurb:
+          "Ryze es considerado uno de los hechiceros con más experiencia de Runaterra. El archimago ancestral y gruñón lleva sobre sus hombros una pesada carga. Con su constitución sin límites y su inmenso poder arcano, Ryze se pasa la vida buscando...",
+      },
+      fr: {
+        title: "Mage runique",
+        blurb:
+          "Largement considéré comme l'un des plus puissants sorciers de Runeterra, Ryze est un archimage endurci par les ans qui porte un fardeau incommensurable sur ses épaules. Armé d'une constitution à toute épreuve et d'un vaste arsenal de connaissances...",
+      },
+      de: {
+        title: "der Runenmagier",
+        blurb:
+          "Ryze gilt weit und breit als einer der fähigsten Zauberer Runeterras, und ist ein hartgesottener Erzmagier, dem eine unglaublich schwere Bürde auf den Schultern lastet. Seine unerschütterliche Entschlossenheit und seine immensen arkanen Kräfte helfen...",
+      },
+      pt: {
+        title: "o Mago Rúnico",
+        blurb:
+          "Considerado pela grande maioria como o mago mais habilidoso de Runeterra, Ryze é um arquimago ancião e amargo que carrega um enorme peso. Dotado de um enorme poder arcano e de uma notável estrutura física, ele busca incansavelmente pelas Runas Globais...",
+      },
+      ru: {
+        name: "Райз",
+        title: "Рунный маг",
+        blurb:
+          "Райз считается одним из самых сильных магов Рунтерры. Он стар и упрям – и несет на своих плечах невыносимо тяжкое бремя. В распоряжении Райза – огромное количество магической энергии и крепкие мускулы. Маг безустанно занят поиском Мировых рун –...",
+      },
+    },
   },
   {
     id: "samira",
@@ -2872,20 +7732,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Samira",
     roles: ["ADC"],
-    archetypes: ["Marksman","Assassin"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
     blurb: "サミーラはゆるぎない自信を浮かべた目で死を見つめ、行く先々でスリルを探し求める。",
+    blurbEn:
+      "Samira stares death in the eye with unyielding confidence, seeking thrill wherever she goes. After her Shuriman home was destroyed as a child, Samira found her true calling in Noxus, where she built a reputation as a stylish daredevil taking on...",
+    loc: {
+      ko: {
+        name: "사미라",
+        title: "사막의 장미",
+        blurb:
+          "사미라는 죽음의 순간에서도 눈 하나 깜짝하지 않는다. 그저 어디에 있든 도전을 찾아 헤맬 뿐이다. 어린 시절 슈리마의 고향이 파괴된 후로 녹서스에서 자신의 길을 찾았고, 그때부터 화려하면서도 무모한 방식으로 위험한 임무를 탁월하게 수행하는 자라는 명성을 쌓았다. 검은 화약을 담은 권총과 자신을 위해 정교히 만들어진 칼날과 함께, 사미라는 생사의 상황에서 빠른 몸놀림과 재능으로 그녀의 앞을 가로막는 자들을 모두 제거한다.",
+      },
+      zh: {
+        name: "莎弥拉",
+        title: "沙漠玫瑰",
+        blurb:
+          "莎弥拉以寸步不让的自信直视死亡，无论走到哪里都要寻找刺激。生于恕瑞玛的她在很小的时候就被摧毁了家园，后来受到了诺克萨斯的感召，在那里，她成为了英姿飒爽的孤胆女将，专门处理最高规格的凶险任务。莎弥拉使用黑火药双枪外加一把特殊制程工艺的大刀，她在生死存亡的关头尤为勇猛，以闪钢与烈焰终结任何拦路者。",
+      },
+      es: {
+        title: "la Rosa del Desierto",
+        blurb:
+          "Samira mira de cara a la muerte con una confianza férrea y busca emociones extremas allá donde va. Tras la destrucción de su hogar en Shurima cuando era una niña, Samira encontró su verdadera vocación en Noxus, donde se ganó la reputación de ser una...",
+      },
+      fr: {
+        title: "Rose du désert",
+        blurb:
+          "Toujours en quête de sensations fortes, Samira regarde la mort dans les yeux avec une confiance inébranlable. Après la destruction qui a frappé son foyer shurimien lorsqu'elle était enfant, Samira a trouvé sa véritable vocation à Noxus, où elle s'est...",
+      },
+      de: {
+        title: "die Wüstenrose",
+        blurb:
+          "Samira blickt dem Tod mit unnachgiebigem Selbstbewusstsein ins Auge und sucht überall nach Nervenkitzel. Nachdem ihr shurimanisches Zuhause zerstört wurde, als sie noch ein Kind war, fand sie ihre wahre Berufung in Noxus, wo sie als stilsichere...",
+      },
+      pt: {
+        title: "a Rosa do Deserto",
+        blurb:
+          "Samira encara a morte nos olhos com confiança inabalável, procurando diversão e adrenalina aonde quer que vá. Depois que seu lar em Shurima foi destruído quando ainda era criança, ela encontrou sua verdadeira vocação em Noxus, onde conquistou fama como...",
+      },
+      ru: {
+        name: "Самира",
+        title: "Пустынная роза",
+        blurb:
+          "Самира смотрит в лицо смерти с непоколебимой уверенностью и всегда ищет самые рискованные предприятия. В детстве бежав из разрушенной войной Шуримы, Самира нашла свое призвание в Ноксусе. Теперь эта стильная и бесшабашная наемница берется за самые...",
+      },
+    },
   },
   {
     id: "sejuani",
@@ -2899,17 +7801,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Tank"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.5
-}),
-    blurb: "残酷で情け容赦のないセジュアニは、フレヨルドでもっとも恐れられる部族のひとつであるウィンタークロウ族のアイスボーンの戦母だ。",
+      range: 0.4,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.5,
+    }),
+    blurb:
+      "残酷で情け容赦のないセジュアニは、フレヨルドでもっとも恐れられる部族のひとつであるウィンタークロウ族のアイスボーンの戦母だ。",
+    blurbEn:
+      "Sejuani is the brutal, unforgiving Iceborn warmother of the Winter's Claw, one of the most feared tribes of the Freljord. Her people's survival is a constant, desperate battle against the elements, forcing them to raid Noxians, Demacians, and Avarosans...",
+    loc: {
+      ko: {
+        name: "세주아니",
+        title: "혹한의 분노",
+        blurb:
+          "세주아니는 프렐요드에서 가장 공포스러운 부족 중 하나로 꼽히는 겨울 발톱 부족의 잔혹하고 무자비한 냉기의 화신이자 전쟁의 어머니이다. 세주아니의 부족은 생존을 위해 자연과 끊임 없이 절박한 싸움을 했고, 혹독한 겨울에서 살아남기 위해 녹서스, 데마시아, 아바로사를 침공해야 했다. 세주아니는 가장 위험한 공격의 선봉에 서서 멧돼지 브리슬의 안장에 타고 얼음 정수의 철퇴를 휘둘러 적을 얼리고 깨뜨린다.",
+      },
+      zh: {
+        name: "瑟庄妮",
+        title: "北地之怒",
+        blurb:
+          "瑟庄妮是凛冬之爪部族的战母。继承了寒冰血脉的她残忍无情，带领的部族也是弗雷尔卓德土地上最令人闻风丧胆的。她的部族的生存，是一场旷日持久的、毫无希望的对抗元素之力的战斗，迫使他们劫掠诺克萨斯人、德玛西亚人，还有阿瓦罗萨部族等等，以便渡过残酷的凛冬。瑟庄妮在最危险的战斗中身先士卒，骑着居瓦斯克野猪“钢鬃”冲在最前方，用她臻冰打造的链枷让敌人粉身碎骨。",
+      },
+      es: {
+        title: "La Furia del Norte",
+        blurb:
+          "Sejuani es la brutal e implacable comandante hija del hielo de la tribu Garra Invernal, una de las más temidas de Freljord. La supervivencia de su gente es una constante y desesperada lucha contra los elementos, lo que los obliga a asaltar a noxianos...",
+      },
+      fr: {
+        title: "Fureur du nord",
+        blurb:
+          "Sejuani est l'impitoyable chef de guerre sublimée de la Griffe hivernale, l'une des tribus les plus redoutées de Freljord. La survie de son peuple est une lutte constante et désespérée contre les éléments. Pour résister aux rigueurs de l'hiver, il doit...",
+      },
+      de: {
+        title: "Zorn des Nordens",
+        blurb:
+          "Sejuani ist die brutale, gnadenlose Eisgeborenen-Kriegsmutter der Winterklauen, einem der gefürchtetsten Stämme Freljords. Damit ihr Volk überleben kann, muss es einen ständigen, verzweifelten Kampf gegen die Elemente führen, der sie dazu zwingt...",
+      },
+      pt: {
+        title: "a Fúria do Norte",
+        blurb:
+          "Sejuani é a mãe de guerra Glacinata brutal e implacável da Garra do Inverno, uma das tribos mais temidas de Freljord. A sobrevivência de seu povo é uma batalha constante e desesperada contra os elementos, forçando-os a pilhar noxianos, demacianos e...",
+      },
+      ru: {
+        name: "Седжуани",
+        title: "Ярость севера",
+        blurb:
+          "Жестокая и неумолимая Седжуани – Хладорожденная ратная мать Когтя Зимы, одного из самых грозных племен Фрельйорда. Ее люди вынуждены выживать в постоянной отчаянной битве против стихий. Чтобы уцелеть в суровые зимы, им приходится устраивать набеги на...",
+      },
+    },
   },
   {
     id: "senna",
@@ -2919,21 +7864,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "救済者",
     region: "ShadowIsles",
     ddragonId: "Senna",
-    roles: ["Support","ADC"],
-    archetypes: ["Support","Marksman"],
+    roles: ["Support", "ADC"],
+    archetypes: ["Support", "Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.45,
-  durability: 0.2,
-  damage: 0.78,
-  cc: 0.7,
-  mobility: 0.45,
-  difficulty: 0.7,
-  scaling: 0.7
-}),
-    blurb: "幼い頃に呪いを受け、超自然現象である「黒き霧」に追われてきたセナは、「光の番人」として知られる聖なる騎士団に加わり、霧と激しく戦った──しかし、彼女は冷酷な亡霊",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.45,
+      durability: 0.2,
+      damage: 0.78,
+      cc: 0.7,
+      mobility: 0.45,
+      difficulty: 0.7,
+      scaling: 0.7,
+    }),
+    blurb:
+      "幼い頃に呪いを受け、超自然現象である「黒き霧」に追われてきたセナは、「光の番人」として知られる聖なる騎士団に加わり、霧と激しく戦った──しかし、彼女は冷酷な亡霊",
+    blurbEn:
+      "Cursed from childhood to be haunted by the supernatural Black Mist, Senna joined a sacred order known as the Sentinels of Light, and fiercely fought back—only to be killed, her soul imprisoned in a lantern by the cruel specter Thresh. But refusing to...",
+    loc: {
+      ko: {
+        name: "세나",
+        title: "구원자",
+        blurb:
+          "어린 시절부터 초자연적인 검은 안개에 쫓기는 저주를 받은 세나는 빛의 감시자들이라는 신성한 조직에 합류하여 검은 안개에 맹렬히 저항하지만, 잔혹한 악령 쓰레쉬의 손에 쓰러지고 랜턴에 영혼을 사로잡히게 된다. 그러나 희망을 잃지 않은 그녀는 랜턴 안에서 안개의 힘을 활용하는 법을 배워 완전히 새로운 모습으로 다시 태어난다. 제 빛과 어둠을 모두 다스릴 수 있게 된 세나는 검은 안개를 자멸케 하고자 한다. 세나의 유물 무기가 불을 뿜을 때마다, 검은...",
+      },
+      zh: {
+        name: "赛娜",
+        title: "涤魂圣枪",
+        blurb:
+          "自幼便遭遇诅咒的赛娜，注定会被那些超自然的诡秘黑雾不断侵扰，后来她加入了神圣的“光明哨兵”教团，对黑雾发起了勇猛的反击。可惜，最后她却牺牲在战场上，灵魂则被囚禁在残忍的亡灵——锤石的灯笼中。身陷囹圄的赛娜并没有放弃希望，而是学会了利用黑雾的力量，把握机会重获新生，也因此被永远地改变了。如今的赛娜可以同时操纵黑暗和光明的力量，动用黑雾的力量来终结黑雾——圣石武器的每一发炮火，都能救赎黑雾中迷失的灵魂。",
+      },
+      es: {
+        title: "la Redentora",
+        blurb:
+          "La Niebla Negra persigue a Senna desde que era niña, motivo que la llevó a unirse a una orden sagrada conocida como los Centinelas de la Luz y la motivó a luchar ferozmente... hasta que el cruel espectro llamado Thresh la asesinó y encerró su alma en...",
+      },
+      fr: {
+        title: "Rédemptrice",
+        blurb:
+          "Condamnée à être poursuivie par la Brume noire dès l'enfance, Senna rejoignit l'ordre sacré des Sentinelles de la lumière. Elle combattit avec ferveur, mais elle fut tuée et son âme fut emprisonnée dans une lanterne par l'odieux spectre Thresh. Ne...",
+      },
+      de: {
+        title: "die Erlöserin",
+        blurb:
+          "Von Kindesbeinen an dazu verflucht, vom übernatürlichen schwarzen Nebel verfolgt zu werden, schloss Senna sich dem heiligen Orden der Wächter des Lichts an und bekämpfte verbissen den Nebel – nur, um getötet zu werden und ihre Seele vom grausamen Geist...",
+      },
+      pt: {
+        title: "A Redentora",
+        blurb:
+          "Amaldiçoada desde a infância a ser perseguida pelo fenômeno sobrenatural da Névoa Negra, Senna entrou para a ordem dos Sentinelas da Luz e lutou bravamente contra seu destino, mas isso resultou em sua morte, e a alma dela acabou aprisionada em uma...",
+      },
+      ru: {
+        name: "Сенна",
+        title: "Освободительница",
+        blurb:
+          "С детства обреченная спасаться от преследующего ее черного тумана, Сенна вступила в орден Стражей света. Она яростно сражалась со своим проклятием, но погибла, а ее душу поймал в свой фонарь жестокий призрак Треш. Однако Сенна не утратила надежды и...",
+      },
+    },
   },
   {
     id: "seraphine",
@@ -2943,21 +7931,65 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "希望のメロディー",
     region: "Piltover",
     ddragonId: "Seraphine",
-    roles: ["Support","Mid"],
-    archetypes: ["Support","Mage"],
+    roles: ["Support", "Mid"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.05,
-  damage: 0.05,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.05,
-  scaling: 0.6
-}),
-    blurb: "ピルトーヴァーでゾウン人の両親のもとに生まれたセラフィーンは、他者の魂の声を聴くことができる──世界が彼女に歌いかけ、彼女も歌い返す。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.05,
+      damage: 0.05,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.05,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ピルトーヴァーでゾウン人の両親のもとに生まれたセラフィーンは、他者の魂の声を聴くことができる──世界が彼女に歌いかけ、彼女も歌い返す。",
+    blurbEn:
+      "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She...",
+    loc: {
+      ko: {
+        name: "세라핀",
+        title: "노래하는 별",
+        blurb:
+          "자운 출신의 부모를 둔 세라핀은 필트오버에서 태어나 다른 사람의 영혼의 소리를 들을 수 있다. 세상이 그녀에게 노래하고 그녀 또한 답가를 불렀다. 어린 시절에는 이 소리가 그녀를 억눌렀지만 이제 그녀는 영감을 위해 소리를 이끌어내고 혼돈을 협화음으로 바꿀 수 있게 되었다. 세라핀은 두 도시를 위해 공연하며 시민들에게 그들은 혼자가 아니고 함께일 때 더 강하며, 그들의 잠재력은 무한하다는 것을 일깨워준다.",
+      },
+      zh: {
+        name: "萨勒芬妮",
+        title: "星籁歌姬",
+        blurb:
+          "萨勒芬妮生在皮城，但父母都是祖安人。她能听到其他人的灵魂——整个世界都在对她唱歌，而她也回以自己的歌声。虽然她小的时候曾被这些声音压得不堪重负，但如今她从这些声音中汲取灵感，将混乱变为协奏。她为这对姊妹城市演唱，提醒这里的人们，他们并不孤单，他们凝聚起来会更强大，在她眼中，他们的潜力是无限的。",
+      },
+      es: {
+        title: "la Cantante Soñadora",
+        blurb:
+          "Seraphine, de padres zaunitas, nació en Piltover y es capaz de escuchar las almas de los demás. El mundo le canta y ella le devuelve la canción. Aunque esos sonidos le resultaban abrumadores cuando era pequeña, ahora le sirven de inspiración, y...",
+      },
+      fr: {
+        name: "Séraphine",
+        title: "Chanteuse rêveuse",
+        blurb:
+          "Née à Piltover de parents zauniens, Séraphine peut entendre les âmes des autres. Le monde chante pour elle et elle chante pour le monde. Alors que ces sons l'accablaient dans sa jeunesse, elle s'en inspire aujourd'hui et transforme le chaos en symphonie...",
+      },
+      de: {
+        title: "das verträumte Goldkehlchen",
+        blurb:
+          "Seraphine wurde in Piltover als Kind zhaunitischer Eltern geboren und kann die Seelen anderer hören – die Welt singt zu ihr und sie singt zurück. Auch wenn diese Klänge sie in ihrer Jugend überwältigt haben, sieht sie sie nun als Inspiration und...",
+      },
+      pt: {
+        title: "a Cantora Sonhadora",
+        blurb:
+          "Nascida em Piltover e filha de zaunitas, Seraphine é capaz de ouvir a alma das pessoas. O mundo canta para ela, e ela canta em resposta. Esses sons a perturbavam quando era mais jovem, mas hoje ela os usa como inspiração, transformando o caos em uma...",
+      },
+      ru: {
+        name: "Серафина",
+        title: "Мечтательная певица",
+        blurb:
+          "Серафина родилась в Пилтовере в семье выходцев из Зауна. Она слышит чужие сердца. Мир поет для нее, и она отвечает ему своей песней. В детстве диссонанс звуков казался ей нестерпимым, но сейчас она черпает из этой разноголосицы вдохновение и обращает ее...",
+      },
+    },
   },
   {
     id: "sett",
@@ -2968,20 +8000,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Sett",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.2,
-  scaling: 0.55
-}),
-    blurb: "ノクサスとの戦争の機運が高まる中、セトはアイオニアで勢力を増しつつある裏社会の親玉として名を上げた。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.2,
+      scaling: 0.55,
+    }),
+    blurb:
+      "ノクサスとの戦争の機運が高まる中、セトはアイオニアで勢力を増しつつある裏社会の親玉として名を上げた。",
+    blurbEn:
+      "A leader of Ionia's growing criminal underworld, Sett rose to prominence in the wake of the war with Noxus. Though he began as a humble challenger in the fighting pits of Navori, he quickly gained notoriety for his savage strength, and his ability to...",
+    loc: {
+      ko: {
+        name: "세트",
+        title: "우두머리",
+        blurb:
+          "점점 세력을 더해 가는 아이오니아 범죄 세계의 우두머리 세트는 녹서스와의 전쟁이 끝남과 동시에 두각을 드러내기 시작했다. 나보리 투기장의 신인 투사로 등장한 그는 무지막지한 힘과 상상을 초월하는 맷집으로 금세 유명인사가 되었고, 동네 싸움꾼에서 한때 그가 싸웠던 투기장을 지배하는 정상의 자리까지 올라섰다.",
+      },
+      zh: {
+        name: "瑟提",
+        title: "腕豪",
+        blurb:
+          "在与诺克萨斯的战争结束之后，艾欧尼亚的地下王国日渐兴起，瑟提在其中脱颖而出，成为了一方霸主。虽然他一开始只是纳沃利的搏击场里的无名小卒，但他有着一身蛮力，而且极其耐打，很快就名声鹊起。等到当地的搏击手尽数被他击败之后，瑟提靠着一腔勇武，掌控了自己曾经浴血奋战的搏击场。",
+      },
+      es: {
+        title: "el Jefe",
+        blurb:
+          "Sett es una prominente figura en los emergentes círculos criminales jonios, que aseguró su posición al inicio de la guerra con Noxus. A pesar de sus humildes comienzos como luchador en el foso de Navori, no tardó en labrarse una reputación con la ayuda...",
+      },
+      fr: {
+        title: "Patron",
+        blurb:
+          "Sett s'est imposé en tant que chef du monde criminel florissant d'Ionia après la guerre contre Noxus. Bien qu'il ait fait ses débuts de manière modeste dans les arènes de combat de Navori, il s'est rapidement fait une réputation pour sa force sauvage et...",
+      },
+      de: {
+        title: "der Boss",
+        blurb:
+          "Als Anführer von Ionias wachsender, krimineller Unterwelt erlangte Sett nach dem Krieg gegen Noxus Berühmtheit. Er fing als einfacher Herausforderer in den Kampfarenen von Navori an, aber wurde schnell für seine brutale Stärke bekannt und wie er fast...",
+      },
+      pt: {
+        title: "o Chefe",
+        blurb:
+          "Líder de parte do próspero submundo do crime em Ionia, Sett deve todo o seu sucesso à guerra contra Noxus. Mesmo estreando como um simples desafiante nas arenas de combate em Navori, ele logo conquistou notoriedade com sua força bruta e capacidade de...",
+      },
+      ru: {
+        name: "Сетт",
+        title: "Босс",
+        blurb:
+          "Сетт – один из боссов растущего преступного мира Ионии, построивший свою криминальную империю после войны с Ноксусом. Он начинал на арене в Навори как простой боец, но быстро прославился благодаря звериной силе и способности долго терпеть боль...",
+      },
+    },
   },
   {
     id: "shaco",
@@ -2995,17 +8070,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.84,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.9,
-  scaling: 0.45
-}),
-    blurb: "殺人と暴力に悦びを見出すシャコは、かつては寂しい王子の遊び道具として作られた魔法の操り人形だった。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.84,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.9,
+      scaling: 0.45,
+    }),
+    blurb:
+      "殺人と暴力に悦びを見出すシャコは、かつては寂しい王子の遊び道具として作られた魔法の操り人形だった。",
+    blurbEn:
+      "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls...",
+    loc: {
+      ko: {
+        name: "샤코",
+        title: "악마 어릿광대",
+        blurb:
+          "샤코는 오래 전, 외로움을 타던 어느 왕자를 위한 장난감으로 만들어졌다. 하지만 이제는 살육과 참사를 즐기는 마법 깃든 인형이다. 이전에는 친절한 마음씨를 지닌 광대였지만, 흑마법으로 타락하고 사랑하는 이를 잃은 상실감 때문에 오로지 불쌍한 인간들을 고문하는 것에서만 기쁨을 느끼게 되었다. 장난감과 단순한 속임수를 이용하여 상대를 농락하고 목숨을 빼앗은 다음, 유혈낭자한 '유희'의 결과에 만족하며 웃는다. 한밤중에 음산한 웃음소리가 들리는가?...",
+      },
+      zh: {
+        name: "萨科",
+        title: "恶魔小丑",
+        blurb:
+          "很久以前有人为一个孤独的小王子制作了一个玩物，一只附有魔法的提线人偶，它就是如今那个以杀人和破坏取乐的萨科。由于黑魔法的腐化，再加上痛失爱主，曾经友善的人偶如今只能在折磨灵魂制造苦痛的时候才能感到愉悦。小孩子的玩具和简单的戏法在他手中都有了致命的效果。而且，他觉得自己的血腥“游戏”滑稽至极——如果有谁在死寂的夜里听到了阴森的窃笑，或许那就是恶魔小丑看中了他们，作为自己新的玩物。",
+      },
+      es: {
+        title: "El Bufón Siniestro",
+        blurb:
+          "Shaco fue fabricado hace mucho tiempo para entretener a un príncipe solitario, pero ahora la marioneta encantada se regocija en la muerte y el caos. El otrora adorable muñeco fue corrompido por magia oscura y por la pérdida de su amado dueño, de modo...",
+      },
+      fr: {
+        title: "Bouffon des ténèbres",
+        blurb:
+          "Fabriqué il y a longtemps pour servir de jouet à un prince qui se sentait seul, Shaco est une marionnette enchantée qui se repaît désormais de meurtres et de chaos. Corrompu par la magie noire et la perte de sa chère mission, le pantin autrefois gentil...",
+      },
+      de: {
+        title: "der dunkle Hofnarr",
+        blurb:
+          "Die verzauberte Marionette Shaco wurde vor langer Zeit als Spielgerät für einen einsamen Prinzen erschaffen, verwandelte sich dann aber in ein mordlustiges und chaosstiftendes Wesen. Durch dunkle Magie und den Verlust seines geliebten Schützlings...",
+      },
+      pt: {
+        title: "o Bufão Demoníaco",
+        blurb:
+          "Criado anos atrás como um brinquedo para um príncipe solitário, Shaco, a marionete encantada, agora se deleita com assassinatos e desordem. Corrompido por magia das trevas e pela perda de seu dono querido, o boneco que já fora gentil agora encontra...",
+      },
+      ru: {
+        name: "Шако",
+        title: "Демонический шут",
+        blurb:
+          "Зачарованная марионетка Шако была создана, чтобы служить игрушкой для одинокого принца, но теперь наслаждается убийствами и хаосом. Потерявший любимого хозяина и оскверненный темной магией, этот некогда добрый клоун упивается страданиями несчастных душ...",
+      },
+    },
   },
   {
     id: "shen",
@@ -3019,17 +8137,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Tank"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.36,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.5
-}),
-    blurb: "シェンは「均衡の守人」として知られるアイオニアの秘密の戦士たちの長「黄昏の瞳」であり、全ての感情、偏見、自尊心などの迷いから逃れるため、霊的領域と物質世界の間に",
+      range: 0.4,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.36,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.5,
+    }),
+    blurb:
+      "シェンは「均衡の守人」として知られるアイオニアの秘密の戦士たちの長「黄昏の瞳」であり、全ての感情、偏見、自尊心などの迷いから逃れるため、霊的領域と物質世界の間に",
+    blurbEn:
+      "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit...",
+    loc: {
+      ko: {
+        name: "쉔",
+        title: "황혼의 눈",
+        blurb:
+          "쉔은 '킨코우'라고 하는 아이오니아 비밀결사단의 수장이자, '황혼의 눈'이다. 감정, 편견, 아집에서 벗어나는 자유로운 정신을 유지하려 노력하며, 영적 세계와 현실 세계 사이에서 감정에 흔들리지 않는 공명정대함을 실현하기 위해 그 누구도 걷지 않았던 길을 걷는다. 두 세계 사이의 균형을 맞추는 임무를 맡았기에, 그 균형을 위협하려는 자에게 강철검을 휘두르고 신비한 기운을 사용한다.",
+      },
+      zh: {
+        name: "慎",
+        title: "暮光之眼",
+        blurb:
+          "在隐秘的艾欧尼亚武装力量均衡教派中，慎是被尊为“暮光之眼”的领袖。他行走于精神领域和物质世界之间无人通晓的隐秘道路，力求超脱自身的情感、偏执以及自我。为了贯彻精神与物质之间的均衡，慎用一把钢刀和一把魂刃对抗任何可能威胁这一追求的人。",
+      },
+      es: {
+        title: "El Ojo del Crepúsculo",
+        blurb:
+          "Shen, el Ojo del Crepúsculo, es el cabecilla de los sigilosos guerreros de Jonia conocidos como Kinkou. Su objetivo es mantenerse libre de las ataduras de cualquier emoción, prejuicio o ego, y avanza por el camino invisible del juicio desapasionado...",
+      },
+      fr: {
+        title: "Œil du crépuscule",
+        blurb:
+          "Shen, l'Œil du crépuscule, est le chef d'un groupe secret de guerriers ioniens connu sous le nom de Kinkou. Désireux d'échapper aux méfaits des émotions, des préjugés et de l'ego, il porte un regard désintéressé sur les choses en arpentant le chemin...",
+      },
+      de: {
+        title: "das Auge des Zwielichts",
+        blurb:
+          "Shen ist das Auge des Zwielichts und der Anführer der ionischen Kinkou-Krieger, die im Geheimen agieren. Stets an den Vorsatz gebunden, sich nicht von Emotionen, Vorurteilen und dem eigenen Ego beeinflussen zu lassen, folgt Shen mit seiner Geisterklinge...",
+      },
+      pt: {
+        title: "o Olho do Crepúsculo",
+        blurb:
+          "Para os guerreiros ionianos sigilosos conhecidos como Kinkou, Shen, o Olho do Crepúsculo, é um líder. Ele busca permanecer livre da confusão das emoções, preconceito ou ego, caminhando pelo caminho nunca visto do julgamento imparcial entre o reino dos...",
+      },
+      ru: {
+        name: "Шен",
+        title: "Око сумрака",
+        blurb:
+          "Шен – это Око сумрака, лидер тайной организации ионийских воинов, известной как Кинку. Он ограждает себя от сбивающих с толку эмоций, предрассудков и эго, следуя скрытой тропой беспристрастного суждения между царством духов и физическим миром. Шен...",
+      },
+    },
   },
   {
     id: "shyvana",
@@ -3040,20 +8201,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Shyvana",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
     blurb: "シヴァーナは恐るべき半龍の戦士だ。",
+    blurbEn:
+      "Shyvana is a fearsome half-dragon warrior. Though she often appears humanoid, she also rules the skies as a dragon, incinerating her foes with fiery breath. Having saved the life of the crown prince Jarvan IV, Shyvana now serves uneasily in his royal...",
+    loc: {
+      ko: {
+        name: "쉬바나",
+        title: "하프 드래곤",
+        blurb:
+          "쉬바나는 무시무시한 하프 드래곤 전사로서, 평소에는 인간의 모습을 하고 있으나, 용의 형상으로 변하면 하늘을 지배하며 불타오르는 숨결로 적을 그 자리에서 태워버린다. 자르반 4세의 목숨을 구해준 후 그의 친위대에 들어갔지만, 데마시아인들은 여전히 쉬바나에게 미심쩍은 눈길을 보내고 있다. 쉬바나로서도 친위대원 노릇이나 데마시아인들의 신임을 받는 일이 쉽지만은 않다.",
+      },
+      zh: {
+        name: "希瓦娜",
+        title: "龙血武姬",
+        blurb:
+          "希瓦娜是一位迅猛的半龙人战士。她平时以人的形象出现，但也能以巨龙的身姿统治天空，用龙息烈焰焚尽敌人。作为皇子嘉文四世曾经的救命恩人，希瓦娜如今在皇子的卫队中效力。她兢兢业业，试图在多疑的德玛西亚人中求得接纳。",
+      },
+      es: {
+        title: "la Medio Dragón",
+        blurb:
+          "Shyvana es una temible guerrera medio dragón. Aunque a menudo adopta una forma humanoide, también domina los cielos como una dragona, incinerando a sus enemigos con su aliento ígneo. Tras salvar la vida del príncipe Jarvan IV, Shyvana se unió a su...",
+      },
+      fr: {
+        title: "Demi-dragon",
+        blurb:
+          "Shyvana est une redoutable guerrière demi-dragon. Bien qu'elle prenne souvent une apparence humanoïde, elle règne également sur les cieux en tant que dragon, réduisant ses ennemis en cendres grâce à son souffle ardent. Depuis qu'elle a sauvé la vie du...",
+      },
+      de: {
+        title: "der Halbdrache",
+        blurb:
+          "Shyvana ist eine furchterregende Halbdrachen-Kriegerin. Obwohl sie häufig Menschengestalt annimmt, kann sie auch als Drache die Lüfte beherrschen und ihre Gegner mit ihrem Flammenodem einäschern. Seitdem sie das Leben des Kronprinzen Jarvan IV. gerettet...",
+      },
+      pt: {
+        title: "a Meio-Dragão",
+        blurb:
+          "Shyvana é uma temível guerreira meio-dragão. Embora muitas vezes pareça humanoide, ela também domina os céus como um dragão, incinerando seus inimigos com um sopro de fogo. Após salvar a vida do príncipe herdeiro Jarvan IV, Shyvana passou a integrar sua...",
+      },
+      ru: {
+        name: "Шивана",
+        title: "Полудракон",
+        blurb:
+          "Шивана – грозный воин-полудракон. Чаще всего она предстает в человеческом облике, но может взмыть в небеса, превратившись в грозного дракона, чье дыхание испепеляет врагов. Когда-то Шивана спасла жизнь кронпринцу Джарвану IV и теперь служит в его...",
+      },
+    },
   },
   {
     id: "singed",
@@ -3064,20 +8267,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Singed",
     roles: ["Top"],
-    archetypes: ["Tank","Mage"],
+    archetypes: ["Tank", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.8,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "シンジドは優れた錬金術師だが、倫理観が欠如した存在でもあり、その実験は極めて残忍な犯罪者ですら吐き気をもよおすほどだ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.8,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "シンジドは優れた錬金術師だが、倫理観が欠如した存在でもあり、その実験は極めて残忍な犯罪者ですら吐き気をもよおすほどだ。",
+    blurbEn:
+      "Singed is a brilliant alchemist of dubious morality, whose experiments would turn the stomach of even the most cutthroat criminal. Selling his skills to the highest bidder, he cares little for how his noxious concoctions are used, with the ensuing chaos...",
+    loc: {
+      ko: {
+        name: "신지드",
+        title: "미친 화학자",
+        blurb:
+          "뛰어나지만 도의를 모르는 화학자 신지드의 실험은 가장 극악무도한 범죄자조차 역겨워할 정도다. 최고 입찰자에게 자신의 기술을 팔아넘기는 그는 자신이 만든 유독한 혼합물이 어떻게 쓰이든 거의 신경 쓰지 않으며 그로 인한 혼돈마저 하나의 실험으로 여긴다. 신지드의 가장 악명 높은 작품 '시머' 덕분에 화공 남작들이 자운을 제멋대로 주무를 수 있게 됐지만, 광기에 사로잡힌 신지드는 늘 새로운 것을 연구하며 그때마다 이전보다 더 끔찍한 실험을 진행한다...",
+      },
+      zh: {
+        name: "辛吉德",
+        title: "炼金术士",
+        blurb:
+          "辛吉德是一位天资卓越但品行不端的炼金术士，他的实验甚至能让最穷凶极恶的罪犯都感到反胃。他把自己的技术卖给出价最高的卖家，至于这些剧毒药剂会被用在哪里，他毫不在乎，甚至还将它们招致的混乱视作实验的一部分。他最臭名昭著的发明当属“微光”。借助微光的力量，炼金男爵把祖安变成了自己的私人游乐场。在疯狂的驱使下，辛吉德一直不断在尝试新的发明，一次比一次堕落……",
+      },
+      es: {
+        title: "El Químico Loco",
+        blurb:
+          "Singed es un brillante alquimista de cuestionable moralidad cuyos experimentos le revolverían el estómago hasta al criminal más despiadado. Pone sus habilidades al servicio del mejor postor, y le es indiferente el uso que se le dé a sus malvadas...",
+      },
+      fr: {
+        title: "Chimiste fou",
+        blurb:
+          "Singed est un alchimiste brillant à la moralité douteuse dont les expériences retourneraient l'estomac du plus cruel des criminels. Vendant son savoir-faire au plus offrant, il n'a que faire de la façon dont ses concoctions nocives sont utilisées. Il...",
+      },
+      de: {
+        title: "der verrückte Chemiker",
+        blurb:
+          "Singed ist ein brillanter zhaunitischer Alchemist von zweifelhafter Moral, bei dessen Experimenten sich selbst den abgebrühtesten Verbrechern der Magen umdreht. Er verkauft seine Fähigkeiten an den, der am meisten dafür bietet, und schert sich wenig...",
+      },
+      pt: {
+        title: "o Químico Louco",
+        blurb:
+          "Singed é um alquimista brilhante com moral duvidosa cujos experimentos embrulhariam o estômago até do mais brutal criminoso. Vendendo suas habilidades para quem pagar mais, ele pouco se importa com o uso que fazem de suas misturas nocivas, vendo o caos...",
+      },
+      ru: {
+        name: "Синджед",
+        title: "Безумный химик",
+        blurb:
+          "Синджед – гениальный алхимик с сомнительными моральными принципами. От его опытов стынет кровь в жилах даже у самых отъявленных преступников. Он предлагает свои услуги тем, кто больше заплатит, и не особо переживает о том, какой хаос вызывают его...",
+      },
+    },
   },
   {
     id: "sion",
@@ -3088,20 +8334,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Noxus",
     ddragonId: "Sion",
     roles: ["Top"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.48,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.55
-}),
-    blurb: "サイオンはデマーシア王を素手で絞殺したことでノクサス中で崇敬されていた過去の英雄だったが、死してなお帝国に奉仕させるために、死の淵から甦らされた。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.48,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.55,
+    }),
+    blurb:
+      "サイオンはデマーシア王を素手で絞殺したことでノクサス中で崇敬されていた過去の英雄だったが、死してなお帝国に奉仕させるために、死の淵から甦らされた。",
+    blurbEn:
+      "A war hero from a bygone era, Sion was revered in Noxus for choking the life out of a Demacian king with his bare hands—but, denied oblivion, he was resurrected to serve his empire even in death. His indiscriminate slaughter claimed all who stood in his...",
+    loc: {
+      ko: {
+        name: "사이온",
+        title: "언데드 학살병기",
+        blurb:
+          "과거 사이온은 데마시아 왕을 맨손으로 목 졸라 살해한 전공으로 녹서스에서 존경을 받았다. 이후에는 지나간 시대의 전쟁 영웅으로 잊혀질 뻔했으나, 죽은 후에 부활하여 다시금 녹서스에 충성을 다하게 되었다. 부활한 사이온은 썩어버린 육체에 조악한 방어구를 고정시켜 걸치고, 자신의 앞을 가로막는 자라면 충성 여부에 상관없이 닥치는 대로 학살했다. 죽기 전의 인간성이 더 이상 남아 있지 않은 것이었다. 하지만 그렇게 앞뒤 재지 않고 무작정 전장으로...",
+      },
+      zh: {
+        name: "赛恩",
+        title: "亡灵战神",
+        blurb:
+          "赛恩是一个来自先前时代的诺克萨斯战争英雄，曾经徒手掐死过一代德玛西亚国王。但他拒绝了死亡和湮灭，以活尸的状态继续为帝国效命。只要挡住他的去路，都会被他无差别地屠杀，敌我不分，足可证明他已经失去了从前的人性。即便如此，他腐朽的身体还是被钉进了粗糙的装甲，继续以丧心病狂的鲁莽冲上战场，在每一下巨斧的挥砍中艰难地回忆真正的自我。",
+      },
+      es: {
+        title: "El Coloso no Muerto",
+        blurb:
+          "Sion fue un héroe de guerra en el pasado y los noxianos lo veneraban porque había arrebatado la vida de un rey demaciano con sus simples manos. No obstante, se le denegó su viaje al más allá, pues fue revivido para servir a su imperio incluso después de...",
+      },
+      fr: {
+        title: "Colosse mort-vivant",
+        blurb:
+          "Guerrier sanguinaire d'une époque révolue, Sion était célébré comme un héros à Noxus, pour avoir étouffé un roi de Demacia de ses mains nues. Il était l'objet d'une telle dévotion qu'on lui refusa le repos éternel, en le ramenant à la vie pour continuer...",
+      },
+      de: {
+        title: "der untote Moloch",
+        blurb:
+          "Sion wurde in Noxus als Kriegsheld einer vergangenen Zeit verehrt, da er mit bloßen Händen einen demacianischen König erdrosselt hatte. Das ewige Vergessen bliebt ihm jedoch verwehrt: Er wurde wieder zum Leben erweckt, um seinem Reich sogar über den Tod...",
+      },
+      pt: {
+        title: "o Colosso Morto-Vivo",
+        blurb:
+          "Um herói de guerra de uma era passada, Sion era reverenciado em Noxus por ter estrangulado a vida de um rei demaciano com suas próprias mãos. Mas o esquecimento lhe foi negado quando foi ressuscitado para servir seu império, mesmo na sua morte. Seu...",
+      },
+      ru: {
+        name: "Сион",
+        title: "Восставший сокрушитель",
+        blurb:
+          "Сиона почитали в Ноксусе за то, что он голыми руками убил демасийского короля. Но даже после смерти этому герою войны из далекого прошлого не дали погрузиться в забвение – он был воскрешен, чтобы и дальше служить своей империи. Он не глядя убивал...",
+      },
+    },
   },
   {
     id: "sivir",
@@ -3115,17 +8404,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.3,
-  damage: 0.6000000000000001,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.3,
+      damage: 0.6000000000000001,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
     blurb: "シヴィアは、金のためならどのような仕事でも引き受ける。",
+    blurbEn:
+      "Sivir is a renowned fortune hunter and mercenary captain who plies her trade in the deserts of Shurima. Armed with her legendary jeweled crossblade, she has fought and won countless battles for those who can afford her exorbitant price. Known for her...",
+    loc: {
+      ko: {
+        name: "시비르",
+        title: "전장의 여제",
+        blurb:
+          "시비르는 슈리마 사막에서 활동하는 보물 사냥꾼이자 용병 대장이다. 몸값은 입이 떡 벌어질 정도로 비싸지만 전투를 벌이는 족족 이겨 몸값에 걸맞은 솜씨로 명성이 자자하다. 대담무쌍한 성격에 원대한 야심까지 겸비한 시비르. 그녀는 위험하기 짝이 없는 슈리마의 묘역에서 진귀한 보물을 찾으며 남다른 자부심을 느낀다. 의뢰인에게서 두둑한 대가를 챙기는 것은 물론이다. 하지만 슈리마에 고대의 존재들이 귀환하면서 시비르도 운명의 갈림길에 서게 된다.",
+      },
+      zh: {
+        name: "希维尔",
+        title: "战争女神",
+        blurb:
+          "希维尔是著名的宝藏猎人和雇佣兵队长，在恕瑞玛沙漠中进行频繁的契约交易。她的兵器是一柄颇具传奇色彩的十字刃，她曾赢得过无数次战斗，虽然她本人报价不菲，但却深得雇主青睐。她有着著名的无畏决心和无尽的野心，并且以自己的事业为傲——只要赏金够高，她就能从凶险的恕瑞玛古墓中寻回深埋于地下的宝藏。不过随着好几股远古的力量搅动着恕瑞玛的根骨，希维尔突然发现自己被裹挟着、拉扯着，卷入了截然不同的命运。",
+      },
+      es: {
+        title: "La Señora de la Batalla",
+        blurb:
+          "Sivir es una afamada buscadora de tesoros y capitana mercenaria que se gana la vida en el desierto de Shurima. Provista de un arma legendaria en forma de cruz engastada con gemas, ha librado y ganado innumerables batallas para aquellos que pueden...",
+      },
+      fr: {
+        title: "Mercenaire du désert",
+        blurb:
+          "Sivir est une célèbre chasseuse de trésors et capitaine de mercenaires œuvrant dans le désert de Shurima. Armée de sa légendaire lame en croix, elle a triomphé d'innombrables batailles pour les clients prêts à honorer ses tarifs exorbitants. Connue pour...",
+      },
+      de: {
+        title: "die Kampfmeisterin",
+        blurb:
+          "Sivir ist eine berühmte Glücksjägerin und Söldnerhauptmann, die ihrem Geschäft in den Wüsten Shurimas nachgeht. Mit ihrer legendären, mit Juwelen bestückten Kreuzklinge hat sie für diejenigen, die sich ihren exorbitanten Preis leisten können, bereits...",
+      },
+      pt: {
+        title: "a Mestra da Batalha",
+        blurb:
+          "Sivir é uma renomada caçadora de recompensas e capitã mercenária que manipula o comércio nos desertos de Shurima. Armada com sua lendária lâmina em cruz adornada, ela lutou e venceu incontáveis batalhas por aqueles que podem pagar seu preço exorbitante...",
+      },
+      ru: {
+        name: "Сивир",
+        title: "Королева сражений",
+        blurb:
+          "Сивир, знаменитая охотница за удачей, возглавляет отряд наемников, что промышляет в песках Шуримы. Вооружившись своим легендарным крестовидным клинком, она успешно сражается на стороне тех, у кого хватает денег оплатить ее баснословно дорогие услуги...",
+      },
+    },
   },
   {
     id: "skarner",
@@ -3136,20 +8467,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Skarner",
     roles: ["Jungle"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.8,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.55
-}),
-    blurb: "古代の巨大生物種ブラカーンであるスカーナーは、イシュタルの支配層“ユン・タル”初代メンバーのひとりとして崇拝されている。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.8,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.55,
+    }),
+    blurb:
+      "古代の巨大生物種ブラカーンであるスカーナーは、イシュタルの支配層“ユン・タル”初代メンバーのひとりとして崇拝されている。",
+    blurbEn:
+      "The ancient, colossal brackern Skarner is revered in Ixtal as one of the founding members of its ruling caste, the Yun Tal. Devoted to keeping his nation safe from the rest of the world, Skarner dwells in a chamber beneath Ixaocan where he can hear the...",
+    loc: {
+      ko: {
+        name: "스카너",
+        title: "태고의 군주",
+        blurb:
+          "거대한 고대 브래컨, 스카너는 지배 계급인 윤 탈의 창립 일원으로 이쉬탈에서 추앙받는다. 자신의 나라를 외부 세계로부터 안전하게 지키기 위해 헌신하는 스카너는 이샤오칸 아래 내실에서 살아가며 대지의 진동에 귀를 기울이고 잠재적 위협을 감지한다. 이쉬탈의 고립에 의문을 품는 윤 탈의 구성원이 많아지면서 스카너의 편집증은 갈수록 심해지고 있다. 이쉬탈과 이쉬탈 사람들의 안전을 지키기 위해서라면 스카너는 무엇이든 할 것이다. 어떤 대가가 따르더라도.",
+      },
+      zh: {
+        name: "斯卡纳",
+        title: "上古领主",
+        blurb:
+          "作为以绪塔尔统治阶层——育恩塔尔的初创成员之一，古老而庞大的壳人斯卡纳在这里深受景仰。他一心致力于保护这个国度免受外界所害，为此，斯卡纳栖息在以绪奥肯地下的密室中，聆听着大地的震动，只为了觉察潜在的威胁。但随着育恩塔尔越来越多的成员开始质疑他们与世隔离的做法，斯卡纳也变得越发偏执和猜疑。为了保护以绪塔尔和他的人民，他愿意不惜一切代价——无论这个代价意味着什么。",
+      },
+      es: {
+        title: "el Soberano Primigenio",
+        blurb:
+          "A Skarner, el colosal brackern ancestral, se le rinde culto en Ixtal como uno de los fundadores de su casta soberana, los Yun Tal. Se dedica a proteger su tierra del resto del mundo manteniendo la región aislada. Skarner vive en una cámara bajo Ixaocan...",
+      },
+      fr: {
+        title: "Souverain originel",
+        blurb:
+          "L'antique Brackern Skarner est vénéré à Ixtal comme l'un des membres fondateurs de la caste dirigeante, les Yun Tal. Il protège farouchement sa nation du reste du monde en écoutant les vibrations de la terre pour détecter de potentielles menaces depuis...",
+      },
+      de: {
+        title: "der Urherrscher",
+        blurb:
+          "Der uralte, kolossale Brackern Skarner wird in Ixtal als eines der Gründungsmitglieder der herrschenden Kaste, der Yun Tal, verehrt. Skarner hat es sich zur Aufgabe gemacht, sein Volk vor dem Rest der Welt zu schützen, und lebt in einer Kammer unter...",
+      },
+      pt: {
+        title: "o Soberano Primordial",
+        blurb:
+          "Skarner, um Brackern ancião e colossal, é reverenciado em Ixtal como um dos membros-fundadores de Yun Tal, a casta dominante. Dedicado a manter sua nação a salvo do resto do mundo, Skarner vive em sua câmara no subsolo de Ixaocan, onde pode ouvir as...",
+      },
+      ru: {
+        name: "Скарнер",
+        title: "Извечный владыка",
+        blurb:
+          "Скарнер – древний бракерн-исполин, которого в Иштале почитают как одного из основателей правящей касты Юнталь. Испокон веков он охраняет эти земли, скрываясь в залах под Ишаоканом, где прислушивается к вибрациям и отслеживает потенциальные угрозы...",
+      },
+    },
   },
   {
     id: "smolder",
@@ -3160,20 +8534,63 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Smolder",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.78,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
-    blurb: "ノクサスの辺境にある岩だらけの崖に身を隠し、幼きドラゴンは母親に見守られながら、カマヴォールのインペリアルドラゴンの継承者とは何たるかを学んでいる。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.78,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ノクサスの辺境にある岩だらけの崖に身を隠し、幼きドラゴンは母親に見守られながら、カマヴォールのインペリアルドラゴンの継承者とは何たるかを学んでいる。",
+    blurbEn:
+      "Hidden amongst the craggy cliffs of the Noxian frontier, under the watchful eyes of his mother, a young dragon is learning what it means to be heir to the Camavoran imperial dragon lineage. Playful and eager to grow up, Smolder looks for any excuse to...",
+    loc: {
+      ko: {
+        name: "스몰더",
+        title: "꼬마 불꽃용",
+        blurb:
+          "녹서스 변경 부근의 깎아지른 절벽 지대에서 한 어린 용이 어미 용의 냉엄한 시선 아래 카마보르 황실의 용 혈통을 이을 후계자 수업을 받고 있다. 천성 자체가 쾌활한 스몰더는 하루라도 빨리 어른이 될 날을 꿈꾸면서, 오늘도 몰라보게 성장하는 제 능력을 시험할 구실을 찾아다니는 중이다. 아직 좀 어리긴 하지만, 스몰더는 어떤 것이든지 불에 타기만 한다면 가볍게 태워버릴 수 있는 능력을 지니고 있다.",
+      },
+      zh: {
+        name: "斯莫德",
+        title: "炽炎雏龙",
+        blurb:
+          "在诺克萨斯边境的嶙峋峭壁间，有一条幼龙正在龙母的密切注视下，学习领悟着作为卡玛维亚帝巨龙血脉继承者的意义。调皮的斯莫德每天都盼着长大，他总是寻找各式各样的借口，磨炼自己日益强大的能力。虽然他还年幼，可别对他的能力嗤之以鼻——只要打个喷嚏，他就能点燃整片森林。",
+      },
+      es: {
+        title: "el Heredero de las Llamas",
+        blurb:
+          "Oculto entre los escarpados acantilados de la frontera noxiana y bajo la atenta mirada de su madre, un joven dragón está aprendiendo qué implica ser el heredero del linaje imperial de los dragones camavoranos. Juguetón y ansioso por crecer, Smolder...",
+      },
+      fr: {
+        title: "Dragonnet flamboyant",
+        blurb:
+          "Caché dans les falaises escarpées de la frontière noxienne et attentivement surveillé par sa mère, un jeune dragon apprend ce que signifie être l'héritier de la lignée impériale des dragons camavoriens. Joueur et impatient de grandir, Smolder est prêt à...",
+      },
+      de: {
+        title: "der feurige Welpling",
+        blurb:
+          "Versteckt zwischen den zerklüfteten Klippen der noxianischen Grenze, unter den wachsamen Augen seiner Mutter, lernt ein junger Drache, was es bedeutet, Erbe des camavoranischen Königdrachengeschlechts zu sein. Verspielt und begierig zu wachsen ergreift...",
+      },
+      pt: {
+        title: "o Filhote Flamejante",
+        blurb:
+          "Escondido entre os penhascos escarpados da fronteira noxiana e sob o olhar atento da mãe, um jovem dragão está aprendendo o que significa ser herdeiro da linhagem dos dragões imperiais de Camavor. Brincalhão e ansioso por ser grande, Smolder busca...",
+      },
+      ru: {
+        name: "Смолдер",
+        title: "Жгучий дракончик",
+        blurb:
+          "Найдя себе дом среди скалистых ноксианских утесов, юный Смолдер учится быть достойным наследником имперских драконов Камавора под присмотром своей мамы. Он любит играть и хочет поскорее вырасти, поэтому радуется любому поводу применить свои стремительно...",
+      },
+    },
   },
   {
     id: "sona",
@@ -3184,20 +8601,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Sona",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.78,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
-    blurb: "ソナはデマーシアで随一の弦楽器エトワールの演奏家であり、その優雅な和音と活気あふれる旋律によってのみ自らの意思を伝えることができる。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.78,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ソナはデマーシアで随一の弦楽器エトワールの演奏家であり、その優雅な和音と活気あふれる旋律によってのみ自らの意思を伝えることができる。",
+    blurbEn:
+      "Sona is Demacia's foremost virtuoso of the stringed etwahl, speaking only through her graceful chords and vibrant arias. This genteel manner has endeared her to the highborn, though others suspect her spellbinding melodies to actually emanate magic—a...",
+    loc: {
+      ko: {
+        name: "소나",
+        title: "현의 명인",
+        blurb:
+          "소나는 현악기 에트왈 연주에서 데마시아 제일가는 거장으로, 말을 하지 못하며 오로지 우아한 화음과 심금을 울리는 아리아로만 의사를 표현한다. 특유의 고상한 몸가짐 때문에 데마시아 상류층의 사랑을 받지만, 듣는 이의 마음을 사로잡는 소나의 선율이 실제로 마법이 아닌가 의심하는 사람들도 많다. 알다시피 마법은 데마시아에서 금기시되고 있기 때문이다. 소나는 낯선 이들에게 침묵을 지키지만, 가까운 지인들은 그녀의 의사를 어느 정도 이해한다. 소나가 연주하는...",
+      },
+      zh: {
+        name: "娑娜",
+        title: "琴瑟仙女",
+        blurb:
+          "作为德玛西亚一流的琴师，娑娜唯一的语言就是“叆华”优美的和声与多变的曲调。抚琴的才华让她深得上流社会的宠爱，不过也有人怀疑娑娜如魔咒一般的迷人的旋律，其实是在施放魔法——而这在德玛西亚可是大忌。对此娑娜始终一言不发，但她最亲密的盟友却能完全理解她。娑娜指间流淌的和声，不仅能够安抚受伤的盟友，还能打击掉以轻心的敌人。",
+      },
+      es: {
+        title: "La Virtuosa de las Cuerdas",
+        blurb:
+          "Sona es la artista más virtuosa de Demacia con el etwahl de cuerda y solo se comunica a través de sus elegantes acordes y vibrantes melodías. Esta refinada actitud le ha hecho ganarse el favor de la alta sociedad, aunque los hay que sospechan que sus...",
+      },
+      fr: {
+        title: "Virtuose de la harpe",
+        blurb:
+          "Sona est la plus grande virtuose de l'etwahl de Demacia, ne s'exprimant que par ses accords vibrants et gracieux. Ses manières distinguées lui valent d'être appréciée par l'aristocratie, bien que beaucoup soupçonnent ses mélodies envoûtantes de...",
+      },
+      de: {
+        title: "die Virtuosin",
+        blurb:
+          "Sona ist in Demacia die führende Virtuosin am Etwahl, einem Saiteninstrument, durch das sie mit eleganten Akkorden und lebendigen Arien spricht. Ihr vornehmes Gebaren hat sie bei den Hochgeborenen beliebt gemacht, doch einige vermuten Magie hinter ihren...",
+      },
+      pt: {
+        title: "a Mestra das Cordas",
+        blurb:
+          "Sona é um dos maiores prodígios em etwahl de cordas em Demacia, falando somente através de seus acordes graciosos e de suas árias vibrantes. Seu comportamento refinado cativou os nobres, apesar de muitos suspeitarem que suas melodias fascinantes...",
+      },
+      ru: {
+        name: "Сона",
+        title: "Виртуоз струн",
+        blurb:
+          "Сона – самый выдающийся виртуоз в Демасии. Она общается только с помощью сладкозвучных аккордов и впечатляющих арий своего струнного этваля. Благодаря элегантной манере исполнения Сона снискала любовь знати, но некоторые считают, что ее волшебная музыка...",
+      },
+    },
   },
   {
     id: "soraka",
@@ -3208,20 +8668,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Targon",
     ddragonId: "Soraka",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.3,
-  scaling: 0.6
-}),
-    blurb: "霊峰ターゴンの彼方にある宇宙の次元をさまよっていたソラカは、定命の種族を彼らの暴力的な本能から守るために、自らの永遠の命を手放してやってきた。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.3,
+      scaling: 0.6,
+    }),
+    blurb:
+      "霊峰ターゴンの彼方にある宇宙の次元をさまよっていたソラカは、定命の種族を彼らの暴力的な本能から守るために、自らの永遠の命を手放してやってきた。",
+    blurbEn:
+      "A wanderer from the celestial dimensions beyond Mount Targon, Soraka gave up her immortality to protect the mortal races from their own more violent instincts. She endeavors to spread the virtues of compassion and mercy to everyone she meets—even...",
+    loc: {
+      ko: {
+        name: "소라카",
+        title: "별의 아이",
+        blurb:
+          "타곤 산 너머 천상계의 방랑자 소라카는 필멸자들이 스스로의 폭력성 때문에 고통받는 것을 치유하기 위해 자신의 불멸을 포기했다. 소라카는 만나는 모든 이에게 동정심과 자비의 마음을 심어주려고 노력하며, 심지어 자신에게 해를 입히려 획책하는 자들마저 치유한다. 이 세계의 갈등과 혼란을 모두 지켜보았음에도, 소라카는 아직 룬테라 인들이 잠재력을 모두 끌어낸 것은 아니라고 믿고 있다.",
+      },
+      zh: {
+        name: "索拉卡",
+        title: "众星之子",
+        blurb:
+          "作为一个来自天界的流浪者，索拉卡放弃了不朽的神格，只为保护凡人免于受到无知与暴力天性的危害。她对遇见的每一个人都施以慈悲与怜悯——即便是那些对她心存恶念的人也不例外。尽管早已经看遍这世上的苦痛与挣扎，索拉卡依然相信符文之地的人们有着更多的潜力等待发现。",
+      },
+      es: {
+        title: "La Hija de las Estrellas",
+        blurb:
+          "Soraka, una nómada proveniente de las dimensiones celestiales más allá del monte Targon, dejó a un lado su inmortalidad para proteger a las razas mortales de sus propios instintos asesinos. Su cometido es difundir las virtudes de la compasión y la...",
+      },
+      fr: {
+        title: "Enfant des étoiles",
+        blurb:
+          "Voyageuse originaire de dimensions célestes d'au-delà du Mont Targon, Soraka a abandonné son immortalité pour protéger les mortels de leurs instincts violents. Elle cherche à pousser tous ceux qu'elle rencontre à embrasser les vertus de la compassion et...",
+      },
+      de: {
+        title: "das Sternenkind",
+        blurb:
+          "Soraka durchwanderte die himmlischen Dimensionen jenseits des Targon, bevor sie Unsterblichkeit aufgab, um die sterblichen Völker vor ihren eigenen gewalttätigen Instinkten zu schützen. Sie ist bestrebt, allen, die sie trifft, die Tugenden von Mitgefühl...",
+      },
+      pt: {
+        title: "a Filha das Estrelas",
+        blurb:
+          "Uma andarilha vinda de dimensões celestiais além do Monte Targon, Soraka desistiu de sua imortalidade para proteger as raças mortais de seus instintos mais violentos. Ela pretende espalhar as virtudes da compaixão e da misericórdia a todos que encontra...",
+      },
+      ru: {
+        name: "Сорака",
+        title: "Звездное дитя",
+        blurb:
+          "Сорака – странница из небесных миров, лежащих за пределами горы Таргон. Она пожертвовала своим бессмертием, чтобы оградить смертные расы от их же собственной жестокости. Она старается проявить сострадание и милосердие к каждому, кого встречает, исцеляя...",
+      },
+    },
   },
   {
     id: "swain",
@@ -3231,26 +8734,68 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ノクサス帝国元帥",
     region: "Noxus",
     ddragonId: "Swain",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({
-  knowledge: 0.7,
-  ambition: 0.9,
-  organization: 0.8,
-  solo: 0.4
-}),
+      knowledge: 0.7,
+      ambition: 0.9,
+      organization: 0.8,
+      solo: 0.4,
+    }),
     gameVec: g({
-  range: 0.7,
-  skillBased: 0.9,
-  damageStyle: 0.4,
-  durability: 0.5,
-  damage: 0.7,
-  cc: 0.7,
-  mobility: 0.2,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
+      range: 0.7,
+      skillBased: 0.9,
+      damageStyle: 0.4,
+      durability: 0.5,
+      damage: 0.7,
+      cc: 0.7,
+      mobility: 0.2,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
     blurb: "ノクサス大将軍にして黒薔薇会の謀略家。秘密と引き換えに力を得る。",
+    blurbEn:
+      "Jericho Swain is the visionary ruler of Noxus, an expansionist nation that reveres only strength. Though he was cast down and crippled in the Ionian wars, his left arm severed, he seized control of the empire with ruthless determination… and a new...",
+    loc: {
+      ko: {
+        name: "스웨인",
+        title: "녹서스 대장군",
+        blurb:
+          "제리코 스웨인은 오로지 힘만을 숭상하는 확장주의 국가 녹서스를 탁월한 예지력으로 이끄는 지도자다. 아이오니아 전쟁에서 부상을 당해 절름발이가 되고 왼팔을 잃었지만, 가차 없는 결단력으로 제국을 통치하는 자리에까지 올랐다. 악마에게 새로이 받은 왼팔과, 그 못지않게 악마 같은 수를 써서… 이제 스웨인은 최전선에서 군을 지휘하며 자신만이 볼 수 있는 어둠, 주변에 흩어진 시체에 몰려든 새까만 까마귀들에서 얼핏얼핏 목격한 광경이 다가오는 것에 대비하고...",
+      },
+      zh: {
+        name: "斯维因",
+        title: "诺克萨斯统领",
+        blurb:
+          "杰里柯·斯维因是诺克萨斯高瞻远瞩的统治者，执掌一个独尊力量的扩张主义国度。虽然他曾在艾欧尼亚战争中被击倒并留下残疾，失去了左臂，但他却成功用无情的决心掌控了整个帝国……也获得了一只新的恶魔之手。现在，斯维因在前线亲自指挥，对抗着只有他才能看到的压境黑暗——只有他才能通过黑影般的渡鸦窥见周围死尸的秘密。在献祭与秘密的漩涡中，最惊天的秘密是，真正的敌人来自内部。",
+      },
+      es: {
+        title: "el Gran General de Noxus",
+        blurb:
+          "Jericho Swain es el visionario líder de Noxus, una nación expansionista que solo venera la fuerza. Pese a haber sido relegado y a haber perdido el brazo izquierdo en las guerras de Jonia, se hizo con el control del imperio con una despiadada...",
+      },
+      fr: {
+        title: "Grand général noxien",
+        blurb:
+          "Jericho Swain est le chef visionnaire de Noxus, une nation expansionniste qui ne respecte que la force. Bien que déchu et blessé pendant les guerres ioniennes, il a pris le contrôle de l'empire avec une féroce détermination… Et une nouvelle main...",
+      },
+      de: {
+        title: "der noxianische Großgeneral",
+        blurb:
+          "Jericho Swain ist der visionäre Herrscher von Noxus, einer expansionistischen Nation, in der nur Stärke zählt. Obwohl er in den ionischen Kriegen niedergeschlagen und verkrüppelt wurde – sein linker Arm wurde abgetrennt – brachte er mit skrupelloser...",
+      },
+      pt: {
+        title: "o Grande General Noxiano",
+        blurb:
+          "Jericho Swain é o líder visionário de Noxus, uma nação expansionista que venera apenas a força. Apesar de ter sido abatido e mutilado nas guerras ionianas, onde perdeu o braço esquerdo, ele tomou o controle do império com uma determinação implacável...",
+      },
+      ru: {
+        name: "Свейн",
+        title: "Верховный полководец Ноксуса",
+        blurb:
+          "Джерико Свейн – дальновидный правитель Ноксуса, нации, которая стремится к завоеваниям и уважает только силу. В войне с Ионией он был разбит и искалечен, но все же сумел решительно и безжалостно захватить власть над империей. В этом ему помогла...",
+      },
+    },
   },
   {
     id: "sylas",
@@ -3261,20 +8806,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Sylas",
     roles: ["Mid"],
-    archetypes: ["Mage","Assassin"],
+    archetypes: ["Mage", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "デマーシアの貧しい地域に育ったドレグボーンのサイラスは、この大都の闇を象徴する存在となった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "デマーシアの貧しい地域に育ったドレグボーンのサイラスは、この大都の闇を象徴する存在となった。",
+    blurbEn:
+      "Raised in one of Demacia's lesser quarters, Sylas of Dregbourne has come to symbolize the darker side of the Great City. As a boy, his ability to root out hidden sorcery caught the attention of the notorious mageseekers, who eventually imprisoned him...",
+    loc: {
+      ko: {
+        name: "사일러스",
+        title: "해방된 자",
+        blurb:
+          "데마시아의 빈민 구역, 드레그본에서 자란 사일러스는 위대한 도시의 어두운 면을 상징한다. 숨겨진 마력을 탐지하는 능력을 지닌 사일러스는 어렸을 때 마력척결관들의 눈에 띄지만, 결국 마력척결관을 상대로 마력을 사용하면서 감옥에 갇힌다. 감옥에서 탈출한 사일러스는 이제 불굴의 혁명가로 살며 한때 자신이 섬겼던 왕국을 파괴하기 위해 주변 사람들의 마법을 이용한다. 추방자들로 이루어진 사일러스의 마법사 군단은 날로 그 기세를 더해가는 듯 보인다.",
+      },
+      zh: {
+        name: "塞拉斯",
+        title: "解脱者",
+        blurb:
+          "在小城边沟镇长大的塞拉斯，如今却成了德玛西亚雄都的黑暗面的代表人物。当他还是个男孩的时候，人人避之唯恐不及的搜魔人发现他拥有感知法师的能力，便将他控制起来，利用这种能力来对付塞拉斯的同类。逃出生天之后的塞拉斯现在是一个坚定的抗命者，他要借助法师的力量摧毁自己曾经侍奉过的王国。遭到放逐而前来追随他的法师也与日俱增。",
+      },
+      es: {
+        title: "el Desencadenado",
+        blurb:
+          "Sylas de Dregbourne, originario de uno de los barrios más pobres de Demacia, llega como símbolo del lado más oscuro de la gran ciudad. De niño, su potencial para hallar la brujería oculta llamó la atención de los cazadores de magos más prestigiosos...",
+      },
+      fr: {
+        title: "Révolutionnaire déchaîné",
+        blurb:
+          "Élevé dans l'un des quartiers les plus pauvres de Demacia, Sylas de Liebourg est devenu le symbole du côté obscur de la Grande cité. Enfant, sa capacité à déceler la sorcellerie cachée attira l'attention des tristement célèbres traqueurs de mages, qui...",
+      },
+      de: {
+        title: "Sprenger der Ketten",
+        blurb:
+          "Sylas aus Gelichtergraben wuchs in einer der ärmeren Gegenden Demacias auf und wurde zu einem Symbol für die Schattenseite der großen Stadt. In seiner Kindheit erregte er die Aufmerksamkeit der berüchtigten Magiesuchenden, weil er verborgene Zauberei...",
+      },
+      pt: {
+        title: "o Abjugado",
+        blurb:
+          "Criado em um dos bairros mais pobres de Demacia, Sylas de Dregbourne se tornou o símbolo do lado mais sombrio da Grande Cidade. Quando criança, sua habilidade de identificar magia chamou a atenção de importantes caçadores de magos, que depois o...",
+      },
+      ru: {
+        name: "Сайлас",
+        title: "Сбросивший оковы",
+        blurb:
+          "Сайлас из Дрегборна вырос в неблагополучной части Демасии. Его судьба – наглядный пример того, что в этом королевстве далеко не всем живется хорошо. Когда он был еще мальчишкой, его умение видеть скрытые чары привлекло внимание грозных охотников на...",
+      },
+    },
   },
   {
     id: "syndra",
@@ -3288,17 +8876,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.66,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.66,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
     blurb: "シンドラは驚異的な力を操るアイオニアの恐るべきメイジである。",
+    blurbEn:
+      "Syndra is a fearsome Ionian mage with incredible power at her command. As a child, she disturbed the village elders with her reckless and wild magic. She was sent away to be taught greater control, but eventually discovered her supposed mentor was...",
+    loc: {
+      ko: {
+        name: "신드라",
+        title: "어둠의 여제",
+        blurb:
+          "아이오니아의 무시무시한 마법사 신드라는 믿을 수 없을 정도로 강대한 힘을 자유자재로 다룬다. 어렸을 때부터 엄청난 마법을 제멋대로 쓰고 다니는 바람에 마을 장로들을 아연실색하게 만들었다. 신드라는 절제를 배우도록 외딴곳으로 보내졌지만, 결국 소위 스승이라는 자가 그동안 자신의 힘을 억제했다는 사실을 알게 되었다. 신드라는 배신감과 상처를 어둠의 구체로 만들어 자신을 통제하려는 자는 모조리 파멸시키겠다고 마음먹었다.",
+      },
+      zh: {
+        name: "辛德拉",
+        title: "暗黑元首",
+        blurb:
+          "辛德拉是一位令人胆寒的艾欧尼亚魔法师，操纵着难以置信的力量。她在孩童时期就因为狂暴而不受控制的魔法而让村庄的长老们深感不安。长老们把她送到外地接受严密的监管和训练，但她发现所谓的训练其实是对自己能力的限制。辛德拉将自己感受到的背叛与痛楚融入暗黑法球，并发誓消灭所有想要控制她的人。",
+      },
+      es: {
+        title: "La Soberana Oscura",
+        blurb:
+          "Syndra es una temible maga jonia con un poder increíble a su disposición. De niña, inquietó a los ancianos del lugar con su imprudente y tempestuosa magia. La enviaron a que aprendiera a controlarla mejor, pero al final descubrió que su supuesto mentor...",
+      },
+      fr: {
+        title: "Souveraine obscure",
+        blurb:
+          "Syndra est une effrayante magicienne originaire d'Ionia, aux pouvoirs impressionnants. Enfant, elle perturba les anciens de son village avec sa magie sauvage et incontrôlée. Elle fut confiée à un maître dans l'espoir qu'elle apprendrait à se contrôler...",
+      },
+      de: {
+        title: "die dunkle Herrscherin",
+        blurb:
+          "Syndra ist eine furchteinflößende ionische Magierin, die über unvorstellbare Macht verfügt. Als Kind zog sie in ihrem Dorf den Unmut der Ältesten auf sich, denn ihre magischen Fähigkeiten waren wild und unbezähmbar. Sie wurde fortgeschickt, um unter...",
+      },
+      pt: {
+        title: "a Soberana Sombria",
+        blurb:
+          "Syndra é uma temida maga ioniana com um poder incrível ao seu dispor. Quando criança, ela causava pavor nos anciões da aldeia com sua magia imprudente e indomada. Mandada embora para aprender a controlar seus poderes, ela terminou descobrindo que seu...",
+      },
+      ru: {
+        name: "Синдра",
+        title: "Темная властительница",
+        blurb:
+          "Синдра – наделенная страшной силой колдунья из Ионии. В детстве ее дикая магия напугала старейшин поселения, и девочку отправили учиться самоконтролю. Выяснилось, однако, что наставник лишь ограничивал ее возможности. Придав своей боли и гневу форму...",
+      },
+    },
   },
   {
     id: "tahmkench",
@@ -3308,21 +8938,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "川の王様",
     region: "Bilgewater",
     ddragonId: "TahmKench",
-    roles: ["Top","Support"],
-    archetypes: ["Tank","Support"],
+    roles: ["Top", "Support"],
+    archetypes: ["Tank", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.9,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.5
-}),
-    blurb: "タム・ケンチは過去に様々な名前で呼ばれてきた悪魔であり、ルーンテラの水路を移ろいながら、尽きることのない食欲を満たすために他者を餌食にしている。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.9,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.5,
+    }),
+    blurb:
+      "タム・ケンチは過去に様々な名前で呼ばれてきた悪魔であり、ルーンテラの水路を移ろいながら、尽きることのない食欲を満たすために他者を餌食にしている。",
+    blurbEn:
+      "Known by many names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a...",
+    loc: {
+      ko: {
+        name: "탐 켄치",
+        title: "강의 폭군",
+        blurb:
+          "역사 속에서 여러 이름으로 알려져 있는 악마 탐 켄치는 룬테라의 물길을 따라 이동하며 끝없는 식욕을 다른 이들의 고통으로 채운다. 탐 켄치를 매우 매력적이고 자신만만한 존재로 생각하는 이들도 있지만, 탐 켄치는 방심한 먹잇감을 찾아 현실 세계를 활보하는 방랑자일 뿐이다. 탐 켄치의 채찍 같은 혓바닥은 수십 걸음 떨어진 중무장한 전사도 기절시킬 수 있으며, 탐 켄치의 꾸르륵대는 뱃속으로 들어가는 것은 다시 돌아올 희망이 거의 없는 심연에 떨어지는...",
+      },
+      zh: {
+        name: "塔姆",
+        title: "河流之王",
+        blurb:
+          "塔姆在历史上有许多不同的名字，他游历于符文之地的各条水道，用大意之人的悲惨喂养自己贪得无厌的食欲。虽然他的外表可能富有古怪的魅力和得意，但他在物质领域的漫游只是为了寻找毫无戒心的猎物。他的舌头像巨大的鞭子，即使是全副武装的重甲士兵也会被他从十几步以外的距离击晕，而如果跌入了他隆隆作响的肚子里，就相当于掉进了九死一生的绝命深渊。",
+      },
+      es: {
+        title: "El Rey del Río",
+        blurb:
+          "Tahm Kench, al que se le han atribuido diferentes nombres a lo largo de la historia, es un demonio que viaja por los canales de Runaterra colmando su insaciable apetito con las desgracias ajenas. Pese a que pueda parecer cautivador y orgulloso, se...",
+      },
+      fr: {
+        title: "Roi des rivières",
+        blurb:
+          "Au fil du temps, on lui a donné de nombreux noms. Le démon Tahm Kench voyage dans les cours d'eau de Runeterra, nourrissant son insatiable appétit de la misère des autres. Bien qu'il puisse sembler particulièrement charmant et fier, il rôde dans le...",
+      },
+      de: {
+        title: "Der König des Flusses",
+        blurb:
+          "Der Dämon Tahm Kench war im Laufe der Zeit schon unter vielen Namen bekannt, reist auf Runeterras Wasserwegen und nährt seinen unstillbaren Hunger mit dem Elend der anderen. Obwohl er außerordentlich charmant und stolz erscheint, stolziert er durch die...",
+      },
+      pt: {
+        title: "o Rei do Rio",
+        blurb:
+          "Conhecido por muitos nomes ao longo da história, Tahm Kench viaja pelas águas de Runeterra alimentando seu insaciável apetite com o sofrimento alheio. Apesar de parecer particularmente encantador e orgulhoso, ele vaga pelo reino físico como um andarilho...",
+      },
+      ru: {
+        name: "Таам Кенч",
+        title: "Речной царь",
+        blurb:
+          "Демон Таам Кенч носил множество имен в разные эпохи. Он путешествует по водоемам Рунтерры, утоляя свой ненасытный голод чужими страданиями. На первый взгляд он может показаться величавым и даже обаятельным, но на самом деле рыщет по миру смертных в...",
+      },
+    },
   },
   {
     id: "taliyah",
@@ -3332,21 +9005,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ストーンウィーバー",
     region: "Shurima",
     ddragonId: "Taliyah",
-    roles: ["Mid","Jungle"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Jungle"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.7,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.7,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
     blurb: "タリヤは少女の好奇心と大人の責任感の間で揺れ動く、シュリーマ出身の流浪のメイジだ。",
+    blurbEn:
+      "Taliyah is a nomadic mage from Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe...",
+    loc: {
+      ko: {
+        name: "탈리야",
+        title: "바위술사",
+        blurb:
+          "슈리마의 떠돌이 마법사 탈리야는 10대의 호기심과 어른으로서의 책임 사이에서 괴로워한다. 탈리야는 자신 안에서 커져 가는 힘의 본질을 깨닫기 위해 발로란 전역을 누빈 끝에, 최근에는 자신의 부족을 보호하기 위해 돌아왔다. 탈리야의 여린 마음을 약점으로 착각한 사람들은 호되게 대가를 치렀다. 탈리야의 천진난만한 모습 뒤에는 산도 움직이는 불굴의 의지와 대지도 흔드는 강인한 정신이 있기 때문이다.",
+      },
+      zh: {
+        name: "塔莉垭",
+        title: "岩雀",
+        blurb:
+          "塔莉垭是一位来自恕瑞玛的游牧民族的法师，孩子的好奇与大人的责任两股力量同时拉扯着她。她曾踏遍瓦洛兰的山山水水，只为寻得控制己身异能的法门，不过最近，她已经回到了故乡，保护生她养她的部族。有些人把她的温柔善意当做是懦弱的表现，最终也为自己的愚鲁付出了代价。塔莉垭青春稚嫩的举止背后，是一颗敢于移山填海的雄心，和一个堪能倾世的灵魂。",
+      },
+      es: {
+        title: "La Tejedora de Piedra",
+        blurb:
+          "Taliyah es una hechicera nómada de Shurima desgarrada entre la curiosidad de una adolescente y la responsabilidad de una adulta. Ha atravesado Valoran de un lado a otro para descubrir la auténtica naturaleza de sus crecientes poderes, aunque...",
+      },
+      fr: {
+        title: "Tisseuse de pierres",
+        blurb:
+          "Taliyah est une mage issue des tribus nomades de Shurima, déchirée entre l'émerveillement de la jeunesse et les responsabilités des adultes. Elle a déjà traversé pratiquement tout Valoran pour découvrir la véritable nature de ses pouvoirs toujours plus...",
+      },
+      de: {
+        title: "die Felsenweberin",
+        blurb:
+          "Taliyah ist eine nomadische Magierin aus Shurima, die zwischen jugendlicher Entdeckungsfreude und dem Verantwortungsbewusstsein einer Erwachsenen hin- und hergerissen ist. Sie hat fast ganz Valoran bereist, um die wahre Natur ihrer wachsenden Kräfte zu...",
+      },
+      pt: {
+        title: "a Tecelã de Pedras",
+        blurb:
+          "Taliyah é uma maga nômade de Shurima, dividida entre sua empolgação juvenil e suas grandes responsabilidades. Ela cruzou quase toda Valoran em uma jornada para conhecer a verdadeira natureza de seus próprios poderes, apesar de ter retornado recentemente...",
+      },
+      ru: {
+        name: "Талия",
+        title: "Прядущая камни",
+        blurb:
+          "Талия – странствующий маг из Шуримы, который разрывается между любопытством и чувством ответственности. Она пересекла почти весь Валоран в поисках знаний об истинной природе своего растущего могущества, но затем ей пришлось вернуться на родину, чтобы...",
+      },
+    },
   },
   {
     id: "talon",
@@ -3356,21 +9071,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "将軍の懐刀",
     region: "Noxus",
     ddragonId: "Talon",
-    roles: ["Mid","Jungle"],
+    roles: ["Mid", "Jungle"],
     archetypes: ["Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.3,
-  damage: 0.6000000000000001,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.7,
-  scaling: 0.45
-}),
-    blurb: "タロンは闇を駆ける刃であり、誰にも悟られることなく攻撃し、気付かれる前に脱出することができる非情な殺し屋だ。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.3,
+      damage: 0.6000000000000001,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.7,
+      scaling: 0.45,
+    }),
+    blurb:
+      "タロンは闇を駆ける刃であり、誰にも悟られることなく攻撃し、気付かれる前に脱出することができる非情な殺し屋だ。",
+    blurbEn:
+      "Talon is the knife in the darkness, a merciless killer able to strike without warning and escape before any alarm is raised. He carved out a dangerous reputation on the brutal streets of Noxus, where he was forced to fight, kill, and steal to survive...",
+    loc: {
+      ko: {
+        name: "탈론",
+        title: "검의 그림자",
+        blurb:
+          "탈론은 음지에서 암약하는 무자비한 자객이다. 불의의 일격을 가하는 데에도, 이상한 낌새가 느껴지기도 전에 자취를 감추는 데도 능하다. 거칠기 짝이 없는 녹서스의 거리에서 싸우고, 상대를 처치하고, 도둑질을 하면서 살아남았고 위험한 존재라는 명성을 쌓았다. 악명이 자자한 뒤 쿠토 가문에 발탁된 뒤로는 녹서스 제국의 명을 받들어 적의 지도자, 대장, 영웅은 물론이고, 감히 자신이 섬기는 주인의 심기를 거스르는 녹서스 인마저도 종횡무진 암살하고 있다.",
+      },
+      zh: {
+        name: "泰隆",
+        title: "刀锋之影",
+        blurb:
+          "泰隆是黑暗中的匕首，是绝无仁慈的杀手，他出手前不会有任何警告，不会留任何退路，也不会引起任何警觉。泰隆在诺克萨斯的野蛮街巷中深深烙印了自己危险的名号，在这里他被迫为了生存而战斗、杀戮、偷窃。后来恶名昭彰的杜·克卡奥家族收养了他，现在他为帝国的指挥部贡献自己的夺命手段，暗杀敌人的领袖、军官和英雄，当然也包括任何得罪了最高长官们的诺克萨斯蠢货。",
+      },
+      es: {
+        title: "La Sombra de la Espada",
+        blurb:
+          "Talon es el cuchillo de la oscuridad, un asesino despiadado capaz de atacar sin previo aviso y huir antes de que salte alarma alguna. Logró granjearse una peligrosa reputación en las terribles calles de Noxus, donde se vio obligado a luchar, matar y...",
+      },
+      fr: {
+        title: "Lame des ténèbres",
+        blurb:
+          "Talon est la dague cachée dans l'ombre, un assassin impitoyable, capable de frapper sans prévenir et de fuir avant que l'alerte ne soit donnée. Il a acquis une dangereuse réputation dans les brutales rues de Noxus, où il a été contraint de se battre, de...",
+      },
+      de: {
+        title: "der Klingenschatten",
+        blurb:
+          "Talon ist das Messer in der Dunkelheit, ein erbarmungsloser Killer, der ohne Vorwarnung zuschlägt und ohne Aufsehen zu erregen wieder verschwindet. Er hat sich in den brutalen Straßen von Noxus einen gefährlichen Ruf erworben, denn er war gezwungen, für...",
+      },
+      pt: {
+        title: "a Sombra da Lâmina",
+        blurb:
+          "Talon é a adaga na escuridão, um assassino impiedoso capaz de atacar sem aviso e escapar antes que qualquer alarme soe. Ele construiu uma reputação perigosa nas ruas brutais de Noxus, onde foi forçado a lutar, matar e roubar para sobreviver. Adotado...",
+      },
+      ru: {
+        name: "Талон",
+        title: "Тень клинка",
+        blurb:
+          "Талон – это клинок во тьме, безжалостный убийца, который бьет без предупреждения и способен скрыться до того, как поднимется тревога. Он заработал себе опасную репутацию на жестоких улицах Ноксуса, где ему приходилось сражаться, убивать и воровать...",
+      },
+    },
   },
   {
     id: "taric",
@@ -3381,20 +9139,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Targon",
     ddragonId: "Taric",
     roles: ["Support"],
-    archetypes: ["Support","Tank"],
+    archetypes: ["Support", "Tank"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.55,
-  skillBased: 0.8,
-  damageStyle: 0.35,
-  durability: 0.8,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.3,
-  scaling: 0.5
-}),
-    blurb: "タリックは守護の神髄であり、ルーンテラの生命、愛、美の守護者として驚異的な力を発揮する。",
+      range: 0.55,
+      skillBased: 0.8,
+      damageStyle: 0.35,
+      durability: 0.8,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.3,
+      scaling: 0.5,
+    }),
+    blurb:
+      "タリックは守護の神髄であり、ルーンテラの生命、愛、美の守護者として驚異的な力を発揮する。",
+    blurbEn:
+      "Taric is the Aspect of the Protector, wielding incredible power as Runeterra's guardian of life, love, and beauty. Shamed by a dereliction of duty and exiled from his homeland Demacia, Taric ascended Mount Targon to find redemption, only to discover a...",
+    loc: {
+      ko: {
+        name: "타릭",
+        title: "발로란의 방패",
+        blurb:
+          "타릭은 초월적인 힘으로 룬테라의 생명과 사랑, 아름다움을 수호하는 수호자의 성위이다. 고국 데마시아에서 직무태만죄를 범하고 수치스럽게 추방당한 타릭은 속죄를 위해 타곤 산을 올랐고, 이 산 정상에서 하늘의 별들에게 더 큰 소명을 부여받았다. 고대 타곤의 신비한 힘을 가득 받아 끔찍한 공허의 침식으로부터 밤낮없이 세계를 지키는 발로란의 방패가 된 것이다.",
+      },
+      zh: {
+        name: "塔里克",
+        title: "瓦洛兰之盾",
+        blurb:
+          "塔里克是保护者星灵，用超乎寻常的力量守护着符文之地的生命、仁爱以及万物之美。塔里克由于渎职而被放逐，离开了祖国德玛西亚，前去攀登巨神峰寻找救赎，但他找到的却是来自星界的更高层的召唤。现在的塔里克与古代巨神族的神力相融合，以瓦洛兰之盾的身份，永不疲倦地警惕着阴险狡诈的虚空腐化之力。",
+      },
+      es: {
+        title: "El Escudo de Valoran",
+        blurb:
+          "Taric es el Aspecto del Protector, y gracias a su increíble poder es el guardián de la vida, el amor y la belleza en Runaterra. Caído en desgracia debido a la negligencia de su deber y exiliado de su hogar, Demacia, Taric ascendió al Monte Targon...",
+      },
+      fr: {
+        title: "Bouclier de Valoran",
+        blurb:
+          "Taric est la Manifestation du Protecteur, doté d'un incroyable pouvoir en tant que gardien de la vie, de l'amour et de la beauté sur Runeterra. Couvert d'opprobre pour avoir abandonné son devoir et exilé de sa terre natale de Demacia, Taric a entrepris...",
+      },
+      de: {
+        title: "der Schild von Valoran",
+        blurb:
+          "Taric ist der Aspekt des Beschützers und verfügt als Avatar von Runeterras Gott des Lebens, der Liebe und der Schönheit über unglaubliche Macht. Wegen eines Pflichtversäumnisses beschämt und von seiner Heimat Demacia verbannt, erklomm Taric den Targon...",
+      },
+      pt: {
+        title: "o Escudo de Valoran",
+        blurb:
+          "Taric é o Aspecto do Protetor, portando um incrível poder como o guardião da vida, do amor e da beleza de Runeterra. Punido por faltar ao cumprimento de seu dever e exilado de Demacia, sua terra natal, Taric subiu o Monte Targon em busca de redenção...",
+      },
+      ru: {
+        name: "Тарик",
+        title: "Щит Валорана",
+        blurb:
+          "Тарик – Сущность Заступника, могучий поборник жизни, любви и красоты на Рунтерре. Однажды Тарик пренебрег долгом, за что был предан позору и изгнан из родной Демасии. Он совершил восхождение на гору Таргон, чтобы обрести там искупление, однако, дойдя до...",
+      },
+    },
   },
   {
     id: "teemo",
@@ -3405,25 +9206,67 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Teemo",
     roles: ["Top"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({
-  honor: 0.6,
-  protection: 0.5,
-  organization: 0.6,
-  freedom: 0.5
-}),
+      honor: 0.6,
+      protection: 0.5,
+      organization: 0.6,
+      freedom: 0.5,
+    }),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.5,
-  damageStyle: 0.4,
-  durability: 0.3,
-  damage: 0.7,
-  cc: 0.3,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.4
-}),
+      range: 0.4,
+      skillBased: 0.5,
+      damageStyle: 0.4,
+      durability: 0.3,
+      damage: 0.7,
+      cc: 0.3,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.4,
+    }),
     blurb: "バンドル偵察軍の小さな英雄。猛毒のダーツで森を守る。",
+    blurbEn:
+      "Undeterred by even the most dangerous and threatening of obstacles, Teemo scouts the world with boundless enthusiasm and a cheerful spirit. A yordle with an unwavering sense of morality, he takes pride in following the Bandle Scout's Code, sometimes...",
+    loc: {
+      ko: {
+        name: "티모",
+        title: "날쌘 정찰병",
+        blurb:
+          "어떤 위협에도 꿈쩍 않는 티모는 끝 모를 적극성과 쾌활함으로 세상을 정찰한다. 티모는 확고한 도덕성을 가진 요들로, 밴들 시티의 정찰대 강령을 따르는 것을 자랑스럽게 여긴다. 강령을 얼마나 열심히 따르는지 그의 행동이 가져올 더 넓은 결과를 깨닫지 못하기도 한다. 더러 정찰대의 존재에 의문을 품는 자들도 있지만, 한 가지는 분명하다. 티모의 신념은 절대 얕잡아봐서는 안 된다.",
+      },
+      zh: {
+        name: "提莫",
+        title: "迅捷斥候",
+        blurb:
+          "不畏艰难险阻、不惧坎坷危途，提莫怀着无比的热情和欢欣的精神探索着整个世界。作为一个约德尔人，他对自己的道德观坚定不移，也对班德尔斥候的信条倍感自豪，有时候，过分的热忱甚至会让他无法看到自己的行为将会导致什么样的后果。虽然有人认为，“班德尔斥候小队”是否真实存在还有待商榷，但有一件事可以肯定，那就是提莫的信念。",
+      },
+      es: {
+        title: "El Explorador Veloz",
+        blurb:
+          "Sin inmutarse siquiera por los obstáculos más peligrosos y amenazantes, Teemo explora el mundo con un entusiasmo infinito y una alegría desbordante. Con un inquebrantable sentido de la moralidad, este yordle se enorgullece de seguir el Código de los...",
+      },
+      fr: {
+        title: "Éclaireur de Bandle",
+        blurb:
+          "N'ayant pas peur de braver les obstacles les plus dangereux, Teemo explore le monde avec un enthousiasme débordant et une bonne humeur contagieuse. Yordle au sens moral inflexible, il suit fièrement les préceptes du Code des éclaireurs de Bandle...",
+      },
+      de: {
+        title: "der flinke Späher",
+        blurb:
+          "Teemo schreckt sogar vor den gefährlichsten und furchterregendsten Problemen nicht zurück. Er erkundet die Welt mit scheinbar grenzenloser Begeisterung und fröhlichem Gemüt. Der Yordle rückt nie von seinen moralischen Prinzipien ab und rühmt sich, stets...",
+      },
+      pt: {
+        title: "o Explorador Veloz",
+        blurb:
+          "Indiferente até aos obstáculos mais perigosos e ameaçadores, Teemo vasculha o mundo com infinito entusiasmo e animação. Um yordle com uma inabalável moral que se orgulha de seguir o Código dos Escoteiros de Bandópolis, às vezes com tanta dedicação que...",
+      },
+      ru: {
+        name: "Тимо",
+        title: "Шустрый скаут",
+        blurb:
+          "Тимо путешествует по миру, заряженный бесконечным энтузиазмом и бодростью, и его не пугают даже самые опасные и грозные преграды. Йордл, наделенный небывалой высоконравственностью, неукоснительно следует Кодексу скаутов Бандла – порой с таким рвением...",
+      },
+    },
   },
   {
     id: "thresh",
@@ -3434,24 +9277,66 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Thresh",
     roles: ["Support"],
-    archetypes: ["Support","Tank"],
+    archetypes: ["Support", "Tank"],
     storyVec: s({
-  chaos: 0.7,
-  ambition: 0.5,
-  solo: 0.7
-}),
+      chaos: 0.7,
+      ambition: 0.5,
+      solo: 0.7,
+    }),
     gameVec: g({
-  range: 0.4,
-  skillBased: 0.9,
-  damageStyle: 0.3,
-  durability: 0.5,
-  damage: 0.4,
-  cc: 0.95,
-  mobility: 0.5,
-  difficulty: 0.7,
-  scaling: 0.5
-}),
+      range: 0.4,
+      skillBased: 0.9,
+      damageStyle: 0.3,
+      durability: 0.5,
+      damage: 0.4,
+      cc: 0.95,
+      mobility: 0.5,
+      difficulty: 0.7,
+      scaling: 0.5,
+    }),
     blurb: "霊魂を集める残忍な獄吏。被害者の苦悶を糧とする。",
+    blurbEn:
+      "Sadistic and cunning, Thresh is an ambitious and restless specter of the Shadow Isles. Once the custodian of countless arcane secrets, he was undone by a power greater than life or death, and now sustains himself by tormenting and breaking others with...",
+    loc: {
+      ko: {
+        name: "쓰레쉬",
+        title: "지옥의 간수",
+        blurb:
+          "가학적이고 교활한 그림자 군도의 악령인 쓰레쉬는 이 세계에 고통을 전파하겠다는 야심을 품고 잠시도 쉬지 않는다. 원래는 신비로운 비밀이 가득한 지하 창고의 관리인이었으나, 삶이나 죽음보다 더 거대한 힘에 의해 타락했고 이제는 기발한 고문 방법을 생각해 내어 사람들을 괴롭히며, 오랫동안 견디기 힘든 고통을 가하여 서서히 망가뜨리는 일에 심취하고 있다. 쓰레쉬의 마수에 붙잡힌 자는 죽음으로도 그 손아귀를 벗어날 수 없다. 쓰레쉬가 랜턴에 영혼을 가두고는...",
+      },
+      zh: {
+        name: "锤石",
+        title: "魂锁典狱长",
+        blurb:
+          "暴虐又狡猾的锤石是来自暗影岛的亡灵，野心勃勃、不知疲倦。他曾经是无数奥术秘藏的看守，在一种超越生死的力量下骨肉瓦解，而现在他则使用自己独创的钻心痛苦缓慢地折磨并击溃其他人，以此作为自己存在下去的手段。被他迫害的人需要承受远超死亡的痛苦，因为锤石会让他们的灵魂也饱尝剧痛，将他们的灵魂囚禁在自己的灯笼中，经受永世的折磨。",
+      },
+      es: {
+        title: "El Carcelero Implacable",
+        blurb:
+          "El sádico y astuto Thresh es un ambicioso y obstinado espectro de las Islas de la Sombra. Otrora guardián de innumerables secretos arcanos, acabó sucumbiendo a un poder por encima de la vida y la muerte. Ahora sobrevive torturando a sus víctimas con...",
+      },
+      fr: {
+        title: "Garde aux chaînes",
+        blurb:
+          "Sadique mais rusé, Thresh est un ambitieux spectre des Îles obscures. Autrefois le gardien d'innombrables secrets des arcanes, il fut terrassé par un pouvoir plus grand que la vie ou la mort, et il s'alimente maintenant des souffrances et des tourments...",
+      },
+      de: {
+        title: "der Kettenwächter",
+        blurb:
+          "Thresh ist ein ehrgeiziges und ruheloses Gespenst der Schatteninseln, das sich durch seine sadistische Gerissenheit auszeichnet. Einst war er Wächter zahlloser arkaner Geheimnisse, doch er erlag einer Macht, die größer ist als das Leben oder der Tod...",
+      },
+      pt: {
+        title: "o Guardião das Correntes",
+        blurb:
+          "Sádico e astuto, Thresh é um espectro ambicioso e incansável das Ilhas das Sombras. Ele já foi guardião de incontáveis segredos arcanos, mas acabou sucumbindo a poderes maiores do que a vida e a morte. Agora, Thresh vive atormentando e acorrentando...",
+      },
+      ru: {
+        name: "Треш",
+        title: "Страж цепей",
+        blurb:
+          "Жестокий, коварный и честолюбивый Треш – неугомонный призрак Сумрачных островов. Когда-то он был хранителем множества колдовских секретов, но нечто за гранью жизни и смерти изменило его навечно. Теперь он кормится чужими страданиями, изощренно пытая и...",
+      },
+    },
   },
   {
     id: "tristana",
@@ -3462,20 +9347,63 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Tristana",
     roles: ["ADC"],
-    archetypes: ["Marksman","Assassin"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.3,
-  damage: 0.8400000000000001,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
-    blurb: "他のヨードルたちは自らのエネルギーを発見や発明、またはただのいたずらに注いでいるが、トリスターナはいつだって偉大な戦士の冒険に憧れていた。",
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.3,
+      damage: 0.8400000000000001,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
+    blurb:
+      "他のヨードルたちは自らのエネルギーを発見や発明、またはただのいたずらに注いでいるが、トリスターナはいつだって偉大な戦士の冒険に憧れていた。",
+    blurbEn:
+      "While many other yordles channel their energy into discovery, invention, or just plain mischief-making, Tristana was always inspired by the adventures of great warriors. She had heard much about Runeterra, its factions, and its wars, and believed her...",
+    loc: {
+      ko: {
+        name: "트리스타나",
+        title: "요들 사수",
+        blurb:
+          "다른 많은 요들이 발견, 발명, 또는 그저 장난에 기력을 쏟지만, 트리스타나는 언제나 위대한 전사가 되기 위해 모험을 떠나는 꿈을 꿨다. 트리스타나는 룬테라, 룬테라의 파벌, 그리고 전쟁 이야기를 즐겨 들었고, 요들도 얼마든지 전설이 될 수 있다고 생각했다. 트리스타나는 이제 세계에 첫 발을 내딛으며, 든든한 대포 '부머'를 들고 변함없는 용기와 낙관적인 성격으로 전장에 뛰어 든다.",
+      },
+      zh: {
+        name: "崔丝塔娜",
+        title: "麦林炮手",
+        blurb:
+          "许多约德尔人都将自己的精力花在了探索发现、发明创造或者搞恶作剧上，但崔丝塔娜却一心向往伟大勇者的冒险传奇。她听过太多关于符文之地的故事，关于不同的势力、庞大的战争。崔丝塔娜相信自己也有资格成为传奇。她毅然踏进了这个世界，扛着她信赖的加农炮“轰隆”，带着坚定的勇气和乐观精神飞身跃入战场。",
+      },
+      es: {
+        title: "La Artillera Yordle",
+        blurb:
+          "Pese a que la mayoría de los yordles canalizan sus energías hacia el descubrimiento, la invención o simples trastadas, Tristana siempre se ha visto inspirada por las aventuras de los grandes guerreros. Siempre ha escuchado las historias de Runaterra...",
+      },
+      fr: {
+        title: "Canonnière yordle",
+        blurb:
+          "Si bon nombre d'autres yordles utilisent leur énergie débordante pour explorer, découvrir, inventer ou plus simplement jouer de mauvais tours, Tristana a toujours puisé son inspiration dans les récits des grands guerriers. Elle avait beaucoup entendu...",
+      },
+      de: {
+        title: "die Yordle-Schützin",
+        blurb:
+          "Wohingegen viele andere Yordle ihre Zeit mit Entdeckungen, Erfindungen oder einfach Unfug verbringen, fühlte sich Tristana schon immer von den Abenteuern großer Krieger inspiriert. Sie hatte schon viel über Runeterra mit seinen Fraktionen und Kriegen...",
+      },
+      pt: {
+        title: "a Artilheira Yordle",
+        blurb:
+          "Apesar de muitos outros yordles focarem sua energia em descobertas, invenções ou simplesmente travessuras, Tristana sempre se inspirou nas aventuras de grandes guerreiros. Ela ouviu muito sobre Runeterra, suas facções e suas guerras, e acreditava que...",
+      },
+      ru: {
+        name: "Тристана",
+        title: "Йордлский канонир",
+        blurb:
+          "Многие йордлы направляют свою энергию на открытия, изобретения или обычное озорство, но Тристану всегда вдохновляли свершения великих воинов. Она много слышала о Рунтерре, ее народах и войнах и считает, что ее собственная раса тоже достойна быть...",
+      },
+    },
   },
   {
     id: "trundle",
@@ -3485,21 +9413,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "トロールキング",
     region: "Freljord",
     ddragonId: "Trundle",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.54,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.5,
-  scaling: 0.55
-}),
-    blurb: "トランドルは巨大な図体をした底意地の悪いトロールであり、どんな相手でも力で抑えつけて従わせる──それはフレヨルド自体も例外ではない。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.54,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.5,
+      scaling: 0.55,
+    }),
+    blurb:
+      "トランドルは巨大な図体をした底意地の悪いトロールであり、どんな相手でも力で抑えつけて従わせる──それはフレヨルド自体も例外ではない。",
+    blurbEn:
+      "Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his...",
+    loc: {
+      ko: {
+        name: "트런들",
+        title: "트롤 왕",
+        blurb:
+          "트런들은 몸집이 크고 교활한데다 잔인한 면모를 두루 갖춘 트롤로, 일단 트런들이 몽둥이를 들면 굴복시키지 못할 상대는 없다. 심지어 프렐요드 전역을 통틀어서 말이다. 영역 본능이 매우 강한 트런들은 자신의 영토에 발을 디딘 멍청한 자들을 쫓아가서, 거대한 얼음 정수의 몽둥이를 들고 적을 뼛속까지 얼린 채 서서히 죽어가는 모습을 보고 껄껄 웃는다.",
+      },
+      zh: {
+        name: "特朗德尔",
+        title: "巨魔之王",
+        blurb:
+          "特朗德尔是一个粗鄙且狡猾的巨魔，性格非常顽劣。没有什么东西不能被他打到屈服认输，甚至是弗雷尔卓德本身。他的领土意识极强，任何进入他领地的蠢蛋都会被他追杀。巨大的臻冰棍棒随时伺候。他会让敌人感到刺骨寒冷，并且用锯齿状的冰柱刺穿他们，最后在他们血溅冰原的时候放声大笑。",
+      },
+      es: {
+        title: "El Rey Trol",
+        blurb:
+          "Trundle es un trol retorcido y colosal con una personalidad despiadada. No hay nada que no sea capaz de someter a base de mazazos, ni siquiera el propio Freljord. Su tremendo instinto territorial lo mueve a perseguir a todo aquel lo bastante osado como...",
+      },
+      fr: {
+        title: "Roi des trolls",
+        blurb:
+          "Trundle est un troll massif, sournois et malicieux. Il n'y a rien qu'il ne puisse soumettre à sa volonté avec son gourdin, pas même Freljord. Extrêmement territorial, Trundle traque tous ceux qui sont assez fous pour pénétrer sur ses terres. Ensuite...",
+      },
+      de: {
+        title: "der Trollkönig",
+        blurb:
+          "Trundle ist ein imposanter und verschlagener Troll mit besonders boshaftem Charakter, und es gibt nichts, was er mit seinem Knüppel nicht unterwerfen könnte – nicht einmal Freljord selbst kann ihm widerstehen. Er kämpft erbittert um sein Territorium und...",
+      },
+      pt: {
+        title: "o Rei dos Trolls",
+        blurb:
+          "Trundle é um troll gigantesco e traiçoeiro com uma tendência particularmente perversa, e não há nada que ele não possa submeter a cacetadas, nem mesmo a própria Freljord. Violentamente territorial, ele persegue qualquer um tolo o suficiente de entrar em...",
+      },
+      ru: {
+        name: "Трандл",
+        title: "Король троллей",
+        blurb:
+          "Трандл – неуклюжий, но коварный тролль с дурным характером, и даже сам Фрельйорд не может выстоять против его ударов. Он яростно охраняет свои владения и преследует любого, кому хватает глупости нарушить их границы. Его огромная дубина из Истинного льда...",
+      },
+    },
   },
   {
     id: "tryndamere",
@@ -3510,25 +9481,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Tryndamere",
     roles: ["Top"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  revenge: 0.8,
-  family: 0.7,
-  rival: 0.5,
-  solo: 0.4
-}),
+      revenge: 0.8,
+      family: 0.7,
+      rival: 0.5,
+      solo: 0.4,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.3,
-  damageStyle: 0.5,
-  durability: 0.6,
-  damage: 0.85,
-  cc: 0.3,
-  mobility: 0.5,
-  difficulty: 0.4,
-  scaling: 0.65
-}),
+      range: 0,
+      skillBased: 0.3,
+      damageStyle: 0.5,
+      durability: 0.6,
+      damage: 0.85,
+      cc: 0.3,
+      mobility: 0.5,
+      difficulty: 0.4,
+      scaling: 0.65,
+    }),
     blurb: "怒りで自らを蘇らせる蛮族の王。アッシュの伴侶。",
+    blurbEn:
+      "Fueled by unbridled fury and rage, Tryndamere once carved his way through the Freljord, openly challenging the greatest warriors of the north to prepare himself for even darker days ahead. The wrathful barbarian has long sought revenge for the...",
+    loc: {
+      ko: {
+        name: "트린다미어",
+        title: "야만전사 왕",
+        blurb:
+          "한때 트린다미어는 걷잡을 수 없는 분노와 증오의 힘을 원동력 삼아, 프렐요드를 돌아다니며 북방 제일가는 위대한 전사들에게 공공연한 도전을 일삼았다. 앞으로 닥칠 더욱 암울한 미래를 대비하기 위함이었다. 분노의 야만전사로서, 부족을 말살시킨 원수에게 복수할 날만을 고대하고 있었던 것이다. 하지만 최근에는 아바로사의 전쟁의 어머니인 애쉬의 동료가 되어 아바로사 부족민들과 함께 살고 있다. 트린다미어의 초인적인 힘과 전설에 나올 법한 불굴의 투지에 힘입어...",
+      },
+      zh: {
+        name: "泰达米尔",
+        title: "蛮族之王",
+        blurb:
+          "桀骜不羁和无尽的愤怒，驱使着泰达米尔在弗雷尔卓德一路所向披靡。为了对即将到来的黑暗时代做好准备，他曾公开挑战北方最伟大的战士。这位愤怒的野蛮人，一直奔走在为自己被灭绝的氏族复仇的路上。但最近他开始与阿瓦洛萨部族的战母艾希联手，并在她的部落中重新安定下来。拥有非人力量与毅力的泰达米尔，是众人皆知的传奇，为自己与新盟友带来了无数次奇迹般的胜利。",
+      },
+      es: {
+        title: "El Rey Bárbaro",
+        blurb:
+          "Impulsado por una furia y una rabia desenfrenadas, Tryndamere solía abrirse paso por Freljord desafiando abiertamente a los mejores guerreros del norte con el objetivo de prepararse para días aún más oscuros. El furioso bárbaro lleva una eternidad...",
+      },
+      fr: {
+        title: "Roi barbare",
+        blurb:
+          "Poussé par une rage infinie, Tryndamere traverse Freljord et parfait sa maîtrise du combat en défiant les plus grands guerriers du nord, pour se préparer aux jours sombres qui s'annoncent. Longtemps dominé par sa haine, il cherchait à se venger de...",
+      },
+      de: {
+        title: "der Barbarenkönig",
+        blurb:
+          "Mit ungezügeltem Zorn und Rausch schlug sich Tryndamere einst durch Freljord und forderte die größten Krieger des Nordens heraus, um sich auf noch dunklere Tage vorzubereiten, die ihm bevorstanden. Der zornige Barbar hat für die Vernichtung seines Klans...",
+      },
+      pt: {
+        title: "o Rei Bárbaro",
+        blurb:
+          "Carregado por fúria e raiva desenfreadas, Tryndamere galgou seu caminho através de Freljord, desafiando abertamente os maiores guerreiros do norte em preparo para os dias sombrios que virão. O bárbaro furioso já procurou por vingança pela aniquilação de...",
+      },
+      ru: {
+        name: "Триндамир",
+        title: "Король варваров",
+        blurb:
+          "Необузданный гнев и ярость подпитывают силы Триндамира. Когда-то он прошел через весь Фрельйорд, бросая вызов величайшим воинам севера, чтобы подготовить себя к грядущим темным дням. Долгое время этот разъяренный варвар жаждал отомстить за истребление...",
+      },
+    },
   },
   {
     id: "twistedfate",
@@ -3539,20 +9552,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Bilgewater",
     ddragonId: "TwistedFate",
     roles: ["Mid"],
-    archetypes: ["Mage","Marksman"],
+    archetypes: ["Mage", "Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.9,
-  scaling: 0.7
-}),
-    blurb: "ツイステッド・フェイトは、世界中を渡り歩いては賭けとイカサマで成り上がってきた、悪名高きカード使いだ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.9,
+      scaling: 0.7,
+    }),
+    blurb:
+      "ツイステッド・フェイトは、世界中を渡り歩いては賭けとイカサマで成り上がってきた、悪名高きカード使いだ。",
+    blurbEn:
+      "Twisted Fate is an infamous cardsharp and swindler who has gambled and charmed his way across much of the known world, earning the enmity and admiration of the rich and foolish alike. He rarely takes things seriously, greeting each day with a mocking...",
+    loc: {
+      ko: {
+        name: "트위스티드 페이트",
+        title: "카드의 달인",
+        blurb:
+          "트위스티드 페이트는 악명 높은 카드의 달인이자 사기꾼이다. 뛰어난 도박 실력과 타고난 매력으로 발로란 어디에서나 부자와 어리석은 자들 모두에게 감탄과 원한을 한 몸에 사는 주인공이다. 매사에 진지한 법이 없고, 태평하고 으스대는 얼굴에는 비웃는 듯한 미소마저 감돈다. 트위스티드 페이트의 소매에는 늘 비장의 카드가 숨겨져 있으니까.",
+      },
+      zh: {
+        name: "崔斯特",
+        title: "卡牌大师",
+        blurb:
+          "崔斯特是一名声名狼藉的诈骗惯犯，他让那些富人既羡慕又嫉恨，这世上任何有人烟之地都有过这位纸牌高手施展“魅力”与赌艺的足迹。他鲜少会认真干一件事，总是用一抹轻蔑的微笑和一副漫不经心的样子面对每一天。但无论什么情况，崔斯特的袖子里永远都会藏着一张王牌。",
+      },
+      es: {
+        title: "El Maestro de las Cartas",
+        blurb:
+          "Twisted Fate es un tahúr y timador de mala reputación que ha viajado por buena parte del mundo conocido, granjeándose con su encanto y su habilidad con los naipes la admiración y la enemistad de ricos y necios por igual. Raras veces se toma las cosas...",
+      },
+      fr: {
+        title: "Maître des cartes",
+        blurb:
+          "Twisted Fate est un virtuose des cartes à la réputation ambiguë qui a parcouru le monde entier pour l'éblouir de son charme et de ses talents, s'attirant l'admiration et la haine des riches comme des pigeons. Il prend rarement les choses au sérieux...",
+      },
+      de: {
+        title: "der Meister der Karten",
+        blurb:
+          "Twisted Fate ist ein berüchtigter Falschspieler und Schwindler, der sich durch die ganze bekannte Welt gespielt und geschmeichelt hat, was ihm die Feindseligkeit und die Bewunderung der Reichen sowie der Dummen eingebracht hat. Selten nimmt er etwas...",
+      },
+      pt: {
+        title: "o Mestre das Cartas",
+        blurb:
+          "Twisted Fate é um infame trapaceiro que apostou e encantou tudo em seu caminho por boa parte do mundo, conquistando a inimizade e admiração tanto de ricos quanto tolos. Ele raramente leva coisas a sério, saudando cada dia com um sorriso zombeteiro e...",
+      },
+      ru: {
+        name: "Твистед Фэйт",
+        title: "Мастер карт",
+        blurb:
+          "Твистед Фэйт – настоящий шулер и аферист, покоривший полсвета своими авантюрами и сыскавший недобрую славу среди богатых дурней. Этот плут ничего не воспринимает всерьез и ведет себя как павлин. Довольная ухмылка не слезает с его лица, а в рукаве всегда...",
+      },
+    },
   },
   {
     id: "twitch",
@@ -3563,20 +9619,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Twitch",
     roles: ["ADC"],
-    archetypes: ["Marksman","Assassin"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
-    blurb: "トゥイッチは汚物を漁ることに情熱を持つ、生まれながらの疫病ネズミで、そのためなら前足を汚すことも恐れはしない。",
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
+    blurb:
+      "トゥイッチは汚物を漁ることに情熱を持つ、生まれながらの疫病ネズミで、そのためなら前足を汚すことも恐れはしない。",
+    blurbEn:
+      "A Zaunite plague rat by birth, but a connoisseur of filth by passion, Twitch is not afraid to get his paws dirty. Aiming a chem-powered crossbow at the gilded heart of Piltover, he has vowed to show those in the city above just how filthy they really...",
+    loc: {
+      ko: {
+        name: "트위치",
+        title: "역병 쥐",
+        blurb:
+          "자운에서 전염병을 옮기는 쥐로 태어난 트위치는 열정적인 오물 전문가로, 앞발을 더럽히는 것을 두려워하지 않는다. 트위치는 필트오버의 부유층을 향해 화학물질로 강화한 석궁을 겨누며, 지상의 인간들의 더러움을 적나라하게 드러내기로 다짐했다. 지하동굴에 웅크리고 있을 때를 제외하면 늘 비밀스럽게 교활한 움직임을 일삼는 트위치는 버려진 보물을 찾아 쓰레기 더미를 뒤지고 있다. 곰팡이 슨 샌드위치라도 찾을 수 있을까 하며.",
+      },
+      zh: {
+        name: "图奇",
+        title: "瘟疫之源",
+        blurb:
+          "虽然出身只是一只瘟疫老鼠，但图奇却靠热情成为了一位污秽的鉴赏家，他可不介意弄脏自己的爪子。他使用一把炼金动力十字弩瞄准皮城人的镀金心脏，发誓要让这些生活在上层都市的人们知道他们真实的自我究竟有多么肮脏。他总是鬼鬼祟祟蹑手蹑脚，不是在地沟区翻来翻去，就是在别的地方深挖人类的垃圾堆，寻找被丢弃的宝藏……或者是一块发霉的三明治。",
+      },
+      es: {
+        title: "La Rata Apestada",
+        blurb:
+          "Rata de la peste zaunita por nacimiento y apasionado experto de la suciedad por afición, a Twitch no le preocupa ensuciarse las zarpas. Con su ballesta de cualidades químicas apuntando al corazón hipócrita de Piltover, se ha jurado demostrar a los...",
+      },
+      fr: {
+        title: "Semeur de peste",
+        blurb:
+          "Rat de Zaun, pesteux de naissance, connaisseur en saleté par passion, Twitch n'a pas peur de se salir les pattes. Armé d'une arbalète chimique qu'il pointe droit sur le cœur de Piltover, Twitch s'est juré de montrer aux gens de la surface à quel point...",
+      },
+      de: {
+        title: "die Seuchenratte",
+        blurb:
+          "Twitch ist nicht nur eine zhaunitische Pestratte, sondern auch ein leidenschaftlicher Kenner von Müll und Dreck, und hat kein Problem damit, sich die Pfoten schmutzig zu machen. Er hat sich geschworen, den Bewohnern der Stadt über ihm mit seiner...",
+      },
+      pt: {
+        title: "o Semeador da Peste",
+        blurb:
+          "Um rato zaunita empesteado de nascença e um apreciador da imundície por paixão, Twitch não tem medo de sujar as patas. Mirando com uma balestra embebida em químicos no centro do coração dourado de Piltover, ele jurou mostrar àqueles na cidade de cima...",
+      },
+      ru: {
+        name: "Твич",
+        title: "Чумная крыса",
+        blurb:
+          "Твич – обычная чумная крыса из Зауна, но в душе он – тонкий ценитель отбросов, который не боится замарать лапы. Направляя свой заряженный химикатами арбалет в позолоченное сердце Пилтовера, он поклялся показать тем, кто живет в городе наверху, насколько...",
+      },
+    },
   },
   {
     id: "udyr",
@@ -3587,20 +9686,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Freljord",
     ddragonId: "Udyr",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.7,
-  scaling: 0.55
-}),
-    blurb: "現存するスピリットウォーカーの中でも最大の力を持つウディアは、フレヨルドのあらゆる精霊と心を通わせることができる。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.7,
+      scaling: 0.55,
+    }),
+    blurb:
+      "現存するスピリットウォーカーの中でも最大の力を持つウディアは、フレヨルドのあらゆる精霊と心を通わせることができる。",
+    blurbEn:
+      "The most powerful spirit walker alive, Udyr communes with all the spirits of the Freljord, whether by empathically understanding their needs, or by channeling and transforming their ethereal energy into his own primal fighting style. He seeks balance...",
+    loc: {
+      ko: {
+        name: "우디르",
+        title: "정령 주술사",
+        blurb:
+          "현존하는 최강의 정령 주술사 우디르는 프렐요드의 모든 정령과 교감하며 정령이 바라는 바를 마음으로 이해하고 정령의 힘을 불러모아 우디르 특유의 고대 전투 방식을 선보인다. 우디르는 자신의 정신이 다른 이들로 인해 어지럽혀지지 않도록 내면의 균형을 추구하지만 외부의 균형도 함께 추구한다. 프렐요드의 신비로운 힘은 갈등과 역경을 이겨낸 성장이 있어야만 강해질 수 있기 때문이다. 우디르는 평화에 젖어 쇠락하지 않으려면 희생이 필요하다는 사실을 알고 있다.",
+      },
+      zh: {
+        name: "乌迪尔",
+        title: "兽灵行者",
+        blurb:
+          "身为最强大的兽灵行者，乌迪尔能够与弗雷尔卓德的一切灵体交流。他能感知它们的欲求，也能引导它们的超然力量，融入自己野性十足的战斗。乌迪尔追求的是内心的平衡，这样他的意志才不会在众灵的喧嚣中迷失，但他同时也在追求外在的平衡，因为弗雷尔卓德的神秘大地必须依靠争斗与冲突来获得滋养。乌迪尔十分明白，为了防止弗雷尔卓德陷入看似和平实则僵滞，牺牲在所难免。",
+      },
+      es: {
+        title: "El Caminante Espiritual",
+        blurb:
+          "Udyr, el caminante espiritual más poderoso de la actualidad, comulga con todos los espíritus de Freljord, ya sea comprendiendo sus necesidades empáticamente o canalizando su energía etérea para transformarla y aplicarla a su propio y primigenio estilo...",
+      },
+      fr: {
+        title: "Gardien des esprits",
+        blurb:
+          "Udyr est le plus puissant des Gardiens des esprits, il communie avec l'ensemble des esprits qui habitent Freljord. Il comprend leurs besoins avec empathie et il est capable de canaliser et de transformer leur énergie éthérée pour alimenter son propre...",
+      },
+      de: {
+        title: "der Geistwanderer",
+        blurb:
+          "Udyr ist der mächtigste aller existierenden Geistwanderer und kommuniziert mit den Geistern von Freljord. Er kann sowohl ihre Bedürfnisse spüren als auch ihre ätherische Energie sammeln und in seinen eigenen instinktiven Kampfstil einfließen lassen. Er...",
+      },
+      pt: {
+        title: "o Andarilho Espiritual",
+        blurb:
+          "Udyr, o mais poderoso andarilho espiritual vivo, comunga com todos os espíritos de Freljord, seja compreendendo empaticamente suas necessidades, ou canalizando e transformando a energia etérea deles em seu próprio estilo de luta primevo. Ele busca o...",
+      },
+      ru: {
+        name: "Удир",
+        title: "Странник духов",
+        blurb:
+          "Удир – самый могущественный странник духов из ныне живущих. Он поддерживает связь со всеми духами Фрельйорда, прислушиваясь к их нуждам и используя их мистическую энергию в своем первобытном боевом стиле. Удир ищет внутреннее равновесие, чтобы не дать...",
+      },
+    },
   },
   {
     id: "urgot",
@@ -3611,20 +9753,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Urgot",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.8,
-  scaling: 0.55
-}),
-    blurb: "かつてノクサスの処刑人として数多くの死体を積み上げたアーゴットは、自らが仕えた帝国に裏切られた。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.8,
+      scaling: 0.55,
+    }),
+    blurb:
+      "かつてノクサスの処刑人として数多くの死体を積み上げたアーゴットは、自らが仕えた帝国に裏切られた。",
+    blurbEn:
+      "Once a powerful Noxian headsman, Urgot was betrayed by the empire for which he had killed so many. Bound in iron chains, he was forced to learn the true meaning of strength in the Dredge—a prison mine deep beneath Zaun. Emerging in a disaster that...",
+    loc: {
+      ko: {
+        name: "우르곳",
+        title: "살상 병기",
+        blurb:
+          "우르곳은 녹서스 제국에서 맹위를 떨치던 처형인이었으나, 자신이 그토록 숱한 목숨을 거두며 충성했던 조국에게 배신을 당했다. 그는 강철 사슬에 묶여 자운의 깊은 지하에 자리한 광산 감옥인 드레지에서 힘이 갖는 진정한 의미를 배워야 했다. 자운 전체를 혼돈에 빠뜨린 재난을 틈타 드레지를 지배하게 된 우르곳은 이제 범죄가 판을 치는 지하 세계에 짙은 그늘을 드리우고 있다. 한때 자신을 구속했던 바로 그 사슬로 희생자를 옭아매고, 새로운 정착지에서 가치...",
+      },
+      zh: {
+        name: "厄加特",
+        title: "无畏战车",
+        blurb:
+          "厄加特曾一度是诺克萨斯强大的处刑人，但这个让他为之杀人如麻的帝国，最后却背叛了他。铁链束缚着他，并迫使他在一个新的地方懂得了力量的真正意义——祖安地下深处的监牢矿坑——“沉钩”。后来的一场灾难让祖安城中混乱肆虐，厄加特也借机破土而出，在祖安的地下犯罪世界傲视群雄。曾经奴役他的铁链，现在是他折磨猎物的工具，他会用枪火洗礼自己新的家园，肃清那些不配苟活的人，将祖安铸成一座痛苦的熔炉。",
+      },
+      es: {
+        title: "la Pesadilla Mecánica",
+        blurb:
+          "Urgot, antiguo verdugo noxiano, fue traicionado por el imperio por el que había matado a tantos. Amarrado con cadenas de hierro, se vio obligado a aprender el verdadero significado de la fuerza en la Draga; una mina penitenciaria en las profundidades de...",
+      },
+      fr: {
+        title: "Broyeur",
+        blurb:
+          "Autrefois, Urgot était un puissant bourreau noxien. Il fut trahi par l'empire pour lequel il avait tant tué. Ceint de chaînes de fer, il fut contraint d'apprendre le vrai sens de la force dans les Oubliettes, une mine de forçats située dans les...",
+      },
+      de: {
+        title: "der Chemtech-Terror",
+        blurb:
+          "Urgot ist ein ehemaliger noxianischer Scharfrichter, der von dem Imperium verraten wurde, für das er so viele hingerichtet hatte. Gezwungenermaßen lernte er in Eisenketten die wahre Bedeutung von Stärke in der Krätzerteufe kennen – einer Gefängnismine...",
+      },
+      pt: {
+        title: "o Encouraçado",
+        blurb:
+          "Na época em que era um poderoso carrasco noxiano, Urgot foi traído pelo império para o qual havia tirado tantas vidas. Aprisionado em correntes de ferro, ele foi forçado a aprender o verdadeiro significado da força na Draga — uma mina carcerária nas...",
+      },
+      ru: {
+        name: "Ургот",
+        title: "Дредноут",
+        blurb:
+          "Когда-то Ургот был Верховным Палачом Ноксуса и пользовался огромной властью. Но затем последовали предательство и опала: Ургота заковали в кандалы и отправили на каторгу в глубочайший заунский рудник – Яму. Там Ургот постиг истинную природу силы. И...",
+      },
+    },
   },
   {
     id: "varus",
@@ -3635,20 +9820,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ionia",
     ddragonId: "Varus",
     roles: ["ADC"],
-    archetypes: ["Marksman","Mage"],
+    archetypes: ["Marksman", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.6599999999999999,
-  cc: 0.55,
-  mobility: 0.45,
-  difficulty: 0.2,
-  scaling: 0.55
-}),
-    blurb: "古代のダーキン種族のひとつに属するヴァルスは、敵を苦しめ狂気に追い込んでから矢でとどめを刺す恐ろしい殺戮者だった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.6599999999999999,
+      cc: 0.55,
+      mobility: 0.45,
+      difficulty: 0.2,
+      scaling: 0.55,
+    }),
+    blurb:
+      "古代のダーキン種族のひとつに属するヴァルスは、敵を苦しめ狂気に追い込んでから矢でとどめを刺す恐ろしい殺戮者だった。",
+    blurbEn:
+      "One of the ancient darkin, Varus was a deadly killer who loved to torment his foes, driving them almost to insanity before delivering the killing arrow. He was imprisoned at the end of the Great Darkin War, but escaped centuries later in the remade...",
+    loc: {
+      ko: {
+        name: "바루스",
+        title: "응징의 화살",
+        blurb:
+          "바루스는 고대 다르킨 중 한 명으로, 적이 거의 미쳐 버릴 정도로 고통을 준 뒤에야 화살을 날려 숨통을 끊는 것을 즐기는 치명적인 암살자이다. 다르킨 전쟁 말미에는 갇히는 신세가 되었으나 몇백 년 후 아이오니아 사냥꾼 두 명의 육신을 빼앗는 방식으로 탈출했다. 두 사냥꾼은 자신들도 모르게 바루스를 풀어준 형국이 되었고 이제는 그의 육신이 되어 바루스의 정기가 갇힌 활을 짊어질 수밖에 없는 운명이 되었다. 바루스는 이제 잔인한 복수를 위해 자신을 가둔...",
+      },
+      zh: {
+        name: "韦鲁斯",
+        title: "惩戒之箭",
+        blurb:
+          "韦鲁斯是古老暗裔的一员。身为一名冷血杀手，他酷爱用箭矢戏弄敌人——先让他们失心发疯，再了结他们的性命。韦鲁斯俊美非常，虽然他在大暗裔战争结束后便遭囚禁，却在几百年后成功逃脱，并寄宿于用两位艾欧尼亚猎人再造的血肉之躯中。这两位猎人无意之间释放了韦鲁斯，从此便背上了那把蕴含着韦鲁斯精魄的长弓。如今重获自由的韦鲁斯，开始残酷地报复那些囚禁他的人，但他体内纠缠的两个凡人灵魂却在阻挠他的每一步。",
+      },
+      es: {
+        title: "La Flecha del Castigo",
+        blurb:
+          "Como uno de los antiguos oscuros Varus era un asesino despiadado al que le encantaba torturar a sus enemigos hasta las puertas de la locura antes de atravesarlos con una flecha letal. Fue apresado y encarcelado al final de la gran Guerra Oscura, pero...",
+      },
+      fr: {
+        title: "Flèche de la vengeance",
+        blurb:
+          "Membre de la race antique des Darkin, Varus était en son temps un assassin cruel qui aimait torturer ses ennemis, les conduisant jusqu'aux portes de la folie avant de les achever d'une flèche. À la fin de la Guerre des Darkin, il fut emprisonné. Des...",
+      },
+      de: {
+        title: "der Pfeil der Vergeltung",
+        blurb:
+          "Varus war ein tödlicher Vollstrecker, ein Abkömmling der uralten Düsteren. Er trieb seine Feinde gerne in den Wahnsinn, um sie dann mit einem letzten Pfeil hinzurichten. Er kam zum Ende des Großen Düsteren Krieges in Gefangenschaft, der er nach...",
+      },
+      pt: {
+        title: "a Flecha da Vingança",
+        blurb:
+          "Um dos antigos darkin, Varus era um assassino mortal que amava atormentar seus inimigos, levando-os quase à insanidade antes de disparar a flecha mortal. Ele foi aprisionado no final da Grande Guerra dos Darkin, mas fugiu, séculos depois, na carne...",
+      },
+      ru: {
+        name: "Варус",
+        title: "Стрела возмездия",
+        blurb:
+          "Варус – древний даркин, опасный убийца, который любит мучить своих врагов, доводя их до безумия, прежде чем выпустить последнюю стрелу. В конце Великой войны даркинов он оказался в плену, но смог вырваться столетия спустя, создав себе новое тело из...",
+      },
+    },
   },
   {
     id: "vayne",
@@ -3658,21 +9886,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ナイトハンター",
     region: "Demacia",
     ddragonId: "Vayne",
-    roles: ["ADC","Top"],
-    archetypes: ["Marksman","Assassin"],
+    roles: ["ADC", "Top"],
+    archetypes: ["Marksman", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.1,
-  damage: 0.6599999999999999,
-  cc: 0.2,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.7
-}),
-    blurb: "シャウナ・ヴェインはデマーシアの無慈悲な怪物ハンターであり、自分の家族を殺した悪魔を見つけ出して殺すことに生涯をささげている。",
+      range: 0.75,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.1,
+      damage: 0.6599999999999999,
+      cc: 0.2,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.7,
+    }),
+    blurb:
+      "シャウナ・ヴェインはデマーシアの無慈悲な怪物ハンターであり、自分の家族を殺した悪魔を見つけ出して殺すことに生涯をささげている。",
+    blurbEn:
+      "Shauna Vayne is a deadly, remorseless Demacian monster hunter, who has dedicated her life to finding and destroying the demon that murdered her family. Armed with a wrist-mounted crossbow and a heart full of vengeance, she is only truly happy when...",
+    loc: {
+      ko: {
+        name: "베인",
+        title: "어둠 사냥꾼",
+        blurb:
+          "가차 없는 괴물 사냥꾼 샤우나 베인은 가족을 몰살한 마녀를 찾아 죽이기로 맹세했다. 손목에 장착된 석궁과 복수심에 불타는 마음으로 무장한 베인이 진정 행복할 때는 오직 그림자 속에서 질풍처럼 은화살을 날려 흑마법을 연구하는 자나 흑마법이 만들어낸 창조물을 벨 때뿐이다.",
+      },
+      zh: {
+        name: "薇恩",
+        title: "暗夜猎手",
+        blurb:
+          "来自德玛西亚的肖娜·薇恩是一位无情的怪物猎手，终其一生，都在寻找杀害她全家的恶魔。她的手臂上装着十字弩，心中燃烧着熊熊的复仇怒火，总是从暗影中射出圣银弩箭的风暴。只有在杀死那些为黑暗魔法所控制的人和生物时，薇恩才能感受到真正的愉悦。",
+      },
+      es: {
+        title: "La Cazadora Noctívaga",
+        blurb:
+          "Shauna Vayne es una cazadora de monstruos demaciana letal y despiadada que ha dedicado su vida a buscar y destruir al demonio que asesinó a su familia. Provista de una ballesta que lleva en la muñeca y un corazón ansioso de venganza, Vayne solo es...",
+      },
+      fr: {
+        title: "Chasseresse nocturne",
+        blurb:
+          "Shauna Vayne est une chasseuse de monstres mortelle et sans scrupule. Originaire de Demacia, elle voue sa vie à la destruction du démon qui a assassiné sa famille. Armée d'une arbalète montée sur son poignet et dotée d'un cœur rongé par le désir de...",
+      },
+      de: {
+        title: "die Jägerin der Nacht",
+        blurb:
+          "Shauna Vayne ist eine tödliche und skrupellose Monsterjägerin aus Demacia, die ihr Leben der Jagd auf den Dämon verschrieben hat, der ihre Familie ermordete. Wirklich glücklich ist Vayne nur, wenn sie voll Rachedurst mit der Armbrust an ihrem Handgelenk...",
+      },
+      pt: {
+        title: "a Caçadora Noturna",
+        blurb:
+          "Shauna Vayne é uma caçadora de monstros demaciana mortal e implacável que dedicou sua vida a encontrar e destruir o monstro que assassinou sua família. Armada com uma balestra em seu pulso e com um coração cheio de vingança, ela só é realmente feliz...",
+      },
+      ru: {
+        name: "Вейн",
+        title: "Ночная охотница",
+        blurb:
+          "Шона Вейн – смертоносная и безжалостная охотница на монстров из Демасии, посвятившая свою жизнь тому, чтобы выследить и уничтожить демона, убившего ее семью. Ее запястья оборудованы арбалетами, а сердце переполнено жаждой мести. Она нападает из тени в...",
+      },
+    },
   },
   {
     id: "veigar",
@@ -3686,17 +9957,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "定命の者が恐れて近づこうとしなかった力を受け入れたベイガーは情熱的な闇の魔術の使い手だ。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "定命の者が恐れて近づこうとしなかった力を受け入れたベイガーは情熱的な闇の魔術の使い手だ。",
+    blurbEn:
+      "An enthusiastic master of dark sorcery, Veigar has embraced powers that few mortals dare approach. As a free-spirited inhabitant of Bandle City, he longed to push beyond the limitations of yordle magic, and turned instead to arcane texts that had been...",
+    loc: {
+      ko: {
+        name: "베이가",
+        title: "악의 작은 지배자",
+        blurb:
+          "밴들 시티에 사는 자유로운 영혼, 흑마법의 대가인 베이가는 오직 열정 하나만으로 필멸자는 감히 엄두조차 못 낼 힘을 손에 넣었다. 베이가는 수 천 년 동안 감춰졌던 신비로운 문헌을 탐독하여 요들 마법의 한계를 뛰어넘고 싶어했지만, 다른 요들들은 끝없는 호기심으로 우주의 수수께끼만을 고집스럽게 탐구하는 베이가를 얕잡아 보곤 했다. 사실 베이가는 스스로를 궁극의 악한 존재라고 여기지만, 마음 깊은 곳에는 타고난 도덕성이 숨어 있다. 그래서 베이가의 진짜...",
+      },
+      zh: {
+        name: "维迦",
+        title: "邪恶小法师",
+        blurb:
+          "维迦是热衷于黑暗巫术的大师。几乎没有哪个凡人敢碰的恐怖力量，他却能敞开怀抱。作为拥有自由精神的班德尔城居民，他渴望突破约德尔魔法的边界，于是转而研究那些被隐藏数千年的秘法文字。现在他已经变成了一个偏执的生物，对宇宙的奥秘无限向往。人们总会低估维迦的力量。虽然维迦发自心底地觉得自己是邪恶的，不过他的一些心底的原则也的确会让人质疑他的深层动机。",
+      },
+      es: {
+        title: "El Pequeño Maestro del Mal",
+        blurb:
+          "Entusiasta maestro de la magia negra, Veigar ha hecho suyos poderes a los que pocos mortales se atreven a acercarse. Como espíritu de Ciudad de Bandle, buscó durante mucho tiempo deshacerse de las limitaciones de la magia yordle, así que su atención se...",
+      },
+      fr: {
+        title: "Seigneur des maléfices",
+        blurb:
+          "Maître enthousiaste de la magie noire, Veigar s'est approprié des pouvoirs que peu de mortels osent approcher. Habitant de Bandle à l'esprit libre, il veut repousser les limites de la magie yordle et se tourner vers les textes arcaniques qui sont restés...",
+      },
+      de: {
+        title: "der kleine Meister des Bösen",
+        blurb:
+          "Veigar, ein engagierter Meister der dunklen Künste, hat sich Kräften angenommen, an die sich nur wenige Sterbliche wagen. Der freigeistige Bewohner von Bandle wollte die Grenzen der Yordle-Magie durchbrechen. Er wandte sich deshalb arkanen Texten zu...",
+      },
+      pt: {
+        title: "o Pequeno Mestre do Mal",
+        blurb:
+          "Veigar, um mestre entusiasta da feitiçaria das trevas, aderiu a poderes dos quais poucos mortais se aproximam. Um habitante inconformado de Bandópolis, ele desejava ultrapassar as limitações da magia yordle, se voltando, então, para os textos arcanos...",
+      },
+      ru: {
+        name: "Вейгар",
+        title: "Маленький повелитель зла",
+        blurb:
+          "Вейгар – увлеченный мастер темного колдовства, овладевший силами, которые доступны лишь немногим смертным. Когда-то он был свободолюбивым жителем Бандл Сити и стремился преодолеть ограничения йордлской магии. Он обратился к мистическим текстам, которые...",
+      },
+    },
   },
   {
     id: "velkoz",
@@ -3706,21 +10020,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ヴォイドの瞳",
     region: "Void",
     ddragonId: "Velkoz",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.2,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "ルーンテラに現れた最初のヴォイドの生物がヴェル＝コズであるかどうかは定かではないが、彼の残酷さと計算された知性にかなうヴォイドの生物は他に存在しない。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.2,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ルーンテラに現れた最初のヴォイドの生物がヴェル＝コズであるかどうかは定かではないが、彼の残酷さと計算された知性にかなうヴォイドの生物は他に存在しない。",
+    blurbEn:
+      "It is unclear if Vel'Koz was the first Void-spawn to emerge on Runeterra, but there has certainly never been another to match his level of cruel, calculating sentience. While his kin devour or defile everything around them, he seeks instead to...",
+    loc: {
+      ko: {
+        name: "벨코즈",
+        title: "공허의 눈",
+        blurb:
+          "벨코즈가 룬테라에 나타난 첫 번째 공허태생인지는 확실하지 않다. 다만 벨코즈만큼 잔혹하면서 계산적인 지성체는 이제껏 존재하지 않았다. 다른 공허태생들은 주변의 모든 것을 닥치는 대로 집어삼키고 부패시키지만, 벨코즈는 현실 세계뿐 아니라 현실 세계에 사는 호전적이고 낯선 생명체들을 자세히 관찰하고 연구하여 공허가 이용할 수 있는 약점을 찾아낸다. 그렇다고 벨코즈가 그저 수동적인 관찰자라는 말은 아니다. 위협을 느끼면 치명적인 플라즈마 광선을 발사하거나...",
+      },
+      zh: {
+        name: "维克兹",
+        title: "虚空之眼",
+        blurb:
+          "人们不太确定维克兹是否是符文之地上出现的第一个虚空生物，但可以确定的是没有第二个虚空生物能超过他的残忍和精明。他的同类通常都会吞噬或者破坏周围的一切，然而维克兹却一直在仔细观察并研究这个物质世界，以及世界上这些奇怪的好战生物，寻找虚空可以利用的弱点。但维克兹绝不是个被动的观察者，他会用致命的电浆射线回击任何威胁，甚至还能扰动世界本身的基础构造。",
+      },
+      es: {
+        title: "El Ojo del Vacío",
+        blurb:
+          "No es seguro que Vel'Koz sea el primer ente del Vacío que ha aparecido en Runaterra, pero no ha habido ningún otro con su nivel de crueldad y conciencia calculadora. Mientras que los de su especie devoran y profanan todo cuanto encuentran, él busca el...",
+      },
+      fr: {
+        title: "Œil du Néant",
+        blurb:
+          "On ne sait pas trop si Vel'Koz fut le premier monstre du Néant à émerger à Runeterra, mais il est certain qu'aucun autre n'a jamais égalé la froideur calculatrice de sa cruauté. Alors que ses semblables dévorent ou profanent tout ce qui les entoure, il...",
+      },
+      de: {
+        title: "das Auge der Leere",
+        blurb:
+          "Es ist nicht ganz klar, ob Vel'Koz die erste Kreatur der Leere war, die in Runeterra erschien, doch es hat bestimmt keine andere je sein grausames und kalkulierendes Wesen übertroffen. Während seine Artgenossen alles und jeden um sich herum verschlingen...",
+      },
+      pt: {
+        title: "o Olho do Vazio",
+        blurb:
+          "Não é claro se Vel'Koz foi a primeira criatura do Vazio a aparecer em Runeterra, mas certamente nunca houve outra que se igualasse ao seu nível de compreensão cruel e calculista. Enquanto sua raça devora ou perverte tudo ao seu redor, ele busca, em vez...",
+      },
+      ru: {
+        name: "Вел'Коз",
+        title: "Око Бездны",
+        blurb:
+          "Неясно, был ли Вел'Коз первым порождением Бездны, появившимся на Рунтерре, но одно известно наверняка – никто не сравнится с ним в жестокости и расчетливости. Пока его сородичи пожирают и оскверняют все вокруг, он тщательно исследует и изучает...",
+      },
+    },
   },
   {
     id: "vex",
@@ -3734,17 +10091,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.05,
-  damage: 0.05,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.05,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.05,
+      damage: 0.05,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.05,
+      scaling: 0.6,
+    }),
     blurb: "闇深きシャドウアイルの中心には、不気味な濃霧の中を一人満足げに歩くヨードルがいる。",
+    blurbEn:
+      "In the black heart of the Shadow Isles, a lone yordle trudges through the spectral fog, content in its murky misery. With an endless supply of teen angst and a powerful shadow in tow, Vex lives in her own self-made slice of gloom, far from the revolting...",
+    loc: {
+      ko: {
+        name: "벡스",
+        title: "우울주의자",
+        blurb:
+          "그림자 군도의 검은 심장에서 고독한 요들 하나가 망령의 안개 속을 터덜터덜 걸으며 그 어두운 불행을 즐긴다. 청소년 특유의 끝없는 고뇌와 강력한 그림자를 달고 다니는 벡스는 혐오스러운 활기로 가득한 일반 세계와 거리를 두고 자신이 만들어 낸 우울함 속에서 살아간다. 야심은 부족하지만 침울한 분위기로 사전에 모든 침입자를 막으며 순식간에 색깔과 행복을 없앤다.",
+      },
+      zh: {
+        name: "薇古丝",
+        title: "愁云使者",
+        blurb:
+          "在暗影岛的黑色中心，一个约德尔人孤独地踯躅在鬼魅的浓雾中，在那片阴郁的惨象中安然自得。薇古丝有着取之不尽的少年烦恼，身后还跟着一个强大的黑影，她为自己打造了一片阴郁的小天地，沉浸其中，远离 “正常人”世界里恶心的欢快气氛。虽然她没什么远大志向，但她会毫不犹豫地抹杀任何色彩和欢笑，用她的颓废魔法阻止所有试图闯入的人。",
+      },
+      es: {
+        title: "la Lúgubre",
+        blurb:
+          "En el oscuro corazón de las Islas de la Sombra, una yordle solitaria atraviesa arduamente la bruma espectral, satisfecha con su tenebrosa miseria. Con una angustia adolescente inagotable y una poderosa sombra tras de sí, Vex vive en un planeta de...",
+      },
+      fr: {
+        title: "Ombre du désespoir",
+        blurb:
+          "Au cœur des terribles Îles obscures et de leur brume spectrale, une yordle solitaire se complaît dans son malheur. Vex se protège de la gaieté, de l'excitation et des gens « normaux » dont le monde extérieur regorge grâce à une dose inépuisable...",
+      },
+      de: {
+        title: "die Schwarzseherin",
+        blurb:
+          "Im schwarzen Herzen der Schatteninseln stapft ein einsamer Yordle durch den gespenstischen Nebel, zufrieden in seinem düsteren Elend. Mit einem endlosen Vorrat an Teenagerdepressionen und einem mächtigen Schatten im Schlepptau lebt Vex in ihrem...",
+      },
+      pt: {
+        title: "a Melancolista",
+        blurb:
+          "Em meio à escuridão das Ilhas das Sombras, uma solitária yordle se move com pesar, abrindo caminho pela névoa espectral, satisfeita em viver nas trevas. Com uma poderosa sombra no seu encalço e uma fonte inesgotável de mazelas nas costas, Vex vive num...",
+      },
+      ru: {
+        name: "Векс",
+        title: "Мрачнистка",
+        blurb:
+          "В темном сердце Сумрачных островов, где клубится призрачный туман, бродит одинокий йордл. Хмарь и безысходность ее вполне устраивают. Пользуясь неисчерпаемыми запасами подросткового уныния и поддержкой могущественной тени, Векс создала собственный...",
+      },
+    },
   },
   {
     id: "vi",
@@ -3755,25 +10154,67 @@ export const CHAMPIONS: Champion[] = [
     region: "Piltover",
     ddragonId: "Vi",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  justice: 0.7,
-  protection: 0.7,
-  family: 0.6,
-  organization: 0.6
-}),
+      justice: 0.7,
+      protection: 0.7,
+      family: 0.6,
+      organization: 0.6,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.7,
-  damageStyle: 0.6,
-  durability: 0.6,
-  damage: 0.7,
-  cc: 0.85,
-  mobility: 0.7,
-  difficulty: 0.4,
-  scaling: 0.45
-}),
+      range: 0,
+      skillBased: 0.7,
+      damageStyle: 0.6,
+      durability: 0.6,
+      damage: 0.7,
+      cc: 0.85,
+      mobility: 0.7,
+      difficulty: 0.4,
+      scaling: 0.45,
+    }),
     blurb: "ヘックステック・ガントレットの拳で街を守る元無法者。",
+    blurbEn:
+      "Raised on the mean streets of Zaun, Vi is a hotheaded, impulsive, and fearsome woman with very little respect for authority. She has always been a shrewd survivor, both from her youthful troublemaking topside and an unfairly long stint in Stillwater...",
+    loc: {
+      ko: {
+        name: "바이",
+        title: "필트오버의 집행자",
+        blurb:
+          "자운의 암흑가에서 자란 다혈질 성격의 바이는 충동적이고 성급한 데다가 권위에 대한 존중이라고는 눈곱만큼도 없다. 윗동네에서 사고를 치고 다니던 어린 시절에도 스틸워터 교도소에서 부당하게 긴 징역살이를 했을 때도 언제나 상황을 빠르게 판단하며 살아남았다. 이제 평화를 깨는 대신 유지하기 위해 필트오버의 집행자가 된 바이는 육중한 벽을 단숨에 부술 만큼 무시무시한 마법공학 건틀릿을 휘두르며 범죄자를 색출하고 있다.",
+      },
+      zh: {
+        name: "蔚",
+        title: "皮城执法官",
+        blurb:
+          "在祖安的穷街陋巷长大的蔚，性格急躁、脾气火爆、凶神恶煞，对权威满心不屑。年少时，她常在上城惹是生非，也曾受过不公待遇，被关在静水监狱很长一段时间，这也造就了她机敏的性格和高超的生存本领。如今的她已经加入了皮城执法官的行列，从当初的破坏分子变成了和平维护者。无论是铜墙铁壁还是敌人，她手上那副强大的海克斯科技拳套都可以轻易将之击破。",
+      },
+      es: {
+        title: "La Agente de Piltover",
+        blurb:
+          "Vi, criada en las perversas calles de Zaun, es una mujer impulsiva y temeraria con muy poco respeto por la autoridad. Siempre ha sido una superviviente nata, gracias a su problemática juventud en Piltover y su injustamente larga reclusión en la...",
+      },
+      fr: {
+        title: "Pacifieuse de Piltover",
+        blurb:
+          "Élevée dans les quartiers louches de Zaun, Vi est une femme sans peur, mais pas sans reproche, au tempérament bouillant, impulsif, qui n'a qu'un respect mesuré pour l'autorité. Elle a toujours été une survivante astucieuse, que ce soit lorsqu'elle...",
+      },
+      de: {
+        title: "Piltovers Vollstreckerin",
+        blurb:
+          "Vi, die in den berüchtigten Straßen Zhauns aufwuchs, ist eine hitzköpfige, impulsive und furchteinflößende Frau, die nur wenig Respekt vor Autoritätspersonen zeigt. Sie war schon immer eine geschickte Überlebenskünstlerin, sowohl während ihrer Jugend...",
+      },
+      pt: {
+        title: "a Defensora de Piltover",
+        blurb:
+          "Criada nas ruas impiedosas de Zaun, Vi é uma mulher temível, impulsiva e explosiva sem respeito algum pelas autoridades. Ela sempre foi uma sobrevivente astuta, tanto das confusões que causava no Ladoalto na juventude quanto de uma pena injustamente...",
+      },
+      ru: {
+        name: "Вай",
+        title: "Пилтоверский миротворец",
+        blurb:
+          "Выросшая в трущобах Зауна Вай опасна, вспыльчива, импульсивна и не признает авторитетов. С ранних лет девушка оттачивала навыки выживания, которые помогали ей во время вылазок в верхний город, а позднее пригодились в тюрьме ''Тихий омут'', где она...",
+      },
+    },
   },
   {
     id: "viego",
@@ -3784,20 +10225,63 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Viego",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.48,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.5,
-  scaling: 0.45
-}),
-    blurb: "遠い昔に滅びた王国の支配者であったヴィエゴは、千年以上前に亡き妻を甦らせようと試みたことで「破滅」と呼ばれる魔力の大災厄を引き起こし、自らも命を落とした。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.48,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.5,
+      scaling: 0.45,
+    }),
+    blurb:
+      "遠い昔に滅びた王国の支配者であったヴィエゴは、千年以上前に亡き妻を甦らせようと試みたことで「破滅」と呼ばれる魔力の大災厄を引き起こし、自らも命を落とした。",
+    blurbEn:
+      "Once ruler of a long-lost kingdom, Viego perished over a thousand years ago when his attempt to bring his wife back from the dead triggered the magical catastrophe known as the Ruination. Transformed into a powerful, unliving specter tortured by an...",
+    loc: {
+      ko: {
+        name: "비에고",
+        title: "몰락한 왕",
+        blurb:
+          "비에고는 오래전 잊힌 왕국의 지배자였다. 천년도 전에, 그는 아내 이졸데를 죽음에서 되찾고자 시도한 끝에 현재 대몰락으로 불리는 마법 재해를 일으켰다. 그 안에서 죽음을 맞은 비에고는 강력한 언데드 망령이 되었으나, 죽은 지 수백 년은 지난 왕비를 향한 집착에 여전히 고통받았다. 이제 비에고는 몰락한 왕으로 군림하여 죽음의 해로윙을 지배한다. 이졸데를 치유할 가망이 있는 것이라면 무엇이든 찾아 룬테라를 뒤지며, 잔혹한 심장의 상처에서 끝없이 쏟아지는...",
+      },
+      zh: {
+        name: "佛耶戈",
+        title: "破败之王",
+        blurb:
+          "失落千年的王国之主——佛耶戈，为了让亡妻死而复生，引发了一场被后世称为“破败之咒”的魔灾，自己也不幸因此殒命。如今的佛耶戈已经变成了一个强大的幽魂，依然执着地迷恋着几百年前便已死去的王后。他号称破败之王，操纵着夺命的蚀魂夜，在符文之地上不懈地搜寻着，希望有朝一日能将她追回。无穷无尽的黑雾从他早已支离的心中涌出，扫除他面前的一切阻碍。",
+      },
+      es: {
+        title: "el Rey Arruinado",
+        blurb:
+          "Viego, soberano de un reino antaño desaparecido, murió hace más de mil años cuando su intento por devolverle la vida a su esposa desencadenó una catástrofe mágica conocida como la Ruina. Ahora, trasformado en un poderoso espectro atormentado por el...",
+      },
+      fr: {
+        title: "Roi déchu",
+        blurb:
+          "Autrefois souverain d'un royaume perdu depuis longtemps, Viego mourut il y a plus de mille ans lorsqu'il tenta de ramener sa femme d'entre les morts. Cela causa la catastrophe magique connue sous le nom de la Ruine. Devenu un puissant spectre torturé...",
+      },
+      de: {
+        title: "der gestürzte König",
+        blurb:
+          "Viego war der Herrscher über ein inzwischen lange verlorenes Reich und starb vor über tausend Jahren bei dem Versuch, seine geliebte Frau von den Toten zurückzuholen. Dabei löste er eine magische Katastrophe aus, die man heute als die Zerstörung kennt...",
+      },
+      pt: {
+        title: "O Rei Destruído",
+        blurb:
+          "Outrora regente de um reino perdido, Viego morreu há mais de um milênio, quando uma tentativa de trazer sua esposa de volta à vida culminou em uma catástrofe mágica conhecida como ''a Ruína''. Transformado em um poderoso espectro morto-vivo, sempre...",
+      },
+      ru: {
+        name: "Виего",
+        title: "Падший король",
+        blurb:
+          "Тысячу лет назад Виего, правитель давно забытого королевства, в попытке воскресить погибшую супругу вызвал магический катаклизм, который сегодня называют Погибелью. Превратившись в могущественного неупокоенного призрака, Виего, известный теперь как...",
+      },
+    },
   },
   {
     id: "viktor",
@@ -3810,22 +10294,64 @@ export const CHAMPIONS: Champion[] = [
     roles: ["Mid"],
     archetypes: ["Mage"],
     storyVec: s({
-  knowledge: 0.9,
-  ambition: 0.8,
-  solo: 0.6
-}),
+      knowledge: 0.9,
+      ambition: 0.8,
+      solo: 0.6,
+    }),
     gameVec: g({
-  range: 0.7,
-  skillBased: 0.95,
-  damageStyle: 0.6,
-  durability: 0.3,
-  damage: 0.7,
-  cc: 0.5,
-  mobility: 0.2,
-  difficulty: 0.5,
-  scaling: 0.65
-}),
+      range: 0.7,
+      skillBased: 0.95,
+      damageStyle: 0.6,
+      durability: 0.3,
+      damage: 0.7,
+      cc: 0.5,
+      mobility: 0.2,
+      difficulty: 0.5,
+      scaling: 0.65,
+    }),
     blurb: "機械化こそ進化と信じる科学者。栄光の進化を成し遂げる。",
+    blurbEn:
+      "The fully biomechanical evolution of his former self, Viktor has embraced his Glorious Evolution and become something of a messiah to his followers. He sacrificed his own humanity under the logic that eliminating emotion would thereby eliminate...",
+    loc: {
+      ko: {
+        name: "빅토르",
+        title: "아케인의 전령관",
+        blurb:
+          "과거의 모습을 벗어던지고 완전한 생체기계로 변모한 빅토르는 영광스러운 진화를 받아들이고 추종자들의 구세주와 같은 존재가 되었다. 감정을 제거하면 고통도 제거될 것이라는 논리로 자신의 인간성을 희생한 빅토르는 이제 온 세상에 마공학 핵의 진리를 전파하고자 한다. 설령 세상이 그 혜택을 이해하지 못하더라도 상관없다. 결국 이 비전의 대가에게 폭력이란 궁극적인 상황에서 균형을 잡는 데 필요한 변수일 뿐이니까.",
+      },
+      zh: {
+        name: "维克托",
+        title: "奥术先驱",
+        blurb:
+          "完成了生物机械进化的维克托，已经彻底实现了自己的光荣进化，成为了追随者们心中的救世主。他坚信抹去情感即可终结一切痛苦，为了实现这一目标，他牺牲了自己的人性。如今，他希望将海克斯核心推广到世界各个角落，就算世人无法理解其中的好处，他也势在必行。毕竟，对这名奥术之主来说，暴力只是这道终极公式中一个不可或缺的变量。",
+      },
+      es: {
+        title: "el Heraldo de lo Arcano",
+        blurb:
+          "Gracias a la evolución biomecánica de su antiguo yo, Viktor se ha entregado en cuerpo y alma a su gloriosa evolución, convirtiéndose en una especie de mesías a ojos de sus fieles. Sacrificó su propia humanidad siguiendo la lógica de que, si eliminaba...",
+      },
+      fr: {
+        title: "Héraut de l'arcane",
+        blurb:
+          "Passant d'être humain maladif à un être entièrement biomécanique, Viktor a adopté sa glorieuse évolution et est devenu une sorte de messie pour ses adeptes. Il a sacrifié sa propre humanité, convaincu qu'éliminer ses émotions éliminerait ses souffrances...",
+      },
+      de: {
+        title: "Der Herold des Arcane",
+        blurb:
+          "Als vollständig biomechanische Weiterentwicklung seines früheren Ichs hat Viktor seine glorreiche Evolution angenommen und ist für seine Anhänger zu einer Art Messias geworden. Er hat seine eigene Menschlichkeit geopfert, in der Annahme, dass durch die...",
+      },
+      pt: {
+        title: "o Arauto do Arcano",
+        blurb:
+          "A evolução biomecânica de seu antigo eu, Viktor abraçou a Gloriosa Evolução e tornou-se uma espécie de messias para seus seguidores. Ele sacrificou sua própria humanidade partindo da lógica de que eliminar as emoções acabaria com o sofrimento. Agora...",
+      },
+      ru: {
+        name: "Виктор",
+        title: "Вестник аркейна",
+        blurb:
+          "Преобразив свое тело с помощью биомеханической магии, Виктор стал вестником Великой эволюции, обещающим спасение своим последователям. Он пожертвовал собственной человечностью, веря, что можно прекратить страдания, избавившись от эмоций. Теперь Виктор...",
+      },
+    },
   },
   {
     id: "vladimir",
@@ -3835,21 +10361,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "真紅の死神",
     region: "Noxus",
     ddragonId: "Vladimir",
-    roles: ["Mid","Top"],
-    archetypes: ["Mage","Fighter"],
+    roles: ["Mid", "Top"],
+    archetypes: ["Mage", "Fighter"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.6,
-  damage: 0.6,
-  cc: 0.55,
-  mobility: 0.55,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "ブラッドミアは定命の者の血に飢えた悪魔であり、帝国の建国時代からずっとノクサスの政治に影響を与えてきている。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.6,
+      damage: 0.6,
+      cc: 0.55,
+      mobility: 0.55,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ブラッドミアは定命の者の血に飢えた悪魔であり、帝国の建国時代からずっとノクサスの政治に影響を与えてきている。",
+    blurbEn:
+      "A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire's earliest days. In addition to unnaturally extending his life, his mastery of hemomancy allows him to control the minds and bodies of others as easily...",
+    loc: {
+      ko: {
+        name: "블라디미르",
+        title: "진홍빛 사신",
+        blurb:
+          "필멸자의 피를 갈구하고 탐닉하는 블라디미르는 녹서스 건국 초기부터 제국에서 벌어지는 각종 사건에 영향을 끼쳤다. 수명을 비정상적으로 늘린 데다가, 피를 제어하는 능력을 이용해 다른 이들의 정신과 육체를 제 것인 듯 손쉽게 통제한다. 블라디미르의 이 능력은 녹서스 귀족 사회의 호화찬란한 살롱에서는 광적인 추종자 세력을 만드는 정도로 그치지만, 어두운 뒷골목에서는 적의 피를 마지막 한 방울까지 말려 버리는 데 쓰인다.",
+      },
+      zh: {
+        name: "弗拉基米尔",
+        title: "猩红收割者",
+        blurb:
+          "弗拉基米尔是一个渴望凡人鲜血的魔鬼，早在诺克萨斯帝国建立之初，他就开始干涉帝国内政。他熟练掌握的血巫术，不仅能超越自然规律延长其寿命，还能让他随心所欲地控制他人的身体和思想。他用这个能力在诺克萨斯贵族奢华的沙龙聚会上聚拢了一群狂热的教众，也让他在社会底层的后巷里吸干了敌人的鲜血。",
+      },
+      es: {
+        title: "El Segador Carmesí",
+        blurb:
+          "Un demonio con sed de sangre mortal, Vladimir ha influido en el destino de Noxus desde los primeros días del imperio. Además de alargar su vida de forma sobrenatural, su amplio conocimiento de la hemomancia le posibilita controlar el cuerpo y la mente...",
+      },
+      fr: {
+        title: "Saigneur pourpre",
+        blurb:
+          "Assoiffé de sang humain, Vladimir influe sur la politique de Noxus depuis les premiers jours de l'empire. En plus d'allonger surnaturellement sa vie, sa maîtrise de l'hémomancie lui permet de contrôler les esprits et les corps des autres aussi aisément...",
+      },
+      de: {
+        title: "der blutrote Schnitter",
+        blurb:
+          "Vladimir ist ein böser Geist, den es nach sterblichem Blut dürstet, und er hat bereits seit den Anfängen des Reiches in allen Angelegenheiten von Noxus seine Finger im Spiel. Neben einem unnatürlichen langen Leben erlaubt ihm sein Wissen um die...",
+      },
+      pt: {
+        title: "o Sanguinário Escarlate",
+        blurb:
+          "Um demônio sedento pelo sangue dos mortais, Vladimir tem influenciado os acontecimentos de Noxus desde os primórdios do império. Além de ter estendido sua vida por meios não naturais, sua maestria em hemomancia o permite controlar as mentes e corpos de...",
+      },
+      ru: {
+        name: "Владимир",
+        title: "Алый жнец",
+        blurb:
+          "Изувер, жаждущий крови смертных, Владимир играл не последнюю роль в становлении Ноксуса еще с самых ранних дней империи. Магия крови позволяет ему не только продлевать свою жизнь, но и с легкостью управлять умами и телами других. Благодаря этому умению...",
+      },
+    },
   },
   {
     id: "volibear",
@@ -3859,21 +10428,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "無慈悲の嵐",
     region: "Freljord",
     ddragonId: "Volibear",
-    roles: ["Top","Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    roles: ["Top", "Jungle"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
     blurb: "彼を崇敬する者にとって、ボリベアは嵐を体現した存在だ。",
+    blurbEn:
+      "To those who still revere him, the Volibear is the storm made manifest. Destructive, wild, and stubbornly resolute, he existed before mortals walked the Freljord's tundra, and is fiercely protective of the lands that he and his demi-god kin created...",
+    loc: {
+      ko: {
+        name: "볼리베어",
+        title: "무자비한 폭풍",
+        blurb:
+          "추종자들에게 볼리베어는 여전히 폭풍 그 자체이다. 강력하고 야만적이며 고집스러울 정도로 단호한 그는 프렐요드의 동토에 필멸자들이 나타나기 전부터 존재했다. 다른 반신들과 함께 일구어낸 그 땅을 무척이나 아끼는 볼리베어는 나약하기 그지없는 문명의 발달을 극도로 혐오했고, 결국 거칠고 폭력적이었던 옛 전통을 되찾기 위해 싸움을 시작한다. 그 앞을 가로막는 자는 누구든 볼리베어의 이빨과 발톱, 천둥의 위력을 맛보게 될 것이다.",
+      },
+      zh: {
+        name: "沃利贝尔",
+        title: "不灭狂雷",
+        blurb:
+          "对于那些敬畏旧神的人，沃利贝尔是风暴的实体化身。他充满怪力、野性和倔强的坚毅，早在凡人行走于弗雷尔卓德的冻土苔原之前，他就已经存在。这片土地由他和他的半神同胞们共同创造，是他要拼死保护的东西。人类的文明以及随之而来的软弱让他积怨已久，如今他为了旧习古道而战——要让这片土地回归野性，让鲜血畅流无阻。他渴望迎战任何反对者，亮出他的尖牙、利爪和雷霆般的压制力。",
+      },
+      es: {
+        title: "la Tormenta Incesante",
+        blurb:
+          "Para aquellos que aún lo veneran, Volibear es la encarnación de la tormenta. Destructivo, salvaje y decidido, existe desde antes de que los mortales pusieran pie en las tundras de Freljord y protege con fiereza las tierras que creó junto a sus hermanos...",
+      },
+      fr: {
+        title: "Tempête impitoyable",
+        blurb:
+          "Pour ceux qui le vénèrent encore, Volibear est l'incarnation de la tempête. Destructeur, sauvage et déterminé, il existait bien avant que les mortels n'arpentent la toundra de Freljord ; désormais, il défend férocement les terres qu'il a créées avec sa...",
+      },
+      de: {
+        title: "der unerbittliche Sturm",
+        blurb:
+          "Für jene, die ihn auch heute noch verehren, ist Volibear die Manifestation des Sturms. Er zog schon lange vor den ersten Sterblichen in all seiner zerstörerischen Wildheit und sturen Entschlossenheit durch Freljords Tundra. Das Land, das er und die...",
+      },
+      pt: {
+        title: "a Tempestade Implacável",
+        blurb:
+          "Para aqueles que ainda o veneram, Volibear é a forma manifestada da tempestade. Destrutivo, selvagem e implacavelmente obstinado, ele já existia antes mesmo que os mortais andassem sobre a tundra de Freljord, protegendo as terras que ele e seus irmãos...",
+      },
+      ru: {
+        name: "Волибир",
+        title: "Неутихающая Буря",
+        blurb:
+          "Те, кто до сих пор чтят Волибира, считают его воплощением бури. Дикий, всеразрушающий и невероятно упрямый, он пришел в тундру Фрельйорда задолго до первых смертных и теперь ревностно охраняет морозный край, созданный им вместе с другими полубогами, его...",
+      },
+    },
   },
   {
     id: "warwick",
@@ -3883,21 +10494,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "解き放たれたゾウンの激憤",
     region: "Zaun",
     ddragonId: "Warwick",
-    roles: ["Jungle","Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    roles: ["Jungle", "Top"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.5,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.3,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.5,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.3,
+      scaling: 0.55,
+    }),
     blurb: "ワーウィックはゾウンの灰色の路地を徘徊する怪物だ。",
+    blurbEn:
+      "Warwick is a monster who hunts the gray alleys of Zaun. Transformed by agonizing experiments, his body is fused with an intricate system of chambers and pumps, machinery filling his veins with alchemical rage. He bursts from the shadows to prey upon...",
+    loc: {
+      ko: {
+        name: "워윅",
+        title: "자운의 고삐 풀린 분노",
+        blurb:
+          "자운의 잿빛 골목을 무대로 사냥감을 찾는 괴수 워윅. 극한의 고통을 동반하는 각종 실험으로 완전히 변형된 그의 육체는 약품통, 펌프, 여러 기계가 결합된 복잡한 시스템과 연결되어 있으며, 정맥에는 연금술을 통해 조합한 분노가 주입된다. 어두운 그림자 속에서 느닷없이 튀어나오곤 하는 그는 사람들을 위협하는 도시의 범죄자들을 단숨에 사냥한다. 피 냄새를 맡고 나면 이성을 잃고 마는 워윅... 조금이라도 피를 흘린 자는 그 누구도 워윅의 손아귀에서 벗어날...",
+      },
+      zh: {
+        name: "沃里克",
+        title: "祖安怒兽",
+        blurb:
+          "沃里克是一头游猎于祖安灰色小巷的怪兽。经过剧痛实验的折磨，他的身体发生了变异，精密复杂的储液舱和药泵与他的血肉融为一体，不断向他的血管中注入炼金合成的愤怒激素。他从阴影中一跃而出，猎杀那些在城市最深处肆虐的罪犯。沃里克受鲜血的召唤，血腥味会让他变得癫狂。只要沾上了鲜血，就别想逃过他的猎杀。",
+      },
+      es: {
+        title: "la Ira Descontrolada de Zaun",
+        blurb:
+          "Warwick es un monstruo que acecha en los grises callejones de Zaun. Los atroces experimentos a los que fue sometido transformaron su cuerpo, que ahora está fusionado con un intricado sistema de bombas y una maquinaria que llena sus venas de furia...",
+      },
+      fr: {
+        title: "Fureur déchaînée de Zaun",
+        blurb:
+          "Warwick est un monstre qui chasse dans les allées grises de Zaun. Métamorphosé à l'issue d'expériences incroyablement douloureuses, son corps est désormais fusionné avec un système complexe de chambres et de pompes, une machinerie qui distille dans ses...",
+      },
+      de: {
+        title: "Zhauns entfesselter Zorn",
+        blurb:
+          "Warwick ist ein Monster, das die grauen Gassen von Zhaun unsicher macht. In qualvollen Experimenten wurde sein Körper transformiert und mit einem komplexen System aus Pumpen und Kammern verschmolzen, dessen Maschinerie alchemistischen Zorn durch seine...",
+      },
+      pt: {
+        title: "a Ira Desimpedida de Zaun",
+        blurb:
+          "Warwick é um monstro que caça pelas ruas cinzentas de Zaun. Transformado por experimentos agonizantes, seu corpo agora é fundido a um sistema complexo de câmaras e bombas, um maquinário que enche suas veias com fúria química. Ele surge das sombras para...",
+      },
+      ru: {
+        name: "Варвик",
+        title: "Освобожденный гнев Зауна",
+        blurb:
+          "Варвик – чудовище, которое охотится среди серой мглы заунских улиц. В ходе страшного эксперимента его тело было сращено с затейливой системой насосов и емкостей. Машины вливают в него алхимическую злобу. Выпрыгивая из тени, он нападает на преступников...",
+      },
+    },
   },
   {
     id: "xayah",
@@ -3911,17 +10564,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.5,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.5,
+      scaling: 0.7,
+    }),
     blurb: "危険で正確。",
+    blurbEn:
+      "Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and razor-sharp feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan, to...",
+    loc: {
+      ko: {
+        name: "자야",
+        title: "저항하는 자",
+        blurb:
+          "바스타야 혁명을 일으키고 싶어하는 자야는 치명적인 정확성을 자랑하는 전사이다. 민첩한 몸놀림과 간교할 정도로 예리한 두뇌를 갖추었고, 칼날보다 날카로운 깃털로 자신을 막아서는 것은 모조리 베어버린다. 한때는 점점 수가 줄어들고 있는 바스타야 종족을 구해내기 위해 혼자만의 전쟁을 수행했으나, 이제는 동지이자 연인인 라칸과 늘 함께 싸운다. 둘은 바스타야 종족을 보호하고 먼 옛날 바스타야 종족이 누리던 영광을 되찾기 위해 노력하고 있다.",
+      },
+      zh: {
+        name: "霞",
+        title: "逆羽",
+        blurb:
+          "身为瓦斯塔亚的一名有志之士，霞意在掀起一场革命来拯救她的族群。她身法敏捷又慧心独具，凭借锋芒逼人的羽刃，扫除任何异己。霞与她的灵魂伴侣洛并肩作战，守护着他们日渐衰落的部族，韬光养晦，希望终有一天能率领全族重夺昔日荣光。",
+      },
+      es: {
+        title: "La Rebelde",
+        blurb:
+          "Mortal y precisa, Xayah es una vastaya revolucionaria que libra una guerra personal para salvar a su pueblo. Utiliza su rapidez, su astucia y sus plumas afiladas como cuchillas para liquidar a cualquiera que se interponga en su camino. Xayah lucha junto...",
+      },
+      fr: {
+        title: "Rebelle",
+        blurb:
+          "Précise et meurtrière, Xayah est une révolutionnaire vastaya menant une guerre personnelle dans le but de sauver son peuple. Elle se sert de sa célérité, de sa ruse et de ses plumes tranchantes comme des rasoirs pour terrasser tous ceux qui se dressent...",
+      },
+      de: {
+        title: "die Rebellin",
+        blurb:
+          "Xayah ist eine vastayanische Revolutionärin, die tödlich und präzise ihren persönlichen Krieg führt, um ihr Volk zu retten. Mit ihrer Geschwindigkeit, List und messerscharfen Federklingen bringt sie alle zu Fall, die sich ihr in den Weg stellen. Xayah...",
+      },
+      pt: {
+        title: "a Rebelde",
+        blurb:
+          "Mortal e precisa, Xayah é uma vastaya revolucionária que trava sua própria batalha para salvar seu povo. Ela usa sua agilidade, malícia e plumas afiadas para retalhar qualquer um que atrapalhe seu caminho. Xayah luta ao lado de seu parceiro e amante...",
+      },
+      ru: {
+        name: "Шая",
+        title: "Бунтарка",
+        blurb:
+          "Смертоносная и не знающая промаха, Шая – вастайи-бунтарка, которая в одиночку вступила в священную войну во имя спасения своего народа. Любого, кто встанет у нее на пути, Шая порежет на ленточки, ведь на ее стороне хитрость, быстрота, а еще острые, как...",
+      },
+    },
   },
   {
     id: "xerath",
@@ -3931,21 +10626,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "超越魔神",
     region: "Shurima",
     ddragonId: "Xerath",
-    roles: ["Mid","Support"],
-    archetypes: ["Mage","Support"],
+    roles: ["Mid", "Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.8,
-  scaling: 0.6
-}),
-    blurb: "古代シュリーマの超越魔人ゼラスは、魔法の石棺の破片に封じられ、悶え苦しむ神秘のエネルギー体である。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.8,
+      scaling: 0.6,
+    }),
+    blurb:
+      "古代シュリーマの超越魔人ゼラスは、魔法の石棺の破片に封じられ、悶え苦しむ神秘のエネルギー体である。",
+    blurbEn:
+      "Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven...",
+    loc: {
+      ko: {
+        name: "제라스",
+        title: "초월한 마법사",
+        blurb:
+          "고대 슈리마의 초월한 마법사 제라스는 신비의 에너지가 석관의 파편에 둘러싸인 형상을 하고 있다. 그는 사막 아래의 고대 감옥 속에 수천 년 동안 갇혀 있다가 슈리마 제국의 부활과 함께 자유의 몸이 되었다. 막강한 힘을 손에 넣은 제라스는 응당 자신의 것이라 여기는 것들을 찬탈하고 신흥 문명 정복으로 자신만의 제국을 세우고자 광기의 질주를 시작한다.",
+      },
+      zh: {
+        name: "泽拉斯",
+        title: "远古巫灵",
+        blurb:
+          "泽拉斯是古代恕瑞玛的巫师，飞升以后的他变成了一种奥术能量体，在魔法石棺的碎片之中涌动。数千年来，他被囚禁在沙漠之下，但最近恕瑞玛的崛起却将他从远古的牢笼中解放出来。对权力的疯狂渴求驱使着他，想要夺回他认为属于自己的东西，并取代世界上这些自命不凡的文明，让自己成为唯一受膜拜的偶像，统一整个世界。",
+      },
+      es: {
+        title: "El Mago Ascendente",
+        blurb:
+          "Xerath es un mago Ascendido de la vieja Shurima, un ser con energía arcana retorciéndose en los quebrados fragmentos de un sarcófago mágico. Durante milenios estuvo atrapado bajo las arenas del desierto, pero el ascenso de Shurima lo liberó de su...",
+      },
+      fr: {
+        title: "Mage suprême",
+        blurb:
+          "Xerath est un mage transfiguré de la Shurima antique, un être d'énergie arcanique habitant les fragments détruits d'un sarcophage magique. Pendant des millénaires, il est resté prisonnier des sables du désert, mais le retour de Shurima l'a libéré de sa...",
+      },
+      de: {
+        title: "der aufgestiegene Magier",
+        blurb:
+          "Xerath ist ein aufgestiegener Magier aus dem alten Shurima, ein Wesen voller arkaner Kraft, das sich in den zersplitterten Teilen eines magischen Sarkophags windet. Jahrtausende lang war er unter dem Wüstensand gefangen gewesen, doch als Shurima sich...",
+      },
+      pt: {
+        title: "o Mago Ascendente",
+        blurb:
+          "Xerath é um mago Ascendente da antiga Shurima, um ser de energia arcana que existe em meio a estilhaços de um sarcófago mágico. Por milênios, ele ficou enclausurado debaixo das areias do deserto, mas o ressurgimento de Shurima o libertou de sua antiga...",
+      },
+      ru: {
+        name: "Зерат",
+        title: "Высший маг",
+        blurb:
+          "Зерат – вознесшийся маг из древней империи Шурима, обладающий таинственной силой, которой сочатся осколки его разбитого саркофага. На протяжении тысячелетий он был узником песков, но возрождение Шуримы освободило его. Теперь он одержим жаждой власти и...",
+      },
+    },
   },
   {
     id: "xinzhao",
@@ -3956,20 +10694,62 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "XinZhao",
     roles: ["Jungle"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6599999999999999,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.2,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6599999999999999,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.2,
+      scaling: 0.55,
+    }),
     blurb: "シン・ジャオは、現王朝のライトシールド王家に忠誠を誓う毅然とした戦士だ。",
+    blurbEn:
+      "Xin Zhao is a resolute warrior loyal to the ruling Lightshield dynasty. Once condemned to the fighting pits of Noxus, he survived countless gladiatorial bouts, but after being freed by Demacian forces, he swore his life and allegiance to these brave...",
+    loc: {
+      ko: {
+        name: "신 짜오",
+        title: "데마시아의 호위무사",
+        blurb:
+          "신 짜오는 데마시아를 통치하는 라이트실드 왕조에 충성을 바치는 결의에 가득 찬 전사이다. 신 짜오는 한 때 녹서스의 검투사로 싸우는 형벌에 처해져 셀 수 없이 많은 시합에서 살아남았지만 데마시아 군이 신 짜오를 해방시켜 준 후, 용감한 해방군인 데마시아 군에 목숨을 다해 충성하기로 맹세했다. 손에 익은 삼조창으로 무장한 신 짜오는 이제 자신을 받아들여 준 데마시아 왕국을 위해 어떤 적이 어떠한 상황에서 달려든다 해도 담대하게 맞선다.",
+      },
+      zh: {
+        name: "赵信",
+        title: "德邦总管",
+        blurb:
+          "赵信是效忠于光盾王朝的坚毅勇士。他曾经沦落于诺克萨斯的角斗场，在无数次角斗中得以幸存。被德玛西亚军队解救以后，他便立誓为这群勇敢的解放者奉献生命和忠诚。如今手持三爪长枪的赵信，正为自己的第二祖国而战，一往无前，暴虎冯河。",
+      },
+      es: {
+        title: "El Senescal de Demacia",
+        blurb:
+          "Xin Zhao es un guerreo decidido y valiente, leal a la dinastía Escudo de Luz. En su momento fue condenado a los fosos noxianos, en los que sobrevivió a incontables batallas de gladiadores. Pero, tras ser liberado por las fuerzas demacianas, entregó su...",
+      },
+      fr: {
+        title: "Sénéchal de Demacia",
+        blurb:
+          "Xin Zhao est un guerrier résolu qui sert fidèlement la dynastie régnante des Lightshield. Naguère condamné à se battre dans les arènes de combat de Noxus, il survécut à d'innombrables rencontres de gladiateurs. Mais après avoir été libéré par les forces...",
+      },
+      de: {
+        title: "der Seneschall von Demacia",
+        blurb:
+          "Xin Zhao ist ein entschlossener Krieger, der der Lichtschild-Dynastie gegenüber loyal ist. Einst kämpfte er in den verdammten Schlachtgruben von Noxus in unzähligen Gladiatorenkämpfen ums pure Überleben, doch als er von demacianischen Truppen befreit...",
+      },
+      pt: {
+        title: "o Senescal de Demacia",
+        blurb:
+          "Xin Zhao é um guerreiro determinado, leal à dinastia Lumescudo. No passado, ele foi condenado a lutar como gladiador em Noxus, e sobreviveu à incontáveis lutas, mas depois de ser libertado por forças demacianas, ele prometeu sua vida e lealdade aos seus...",
+      },
+      ru: {
+        name: "Ксин Жао",
+        title: "Сенешаль Демасии",
+        blurb:
+          "Ксин Жао – непоколебимый воин и верный слуга правящей династии Лайтшилдов. В прошлом он был вынужден сражаться в бойцовых ямах Ноксуса и пережил бесчисленное множество гладиаторских боев. Когда войска Демасии освободили его, он присягнул на верность...",
+      },
+    },
   },
   {
     id: "yasuo",
@@ -3979,27 +10759,69 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "赦されざる者",
     region: "Ionia",
     ddragonId: "Yasuo",
-    roles: ["Mid","Top"],
-    archetypes: ["Fighter","Assassin"],
+    roles: ["Mid", "Top"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({
-  honor: 0.6,
-  revenge: 0.5,
-  freedom: 0.7,
-  solo: 0.7,
-  rival: 0.7
-}),
+      honor: 0.6,
+      revenge: 0.5,
+      freedom: 0.7,
+      solo: 0.7,
+      rival: 0.7,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.7,
-  damageStyle: 0.6,
-  durability: 0.4,
-  damage: 0.75,
-  cc: 0.3,
-  mobility: 0.95,
-  difficulty: 0.85,
-  scaling: 0.65
-}),
+      range: 0,
+      skillBased: 0.7,
+      damageStyle: 0.6,
+      durability: 0.4,
+      damage: 0.75,
+      cc: 0.3,
+      mobility: 0.95,
+      difficulty: 0.85,
+      scaling: 0.65,
+    }),
     blurb: "風を纏う流浪の剣士。汚名を晴らす旅を続ける。",
+    blurbEn:
+      "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self...",
+    loc: {
+      ko: {
+        name: "야스오",
+        title: "용서받지 못한 자",
+        blurb:
+          "굳은 결의를 품은 아이오니아의 검객 야스오는 날렵한 검술과 바람을 자유로이 다루는 능력으로 적을 쓰러뜨린다. 젊은 시절, 자부심으로 가득 찼던 야스오는 스승을 살해한 누명을 쓰게 되고, 결백을 증명할 길이 없는 상황에서 급기야는 자신을 보호하기 위해 친형까지 죽음으로 이끌게 된다. 스승을 살해한 진범이 결국 밝혀졌지만, 지금도 야스오는 자신의 검을 인도하는 바람에만 의존한 채 고향 아이오니아를 배회하고 있다. 과거의 자신을 아직 용서하지 못한 채로.",
+      },
+      zh: {
+        name: "亚索",
+        title: "疾风剑豪",
+        blurb:
+          "亚索是一个百折不屈的艾欧尼亚人，也是一名身手敏捷的御风剑客。这位生性自负的年轻人，被误认作杀害长老的凶手——无法自证清白的亚索因此出于自卫而出手杀死了自己的哥哥。之后，虽然长老死亡的真相已然大白，他的哥哥也已离奇重生，但亚索仍然无法原谅自己的所作所为。他将自己放逐于天涯，听任疾风指引着剑刃的方向。",
+      },
+      es: {
+        title: "La Espada sin Honor",
+        blurb:
+          "Yasuo, un intrépido jonio con una fuerza de voluntad inquebrantable, es también un hábil espadachín capaz de controlar el viento y utilizarlo contra sus enemigos. Siendo un joven orgulloso fue injustamente acusado de asesinar a su maestro. Incapaz de...",
+      },
+      fr: {
+        title: "Disgracié",
+        blurb:
+          "L'Ionien Yasuo est un épéiste agile et résolu, capable de déchaîner contre ses ennemis la puissance de l'air. Alors qu'il était encore un jeune homme fier, il fut accusé à tort d'avoir assassiné son maître. Incapable de prouver son innocence, il dut...",
+      },
+      de: {
+        title: "der entehrte Krieger",
+        blurb:
+          "Yasuo ist ein entschlossener Ionier und ein wendiger Schwertkämpfer, der die Luft selbst gegen seine Gegner einsetzt. Als stolzer junger Mann wurde er fälschlicherweise des Mordes an seinem Meister beschuldigt. Da er seine Unschuld nicht beweisen konnte...",
+      },
+      pt: {
+        title: "o Imperdoável",
+        blurb:
+          "Yasuo, um ioniano extremamente determinado, é também um ágil espadachim que usa o próprio ar como arma para enfrentar seus inimigos. Quando jovem, ele teve seu orgulho ferido ao ser acusado injustamente do assassinato de seu mestre — sem conseguir...",
+      },
+      ru: {
+        name: "Ясуо",
+        title: "Непрощенный",
+        blurb:
+          "Ясуо, ловкий и решительный мечник из Ионии, использует против своих врагов силу ветра. Когда Ясуо был горделивым юнцом, его обвинили в убийстве собственного наставника. Он не смог доказать свою невиновность и был вынужден убить родного брата из...",
+      },
+    },
   },
   {
     id: "yone",
@@ -4009,21 +10831,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "忘られざる者",
     region: "Ionia",
     ddragonId: "Yone",
-    roles: ["Mid","Top"],
-    archetypes: ["Fighter","Assassin"],
+    roles: ["Mid", "Top"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.4,
-  damage: 0.72,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.8,
-  scaling: 0.45
-}),
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.4,
+      damage: 0.72,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.8,
+      scaling: 0.45,
+    }),
     blurb: "生前、ヨネはヤスオの腹違いの兄であり、村の剣術道場で名を知られた生徒だった。",
+    blurbEn:
+      "In life, he was Yone—half-brother of Yasuo, and renowned student of his village's sword school. But upon his death at the hands of his brother, he found himself hunted by a malevolent entity of the spirit realm, and was forced to slay it with its own...",
+    loc: {
+      ko: {
+        name: "요네",
+        title: "잊히지 못한 자",
+        blurb:
+          "생전에 야스오의 이부형제였던 요네는 마을 검술 학교에서 촉망받는 학생이었다. 그러나 형제의 손에 죽음을 맞이한 후 영혼 세계의 악령에 쫓기자 악령의 검으로 악령을 죽일 수밖에 없었다. 악령의 가면을 써야 하는 저주를 받게 된 요네는 자신이 어떤 존재가 되었는지 알아내기 위해 쉬지 않고 그 악령과 같은 존재들을 뒤쫓는다.",
+      },
+      zh: {
+        name: "永恩",
+        title: "封魔剑魂",
+        blurb:
+          "生前，他是永恩，是亚索同母异父的哥哥，是故乡剑术道场的知名弟子。但当他死在弟弟手下以后，却发现自己被精神领域中的恶毒灵体所侵扰，不得不拿起恶魔的刀剑将它弑杀。如今，诅咒缠身的永恩戴上了它的恶魔面具，开始了不懈地追猎，他誓要猎尽所有同种的恶魔，以查清自己究竟成为了什么。",
+      },
+      es: {
+        title: "el Imperecedero",
+        blurb:
+          "En vida, fue Yone, hermanastro de Yasuo y pupilo de renombre en la escuela de esgrima de su aldea. No obstante, al morir a manos de su hermano, se vio perseguido por una maligna entidad del reino espiritual y acabó por asesinarlo con su propia espada...",
+      },
+      fr: {
+        title: "Inoublié",
+        blurb:
+          "Au cours de sa vie, Yone fut le demi-frère de Yasuo et un disciple renommé de l'école d'armes de son village. Mais après avoir été tué par son propre frère, il se retrouva hanté par une entité malveillante dans le royaume spirituel. Il dut la tuer avec...",
+      },
+      de: {
+        title: "der unvergessene Krieger",
+        blurb:
+          "Zu seinen Lebzeiten war er Yone – Yasuos Halbbruder und renommierter Schüler an der Schwertkampfschule seines Dorfes. Nachdem er durch die Hand seines Bruders den Tod fand, wurde er von einer bösartigen Kreatur des Geisterreichs verfolgt und er musste...",
+      },
+      pt: {
+        title: "o Inesquecido",
+        blurb:
+          "Em vida, ele foi Yone; meio-irmão de Yasuo e um respeitado aluno da escola de espadachins de seu vilarejo. Mas, ao morrer pelas mãos do irmão, ele se viu perseguido por uma entidade maligna do reino espiritual e foi forçado a exterminá-la com sua...",
+      },
+      ru: {
+        name: "Ёнэ",
+        title: "Незабытый",
+        blurb:
+          "При жизни Ёнэ, единоутробный брат Ясуо, был одним из самых талантливых учеников в школе мечников недалеко от родной деревни. Он погиб от руки брата, и в мире духов на него напала злобная сущность. У Ёнэ не оставалось иного выбора, кроме как сразить...",
+      },
+    },
   },
   {
     id: "yorick",
@@ -4034,20 +10898,62 @@ export const CHAMPIONS: Champion[] = [
     region: "ShadowIsles",
     ddragonId: "Yorick",
     roles: ["Top"],
-    archetypes: ["Fighter","Tank","Bruiser"],
+    archetypes: ["Fighter", "Tank", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.6,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.6,
-  scaling: 0.55
-}),
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.6,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.6,
+      scaling: 0.55,
+    }),
     blurb: "ヨリックは忘れ去られて久しいある教団の修道士として唯一生き残った。",
+    blurbEn:
+      "The last survivor of a long-forgotten religious order, Yorick is both blessed and cursed with power over the dead. Trapped on the Shadow Isles, his only companions are the rotting corpses and shrieking wraiths that he gathers to him. Yorick's monstrous...",
+    loc: {
+      ko: {
+        name: "요릭",
+        title: "영혼의 길잡이",
+        blurb:
+          "오래전 잊힌 종교 교단의 마지막 생존자 요릭은 망자를 거느리는, 축복이자 저주인 능력을 소유하고 있다. 그에게로 몰려드는 썩은 시체와 울부짖는 망령은 그림자 군도에 발이 묶인 그의 유일한 동반자다. 대몰락의 저주로부터 조국을 구원하겠다는 신성한 뜻을 품고 있지만 그의 행동은 괴이하기만 하다.",
+      },
+      zh: {
+        name: "约里克",
+        title: "牧魂人",
+        blurb:
+          "约里克所在的教团早已被世人忘却，而他是最后的幸存者，获得了操控死者的能力，这既是祝福也是诅咒。与他一同被困在暗影岛上的，只有逐渐腐败的尸体，还有他引到自己身边终日尖啸的怨灵。但在约里克怪异的举止下，却掩藏着一个崇高的目标：将他的家园从破败之咒中解救出来。",
+      },
+      es: {
+        title: "Pastor de las Almas Perdidas",
+        blurb:
+          "Yorick, último superviviente de una orden religiosa olvidada hace tiempo, carga con la bendición y la maldición de controlar a los muertos. Dado que está atrapado en las Islas de la Sombra, sus únicos compañeros son cadáveres en descomposición y los...",
+      },
+      fr: {
+        title: "Berger des âmes",
+        blurb:
+          "Yorick est le dernier survivant d'un ordre religieux disparu depuis longtemps et son pouvoir sur les morts est à la fois une bénédiction et une malédiction. Prisonnier des Îles obscures, il n'a pour compagnons que les cadavres pourrissants et les...",
+      },
+      de: {
+        title: "der Hirte der verlorenen Seelen",
+        blurb:
+          "Yorick ist der letzte Überlebende eines lang vergessenen religiösen Ordens und seine Macht über die Toten ist sowohl Segen als auch Fluch. Als Gefangener der Schatteninseln sind seine einzigen Gefährten die verrottenden Leichen und kreischenden Geister...",
+      },
+      pt: {
+        title: "o Pastor de Almas",
+        blurb:
+          "Último sobrevivente de uma ordem religiosa há muito esquecida, Yorick é abençoado e amaldiçoado pelo poder que exerce sobre os mortos. Preso nas Ilhas das Sombras, suas únicas companhias são os defuntos e espectros atormentados que ele atrai. As ações...",
+      },
+      ru: {
+        name: "Йорик",
+        title: "Пастух заблудших душ",
+        blurb:
+          "Йорик – последний жрец давно забытого религиозного ордена, наделенный властью над мертвыми. Для него это одновременно благословение и проклятье. Он заперт на Сумрачных островах, где его окружают лишь разлагающиеся тела былых соратников и стенающие духи...",
+      },
+    },
   },
   {
     id: "yunara",
@@ -4061,17 +10967,60 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.2,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.4,
-  scaling: 0.55
-}),
-    blurb: "アイオニアへの揺るぎない忠誠心を胸にユナラは精霊界に身を隠し、均衡の守人に代々受け継がれる遺物「アイオン・エルナ」で修行を重ねた。",
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.2,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.4,
+      scaling: 0.55,
+    }),
+    blurb:
+      "アイオニアへの揺るぎない忠誠心を胸にユナラは精霊界に身を隠し、均衡の守人に代々受け継がれる遺物「アイオン・エルナ」で修行を重ねた。",
+    blurbEn:
+      "Unwavering in her devotion to Ionia, Yunara has spent centuries cloistered away in the spirit realm honing her skills with the Aion Er'na, a legendary Kinkou relic. Despite all she has sacrificed, Yunara's vow to rid the land of disharmony and strife...",
+    loc: {
+      ko: {
+        name: "유나라",
+        title: "꺾이지 않는 신념",
+        blurb:
+          "유나라는 아이오니아에 대한 변함없는 헌신으로, 수 세기 동안 영혼 세계에 칩거하며 전설적인 킨코우 유물인 에이온 에르나를 다루는 법을 연마했습니다. 많은 것을 희생했음에도, 이 땅에서 불화와 갈등을 몰아내겠다는 유나라의 맹세는 그 신념만큼이나 굳건했습니다. 그러나 그녀를 기다리는 세상과, 다시금 그림자를 드리운 고대의 위협은 그 결의를 극한까지 시험할 것입니다.",
+      },
+      zh: {
+        name: "芸阿娜",
+        title: "不破之誓",
+        blurb:
+          "怀揣对艾欧尼亚的不渝之心，芸阿娜进入精神领域，度过了千百年与世隔绝的时光，执均衡教派的传说圣器“艾恩伊纳”，潜心修炼战法与武艺。芸阿娜曾立誓修除初生之土的一切失谐与纷争，纵有再多牺牲，这誓言与信念也未曾有一丝动摇。只是，如今的世界于她已是沧海桑田，旧日的暗影亦翻腾诡谲——芸阿娜的决心将面临前所未有的考验。",
+      },
+      es: {
+        title: "la Fe Inquebrantable",
+        blurb:
+          "Yunara, fiel a su devoción por Jonia, ha pasado siglos encerrada en el reino espiritual perfeccionando su destreza con el Aion Er'na, una legendaria reliquia kinkou. A pesar de todo lo que ha sacrificado, la promesa de Yunara de librar a su pueblo de la...",
+      },
+      fr: {
+        title: "Foi inébranlable",
+        blurb:
+          "Par son dévouement inébranlable envers Ionia, Yunara a passé des siècles retirée dans le royaume spirituel pour perfectionner sa maîtrise des Aion Er'na, une relique légendaire du Kinkou. Malgré tous les sacrifices qu'elle a accomplis, Yunara a su...",
+      },
+      de: {
+        title: "der unerschütterliche Glaube",
+        blurb:
+          "Yunara ist unerschütterlich in ihrer Hingabe an Ionia und hat Jahrhunderte in Klausur im Geisterreich verbracht, um ihre Fähigkeiten mit den Aion Er'na, einem legendären Relikt der Kinkou, zu verfeinern. Trotz allem, was sie geopfert hat, hält Yunara an...",
+      },
+      pt: {
+        title: "a Fé Inabalável",
+        blurb:
+          "Com uma fé inabalável em Ionia, Yunara passou séculos isolada no Reino Espiritual treinando com Aion Er'na, uma lendária relíquia Kinkou. Apesar dos sacrifícios, o juramento de Yunara de varrer o desequilíbrio e os conflitos das terras ionianas...",
+      },
+      ru: {
+        name: "Юнара",
+        title: "Нерушимая вера",
+        blurb:
+          "Юнара, чья верность Ионии непоколебима, провела долгие века в мире духов, где она оттачивала мастерство владения Эйон Эр'на, легендарной реликвией Кинку. И хотя Юнаре многим пришлось пожертвовать, ее вера нерушима, и она до сих пор блюдет свою клятву –...",
+      },
+    },
   },
   {
     id: "yuumi",
@@ -4082,20 +11031,63 @@ export const CHAMPIONS: Champion[] = [
     region: "BandleCity",
     ddragonId: "Yuumi",
     roles: ["Support"],
-    archetypes: ["Support","Mage"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.1,
-  damage: 0.78,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.2,
-  scaling: 0.6
-}),
-    blurb: "バンドルシティからやってきた魔法ネコのユーミは、かつてはノラという名のヨードル魔女の使い魔だった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.1,
+      damage: 0.78,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.2,
+      scaling: 0.6,
+    }),
+    blurb:
+      "バンドルシティからやってきた魔法ネコのユーミは、かつてはノラという名のヨードル魔女の使い魔だった。",
+    blurbEn:
+      "A magical cat from Bandle City, Yuumi was once the familiar of a yordle enchantress, Norra. When her master mysteriously disappeared, Yuumi became the Keeper of Norra's sentient Book of Thresholds, traveling through portals in its pages to search for...",
+    loc: {
+      ko: {
+        name: "유미",
+        title: "마법 고양이",
+        blurb:
+          "유미는 밴들 시티 출신의 마법 고양이로 한때 요들 마법사 노라와 함께 살았다. 어느 날 노라가 알 수 없는 이유로 종적을 감추자 유미는 자아를 지닌 노라의 책 '관문의 서'의 수호자가 되었으며, 책 페이지 안에 존재하는 차원문을 타고 주인을 찾는 여정에 나섰다. 애정을 갈구하는 유미는 여정을 함께 떠날 친절한 동료들을 구하며, 빛나는 방패와 단호한 결의로 그들을 보호한다. 노라의 책은 유미가 눈앞에 놓인 임무에 집중하도록 하기 위해 애쓰지만, 유미는...",
+      },
+      zh: {
+        name: "悠米",
+        title: "魔法猫咪",
+        blurb:
+          "作为一只来自班德尔城的魔法猫咪，悠米曾是一名约德尔魔女的守护灵，她的主人名叫诺拉。而当主人神秘消失以后，悠米就成为了《门扉魔典》的守护者，这是诺拉留下的一本有灵性的书，他们一起穿越书页中的传送门，共同寻找诺拉。渴望被宠爱的悠米在她的旅途中寻找着友善的同伴，为同伴们提供闪光护盾和坚决意志作为保护。虽然魔典竭尽全力让她把注意力留在最初的任务上，但悠米经常会被世俗的安逸所吸引，比如打盹和吃鱼。但安逸过后，她总是会回归自己的任务，找寻自己的朋友。",
+      },
+      es: {
+        title: "la Gata Mágica",
+        blurb:
+          "Yuumi, una gata mágica de Ciudad de Bandle, fue antaño la compañera de una hechicera yordle, Norra. Tras la misteriosa desaparición de su maestra, Yuumi se convirtió en la guardiana del Libro de umbrales de Norra, un objeto sintiente cuyas páginas...",
+      },
+      fr: {
+        title: "Gardienne du Grimoire",
+        blurb:
+          "Originaire de Bandle, Yuumi est un familier magique dont la maîtresse, une enchanteresse yordle du nom de Norra, a mystérieusement disparu. Yuumi est désormais la gardienne du Grimoire des Seuils que possédait Norra, un livre permettant de franchir des...",
+      },
+      de: {
+        title: "die magische Katze",
+        blurb:
+          "Yuumi ist eine magische Katze aus Bandle und war einst die Vertraute einer Yordle-Zauberin namens Norra. Als ihr Frauchen unter mysteriösen Umständen verschwand, wurde Yuumi zur Hüterin von Norras lebendigem Buch der Schwellen und reist nun auf der...",
+      },
+      pt: {
+        title: "a Gata Mágica",
+        blurb:
+          "Uma gata mágica de Bandópolis, Yuumi já foi a mascote de uma feiticeira yordle chamada Norra. Mas quando sua mestra desapareceu misteriosamente, Yuumi se tornou a Guardiã do Livro dos Portais de Norra, viajando à procura dela através dos portais nas...",
+      },
+      ru: {
+        name: "Юми",
+        title: "Волшебная кошка",
+        blurb:
+          "Юми – волшебная кошка из Бандл Сити, фамильяр йордла-чародейки по имени Норра. Когда та таинственно исчезла, Юми стала хранительницей разумной Книги Пределов. Она путешествует сквозь страницы-порталы, пытаясь разыскать Норру. Без хозяйки Юми бывает...",
+      },
+    },
   },
   {
     id: "zaahen",
@@ -4106,20 +11098,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Demacia",
     ddragonId: "Zaahen",
     roles: ["Mid"],
-    archetypes: ["Fighter","Assassin"],
+    archetypes: ["Fighter", "Assassin"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.2,
-  skillBased: 0.7,
-  damageStyle: 0.85,
-  durability: 0.6,
-  damage: 0.54,
-  cc: 0.4,
-  mobility: 0.8,
-  difficulty: 0.2,
-  scaling: 0.45
-}),
-    blurb: "光と闇、相反する力の両方を操る堕ちし者、ザーヘンは、己を蝕もうとする穢れに抗い続けながら、同胞であるダーキンたちを狩る。",
+      range: 0.2,
+      skillBased: 0.7,
+      damageStyle: 0.85,
+      durability: 0.6,
+      damage: 0.54,
+      cc: 0.4,
+      mobility: 0.8,
+      difficulty: 0.2,
+      scaling: 0.45,
+    }),
+    blurb:
+      "光と闇、相反する力の両方を操る堕ちし者、ザーヘンは、己を蝕もうとする穢れに抗い続けながら、同胞であるダーキンたちを狩る。",
+    blurbEn:
+      "A fallen god wielding both divine and profane power, Zaahen hunts his fellow Darkin while defying the corruption that threatens to consume him. Once willingly sealed within his glaive to stave off madness, he now walks free, noble in heart and vicious...",
+    loc: {
+      ko: {
+        name: "자헨",
+        title: "저물지 않는 자",
+        blurb:
+          "신성과 불경한 힘을 모두 지닌 추락한 신 자헨은 자신을 집어삼키려는 타락에 맞서 싸우며, 동족 다르킨을 사냥합니다. 광기를 피해 스스로 글레이브 속에 자신을 가두었던 자헨은 이제 자유의 몸이 되어 고결한 마음과 잔혹한 의지로 움직입니다. 내면에서 벌어지는 영원한 전쟁을 버텨내는 한, 자헨은 룬테라를 파멸로 이끄는 모든 존재 위에 우뚝 서게 될 것입니다.",
+      },
+      zh: {
+        name: "亚恒",
+        title: "不落魔锋",
+        blurb:
+          "亚恒是陨落的神，是圣洁与污秽的化身。身为暗裔，亚恒既要猎杀他的暗裔同胞，亦要抵挡那股随时可能将他吞噬的堕落之力。为了阻止疯狂降临，他曾自愿被封印进他的长刀；而如今，他再度行走于世间，怀着一颗崇高的心，和野兽般的本性。在亚恒的内心，一场永恒的战争从未停止——但只要他尚未落败，那些染指符文之地的奸邪就注定遭他斩灭。",
+      },
+      es: {
+        title: "El Impertérrito",
+        blurb:
+          "Zaahen es un dios caído que esgrime un poder divino y profano. Da caza a sus hermanos Oscuros mientras se enfrenta a la corrupción que amenaza con consumirlo. Antaño, accedió voluntariamente a que lo sellaran en el interior de su guja para frenar el...",
+      },
+      fr: {
+        title: "Incorruptible",
+        blurb:
+          "Dieu déchu maniant à la fois le divin et l'impie, Zaahen traque ses frères et sœurs Darkin tout en résistant à la corruption qui menace de le consumer. Autrefois scellé volontairement dans son glaive pour ne pas succomber à la folie, il est désormais...",
+      },
+      de: {
+        title: "Der Ungespaltene",
+        blurb:
+          "Zaahen ist ein gefallener Gott, der sowohl über göttliche als auch weltliche Kräfte verfügt. Er jagt andere Düstere und kämpft gegen die Verderbnis, die ihn zu verschlingen droht. Früher hat er sich freiwillig in seiner Gleve eingeschlossen, um den...",
+      },
+      pt: {
+        title: "O Indissociável",
+        blurb:
+          "Um deus caído com poder divino e profano, Zaahen caça os outros Darkin em constante desafio à corrupção que ameaça consumi-lo. Outrora selado por livre vontade em sua glaive para evitar o jugo da loucura, ele agora se vê liberto, de coração nobre e...",
+      },
+      ru: {
+        name: "Заахен",
+        title: "Неразбиваемый",
+        blurb:
+          "Заахен – падший бог, который владеет божественной и нечестивой силой. Он охотится на других даркинов, вместе с тем давая отпор скверне, которая пытается поглотить его самого. Некогда он согласился на заточение в своей глефе, чтобы безумие не захлестнуло...",
+      },
+    },
   },
   {
     id: "zac",
@@ -4130,20 +11165,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Zaun",
     ddragonId: "Zac",
     roles: ["Jungle"],
-    archetypes: ["Tank","Fighter","Bruiser"],
+    archetypes: ["Tank", "Fighter", "Bruiser"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.15,
-  skillBased: 0.5,
-  damageStyle: 0.35,
-  durability: 0.7,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.55,
-  difficulty: 0.8,
-  scaling: 0.55
-}),
-    blurb: "ケミテック層を流れ、ゾウンの汚水地区の奥深く、ぽつんと隔離された大空洞に溜まった有毒液の池。",
+      range: 0.15,
+      skillBased: 0.5,
+      damageStyle: 0.35,
+      durability: 0.7,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.55,
+      difficulty: 0.8,
+      scaling: 0.55,
+    }),
+    blurb:
+      "ケミテック層を流れ、ゾウンの汚水地区の奥深く、ぽつんと隔離された大空洞に溜まった有毒液の池。",
+    blurbEn:
+      "Zac is the product of a toxic spill that ran through a chemtech seam and pooled in an isolated cavern deep in Zaun's Sump. Despite such humble origins, Zac has grown from primordial ooze into a thinking being who dwells in the city's pipes, occasionally...",
+    loc: {
+      ko: {
+        name: "자크",
+        title: "비밀 병기",
+        blurb:
+          "자크는 화학공학 지층을 따라 흐른 독성물질이 자운의 지하동굴 깊은 곳에 위치한 웅덩이에 모여 만들어진 생명체이다. 이처럼 변변치 못한 태생에도 불구하고 자크는 원시적인 진흙의 상태에서 지성을 갖춘 존재로 성장했다. 그는 자운의 배관 속에 살면서 도움이 필요한 이들을 돕거나 자운의 망가진 기반시설을 재건하기 위해 이따금 모습을 드러낸다.",
+      },
+      zh: {
+        name: "扎克",
+        title: "生化魔人",
+        blurb:
+          "一滩泄漏的毒液，顺着炼金科技设施的裂缝流进了祖安的地沟区，在深处一个与世隔绝的坑洞里积成了一洼。出身虽然如此低微，但扎克却从一团蒙昧的黏液长成了一个有思想的实体，栖息在城里的管道中，偶尔露面，帮助那些无助的人，或是修缮祖安的各种公共设施。",
+      },
+      es: {
+        title: "El Arma Secreta",
+        blurb:
+          "Zac es el resultado de un vertido tóxico que recorría una veta tecnoquímica y fue a parar a una profunda caverna apartada en el Sumidero de Zaun. A pesar de sus humildes orígenes, Zac ha pasado de ser un flujo primitivo a un ser pensante que habita en...",
+      },
+      fr: {
+        title: "Arme secrète",
+        blurb:
+          "Zac est le produit d'une fuite toxique qui, dégoulinant par une veine techno-chimique, se transforma en bassin dans une profonde caverne du Puisard de Zaun. En dépit de ses humbles origines, Zac a évolué pour passer du stade de dépôt primordial à celui...",
+      },
+      de: {
+        title: "die Geheimwaffe",
+        blurb:
+          "Zac ist durch eine giftige Substanz entstanden, die aus einem undichten Chemtech-Tank herausgetropft war und in einer abgeschiedenen Höhle in Zhauns Grube eine Lache gebildet hatte. Trotz dieser bescheidenen Herkunft hat sich Zac prächtig entwickelt –...",
+      },
+      pt: {
+        title: "a Arma Secreta",
+        blurb:
+          "Zac é produto de um derramamento tóxico que percorreu um tubo quimtec e se armazenou em uma caverna isolada no Sumidouro de Zaun. Apesar de suas origens humildes, Zac deixou de ser uma lama qualquer e se tornou um ser pensante que mora nos encanamentos...",
+      },
+      ru: {
+        name: "Зак",
+        title: "Секретное оружие",
+        blurb:
+          "Зак появился на свет в результате утечки токсичных веществ, просочившихся сквозь швы химтековой трубы в уединенную пещеру в глубинах сточных колодцев Зауна. Несмотря на столь скромное происхождение, Зак сумел проделать путь от зачатка жизни в луже грязи...",
+      },
+    },
   },
   {
     id: "zed",
@@ -4156,24 +11234,66 @@ export const CHAMPIONS: Champion[] = [
     roles: ["Mid"],
     archetypes: ["Assassin"],
     storyVec: s({
-  knowledge: 0.7,
-  ambition: 0.8,
-  chaos: 0.5,
-  mentor: 0.7,
-  rival: 0.7
-}),
+      knowledge: 0.7,
+      ambition: 0.8,
+      chaos: 0.5,
+      mentor: 0.7,
+      rival: 0.7,
+    }),
     gameVec: g({
-  range: 0,
-  skillBased: 0.85,
-  damageStyle: 0.9,
-  durability: 0.3,
-  damage: 0.85,
-  cc: 0.1,
-  mobility: 0.85,
-  difficulty: 0.8,
-  scaling: 0.5
-}),
+      range: 0,
+      skillBased: 0.85,
+      damageStyle: 0.9,
+      durability: 0.3,
+      damage: 0.85,
+      cc: 0.1,
+      mobility: 0.85,
+      difficulty: 0.8,
+      scaling: 0.5,
+    }),
     blurb: "影の魔術を極めた暗殺結社の長。禁忌の力を躊躇なく使う。",
+    blurbEn:
+      "Utterly ruthless and without mercy, Zed is the leader of the Order of Shadow, an organization he created with the intent of militarizing Ionia's magical and martial traditions to drive out Noxian invaders. During the war, desperation led him to unlock...",
+    loc: {
+      ko: {
+        name: "제드",
+        title: "그림자의 주인",
+        blurb:
+          "제드는 극도로 무자비하고 인정사정없는 인물로, 녹서스 침공군을 몰아내기 위해 아이오니아의 전통 마법과 무술을 집약시킨다는 의도로 설립한 그림자단의 수장이다. 아이오니아 전쟁 중 제드는 녹서스에게 이기고 싶다는 간절한 마음에서 그림자 비급의 봉인을 해제해 버렸다. 그 사악한 비급은 강력한 만큼이나 위험하고, 사용자를 타락의 길로 빠뜨리는 것이었다. 하지만 제드는 아랑곳하지 않고 모든 금단의 비술을 익혔다. 자신의 국가에, 아니면 자신이 만든 그림자단에...",
+      },
+      zh: {
+        name: "劫",
+        title: "影流之主",
+        blurb:
+          "作为影流教派的领袖，劫已彻底抛弃了仁慈与怜悯。他创立影流的目的，是将艾欧尼亚的魔法和传统武术融于实战之中，以驱逐诺克萨斯侵略者。在战争中，绝望指引他开启了神秘的暗影形态——这是一种恶灵魔法，虽然强大，但非常危险，且容易被腐化之力侵蚀。劫已完全掌握了这种禁忌之术，他用它来摧毁自己眼中的威胁、维护自己的国家以及自己的教派。",
+      },
+      es: {
+        title: "El Maestro de las Sombras",
+        blurb:
+          "Zed, despiadado y nada compasivo, es el líder de la Orden de la Sombra, una organización que él mismo creó con el propósito de militarizar las tradiciones marciales y mágicas de Jonia para expulsar a los invasores noxianos. Durante la guerra, la...",
+      },
+      fr: {
+        title: "Maître des ombres",
+        blurb:
+          "L'impitoyable Zed est le maître de l'Ordre de l'ombre, une organisation qu'il a créée dans l'intention de militariser la tradition des arts martiaux d'Ionia et de chasser enfin les envahisseurs noxiens. Pendant la guerre, le désespoir le conduisit à...",
+      },
+      de: {
+        title: "der Meister der Schatten",
+        blurb:
+          "Zed ist gänzlich skrupellos sowie ohne Sinn für Gnade und außerdem der Anführer des Ordens der Schatten, einer Organisation, die er zur Militarisierung von Ionias Kampf- und Magiekünsten gründete, um die noxianischen Invasoren zurückzuschlagen. Während...",
+      },
+      pt: {
+        title: "o Mestre das Sombras",
+        blurb:
+          "Absolutamente impiedoso e implacável, Zed é o líder da Ordem das Sombras; uma organização criada com a intenção de militarizar as tradições marciais e mágicas de Ionia para expulsar os invasores noxianos. Durante a guerra, o desespero o levou a libertar...",
+      },
+      ru: {
+        name: "Зед",
+        title: "Мастер теней",
+        blurb:
+          "Жестокий и безжалостный Зед возглавляет орден Тени – организацию, которую он создал, чтобы превратить магическое и боевое искусство Ионии в оружие против ноксианских захватчиков. Во время войны отчаяние заставило его обратиться к темной духовной магии –...",
+      },
+    },
   },
   {
     id: "zeri",
@@ -4187,17 +11307,59 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Marksman"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.4,
-  damageStyle: 0.45,
-  durability: 0.5,
-  damage: 0.6599999999999999,
-  cc: 0.4,
-  mobility: 0.45,
-  difficulty: 0.6,
-  scaling: 0.7
-}),
+      range: 0.75,
+      skillBased: 0.4,
+      damageStyle: 0.45,
+      durability: 0.5,
+      damage: 0.6599999999999999,
+      cc: 0.4,
+      mobility: 0.45,
+      difficulty: 0.6,
+      scaling: 0.7,
+    }),
     blurb: "ゾウンの労働階級に生まれたゼリは、頑固で活発な若者だ。",
+    blurbEn:
+      "A headstrong, spirited young woman from Zaun's working-class, Zeri channels her electric magic to charge herself and her custom-crafted gun. Her volatile power mirrors her emotions, its sparks reflecting her lightning-fast approach to life. Deeply...",
+    loc: {
+      ko: {
+        name: "제리",
+        title: "자운의 불꽃",
+        blurb:
+          "자운 노동자 계층 출신의 고집 세고 활발한 제리는 전기 마법으로 자신의 힘과 손수 제작한 총을 충전한다. 그녀의 불안정한 힘은 감정을 반영하고 그 불꽃은 번개처럼 빠른 삶을 닮았다. 동정심 많은 제리는 가족과 고향에 대한 애정으로 싸움에 임한다. 가끔 도우려는 의지가 강해 역효과를 일으키기도 하지만, 이웃을 위해 싸울 때 그들 또한 함께한다는 사실을 믿고 있다.",
+      },
+      zh: {
+        name: "泽丽",
+        title: "祖安花火",
+        blurb:
+          "泽丽是一个顽强固执、意志坚定的女孩。她出身自祖安的工人阶层，可以引导电能魔法来为自身和她特制的枪械充能。动荡难测的能量也是她内心情绪的写照，闪烁的火花反映出她轻快如电的生活态度。泽丽对他人抱有深切的同情，而来自家人和故乡的爱也伴随着她投身于每一场战斗。虽然这种迫切的渴望有时也会给她带来麻烦，但是泽丽毫不怀疑的是，为你的同胞奋起抗争，便一定能够一呼百应。",
+      },
+      es: {
+        title: "La Chispa de Zaun",
+        blurb:
+          "Una joven testaruda y llena de vida de la clase trabajadora de Zaun. Zeri canaliza su magia eléctrica para cargarse a sí misma y su fusil personalizado. Su volátil poder canaliza sus emociones, y sus chispas se inspiran en su veloz estilo de vida...",
+      },
+      fr: {
+        title: "Étincelle de Zaun",
+        blurb:
+          "Zeri est une jeune femme vive et téméraire originaire des quartiers défavorisés de Zaun. Elle canalise son électricité intérieure afin de la charger dans un fusil conçu spécialement pour elle. Son pouvoir magique est le reflet de ses émotions, et ses...",
+      },
+      de: {
+        title: "Der Funke von Zhaun",
+        blurb:
+          "Zeri, eine eigenwillige und aufgeweckte junge Frau aus der Arbeiterklasse von Zhaun, kanalisiert ihre elektrische Magie, um sich selbst und ihre selbstgebaute Waffe aufzuladen. Ihre Kräfte sind so unberechenbar wie ihre Emotionen und sie versprüht mit...",
+      },
+      pt: {
+        title: "A Faísca de Zaun",
+        blurb:
+          "Uma jovem obstinada e vivaz da classe operária de Zaun, Zeri canaliza magia elétrica para carregar a si mesma e a uma arma personalizada. O poder volátil espelha o que ela sente, as centelhas refletindo o estilo de vida ultrarrápido dela. Profundamente...",
+      },
+      ru: {
+        name: "Зери",
+        title: "Искра Зауна",
+        blurb:
+          "Зери – своенравная и вспыльчивая девушка из семьи заунских рабочих, которая стреляет электрическими зарядами из особой пушки. Это электричество рождается из эмоций девушки, воплощая ее взрывной темперамент и искристый подход к жизни. Зери полна...",
+      },
+    },
   },
   {
     id: "ziggs",
@@ -4207,21 +11369,63 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "ヘクス爆薬のエキスパート",
     region: "BandleCity",
     ddragonId: "Ziggs",
-    roles: ["Mid","ADC"],
+    roles: ["Mid", "ADC"],
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.4,
-  damage: 0.66,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.4,
-  scaling: 0.6
-}),
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.4,
+      damage: 0.66,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.4,
+      scaling: 0.6,
+    }),
     blurb: "爆弾を愛する気の短いヨードルのジグスは爆発的な性質の持ち主だ。",
+    blurbEn:
+      "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor's assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber named Jinx. After a wild night on the town...",
+    loc: {
+      ko: {
+        name: "직스",
+        title: "마법공학 폭파병",
+        blurb:
+          "거대한 폭탄을 사랑하는 직스는 폭탄만큼이나 화끈한 성미를 지닌 요들이다. 필트오버에서 어느 발명가를 돕는 조수로 일하다가, 반복되는 일상에 싫증을 느끼던 중 파란 머리의 미친 폭탄광 징크스와 친구가 되었다. 어느 날 필트오버에서 요란스러운 밤을 보낸 후, 직스는 징크스의 조언을 듣고 자운으로 향했다. 자운은 직스에게 천국이다. 제일 좋아하는 폭탄을 마음껏 터뜨리고 무엇이든 내키는 대로 폭발시키며, 자운 시민뿐 아니라 화공 남작들까지 공포에 질리게...",
+      },
+      zh: {
+        name: "吉格斯",
+        title: "爆破鬼才",
+        blurb:
+          "炸弹越大越好，引线越短越好——约德尔人吉格斯简直就是天生的爆炸狂人。他曾是皮尔特沃夫一位发明家的助手，因为千篇一律的生活过于无聊，而与一个名叫金克丝的蓝发小疯子交上了朋友。在那疯狂的皮城一夜后，吉格斯接受了金克丝的建议，搬到了祖安，更加自由地探索那些令自己着迷的东西。对爆炸无尽追逐的吉格斯，一直是炼金男爵之流和可怜的普通市民共同忌惮的人物。",
+      },
+      es: {
+        title: "El Experto en Hexplosivos",
+        blurb:
+          "Gran amante de las bombas grandes y las mechas cortas, el yordle Ziggs es una explosiva fuerza de la naturaleza. Trabajaba como ayudante de un inventor en Piltover, pero, cansado de llevar una vida tan aburrida y monótona, decidió hacerse amigo de una...",
+      },
+      fr: {
+        title: "Expert des Hexplosifs",
+        blurb:
+          "Amoureux des grosses bombes et des mèches courtes, le yordle Ziggs est une force de la nature explosive. Assistant d'un inventeur de Piltover, il finit par se lasser de sa vie routinière et devint l'ami d'une jeune fille imprévisible et portée sur les...",
+      },
+      de: {
+        title: "der Hexplosions-Experte",
+        blurb:
+          "Mit seiner Vorliebe für große Bomben und kurze Lunten ist der Yordle Ziggs eine wahrlich explosive Naturgewalt. Die Assistentenstelle bei einem Erfinder in Piltover wurde ihm schnell zu langweilig und er freundete sich mit einer verrückten blauhaarigen...",
+      },
+      pt: {
+        title: "o Especialista em Hexplosivos",
+        blurb:
+          "O yordle Ziggs, amante de grandes bombas e pavios curtos, é uma força explosiva da natureza. Já entediado com sua vida previsível como assistente de um inventor de Piltover, ele fez amizade com uma bombardeira louca de cabelo azul chamada Jinx. Depois...",
+      },
+      ru: {
+        name: "Зиггс",
+        title: "Эксперт по хексчатке",
+        blurb:
+          "Зиггс – воплощенная сила природы, йордлский поклонник больших бомб и коротких фитилей. Когда-то он был помощником изобретателя в Пилтовере, но предсказуемая жизнь скоро ему наскучила, и он сошелся с безумной синеволосой любительницей взрывов Джинкс...",
+      },
+    },
   },
   {
     id: "zilean",
@@ -4231,21 +11435,64 @@ export const CHAMPIONS: Champion[] = [
     titleJa: "時の番人",
     region: "Ionia",
     ddragonId: "Zilean",
-    roles: ["Support","Mid"],
-    archetypes: ["Support","Mage"],
+    roles: ["Support", "Mid"],
+    archetypes: ["Support", "Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.5,
-  damage: 0.6,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.6,
-  scaling: 0.6
-}),
-    blurb: "ジリアンはかつてはイカシアの強力なメイジだったが、故郷がヴォイドに破壊されるのを目撃して、時の流れに執着するようになった。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.5,
+      damage: 0.6,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.6,
+      scaling: 0.6,
+    }),
+    blurb:
+      "ジリアンはかつてはイカシアの強力なメイジだったが、故郷がヴォイドに破壊されるのを目撃して、時の流れに執着するようになった。",
+    blurbEn:
+      "Once a powerful Icathian mage, Zilean became obsessed with the passage of time after witnessing his homeland's destruction by the Void. Unable to spare even a minute to grieve the catastrophic loss, he called upon ancient temporal magic to divine all...",
+    loc: {
+      ko: {
+        name: "질리언",
+        title: "시간의 수호자",
+        blurb:
+          "한때 이케시아의 강력한 마법사였던 질리언은 자신의 고국이 공허에 파괴되는 것을 목격한 후 시간의 흐름에 사로잡히게 되었다. 질리언은 처참한 상실감에 슬퍼할 틈도 없이, 미래의 모든 경우의 수를 예측하기 위해 시간 마법의 주문을 외웠다. 이제 사실상 불멸의 몸이 된 질리언은 과거, 현재, 미래를 표류하며 주변 시간의 흐름을 구부리거나 왜곡하여 시간을 되감고 있다. 이케시아를 멸망하기 전으로 돌려 놓을 시점을 찾아 모든 시간대에서 망연히 부유하는 것이다.",
+      },
+      zh: {
+        name: "基兰",
+        title: "时光守护者",
+        blurb:
+          "基兰曾是一位强大的艾卡西亚法师，在目睹了家园被虚空毁灭以后，他开始执迷于时间的流逝。他甚至没有时间为这场灾难感到悲哀，立刻就召唤了远古的时间魔法，预测全部的发展结局。从实际结果来说，他已成为不朽的存在。如今的基兰在过去、现在、未来之间漂泊，弯折、扭曲自己周围的时间，追寻那稍纵即逝的关键时刻，逆转时光，阻止艾卡西亚的毁灭。",
+      },
+      es: {
+        title: "El Guardián del Tiempo",
+        blurb:
+          "Zilean, el que un día fuera un poderoso mago de Icathia, se obsesionó con el paso del tiempo tras ser testigo de la destrucción de su tierra natal a manos del Vacío. Incapaz de parar un minuto a llorar tan catastrófica pérdida, se entregó a la vetusta...",
+      },
+      fr: {
+        title: "Gardien du Temps",
+        blurb:
+          "Naguère puissant mage d'Icathia, Zilean devint obsédé par le passage du temps après avoir assisté à la destruction de sa terre natale par le Néant. Refusant de perdre une minute à pleurer sur les décombres, il fit appel à une antique force magique...",
+      },
+      de: {
+        title: "der Zeitwächter",
+        blurb:
+          "Zilean ist ein mächtiger Magier aus Icathia, der sich obsessiv mit Zeitreisen auseinandersetzte, nachdem sein Heimatland von der Leere zerstört worden war. Ohne eine Minute um diesen katastrophalen Verlust zu trauern, rief er uralte Zeitmagie an, um...",
+      },
+      pt: {
+        title: "o Guardião do Tempo",
+        blurb:
+          "Outrora um poderoso mago icathiano, Zilean se obcecou com a passagem do tempo depois de testemunhar a destruição de sua terra natal pelo Vazio. Sem conseguir gastar um minuto que fosse para lamentar a perda catastrófica, ele invocou uma antiga magia...",
+      },
+      ru: {
+        name: "Зилеан",
+        title: "Хранитель времени",
+        blurb:
+          "Когда-то Зилеан был могущественным магом из Икатии. Но его родина была уничтожена Бездной прямо у него на глазах, и он стал одержим идеей изменить течение времени. Ни минуты не дав себе скорбеть о катастрофических потерях, он обратился к древней магии...",
+      },
+    },
   },
   {
     id: "zoe",
@@ -4259,17 +11506,61 @@ export const CHAMPIONS: Champion[] = [
     archetypes: ["Mage"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.7,
-  damage: 0.54,
-  cc: 0.55,
-  mobility: 0.35,
-  difficulty: 0.5,
-  scaling: 0.6
-}),
-    blurb: "いたずら、想像、変化を具現化する存在であるゾーイは、時空を駆け抜けて霊峰ターゴンのメッセージ──世界の再編を招く出来事の到来──を告げる。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.7,
+      damage: 0.54,
+      cc: 0.55,
+      mobility: 0.35,
+      difficulty: 0.5,
+      scaling: 0.6,
+    }),
+    blurb:
+      "いたずら、想像、変化を具現化する存在であるゾーイは、時空を駆け抜けて霊峰ターゴンのメッセージ──世界の再編を招く出来事の到来──を告げる。",
+    blurbEn:
+      "As the embodiment of mischief, imagination, and change, Zoe acts as the cosmic messenger of Targon, heralding major events that reshape worlds. Her mere presence warps the arcane mathematics governing realities, sometimes causing cataclysms without...",
+    loc: {
+      ko: {
+        name: "조이",
+        title: "여명의 성위",
+        blurb:
+          "상상력과 변화의 화신인 장난꾸러기 조이는 타곤의 우주 전령으로, 세계를 뒤흔드는 중요한 사건들을 알린다. 조이는 존재만으로도 현실 세계를 지배하는 불가사의한 수학 원리를 왜곡하고, 가끔은 아무런 악의나 노력 없이도 대재앙을 일으킨다. 이것이 그녀가 자신의 의무에 경쾌하고도 태연하게 임하는 이유일지도 모른다. 조이는 장난을 치고 인간들을 골탕 먹이는 등 즐겁게 보낼 시간이 많다. 그녀를 만나면 매우 즐겁고 삶을 긍정적으로 바라보게 될 수도 있지만...",
+      },
+      zh: {
+        name: "佐伊",
+        title: "暮光星灵",
+        blurb:
+          "调皮捣蛋、异想天开而且变化莫测，佐伊就是这一切的现实化身。作为巨神族的宇宙信使，她的出现就是惊天巨变的先兆。她甚至无需任何行为，只是单纯地出现在某个地方，就足以扭曲周围的奥术数学法则，从而扰乱现实的物理定律。有的时候还会带来浩劫与灾难，虽然她本身并无半点恶意。或许这就是为什么她对待自己的职责总是那么地漫不经心，给了她充足的时间用来玩游戏、捉弄凡人，或者自娱自乐。与佐伊的邂逅可能会给人带来欢乐与激励，但她的现身往往没这么简单，甚至常常意味着极大的危险。",
+      },
+      es: {
+        title: "el Aspecto del Crepúsculo",
+        blurb:
+          "Como personificación de la travesura, de la imaginación y del cambio, Zoe es la mensajera cósmica de Targon y anuncia acontecimientos importantes que remodelan mundos. Su mera presencia distorsiona las matemáticas arcanas que gobiernan las realidades y...",
+      },
+      fr: {
+        name: "Zoé",
+        title: "Manifestation du Crépuscule",
+        blurb:
+          "Incarnation de l'espièglerie, de l'imagination et de l'inconstance, Zoé est une messagère cosmique de Targon, annonciatrice des grands événements qui chamboulent les mondes. Sa simple présence distord les règles mathématiques qui gouvernent dans l'ombre...",
+      },
+      de: {
+        title: "der Aspekt des Zwielichts",
+        blurb:
+          "Zoe verkörpert den Übermut, die Fantasie und den Wandel. Als kosmische Botin des Targon verkündet sie bedeutende Ereignisse, die die Welten in ihren Grundfesten erschüttern. Ihre bloße Präsenz verzerrt die arkane Mathematik, die sämtliche Realitäten...",
+      },
+      pt: {
+        title: "o Aspecto do Crepúsculo",
+        blurb:
+          "Como a personificação da travessura, imaginação e mudança, Zoe atua como a mensageira cósmica de Targon, anunciando a chegada de grandes eventos que redefinem mundos. Sua mera presença altera a matemática arcana que governa as realidades, às vezes...",
+      },
+      ru: {
+        name: "Зои",
+        title: "Звездная посланница",
+        blurb:
+          "Зои – это воплощение озорства, фантазии и изменений. Она выполняет роль космической посланницы Таргона, возвещая о грандиозных событиях, которые преображают миры. Одним своим присутствием Зои трансформирует магические законы реальности, иногда ненароком...",
+      },
+    },
   },
   {
     id: "zyra",
@@ -4280,20 +11571,63 @@ export const CHAMPIONS: Champion[] = [
     region: "Ixtal",
     ddragonId: "Zyra",
     roles: ["Support"],
-    archetypes: ["Mage","Support"],
+    archetypes: ["Mage", "Support"],
     storyVec: s({}),
     gameVec: g({
-  range: 0.75,
-  skillBased: 0.8,
-  damageStyle: 0.7,
-  durability: 0.3,
-  damage: 0.72,
-  cc: 0.7,
-  mobility: 0.35,
-  difficulty: 0.7,
-  scaling: 0.6
-}),
-    blurb: "古代の魔法の大惨事の中で生まれたザイラは自然の怒りが具現化した存在であり、人間と植物が融合した妖艶な姿で、一歩進むたびに新たな生命を生み出していく。",
+      range: 0.75,
+      skillBased: 0.8,
+      damageStyle: 0.7,
+      durability: 0.3,
+      damage: 0.72,
+      cc: 0.7,
+      mobility: 0.35,
+      difficulty: 0.7,
+      scaling: 0.6,
+    }),
+    blurb:
+      "古代の魔法の大惨事の中で生まれたザイラは自然の怒りが具現化した存在であり、人間と植物が融合した妖艶な姿で、一歩進むたびに新たな生命を生み出していく。",
+    blurbEn:
+      "Born in an ancient, sorcerous catastrophe, Zyra is the wrath of nature given form—an alluring hybrid of plant and human, kindling new life with every step. She views the many mortals of Valoran as little more than prey for her seeded progeny, and thinks...",
+    loc: {
+      ko: {
+        name: "자이라",
+        title: "가시 덩굴의 복수",
+        blurb:
+          "자이라는 고대의 어떤 마법 대재앙에서 태어났다. 자연의 분노가 그대로 형상화된 생명체이자 인간과 식물의 매혹적인 혼종이다. 자이라가 한 걸음 내디딜 때마다 발밑에는 새로운 생명이 피어난다. 발로란의 수많은 필멸자를 자신의 씨앗에서 태어난 후손의 먹잇감 정도로 여기므로, 치명적인 위력의 가시를 날려 필멸자를 거침없이 사냥한다. 또한 자이라는 발로란 여기저기에 식육 식물 군락을 만들어 놓는데, 이 군락은 주변의 다른 생명체를 모조리 휘감아 죽이며 세력을...",
+      },
+      zh: {
+        name: "婕拉",
+        title: "荆棘之兴",
+        blurb:
+          "婕拉诞生于一次远古的巫术灾难，她是获得了实体形态的自然之怒，是拥有诱人外观的植物与人类的混合体。她的每一个脚步都在点燃新的生命。在她眼里，瓦洛兰的众多凡人都只不过供她播种的猎物，用夺命的尖刺杀死他们也是一件不值一提的小事。虽然她的真正目的还是个谜，但婕拉一直在世界上流浪，肆意放纵自己占领土地的欲望，同时扼杀自己领地上的所有其他生命。",
+      },
+      es: {
+        title: "La Dama de Espinas",
+        blurb:
+          "Nacida gracias a un fenómeno sobrenatural hace mucho tiempo, Zyra encarna la ira de la naturaleza: un seductor híbrido entre planta y humano que da lugar a nueva vida a cada paso. Ve a los mortales de Valoran como poco más que presas para su progenie, y...",
+      },
+      fr: {
+        title: "Dame aux ronces",
+        blurb:
+          "Née au cours d'une ancienne catastrophe magique, Zyra est la colère de la nature incarnée : mélange de plante et d'humain, faisant émerger de nouvelles pousses à chaque pas. Elle considère les nombreux mortels de Valoran comme de simples proies pour sa...",
+      },
+      de: {
+        title: "die Gebieterin der Dornen",
+        blurb:
+          "Zyra wurde aus einer uralten, magischen Katastrophe heraus geboren und ist der gestaltgewordene Zorn der Natur – ein verführerisches Hybridwesen aus Mensch und Pflanze, das mit jedem Schritt neues Leben entfacht. In ihren Augen sind die Sterblichen von...",
+      },
+      pt: {
+        title: "a Ascensão dos Espinhos",
+        blurb:
+          "Nascida em uma antiga catástrofe mágica, Zyra é a fúria da natureza em forma física e uma sedutora criatura híbrida entre planta e humana, que faz surgir a vida a cada passo que dá. Ela vê os muitos mortais de Valoran como nada além de presas para suas...",
+      },
+      ru: {
+        name: "Зайра",
+        title: "Повелительница терний",
+        blurb:
+          "Зайра – воплощенный гнев природы, рожденный в древней колдовской катастрофе. Каждый шаг этого соблазнительного гибрида растения и человека порождает новую жизнь. В ее глазах смертные Валорана – лишь добыча для ее растущего потомства, которую не жаль...",
+      },
+    },
   },
 ];
 
