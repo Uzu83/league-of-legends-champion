@@ -12,7 +12,10 @@ import {
 import { describeGame, describeStory } from "@/lib/persona";
 import { topMatches, userGameVector, userStoryVector } from "@/lib/scoring";
 
-export const runtime = "edge";
+// nodejs (not edge): this route bundles the full champion dataset (~700 KB via
+// CHAMPION_BY_ID / topMatches), which can exceed Vercel's edge-function size
+// limit. ImageResponse from next/og works on the nodejs runtime too.
+export const runtime = "nodejs";
 
 export async function GET(request: Request): Promise<Response> {
   const { searchParams } = new URL(request.url);
