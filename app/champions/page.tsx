@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CHAMPIONS, championPortrait } from "@/lib/champions";
-import { championName, dict } from "@/lib/i18n";
+import { championName, dict, hreflangAlternates, OG_LOCALE } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
 import ChampionsIndexClient from "./champions-client";
 
@@ -12,16 +12,38 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = dict(locale).champions;
   return {
     title: t.heading,
-    description: t.heading,
+    description: t.metaDescription,
+    keywords: [
+      "League of Legends champions",
+      "LoL champion list",
+      "champion roster",
+      "LoL champions",
+      "Riot Games champions",
+      "LOLチャンピオン一覧",
+      "LOLキャラ一覧",
+    ],
     alternates: {
       canonical: "/champions",
-      languages: { ja: "/champions", en: "/champions", "x-default": "/champions" },
+      languages: hreflangAlternates("/champions"),
+    },
+    openGraph: {
+      title: t.heading,
+      description: t.metaDescription,
+      type: "website",
+      locale: OG_LOCALE[locale],
     },
   };
 }
 
-export default async function ChampionsIndex() {
+export default async function ChampionsIndex({
+  searchParams,
+}: {
+  searchParams: Promise<{ [k: string]: string | string[] | undefined }>;
+}) {
   const locale = await getLocale();
+  const { q: qParam } = await searchParams;
+  const q = Array.isArray(qParam) ? qParam[0] : qParam;
+  const t = dict(locale).champions;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -33,6 +55,24 @@ export default async function ChampionsIndex() {
       image: championPortrait(c.ddragonId),
     })),
   };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: dict(locale).metadata.title,
+        item: `${SITE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: t.heading,
+        item: `${SITE_URL}/champions`,
+      },
+    ],
+  };
   return (
     <>
       <script
@@ -40,7 +80,12 @@ export default async function ChampionsIndex() {
         // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <ChampionsIndexClient champions={CHAMPIONS} locale={locale} />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ChampionsIndexClient champions={CHAMPIONS} locale={locale} initialQuery={q ?? ""} />
     </>
   );
 }

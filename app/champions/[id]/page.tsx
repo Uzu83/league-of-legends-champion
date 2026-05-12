@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ShareButton, Track } from "@/lib/analytics";
 import { CHAMPION_BY_ID, CHAMPIONS, championPortrait } from "@/lib/champions";
 import {
   archetypeLabel,
@@ -10,11 +11,17 @@ import {
   championTitle,
   dict,
   gameDimAxis,
+  hreflangAlternates,
+  OG_LOCALE,
   regionLabel,
   storyDimLabel,
 } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
+import { similarChampions } from "@/lib/scoring";
 import { GAME_DIMS, type GameDim, type StoryDim } from "@/lib/types";
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
 
 export function generateStaticParams() {
   return CHAMPIONS.map((c) => ({ id: c.id }));
@@ -37,18 +44,20 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: `/champions/${id}`,
-      languages: {
-        ja: `/champions/${id}`,
-        en: `/champions/${id}`,
-        "x-default": `/champions/${id}`,
-      },
+      languages: hreflangAlternates(`/champions/${id}`),
     },
     openGraph: {
       title: `${name} — ${title}`,
       description,
-      images: [{ url: championPortrait(champion.ddragonId), width: 120, height: 120 }],
+      images: [{ url: `/api/og?champion=${id}&lang=${locale}`, width: 1200, height: 630 }],
       type: "article",
-      locale: locale === "ja" ? "ja_JP" : "en_US",
+      locale: OG_LOCALE[locale],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${name} — ${title}`,
+      description,
+      images: [`/api/og?champion=${id}&lang=${locale}`],
     },
   };
 }
@@ -65,6 +74,11 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
     .sort(([, a], [, b]) => b - a)
     .slice(0, 5);
 
+  const similar = similarChampions(champion, 6);
+  const sameRegion = CHAMPIONS.filter(
+    (c) => c.region === champion.region && c.id !== champion.id,
+  ).slice(0, 8);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -74,6 +88,20 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
     image: championPortrait(champion.ddragonId),
     jobTitle: championTitle(locale, champion),
   };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: dict(locale).metadata.title, item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: t.heading, item: `${SITE_URL}/champions` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: championName(locale, champion),
+        item: `${SITE_URL}/champions/${id}`,
+      },
+    ],
+  };
 
   return (
     <div className="space-y-8">
@@ -82,6 +110,12 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
         // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <Track event="champion_view" data={{ id }} />
       <Link href="/" className="text-xs text-(--color-text-muted) hover:underline">
         {t.detail.back}
       </Link>
@@ -121,6 +155,16 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
             ))}
           </div>
           <p className="text-sm leading-relaxed">{championBlurb(locale, champion)}</p>
+          <div className="flex justify-center md:justify-start">
+            <ShareButton
+              text={t.detail.shareText(championName(locale, champion))}
+              url={`${SITE_URL}/champions/${id}`}
+              label={t.detail.shareCta}
+              event="champion_share"
+              data={{ id }}
+              className="rounded-full border border-(--color-rune)/40 px-3 py-1 text-xs hover:border-(--color-rune)"
+            />
+          </div>
         </div>
       </section>
 
@@ -181,6 +225,72 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
           ))}
         </ul>
       </section>
+
+      <section>
+        <h2 className="mb-2 text-sm font-semibold text-(--color-rune)">{t.detail.similar}</h2>
+        <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {similar.map((c) => (
+            <li key={c.id}>
+              <Link
+                href={`/champions/${c.id}`}
+                className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-2 transition-colors hover:border-white/30"
+              >
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-1 ring-white/20">
+                  <Image
+                    src={championPortrait(c.ddragonId)}
+                    alt={championName(locale, c)}
+                    fill
+                    sizes="48px"
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-sm font-semibold">{championName(locale, c)}</p>
+                  <p className="truncate text-xs text-(--color-text-muted)">
+                    {regionLabel(locale, c.region)} / {c.roles.join(", ")}
+                  </p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {sameRegion.length > 0 && (
+        <section>
+          <h2 className="mb-2 text-sm font-semibold text-(--color-rune)">
+            {t.detail.sameRegion(regionLabel(locale, champion.region))}
+          </h2>
+          <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {sameRegion.map((c) => (
+              <li key={c.id}>
+                <Link
+                  href={`/champions/${c.id}`}
+                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-2 transition-colors hover:border-white/30"
+                >
+                  <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-1 ring-white/20">
+                    <Image
+                      src={championPortrait(c.ddragonId)}
+                      alt={championName(locale, c)}
+                      fill
+                      sizes="48px"
+                      className="object-cover"
+                      unoptimized
+                    />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-semibold">{championName(locale, c)}</p>
+                    <p className="truncate text-xs text-(--color-text-muted)">
+                      {regionLabel(locale, c.region)} / {c.roles.join(", ")}
+                    </p>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
   );
 }

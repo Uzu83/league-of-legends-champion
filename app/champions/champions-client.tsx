@@ -4,7 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { championPortrait } from "@/lib/champions";
-import { archetypeLabel, championName, dict, type Locale, regionLabel } from "@/lib/i18n";
+import {
+  archetypeLabel,
+  championName,
+  championSearchHaystack,
+  dict,
+  type Locale,
+  regionLabel,
+} from "@/lib/i18n";
 import { type Archetype, type Champion, REGIONS, type Region, ROLES, type Role } from "@/lib/types";
 
 const ALL_ARCHETYPES: Archetype[] = [
@@ -21,12 +28,14 @@ const ALL_ARCHETYPES: Archetype[] = [
 export default function ChampionsIndexClient({
   champions,
   locale,
+  initialQuery,
 }: {
   champions: Champion[];
   locale: Locale;
+  initialQuery?: string;
 }) {
   const t = dict(locale).champions;
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery ?? "");
   const [role, setRole] = useState<Role | null>(null);
   const [region, setRegion] = useState<Region | null>(null);
   const [archetype, setArchetype] = useState<Archetype | null>(null);
@@ -34,10 +43,7 @@ export default function ChampionsIndexClient({
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return champions.filter((c) => {
-      if (q) {
-        const haystack = `${c.name} ${c.nameJa} ${c.id}`.toLowerCase();
-        if (!haystack.includes(q)) return false;
-      }
+      if (q && !championSearchHaystack(c).includes(q)) return false;
       if (role && !c.roles.includes(role)) return false;
       if (region && c.region !== region) return false;
       if (archetype && !c.archetypes.includes(archetype)) return false;

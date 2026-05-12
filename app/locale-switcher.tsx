@@ -7,6 +7,7 @@ const ONE_YEAR = 60 * 60 * 24 * 365;
 export default function LocaleSwitcher({ current }: { current: Locale }) {
   const setLocale = (next: string) => {
     if (next === current || !(LOCALES as readonly string[]).includes(next)) return;
+    // biome-ignore lint/suspicious/noDocumentCookie: intentional cookie write to switch locale.
     document.cookie = `${LOCALE_COOKIE}=${next}; path=/; max-age=${ONE_YEAR}; samesite=lax`;
     // Full reload picks up server-rendered locale + metadata.
     window.location.reload();

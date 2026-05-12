@@ -21,6 +21,17 @@ export default async function Home() {
     about: { "@type": "VideoGame", name: "League of Legends" },
   };
 
+  // FAQPage JSON-LD: surfaces the FAQ section as rich results.
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: t.faq.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+
   return (
     <div className="space-y-10">
       <script
@@ -97,6 +108,25 @@ export default async function Home() {
           >
             {t.onlyGame}
           </Link>
+        </div>
+      </section>
+
+      <section className="space-y-3">
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <h2 className="text-lg font-bold md:text-xl">{t.faqHeading}</h2>
+        <div className="space-y-2">
+          {t.faq.map(({ q, a }) => (
+            <details key={q} className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
+              <summary className="cursor-pointer select-none text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent)">
+                {q}
+              </summary>
+              <p className="mt-2 text-xs leading-relaxed text-(--color-text-muted)">{a}</p>
+            </details>
+          ))}
         </div>
       </section>
 

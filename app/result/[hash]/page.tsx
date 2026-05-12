@@ -2,15 +2,19 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ShareButton, Track } from "@/lib/analytics";
 import { championPortrait } from "@/lib/champions";
 import { decodeAnswers } from "@/lib/encoding";
 import {
   archetypeLabel,
+  BCP47,
   championBlurb,
   championName,
   championTitle,
   dict,
   gameDimAxis,
+  hreflangAlternates,
+  OG_LOCALE,
   regionLabel,
 } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
@@ -51,23 +55,25 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
       ? `${typeLabel}入り口診断: ${persona.label}型。上位3候補: ${top3Names}`
       : `${typeLabel} entry quiz result: "${persona.label}". Top 3: ${top3Names}`;
   const ogImage = `/api/og?hash=${hash}&lang=${locale}`;
+  const keywords = [
+    ...top3.map((m) => championName(locale, m.champion)),
+    persona.label,
+    locale === "ja" ? "診断結果" : "diagnosis result",
+  ];
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: `/result/${hash}`,
-      languages: {
-        ja: `/result/${hash}`,
-        en: `/result/${hash}`,
-        "x-default": `/result/${hash}`,
-      },
+      languages: hreflangAlternates(`/result/${hash}`),
     },
     openGraph: {
       title,
       description,
       images: [{ url: ogImage, width: 1200, height: 630 }],
       type: "article",
-      locale: locale === "ja" ? "ja_JP" : "en_US",
+      locale: OG_LOCALE[locale],
     },
     twitter: {
       card: "summary_large_image",
@@ -95,7 +101,6 @@ export default async function ResultPage({ params }: PageParams) {
       : describeGame(userGameVector(decoded.answers), locale);
   const userGameVec = decoded.type === "game" ? userGameVector(decoded.answers) : null;
 
-  const typeLabel = t.result.typeLabel[decoded.type];
   const otherType = decoded.type === "story" ? "game" : "story";
   const otherTypeLabel = t.result.typeLabel[otherType];
 
@@ -109,12 +114,66 @@ export default async function ResultPage({ params }: PageParams) {
     top3Names,
   );
   const shareUrl = `${SITE_URL}/result/${hash}`;
-  const twitterHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
 
   const headerLabel = decoded.type === "story" ? t.result.typeStory : t.result.typeGame;
 
+  const pageTitle =
+    locale === "ja"
+      ? `「${persona.label}」型 → ${championName(locale, best.champion)}`
+      : `"${persona.label}" → ${championName(locale, best.champion)}`;
+  const quizPath = `/q/${decoded.type}`;
+  const quizName = decoded.type === "story" ? t.quiz.storyTitle : t.quiz.gameTitle;
+  const webPageLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: pageTitle,
+    inLanguage: BCP47[locale],
+    about: { "@type": "VideoGame", name: "League of Legends" },
+    mainEntity: {
+      "@type": "Person",
+      name: championName(locale, best.champion),
+      image: championPortrait(best.champion.ddragonId),
+      jobTitle: championTitle(locale, best.champion),
+    },
+  };
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: t.siteName,
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: quizName,
+        item: `${SITE_URL}${quizPath}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: pageTitle,
+        item: `${SITE_URL}/result/${hash}`,
+      },
+    ],
+  };
+
   return (
     <div className="space-y-10">
+      <Track event="result_view" data={{ type: decoded.type, champion: best.champion.id }} />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <section className="space-y-3 text-center">
         <p className="text-xs text-(--color-text-muted)">{headerLabel}</p>
         <h1 className="text-2xl font-bold md:text-3xl">
@@ -175,14 +234,14 @@ export default async function ResultPage({ params }: PageParams) {
             </div>
             <p className="text-sm leading-relaxed">{championBlurb(locale, best.champion)}</p>
             <div className="flex flex-wrap justify-center gap-2 text-xs md:justify-start">
-              <a
-                href={twitterHref}
-                target="_blank"
-                rel="noreferrer noopener"
+              <ShareButton
+                text={shareText}
+                url={shareUrl}
+                label={t.result.tweetCta}
                 className="rounded-full border border-(--color-rune)/40 px-3 py-1 hover:border-(--color-rune)"
-              >
-                {t.result.tweetCta}
-              </a>
+                event="result_share"
+                data={{ type: decoded.type, champion: best.champion.id }}
+              />
               <Link
                 href={`/champions/${best.champion.id}`}
                 className="rounded-full border border-white/15 px-3 py-1 hover:border-white/40"
@@ -320,6 +379,12 @@ export default async function ResultPage({ params }: PageParams) {
           </Link>
         </p>
       </section>
+
+      <p className="text-center text-xs text-(--color-text-muted)">
+        <Link href="/champions" className="hover:text-(--color-accent) hover:underline">
+          {t.result.browseAll}
+        </Link>
+      </p>
     </div>
   );
 }
