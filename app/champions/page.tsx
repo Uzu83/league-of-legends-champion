@@ -2,7 +2,22 @@ import type { Metadata } from "next";
 import { CHAMPIONS, championPortrait } from "@/lib/champions";
 import { championName, dict, hreflangAlternates, OG_LOCALE } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
+import type { Champion } from "@/lib/types";
 import ChampionsIndexClient from "./champions-client";
+
+// The list client only needs id / names / region / roles / archetypes /
+// portrait id; stripping blurbs (incl. all `loc` blurbs+titles) keeps the RSC
+// payload small instead of shipping ~700 KB of champion lore.
+const listChampions: Champion[] = CHAMPIONS.map((c) => ({
+  ...c,
+  blurb: "",
+  blurbEn: undefined,
+  loc: c.loc
+    ? (Object.fromEntries(
+        Object.entries(c.loc).map(([k, v]) => [k, v?.name ? { name: v.name } : {}]),
+      ) as Champion["loc"])
+    : undefined,
+}));
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://league-of-legends-champion.vercel.app";
@@ -85,7 +100,7 @@ export default async function ChampionsIndex({
         // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <ChampionsIndexClient champions={CHAMPIONS} locale={locale} initialQuery={q ?? ""} />
+      <ChampionsIndexClient champions={listChampions} locale={locale} initialQuery={q ?? ""} />
     </>
   );
 }
