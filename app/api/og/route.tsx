@@ -34,8 +34,7 @@ export async function GET(request: Request): Promise<Response> {
 
   const youAreCaption = locale === "ja" ? "あなたは" : "You are";
   const matchCaption = locale === "ja" ? "最もマッチするのは" : "Closest champion";
-  const personaTitle =
-    locale === "ja" ? `「${persona.label}」型` : `"${persona.label}"`;
+  const personaTitle = locale === "ja" ? `「${persona.label}」型` : `"${persona.label}"`;
 
   return new ImageResponse(
     <div

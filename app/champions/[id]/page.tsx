@@ -53,11 +53,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ChampionPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function ChampionPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const champion = CHAMPION_BY_ID[id];
   if (!champion) notFound();
@@ -111,10 +107,7 @@ export default async function ChampionPage({
           </p>
           <div className="flex flex-wrap justify-center gap-1 md:justify-start">
             {champion.roles.map((r) => (
-              <span
-                key={r}
-                className="rounded-full border border-white/20 px-2 py-0.5 text-xs"
-              >
+              <span key={r} className="rounded-full border border-white/20 px-2 py-0.5 text-xs">
                 {r}
               </span>
             ))}

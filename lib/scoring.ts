@@ -90,3 +90,26 @@ export function farthestMatch(type: DiagnosisType, answers: LikertAnswer[]): Mat
   const ranked = rankChampions(type, answers);
   return ranked[ranked.length - 1]!;
 }
+
+/**
+ * Euclidean distance between two champions in bipolar gameVec space.
+ * gameVec is populated for all 172 champions (story vectors are sparse), so
+ * this gives a stable "plays similarly" metric for any pair.
+ */
+export function championDistance(a: Champion, b: Champion): number {
+  let sum = 0;
+  for (const d of GAME_DIMS) {
+    const diff = toBipolar(a.gameVec[d]) - toBipolar(b.gameVec[d]);
+    sum += diff * diff;
+  }
+  return Math.sqrt(sum);
+}
+
+/** Champions whose playstyle is closest to `c` (excludes `c` itself). */
+export function similarChampions(c: Champion, n = 6): Champion[] {
+  return CHAMPIONS.filter((other) => other.id !== c.id)
+    .map((other) => ({ champion: other, distance: championDistance(c, other) }))
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, n)
+    .map((m) => m.champion);
+}

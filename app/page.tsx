@@ -34,9 +34,7 @@ export default async function Home() {
           <br />
           {t.heading2}
         </h1>
-        <p className="mx-auto max-w-xl text-sm text-(--color-text-muted) md:text-base">
-          {t.lead}
-        </p>
+        <p className="mx-auto max-w-xl text-sm text-(--color-text-muted) md:text-base">{t.lead}</p>
       </section>
 
       <section className="relative rounded-2xl border-2 border-(--color-accent) bg-gradient-to-br from-(--color-accent)/10 to-(--color-rune)/5 p-6 md:p-8">

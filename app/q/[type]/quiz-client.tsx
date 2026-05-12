@@ -9,13 +9,7 @@ import type { LikertAnswer } from "@/lib/scoring";
 import { useQuiz } from "@/lib/store";
 import type { DiagnosisType } from "@/lib/types";
 
-export default function QuizClient({
-  type,
-  locale,
-}: {
-  type: DiagnosisType;
-  locale: Locale;
-}) {
+export default function QuizClient({ type, locale }: { type: DiagnosisType; locale: Locale }) {
   const router = useRouter();
   const t = dict(locale);
   const questions = type === "story" ? STORY_QUESTIONS : GAME_QUESTIONS;

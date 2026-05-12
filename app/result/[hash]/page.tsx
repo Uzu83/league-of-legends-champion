@@ -15,12 +15,7 @@ import {
 } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
 import { describeGame, describeStory } from "@/lib/persona";
-import {
-  farthestMatch,
-  topMatches,
-  userGameVector,
-  userStoryVector,
-} from "@/lib/scoring";
+import { farthestMatch, topMatches, userGameVector, userStoryVector } from "@/lib/scoring";
 import { GAME_DIMS, type GameDim } from "@/lib/types";
 
 export const dynamicParams = true;
@@ -98,15 +93,21 @@ export default async function ResultPage({ params }: PageParams) {
     decoded.type === "story"
       ? describeStory(userStoryVector(decoded.answers), locale)
       : describeGame(userGameVector(decoded.answers), locale);
-  const userGameVec =
-    decoded.type === "game" ? userGameVector(decoded.answers) : null;
+  const userGameVec = decoded.type === "game" ? userGameVector(decoded.answers) : null;
 
   const typeLabel = t.result.typeLabel[decoded.type];
   const otherType = decoded.type === "story" ? "game" : "story";
   const otherTypeLabel = t.result.typeLabel[otherType];
 
-  const top3Names = matches.slice(0, 3).map((m) => championName(locale, m.champion)).join(" / ");
-  const shareText = t.result.shareText(persona.label, championName(locale, best.champion), top3Names);
+  const top3Names = matches
+    .slice(0, 3)
+    .map((m) => championName(locale, m.champion))
+    .join(" / ");
+  const shareText = t.result.shareText(
+    persona.label,
+    championName(locale, best.champion),
+    top3Names,
+  );
   const shareUrl = `${SITE_URL}/result/${hash}`;
   const twitterHref = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
 
@@ -147,7 +148,9 @@ export default async function ResultPage({ params }: PageParams) {
           </div>
           <div className="flex-1 space-y-3 text-center md:text-left">
             <div>
-              <p className="text-sm text-(--color-text-muted)">{championTitle(locale, best.champion)}</p>
+              <p className="text-sm text-(--color-text-muted)">
+                {championTitle(locale, best.champion)}
+              </p>
               <h2 className="text-3xl font-bold text-(--color-accent) md:text-4xl">
                 {championName(locale, best.champion)}
               </h2>
@@ -157,10 +160,7 @@ export default async function ResultPage({ params }: PageParams) {
             </div>
             <div className="flex flex-wrap justify-center gap-1 md:justify-start">
               {best.champion.roles.map((r) => (
-                <span
-                  key={r}
-                  className="rounded-full border border-white/20 px-2 py-0.5 text-xs"
-                >
+                <span key={r} className="rounded-full border border-white/20 px-2 py-0.5 text-xs">
                   {r}
                 </span>
               ))}

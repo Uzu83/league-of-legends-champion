@@ -49,9 +49,7 @@ export default function CompareClient({ locale }: { locale: Locale }) {
 
   if (!hydrated) {
     return (
-      <div className="py-16 text-center text-sm text-(--color-text-muted)">
-        {t.compare.loading}
-      </div>
+      <div className="py-16 text-center text-sm text-(--color-text-muted)">{t.compare.loading}</div>
     );
   }
 

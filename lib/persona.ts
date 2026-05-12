@@ -1,4 +1,5 @@
 import type { Locale } from "./i18n";
+import { localizedText as L, LOCALES } from "./i18n";
 import type { GameDim, StoryDim } from "./types";
 
 export interface Persona {
@@ -6,98 +7,96 @@ export interface Persona {
   paragraphs: string[];
 }
 
-interface BiText {
-  ja: string;
-  en: string;
-}
+// Each `L(ja, en)` falls back to `en` for ko/zh/es/fr/de/pt/ru. The translation
+// pass adds a 3rd arg, e.g. `L(ja, en, { ko: "…", zh: "…", … })`.
+type LText = Record<Locale, string>;
 
 interface StoryTrait {
   test: (v: Record<StoryDim, number>) => number;
-  label: BiText;
-  paragraph: BiText;
+  label: LText;
+  paragraph: LText;
 }
 
 const STORY_TRAITS: StoryTrait[] = [
   {
     test: (v) => Math.max(v.honor + v.organization + v.justice, 0),
-    label: { ja: "規律の戦士", en: "Disciplined Warrior" },
-    paragraph: {
-      ja: "筋を通せる相手にしか心を開かない。組織や信念に身を捧げ、矛盾を許さない。",
-      en: "You only trust people who hold the line. You commit to your order or your code, and you won't tolerate contradictions.",
-    },
+    label: L("規律の戦士", "Disciplined Warrior"),
+    paragraph: L(
+      "筋を通せる相手にしか心を開かない。組織や信念に身を捧げ、矛盾を許さない。",
+      "You only trust people who hold the line. You commit to your order or your code, and you won't tolerate contradictions.",
+    ),
   },
   {
     test: (v) => Math.max(v.revenge + v.rival, 0),
-    label: { ja: "報復者", en: "Avenger" },
-    paragraph: {
-      ja: "受けた仕打ちは決して忘れず、必ず借りを返す。好敵手の存在こそが自分を磨く。",
-      en: "You never forget a slight, and you always pay it back. A worthy rival is the whetstone you sharpen yourself against.",
-    },
+    label: L("報復者", "Avenger"),
+    paragraph: L(
+      "受けた仕打ちは決して忘れず、必ず借りを返す。好敵手の存在こそが自分を磨く。",
+      "You never forget a slight, and you always pay it back. A worthy rival is the whetstone you sharpen yourself against.",
+    ),
   },
   {
     test: (v) => Math.max(v.protection + v.love + v.family, 0),
-    label: { ja: "守護者", en: "Guardian" },
-    paragraph: {
-      ja: "大切な人や弱き者のためなら、自分の信念や正義すら曲げられる。守るために強くなる。",
-      en: "For the people you love, you'll bend your own principles. You grow strong so others don't have to.",
-    },
+    label: L("守護者", "Guardian"),
+    paragraph: L(
+      "大切な人や弱き者のためなら、自分の信念や正義すら曲げられる。守るために強くなる。",
+      "For the people you love, you'll bend your own principles. You grow strong so others don't have to.",
+    ),
   },
   {
     test: (v) => Math.max(v.chaos + v.freedom, 0),
-    label: { ja: "革命家", en: "Revolutionary" },
-    paragraph: {
-      ja: "安寧より変革。秩序ある退屈より、混沌の波に飛び込みたい衝動を抱えている。",
-      en: "Change over comfort. You'd rather dive into chaos than sit through orderly boredom.",
-    },
+    label: L("革命家", "Revolutionary"),
+    paragraph: L(
+      "安寧より変革。秩序ある退屈より、混沌の波に飛び込みたい衝動を抱えている。",
+      "Change over comfort. You'd rather dive into chaos than sit through orderly boredom.",
+    ),
   },
   {
     test: (v) => Math.max(v.knowledge, 0) * 1.5,
-    label: { ja: "求道者", en: "Seeker" },
-    paragraph: {
-      ja: "未知や禁忌に抗えず惹かれる。立入禁止の扉ほど開けたくなり、真理を求めて歩み続ける。",
-      en: "The unknown and the forbidden pull you in. The more locked the door, the more you want what's behind it.",
-    },
+    label: L("求道者", "Seeker"),
+    paragraph: L(
+      "未知や禁忌に抗えず惹かれる。立入禁止の扉ほど開けたくなり、真理を求めて歩み続ける。",
+      "The unknown and the forbidden pull you in. The more locked the door, the more you want what's behind it.",
+    ),
   },
   {
     test: (v) => Math.max(v.solitude + v.solo, 0),
-    label: { ja: "孤高の漂流者", en: "Lone Drifter" },
-    paragraph: {
-      ja: "群れより孤独。光より闇。一人で考え一人で動くことを、自分の輪郭として大切にしている。",
-      en: "Solitude over crowds, dusk over noon. Thinking alone and moving alone is how you keep your edges sharp.",
-    },
+    label: L("孤高の漂流者", "Lone Drifter"),
+    paragraph: L(
+      "群れより孤独。光より闇。一人で考え一人で動くことを、自分の輪郭として大切にしている。",
+      "Solitude over crowds, dusk over noon. Thinking alone and moving alone is how you keep your edges sharp.",
+    ),
   },
   {
     test: (v) => Math.max(v.ambition + v.solo, 0) * 0.9,
-    label: { ja: "野心家", en: "Ambitious" },
-    paragraph: {
-      ja: "自分が誰より強くなれば、結局すべて解決する——そう信じて頂を目指す。",
-      en: "If you climb high enough, every problem solves itself. That's why you don't stop climbing.",
-    },
+    label: L("野心家", "Ambitious"),
+    paragraph: L(
+      "自分が誰より強くなれば、結局すべて解決する——そう信じて頂を目指す。",
+      "If you climb high enough, every problem solves itself. That's why you don't stop climbing.",
+    ),
   },
   {
     test: (v) => Math.max(v.mentor, 0) * 1.4,
-    label: { ja: "継承者", en: "Inheritor" },
-    paragraph: {
-      ja: "師や先達から授かった信念が、今も自分の支柱になっている。受け継いだ流派を体現する。",
-      en: "The conviction your teacher passed on is still your spine. You carry the school forward.",
-    },
+    label: L("継承者", "Inheritor"),
+    paragraph: L(
+      "師や先達から授かった信念が、今も自分の支柱になっている。受け継いだ流派を体現する。",
+      "The conviction your teacher passed on is still your spine. You carry the school forward.",
+    ),
   },
 ];
 
-const NEUTRAL_STORY: Record<Locale, Persona> = {
-  ja: {
-    label: "中庸の探究者",
-    paragraphs: [
-      "極端には振らず、状況に応じて顔を変えるバランス型。多様な世界観に開かれている。",
-    ],
-  },
-  en: {
-    label: "Balanced Seeker",
-    paragraphs: [
-      "You don't lean to extremes — you shift with the situation. You stay open to many worldviews.",
-    ],
-  },
+const buildNeutral = (label: LText, paragraph: LText): Record<Locale, Persona> => {
+  const out = {} as Record<Locale, Persona>;
+  for (const l of LOCALES) out[l] = { label: label[l], paragraphs: [paragraph[l]] };
+  return out;
 };
+
+const NEUTRAL_STORY = buildNeutral(
+  L("中庸の探究者", "Balanced Seeker"),
+  L(
+    "極端には振らず、状況に応じて顔を変えるバランス型。多様な世界観に開かれている。",
+    "You don't lean to extremes — you shift with the situation. You stay open to many worldviews.",
+  ),
+);
 
 export function describeStory(vec: Record<StoryDim, number>, locale: Locale = "ja"): Persona {
   const scored = STORY_TRAITS.map((t) => ({ trait: t, score: t.test(vec) })).sort(
@@ -118,174 +117,164 @@ export function describeStory(vec: Record<StoryDim, number>, locale: Locale = "j
 }
 
 interface GameTraitFromBipolar {
-  pos: { label: BiText; sentence: BiText };
-  neg: { label: BiText; sentence: BiText };
+  pos: { label: LText; sentence: LText };
+  neg: { label: LText; sentence: LText };
   threshold?: number;
 }
 
-const empty = (): { label: BiText; sentence: BiText } => ({
-  label: { ja: "", en: "" },
-  sentence: { ja: "", en: "" },
+const emptySide = (): { label: LText; sentence: LText } => ({
+  label: L("", ""),
+  sentence: L("", ""),
 });
 
 const GAME_BIPOLAR: Record<GameDim, GameTraitFromBipolar> = {
   range: {
     pos: {
-      label: { ja: "遠距離型", en: "Ranged" },
-      sentence: {
-        ja: "射程の優位を活かし、間合いを保って一方的に削り続ける。",
-        en: "You use your reach to keep distance and chip your enemies down without giving them a turn.",
-      },
+      label: L("遠距離型", "Ranged"),
+      sentence: L(
+        "射程の優位を活かし、間合いを保って一方的に削り続ける。",
+        "You use your reach to keep distance and chip your enemies down without giving them a turn.",
+      ),
     },
     neg: {
-      label: { ja: "近距離型", en: "Melee" },
-      sentence: {
-        ja: "肉薄の白兵戦こそが本領。間合いを詰めて殴り合う。",
-        en: "Close-quarters brawls are where you shine — you close the gap and trade fists.",
-      },
+      label: L("近距離型", "Melee"),
+      sentence: L(
+        "肉薄の白兵戦こそが本領。間合いを詰めて殴り合う。",
+        "Close-quarters brawls are where you shine — you close the gap and trade fists.",
+      ),
     },
     threshold: 0.45,
   },
   skillBased: {
     pos: {
-      label: { ja: "スキル型", en: "Skill-based" },
-      sentence: {
-        ja: "アクティブスキルの組み立てとマナ管理でゲームを動かす。",
-        en: "You drive the game with combo lines and tight resource management.",
-      },
+      label: L("スキル型", "Skill-based"),
+      sentence: L(
+        "アクティブスキルの組み立てとマナ管理でゲームを動かす。",
+        "You drive the game with combo lines and tight resource management.",
+      ),
     },
     neg: {
-      label: { ja: "AA型", en: "Auto-attacker" },
-      sentence: {
-        ja: "通常攻撃のリズムを軸に、立ち回りで火力を引き出す。",
-        en: "You hum off auto-attack rhythm and pull damage out of positioning.",
-      },
+      label: L("AA型", "Auto-attacker"),
+      sentence: L(
+        "通常攻撃のリズムを軸に、立ち回りで火力を引き出す。",
+        "You hum off auto-attack rhythm and pull damage out of positioning.",
+      ),
     },
     threshold: 0.5,
   },
   damageStyle: {
     pos: {
-      label: { ja: "バースト型", en: "Burst" },
-      sentence: {
-        ja: "重要人物を一瞬で葬る、刹那の瞬発力で勝負する。",
-        en: "Erasing the key target in a single beat — that's where you live.",
-      },
+      label: L("バースト型", "Burst"),
+      sentence: L(
+        "重要人物を一瞬で葬る、刹那の瞬発力で勝負する。",
+        "Erasing the key target in a single beat — that's where you live.",
+      ),
     },
     neg: {
-      label: { ja: "DPS型", en: "DPS" },
-      sentence: {
-        ja: "削り続けて押し切る、持続火力で長期戦を制する。",
-        en: "You grind enemies down with sustained pressure and outlast them.",
-      },
+      label: L("DPS型", "DPS"),
+      sentence: L(
+        "削り続けて押し切る、持続火力で長期戦を制する。",
+        "You grind enemies down with sustained pressure and outlast them.",
+      ),
     },
     threshold: 0.45,
   },
   durability: {
     pos: {
-      label: { ja: "堅牢タイプ", en: "Tanky" },
-      sentence: {
-        ja: "前線で耐え抜き、敵の攻撃を吸い込みながら戦う。",
-        en: "You hold the front line, soaking up blows while you keep fighting.",
-      },
+      label: L("堅牢タイプ", "Tanky"),
+      sentence: L(
+        "前線で耐え抜き、敵の攻撃を吸い込みながら戦う。",
+        "You hold the front line, soaking up blows while you keep fighting.",
+      ),
     },
     neg: {
-      label: { ja: "繊細タイプ", en: "Fragile" },
-      sentence: {
-        ja: "脆さと引き換えに高出力。被弾を避ける位置取りが鍵。",
-        en: "You trade durability for raw output — staying off the radar is the whole game.",
-      },
+      label: L("繊細タイプ", "Fragile"),
+      sentence: L(
+        "脆さと引き換えに高出力。被弾を避ける位置取りが鍵。",
+        "You trade durability for raw output — staying off the radar is the whole game.",
+      ),
     },
     threshold: 0.5,
   },
   damage: {
     pos: {
-      label: { ja: "高火力", en: "High-damage" },
-      sentence: {
-        ja: "純粋な打撃力でゲームをねじ伏せにかかる。",
-        en: "You bend the game with raw damage.",
-      },
+      label: L("高火力", "High-damage"),
+      sentence: L("純粋な打撃力でゲームをねじ伏せにかかる。", "You bend the game with raw damage."),
     },
     neg: {
-      label: { ja: "ユーティリティ重視", en: "Utility-focused" },
-      sentence: {
-        ja: "個人火力より、味方を活かす一手で勝ちを引き寄せる。",
-        en: "You pull wins by enabling teammates rather than scoring kills yourself.",
-      },
+      label: L("ユーティリティ重視", "Utility-focused"),
+      sentence: L(
+        "個人火力より、味方を活かす一手で勝ちを引き寄せる。",
+        "You pull wins by enabling teammates rather than scoring kills yourself.",
+      ),
     },
     threshold: 0.5,
   },
   cc: {
     pos: {
-      label: { ja: "制圧タイプ", en: "Lockdown" },
-      sentence: {
-        ja: "敵を縛り、止め、起点を作るCCで盤面を支配する。",
-        en: "You bind, stun, and set up plays — your CC dictates the fight.",
-      },
+      label: L("制圧タイプ", "Lockdown"),
+      sentence: L(
+        "敵を縛り、止め、起点を作るCCで盤面を支配する。",
+        "You bind, stun, and set up plays — your CC dictates the fight.",
+      ),
     },
-    neg: empty(),
+    neg: emptySide(),
     threshold: 0.5,
   },
   mobility: {
     pos: {
-      label: { ja: "高機動", en: "High mobility" },
-      sentence: {
-        ja: "踏み込んでは引く駆け引きで、相手を翻弄する。",
-        en: "You dance in and out, never giving them a clean target.",
-      },
+      label: L("高機動", "High mobility"),
+      sentence: L(
+        "踏み込んでは引く駆け引きで、相手を翻弄する。",
+        "You dance in and out, never giving them a clean target.",
+      ),
     },
-    neg: empty(),
+    neg: emptySide(),
     threshold: 0.5,
   },
   difficulty: {
     pos: {
-      label: { ja: "高難度マニア", en: "High-skill" },
-      sentence: {
-        ja: "複雑な操作と仕掛けにこそ燃える、玄人志向。",
-        en: "Mechanically demanding kits are the only ones that scratch the itch.",
-      },
+      label: L("高難度マニア", "High-skill"),
+      sentence: L(
+        "複雑な操作と仕掛けにこそ燃える、玄人志向。",
+        "Mechanically demanding kits are the only ones that scratch the itch.",
+      ),
     },
     neg: {
-      label: { ja: "気軽派", en: "Easy-going" },
-      sentence: {
-        ja: "細かい操作より、直感的に楽しめるピックを選びたい。",
-        en: "You'd rather grab something intuitive and have fun than drill mechanics.",
-      },
+      label: L("気軽派", "Easy-going"),
+      sentence: L(
+        "細かい操作より、直感的に楽しめるピックを選びたい。",
+        "You'd rather grab something intuitive and have fun than drill mechanics.",
+      ),
     },
     threshold: 0.55,
   },
   scaling: {
     pos: {
-      label: { ja: "終盤型", en: "Late-game" },
-      sentence: {
-        ja: "じっくりスケールして終盤に爆発、長期戦こそが勝負どころ。",
-        en: "You scale slow and break the game open in the late stages.",
-      },
+      label: L("終盤型", "Late-game"),
+      sentence: L(
+        "じっくりスケールして終盤に爆発、長期戦こそが勝負どころ。",
+        "You scale slow and break the game open in the late stages.",
+      ),
     },
     neg: {
-      label: { ja: "序盤型", en: "Early-game" },
-      sentence: {
-        ja: "最初から強く、早期の主導権で押し切るタイプ。",
-        en: "You're strong from the jump and you push the tempo early.",
-      },
+      label: L("序盤型", "Early-game"),
+      sentence: L(
+        "最初から強く、早期の主導権で押し切るタイプ。",
+        "You're strong from the jump and you push the tempo early.",
+      ),
     },
     threshold: 0.5,
   },
 };
 
-const NEUTRAL_GAME: Record<Locale, Persona> = {
-  ja: {
-    label: "万能型",
-    paragraphs: [
-      "どの軸にも極端に偏らず、複数のスタイルを使い分けるオールラウンダー。",
-    ],
-  },
-  en: {
-    label: "All-rounder",
-    paragraphs: [
-      "You don't lean hard on any single axis — you flex between styles depending on what the team needs.",
-    ],
-  },
-};
+const NEUTRAL_GAME = buildNeutral(
+  L("万能型", "All-rounder"),
+  L(
+    "どの軸にも極端に偏らず、複数のスタイルを使い分けるオールラウンダー。",
+    "You don't lean hard on any single axis — you flex between styles depending on what the team needs.",
+  ),
+);
 
 export function describeGame(vec: Record<GameDim, number>, locale: Locale = "ja"): Persona {
   const labels: string[] = [];

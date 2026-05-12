@@ -5,14 +5,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { championPortrait } from "@/lib/champions";
 import { archetypeLabel, championName, dict, type Locale, regionLabel } from "@/lib/i18n";
-import {
-  type Archetype,
-  type Champion,
-  REGIONS,
-  type Region,
-  ROLES,
-  type Role,
-} from "@/lib/types";
+import { type Archetype, type Champion, REGIONS, type Region, ROLES, type Role } from "@/lib/types";
 
 const ALL_ARCHETYPES: Archetype[] = [
   "Assassin",

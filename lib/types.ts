@@ -1,3 +1,5 @@
+import type { Locale } from "./i18n";
+
 export const REGIONS = [
   "Demacia",
   "Noxus",
@@ -120,11 +122,20 @@ export const ARCHETYPE_LABEL_JA: Record<Archetype, string> = {
 
 export type DiagnosisType = "story" | "game";
 
+/** Per-locale champion strings (name / title / blurb) keyed by locale. */
+export type ChampionLoc = Partial<
+  Record<Locale, { name?: string; title?: string; blurb?: string }>
+>;
+
 export interface Champion {
   id: string;
+  /** English (DDragon en_US). Canonical fallback for every non-ja locale. */
   name: string;
+  /** Japanese (DDragon ja_JP). */
   nameJa: string;
+  /** English epithet (DDragon en_US). */
   title: string;
+  /** Japanese epithet (DDragon ja_JP). */
   titleJa: string;
   region: Region;
   ddragonId: string;
@@ -132,5 +143,14 @@ export interface Champion {
   archetypes: Archetype[];
   storyVec: Record<StoryDim, number>;
   gameVec: Record<GameDim, number>;
+  /** Hand-curated JA blurb from DDragon ja_JP. */
   blurb: string;
+  /** DDragon en_US blurb. Optional — falls back to a synthesized tagline when absent. */
+  blurbEn?: string;
+  /**
+   * Localized name / title / blurb for the non-ja, non-en locales (and `en`
+   * blurb). Populated by `scripts/fetch-champions.mjs` from DDragon. Optional —
+   * accessors fall back to `name` / `title` / a synthesized blurb.
+   */
+  loc?: ChampionLoc;
 }

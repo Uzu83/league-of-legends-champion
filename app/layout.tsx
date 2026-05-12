@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { dict } from "@/lib/i18n";
+import { BCP47, dict, hreflangAlternates, OG_LOCALE } from "@/lib/i18n";
 import { getLocale } from "@/lib/i18n-server";
 import LocaleSwitcher from "./locale-switcher";
 import "./globals.css";
@@ -22,7 +22,8 @@ export async function generateMetadata(): Promise<Metadata> {
       "League of Legends",
       "diagnosis",
       "personality test",
-      "champion",
+      "champion quiz",
+      "which LoL champion are you",
       "MBTI",
       "診断",
       "キャラタイプ",
@@ -31,13 +32,13 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     alternates: {
       canonical: "/",
-      languages: { ja: "/", en: "/", "x-default": "/" },
+      languages: hreflangAlternates("/"),
     },
     openGraph: {
       title: t.metadata.title,
       description: t.metadata.ogDescription,
       type: "website",
-      locale: locale === "ja" ? "ja_JP" : "en_US",
+      locale: OG_LOCALE[locale],
       siteName: t.metadata.title,
     },
     twitter: { card: "summary_large_image" },
@@ -55,9 +56,37 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale();
   const t = dict(locale);
+  // WebSite + SearchAction JSON-LD enables a sitelinks search box for /champions.
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: t.metadata.title,
+    url: SITE_URL,
+    inLanguage: BCP47[locale],
+    description: t.metadata.description,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/champions?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
   return (
-    <html lang={locale}>
+    <html lang={BCP47[locale]}>
       <body>
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: server-rendered JSON-LD.
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <a
+          href="#main"
+          className="sr-only z-50 rounded-md bg-(--color-accent) px-3 py-2 text-sm font-semibold text-black focus:not-sr-only focus:absolute focus:left-3 focus:top-3"
+        >
+          {t.a11y.skipToContent}
+        </a>
         <header className="border-b border-white/10 bg-black/20 backdrop-blur">
           <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
             <Link
@@ -71,11 +100,19 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             </Link>
             <div className="flex items-center gap-2">
               <LocaleSwitcher current={locale} />
-              <span className="hidden text-xs text-(--color-text-muted) md:inline">{t.version}</span>
+              <span className="hidden text-xs text-(--color-text-muted) md:inline">
+                {t.version}
+              </span>
             </div>
           </div>
         </header>
-        <main className="mx-auto max-w-3xl px-4 pb-24 pt-8">{children}</main>
+        <main
+          id="main"
+          tabIndex={-1}
+          className="mx-auto max-w-3xl px-4 pb-24 pt-8 focus:outline-none"
+        >
+          {children}
+        </main>
         <footer className="border-t border-white/10 py-6 text-xs text-(--color-text-muted)">
           <div className="mx-auto max-w-3xl space-y-2 px-4 text-center leading-relaxed">
             <p>

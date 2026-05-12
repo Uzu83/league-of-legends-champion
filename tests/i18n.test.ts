@@ -16,14 +16,19 @@ describe("locale detection", () => {
   it("isLocale narrows known values only", () => {
     expect(isLocale("ja")).toBe(true);
     expect(isLocale("en")).toBe(true);
-    expect(isLocale("fr")).toBe(false);
+    expect(isLocale("ko")).toBe(true);
+    expect(isLocale("zh")).toBe(true);
+    expect(isLocale("xx")).toBe(false);
     expect(isLocale(undefined)).toBe(false);
   });
 
   it("Accept-Language picks first matching primary tag", () => {
     expect(localeFromAcceptLanguage("en-US,en;q=0.9,ja;q=0.8")).toBe("en");
     expect(localeFromAcceptLanguage("ja-JP,ja;q=0.9")).toBe("ja");
-    expect(localeFromAcceptLanguage("fr-FR")).toBe(DEFAULT_LOCALE);
+    expect(localeFromAcceptLanguage("ko-KR")).toBe("ko");
+    expect(localeFromAcceptLanguage("zh-CN,zh;q=0.9")).toBe("zh");
+    expect(localeFromAcceptLanguage("pt-BR")).toBe("pt");
+    expect(localeFromAcceptLanguage("xx-XX")).toBe(DEFAULT_LOCALE);
     expect(localeFromAcceptLanguage(null)).toBe(DEFAULT_LOCALE);
   });
 
