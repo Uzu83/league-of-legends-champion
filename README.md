@@ -7,7 +7,7 @@
 > あなたとLOLキャラを繋ぐ、世界観の入り口診断。
 > Find the League of Legends champion that matches your personality and playstyle.
 
-性格・プレイ志向の質問10問×2エントリーで、172体のLeague of Legendsチャンピオンから最もマッチする1体 + 上位5体を提示するWeb診断サービス。**ja / en の2言語対応**。
+性格・プレイ志向の質問10問×2エントリーで、172体のLeague of Legendsチャンピオンから最もマッチする1体 + 上位5体を提示するWeb診断サービス。**9言語対応** (日本語 / English / 한국어 / 中文 / Español / Français / Deutsch / Português / Русский)。
 
 **2エントリー設計**:
 - 🌍 **ストーリー入り口** — 性格・価値観・関係性志向 (15軸ベクトル)
@@ -31,8 +31,8 @@
 | Pkg | pnpm 10 (mise pinned) |
 | Deploy | Vercel (GitHub 連携) |
 | Analytics | `@vercel/analytics` + `@vercel/speed-insights` |
-| Champion data | DDragon `16.9.1` (ja_JP + en_US) |
-| i18n | 自前辞書 (`lib/i18n.ts`) — cookie優先 + Accept-Language fallback |
+| Champion data | DDragon `16.9.1` (9ロケール並行 fetch) |
+| i18n | 自前辞書 (`lib/i18n.ts`) — 9ロケール、cookie優先 + Accept-Language fallback |
 
 サイリウムカラー診断 (penlightcolor) v2 のスタックを完全継承。
 
@@ -100,9 +100,10 @@ pnpm dev                # http://localhost:3000
 
 ### チャンピオンデータ
 
-172体すべて `lib/champions.ts` に静的に格納 (DDragon `16.9.1 / ja_JP`)。
+172体すべて `lib/champions.ts` に静的に格納 (DDragon `16.9.1` の9ロケールを並行 fetch)。
 
-- 30体は `scripts/fetch-champions.mjs` の `HAND_CRAFTED` で手書きスコアを上書き
+- `name` / `nameJa` / `title` / `titleJa` は en_US / ja_JP、`blurb` は ja_JP、`blurbEn` は en_US、`loc` に ko/zh/es/fr/de/pt/ru の `{name?, title?, blurb}` (英語と同一の name/title は省略)。zh_CN は DDragon が name/title を逆順に持つので生成時に補正。
+- 30体は `scripts/fetch-champions.mjs` の `HAND_CRAFTED` で手書きスコア (region/roles/archetypes/storyVec/gameVec) を上書き
 - 残り142体は DDragon の `info` (attack/defense/magic/difficulty 1-10) + `tags` から自動推定 (要レビュー)
 - パッチ更新時は `node scripts/fetch-champions.mjs` で再生成 (HAND_CRAFTED は保持される)
 
@@ -117,13 +118,15 @@ pnpm dev                # http://localhost:3000
 | `/` | Static | 2エントリー選択ホーム |
 | `/q/[type]` | SSG | story / game の質問フロー |
 | `/result/[hash]` | Dynamic | 診断結果 + Persona + 反対型 |
-| `/champions` | Static (Client) | 全172体一覧 + 検索/フィルタ |
-| `/champions/[id]` | SSG | チャンピオン詳細 (8軸双極バー) |
+| `/champions` | Dynamic (Client) | 全172体一覧 + 検索 (`?q=`) / フィルタ。BreadcrumbList JSON-LD |
+| `/champions/[id]` | Dynamic | チャンピオン詳細 (8軸双極バー) + 類似/同リージョン導線 + シェア + BreadcrumbList JSON-LD |
 | `/compare` | Static (Client) | クロスエントリー比較ビュー |
-| `/api/og` | Edge | 動的OGP画像 |
-| `/sitemap.xml` `/robots.txt` | Static | SEO (hreflang ja/en alternates 付き) |
+| `/api/og` | Edge | 動的OGP画像 (`?hash=` 結果カード / `?champion=` チャンピオンカード, `&lang=`) |
+| `/opengraph-image` `/twitter-image` | Dynamic | デフォルトソーシャルカード (`/`・`/champions`・`/q/*`・`/compare`) |
+| `/sitemap.xml` `/robots.txt` | Static | SEO (hreflang 9ロケール + x-default) |
 | `/manifest.webmanifest` | Static | PWA manifest |
 | `/icon` `/apple-icon` | Static | 動的生成 favicon / Apple touch |
+| `/not-found` `/error` | — | ローカライズ済 404 / エラーバウンダリ |
 
 ## デプロイ
 
@@ -143,17 +146,19 @@ GitHub → Vercel 自動連携。`main` への push でビルド・デプロイ�
 
 ## i18n
 
-ja / en 両対応。
+9言語対応: `ja en ko zh es fr de pt ru` (内部コード)。`BCP47` マップで `<html lang>` / hreflang 用の正規タグに (`zh→zh-CN`, `pt→pt-BR` 等)、`OG_LOCALE` マップで `og:locale` に変換。
 
-- 翻訳辞書は `lib/i18n.ts` に集約。型ベース (`Record<Locale, ...>`) なので追加言語はキーごとに値を埋めるだけ。
-- ロケール解決は `lib/i18n-server.ts` の `getLocale()` (cookie `NEXT_LOCALE` > Accept-Language > `ja` フォールバック)。
-- ヘッダー右上の `LocaleSwitcher` で切替 (cookie に保存して `location.reload()`)。
-- 質問・persona 説明文・OGP・metadata すべてロケール対応。`/api/og?hash=...&lang=en` で言語別OGP画像生成。
-- チャンピオン名 / 称号: `name` `title` (en) / `nameJa` `titleJa` (ja) を保持。EN blurbは `name + title + region + archetypes` から合成 (172体ハンドトランスレートしない方針)。
+- 翻訳辞書は `lib/i18n.ts` に集約。型ベース (`T: Record<Locale, Dict>`、`Dict = typeof en`) — `ja`/`en` が正、他7ロケールは個別の `Dict` オブジェクト。質問 (`lib/questions.ts`) と persona (`lib/persona.ts`) は `localizedText(ja, en, { ko, zh, ... })` ヘルパで全ロケール保持。
+- ロケール解決は `lib/i18n-server.ts` の `getLocale()` (cookie `NEXT_LOCALE` > Accept-Language の primary subtag > `ja`)。クライアント専用 (`app/error.tsx` 等) は `clientLocale()`。
+- ヘッダーの `LocaleSwitcher` (`<select>`, 9言語, cookie保存 + `location.reload()`)。
+- hreflang は `hreflangAlternates(path)` ヘルパ (全ロケール同一URL + `x-default`=en) を各 `generateMetadata` / `sitemap.ts` で再利用。
+- 質問・persona・OGP・metadata すべてロケール対応。`/api/og?hash=...&lang=ko` 等で言語別OGP画像。
+- チャンピオン: `championName/championTitle/championBlurb(locale, c)` が `c.loc?.[locale]` を見て、無ければ `c.name`/`c.title`/(en blurb → 構造化フィールドからの合成) にフォールバック。検索は `championSearchHaystack(c)` (全ロケールの name + id) を使用。
+- 新文字列を追加する時は `lib/i18n.ts` の `Dict` 構造に追加し (`ja`/`en` が型のソース)、全ロケールに値を埋めること。新ロケール追加は `LOCALES`/`BCP47`/`OG_LOCALE`/各ラベルマップ/`Dict` オブジェクトに1エントリ + `localizedText` の `rest` キー + `scripts/fetch-champions.mjs` の `DDRAGON_LOCALES` に追加。
 
 ## 規約
 
-- ja / en に対応 (2026-05-09より)。新文字列を追加する際は `lib/i18n.ts` の両ロケールに加えること。
+- 9言語対応。新文字列は `lib/i18n.ts` の全ロケールに加えること (詳細は上記 i18n 節)。
 - **曜日表示は日曜始まり**
 - 語彙制約: `Go` / `Golang` / `REST API` 禁止 → `endpoint` または `API route`
 - LOLキャラ既存設定の暗いテーマ (復讐・対立・死) は許容、ただしユーザーへ押し付けない (例「あなたは復讐に生きるべき」はNG)
@@ -171,11 +176,11 @@ ja / en 両対応。
 ## テスト
 
 ```bash
-pnpm test                                      # 全20テスト (scoring 12 + i18n 8)
+pnpm test                                      # 全23テスト (scoring + i18n)
 pnpm test tests/scoring.test.ts                # 特定ファイル
 ```
 
-スコアリング・エンコーディング・persona生成・ランキング・ロケール解決・ローカライズ済 persona のユニットテスト。チャンピオン名で固定アサーションせず、ベクトルプロパティ (`damageStyle >= 0.5` 等) で検証 — チャンピオンデータが変わっても壊れにくい設計。
+スコアリング・エンコーディング・persona生成・ランキング・ロケール解決 (9ロケール)・ローカライズ済 persona / champion blurb のユニットテスト。チャンピオン名で固定アサーションせず、ベクトルプロパティ (`damageStyle >= 0.5` 等) で検証 — チャンピオンデータが変わっても壊れにくい設計。
 
 ## ライセンス・帰属
 
@@ -212,10 +217,12 @@ Riot公式 [Legal Jibber Jabber](https://www.riotgames.com/ja/legal) に基づ�
 
 仕様詳細は [Notion ページ (private)](https://app.notion.com/p/3541ef8488d581819de6ede4a562d202) を参照。
 
-近い順:
+完了 (2026-05-12 バッチ): 9言語化 (ko/zh/es/fr/de/pt/ru 追加) / SEO++ (デフォルトOG画像・WebSite+SearchAction・BreadcrumbList・FAQPage・WebPage JSON-LD・sitemap安定化) / アクセシビリティ (Likertキーボード操作・radiogroup・focus-visible・skip link・404/error ページ) / 類似チャンピオン & 同リージョン導線 / チャンピオン→シェア + 専用OGカード / Analytics ファネルイベント / 全ロケールの DDragon blurb 実データ化。
+
+残り (近い順):
 
 1. 142体の自動推定値の手作業レビュー
-2. アクセシビリティ (キーボード操作・ARIA)
-3. チャンピオン詳細ページからの逆引きシェア
-4. EN チャンピオン blurb のリッチ化 (現状は title+region+archetype 合成)
-5. Playwright e2e
+2. GSC サイトマップ再送信 (削除→再追加で強制再フェッチ)
+3. 本番での実機確認 (OGP 各言語 / Speed Insights / Analytics ファネル / Lighthouse モバイル ≥ 90)
+4. Playwright e2e
+5. AdSense / GA4 / フィードバックフォーム (DAU 閾値到達後)
