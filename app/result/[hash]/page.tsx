@@ -21,6 +21,7 @@ import { getLocale } from "@/lib/i18n-server";
 import { describeGame, describeStory } from "@/lib/persona";
 import { farthestMatch, topMatches, userGameVector, userStoryVector } from "@/lib/scoring";
 import { GAME_DIMS, type GameDim } from "@/lib/types";
+import RetakeLink from "./retake-link";
 
 export const dynamicParams = true;
 
@@ -248,12 +249,12 @@ export default async function ResultPage({ params }: PageParams) {
               >
                 {t.result.championDetail}
               </Link>
-              <Link
-                href={`/q/${decoded.type}`}
+              <RetakeLink
+                type={decoded.type}
                 className="rounded-full border border-white/15 px-3 py-1 hover:border-white/40"
               >
                 {t.result.retake}
-              </Link>
+              </RetakeLink>
             </div>
           </div>
         </div>

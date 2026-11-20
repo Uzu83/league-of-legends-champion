@@ -71,6 +71,7 @@ export default function QuizClient({ type, locale }: { type: DiagnosisType; loca
       }
       if (e.key === "ArrowRight") {
         e.preventDefault();
+        if (current == null) return;
         setIndex(Math.min(questions.length - 1, index + 1));
         return;
       }
@@ -166,8 +167,12 @@ export default function QuizClient({ type, locale }: { type: DiagnosisType; loca
         {index < questions.length - 1 ? (
           <button
             type="button"
-            onClick={() => setIndex(Math.min(questions.length - 1, index + 1))}
-            className="rounded-lg border border-white/20 px-3 py-2 text-xs"
+            onClick={() => {
+              if (current == null) return;
+              setIndex(Math.min(questions.length - 1, index + 1));
+            }}
+            disabled={current == null}
+            className="rounded-lg border border-white/20 px-3 py-2 text-xs disabled:cursor-not-allowed disabled:opacity-30"
           >
             {t.quiz.next}
           </button>
