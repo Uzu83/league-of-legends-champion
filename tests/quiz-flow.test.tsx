@@ -83,15 +83,40 @@ describe("quiz next gate", () => {
   });
 
   it("still opens the result when every answer is filled", () => {
-    const answered = Array.from({ length: 10 }, () => 3 as LikertAnswer);
-    useQuiz.setState({ answers: { story: answered, game: emptyColumn() } });
     render(<QuizClient type="story" locale="en" />);
 
-    for (let i = 0; i < 9; i++) {
-      fireEvent.click(screen.getByRole("button", { name: "Next →" }));
+    for (let i = 0; i < 10; i++) {
+      fireEvent.click(screen.getByRole("radio", { name: "Neither" }));
     }
     fireEvent.click(screen.getByRole("button", { name: "See result" }));
     expect(push).toHaveBeenCalledWith("/result/s3333333333");
+  });
+});
+
+describe("fresh entry", () => {
+  it.each([
+    "story",
+    "game",
+  ] as DiagnosisType[])("drops a stored %s answer so question 1 starts unselected", async (type) => {
+    const story = emptyColumn();
+    const game = emptyColumn();
+    story[0] = 4;
+    game[0] = 5;
+    sessionStorage.setItem(
+      "lol-character-type-quiz",
+      JSON.stringify({ state: { answers: { story, game } }, version: 0 }),
+    );
+    await useQuiz.persist.rehydrate();
+
+    render(<QuizClient type={type} locale="en" />);
+
+    expect(screen.getByText("Q1 / 10")).toBeInTheDocument();
+    for (const radio of screen.getAllByRole("radio")) {
+      expect(radio).toHaveAttribute("aria-checked", "false");
+    }
+    expect(useQuiz.getState().answers[type].every((answer) => answer == null)).toBe(true);
+    const other = type === "story" ? "game" : "story";
+    expect(useQuiz.getState().answers[other][0]).toBe(type === "story" ? 5 : 4);
   });
 });
 
